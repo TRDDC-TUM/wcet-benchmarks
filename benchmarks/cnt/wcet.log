@@ -1,0 +1,114 @@
+Note:::::Martin Becker: Writing source-level information to sourceinfo.csv
+Note:main.elf::::Bound-T 4c5 for Atmel-AVR
+Note:main.elf::::This AVR device has a 16-bit SP = SPH:SPL.
+Note:main.elf::::File format assumed to be ELF
+Note:main.elf::::Segment 2 not loaded:Zero length in file
+Note:main.elf::::Loading DWARF info section.
+Note:main.elf::::DWARF debug info ends without null entry.
+Note:main.elf::::Loading DWARF types for compilation unit 1
+Note:main.elf::::Parsing DWARF symbols.
+Note:main.elf::::Entering DWARF compilation unit for cnt.c
+Note:main.elf::::Program implies calling protocol GCC.
+Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
+Note:main.elf:loopinfo.txt:::Routine at 000188 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:loopinfo.txt:::Routine at 000228 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:cnt.c:Sum:81:Root subprogram
+Note:main.elf::::Unused (# 2 = Sum at 000228) is FALSE
+Note:main.elf::::Dynamism bounding iteration number 1
+Note:main.elf:cnt.c:Sum:81:Unused (# 2 = Sum at 000228) is FALSE
+Note:main.elf:cnt.c:Sum:81:Analysis for time is needed.
+Note:main.elf:cnt.c:Sum:81:Control-flow analysis starts.
+Warning:main.elf:cnt.c:Sum:89:Large combined 16-bit literal 65535 taken as signed = -1
+Note:main.elf:cnt.c:Sum:81:Control-flow analysis finished.
+Note:main.elf:cnt.c:Sum:81:Dominator iterations 1 for 10 graph nodes.
+Note:main.elf:cnt.c:Sum:81:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:cnt.c:Sum:81-108:No execution bounds known yet.
+Note:main.elf:cnt.c:Sum:81-108:Unused (# 2 = Sum at 000228) is FALSE
+Note:main.elf:cnt.c:Sum:81-108:Unused (# 2 = Sum at 000228) is FALSE
+Note:main.elf:cnt.c:Sum:81-108:Unused (# 2 = Sum at 000228) is FALSE
+Note:main.elf:cnt.c:Sum:81:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:81-108:Repeating constant propagation.
+Note:main.elf:cnt.c:Sum:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:84:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:84-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:85:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:85-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:86:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:86-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:87:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:87-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:94-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:94-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:94-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:97:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:97:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:97:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:97-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:97-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:97-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:101:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:101:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:101:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:104:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:104:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:104:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:105:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:105:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:105:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:106:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:106:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:106:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:107:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:107:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:107:Refine (Assignment) bounded a pointer.
+Note:main.elf:cnt.c:Sum:81-108:Repeating constant propagation.
+Note:main.elf:cnt.c:Sum:81-108:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf:cnt.c:Sum:81-108:Final stack-height from constant propagation for SP:sh
+Note:main.elf:cnt.c:Sum:81-108:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf:cnt.c:Sum:81-108:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf:cnt.c:Sum:81-108:Constant propagation changed nothing.
+Note:main.elf:cnt.c:Sum:81-108:Unused (# 2 = Sum at 000228) is FALSE
+Note:main.elf:cnt.c:Sum:81-108:Unused (# 2 = Sum at 000228) is FALSE
+Note:main.elf:cnt.c:Sum:81-108:Unused (# 2 = Sum at 000228) is FALSE
+Note:main.elf:cnt.c:Sum:81-108:Unused (# 2 = Sum at 000228) is FALSE
+Note:main.elf:cnt.c:Sum:81-108:Unused (# 2 = Sum at 000228) is FALSE
+Note:main.elf:cnt.c:Sum:81-108:Unused (# 2 = Sum at 000228) is FALSE
+Note:main.elf:cnt.c:Sum:81-108:Unused (# 2 = Sum at 000228) is FALSE
+Note:main.elf:cnt.c:Sum:81-108:Unused (# 2 = Sum at 000228) is FALSE
+Note:main.elf:cnt.c:Sum:81-108:Unused (# 2 = Sum at 000228) is FALSE
+Note:main.elf:cnt.c:Sum:81-108:Arithmetic analysis is not needed.
+Note:main.elf:cnt.c:Sum:81-108:Unused (# 2 = Sum at 000228) is FALSE
+Note:main.elf:cnt.c:Sum:81-108:Time_State for bounds # 1 defined as COMPUTABLE
+Note:main.elf:cnt.c:Sum:81-108:Freezing bounds # 1
+Note:main.elf::::Target-specific additional analysis starts.
+Note:main.elf::::Generic worst-case path and time analysis starts.
+Wcet:main.elf:cnt.c:Sum:81-108:8564
+Note:main.elf::::Creating SLI file sourceinfo.csv.

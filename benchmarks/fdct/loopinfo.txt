@@ -1,0 +1,8 @@
+Subprogram "fdct"
+  loop On Line 83
+    Repeats 8 Times;
+  end loop;
+  loop On Line 161
+    Repeats 8 Times;
+  end loop;
+end "fdct";

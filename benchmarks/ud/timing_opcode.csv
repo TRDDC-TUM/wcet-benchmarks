@@ -1,0 +1,53 @@
+creating lookup...
+getting timing...
+ERROR translating address 674 to opcode. Skipped.
+ERROR translating address 2210 to opcode. Skipped.
+ERROR translating address 2230 to opcode. Skipped.
+ERROR translating address 2846 to opcode. Skipped.
+ERROR translating address 2886 to opcode. Skipped.
+ERROR translating address 2902 to opcode. Skipped.
+ERROR translating address 2886 to opcode. Skipped.
+ERROR translating address 2902 to opcode. Skipped.
+ERROR translating address 2924 to opcode. Skipped.
+ERROR translating address 2992 to opcode. Skipped.
+ERROR translating address 3016 to opcode. Skipped.
+ERROR translating address 3016 to opcode. Skipped.
+Comparing against specification of 116 opcodes
+and; 1;1-1;1-1;0-0;valid
+rcall; 4;5-5;3-3;2-2;total too high (spec: <=3)
+ldd; 195;2-2;2-2;0-0;valid
+ldi; 18;1-1;1-1;0-0;valid
+pop; 8;2-2;2-2;0-0;valid
+lds; 4;2-2;2-2;0-0;valid
+in; 4;1-1;1-1;0-0;valid
+movw; 114;1-1;1-1;0-0;valid
+sbci; 44;1-1;1-1;0-0;valid
+subi; 35;1-1;1-1;0-0;valid
+ld; 25;2-2;2-2;0-0;valid
+cp; 9;1-1;1-1;0-0;valid
+sub; 7;1-1;1-1;0-0;valid
+neg; 3;1-1;1-1;0-0;valid
+add; 71;1-1;1-1;0-0;valid
+call; 10;6-6;4-4;2-2;total too high (spec: <=4)
+adc; 64;1-1;1-1;0-0;valid
+mul; 36;2-2;2-2;0-0;valid
+out; 6;1-1;1-1;0-0;valid
+rjmp; 20;2-2;1-1;1-1;valid
+brlt; 6;1-2;1-1;0-1;valid
+adiw; 17;2-2;2-2;0-0;valid
+bst; 1;1-1;1-1;0-0;valid
+mov; 2;1-1;1-1;0-0;valid
+sbc; 15;1-1;1-1;0-0;valid
+brne; 2;1-2;1-1;0-1;valid
+std; 89;2-2;2-2;0-0;valid
+dec; 1;1-1;1-1;0-0;valid
+brcs; 1;1-2;1-1;0-1;valid
+cpc; 11;1-1;1-1;0-0;valid
+sbrc; 2;1-2;1-1;0-1;valid
+st; 7;2-2;2-2;0-0;valid
+brge; 3;1-2;1-1;0-1;valid
+eor; 17;1-1;1-1;0-0;valid
+push; 8;2-2;2-2;0-0;valid
+sbiw; 3;2-2;2-2;0-0;valid
+com; 14;1-1;1-1;0-0;valid
+brtc; 2;1-2;1-1;0-1;valid

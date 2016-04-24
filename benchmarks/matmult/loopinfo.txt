@@ -1,0 +1,24 @@
+subprogram "Multiply" 
+  --  loop That Contains (loop That contains loop) -- outermost
+  --    Repeats 20 Times;
+  --  end loop;
+  --  loop That Contains loop and is in loop    -- middle
+  --    repeats 20 times;
+  --  end loop;
+  --  loop That is in (loop That is in loop) -- innermost
+  --    Repeats 20 Times;
+  --  end loop;    
+  -- WCET = 1010394
+  
+  all Loops
+    Repeat 20 Times;
+  end loops;
+  -- WCET = 1010394
+end "Multiply";
+
+-- irrelevant, as it is not part of the program when Multiply() is the root
+--  Subprogram "Initialize"
+--    all Loops 
+--        Repeat 20 Times; 
+--    end Loops;
+--  end "Initialize";

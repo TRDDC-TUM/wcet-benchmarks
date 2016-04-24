@@ -1,0 +1,152 @@
+#File; Subprogram; Line; Scope; Exec.Count; Exec.Time.Per; Callee.Time.Per; BB.index; Step.Addr; Step.Target.Addr; Step.Time; Step.Time.Exit
+insertsort.c; main;  55; .main;  1; 87; 0; 1; 180; 182; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 182; 184; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 184; 186; 3; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 186; 188; 3; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 188; 190; 3; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 190; 192; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 192; 194; 1; 0
+insertsort.c; main;  58; .main;  1; 87; 0; 1; 194; 198; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 198; 202; 2; 0
+insertsort.c; main;  59; .main;  1; 87; 0; 1; 202; 204; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 204; 206; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 206; 210; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 210; 214; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 214; 216; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 216; 218; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 218; 222; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 222; 226; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 226; 228; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 228; 230; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 230; 234; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 234; 238; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 238; 240; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 240; 242; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 242; 246; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 246; 250; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 250; 252; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 252; 254; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 254; 258; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 258; 262; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 262; 264; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 264; 266; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 266; 270; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 270; 274; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 274; 276; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 276; 278; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 278; 282; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 282; 286; 2; 0
+insertsort.c; main;  60; .main;  1; 87; 0; 1; 286; 288; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 288; 290; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 290; 294; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 294; 298; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 298; 300; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 300; 302; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 302; 306; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 306; 310; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 310; 312; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 312; 314; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 314; 318; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 318; 322; 2; 0
+insertsort.c; main;  61; .main;  1; 87; 0; 1; 322; 324; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 324; 326; 1; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 326; 328; 2; 0
+insertsort.c; main;  0; .main;  1; 87; 0; 1; 328; 330; 2; 0
+insertsort.c; main;  62; .main;  1; 87; 0; 1; 330; 492; 1; 1
+insertsort.c; main;  62; ;  10; 7- 8; 0; 2; 492; 494; 2; 0
+insertsort.c; main;  0; ;  10; 7- 8; 0; 2; 494; 496; 2; 0
+insertsort.c; main;  0; ;  10; 7- 8; 0; 2; 496; 498; 1; 0
+insertsort.c; main;  0; ;  10; 7- 8; 0; 2; 498; 500; 1; 0
+insertsort.c; main;  0; ;  10; 7- 8; 0; 2; 500; 502, 504; 1; 0- 1
+; main;  0; ;  9; 12; 0; 3; 502; 332; 1; 1
+insertsort.c; main;  66; ;  9; 12; 0; 3; 332; 334; 2; 0
+insertsort.c; main;  0; ;  9; 12; 0; 3; 334; 336; 2; 0
+insertsort.c; main;  0; ;  9; 12; 0; 3; 336; 338; 2; 0
+insertsort.c; main;  0; ;  9; 12; 0; 3; 338; 340; 2; 0
+insertsort.c; main;  70; ;  9; 12; 0; 3; 340; 436; 1; 1
+insertsort.c; main;  88; ;  1; 17; 0; 4; 504; 506; 1; 0
+insertsort.c; main;  0; ;  1; 17; 0; 4; 506; 508; 1; 0
+insertsort.c; main;  89; ;  1; 17; 0; 4; 508; 510; 2; 0
+insertsort.c; main;  0; ;  1; 17; 0; 4; 510; 512; 1; 0
+insertsort.c; main;  0; ;  1; 17; 0; 4; 512; 514; 1; 0
+insertsort.c; main;  0; ;  1; 17; 0; 4; 514; 516; 1; 0
+insertsort.c; main;  0; ;  1; 17; 0; 4; 516; 518; 1; 0
+insertsort.c; main;  0; ;  1; 17; 0; 4; 518; 520; 1; 0
+insertsort.c; main;  0; ;  1; 17; 0; 4; 520; 522; 2; 0
+insertsort.c; main;  0; ;  1; 17; 0; 4; 522; 524; 2; 0
+insertsort.c; main;  0; ;  1; 17; 0; 4; 524;; 4; 0
+insertsort.c; main;  70; ;  54; 31- 32; 0; 5; 436; 438; 2; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 438; 440; 2; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 440; 442; 1; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 442; 444; 1; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 444; 446; 1; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 446; 448; 1; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 448; 450; 1; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 450; 452; 2; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 452; 454; 2; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 454; 456; 2; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 456; 458; 2; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 458; 460; 2; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 460; 462; 1; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 462; 464; 1; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 464; 466; 1; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 466; 468; 1; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 468; 470; 1; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 470; 472; 2; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 472; 474; 2; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 474; 476; 1; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 476; 478; 1; 0
+insertsort.c; main;  0; ;  54; 31- 32; 0; 5; 478; 480, 482; 1; 0- 1
+; main;  0; ;  45; 76; 0; 6; 480; 342; 1; 1
+insertsort.c; main;  75; ;  45; 76; 0; 6; 342; 344; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 344; 346; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 346; 348; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 348; 350; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 350; 352; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 352; 354; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 354; 356; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 356; 358; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 358; 360; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 360; 362; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 362; 364; 2; 0
+insertsort.c; main;  76; ;  45; 76; 0; 6; 364; 366; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 366; 368; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 368; 370; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 370; 372; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 372; 374; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 374; 376; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 376; 378; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 378; 380; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 380; 382; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 382; 384; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 384; 386; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 386; 388; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 388; 390; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 390; 392; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 392; 394; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 394; 396; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 396; 398; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 398; 400; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 400; 402; 2; 0
+insertsort.c; main;  77; ;  45; 76; 0; 6; 402; 404; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 404; 406; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 406; 408; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 408; 410; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 410; 412; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 412; 414; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 414; 416; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 416; 418; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 418; 420; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 420; 422; 1; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 422; 424; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 424; 426; 2; 0
+insertsort.c; main;  78; ;  45; 76; 0; 6; 426; 428; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 428; 430; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 430; 432; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 432; 434; 2; 0
+insertsort.c; main;  0; ;  45; 76; 0; 6; 434; 436; 2; 0
+insertsort.c; main;  83; ;  9; 10; 0; 7; 482; 484; 2; 0
+insertsort.c; main;  0; ;  9; 10; 0; 7; 484; 486; 2; 0
+insertsort.c; main;  0; ;  9; 10; 0; 7; 486; 488; 2; 0
+insertsort.c; main;  0; ;  9; 10; 0; 7; 488; 490; 2; 0
+insertsort.c; main;  0; ;  9; 10; 0; 7; 490; 492; 2; 0

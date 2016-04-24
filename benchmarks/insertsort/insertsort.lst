@@ -1,0 +1,301 @@
+   1               		.file	"insertsort.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__RAMPZ__ = 0x3b
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.text
+   9               	.Ltext0:
+  10               		.comm	a,22,1
+  11               	.global	main
+  13               	main:
+  14               	.LFB0:
+  15               		.file 1 "insertsort.c"
+   1:insertsort.c  **** /* $Id: insertsort.c,v 1.2 2005/04/04 11:34:58 csg Exp $ */
+   2:insertsort.c  **** 
+   3:insertsort.c  **** /*************************************************************************/
+   4:insertsort.c  **** /*                                                                       */
+   5:insertsort.c  **** /*   SNU-RT Benchmark Suite for Worst Case Timing Analysis               */
+   6:insertsort.c  **** /*   =====================================================               */
+   7:insertsort.c  **** /*                              Collected and Modified by S.-S. Lim      */
+   8:insertsort.c  **** /*                                           sslim@archi.snu.ac.kr       */
+   9:insertsort.c  **** /*                                         Real-Time Research Group      */
+  10:insertsort.c  **** /*                                        Seoul National University      */
+  11:insertsort.c  **** /*                                                                       */
+  12:insertsort.c  **** /*                                                                       */
+  13:insertsort.c  **** /*        < Features > - restrictions for our experimental environment   */
+  14:insertsort.c  **** /*                                                                       */
+  15:insertsort.c  **** /*          1. Completely structured.                                    */
+  16:insertsort.c  **** /*               - There are no unconditional jumps.                     */
+  17:insertsort.c  **** /*               - There are no exit from loop bodies.                   */
+  18:insertsort.c  **** /*                 (There are no 'break' or 'return' in loop bodies)     */
+  19:insertsort.c  **** /*          2. No 'switch' statements.                                   */
+  20:insertsort.c  **** /*          3. No 'do..while' statements.                                */
+  21:insertsort.c  **** /*          4. Expressions are restricted.                               */
+  22:insertsort.c  **** /*               - There are no multiple expressions joined by 'or',     */
+  23:insertsort.c  **** /*                'and' operations.                                      */
+  24:insertsort.c  **** /*          5. No library calls.                                         */
+  25:insertsort.c  **** /*               - All the functions needed are implemented in the       */
+  26:insertsort.c  **** /*                 source file.                                          */
+  27:insertsort.c  **** /*                                                                       */
+  28:insertsort.c  **** /*                                                                       */
+  29:insertsort.c  **** /*************************************************************************/
+  30:insertsort.c  **** /*                                                                       */
+  31:insertsort.c  **** /*  FILE: insertsort.c                                                   */
+  32:insertsort.c  **** /*  SOURCE : Public Domain Code                                          */
+  33:insertsort.c  **** /*                                                                       */
+  34:insertsort.c  **** /*  DESCRIPTION :                                                        */
+  35:insertsort.c  **** /*                                                                       */
+  36:insertsort.c  **** /*     Insertion sort for 10 integer numbers.                            */
+  37:insertsort.c  **** /*     The integer array a[] is initialized in main function.            */
+  38:insertsort.c  **** /*                                                                       */
+  39:insertsort.c  **** /*  REMARK :                                                             */
+  40:insertsort.c  **** /*                                                                       */
+  41:insertsort.c  **** /*  EXECUTION TIME :                                                     */
+  42:insertsort.c  **** /*                                                                       */
+  43:insertsort.c  **** /*                                                                       */
+  44:insertsort.c  **** /*************************************************************************/
+  45:insertsort.c  **** 
+  46:insertsort.c  **** 
+  47:insertsort.c  **** 
+  48:insertsort.c  **** #ifdef DEBUG
+  49:insertsort.c  **** int cnt1, cnt2;
+  50:insertsort.c  **** #endif
+  51:insertsort.c  **** 
+  52:insertsort.c  **** unsigned int a[11];
+  53:insertsort.c  **** 
+  54:insertsort.c  **** int main()
+  55:insertsort.c  **** {
+  16               		.loc 1 55 0
+  17 0000 CF93      		push r28
+  18               	.LCFI0:
+  19 0002 DF93      		push r29
+  20               	.LCFI1:
+  21 0004 00D0      		rcall .
+  22 0006 00D0      		rcall .
+  23 0008 00D0      		rcall .
+  24               	.LCFI2:
+  25 000a CDB7      		in r28,__SP_L__
+  26 000c DEB7      		in r29,__SP_H__
+  27               	.LCFI3:
+  28               	/* prologue: function */
+  29               	/* frame size = 6 */
+  30               	/* stack size = 8 */
+  31               	.L__stack_usage = 8
+  56:insertsort.c  ****   int  i,j, temp;
+  57:insertsort.c  **** 
+  58:insertsort.c  ****   a[0] = 0;   /* assume all data is positive */
+  32               		.loc 1 58 0
+  33 000e 1092 0000 		sts a+1,__zero_reg__
+  34 0012 1092 0000 		sts a,__zero_reg__
+  59:insertsort.c  ****   a[1] = 11; a[2]=10;a[3]=9; a[4]=8; a[5]=7; a[6]=6; a[7]=5;
+  35               		.loc 1 59 0
+  36 0016 8BE0      		ldi r24,lo8(11)
+  37 0018 90E0      		ldi r25,0
+  38 001a 9093 0000 		sts a+2+1,r25
+  39 001e 8093 0000 		sts a+2,r24
+  40 0022 8AE0      		ldi r24,lo8(10)
+  41 0024 90E0      		ldi r25,0
+  42 0026 9093 0000 		sts a+4+1,r25
+  43 002a 8093 0000 		sts a+4,r24
+  44 002e 89E0      		ldi r24,lo8(9)
+  45 0030 90E0      		ldi r25,0
+  46 0032 9093 0000 		sts a+6+1,r25
+  47 0036 8093 0000 		sts a+6,r24
+  48 003a 88E0      		ldi r24,lo8(8)
+  49 003c 90E0      		ldi r25,0
+  50 003e 9093 0000 		sts a+8+1,r25
+  51 0042 8093 0000 		sts a+8,r24
+  52 0046 87E0      		ldi r24,lo8(7)
+  53 0048 90E0      		ldi r25,0
+  54 004a 9093 0000 		sts a+10+1,r25
+  55 004e 8093 0000 		sts a+10,r24
+  56 0052 86E0      		ldi r24,lo8(6)
+  57 0054 90E0      		ldi r25,0
+  58 0056 9093 0000 		sts a+12+1,r25
+  59 005a 8093 0000 		sts a+12,r24
+  60 005e 85E0      		ldi r24,lo8(5)
+  61 0060 90E0      		ldi r25,0
+  62 0062 9093 0000 		sts a+14+1,r25
+  63 0066 8093 0000 		sts a+14,r24
+  60:insertsort.c  ****   a[8] =4; a[9]=3; a[10]=2;
+  64               		.loc 1 60 0
+  65 006a 84E0      		ldi r24,lo8(4)
+  66 006c 90E0      		ldi r25,0
+  67 006e 9093 0000 		sts a+16+1,r25
+  68 0072 8093 0000 		sts a+16,r24
+  69 0076 83E0      		ldi r24,lo8(3)
+  70 0078 90E0      		ldi r25,0
+  71 007a 9093 0000 		sts a+18+1,r25
+  72 007e 8093 0000 		sts a+18,r24
+  73 0082 82E0      		ldi r24,lo8(2)
+  74 0084 90E0      		ldi r25,0
+  75 0086 9093 0000 		sts a+20+1,r25
+  76 008a 8093 0000 		sts a+20,r24
+  61:insertsort.c  ****   i = 2;
+  77               		.loc 1 61 0
+  78 008e 82E0      		ldi r24,lo8(2)
+  79 0090 90E0      		ldi r25,0
+  80 0092 9A83      		std Y+2,r25
+  81 0094 8983      		std Y+1,r24
+  62:insertsort.c  ****   while(i <= 10){
+  82               		.loc 1 62 0
+  83 0096 00C0      		rjmp .L2
+  84               	.L5:
+  63:insertsort.c  **** #ifdef DEBUG
+  64:insertsort.c  ****       cnt1++;
+  65:insertsort.c  **** #endif
+  66:insertsort.c  ****       j = i;
+  85               		.loc 1 66 0
+  86 0098 8981      		ldd r24,Y+1
+  87 009a 9A81      		ldd r25,Y+2
+  88 009c 9C83      		std Y+4,r25
+  89 009e 8B83      		std Y+3,r24
+  67:insertsort.c  **** #ifdef DEBUG
+  68:insertsort.c  **** 	cnt2=0;
+  69:insertsort.c  **** #endif
+  70:insertsort.c  ****       while (a[j] < a[j-1])
+  90               		.loc 1 70 0
+  91 00a0 00C0      		rjmp .L3
+  92               	.L4:
+  71:insertsort.c  ****       {
+  72:insertsort.c  **** #ifdef DEBUG
+  73:insertsort.c  **** 	cnt2++;
+  74:insertsort.c  **** #endif
+  75:insertsort.c  **** 	temp = a[j];
+  93               		.loc 1 75 0
+  94 00a2 8B81      		ldd r24,Y+3
+  95 00a4 9C81      		ldd r25,Y+4
+  96 00a6 880F      		lsl r24
+  97 00a8 991F      		rol r25
+  98 00aa 8050      		subi r24,lo8(-(a))
+  99 00ac 9040      		sbci r25,hi8(-(a))
+ 100 00ae FC01      		movw r30,r24
+ 101 00b0 8081      		ld r24,Z
+ 102 00b2 9181      		ldd r25,Z+1
+ 103 00b4 9E83      		std Y+6,r25
+ 104 00b6 8D83      		std Y+5,r24
+  76:insertsort.c  **** 	a[j] = a[j-1];
+ 105               		.loc 1 76 0
+ 106 00b8 8B81      		ldd r24,Y+3
+ 107 00ba 9C81      		ldd r25,Y+4
+ 108 00bc 0197      		sbiw r24,1
+ 109 00be 880F      		lsl r24
+ 110 00c0 991F      		rol r25
+ 111 00c2 8050      		subi r24,lo8(-(a))
+ 112 00c4 9040      		sbci r25,hi8(-(a))
+ 113 00c6 FC01      		movw r30,r24
+ 114 00c8 2081      		ld r18,Z
+ 115 00ca 3181      		ldd r19,Z+1
+ 116 00cc 8B81      		ldd r24,Y+3
+ 117 00ce 9C81      		ldd r25,Y+4
+ 118 00d0 880F      		lsl r24
+ 119 00d2 991F      		rol r25
+ 120 00d4 8050      		subi r24,lo8(-(a))
+ 121 00d6 9040      		sbci r25,hi8(-(a))
+ 122 00d8 FC01      		movw r30,r24
+ 123 00da 3183      		std Z+1,r19
+ 124 00dc 2083      		st Z,r18
+  77:insertsort.c  **** 	a[j-1] = temp;
+ 125               		.loc 1 77 0
+ 126 00de 8B81      		ldd r24,Y+3
+ 127 00e0 9C81      		ldd r25,Y+4
+ 128 00e2 0197      		sbiw r24,1
+ 129 00e4 2D81      		ldd r18,Y+5
+ 130 00e6 3E81      		ldd r19,Y+6
+ 131 00e8 880F      		lsl r24
+ 132 00ea 991F      		rol r25
+ 133 00ec 8050      		subi r24,lo8(-(a))
+ 134 00ee 9040      		sbci r25,hi8(-(a))
+ 135 00f0 FC01      		movw r30,r24
+ 136 00f2 3183      		std Z+1,r19
+ 137 00f4 2083      		st Z,r18
+  78:insertsort.c  **** 	j--;
+ 138               		.loc 1 78 0
+ 139 00f6 8B81      		ldd r24,Y+3
+ 140 00f8 9C81      		ldd r25,Y+4
+ 141 00fa 0197      		sbiw r24,1
+ 142 00fc 9C83      		std Y+4,r25
+ 143 00fe 8B83      		std Y+3,r24
+ 144               	.L3:
+  70:insertsort.c  ****       while (a[j] < a[j-1])
+ 145               		.loc 1 70 0 discriminator 1
+ 146 0100 8B81      		ldd r24,Y+3
+ 147 0102 9C81      		ldd r25,Y+4
+ 148 0104 880F      		lsl r24
+ 149 0106 991F      		rol r25
+ 150 0108 8050      		subi r24,lo8(-(a))
+ 151 010a 9040      		sbci r25,hi8(-(a))
+ 152 010c FC01      		movw r30,r24
+ 153 010e 2081      		ld r18,Z
+ 154 0110 3181      		ldd r19,Z+1
+ 155 0112 8B81      		ldd r24,Y+3
+ 156 0114 9C81      		ldd r25,Y+4
+ 157 0116 0197      		sbiw r24,1
+ 158 0118 880F      		lsl r24
+ 159 011a 991F      		rol r25
+ 160 011c 8050      		subi r24,lo8(-(a))
+ 161 011e 9040      		sbci r25,hi8(-(a))
+ 162 0120 FC01      		movw r30,r24
+ 163 0122 8081      		ld r24,Z
+ 164 0124 9181      		ldd r25,Z+1
+ 165 0126 2817      		cp r18,r24
+ 166 0128 3907      		cpc r19,r25
+ 167 012a 00F4      		brsh .+2
+ 168 012c 00C0      		rjmp .L4
+  79:insertsort.c  ****       }
+  80:insertsort.c  **** #ifdef DEBUG
+  81:insertsort.c  **** 	printf("Inner Loop Counts: %d\n", cnt2);
+  82:insertsort.c  **** #endif
+  83:insertsort.c  ****       i++;
+ 169               		.loc 1 83 0
+ 170 012e 8981      		ldd r24,Y+1
+ 171 0130 9A81      		ldd r25,Y+2
+ 172 0132 0196      		adiw r24,1
+ 173 0134 9A83      		std Y+2,r25
+ 174 0136 8983      		std Y+1,r24
+ 175               	.L2:
+  62:insertsort.c  ****   while(i <= 10){
+ 176               		.loc 1 62 0 discriminator 1
+ 177 0138 8981      		ldd r24,Y+1
+ 178 013a 9A81      		ldd r25,Y+2
+ 179 013c 8B30      		cpi r24,11
+ 180 013e 9105      		cpc r25,__zero_reg__
+ 181 0140 04F4      		brge .+2
+ 182 0142 00C0      		rjmp .L5
+  84:insertsort.c  ****     }
+  85:insertsort.c  **** #ifdef DEBUG
+  86:insertsort.c  ****     printf("Outer Loop : %d ,  Inner Loop : %d\n", cnt1, cnt2);
+  87:insertsort.c  **** #endif
+  88:insertsort.c  ****     return 1;
+ 183               		.loc 1 88 0
+ 184 0144 81E0      		ldi r24,lo8(1)
+ 185 0146 90E0      		ldi r25,0
+ 186               	/* epilogue start */
+  89:insertsort.c  **** }
+ 187               		.loc 1 89 0
+ 188 0148 2696      		adiw r28,6
+ 189 014a 0FB6      		in __tmp_reg__,__SREG__
+ 190 014c F894      		cli
+ 191 014e DEBF      		out __SP_H__,r29
+ 192 0150 0FBE      		out __SREG__,__tmp_reg__
+ 193 0152 CDBF      		out __SP_L__,r28
+ 194 0154 DF91      		pop r29
+ 195 0156 CF91      		pop r28
+ 196 0158 0895      		ret
+ 197               	.LFE0:
+ 245               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 insertsort.c
+     /tmp/cc3HGGfm.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cc3HGGfm.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cc3HGGfm.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cc3HGGfm.s:5      *ABS*:000000000000003b __RAMPZ__
+     /tmp/cc3HGGfm.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cc3HGGfm.s:7      *ABS*:0000000000000001 __zero_reg__
+                            *COM*:0000000000000016 a
+     /tmp/cc3HGGfm.s:13     .text:0000000000000000 main
+
+UNDEFINED SYMBOLS
+__do_clear_bss

@@ -1,0 +1,16 @@
+#step.add.hex    step.name
+1D2	#BB1-stack
+2EC	#BB2-outerfor
+2F6	#BB3-outerfor
+2F8	#BB4-outerfor
+2CA	#BB5-innerfor-cond
+2FC	#BB6-return
+2D4	#BB7-innerfor-body
+2D6	#BB8-innerfor-init
+220	#BB9-if-index-check
+222	#BB10-if-array-check
+2DA	#BB11-if-sorted-check
+256	#BB12-swap
+2C0	#BB13-innerfor-post
+2E2	#BB14-outerfor-post
+2FA	#BB15-if-sorted-break

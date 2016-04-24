@@ -1,0 +1,63 @@
+creating lookup...
+getting timing...
+ERROR translating address 246 to opcode. Skipped.
+ERROR translating address 606 to opcode. Skipped.
+ERROR translating address 1046 to opcode. Skipped.
+ERROR translating address 736 to opcode. Skipped.
+ERROR translating address 1144 to opcode. Skipped.
+ERROR translating address 1658 to opcode. Skipped.
+ERROR translating address 1892 to opcode. Skipped.
+ERROR translating address 1932 to opcode. Skipped.
+ERROR translating address 1796 to opcode. Skipped.
+ERROR translating address 1954 to opcode. Skipped.
+ERROR translating address 2154 to opcode. Skipped.
+ERROR translating address 2174 to opcode. Skipped.
+ERROR translating address 2204 to opcode. Skipped.
+ERROR translating address 3236 to opcode. Skipped.
+ERROR translating address 3264 to opcode. Skipped.
+ERROR translating address 3300 to opcode. Skipped.
+ERROR translating address 4142 to opcode. Skipped.
+ERROR translating address 4174 to opcode. Skipped.
+ERROR translating address 4842 to opcode. Skipped.
+ERROR translating address 4874 to opcode. Skipped.
+Comparing against specification of 116 opcodes
+and; 24;1-1;1-1;0-0;valid
+ldd; 534;2-2;2-2;0-0;valid
+ldi; 116;1-1;1-1;0-0;valid
+pop; 44;2-2;2-2;0-0;valid
+lds; 78;2-2;2-2;0-0;valid
+lsr; 8;1-1;1-1;0-0;valid
+in; 16;1-1;1-1;0-0;valid
+movw; 154;1-1;1-1;0-0;valid
+ror; 29;1-1;1-1;0-0;valid
+sbci; 35;1-1;1-1;0-0;valid
+subi; 36;1-1;1-1;0-0;valid
+ld; 40;2-2;2-2;0-0;valid
+cp; 8;1-1;1-1;0-0;valid
+andi; 12;1-1;1-1;0-0;valid
+sub; 2;1-1;1-1;0-0;valid
+add; 75;1-1;1-1;0-0;valid
+call; 11;6-6;4-4;2-2;total too high (spec: <=4)
+adc; 122;1-1;1-1;0-0;valid
+bld; 8;1-1;1-1;0-0;valid
+out; 24;1-1;1-1;0-0;valid
+rjmp; 34;2-2;1-1;1-1;valid
+brlt; 3;1-2;1-1;0-1;valid
+asr; 11;1-1;1-1;0-0;valid
+adiw; 24;2-2;2-2;0-0;valid
+mov; 46;1-1;1-1;0-0;valid
+sbc; 3;1-1;1-1;0-0;valid
+brne; 11;1-2;1-1;0-1;valid
+mul; 2;2-2;2-2;0-0;valid
+std; 342;2-2;2-2;0-0;valid
+cpi; 10;1-1;1-1;0-0;valid
+dec; 6;1-1;1-1;0-0;valid
+cpc; 30;1-1;1-1;0-0;valid
+st; 18;2-2;2-2;0-0;valid
+brge; 10;1-2;1-1;0-1;valid
+eor; 45;1-1;1-1;0-0;valid
+sts; 46;2-2;2-2;0-0;valid
+push; 44;2-2;2-2;0-0;valid
+sbiw; 37;2-2;2-2;0-0;valid
+or; 72;1-1;1-1;0-0;valid
+breq; 10;1-2;1-1;0-1;valid

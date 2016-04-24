@@ -1,0 +1,983 @@
+Note:::::Martin Becker: Writing source-level information to sourceinfo.csv
+Note:main.elf::::Bound-T 4c5 for Atmel-AVR
+Note:main.elf::::This AVR device has a 16-bit SP = SPH:SPL.
+Note:main.elf::::File format assumed to be ELF
+Note:main.elf::::Segment 3 not loaded:Zero length in file
+Note:main.elf::::Loading DWARF info section.
+Note:main.elf::::DWARF debug info ends without null entry.
+Note:main.elf::::Loading DWARF types for compilation unit 1
+Note:main.elf::::Parsing DWARF symbols.
+Note:main.elf::::Entering DWARF compilation unit for ndes-indent.c
+Note:main.elf::::DWARF node visit aborted; missing attribute.
+Note:main.elf::::DWARF node visit aborted; missing attribute.
+Note:main.elf::::Program implies calling protocol GCC.
+Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
+Note:main.elf:loopinfo-indent.txt:::Routine at 0000CE classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:loopinfo-indent.txt:::Routine at 000880 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:loopinfo-indent.txt:::Routine at 000CC2 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:ndes-indent.c:des:44:Root subprogram
+Note:main.elf::::Unused (# 1 = des at 0000CE) is FALSE
+Note:main.elf::::Dynamism bounding iteration number 1
+Note:main.elf:ndes-indent.c:des:44:Unused (# 1 = des at 0000CE) is FALSE
+Note:main.elf:ndes-indent.c:des:44:Analysis for time is needed.
+Note:main.elf:ndes-indent.c:des:44:Control-flow analysis starts.
+Warning:main.elf:ndes-indent.c:des:73-:Large combined 16-bit literal 64072 taken as signed = -1464
+Warning:main.elf:ndes-indent.c:des:80-:Large combined 16-bit literal 65280 taken as signed = -256
+Note:main.elf:ndes-indent.c:des:80-:Routine at 00078E classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:ndes-indent.c:des:80-:Using symbol for subprogram at address 00078E:ndes-indent.c|getbit
+Note:main.elf:ndes-indent.c:des:80-:Other symbol for subprogram at address 00078E:|getbit
+Note:main.elf:ndes-indent.c:des:80-:Call to new subprogram # 4 = ndes-indent.c|getbit at 00078E
+Note:main.elf:ndes-indent.c:des:80-:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Warning:main.elf:ndes-indent.c:des:81-:Large combined 16-bit literal 65280 taken as signed = -256
+Note:main.elf:ndes-indent.c:des:81-:Call to existing subprogram # 4 = ndes-indent.c|getbit at 00078E
+Note:main.elf:ndes-indent.c:des:81-:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Warning:main.elf:ndes-indent.c:des:85-:Large combined 16-bit literal 64276 taken as signed = -1260
+Warning:main.elf:ndes-indent.c:des:86-:Large combined 16-bit literal 65511 taken as signed = -25
+Note:main.elf:ndes-indent.c:des:86-:Call to existing subprogram # 2 = ks at 000880
+Note:main.elf:ndes-indent.c:des:86-:Unused (# 2 = ks at 000880) is FALSE
+Warning:main.elf:ndes-indent.c:des:87-:Large combined 16-bit literal 64276 taken as signed = -1260
+Warning:main.elf:ndes-indent.c:des:92-:Large combined 16-bit literal 64414 taken as signed = -1122
+Note:main.elf:ndes-indent.c:des:92-:Call to existing subprogram # 4 = ndes-indent.c|getbit at 00078E
+Note:main.elf:ndes-indent.c:des:92-:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Warning:main.elf:ndes-indent.c:des:93-:Large combined 16-bit literal 64414 taken as signed = -1122
+Note:main.elf:ndes-indent.c:des:93-:Call to existing subprogram # 4 = ndes-indent.c|getbit at 00078E
+Note:main.elf:ndes-indent.c:des:93-:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Warning:main.elf:ndes-indent.c:des:100-:Large combined 16-bit literal 65523 taken as signed = -13
+Warning:main.elf:ndes-indent.c:des:100-:Large combined 16-bit literal 64276 taken as signed = -1260
+Note:main.elf:ndes-indent.c:des:100-:Call to existing subprogram # 3 = cyfun at 000CC2
+Note:main.elf:ndes-indent.c:des:100-:Unused (# 3 = cyfun at 000CC2) is FALSE
+Warning:main.elf:ndes-indent.c:des:110-:Large combined 16-bit literal 64349 taken as signed = -1187
+Note:main.elf:ndes-indent.c:des:110-:Call to existing subprogram # 4 = ndes-indent.c|getbit at 00078E
+Note:main.elf:ndes-indent.c:des:110-:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Warning:main.elf:ndes-indent.c:des:111-:Large combined 16-bit literal 64349 taken as signed = -1187
+Note:main.elf:ndes-indent.c:des:111-:Call to existing subprogram # 4 = ndes-indent.c|getbit at 00078E
+Note:main.elf:ndes-indent.c:des:111-:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44:Control-flow analysis finished.
+Note:main.elf:ndes-indent.c:des:44:Dominator iterations 2 for 46 graph nodes.
+Note:main.elf:ndes-indent.c:des:44:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:ndes-indent.c:getbit:115:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:getbit:115:Analysis for time is needed.
+Note:main.elf:ndes-indent.c:getbit:115:Control-flow analysis starts.
+Warning:main.elf:ndes-indent.c:getbit:121-:Large combined 16-bit literal 64072 taken as signed = -1464
+Warning:main.elf:ndes-indent.c:getbit:129-:Large combined 16-bit literal 64072 taken as signed = -1464
+Note:main.elf:ndes-indent.c:getbit:115:Control-flow analysis finished.
+Note:main.elf:ndes-indent.c:getbit:115:Dominator iterations 1 for 9 graph nodes.
+Note:main.elf:ndes-indent.c:getbit:115:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:ndes-indent.c:ks:140:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:ks:140:Analysis for time is needed.
+Note:main.elf:ndes-indent.c:ks:140:Control-flow analysis starts.
+Warning:main.elf:ndes-indent.c:ks:155-:Large combined 16-bit literal 65223 taken as signed = -313
+Note:main.elf:ndes-indent.c:ks:155-:Call to existing subprogram # 4 = ndes-indent.c|getbit at 00078E
+Note:main.elf:ndes-indent.c:ks:155-:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Warning:main.elf:ndes-indent.c:ks:157-:Large combined 16-bit literal 65223 taken as signed = -313
+Note:main.elf:ndes-indent.c:ks:157-:Call to existing subprogram # 4 = ndes-indent.c|getbit at 00078E
+Note:main.elf:ndes-indent.c:ks:157-:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Warning:main.elf:ndes-indent.c:ks:159-:Large combined 16-bit literal 65223 taken as signed = -313
+Note:main.elf:ndes-indent.c:ks:159-:Call to existing subprogram # 4 = ndes-indent.c|getbit at 00078E
+Note:main.elf:ndes-indent.c:ks:159-:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140:Control-flow analysis finished.
+Note:main.elf:ndes-indent.c:ks:140:Dominator iterations 1 for 26 graph nodes.
+Note:main.elf:ndes-indent.c:ks:140:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:ndes-indent.c:cyfun:163:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:cyfun:163:Analysis for time is needed.
+Note:main.elf:ndes-indent.c:cyfun:163:Control-flow analysis starts.
+Warning:main.elf:ndes-indent.c:cyfun:163-:Large combined 16-bit literal 65472 taken as signed = -64
+Warning:main.elf:ndes-indent.c:cyfun:163-:Large combined 16-bit literal 65471 taken as signed = -65
+Warning:main.elf:ndes-indent.c:cyfun:163-:Large combined 16-bit literal 65470 taken as signed = -66
+Warning:main.elf:ndes-indent.c:cyfun:214-:Large combined 16-bit literal 65172 taken as signed = -364
+Warning:main.elf:ndes-indent.c:cyfun:217-:Large combined 16-bit literal 65172 taken as signed = -364
+Warning:main.elf:ndes-indent.c:cyfun:220-:Large combined 16-bit literal 65172 taken as signed = -364
+Warning:main.elf:ndes-indent.c:cyfun:230-:Large combined 16-bit literal 65495 taken as signed = -41
+Warning:main.elf:ndes-indent.c:cyfun:231-:Large combined 16-bit literal 65495 taken as signed = -41
+Warning:main.elf:ndes-indent.c:cyfun:237-:Large combined 16-bit literal 65495 taken as signed = -41
+Warning:main.elf:ndes-indent.c:cyfun:241-:Large combined 16-bit literal 65074 taken as signed = -462
+Warning:main.elf:ndes-indent.c:cyfun:242-:Large combined 16-bit literal 64498 taken as signed = -1038
+Warning:main.elf:ndes-indent.c:cyfun:244-:Large combined 16-bit literal 65470 taken as signed = -66
+Warning:main.elf:ndes-indent.c:cyfun:247-:Large combined 16-bit literal 65470 taken as signed = -66
+Warning:main.elf:ndes-indent.c:cyfun:247-:Large combined 16-bit literal 65470 taken as signed = -66
+Warning:main.elf:ndes-indent.c:cyfun:247-:Large combined 16-bit literal 65470 taken as signed = -66
+Warning:main.elf:ndes-indent.c:cyfun:247-:Large combined 16-bit literal 64482 taken as signed = -1054
+Warning:main.elf:ndes-indent.c:cyfun:247-:Large combined 16-bit literal 65470 taken as signed = -66
+Warning:main.elf:ndes-indent.c:cyfun:250:Large combined 16-bit literal 65469 taken as signed = -67
+Note:main.elf:ndes-indent.c:cyfun:163:Control-flow analysis finished.
+Note:main.elf:ndes-indent.c:cyfun:163:Dominator iterations 1 for 29 graph nodes.
+Note:main.elf:ndes-indent.c:cyfun:163:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:ndes-indent.c:getbit:115-138:No execution bounds known yet.
+Note:main.elf:ndes-indent.c:getbit:115-138:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:getbit:115-138:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:getbit:115-138:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:getbit:115:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-138:Repeating constant propagation.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:119:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:119:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:119:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:119-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:119-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:119-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:121:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:121:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:121:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:121-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:121-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:121-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:121-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:121-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:121-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:129:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:129:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:129:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:129-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:129-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:129-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:129-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:129-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:129-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:129-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:129-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:129-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:getbit:115-138:Repeating constant propagation.
+Note:main.elf:ndes-indent.c:getbit:115-138:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf:ndes-indent.c:getbit:115-138:Final stack-height from constant propagation for SP:sh
+Note:main.elf:ndes-indent.c:getbit:115-138:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf:ndes-indent.c:getbit:115-138:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf:ndes-indent.c:getbit:115-138:Constant propagation changed nothing.
+Note:main.elf:ndes-indent.c:getbit:115-138:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:getbit:115-138:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:getbit:115-138:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:getbit:115-138:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:getbit:115-138:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:getbit:115-138:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:getbit:115-138:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:getbit:115-138:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:getbit:115-138:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:getbit:115-138:Arithmetic analysis is not needed.
+Note:main.elf:ndes-indent.c:getbit:115-138:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:getbit:115-138:Time_State for bounds # 1 defined as COMPUTABLE
+Note:main.elf:ndes-indent.c:getbit:115-138:Freezing bounds # 1
+Note:main.elf:ndes-indent.c:cyfun:163-250:No execution bounds known yet.
+Note:main.elf:ndes-indent.c:cyfun:163-250:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:cyfun:163-250:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:cyfun:163-250:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:cyfun:163:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:cyfun:163-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:cyfun:163-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:cyfun:163-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:cyfun:163-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:cyfun:163-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:cyfun:163-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:cyfun:163-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:cyfun:163-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:cyfun:163-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:cyfun:163-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:cyfun:163-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:cyfun:163-250:Repeating constant propagation.
+Note:main.elf:ndes-indent.c:cyfun:163-250:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf:ndes-indent.c:cyfun:163-250:Final stack-height from constant propagation for SP:sh
+Note:main.elf:ndes-indent.c:cyfun:163-250:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf:ndes-indent.c:cyfun:163-250:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf:ndes-indent.c:cyfun:163-250:Constant propagation changed nothing.
+Note:main.elf:ndes-indent.c:cyfun:163-250:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:cyfun:163-250:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:cyfun:163-250:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:cyfun:163-250:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:cyfun:232-:Loop 1 exits only at its end.
+Note:main.elf:ndes-indent.c:cyfun:233-:Loop 2 exits only at its end.
+Note:main.elf:ndes-indent.c:cyfun:163-250:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:cyfun:163-250:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:cyfun:163-250:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:cyfun:163-250:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:cyfun:163-250:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:cyfun:163-250:Arithmetic analysis is not needed.
+Note:main.elf:ndes-indent.c:cyfun:163-250:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:cyfun:163-250:Time_State for bounds # 2 defined as COMPUTABLE
+Note:main.elf:ndes-indent.c:cyfun:163-250:Freezing bounds # 2
+Note:main.elf:ndes-indent.c:ks:140-161:No execution bounds known yet.
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Warning:main.elf:ndes-indent.c:ks@155-=>getbit:155-:Final effect on stack SP not exactly known:sh
+Warning:main.elf:ndes-indent.c:ks@157-=>getbit:157-:Final effect on stack SP not exactly known:sh
+Warning:main.elf:ndes-indent.c:ks@159-=>getbit:159-:Final effect on stack SP not exactly known:sh
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:ks:140:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-161:Repeating constant propagation.
+Note:main.elf:ndes-indent.c:ks:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:143:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:143:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:143:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:143:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:143:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:143:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:143-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:143-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:143-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:143-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:143-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:143-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:148:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:148:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:148:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:148:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:148:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:148:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:152:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:152:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:152:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:154:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:154:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:154:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:154-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:154-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:154-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:154-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:154-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:154-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:155:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:155:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:155:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:154-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:154-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:154-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:156:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:156:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:156:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:157:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:157:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:157:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:158:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:158:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:158:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:158-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:158-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:158-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:158-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:158-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:158-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:159:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:159:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:159:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:158-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:158-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:158-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:153-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:ks:140-161:Repeating constant propagation.
+Note:main.elf:ndes-indent.c:ks:140-161:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf:ndes-indent.c:ks:140-161:Final stack-height from constant propagation for SP:sh
+Note:main.elf:ndes-indent.c:ks:140-161:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf:ndes-indent.c:ks:140-161:Take-off stack-height in stack SP is constant for 0 of 3 calls.
+Note:main.elf:ndes-indent.c:ks:140-161:Constant propagation changed nothing.
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 2 = ks at 000880) is FALSE
+Loop_Bound:main.elf:ndes-indent.c:ks:144-:27
+Loop_Bound:main.elf:ndes-indent.c:ks:145-:27
+Loop_Bound:main.elf:ndes-indent.c:ks:149-:27
+Loop_Bound:main.elf:ndes-indent.c:ks:150-:27
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:ks:140-161:Time_State for bounds # 3 defined as COMPUTABLE
+Note:main.elf:ndes-indent.c:ks:140-161:Freezing bounds # 3
+Note:main.elf:ndes-indent.c:des:44-113:No execution bounds known yet.
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Warning:main.elf:ndes-indent.c:des@80-=>getbit:80-:Final effect on stack SP not exactly known:sh
+Warning:main.elf:ndes-indent.c:des@81-=>getbit:81-:Final effect on stack SP not exactly known:sh
+Warning:main.elf:ndes-indent.c:des@86-=>ks:86-:Final effect on stack SP not exactly known:sh
+Warning:main.elf:ndes-indent.c:des@92-=>getbit:92-:Final effect on stack SP not exactly known:sh
+Warning:main.elf:ndes-indent.c:des@93-=>getbit:93-:Final effect on stack SP not exactly known:sh
+Warning:main.elf:ndes-indent.c:des@100-=>cyfun:100-:Final effect on stack SP not exactly known:sh
+Warning:main.elf:ndes-indent.c:des@110-=>getbit:110-:Final effect on stack SP not exactly known:sh
+Warning:main.elf:ndes-indent.c:des@111-=>getbit:111-:Final effect on stack SP not exactly known:sh
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 1 = des at 0000CE) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 1 = des at 0000CE) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 1 = des at 0000CE) is FALSE
+Note:main.elf:ndes-indent.c:des:44:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-113:Repeating constant propagation.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:71-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:71-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:71-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:71-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:71-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:71-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:71-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:71-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:71-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:71-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:71-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:71-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:72-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:72-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:72-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:72:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:72:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:72:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:73-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:72:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:72:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:72:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:72-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:72-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:72-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:76:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:76:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:76:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:77:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:77:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:77:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:80-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:80-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:80-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:80-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:80-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:80-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:80-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:80-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:80-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:80-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:80-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:80-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:80-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:80-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:80-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:84-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:84-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:84-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:84:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:84:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:84:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:85:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:85:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:85:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:86-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:86-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:86-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:87:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:87:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:87:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:84:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:84:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:84:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:84-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:84-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:84-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:90-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:92-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:93-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:91-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:95-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:95-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:95-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:95:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:95:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:95:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:98-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:98-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:98-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:98-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:98-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:98-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:98:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:98:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:98:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:96:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:96:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:96:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:100:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:100:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:100:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:101-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:102:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:102:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:102:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:102-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:102-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:102-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:102-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:102-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:102-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:102-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:102-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:102-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:103:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:103:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:103:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:103-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:103-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:103-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:103-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:103-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:103-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:103-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:103-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:103-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:95:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:95:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:95:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:95-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:95-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:95-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:105:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:105:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:105:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:105-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:105-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:105-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:105-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:105-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:105-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:105-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:105-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:105-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:106:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:106:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:106:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:106-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:106-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:106-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:106-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:106-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:106-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:106-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:106-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:106-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:107:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:107:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:107:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:107-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:107-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:107-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:107-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:107-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:107-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:107-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:107-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:107-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:108-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:108-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:108-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:108-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:108-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:108-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:108-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:108-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:108-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:111-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:109-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ndes-indent.c:des:44-113:Repeating constant propagation.
+Note:main.elf:ndes-indent.c:des:44-113:Repeating constant propagation.
+Note:main.elf:ndes-indent.c:des:44-113:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf:ndes-indent.c:des:44-113:Final stack-height from constant propagation for SP:sh
+Note:main.elf:ndes-indent.c:des:44-113:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf:ndes-indent.c:des:44-113:Take-off stack-height in stack SP is constant for 0 of 8 calls.
+Note:main.elf:ndes-indent.c:des:44-113:Constant propagation changed nothing.
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 1 = des at 0000CE) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 1 = des at 0000CE) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 1 = des at 0000CE) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 1 = des at 0000CE) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 1 = des at 0000CE) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 1 = des at 0000CE) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 1 = des at 0000CE) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 1 = des at 0000CE) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 1 = des at 0000CE) is FALSE
+Loop_Bound:main.elf:ndes-indent.c:des:85-:11
+Loop_Bound:main.elf:ndes-indent.c:des:87-:11
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 2 = ks at 000880) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 3 = cyfun at 000CC2) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 4 = ndes-indent.c|getbit at 00078E) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 1 = des at 0000CE) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Unused (# 1 = des at 0000CE) is FALSE
+Note:main.elf:ndes-indent.c:des:44-113:Time_State for bounds # 4 defined as COMPUTABLE
+Note:main.elf:ndes-indent.c:des:44-113:Freezing bounds # 4
+Note:main.elf::::Target-specific additional analysis starts.
+Note:main.elf::::Generic worst-case path and time analysis starts.
+Wcet:main.elf:ndes-indent.c:getbit:115-138:132
+Wcet:main.elf:ndes-indent.c:ks:140-161:13133
+Wcet:main.elf:ndes-indent.c:cyfun:163-250:12954
+Wcet:main.elf:ndes-indent.c:des:44-113:470499
+Note:main.elf::::Creating SLI file sourceinfo.csv.

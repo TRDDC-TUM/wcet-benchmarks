@@ -1,0 +1,32 @@
+creating lookup...
+getting timing...
+ERROR translating address 218 to opcode. Skipped.
+ERROR translating address 3070 to opcode. Skipped.
+ERROR translating address 3082 to opcode. Skipped.
+Comparing against specification of 116 opcodes
+ldd; 444;2-2;2-2;0-0;valid
+ldi; 54;1-1;1-1;0-0;valid
+pop; 2;2-2;2-2;0-0;valid
+in; 4;1-1;1-1;0-0;valid
+movw; 124;1-1;1-1;0-0;valid
+ror; 10;1-1;1-1;0-0;valid
+out; 6;1-1;1-1;0-0;valid
+ld; 32;2-2;2-2;0-0;valid
+sub; 17;1-1;1-1;0-0;valid
+add; 194;1-1;1-1;0-0;valid
+adc; 140;1-1;1-1;0-0;valid
+mul; 72;2-2;2-2;0-0;valid
+rjmp; 4;2-2;1-1;1-1;valid
+asr; 10;1-1;1-1;0-0;valid
+adiw; 25;2-2;2-2;0-0;valid
+mov; 12;1-1;1-1;0-0;valid
+sbc; 29;1-1;1-1;0-0;valid
+muls; 6;2-2;2-2;0-0;valid
+std; 196;2-2;2-2;0-0;valid
+cpi; 2;1-1;1-1;0-0;valid
+cpc; 2;1-1;1-1;0-0;valid
+st; 16;2-2;2-2;0-0;valid
+brge; 2;1-2;1-1;0-1;valid
+eor; 30;1-1;1-1;0-0;valid
+push; 2;2-2;2-2;0-0;valid
+sbiw; 1;2-2;2-2;0-0;valid

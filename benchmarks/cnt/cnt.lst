@@ -1,0 +1,689 @@
+   1               		.file	"cnt.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__RAMPZ__ = 0x3b
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.text
+   9               	.Ltext0:
+  10               		.comm	Seed,2,1
+  11               		.comm	Array,200,1
+  12               		.comm	Postotal,2,1
+  13               		.comm	Negtotal,2,1
+  14               		.comm	Poscnt,2,1
+  15               		.comm	Negcnt,2,1
+  16               	.global	main
+  18               	main:
+  19               	.LFB0:
+  20               		.file 1 "cnt.c"
+   1:cnt.c         **** /* $Id: cnt.c,v 1.3 2005/04/04 11:34:58 csg Exp $ */
+   2:cnt.c         **** 
+   3:cnt.c         **** /* sumcntmatrix.c */
+   4:cnt.c         **** 
+   5:cnt.c         **** //#include <sys/types.h>
+   6:cnt.c         **** //#include <sys/times.h>
+   7:cnt.c         **** 
+   8:cnt.c         **** // #define WORSTCASE 1
+   9:cnt.c         **** // #define MAXSIZE 100 Changed JG/Ebbe
+  10:cnt.c         **** #define MAXSIZE 10
+  11:cnt.c         **** 
+  12:cnt.c         **** // Typedefs
+  13:cnt.c         **** typedef int matrix [MAXSIZE][MAXSIZE];
+  14:cnt.c         **** 
+  15:cnt.c         **** // Forwards declarations
+  16:cnt.c         **** int main(void);
+  17:cnt.c         **** int Test(matrix);
+  18:cnt.c         **** int Initialize(matrix);
+  19:cnt.c         **** int InitSeed(void);
+  20:cnt.c         **** void Sum(matrix);
+  21:cnt.c         **** int RandomInteger(void);
+  22:cnt.c         **** 
+  23:cnt.c         **** // Globals
+  24:cnt.c         **** int Seed;
+  25:cnt.c         **** matrix Array;
+  26:cnt.c         **** int Postotal, Negtotal, Poscnt, Negcnt;
+  27:cnt.c         **** 
+  28:cnt.c         **** // The main function
+  29:cnt.c         **** int main (void)
+  30:cnt.c         **** {
+  21               		.loc 1 30 0
+  22 0000 CF93      		push r28
+  23               	.LCFI0:
+  24 0002 DF93      		push r29
+  25               	.LCFI1:
+  26 0004 CDB7      		in r28,__SP_L__
+  27 0006 DEB7      		in r29,__SP_H__
+  28               	.LCFI2:
+  29               	/* prologue: function */
+  30               	/* frame size = 0 */
+  31               	/* stack size = 2 */
+  32               	.L__stack_usage = 2
+  31:cnt.c         ****    InitSeed();
+  33               		.loc 1 31 0
+  34 0008 0E94 0000 		call InitSeed
+  32:cnt.c         ****    //printf("\n   *** MATRIX SUM AND COUNT BENCHMARK TEST ***\n\n");
+  33:cnt.c         ****    //printf("RESULTS OF THE TEST:\n");
+  34:cnt.c         ****    Test(Array);
+  35               		.loc 1 34 0
+  36 000c 80E0      		ldi r24,lo8(Array)
+  37 000e 90E0      		ldi r25,hi8(Array)
+  38 0010 0E94 0000 		call Test
+  35:cnt.c         ****    return 1;
+  39               		.loc 1 35 0
+  40 0014 81E0      		ldi r24,lo8(1)
+  41 0016 90E0      		ldi r25,0
+  42               	/* epilogue start */
+  36:cnt.c         **** }
+  43               		.loc 1 36 0
+  44 0018 DF91      		pop r29
+  45 001a CF91      		pop r28
+  46 001c 0895      		ret
+  47               	.LFE0:
+  49               	.global	__floatsisf
+  50               	.global	__divsf3
+  51               	.global	Test
+  53               	Test:
+  54               	.LFB1:
+  37:cnt.c         **** 
+  38:cnt.c         **** 
+  39:cnt.c         **** int Test(matrix Array)
+  40:cnt.c         **** {
+  55               		.loc 1 40 0
+  56 001e EF92      		push r14
+  57               	.LCFI3:
+  58 0020 FF92      		push r15
+  59               	.LCFI4:
+  60 0022 0F93      		push r16
+  61               	.LCFI5:
+  62 0024 1F93      		push r17
+  63               	.LCFI6:
+  64 0026 CF93      		push r28
+  65               	.LCFI7:
+  66 0028 DF93      		push r29
+  67               	.LCFI8:
+  68 002a CDB7      		in r28,__SP_L__
+  69 002c DEB7      		in r29,__SP_H__
+  70               	.LCFI9:
+  71 002e 2E97      		sbiw r28,14
+  72               	.LCFI10:
+  73 0030 0FB6      		in __tmp_reg__,__SREG__
+  74 0032 F894      		cli
+  75 0034 DEBF      		out __SP_H__,r29
+  76 0036 0FBE      		out __SREG__,__tmp_reg__
+  77 0038 CDBF      		out __SP_L__,r28
+  78               	/* prologue: function */
+  79               	/* frame size = 14 */
+  80               	/* stack size = 20 */
+  81               	.L__stack_usage = 20
+  82 003a 9E87      		std Y+14,r25
+  83 003c 8D87      		std Y+13,r24
+  41:cnt.c         ****    long StartTime, StopTime;
+  42:cnt.c         ****    float TotalTime;
+  43:cnt.c         **** 
+  44:cnt.c         ****    Initialize(Array);
+  84               		.loc 1 44 0
+  85 003e 8D85      		ldd r24,Y+13
+  86 0040 9E85      		ldd r25,Y+14
+  87 0042 0E94 0000 		call Initialize
+  45:cnt.c         ****    StartTime = 1000.0; //ttime();
+  88               		.loc 1 45 0
+  89 0046 88EE      		ldi r24,lo8(-24)
+  90 0048 93E0      		ldi r25,lo8(3)
+  91 004a A0E0      		ldi r26,0
+  92 004c B0E0      		ldi r27,0
+  93 004e 8983      		std Y+1,r24
+  94 0050 9A83      		std Y+2,r25
+  95 0052 AB83      		std Y+3,r26
+  96 0054 BC83      		std Y+4,r27
+  46:cnt.c         ****    Sum(Array);
+  97               		.loc 1 46 0
+  98 0056 8D85      		ldd r24,Y+13
+  99 0058 9E85      		ldd r25,Y+14
+ 100 005a 0E94 0000 		call Sum
+  47:cnt.c         ****    StopTime = 1500.0; //ttime();
+ 101               		.loc 1 47 0
+ 102 005e 8CED      		ldi r24,lo8(-36)
+ 103 0060 95E0      		ldi r25,lo8(5)
+ 104 0062 A0E0      		ldi r26,0
+ 105 0064 B0E0      		ldi r27,0
+ 106 0066 8D83      		std Y+5,r24
+ 107 0068 9E83      		std Y+6,r25
+ 108 006a AF83      		std Y+7,r26
+ 109 006c B887      		std Y+8,r27
+  48:cnt.c         **** 
+  49:cnt.c         ****    TotalTime = (StopTime - StartTime) / 1000.0;
+ 110               		.loc 1 49 0
+ 111 006e 2D81      		ldd r18,Y+5
+ 112 0070 3E81      		ldd r19,Y+6
+ 113 0072 4F81      		ldd r20,Y+7
+ 114 0074 5885      		ldd r21,Y+8
+ 115 0076 8981      		ldd r24,Y+1
+ 116 0078 9A81      		ldd r25,Y+2
+ 117 007a AB81      		ldd r26,Y+3
+ 118 007c BC81      		ldd r27,Y+4
+ 119 007e 7901      		movw r14,r18
+ 120 0080 8A01      		movw r16,r20
+ 121 0082 E81A      		sub r14,r24
+ 122 0084 F90A      		sbc r15,r25
+ 123 0086 0A0B      		sbc r16,r26
+ 124 0088 1B0B      		sbc r17,r27
+ 125 008a D801      		movw r26,r16
+ 126 008c C701      		movw r24,r14
+ 127 008e BC01      		movw r22,r24
+ 128 0090 CD01      		movw r24,r26
+ 129 0092 0E94 0000 		call __floatsisf
+ 130 0096 DC01      		movw r26,r24
+ 131 0098 CB01      		movw r24,r22
+ 132 009a 20E0      		ldi r18,0
+ 133 009c 30E0      		ldi r19,0
+ 134 009e 4AE7      		ldi r20,lo8(122)
+ 135 00a0 54E4      		ldi r21,lo8(68)
+ 136 00a2 BC01      		movw r22,r24
+ 137 00a4 CD01      		movw r24,r26
+ 138 00a6 0E94 0000 		call __divsf3
+ 139 00aa DC01      		movw r26,r24
+ 140 00ac CB01      		movw r24,r22
+ 141 00ae 8987      		std Y+9,r24
+ 142 00b0 9A87      		std Y+10,r25
+ 143 00b2 AB87      		std Y+11,r26
+ 144 00b4 BC87      		std Y+12,r27
+  50:cnt.c         **** 
+  51:cnt.c         ****    //printf("    - Size of array is %d\n", MAXSIZE);
+  52:cnt.c         ****    //printf("    - Num pos was %d and Sum was %d\n", Poscnt, Postotal);
+  53:cnt.c         ****    //printf("    - Num neg was %d and Sum was %d\n", Negcnt, Negtotal);
+  54:cnt.c         ****    //printf("    - Num neg was %d\n", Negcnt);
+  55:cnt.c         ****    //printf("    - Total sum time is %3.3f seconds\n\n", TotalTime);
+  56:cnt.c         ****    return 0;
+ 145               		.loc 1 56 0
+ 146 00b6 80E0      		ldi r24,0
+ 147 00b8 90E0      		ldi r25,0
+ 148               	/* epilogue start */
+  57:cnt.c         **** }
+ 149               		.loc 1 57 0
+ 150 00ba 2E96      		adiw r28,14
+ 151 00bc 0FB6      		in __tmp_reg__,__SREG__
+ 152 00be F894      		cli
+ 153 00c0 DEBF      		out __SP_H__,r29
+ 154 00c2 0FBE      		out __SREG__,__tmp_reg__
+ 155 00c4 CDBF      		out __SP_L__,r28
+ 156 00c6 DF91      		pop r29
+ 157 00c8 CF91      		pop r28
+ 158 00ca 1F91      		pop r17
+ 159 00cc 0F91      		pop r16
+ 160 00ce FF90      		pop r15
+ 161 00d0 EF90      		pop r14
+ 162 00d2 0895      		ret
+ 163               	.LFE1:
+ 165               	.global	Initialize
+ 167               	Initialize:
+ 168               	.LFB2:
+  58:cnt.c         **** 
+  59:cnt.c         **** 
+  60:cnt.c         **** // Intializes the given array with random integers.
+  61:cnt.c         **** int Initialize(matrix Array)
+  62:cnt.c         **** {
+ 169               		.loc 1 62 0
+ 170 00d4 CF92      		push r12
+ 171               	.LCFI11:
+ 172 00d6 DF92      		push r13
+ 173               	.LCFI12:
+ 174 00d8 EF92      		push r14
+ 175               	.LCFI13:
+ 176 00da FF92      		push r15
+ 177               	.LCFI14:
+ 178 00dc 0F93      		push r16
+ 179               	.LCFI15:
+ 180 00de 1F93      		push r17
+ 181               	.LCFI16:
+ 182 00e0 CF93      		push r28
+ 183               	.LCFI17:
+ 184 00e2 DF93      		push r29
+ 185               	.LCFI18:
+ 186 00e4 00D0      		rcall .
+ 187               	.LCFI19:
+ 188 00e6 CDB7      		in r28,__SP_L__
+ 189 00e8 DEB7      		in r29,__SP_H__
+ 190               	.LCFI20:
+ 191               	/* prologue: function */
+ 192               	/* frame size = 2 */
+ 193               	/* stack size = 10 */
+ 194               	.L__stack_usage = 10
+ 195 00ea 9A83      		std Y+2,r25
+ 196 00ec 8983      		std Y+1,r24
+  63:cnt.c         ****    register int OuterIndex, InnerIndex;
+  64:cnt.c         **** 
+  65:cnt.c         ****    for (OuterIndex = 0; OuterIndex < MAXSIZE; OuterIndex++) //100 + 1
+ 197               		.loc 1 65 0
+ 198 00ee 00E0      		ldi r16,0
+ 199 00f0 10E0      		ldi r17,0
+ 200 00f2 00C0      		rjmp .L6
+ 201               	.L9:
+  66:cnt.c         ****       for (InnerIndex = 0; InnerIndex < MAXSIZE; InnerIndex++) //100 + 1
+ 202               		.loc 1 66 0
+ 203 00f4 E12C      		mov r14,__zero_reg__
+ 204 00f6 F12C      		mov r15,__zero_reg__
+ 205 00f8 00C0      		rjmp .L7
+ 206               	.L8:
+  67:cnt.c         ****          Array[OuterIndex][InnerIndex] = RandomInteger();
+ 207               		.loc 1 67 0 discriminator 2
+ 208 00fa 9801      		movw r18,r16
+ 209 00fc 44E1      		ldi r20,lo8(20)
+ 210 00fe 429F      		mul r20,r18
+ 211 0100 C001      		movw r24,r0
+ 212 0102 439F      		mul r20,r19
+ 213 0104 900D      		add r25,r0
+ 214 0106 1124      		clr __zero_reg__
+ 215 0108 2981      		ldd r18,Y+1
+ 216 010a 3A81      		ldd r19,Y+2
+ 217 010c 6901      		movw r12,r18
+ 218 010e C80E      		add r12,r24
+ 219 0110 D91E      		adc r13,r25
+ 220 0112 0E94 0000 		call RandomInteger
+ 221 0116 9C01      		movw r18,r24
+ 222 0118 C701      		movw r24,r14
+ 223 011a 880F      		lsl r24
+ 224 011c 991F      		rol r25
+ 225 011e 8C0D      		add r24,r12
+ 226 0120 9D1D      		adc r25,r13
+ 227 0122 FC01      		movw r30,r24
+ 228 0124 3183      		std Z+1,r19
+ 229 0126 2083      		st Z,r18
+  66:cnt.c         ****       for (InnerIndex = 0; InnerIndex < MAXSIZE; InnerIndex++) //100 + 1
+ 230               		.loc 1 66 0 discriminator 2
+ 231 0128 FFEF      		ldi r31,-1
+ 232 012a EF1A      		sub r14,r31
+ 233 012c FF0A      		sbc r15,r31
+ 234               	.L7:
+  66:cnt.c         ****       for (InnerIndex = 0; InnerIndex < MAXSIZE; InnerIndex++) //100 + 1
+ 235               		.loc 1 66 0 is_stmt 0 discriminator 1
+ 236 012e 8AE0      		ldi r24,10
+ 237 0130 E816      		cp r14,r24
+ 238 0132 F104      		cpc r15,__zero_reg__
+ 239 0134 04F0      		brlt .L8
+  65:cnt.c         ****    for (OuterIndex = 0; OuterIndex < MAXSIZE; OuterIndex++) //100 + 1
+ 240               		.loc 1 65 0 is_stmt 1
+ 241 0136 0F5F      		subi r16,-1
+ 242 0138 1F4F      		sbci r17,-1
+ 243               	.L6:
+  65:cnt.c         ****    for (OuterIndex = 0; OuterIndex < MAXSIZE; OuterIndex++) //100 + 1
+ 244               		.loc 1 65 0 is_stmt 0 discriminator 1
+ 245 013a 0A30      		cpi r16,10
+ 246 013c 1105      		cpc r17,__zero_reg__
+ 247 013e 04F0      		brlt .L9
+  68:cnt.c         **** 
+  69:cnt.c         ****    return 0;
+ 248               		.loc 1 69 0 is_stmt 1
+ 249 0140 80E0      		ldi r24,0
+ 250 0142 90E0      		ldi r25,0
+ 251               	/* epilogue start */
+  70:cnt.c         **** }
+ 252               		.loc 1 70 0
+ 253 0144 0F90      		pop __tmp_reg__
+ 254 0146 0F90      		pop __tmp_reg__
+ 255 0148 DF91      		pop r29
+ 256 014a CF91      		pop r28
+ 257 014c 1F91      		pop r17
+ 258 014e 0F91      		pop r16
+ 259 0150 FF90      		pop r15
+ 260 0152 EF90      		pop r14
+ 261 0154 DF90      		pop r13
+ 262 0156 CF90      		pop r12
+ 263 0158 0895      		ret
+ 264               	.LFE2:
+ 266               	.global	InitSeed
+ 268               	InitSeed:
+ 269               	.LFB3:
+  71:cnt.c         **** 
+  72:cnt.c         **** 
+  73:cnt.c         **** // Initializes the seed used in the random number generator.
+  74:cnt.c         **** int InitSeed (void)
+  75:cnt.c         **** {
+ 270               		.loc 1 75 0
+ 271 015a CF93      		push r28
+ 272               	.LCFI21:
+ 273 015c DF93      		push r29
+ 274               	.LCFI22:
+ 275 015e CDB7      		in r28,__SP_L__
+ 276 0160 DEB7      		in r29,__SP_H__
+ 277               	.LCFI23:
+ 278               	/* prologue: function */
+ 279               	/* frame size = 0 */
+ 280               	/* stack size = 2 */
+ 281               	.L__stack_usage = 2
+  76:cnt.c         ****    Seed = 0;
+ 282               		.loc 1 76 0
+ 283 0162 1092 0000 		sts Seed+1,__zero_reg__
+ 284 0166 1092 0000 		sts Seed,__zero_reg__
+  77:cnt.c         ****    return 0;
+ 285               		.loc 1 77 0
+ 286 016a 80E0      		ldi r24,0
+ 287 016c 90E0      		ldi r25,0
+ 288               	/* epilogue start */
+  78:cnt.c         **** }
+ 289               		.loc 1 78 0
+ 290 016e DF91      		pop r29
+ 291 0170 CF91      		pop r28
+ 292 0172 0895      		ret
+ 293               	.LFE3:
+ 295               	.global	Sum
+ 297               	Sum:
+ 298               	.LFB4:
+  79:cnt.c         **** 
+  80:cnt.c         **** void Sum(matrix Array)
+  81:cnt.c         **** {
+ 299               		.loc 1 81 0
+ 300 0174 EF92      		push r14
+ 301               	.LCFI24:
+ 302 0176 FF92      		push r15
+ 303               	.LCFI25:
+ 304 0178 0F93      		push r16
+ 305               	.LCFI26:
+ 306 017a 1F93      		push r17
+ 307               	.LCFI27:
+ 308 017c CF93      		push r28
+ 309               	.LCFI28:
+ 310 017e DF93      		push r29
+ 311               	.LCFI29:
+ 312 0180 CDB7      		in r28,__SP_L__
+ 313 0182 DEB7      		in r29,__SP_H__
+ 314               	.LCFI30:
+ 315 0184 2A97      		sbiw r28,10
+ 316               	.LCFI31:
+ 317 0186 0FB6      		in __tmp_reg__,__SREG__
+ 318 0188 F894      		cli
+ 319 018a DEBF      		out __SP_H__,r29
+ 320 018c 0FBE      		out __SREG__,__tmp_reg__
+ 321 018e CDBF      		out __SP_L__,r28
+ 322               	/* prologue: function */
+ 323               	/* frame size = 10 */
+ 324               	/* stack size = 16 */
+ 325               	.L__stack_usage = 16
+ 326 0190 9A87      		std Y+10,r25
+ 327 0192 8987      		std Y+9,r24
+  82:cnt.c         ****   register int Outer, Inner;
+  83:cnt.c         **** 
+  84:cnt.c         ****   int Ptotal = 0; /* changed these to locals in order to drive worst case */
+ 328               		.loc 1 84 0
+ 329 0194 1A82      		std Y+2,__zero_reg__
+ 330 0196 1982      		std Y+1,__zero_reg__
+  85:cnt.c         ****   int Ntotal = 0;
+ 331               		.loc 1 85 0
+ 332 0198 1C82      		std Y+4,__zero_reg__
+ 333 019a 1B82      		std Y+3,__zero_reg__
+  86:cnt.c         ****   int Pcnt = 0;
+ 334               		.loc 1 86 0
+ 335 019c 1E82      		std Y+6,__zero_reg__
+ 336 019e 1D82      		std Y+5,__zero_reg__
+  87:cnt.c         ****   int Ncnt = 0;
+ 337               		.loc 1 87 0
+ 338 01a0 1886      		std Y+8,__zero_reg__
+ 339 01a2 1F82      		std Y+7,__zero_reg__
+  88:cnt.c         **** 
+  89:cnt.c         ****   for (Outer = 0; Outer < MAXSIZE; Outer++) //Maxsize = 100
+ 340               		.loc 1 89 0
+ 341 01a4 00E0      		ldi r16,0
+ 342 01a6 10E0      		ldi r17,0
+ 343 01a8 00C0      		rjmp .L14
+ 344               	.L19:
+  90:cnt.c         ****     for (Inner = 0; Inner < MAXSIZE; Inner++)
+ 345               		.loc 1 90 0
+ 346 01aa E12C      		mov r14,__zero_reg__
+ 347 01ac F12C      		mov r15,__zero_reg__
+ 348 01ae 00C0      		rjmp .L15
+ 349               	.L18:
+  91:cnt.c         **** #ifdef WORSTCASE
+  92:cnt.c         ****       if (Array[Outer][Inner] >= 0) {
+  93:cnt.c         **** #else
+  94:cnt.c         **** 	if (Array[Outer][Inner] < 0) {
+ 350               		.loc 1 94 0
+ 351 01b0 9801      		movw r18,r16
+ 352 01b2 44E1      		ldi r20,lo8(20)
+ 353 01b4 429F      		mul r20,r18
+ 354 01b6 C001      		movw r24,r0
+ 355 01b8 439F      		mul r20,r19
+ 356 01ba 900D      		add r25,r0
+ 357 01bc 1124      		clr __zero_reg__
+ 358 01be 2985      		ldd r18,Y+9
+ 359 01c0 3A85      		ldd r19,Y+10
+ 360 01c2 280F      		add r18,r24
+ 361 01c4 391F      		adc r19,r25
+ 362 01c6 C701      		movw r24,r14
+ 363 01c8 880F      		lsl r24
+ 364 01ca 991F      		rol r25
+ 365 01cc 820F      		add r24,r18
+ 366 01ce 931F      		adc r25,r19
+ 367 01d0 FC01      		movw r30,r24
+ 368 01d2 8081      		ld r24,Z
+ 369 01d4 9181      		ldd r25,Z+1
+ 370 01d6 9923      		tst r25
+ 371 01d8 04F4      		brge .L16
+  95:cnt.c         **** #endif
+  96:cnt.c         **** 	  Ptotal += Array[Outer][Inner];
+ 372               		.loc 1 96 0
+ 373 01da 9801      		movw r18,r16
+ 374 01dc 44E1      		ldi r20,lo8(20)
+ 375 01de 429F      		mul r20,r18
+ 376 01e0 C001      		movw r24,r0
+ 377 01e2 439F      		mul r20,r19
+ 378 01e4 900D      		add r25,r0
+ 379 01e6 1124      		clr __zero_reg__
+ 380 01e8 2985      		ldd r18,Y+9
+ 381 01ea 3A85      		ldd r19,Y+10
+ 382 01ec 280F      		add r18,r24
+ 383 01ee 391F      		adc r19,r25
+ 384 01f0 C701      		movw r24,r14
+ 385 01f2 880F      		lsl r24
+ 386 01f4 991F      		rol r25
+ 387 01f6 820F      		add r24,r18
+ 388 01f8 931F      		adc r25,r19
+ 389 01fa FC01      		movw r30,r24
+ 390 01fc 8081      		ld r24,Z
+ 391 01fe 9181      		ldd r25,Z+1
+ 392 0200 2981      		ldd r18,Y+1
+ 393 0202 3A81      		ldd r19,Y+2
+ 394 0204 820F      		add r24,r18
+ 395 0206 931F      		adc r25,r19
+ 396 0208 9A83      		std Y+2,r25
+ 397 020a 8983      		std Y+1,r24
+  97:cnt.c         **** 	  Pcnt++;
+ 398               		.loc 1 97 0
+ 399 020c 8D81      		ldd r24,Y+5
+ 400 020e 9E81      		ldd r25,Y+6
+ 401 0210 0196      		adiw r24,1
+ 402 0212 9E83      		std Y+6,r25
+ 403 0214 8D83      		std Y+5,r24
+ 404 0216 00C0      		rjmp .L17
+ 405               	.L16:
+  98:cnt.c         **** 	}
+  99:cnt.c         **** 	else {
+ 100:cnt.c         **** 	  Ntotal += Array[Outer][Inner];
+ 406               		.loc 1 100 0
+ 407 0218 9801      		movw r18,r16
+ 408 021a 44E1      		ldi r20,lo8(20)
+ 409 021c 429F      		mul r20,r18
+ 410 021e C001      		movw r24,r0
+ 411 0220 439F      		mul r20,r19
+ 412 0222 900D      		add r25,r0
+ 413 0224 1124      		clr __zero_reg__
+ 414 0226 2985      		ldd r18,Y+9
+ 415 0228 3A85      		ldd r19,Y+10
+ 416 022a 280F      		add r18,r24
+ 417 022c 391F      		adc r19,r25
+ 418 022e C701      		movw r24,r14
+ 419 0230 880F      		lsl r24
+ 420 0232 991F      		rol r25
+ 421 0234 820F      		add r24,r18
+ 422 0236 931F      		adc r25,r19
+ 423 0238 FC01      		movw r30,r24
+ 424 023a 8081      		ld r24,Z
+ 425 023c 9181      		ldd r25,Z+1
+ 426 023e 2B81      		ldd r18,Y+3
+ 427 0240 3C81      		ldd r19,Y+4
+ 428 0242 820F      		add r24,r18
+ 429 0244 931F      		adc r25,r19
+ 430 0246 9C83      		std Y+4,r25
+ 431 0248 8B83      		std Y+3,r24
+ 101:cnt.c         **** 	  Ncnt++;
+ 432               		.loc 1 101 0
+ 433 024a 8F81      		ldd r24,Y+7
+ 434 024c 9885      		ldd r25,Y+8
+ 435 024e 0196      		adiw r24,1
+ 436 0250 9887      		std Y+8,r25
+ 437 0252 8F83      		std Y+7,r24
+ 438               	.L17:
+  90:cnt.c         ****     for (Inner = 0; Inner < MAXSIZE; Inner++)
+ 439               		.loc 1 90 0
+ 440 0254 FFEF      		ldi r31,-1
+ 441 0256 EF1A      		sub r14,r31
+ 442 0258 FF0A      		sbc r15,r31
+ 443               	.L15:
+  90:cnt.c         ****     for (Inner = 0; Inner < MAXSIZE; Inner++)
+ 444               		.loc 1 90 0 is_stmt 0 discriminator 1
+ 445 025a 8AE0      		ldi r24,10
+ 446 025c E816      		cp r14,r24
+ 447 025e F104      		cpc r15,__zero_reg__
+ 448 0260 04F4      		brge .+2
+ 449 0262 00C0      		rjmp .L18
+  89:cnt.c         ****   for (Outer = 0; Outer < MAXSIZE; Outer++) //Maxsize = 100
+ 450               		.loc 1 89 0 is_stmt 1
+ 451 0264 0F5F      		subi r16,-1
+ 452 0266 1F4F      		sbci r17,-1
+ 453               	.L14:
+  89:cnt.c         ****   for (Outer = 0; Outer < MAXSIZE; Outer++) //Maxsize = 100
+ 454               		.loc 1 89 0 is_stmt 0 discriminator 1
+ 455 0268 0A30      		cpi r16,10
+ 456 026a 1105      		cpc r17,__zero_reg__
+ 457 026c 04F4      		brge .+2
+ 458 026e 00C0      		rjmp .L19
+ 102:cnt.c         **** 	}
+ 103:cnt.c         **** 
+ 104:cnt.c         ****   Postotal = Ptotal;
+ 459               		.loc 1 104 0 is_stmt 1
+ 460 0270 8981      		ldd r24,Y+1
+ 461 0272 9A81      		ldd r25,Y+2
+ 462 0274 9093 0000 		sts Postotal+1,r25
+ 463 0278 8093 0000 		sts Postotal,r24
+ 105:cnt.c         ****   Poscnt = Pcnt;
+ 464               		.loc 1 105 0
+ 465 027c 8D81      		ldd r24,Y+5
+ 466 027e 9E81      		ldd r25,Y+6
+ 467 0280 9093 0000 		sts Poscnt+1,r25
+ 468 0284 8093 0000 		sts Poscnt,r24
+ 106:cnt.c         ****   Negtotal = Ntotal;
+ 469               		.loc 1 106 0
+ 470 0288 8B81      		ldd r24,Y+3
+ 471 028a 9C81      		ldd r25,Y+4
+ 472 028c 9093 0000 		sts Negtotal+1,r25
+ 473 0290 8093 0000 		sts Negtotal,r24
+ 107:cnt.c         ****   Negcnt = Ncnt;
+ 474               		.loc 1 107 0
+ 475 0294 8F81      		ldd r24,Y+7
+ 476 0296 9885      		ldd r25,Y+8
+ 477 0298 9093 0000 		sts Negcnt+1,r25
+ 478 029c 8093 0000 		sts Negcnt,r24
+ 479               	/* epilogue start */
+ 108:cnt.c         **** }
+ 480               		.loc 1 108 0
+ 481 02a0 2A96      		adiw r28,10
+ 482 02a2 0FB6      		in __tmp_reg__,__SREG__
+ 483 02a4 F894      		cli
+ 484 02a6 DEBF      		out __SP_H__,r29
+ 485 02a8 0FBE      		out __SREG__,__tmp_reg__
+ 486 02aa CDBF      		out __SP_L__,r28
+ 487 02ac DF91      		pop r29
+ 488 02ae CF91      		pop r28
+ 489 02b0 1F91      		pop r17
+ 490 02b2 0F91      		pop r16
+ 491 02b4 FF90      		pop r15
+ 492 02b6 EF90      		pop r14
+ 493 02b8 0895      		ret
+ 494               	.LFE4:
+ 496               	.global	RandomInteger
+ 498               	RandomInteger:
+ 499               	.LFB5:
+ 109:cnt.c         **** 
+ 110:cnt.c         **** 
+ 111:cnt.c         **** // This function returns in milliseconds the amount of compiler time
+ 112:cnt.c         **** //int ttime()
+ 113:cnt.c         **** //{
+ 114:cnt.c         **** //  struct tms buffer;
+ 115:cnt.c         **** //int utime;
+ 116:cnt.c         **** 
+ 117:cnt.c         **** //times(&buffer);
+ 118:cnt.c         **** //utime = (buffer.tms_utime / 60.0) * 1000.0;
+ 119:cnt.c         **** //return (utime);
+ 120:cnt.c         **** //}
+ 121:cnt.c         **** 
+ 122:cnt.c         **** 
+ 123:cnt.c         **** // Generates random integers between 0 and 8095
+ 124:cnt.c         **** int RandomInteger(void)
+ 125:cnt.c         **** {
+ 500               		.loc 1 125 0
+ 501 02ba CF93      		push r28
+ 502               	.LCFI32:
+ 503 02bc DF93      		push r29
+ 504               	.LCFI33:
+ 505 02be CDB7      		in r28,__SP_L__
+ 506 02c0 DEB7      		in r29,__SP_H__
+ 507               	.LCFI34:
+ 508               	/* prologue: function */
+ 509               	/* frame size = 0 */
+ 510               	/* stack size = 2 */
+ 511               	.L__stack_usage = 2
+ 126:cnt.c         ****    Seed = ((Seed * 133) + 81) % 8095;
+ 512               		.loc 1 126 0
+ 513 02c2 2091 0000 		lds r18,Seed
+ 514 02c6 3091 0000 		lds r19,Seed+1
+ 515 02ca 45E8      		ldi r20,lo8(-123)
+ 516 02cc 429F      		mul r20,r18
+ 517 02ce C001      		movw r24,r0
+ 518 02d0 439F      		mul r20,r19
+ 519 02d2 900D      		add r25,r0
+ 520 02d4 1124      		clr __zero_reg__
+ 521 02d6 8F5A      		subi r24,-81
+ 522 02d8 9F4F      		sbci r25,-1
+ 523 02da 2FE9      		ldi r18,lo8(-97)
+ 524 02dc 3FE1      		ldi r19,lo8(31)
+ 525 02de B901      		movw r22,r18
+ 526 02e0 0E94 0000 		call __divmodhi4
+ 527 02e4 9093 0000 		sts Seed+1,r25
+ 528 02e8 8093 0000 		sts Seed,r24
+ 127:cnt.c         ****    return Seed;
+ 529               		.loc 1 127 0
+ 530 02ec 8091 0000 		lds r24,Seed
+ 531 02f0 9091 0000 		lds r25,Seed+1
+ 532               	/* epilogue start */
+ 128:cnt.c         **** }
+ 533               		.loc 1 128 0
+ 534 02f4 DF91      		pop r29
+ 535 02f6 CF91      		pop r28
+ 536 02f8 0895      		ret
+ 537               	.LFE5:
+ 797               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 cnt.c
+     /tmp/ccAOmixl.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccAOmixl.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccAOmixl.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccAOmixl.s:5      *ABS*:000000000000003b __RAMPZ__
+     /tmp/ccAOmixl.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccAOmixl.s:7      *ABS*:0000000000000001 __zero_reg__
+                            *COM*:0000000000000002 Seed
+                            *COM*:00000000000000c8 Array
+                            *COM*:0000000000000002 Postotal
+                            *COM*:0000000000000002 Negtotal
+                            *COM*:0000000000000002 Poscnt
+                            *COM*:0000000000000002 Negcnt
+     /tmp/ccAOmixl.s:18     .text:0000000000000000 main
+     /tmp/ccAOmixl.s:268    .text:000000000000015a InitSeed
+     /tmp/ccAOmixl.s:53     .text:000000000000001e Test
+     /tmp/ccAOmixl.s:167    .text:00000000000000d4 Initialize
+     /tmp/ccAOmixl.s:297    .text:0000000000000174 Sum
+     /tmp/ccAOmixl.s:498    .text:00000000000002ba RandomInteger
+
+UNDEFINED SYMBOLS
+__floatsisf
+__divsf3
+__divmodhi4
+__do_clear_bss

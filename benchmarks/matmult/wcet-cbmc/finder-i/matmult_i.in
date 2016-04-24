@@ -1,0 +1,74 @@
+/* This file contains inserted assert macro statements. It is given to CBMC. */
+unsigned int timeElapsed = 0;
+typedef int matrix [ 20 ] [ 20 ] ;
+int Seed ;
+matrix ArrayA , ArrayB , ResultArray ;
+void Multiply  (  matrix A , matrix B , matrix Res  )  ;
+void InitSeed  (  void  )  ;
+void Test  (  matrix A , matrix B , matrix Res  )  ;
+void Initialize  (  matrix Array  )  ;
+int RandomInteger  (  void  )  ;
+void main  (   )  
+{
+	InitSeed  (  ) ;
+	Test  (  ArrayA , ArrayB , ResultArray ) ;
+
+}
+void InitSeed  (  void  )  
+{
+	Seed = 0 ;
+
+}
+void Test  (  matrix A , matrix B , matrix Res  )  
+{
+	Initialize  (  A ) ;
+	Initialize  (  B ) ;
+	Multiply  (  A , B , Res ) ;
+
+}
+void Initialize  (  matrix Array  )  
+{
+	int OuterIndex , InnerIndex ;
+	for ( OuterIndex = 0 ; OuterIndex < 20 ; OuterIndex ++ )  {   for ( InnerIndex = 0 ; InnerIndex < 20 ; InnerIndex ++ )  {  Array [ OuterIndex ] [ InnerIndex ] = RandomInteger  (  ) ;
+	}  }  
+}
+int RandomInteger  (  void  )  
+{
+	Seed =  (   (  Seed * 133  )  + 81  )  % ( 8095 ) ;
+	return   (  Seed  )  ;
+
+}
+void Multiply  (  matrix A , matrix B , matrix Res  )  
+{
+	register int Outer , Inner , Index ;
+
+	timeElapsed = timeElapsed + 43; /* Block num 1*/
+	for ( Outer = 0 ; (timeElapsed = timeElapsed + (3)), /* Block num 2*/ Outer < 20 ; (timeElapsed = timeElapsed + 6), /* Block num 3*/ Outer ++ )  {  
+		timeElapsed = timeElapsed + 2; /* Block num 7*/
+		for ( Inner = 0 ; (timeElapsed = timeElapsed + (4)), /* Block num 5*/ Inner < 20 ; (timeElapsed = timeElapsed + 33), /* Block num 6*/ Inner ++ )  {  
+			{
+				Res [ Outer ] [ Inner ] = 0 ;
+
+				timeElapsed = timeElapsed + 3; /* Block num 10*/
+				for ( Index = 0 ; (timeElapsed = timeElapsed + (4)), /* Block num 8*/ Index < 20 ; (timeElapsed = timeElapsed + 120), /* Block num 9*/ Index ++ )  {  Res [ Outer ] [ Inner ] += A [ Outer ] [ Index ] * B [ Index ] [ Inner ] ;
+				}  
+				timeElapsed = timeElapsed + 1;  /* Extra - Direct print */
+
+			}
+		}  
+		timeElapsed = timeElapsed + 1;  /* Extra - Direct print */
+	}  
+	timeElapsed = timeElapsed + 1;  /* Extra - Direct print */
+
+	timeElapsed = timeElapsed + 27; /* Block num 4*/
+
+}
+
+int CBMCDriver(void)
+{
+	matrix A1, A2, RES;
+	Multiply(A1, A2, RES);
+	###WCET_TEST###
+	return 0;
+}
+

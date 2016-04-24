@@ -1,0 +1,70 @@
+name;version;program steps avg;result;iterations;runtime total;num. clauses avg;iterations total;num. SAT calls;peak memory;num variables avg;iterations(precision=10000);runtime(precision=10000);WCET_lower(precision=10000);WCET_upper(precision=10000)
+adpcm-decode;finder-i;3536;69673 < WCET <= 69673 cycles;8;55.76;None;8;0;450723840.0;None;4;22.81;69662;72439
+;finder-abs-auto-2;1665;69673 < WCET <= 69673 cycles;7;19.62;None;7;0;204455936.0;None;4;11.01;69656;72431
+;finder-abs-auto;1679;69673 < WCET <= 69673 cycles;8;101.14;None;8;0;293437440.0;None;4;25.16;69643;72415
+adpcm-encode;finder-i;4906;110901 < WCET <= 110901 cycles;8;321.63;None;8;0;806158336.0;None;4;120.25;110884;112859
+;finder-s;3710;104689 < WCET <= 104689 cycles;8;146.86;None;8;0;653885440.0;None;4;37.51;104667;107398
+;finder-abs-auto-2;1831;110871 < WCET <= 110871 cycles;8;64.1;None;8;0;280231936.0;None;4;7.78;110801;113493
+;finder-abs-auto;1860;110871 < WCET <= 110871 cycles;8;231.67;None;8;0;424787968.0;None;4;26.04;110834;113505
+;finder-abs-man;2979;111239 < WCET <= 111239 cycles;5;4.35;None;5;0;167477248.0;None;4;3.57;111239;113956
+bs;finder-i;303;410 < WCET <= 410 cycles;3;0.66;None;3;0;103448576.0;None;2;0.47;410;2183
+bsort100;finder-i;157377;timeout, no value;0;598.97;None;1;0;2501148672.0;None;;;;
+;finder-abs-auto-2;5832;1543662 < WCET <= 1543662 cycles;3;3.27;None;3;0;132366336.0;None;3;3.27;1543662;1543662
+;finder-abs-auto;12268;timeout, no value;0;599.65;None;1;0;1558708224.0;None;;;;
+;finder-abs-man;7205;timeout, no value;3;1567.42;None;4;0;2396815360.0;None;;;;
+cnt;finder-i;3238;8564 < WCET <= 8564 cycles;5;90.09;None;5;0;282296320.0;None;1;24.16;8514;16383
+;finder-s;2212;8564 < WCET <= 8564 cycles;5;88.12;None;5;0;267550720.0;None;1;24.02;8514;16383
+;finder-abs-auto-2;372;8563 < WCET <= 8564 cycles;6;0.87;None;6;0;102219776.0;None;2;0.26;7351;9158
+;finder-abs-man;81;8564 < WCET <= 8564 cycles;5;0.81;None;5;0;102072320.0;None;1;0.16;8487;16383
+crc;finder-i;41398;130114 < WCET <= 130114 cycles;3;6.07;None;3;0;300433408.0;None;3;6.07;130114;130114
+;finder-s;40648;130114 < WCET <= 130114 cycles;3;4.92;None;3;0;290177024.0;None;3;4.92;130114;130114
+;finder-abs-auto-2;11142;143426 < WCET <= 143426 cycles;3;1.21;None;3;0;108363776.0;None;3;1.21;143426;143426
+;finder-abs-auto-1;13709;143426 < WCET <= 143426 cycles;4;72.62;None;4;0;990281728.0;None;4;72.62;143426;143426
+;finder-abs-auto;16279;timeout, no value;0;598.96;None;1;0;3445637120.0;None;;;;
+;finder-acc-auto-2;39812;130114 < WCET <= 130114 cycles;3;4.71;None;3;0;281264128.0;None;3;4.71;130114;130114
+;finder-acc-man;39824;130114 < WCET <= 130114 cycles;3;4.67;None;3;0;281362432.0;None;3;4.67;130114;130114
+;finder-acc-auto;39832;130114 < WCET <= 130114 cycles;4;6.17;None;4;0;282443776.0;None;4;6.17;130114;130114
+fdct;finder-i;989;17503 < WCET <= 17504 cycles;8;1.81;None;8;0;107249664.0;None;4;0.9;16383;19237
+;finder-s;182;17503 < WCET <= 17504 cycles;8;1.15;None;8;0;102039552.0;None;4;0.56;16383;19237
+;finder-acc-auto-2;98;17503 < WCET <= 17504 cycles;8;1.11;None;8;0;102760448.0;None;4;0.54;16383;19237
+;finder-acc-auto;109;17503 < WCET <= 17504 cycles;8;1.32;None;8;0;103153664.0;None;4;0.68;16383;19237
+;finder-acc-man;70;17503 < WCET <= 17504 cycles;8;1.08;None;8;0;101892096.0;None;4;0.54;16383;19237
+fibcall;finder-i;590;1779 < WCET <= 1780 cycles;6;0.88;None;6;0;101285888.0;None;2;0.3;127;1933
+;finder-s;494;1779 < WCET <= 1780 cycles;6;0.84;None;6;0;101154816.0;None;2;0.27;127;1933
+;finder-acc-auto-2;77;1779 < WCET <= 1780 cycles;6;0.78;None;6;0;101498880.0;None;2;0.26;127;1933
+;finder-acc-auto;86;1780 < WCET <= 1780 cycles;2;0.24;None;2;0;101842944.0;None;2;0.24;1780;1780
+;finder-acc-man;60;1779 < WCET <= 1780 cycles;6;0.81;None;6;0;100974592.0;None;2;0.28;127;1933
+fir;finder-i;None;timeout, no value;0;598.07;None;1;0;7239057408.0;None;;;;
+;finder-s;None;timeout, no value;0;593.95;None;1;0;16350412800.0;None;;;;
+;finder-acc-auto-2;50487;5476023 < WCET <= 5476023 cycles;2;7.73;None;2;0;701415424.0;None;2;7.73;5476023;5476023
+;finder-acc-auto;53288;5476023 < WCET <= 5476023 cycles;2;10.77;None;2;0;1105297408.0;None;2;10.77;5476023;5476023
+;finder-acc-man;39972;5476023 < WCET <= 5476023 cycles;2;6.23;None;2;0;581222400.0;None;2;6.23;5476023;5476023
+insertsort;finder-i;1663;5476 < WCET <= 5476 cycles;5;16.02;None;5;0;242794496.0;None;2;4.15;4085;5486
+jfdctint;finder-i;788;14053 < WCET <= 14054 cycles;6;1.34;None;6;0;106610688.0;None;2;0.45;12770;14576
+;finder-s;169;14053 < WCET <= 14054 cycles;6;0.78;None;6;0;101138432.0;None;2;0.25;12770;14576
+;finder-acc-auto-2;101;14053 < WCET <= 14054 cycles;6;1.47;None;6;0;103792640.0;None;2;0.48;12770;14576
+;finder-acc-auto;112;14053 < WCET <= 14054 cycles;6;1.72;None;6;0;104300544.0;None;2;0.59;12770;14576
+;finder-acc-man;57;14053 < WCET <= 14054 cycles;6;0.79;None;6;0;100876288.0;None;2;0.24;12770;14576
+matmult;finder-i;70768;1010393 < WCET <= 1010394 cycles;8;34.81;None;8;0;677019648.0;None;4;17.59;1009670;1012524
+;finder-s;62366;1010393 < WCET <= 1010394 cycles;8;9.74;None;8;0;559923200.0;None;4;5.01;1009670;1012524
+;finder-acc-auto-2;9637;1010393 < WCET <= 1010394 cycles;8;2.99;None;8;0;107053056.0;None;4;1.5;1009670;1012524
+;finder-acc-auto;82;1010393 < WCET <= 1010394 cycles;8;1.21;None;8;0;101777408.0;None;4;0.58;1009670;1012524
+ndes;finder-i;75932;timeout, no value;0;596.87;None;1;0;17434640384.0;None;;;;
+;finder-s;75797;timeout, no value;0;598.25;None;1;0;14213971968.0;None;;;;
+;finder-abs-auto-2;5599;465459 < WCET <= 465459 cycles;4;1.44;None;4;0;127205376.0;None;4;1.44;465459;465459
+;finder-abs-man;4077;462944 < WCET <= 462944 cycles;3;1.08;None;3;0;122142720.0;None;3;1.08;462944;462944
+ns;finder-i;22398;56449 < WCET <= 56450 cycles;8;128.02;None;8;0;846331904.0;None;4;65.69;56342;59196
+;finder-abs-auto-2;7709;56449 < WCET <= 56450 cycles;8;355.18;None;8;0;4054581248.0;None;4;221.33;56342;59196
+;finder-acc-man;7491;56450 < WCET <= 56450 cycles;7;475.68;None;7;0;1616330752.0;None;4;334.53;55761;58024
+;finder-abs-auto;9927;4294967294 < WCET <= 4294967295 cycles;13;1531.37;None;13;0;12966035456.0;None;9;1195.09;4294963026;4294967778
+prime;finder-i;None;timeout, no value;0;593.29;None;1;0;21376303104.0;None;;;;
+;finder-s;None;timeout, no value;0;593.25;None;1;0;21468643328.0;None;;;;
+;finder-abs-auto-2;157;30146784 < WCET <= 30146785 cycles;10;1.47;None;10;0;103727104.0;None;6;0.93;30143204;30147715
+;finder-abs-auto-1;192;30146785 < WCET <= 30146785 cycles;3;0.48;None;3;0;104218624.0;None;3;0.48;30146785;30146785
+;finder-acc-man;153;30212190 < WCET <= 30212190 cycles;6;1.64;None;6;0;103645184.0;None;6;1.64;30212190;30212190
+;finder-abs-auto;193;30146785 < WCET <= 30146785 cycles;7;3.95;None;7;0;104251392.0;None;5;1.74;30146606;30154682
+ud;finder-i;2367;38991 < WCET <= 38992 cycles;8;2.08;None;8;0;106479616.0;None;4;1.03;36362;39216
+;finder-s;1880;38991 < WCET <= 38992 cycles;8;1.44;None;8;0;103858176.0;None;4;0.71;36362;39216
+;finder-acc-auto-2;1379;38991 < WCET <= 38992 cycles;8;1.37;None;8;0;104824832.0;None;4;0.69;36362;39216
+;finder-acc-auto;1455;38991 < WCET <= 38992 cycles;8;6.67;None;8;0;235388928.0;None;4;3.38;36362;39216
+;finder-acc-man;1085;38991 < WCET <= 38992 cycles;8;1.29;None;8;0;103579648.0;None;4;0.62;36362;39216

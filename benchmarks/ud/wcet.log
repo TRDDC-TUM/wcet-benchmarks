@@ -1,0 +1,825 @@
+Note:::::Martin Becker: Writing source-level information to sourceinfo.csv
+Note:main.elf::::Bound-T 4c5 for Atmel-AVR
+Note:main.elf::::This AVR device has a 16-bit SP = SPH:SPL.
+Note:main.elf::::File format assumed to be ELF
+Note:main.elf::::Segment 2 not loaded:Zero length in file
+Note:main.elf::::Loading DWARF info section.
+Note:main.elf::::DWARF debug info ends without null entry.
+Note:main.elf::::Loading DWARF types for compilation unit 1
+Note:main.elf::::Parsing DWARF symbols.
+Note:main.elf::::Entering DWARF compilation unit for ud.c
+Note:main.elf::::Program implies calling protocol GCC.
+Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
+Note:main.elf:loopinfo.txt:::Routine at 00028C classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:ud.c:ludcmp:117:Root subprogram
+Note:main.elf::::Unused (# 1 = ludcmp at 00028C) is FALSE
+Note:main.elf::::Dynamism bounding iteration number 1
+Note:main.elf:ud.c:ludcmp:117:Unused (# 1 = ludcmp at 00028C) is FALSE
+Note:main.elf:ud.c:ludcmp:117:Analysis for time is needed.
+Note:main.elf:ud.c:ludcmp:117:Control-flow analysis starts.
+Warning:main.elf:ud.c:ludcmp:117-:Large combined 16-bit literal 65125 taken as signed = -411
+Warning:main.elf:ud.c:ludcmp:117-:Large combined 16-bit literal 65123 taken as signed = -413
+Warning:main.elf:ud.c:ludcmp:122-:Large combined 16-bit literal 65123 taken as signed = -413
+Warning:main.elf:ud.c:ludcmp:125-:Large combined 16-bit literal 65123 taken as signed = -413
+Warning:main.elf:ud.c:ludcmp:127-:Large combined 16-bit literal 64880 taken as signed = -656
+Warning:main.elf:ud.c:ludcmp:132-:Large combined 16-bit literal 64880 taken as signed = -656
+Warning:main.elf:ud.c:ludcmp:132-:Large combined 16-bit literal 64880 taken as signed = -656
+Note:main.elf:ud.c:ludcmp:132-:Routine at 000B00 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:ud.c:ludcmp:132-:Call to new subprogram # 2 = __mulsi3 at 000B00
+Note:main.elf:ud.c:ludcmp:132-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Warning:main.elf:ud.c:ludcmp:133-:Large combined 16-bit literal 64880 taken as signed = -656
+Note:main.elf:ud.c:ludcmp:133-:Routine at 000B20 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:ud.c:ludcmp:133-:Call to new subprogram # 3 = __divmodsi4 at 000B20
+Note:main.elf:ud.c:ludcmp:133-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Warning:main.elf:ud.c:ludcmp:133-:Large combined 16-bit literal 64880 taken as signed = -656
+Warning:main.elf:ud.c:ludcmp:135-:Large combined 16-bit literal 65123 taken as signed = -413
+Warning:main.elf:ud.c:ludcmp:137-:Large combined 16-bit literal 64880 taken as signed = -656
+Warning:main.elf:ud.c:ludcmp:139-:Large combined 16-bit literal 64880 taken as signed = -656
+Warning:main.elf:ud.c:ludcmp:139-:Large combined 16-bit literal 64880 taken as signed = -656
+Note:main.elf:ud.c:ludcmp:139-:Call to existing subprogram # 2 = __mulsi3 at 000B00
+Note:main.elf:ud.c:ludcmp:139-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Warning:main.elf:ud.c:ludcmp:140-:Large combined 16-bit literal 64880 taken as signed = -656
+Warning:main.elf:ud.c:ludcmp:144-:Large combined 16-bit literal 65123 taken as signed = -413
+Warning:main.elf:ud.c:ludcmp:146-:Large combined 16-bit literal 65280 taken as signed = -256
+Warning:main.elf:ud.c:ludcmp:148-:Large combined 16-bit literal 64880 taken as signed = -656
+Warning:main.elf:ud.c:ludcmp:148-:Large combined 16-bit literal 65535 taken as signed = -1
+Note:main.elf:ud.c:ludcmp:148-:Call to existing subprogram # 2 = __mulsi3 at 000B00
+Note:main.elf:ud.c:ludcmp:148-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Warning:main.elf:ud.c:ludcmp:149-:Large combined 16-bit literal 65535 taken as signed = -1
+Warning:main.elf:ud.c:ludcmp:149-:Large combined 16-bit literal 65526 taken as signed = -10
+Warning:main.elf:ud.c:ludcmp:151-:Large combined 16-bit literal 65123 taken as signed = -413
+Warning:main.elf:ud.c:ludcmp:151-:Large combined 16-bit literal 65535 taken as signed = -1
+Warning:main.elf:ud.c:ludcmp:151-:Large combined 16-bit literal 65123 taken as signed = -413
+Warning:main.elf:ud.c:ludcmp:151-:Large combined 16-bit literal 64880 taken as signed = -656
+Note:main.elf:ud.c:ludcmp:151-:Call to existing subprogram # 3 = __divmodsi4 at 000B20
+Note:main.elf:ud.c:ludcmp:151-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Warning:main.elf:ud.c:ludcmp:151-:Large combined 16-bit literal 65123 taken as signed = -413
+Warning:main.elf:ud.c:ludcmp:151-:Large combined 16-bit literal 65080 taken as signed = -456
+Warning:main.elf:ud.c:ludcmp:152-:Large combined 16-bit literal 65123 taken as signed = -413
+Warning:main.elf:ud.c:ludcmp:154-:Large combined 16-bit literal 65535 taken as signed = -1
+Warning:main.elf:ud.c:ludcmp:155-:Large combined 16-bit literal 65123 taken as signed = -413
+Warning:main.elf:ud.c:ludcmp:156-:Large combined 16-bit literal 64880 taken as signed = -656
+Warning:main.elf:ud.c:ludcmp:156-:Large combined 16-bit literal 65080 taken as signed = -456
+Note:main.elf:ud.c:ludcmp:156-:Call to existing subprogram # 2 = __mulsi3 at 000B00
+Note:main.elf:ud.c:ludcmp:156-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Warning:main.elf:ud.c:ludcmp:157-:Large combined 16-bit literal 64880 taken as signed = -656
+Note:main.elf:ud.c:ludcmp:157-:Call to existing subprogram # 3 = __divmodsi4 at 000B20
+Note:main.elf:ud.c:ludcmp:157-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Warning:main.elf:ud.c:ludcmp:157-:Large combined 16-bit literal 65080 taken as signed = -456
+Warning:main.elf:ud.c:ludcmp:160:Large combined 16-bit literal 65122 taken as signed = -414
+Note:main.elf:ud.c:ludcmp:117:Control-flow analysis finished.
+Note:main.elf:ud.c:ludcmp:117:Dominator iterations 2 for 44 graph nodes.
+Note:main.elf:ud.c:ludcmp:117:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Analysis for time is needed.
+Note:main.elf:ud.c:__mulsi3:160-:Control-flow analysis starts.
+Note:main.elf:ud.c:__mulsi3:160-:Routine at 000B58 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:ud.c:__mulsi3:160-:Call to new subprogram # 4 = __muluhisi3 at 000B58
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Control-flow analysis finished.
+Note:main.elf:ud.c:__mulsi3:160-:Dominator iterations 1 for 3 graph nodes.
+Note:main.elf:ud.c:__mulsi3:160-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Analysis for time is needed.
+Note:main.elf:ud.c:__divmodsi4:160-:Control-flow analysis starts.
+Note:main.elf:ud.c:__divmodsi4:160-:Routine at 000B38 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:ud.c:__divmodsi4:160-:Call to new subprogram # 5 = ud.c|__divmodsi4_neg1 at 000B38
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Routine at 000B48 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:ud.c:__divmodsi4:160-:Call to new subprogram # 6 = ud.c|__divmodsi4_neg2 at 000B48
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Routine at 000B6E classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:ud.c:__divmodsi4:160-:Call to new subprogram # 7 = __udivmodsi4 at 000B6E
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Call to existing subprogram # 6 = ud.c|__divmodsi4_neg2 at 000B48
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Control-flow analysis finished.
+Note:main.elf:ud.c:__divmodsi4:160-:Dominator iterations 1 for 14 graph nodes.
+Note:main.elf:ud.c:__divmodsi4:160-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Analysis for time is needed.
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Control-flow analysis starts.
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Control-flow analysis finished.
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Dominator iterations 0 for 1 graph nodes.
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Analysis for time is needed.
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Control-flow analysis starts.
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Control-flow analysis finished.
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Dominator iterations 0 for 1 graph nodes.
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Analysis for time is needed.
+Note:main.elf:ud.c:__muluhisi3:160-:Control-flow analysis starts.
+Note:main.elf:ud.c:__muluhisi3:160-:Routine at 000BB2 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:ud.c:__muluhisi3:160-:Call to new subprogram # 8 = __umulhisi3 at 000BB2
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Control-flow analysis finished.
+Note:main.elf:ud.c:__muluhisi3:160-:Dominator iterations 1 for 3 graph nodes.
+Note:main.elf:ud.c:__muluhisi3:160-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:ud.c:__udivmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__udivmodsi4:160-:Analysis for time is needed.
+Note:main.elf:ud.c:__udivmodsi4:160-:Control-flow analysis starts.
+Note:main.elf:ud.c:__udivmodsi4:160-:Control-flow analysis finished.
+Note:main.elf:ud.c:__udivmodsi4:160-:Dominator iterations 1 for 5 graph nodes.
+Note:main.elf:ud.c:__udivmodsi4:160-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Analysis for time is needed.
+Note:main.elf:ud.c:__umulhisi3:160-:Control-flow analysis starts.
+Note:main.elf:ud.c:__umulhisi3:160-:No subprogram-symbol for entry address 000BC0
+Note:main.elf:ud.c:__umulhisi3:160-:Routine at 000BC0 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:ud.c:__umulhisi3:160-:Call to new subprogram # 9 = 000BC0 at 000BC0
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Control-flow analysis finished.
+Note:main.elf:ud.c:__umulhisi3:160-:Dominator iterations 1 for 3 graph nodes.
+Note:main.elf:ud.c:__umulhisi3:160-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:ud.c:000BC0:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:000BC0:160-:Analysis for time is needed.
+Note:main.elf:ud.c:000BC0:160-:Control-flow analysis starts.
+Note:main.elf:ud.c:000BC0:160-:Control-flow analysis finished.
+Note:main.elf:ud.c:000BC0:160-:Dominator iterations 0 for 1 graph nodes.
+Note:main.elf:ud.c:000BC0:160-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:No execution bounds known yet.
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Repeating constant propagation.
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Maximum stack-height from constant propagation for SP:0
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Constant propagation changed nothing.
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Arithmetic analysis is not needed.
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Time_State for bounds # 1 defined as COMPUTABLE
+Note:main.elf:ud.c:__divmodsi4_neg1:160-:Freezing bounds # 1
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:No execution bounds known yet.
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Repeating constant propagation.
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Maximum stack-height from constant propagation for SP:0
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Constant propagation changed nothing.
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Arithmetic analysis is not needed.
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Time_State for bounds # 2 defined as COMPUTABLE
+Note:main.elf:ud.c:__divmodsi4_neg2:160-:Freezing bounds # 2
+Note:main.elf:ud.c:__udivmodsi4:160-:No execution bounds known yet.
+Note:main.elf:ud.c:__udivmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__udivmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__udivmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__udivmodsi4:160-:Repeating constant propagation.
+Note:main.elf:ud.c:__udivmodsi4:160-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf:ud.c:__udivmodsi4:160-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:ud.c:__udivmodsi4:160-:Maximum stack-height from constant propagation for SP:0
+Note:main.elf:ud.c:__udivmodsi4:160-:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf:ud.c:__udivmodsi4:160-:Constant propagation changed nothing.
+Note:main.elf:ud.c:__udivmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__udivmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__udivmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__udivmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__udivmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__udivmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__udivmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__udivmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__udivmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Loop_Bound:main.elf:ud.c:__udivmodsi4:160-:32
+Note:main.elf:ud.c:__udivmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__udivmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__udivmodsi4:160-:Time_State for bounds # 3 defined as COMPUTABLE
+Note:main.elf:ud.c:__udivmodsi4:160-:Freezing bounds # 3
+Note:main.elf:ud.c:000BC0:160-:No execution bounds known yet.
+Note:main.elf:ud.c:000BC0:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:000BC0:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:000BC0:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:000BC0:160-:Repeating constant propagation.
+Note:main.elf:ud.c:000BC0:160-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf:ud.c:000BC0:160-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:ud.c:000BC0:160-:Maximum stack-height from constant propagation for SP:0
+Note:main.elf:ud.c:000BC0:160-:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf:ud.c:000BC0:160-:Constant propagation changed nothing.
+Note:main.elf:ud.c:000BC0:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:000BC0:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:000BC0:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:000BC0:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:000BC0:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:000BC0:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:000BC0:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:000BC0:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:000BC0:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:000BC0:160-:Arithmetic analysis is not needed.
+Note:main.elf:ud.c:000BC0:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:000BC0:160-:Time_State for bounds # 4 defined as COMPUTABLE
+Note:main.elf:ud.c:000BC0:160-:Freezing bounds # 4
+Note:main.elf:ud.c:__divmodsi4:160-:No execution bounds known yet.
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:__divmodsi4:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:__divmodsi4:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:__divmodsi4:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:__divmodsi4:160-:Repeating constant propagation.
+Note:main.elf:ud.c:__divmodsi4:160-:Repeating constant propagation.
+Note:main.elf:ud.c:__divmodsi4:160-:Final stack-height in stack SP is constant for 2 of 2 return points.
+Note:main.elf:ud.c:__divmodsi4:160-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:ud.c:__divmodsi4:160-:Maximum stack-height from constant propagation for SP:2
+Note:main.elf:ud.c:__divmodsi4:160-:Take-off stack-height in stack SP is constant for 4 of 4 calls.
+Note:main.elf:ud.c:__divmodsi4:160-:Constant propagation changed nothing.
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 5 = ud.c|__divmodsi4_neg1 at 000B38) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 7 = __udivmodsi4 at 000B6E) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 6 = ud.c|__divmodsi4_neg2 at 000B48) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Arithmetic analysis is not needed.
+Note:main.elf:ud.c:__divmodsi4:160-:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:__divmodsi4:160-:Time_State for bounds # 5 defined as COMPUTABLE
+Note:main.elf:ud.c:__divmodsi4:160-:Freezing bounds # 5
+Note:main.elf:ud.c:__umulhisi3:160-:No execution bounds known yet.
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:__umulhisi3:160-:Repeating constant propagation.
+Note:main.elf:ud.c:__umulhisi3:160-:Repeating constant propagation.
+Note:main.elf:ud.c:__umulhisi3:160-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf:ud.c:__umulhisi3:160-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:ud.c:__umulhisi3:160-:Maximum stack-height from constant propagation for SP:2
+Note:main.elf:ud.c:__umulhisi3:160-:Take-off stack-height in stack SP is constant for 1 of 1 calls.
+Note:main.elf:ud.c:__umulhisi3:160-:Constant propagation changed nothing.
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 9 = 000BC0 at 000BC0) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Arithmetic analysis is not needed.
+Note:main.elf:ud.c:__umulhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__umulhisi3:160-:Time_State for bounds # 6 defined as COMPUTABLE
+Note:main.elf:ud.c:__umulhisi3:160-:Freezing bounds # 6
+Note:main.elf:ud.c:__muluhisi3:160-:No execution bounds known yet.
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:__muluhisi3:160-:Repeating constant propagation.
+Note:main.elf:ud.c:__muluhisi3:160-:Repeating constant propagation.
+Note:main.elf:ud.c:__muluhisi3:160-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf:ud.c:__muluhisi3:160-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:ud.c:__muluhisi3:160-:Maximum stack-height from constant propagation for SP:2
+Note:main.elf:ud.c:__muluhisi3:160-:Take-off stack-height in stack SP is constant for 1 of 1 calls.
+Note:main.elf:ud.c:__muluhisi3:160-:Constant propagation changed nothing.
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 8 = __umulhisi3 at 000BB2) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Arithmetic analysis is not needed.
+Note:main.elf:ud.c:__muluhisi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__muluhisi3:160-:Time_State for bounds # 7 defined as COMPUTABLE
+Note:main.elf:ud.c:__muluhisi3:160-:Freezing bounds # 7
+Note:main.elf:ud.c:__mulsi3:160-:No execution bounds known yet.
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:__mulsi3:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:__mulsi3:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:__mulsi3:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:__mulsi3:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:__mulsi3:160-:Repeating constant propagation.
+Note:main.elf:ud.c:__mulsi3:160-:Repeating constant propagation.
+Note:main.elf:ud.c:__mulsi3:160-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf:ud.c:__mulsi3:160-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:ud.c:__mulsi3:160-:Maximum stack-height from constant propagation for SP:4
+Note:main.elf:ud.c:__mulsi3:160-:Take-off stack-height in stack SP is constant for 1 of 1 calls.
+Note:main.elf:ud.c:__mulsi3:160-:Constant propagation changed nothing.
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 4 = __muluhisi3 at 000B58) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Arithmetic analysis is not needed.
+Note:main.elf:ud.c:__mulsi3:160-:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:__mulsi3:160-:Time_State for bounds # 8 defined as COMPUTABLE
+Note:main.elf:ud.c:__mulsi3:160-:Freezing bounds # 8
+Note:main.elf:ud.c:ludcmp:117-160:No execution bounds known yet.
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 1 = ludcmp at 00028C) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 1 = ludcmp at 00028C) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 1 = ludcmp at 00028C) is FALSE
+Note:main.elf:ud.c:ludcmp:117:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:117-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:117-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:117-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:117-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:117-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:117-160:Repeating constant propagation.
+Note:main.elf:ud.c:ludcmp:117-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:117-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:117-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:117-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:117-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:117-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:122:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:122-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:122-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:122-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:122-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:122-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:122-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:122-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:127:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:127:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:127:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:127-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:127-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:127-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:127-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:127-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:127-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:127-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:127-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:127-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:128:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:128:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:128:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:131:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:131-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:131:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:131:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:131:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:131-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:131-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:131-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:132-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:131:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:131:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:131:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:131-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:131-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:131-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:133:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:133:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:133:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:133-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:133-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:133-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:133-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:133-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:133-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:133-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:133-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:133-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:133-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:133-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:133-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:125-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:137:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:137:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:137:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:137-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:137-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:137-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:137-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:137-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:137-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:137-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:137-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:137-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:138:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:138-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:138:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:138:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:138:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:138-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:138-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:138-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:139-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:138:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:138:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:138:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:138-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:138-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:138-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:140:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:140:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:140:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:140-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:135-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:122:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:122:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:122:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:122-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:122-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:122-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:143-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:143-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:143-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:143-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:143-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:143-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:144-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:144-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:144-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:144-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:144-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:144-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:144-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:144-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:144-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:146:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:146:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:146:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:146-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:146-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:146-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:146-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:146-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:146-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:147:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:147-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:147:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:147:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:147:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:147-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:147-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:147-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:148-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:147:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:147:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:147:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:147-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:147-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:147-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:149:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:149:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:149:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:149-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:149-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:149-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:149-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:149-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:149-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:144:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:144:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:144:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:144-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:144-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:144-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:152:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:152:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:152:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:154:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:154:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:154:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:154-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:154-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:154-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:154-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:154-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:154-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:156-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:155-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:157:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:157:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:157:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:157-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:157-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:157-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:157-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:157-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:157-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:157-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:157-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:157-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:152:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:152:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:152:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:152-:Refine (Assignment) bounded a pointer.
+Note:main.elf:ud.c:ludcmp:117-160:Repeating constant propagation.
+Note:main.elf:ud.c:ludcmp:117-160:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf:ud.c:ludcmp:117-160:Final stack-height from constant propagation for SP:sh
+Note:main.elf:ud.c:ludcmp:117-160:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf:ud.c:ludcmp:117-160:Take-off stack-height in stack SP is constant for 0 of 7 calls.
+Note:main.elf:ud.c:ludcmp:117-160:Constant propagation changed nothing.
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 1 = ludcmp at 00028C) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 1 = ludcmp at 00028C) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 1 = ludcmp at 00028C) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 1 = ludcmp at 00028C) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 1 = ludcmp at 00028C) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 1 = ludcmp at 00028C) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 1 = ludcmp at 00028C) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 2 = __mulsi3 at 000B00) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 3 = __divmodsi4 at 000B20) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 1 = ludcmp at 00028C) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 1 = ludcmp at 00028C) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Arithmetic analysis is not needed.
+Note:main.elf:ud.c:ludcmp:117-160:Unused (# 1 = ludcmp at 00028C) is FALSE
+Note:main.elf:ud.c:ludcmp:117-160:Time_State for bounds # 9 defined as COMPUTABLE
+Note:main.elf:ud.c:ludcmp:117-160:Freezing bounds # 9
+Note:main.elf::::Target-specific additional analysis starts.
+Note:main.elf::::Generic worst-case path and time analysis starts.
+Wcet:main.elf:ud.c:000BC0:160-:8
+Wcet:main.elf:ud.c:__umulhisi3:160-:31
+Wcet:main.elf:ud.c:__muluhisi3:160-:52
+Wcet:main.elf:ud.c:__mulsi3:160-:82
+Wcet:main.elf:ud.c:__divmodsi4_neg1:160-:11
+Wcet:main.elf:ud.c:__divmodsi4_neg2:160-:11
+Wcet:main.elf:ud.c:__udivmodsi4:160-:665
+Wcet:main.elf:ud.c:__divmodsi4:160-:737
+Wcet:main.elf:ud.c:ludcmp:117-160:93487
+Note:main.elf::::Creating SLI file sourceinfo.csv.

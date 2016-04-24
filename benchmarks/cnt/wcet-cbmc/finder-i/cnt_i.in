@@ -1,0 +1,124 @@
+/* This file contains inserted assert macro statements. It is given to CBMC. */
+unsigned int timeElapsed = 0;
+typedef int matrix [ 10 ] [ 10 ] ;
+int main  (  void  )  ;
+int Test  (  matrix  )  ;
+int Initialize  (  matrix  )  ;
+int InitSeed  (  void  )  ;
+void Sum  (  matrix  )  ;
+int RandomInteger  (  void  )  ;
+int Seed ;
+matrix Array ;
+int Postotal , Negtotal , Poscnt , Negcnt ;
+int main  (  void  )  
+{
+	InitSeed  (  ) ;
+	Test  (  Array ) ;
+	return  1 ;
+
+}
+int Test  (  matrix Array  )  
+{
+	long StartTime , StopTime ;
+	float TotalTime ;
+	// Initialize  (  Array ) ;
+	StartTime = 1000.0 ;
+	Sum  (  Array ) ;
+	StopTime = 1500.0 ;
+	TotalTime =  (  StopTime - StartTime  )  / ( 1000.0 ) ;
+	return  0 ;
+
+}
+int Initialize  (  matrix Array  )  
+{
+	register int OuterIndex , InnerIndex ;
+	for ( OuterIndex = 0 ; OuterIndex < 10 ; OuterIndex ++ )  {   for ( InnerIndex = 0 ; InnerIndex < 10 ; InnerIndex ++ )  {  Array [ OuterIndex ] [ InnerIndex ] = RandomInteger  (  ) ;
+	}  }   return  0 ;
+
+}
+int InitSeed  (  void  )  
+{
+	Seed = 0 ;
+	return  0 ;
+
+}
+void Sum  (  matrix Array  )  
+{
+	register int Outer , Inner ;
+	int Ptotal 
+#ifndef __INPVARS_EXE__
+		=  0 
+#endif
+		;
+	int Ntotal 
+#ifndef __INPVARS_EXE__
+		=  0 
+#endif
+		;
+	int Pcnt 
+#ifndef __INPVARS_EXE__
+		=  0 
+#endif
+		;
+	int Ncnt 
+#ifndef __INPVARS_EXE__
+		=  0 
+#endif
+		;
+
+	timeElapsed = timeElapsed + 45; /* Block num 1*/
+	for ( Outer = 0 ; (timeElapsed = timeElapsed + (3)), /* Block num 2*/ Outer < 10 ; (timeElapsed = timeElapsed + 2), /* Block num 7*/ Outer ++ )  {  
+		(timeElapsed = timeElapsed + 6); /* Block num 3*/ 
+		for ( Inner = 0 ; (timeElapsed = timeElapsed + (4)), /* Block num 5*/ Inner < 10 ;  Inner ++ )  {  
+			timeElapsed = timeElapsed + 3; /* Block num 10*/
+
+			(timeElapsed = timeElapsed + 29); /* Block num 6*/	
+			if ( Array [ Outer ] [ Inner ] >= 0 )
+
+			{
+
+				timeElapsed = timeElapsed + 47; /* Block num 8*/
+				Ptotal += Array [ Outer ] [ Inner ] ;
+				Pcnt ++ ;
+
+			}
+
+			else  
+			{ 
+				timeElapsed = timeElapsed + 1;  /* Extra - Direct print */
+
+				{
+
+					timeElapsed = timeElapsed + 45; /* Block num 9*/
+					Ntotal += Array [ Outer ] [ Inner ] ;
+					Ncnt ++ ;
+
+				}
+			} }  
+			timeElapsed = timeElapsed + 1;  /* Extra - Direct print */
+	}  
+	timeElapsed = timeElapsed + 1;  /* Extra - Direct print */
+
+	timeElapsed = timeElapsed + 55; /* Block num 4*/
+	Postotal = Ptotal ;
+	Poscnt = Pcnt ;
+	Negtotal = Ntotal ;
+	Negcnt = Ncnt ;
+
+}
+int RandomInteger  (  void  )  
+{
+	Seed =  (   (  Seed * 133  )  + 81  )  % ( 8095 ) ;
+	return  Seed ;
+
+}
+
+int CBMCDriver (void)
+{
+	matrix local_Array;
+
+	Sum  (  local_Array ) ;
+	###WCET_TEST###
+	return 0;
+
+}

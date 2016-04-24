@@ -1,0 +1,14 @@
+Subprogram "Initialize"
+  loop
+    Repeats 100 Times;
+  end loop;
+end "Initialize";
+
+subprogram "BubbleSort"
+  loop that contains loop
+    repeats <=99 times;
+  end loop;
+  loop that is in loop
+    repeats <=99 times;
+  end loop;
+end "BubbleSort";

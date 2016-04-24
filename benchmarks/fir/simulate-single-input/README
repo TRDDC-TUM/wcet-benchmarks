@@ -1,0 +1,23 @@
+Claim: For insert sort, the "reversed card deck" is the input that 
+intuitively leads to WCET. However, not all reversed decks have the same
+executin time. Only one specific reversed card deck will lead to ET=WCET.
+
+This is what we test here...
+
+Reasoning:
+---------
+The compiler may create additional BBs at object level, which are not
+existent at source level. Even worse, it may create cycles (loops) whose
+actual bounds depend on the numeric values.
+
+The WCET must consider the worst-case for those low-level loops, otherwise
+it is not sound.
+
+Assume there exists an input that leads to the WCET. Then, finding this can 
+only be done at machine level, otherwise the variation is not captured.
+
+However, on source-level, the WCET input takes a certain path. There exist
+other input sets, which take tahe the same path, but have different low-level
+timing. Since low-level code is not visible at source level (and cannot be
+influenced by the developer), it is not of interest. Any input which takes the
+same paths in the source code is therefore of the same interest.

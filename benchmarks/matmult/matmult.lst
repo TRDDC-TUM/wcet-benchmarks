@@ -1,0 +1,672 @@
+   1               		.file	"matmult.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__RAMPZ__ = 0x3b
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.text
+   9               	.Ltext0:
+  10               		.comm	Seed,2,1
+  11               		.comm	ArrayA,800,1
+  12               		.comm	ArrayB,800,1
+  13               		.comm	ResultArray,800,1
+  14               	.global	main
+  16               	main:
+  17               	.LFB0:
+  18               		.file 1 "matmult.c"
+   1:matmult.c     **** /* $Id: matmult.c,v 1.2 2005/04/04 11:34:58 csg Exp $ */
+   2:matmult.c     **** 
+   3:matmult.c     **** /* matmult.c */
+   4:matmult.c     **** /* was mm.c! */
+   5:matmult.c     **** 
+   6:matmult.c     **** 
+   7:matmult.c     **** /*----------------------------------------------------------------------*
+   8:matmult.c     ****  * To make this program compile under our assumed embedded environment,
+   9:matmult.c     ****  * we had to make several changes:
+  10:matmult.c     ****  * - Declare all functions in ANSI style, not K&R.
+  11:matmult.c     ****  *   this includes adding return types in all cases!
+  12:matmult.c     ****  * - Declare function prototypes
+  13:matmult.c     ****  * - Disable all output
+  14:matmult.c     ****  * - Disable all UNIX-style includes
+  15:matmult.c     ****  *
+  16:matmult.c     ****  * This is a program that was developed from mm.c to matmult.c by
+  17:matmult.c     ****  * Thomas Lundqvist at Chalmers.
+  18:matmult.c     ****  *----------------------------------------------------------------------*/
+  19:matmult.c     **** #define UPPSALAWCET 1
+  20:matmult.c     **** 
+  21:matmult.c     **** 
+  22:matmult.c     **** /* ***UPPSALA WCET***:
+  23:matmult.c     ****    disable stupid UNIX includes */
+  24:matmult.c     **** #ifndef UPPSALAWCET
+  25:matmult.c     **** #include <sys/types.h>
+  26:matmult.c     **** #include <sys/times.h>
+  27:matmult.c     **** #endif
+  28:matmult.c     **** 
+  29:matmult.c     **** /*
+  30:matmult.c     ****  * MATRIX MULTIPLICATION BENCHMARK PROGRAM:
+  31:matmult.c     ****  * This program multiplies 2 square matrices resulting in a 3rd
+  32:matmult.c     ****  * matrix. It tests a compiler's speed in handling multidimensional
+  33:matmult.c     ****  * arrays and simple arithmetic.
+  34:matmult.c     ****  */
+  35:matmult.c     **** 
+  36:matmult.c     **** #define UPPERLIMIT 20
+  37:matmult.c     **** 
+  38:matmult.c     **** typedef int matrix [UPPERLIMIT][UPPERLIMIT];
+  39:matmult.c     **** 
+  40:matmult.c     **** int Seed;
+  41:matmult.c     **** matrix ArrayA, ArrayB, ResultArray;
+  42:matmult.c     **** 
+  43:matmult.c     **** #ifdef UPPSALAWCET
+  44:matmult.c     **** /* Our picky compiler wants prototypes! */
+  45:matmult.c     **** void Multiply(matrix A, matrix B, matrix Res);
+  46:matmult.c     **** void InitSeed(void);
+  47:matmult.c     **** void Test(matrix A, matrix B, matrix Res);
+  48:matmult.c     **** void Initialize(matrix Array);
+  49:matmult.c     **** int RandomInteger(void);
+  50:matmult.c     **** #endif
+  51:matmult.c     **** 
+  52:matmult.c     **** void main()
+  53:matmult.c     **** {
+  19               		.loc 1 53 0
+  20 0000 CF93      		push r28
+  21               	.LCFI0:
+  22 0002 DF93      		push r29
+  23               	.LCFI1:
+  24 0004 CDB7      		in r28,__SP_L__
+  25 0006 DEB7      		in r29,__SP_H__
+  26               	.LCFI2:
+  27               	/* prologue: function */
+  28               	/* frame size = 0 */
+  29               	/* stack size = 2 */
+  30               	.L__stack_usage = 2
+  54:matmult.c     ****    InitSeed();
+  31               		.loc 1 54 0
+  32 0008 0E94 0000 		call InitSeed
+  55:matmult.c     **** /* ***UPPSALA WCET***:
+  56:matmult.c     ****    no printing please! */
+  57:matmult.c     **** #ifndef UPPSALAWCET
+  58:matmult.c     ****    printf("\n   *** MATRIX MULTIPLICATION BENCHMARK TEST ***\n\n");
+  59:matmult.c     ****    printf("RESULTS OF THE TEST:\n");
+  60:matmult.c     **** #endif
+  61:matmult.c     ****    Test(ArrayA, ArrayB, ResultArray);
+  33               		.loc 1 61 0
+  34 000c 40E0      		ldi r20,lo8(ResultArray)
+  35 000e 50E0      		ldi r21,hi8(ResultArray)
+  36 0010 60E0      		ldi r22,lo8(ArrayB)
+  37 0012 70E0      		ldi r23,hi8(ArrayB)
+  38 0014 80E0      		ldi r24,lo8(ArrayA)
+  39 0016 90E0      		ldi r25,hi8(ArrayA)
+  40 0018 0E94 0000 		call Test
+  41               	/* epilogue start */
+  62:matmult.c     **** }
+  42               		.loc 1 62 0
+  43 001c DF91      		pop r29
+  44 001e CF91      		pop r28
+  45 0020 0895      		ret
+  46               	.LFE0:
+  48               	.global	InitSeed
+  50               	InitSeed:
+  51               	.LFB1:
+  63:matmult.c     **** 
+  64:matmult.c     **** 
+  65:matmult.c     **** void InitSeed(void)
+  66:matmult.c     **** /*
+  67:matmult.c     ****  * Initializes the seed used in the random number generator.
+  68:matmult.c     ****  */
+  69:matmult.c     **** {
+  52               		.loc 1 69 0
+  53 0022 CF93      		push r28
+  54               	.LCFI3:
+  55 0024 DF93      		push r29
+  56               	.LCFI4:
+  57 0026 CDB7      		in r28,__SP_L__
+  58 0028 DEB7      		in r29,__SP_H__
+  59               	.LCFI5:
+  60               	/* prologue: function */
+  61               	/* frame size = 0 */
+  62               	/* stack size = 2 */
+  63               	.L__stack_usage = 2
+  70:matmult.c     ****   /* ***UPPSALA WCET***:
+  71:matmult.c     ****      changed Thomas Ls code to something simpler.
+  72:matmult.c     ****    Seed = KNOWN_VALUE - 1; */
+  73:matmult.c     ****   Seed = 0;
+  64               		.loc 1 73 0
+  65 002a 1092 0000 		sts Seed+1,__zero_reg__
+  66 002e 1092 0000 		sts Seed,__zero_reg__
+  67               	/* epilogue start */
+  74:matmult.c     **** }
+  68               		.loc 1 74 0
+  69 0032 DF91      		pop r29
+  70 0034 CF91      		pop r28
+  71 0036 0895      		ret
+  72               	.LFE1:
+  74               	.global	Test
+  76               	Test:
+  77               	.LFB2:
+  75:matmult.c     **** 
+  76:matmult.c     **** 
+  77:matmult.c     **** void Test(matrix A, matrix B, matrix Res)
+  78:matmult.c     **** /*
+  79:matmult.c     ****  * Runs a multiplication test on an array.  Calculates and prints the
+  80:matmult.c     ****  * time it takes to multiply the matrices.
+  81:matmult.c     ****  */
+  82:matmult.c     **** {
+  78               		.loc 1 82 0
+  79 0038 CF93      		push r28
+  80               	.LCFI6:
+  81 003a DF93      		push r29
+  82               	.LCFI7:
+  83 003c 00D0      		rcall .
+  84 003e 00D0      		rcall .
+  85 0040 00D0      		rcall .
+  86               	.LCFI8:
+  87 0042 CDB7      		in r28,__SP_L__
+  88 0044 DEB7      		in r29,__SP_H__
+  89               	.LCFI9:
+  90               	/* prologue: function */
+  91               	/* frame size = 6 */
+  92               	/* stack size = 8 */
+  93               	.L__stack_usage = 8
+  94 0046 9A83      		std Y+2,r25
+  95 0048 8983      		std Y+1,r24
+  96 004a 7C83      		std Y+4,r23
+  97 004c 6B83      		std Y+3,r22
+  98 004e 5E83      		std Y+6,r21
+  99 0050 4D83      		std Y+5,r20
+  83:matmult.c     **** #ifndef UPPSALAWCET
+  84:matmult.c     ****    long StartTime, StopTime;
+  85:matmult.c     ****    float TotalTime;
+  86:matmult.c     **** #endif
+  87:matmult.c     **** 
+  88:matmult.c     ****    Initialize(A);
+ 100               		.loc 1 88 0
+ 101 0052 8981      		ldd r24,Y+1
+ 102 0054 9A81      		ldd r25,Y+2
+ 103 0056 0E94 0000 		call Initialize
+  89:matmult.c     ****    Initialize(B);
+ 104               		.loc 1 89 0
+ 105 005a 8B81      		ldd r24,Y+3
+ 106 005c 9C81      		ldd r25,Y+4
+ 107 005e 0E94 0000 		call Initialize
+  90:matmult.c     **** 
+  91:matmult.c     ****    /* ***UPPSALA WCET***: don't print or time */
+  92:matmult.c     **** #ifndef UPPSALAWCET
+  93:matmult.c     ****    StartTime = ttime ();
+  94:matmult.c     **** #endif
+  95:matmult.c     **** 
+  96:matmult.c     ****    Multiply(A, B, Res);
+ 108               		.loc 1 96 0
+ 109 0062 4D81      		ldd r20,Y+5
+ 110 0064 5E81      		ldd r21,Y+6
+ 111 0066 2B81      		ldd r18,Y+3
+ 112 0068 3C81      		ldd r19,Y+4
+ 113 006a 8981      		ldd r24,Y+1
+ 114 006c 9A81      		ldd r25,Y+2
+ 115 006e B901      		movw r22,r18
+ 116 0070 0E94 0000 		call Multiply
+ 117               	/* epilogue start */
+  97:matmult.c     **** 
+  98:matmult.c     ****    /* ***UPPSALA WCET***: don't print or time */
+  99:matmult.c     **** #ifndef UPPSALAWCET
+ 100:matmult.c     ****    StopTime = ttime();
+ 101:matmult.c     ****    TotalTime = (StopTime - StartTime) / 1000.0;
+ 102:matmult.c     ****    printf("    - Size of array is %d\n", UPPERLIMIT);
+ 103:matmult.c     ****    printf("    - Total multiplication time is %3.3f seconds\n\n", TotalTime);
+ 104:matmult.c     **** #endif
+ 105:matmult.c     **** }
+ 118               		.loc 1 105 0
+ 119 0074 2696      		adiw r28,6
+ 120 0076 0FB6      		in __tmp_reg__,__SREG__
+ 121 0078 F894      		cli
+ 122 007a DEBF      		out __SP_H__,r29
+ 123 007c 0FBE      		out __SREG__,__tmp_reg__
+ 124 007e CDBF      		out __SP_L__,r28
+ 125 0080 DF91      		pop r29
+ 126 0082 CF91      		pop r28
+ 127 0084 0895      		ret
+ 128               	.LFE2:
+ 130               	.global	Initialize
+ 132               	Initialize:
+ 133               	.LFB3:
+ 106:matmult.c     **** 
+ 107:matmult.c     **** 
+ 108:matmult.c     **** void Initialize(matrix Array)
+ 109:matmult.c     **** /*
+ 110:matmult.c     ****  * Intializes the given array with random integers.
+ 111:matmult.c     ****  */
+ 112:matmult.c     **** {
+ 134               		.loc 1 112 0
+ 135 0086 0F93      		push r16
+ 136               	.LCFI10:
+ 137 0088 1F93      		push r17
+ 138               	.LCFI11:
+ 139 008a CF93      		push r28
+ 140               	.LCFI12:
+ 141 008c DF93      		push r29
+ 142               	.LCFI13:
+ 143 008e 00D0      		rcall .
+ 144 0090 00D0      		rcall .
+ 145 0092 00D0      		rcall .
+ 146               	.LCFI14:
+ 147 0094 CDB7      		in r28,__SP_L__
+ 148 0096 DEB7      		in r29,__SP_H__
+ 149               	.LCFI15:
+ 150               	/* prologue: function */
+ 151               	/* frame size = 6 */
+ 152               	/* stack size = 10 */
+ 153               	.L__stack_usage = 10
+ 154 0098 9E83      		std Y+6,r25
+ 155 009a 8D83      		std Y+5,r24
+ 113:matmult.c     ****    int OuterIndex, InnerIndex;
+ 114:matmult.c     **** 
+ 115:matmult.c     ****    for (OuterIndex = 0; OuterIndex < UPPERLIMIT; OuterIndex++)
+ 156               		.loc 1 115 0
+ 157 009c 1A82      		std Y+2,__zero_reg__
+ 158 009e 1982      		std Y+1,__zero_reg__
+ 159 00a0 00C0      		rjmp .L5
+ 160               	.L8:
+ 116:matmult.c     ****       for (InnerIndex = 0; InnerIndex < UPPERLIMIT; InnerIndex++)
+ 161               		.loc 1 116 0
+ 162 00a2 1C82      		std Y+4,__zero_reg__
+ 163 00a4 1B82      		std Y+3,__zero_reg__
+ 164 00a6 00C0      		rjmp .L6
+ 165               	.L7:
+ 117:matmult.c     ****          Array[OuterIndex][InnerIndex] = RandomInteger();
+ 166               		.loc 1 117 0 discriminator 2
+ 167 00a8 2981      		ldd r18,Y+1
+ 168 00aa 3A81      		ldd r19,Y+2
+ 169 00ac 48E2      		ldi r20,lo8(40)
+ 170 00ae 429F      		mul r20,r18
+ 171 00b0 C001      		movw r24,r0
+ 172 00b2 439F      		mul r20,r19
+ 173 00b4 900D      		add r25,r0
+ 174 00b6 1124      		clr __zero_reg__
+ 175 00b8 2D81      		ldd r18,Y+5
+ 176 00ba 3E81      		ldd r19,Y+6
+ 177 00bc 8901      		movw r16,r18
+ 178 00be 080F      		add r16,r24
+ 179 00c0 191F      		adc r17,r25
+ 180 00c2 0E94 0000 		call RandomInteger
+ 181 00c6 9C01      		movw r18,r24
+ 182 00c8 8B81      		ldd r24,Y+3
+ 183 00ca 9C81      		ldd r25,Y+4
+ 184 00cc 880F      		lsl r24
+ 185 00ce 991F      		rol r25
+ 186 00d0 800F      		add r24,r16
+ 187 00d2 911F      		adc r25,r17
+ 188 00d4 FC01      		movw r30,r24
+ 189 00d6 3183      		std Z+1,r19
+ 190 00d8 2083      		st Z,r18
+ 116:matmult.c     ****       for (InnerIndex = 0; InnerIndex < UPPERLIMIT; InnerIndex++)
+ 191               		.loc 1 116 0 discriminator 2
+ 192 00da 8B81      		ldd r24,Y+3
+ 193 00dc 9C81      		ldd r25,Y+4
+ 194 00de 0196      		adiw r24,1
+ 195 00e0 9C83      		std Y+4,r25
+ 196 00e2 8B83      		std Y+3,r24
+ 197               	.L6:
+ 116:matmult.c     ****       for (InnerIndex = 0; InnerIndex < UPPERLIMIT; InnerIndex++)
+ 198               		.loc 1 116 0 is_stmt 0 discriminator 1
+ 199 00e4 8B81      		ldd r24,Y+3
+ 200 00e6 9C81      		ldd r25,Y+4
+ 201 00e8 8431      		cpi r24,20
+ 202 00ea 9105      		cpc r25,__zero_reg__
+ 203 00ec 04F0      		brlt .L7
+ 115:matmult.c     ****    for (OuterIndex = 0; OuterIndex < UPPERLIMIT; OuterIndex++)
+ 204               		.loc 1 115 0 is_stmt 1
+ 205 00ee 8981      		ldd r24,Y+1
+ 206 00f0 9A81      		ldd r25,Y+2
+ 207 00f2 0196      		adiw r24,1
+ 208 00f4 9A83      		std Y+2,r25
+ 209 00f6 8983      		std Y+1,r24
+ 210               	.L5:
+ 115:matmult.c     ****    for (OuterIndex = 0; OuterIndex < UPPERLIMIT; OuterIndex++)
+ 211               		.loc 1 115 0 is_stmt 0 discriminator 1
+ 212 00f8 8981      		ldd r24,Y+1
+ 213 00fa 9A81      		ldd r25,Y+2
+ 214 00fc 8431      		cpi r24,20
+ 215 00fe 9105      		cpc r25,__zero_reg__
+ 216 0100 04F0      		brlt .L8
+ 217               	/* epilogue start */
+ 118:matmult.c     **** }
+ 218               		.loc 1 118 0 is_stmt 1
+ 219 0102 2696      		adiw r28,6
+ 220 0104 0FB6      		in __tmp_reg__,__SREG__
+ 221 0106 F894      		cli
+ 222 0108 DEBF      		out __SP_H__,r29
+ 223 010a 0FBE      		out __SREG__,__tmp_reg__
+ 224 010c CDBF      		out __SP_L__,r28
+ 225 010e DF91      		pop r29
+ 226 0110 CF91      		pop r28
+ 227 0112 1F91      		pop r17
+ 228 0114 0F91      		pop r16
+ 229 0116 0895      		ret
+ 230               	.LFE3:
+ 232               	.global	RandomInteger
+ 234               	RandomInteger:
+ 235               	.LFB4:
+ 119:matmult.c     **** 
+ 120:matmult.c     **** 
+ 121:matmult.c     **** int RandomInteger(void)
+ 122:matmult.c     **** /*
+ 123:matmult.c     ****  * Generates random integers between 0 and 8095
+ 124:matmult.c     ****  */
+ 125:matmult.c     **** {
+ 236               		.loc 1 125 0
+ 237 0118 CF93      		push r28
+ 238               	.LCFI16:
+ 239 011a DF93      		push r29
+ 240               	.LCFI17:
+ 241 011c CDB7      		in r28,__SP_L__
+ 242 011e DEB7      		in r29,__SP_H__
+ 243               	.LCFI18:
+ 244               	/* prologue: function */
+ 245               	/* frame size = 0 */
+ 246               	/* stack size = 2 */
+ 247               	.L__stack_usage = 2
+ 126:matmult.c     ****    Seed = ((Seed * 133) + 81) % 8095;
+ 248               		.loc 1 126 0
+ 249 0120 2091 0000 		lds r18,Seed
+ 250 0124 3091 0000 		lds r19,Seed+1
+ 251 0128 45E8      		ldi r20,lo8(-123)
+ 252 012a 429F      		mul r20,r18
+ 253 012c C001      		movw r24,r0
+ 254 012e 439F      		mul r20,r19
+ 255 0130 900D      		add r25,r0
+ 256 0132 1124      		clr __zero_reg__
+ 257 0134 8F5A      		subi r24,-81
+ 258 0136 9F4F      		sbci r25,-1
+ 259 0138 2FE9      		ldi r18,lo8(-97)
+ 260 013a 3FE1      		ldi r19,lo8(31)
+ 261 013c B901      		movw r22,r18
+ 262 013e 0E94 0000 		call __divmodhi4
+ 263 0142 9093 0000 		sts Seed+1,r25
+ 264 0146 8093 0000 		sts Seed,r24
+ 127:matmult.c     ****    return (Seed);
+ 265               		.loc 1 127 0
+ 266 014a 8091 0000 		lds r24,Seed
+ 267 014e 9091 0000 		lds r25,Seed+1
+ 268               	/* epilogue start */
+ 128:matmult.c     **** }
+ 269               		.loc 1 128 0
+ 270 0152 DF91      		pop r29
+ 271 0154 CF91      		pop r28
+ 272 0156 0895      		ret
+ 273               	.LFE4:
+ 275               	.global	Multiply
+ 277               	Multiply:
+ 278               	.LFB5:
+ 129:matmult.c     **** 
+ 130:matmult.c     **** 
+ 131:matmult.c     **** #ifndef UPPSALAWCET
+ 132:matmult.c     **** int ttime()
+ 133:matmult.c     **** /*
+ 134:matmult.c     ****  * This function returns in milliseconds the amount of compiler time
+ 135:matmult.c     ****  * used prior to it being called.
+ 136:matmult.c     ****  */
+ 137:matmult.c     **** {
+ 138:matmult.c     ****    struct tms buffer;
+ 139:matmult.c     ****    int utime;
+ 140:matmult.c     **** 
+ 141:matmult.c     ****    /*   times(&buffer);   times not implemented */
+ 142:matmult.c     ****    utime = (buffer.tms_utime / 60.0) * 1000.0;
+ 143:matmult.c     ****    return (utime);
+ 144:matmult.c     **** }
+ 145:matmult.c     **** #endif
+ 146:matmult.c     **** 
+ 147:matmult.c     **** void Multiply(matrix A, matrix B, matrix Res)
+ 148:matmult.c     **** /*
+ 149:matmult.c     ****  * Multiplies arrays A and B and stores the result in ResultArray.
+ 150:matmult.c     ****  */
+ 151:matmult.c     **** {
+ 279               		.loc 1 151 0
+ 280 0158 CF92      		push r12
+ 281               	.LCFI19:
+ 282 015a DF92      		push r13
+ 283               	.LCFI20:
+ 284 015c EF92      		push r14
+ 285               	.LCFI21:
+ 286 015e FF92      		push r15
+ 287               	.LCFI22:
+ 288 0160 0F93      		push r16
+ 289               	.LCFI23:
+ 290 0162 1F93      		push r17
+ 291               	.LCFI24:
+ 292 0164 CF93      		push r28
+ 293               	.LCFI25:
+ 294 0166 DF93      		push r29
+ 295               	.LCFI26:
+ 296 0168 00D0      		rcall .
+ 297 016a 00D0      		rcall .
+ 298 016c 00D0      		rcall .
+ 299               	.LCFI27:
+ 300 016e CDB7      		in r28,__SP_L__
+ 301 0170 DEB7      		in r29,__SP_H__
+ 302               	.LCFI28:
+ 303               	/* prologue: function */
+ 304               	/* frame size = 6 */
+ 305               	/* stack size = 14 */
+ 306               	.L__stack_usage = 14
+ 307 0172 9A83      		std Y+2,r25
+ 308 0174 8983      		std Y+1,r24
+ 309 0176 7C83      		std Y+4,r23
+ 310 0178 6B83      		std Y+3,r22
+ 311 017a 5E83      		std Y+6,r21
+ 312 017c 4D83      		std Y+5,r20
+ 152:matmult.c     ****    register int Outer, Inner, Index;
+ 153:matmult.c     **** 
+ 154:matmult.c     ****    for (Outer = 0; Outer < UPPERLIMIT; Outer++)
+ 313               		.loc 1 154 0
+ 314 017e 00E0      		ldi r16,0
+ 315 0180 10E0      		ldi r17,0
+ 316 0182 00C0      		rjmp .L12
+ 317               	.L17:
+ 155:matmult.c     ****       for (Inner = 0; Inner < UPPERLIMIT; Inner++)
+ 318               		.loc 1 155 0
+ 319 0184 E12C      		mov r14,__zero_reg__
+ 320 0186 F12C      		mov r15,__zero_reg__
+ 321 0188 00C0      		rjmp .L13
+ 322               	.L16:
+ 156:matmult.c     ****       {
+ 157:matmult.c     ****          Res [Outer][Inner] = 0;
+ 323               		.loc 1 157 0
+ 324 018a 9801      		movw r18,r16
+ 325 018c 48E2      		ldi r20,lo8(40)
+ 326 018e 429F      		mul r20,r18
+ 327 0190 C001      		movw r24,r0
+ 328 0192 439F      		mul r20,r19
+ 329 0194 900D      		add r25,r0
+ 330 0196 1124      		clr __zero_reg__
+ 331 0198 2D81      		ldd r18,Y+5
+ 332 019a 3E81      		ldd r19,Y+6
+ 333 019c 280F      		add r18,r24
+ 334 019e 391F      		adc r19,r25
+ 335 01a0 C701      		movw r24,r14
+ 336 01a2 880F      		lsl r24
+ 337 01a4 991F      		rol r25
+ 338 01a6 820F      		add r24,r18
+ 339 01a8 931F      		adc r25,r19
+ 340 01aa DC01      		movw r26,r24
+ 341 01ac 1196      		adiw r26,1
+ 342 01ae 1C92      		st X,__zero_reg__
+ 343 01b0 1E92      		st -X,__zero_reg__
+ 158:matmult.c     ****          for (Index = 0; Index < UPPERLIMIT; Index++)
+ 344               		.loc 1 158 0
+ 345 01b2 C12C      		mov r12,__zero_reg__
+ 346 01b4 D12C      		mov r13,__zero_reg__
+ 347 01b6 00C0      		rjmp .L14
+ 348               	.L15:
+ 159:matmult.c     ****             Res[Outer][Inner]  +=
+ 349               		.loc 1 159 0 discriminator 2
+ 350 01b8 9801      		movw r18,r16
+ 351 01ba 48E2      		ldi r20,lo8(40)
+ 352 01bc 429F      		mul r20,r18
+ 353 01be C001      		movw r24,r0
+ 354 01c0 439F      		mul r20,r19
+ 355 01c2 900D      		add r25,r0
+ 356 01c4 1124      		clr __zero_reg__
+ 357 01c6 2D81      		ldd r18,Y+5
+ 358 01c8 3E81      		ldd r19,Y+6
+ 359 01ca A901      		movw r20,r18
+ 360 01cc 480F      		add r20,r24
+ 361 01ce 591F      		adc r21,r25
+ 362 01d0 9801      		movw r18,r16
+ 363 01d2 68E2      		ldi r22,lo8(40)
+ 364 01d4 629F      		mul r22,r18
+ 365 01d6 C001      		movw r24,r0
+ 366 01d8 639F      		mul r22,r19
+ 367 01da 900D      		add r25,r0
+ 368 01dc 1124      		clr __zero_reg__
+ 369 01de 2D81      		ldd r18,Y+5
+ 370 01e0 3E81      		ldd r19,Y+6
+ 371 01e2 280F      		add r18,r24
+ 372 01e4 391F      		adc r19,r25
+ 373 01e6 C701      		movw r24,r14
+ 374 01e8 880F      		lsl r24
+ 375 01ea 991F      		rol r25
+ 376 01ec 820F      		add r24,r18
+ 377 01ee 931F      		adc r25,r19
+ 378 01f0 FC01      		movw r30,r24
+ 379 01f2 2081      		ld r18,Z
+ 380 01f4 3181      		ldd r19,Z+1
+ 160:matmult.c     ****                A[Outer][Index] * B[Index][Inner];
+ 381               		.loc 1 160 0 discriminator 2
+ 382 01f6 B801      		movw r22,r16
+ 383 01f8 E8E2      		ldi r30,lo8(40)
+ 384 01fa E69F      		mul r30,r22
+ 385 01fc C001      		movw r24,r0
+ 386 01fe E79F      		mul r30,r23
+ 387 0200 900D      		add r25,r0
+ 388 0202 1124      		clr __zero_reg__
+ 389 0204 6981      		ldd r22,Y+1
+ 390 0206 7A81      		ldd r23,Y+2
+ 391 0208 680F      		add r22,r24
+ 392 020a 791F      		adc r23,r25
+ 393 020c C601      		movw r24,r12
+ 394 020e 880F      		lsl r24
+ 395 0210 991F      		rol r25
+ 396 0212 860F      		add r24,r22
+ 397 0214 971F      		adc r25,r23
+ 398 0216 DC01      		movw r26,r24
+ 399 0218 ED91      		ld r30,X+
+ 400 021a FC91      		ld r31,X
+ 401 021c B601      		movw r22,r12
+ 402 021e A8E2      		ldi r26,lo8(40)
+ 403 0220 A69F      		mul r26,r22
+ 404 0222 C001      		movw r24,r0
+ 405 0224 A79F      		mul r26,r23
+ 406 0226 900D      		add r25,r0
+ 407 0228 1124      		clr __zero_reg__
+ 408 022a 6B81      		ldd r22,Y+3
+ 409 022c 7C81      		ldd r23,Y+4
+ 410 022e 680F      		add r22,r24
+ 411 0230 791F      		adc r23,r25
+ 412 0232 C701      		movw r24,r14
+ 413 0234 880F      		lsl r24
+ 414 0236 991F      		rol r25
+ 415 0238 860F      		add r24,r22
+ 416 023a 971F      		adc r25,r23
+ 417 023c DC01      		movw r26,r24
+ 418 023e 6D91      		ld r22,X+
+ 419 0240 7C91      		ld r23,X
+ 420 0242 1197      		sbiw r26,1
+ 421 0244 E69F      		mul r30,r22
+ 422 0246 C001      		movw r24,r0
+ 423 0248 E79F      		mul r30,r23
+ 424 024a 900D      		add r25,r0
+ 425 024c F69F      		mul r31,r22
+ 426 024e 900D      		add r25,r0
+ 427 0250 1124      		clr r1
+ 159:matmult.c     ****             Res[Outer][Inner]  +=
+ 428               		.loc 1 159 0 discriminator 2
+ 429 0252 280F      		add r18,r24
+ 430 0254 391F      		adc r19,r25
+ 431 0256 C701      		movw r24,r14
+ 432 0258 880F      		lsl r24
+ 433 025a 991F      		rol r25
+ 434 025c 840F      		add r24,r20
+ 435 025e 951F      		adc r25,r21
+ 436 0260 FC01      		movw r30,r24
+ 437 0262 3183      		std Z+1,r19
+ 438 0264 2083      		st Z,r18
+ 158:matmult.c     ****          for (Index = 0; Index < UPPERLIMIT; Index++)
+ 439               		.loc 1 158 0 discriminator 2
+ 440 0266 FFEF      		ldi r31,-1
+ 441 0268 CF1A      		sub r12,r31
+ 442 026a DF0A      		sbc r13,r31
+ 443               	.L14:
+ 158:matmult.c     ****          for (Index = 0; Index < UPPERLIMIT; Index++)
+ 444               		.loc 1 158 0 is_stmt 0 discriminator 1
+ 445 026c 84E1      		ldi r24,20
+ 446 026e C816      		cp r12,r24
+ 447 0270 D104      		cpc r13,__zero_reg__
+ 448 0272 04F4      		brge .+2
+ 449 0274 00C0      		rjmp .L15
+ 155:matmult.c     ****       for (Inner = 0; Inner < UPPERLIMIT; Inner++)
+ 450               		.loc 1 155 0 is_stmt 1
+ 451 0276 AFEF      		ldi r26,-1
+ 452 0278 EA1A      		sub r14,r26
+ 453 027a FA0A      		sbc r15,r26
+ 454               	.L13:
+ 155:matmult.c     ****       for (Inner = 0; Inner < UPPERLIMIT; Inner++)
+ 455               		.loc 1 155 0 is_stmt 0 discriminator 1
+ 456 027c B4E1      		ldi r27,20
+ 457 027e EB16      		cp r14,r27
+ 458 0280 F104      		cpc r15,__zero_reg__
+ 459 0282 04F4      		brge .+2
+ 460 0284 00C0      		rjmp .L16
+ 154:matmult.c     ****    for (Outer = 0; Outer < UPPERLIMIT; Outer++)
+ 461               		.loc 1 154 0 is_stmt 1
+ 462 0286 0F5F      		subi r16,-1
+ 463 0288 1F4F      		sbci r17,-1
+ 464               	.L12:
+ 154:matmult.c     ****    for (Outer = 0; Outer < UPPERLIMIT; Outer++)
+ 465               		.loc 1 154 0 is_stmt 0 discriminator 1
+ 466 028a 0431      		cpi r16,20
+ 467 028c 1105      		cpc r17,__zero_reg__
+ 468 028e 04F4      		brge .+2
+ 469 0290 00C0      		rjmp .L17
+ 470               	/* epilogue start */
+ 161:matmult.c     ****        }
+ 162:matmult.c     **** }
+ 471               		.loc 1 162 0 is_stmt 1
+ 472 0292 2696      		adiw r28,6
+ 473 0294 0FB6      		in __tmp_reg__,__SREG__
+ 474 0296 F894      		cli
+ 475 0298 DEBF      		out __SP_H__,r29
+ 476 029a 0FBE      		out __SREG__,__tmp_reg__
+ 477 029c CDBF      		out __SP_L__,r28
+ 478 029e DF91      		pop r29
+ 479 02a0 CF91      		pop r28
+ 480 02a2 1F91      		pop r17
+ 481 02a4 0F91      		pop r16
+ 482 02a6 FF90      		pop r15
+ 483 02a8 EF90      		pop r14
+ 484 02aa DF90      		pop r13
+ 485 02ac CF90      		pop r12
+ 486 02ae 0895      		ret
+ 487               	.LFE5:
+ 711               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 matmult.c
+     /tmp/cc3gYlz6.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cc3gYlz6.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cc3gYlz6.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cc3gYlz6.s:5      *ABS*:000000000000003b __RAMPZ__
+     /tmp/cc3gYlz6.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cc3gYlz6.s:7      *ABS*:0000000000000001 __zero_reg__
+                            *COM*:0000000000000002 Seed
+                            *COM*:0000000000000320 ArrayA
+                            *COM*:0000000000000320 ArrayB
+                            *COM*:0000000000000320 ResultArray
+     /tmp/cc3gYlz6.s:16     .text:0000000000000000 main
+     /tmp/cc3gYlz6.s:50     .text:0000000000000022 InitSeed
+     /tmp/cc3gYlz6.s:76     .text:0000000000000038 Test
+     /tmp/cc3gYlz6.s:132    .text:0000000000000086 Initialize
+     /tmp/cc3gYlz6.s:277    .text:0000000000000158 Multiply
+     /tmp/cc3gYlz6.s:234    .text:0000000000000118 RandomInteger
+
+UNDEFINED SYMBOLS
+__divmodhi4
+__do_clear_bss

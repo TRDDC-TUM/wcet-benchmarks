@@ -1,0 +1,753 @@
+Note:::::Martin Becker: Writing source-level information to sourceinfo.csv
+Note:main.elf::::Bound-T 4c5 for Atmel-AVR
+Note:main.elf::::This AVR device has a 16-bit SP = SPH:SPL.
+Note:main.elf::::File format assumed to be ELF
+Note:main.elf::::Segment 2 not loaded:Zero length in file
+Note:main.elf::::Loading DWARF info section.
+Note:main.elf::::DWARF debug info ends without null entry.
+Note:main.elf::::Loading DWARF types for compilation unit 1
+Note:main.elf::::Parsing DWARF symbols.
+Note:main.elf::::Entering DWARF compilation unit for jfdctint.c
+Note:main.elf::::Program implies calling protocol GCC.
+Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
+Note:main.elf:loopinfo.txt:::Routine at 0000B4 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206:Root subprogram
+Note:main.elf::::Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::::Dynamism bounding iteration number 1
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206:Analysis for time is needed.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206:Control-flow analysis starts.
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:242-:Immediate octet 252 used signed = -4
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:244-:Large combined 16-bit literal 50399 taken as signed = -15137
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:244-:Immediate octet 252 used signed = -4
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:262-:Large combined 16-bit literal 58163 taken as signed = -7373
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:263-:Large combined 16-bit literal 44541 taken as signed = -20995
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:264-:Large combined 16-bit literal 49467 taken as signed = -16069
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:265-:Large combined 16-bit literal 62340 taken as signed = -3196
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:270-:Immediate octet 252 used signed = -4
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:271-:Immediate octet 252 used signed = -4
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:272-:Immediate octet 252 used signed = -4
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:273-:Immediate octet 252 used signed = -4
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:285-:Large combined 16-bit literal 65424 taken as signed = -112
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:286-:Large combined 16-bit literal 65424 taken as signed = -112
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:287-:Large combined 16-bit literal 65440 taken as signed = -96
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:288-:Large combined 16-bit literal 65440 taken as signed = -96
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:289-:Large combined 16-bit literal 65456 taken as signed = -80
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:290-:Large combined 16-bit literal 65456 taken as signed = -80
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:291-:Large combined 16-bit literal 65472 taken as signed = -64
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:292-:Large combined 16-bit literal 65472 taken as signed = -64
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:304-:Large combined 16-bit literal 65472 taken as signed = -64
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:304-:Large combined 16-bit literal 65534 taken as signed = -2
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:307-:Immediate octet 192 used signed = -64
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:309-:Large combined 16-bit literal 65440 taken as signed = -96
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:309-:Large combined 16-bit literal 50399 taken as signed = -15137
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:309-:Immediate octet 192 used signed = -64
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:327-:Large combined 16-bit literal 58163 taken as signed = -7373
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:328-:Large combined 16-bit literal 44541 taken as signed = -20995
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:329-:Large combined 16-bit literal 49467 taken as signed = -16069
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:330-:Large combined 16-bit literal 62340 taken as signed = -3196
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:335-:Large combined 16-bit literal 65424 taken as signed = -112
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:335-:Immediate octet 192 used signed = -64
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:337-:Large combined 16-bit literal 65456 taken as signed = -80
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:337-:Immediate octet 192 used signed = -64
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:339-:Immediate octet 192 used signed = -64
+Warning:main.elf:jfdctint.c:jpeg_fdct_islow:341-:Immediate octet 192 used signed = -64
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206:Control-flow analysis finished.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206:Dominator iterations 1 for 7 graph nodes.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:No execution bounds known yet.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Repeating constant propagation.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:218-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:218-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:218-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:219-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:219-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:219-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:219:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:219:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:219:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:220:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:220:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:220:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:220-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:220-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:220-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:220-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:220-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:220-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:221:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:221:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:221:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:221-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:221-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:221-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:221-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:221-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:221-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:222:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:222:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:222:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:222-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:222-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:222-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:222-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:222-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:222-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:223:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:223:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:223:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:223-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:223-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:223-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:223-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:223-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:223-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:224:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:224:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:224:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:224-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:224-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:224-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:224-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:224-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:224-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:225:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:225:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:225:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:225-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:225-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:225-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:225-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:225-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:225-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:226:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:226:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:226:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:226-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:226-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:226-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:226-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:226-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:226-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:227:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:227:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:227:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:227-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:227-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:227-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:227-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:227-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:227-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:233:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:233:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:233:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:233-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:233-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:233-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:233-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:233-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:233-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:234:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:234:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:234:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:234-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:234-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:234-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:234-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:234-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:234-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:235:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:235:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:235:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:235-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:235-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:235-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:235-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:235-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:235-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:236:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:236:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:236:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:236-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:236-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:236-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:236-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:236-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:236-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:238:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:238:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:238:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:238-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:238-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:238-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:238-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:238-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:238-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:239:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:239:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:239:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:239-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:239-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:239-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:239-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:239-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:239-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:241:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:241:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:241:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:241-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:241-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:241-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:241-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:241-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:241-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:242:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:242:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:242:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:242-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:242-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:242-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:242-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:242-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:242-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:244:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:244:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:244:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:244-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:244-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:244-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:244-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:244-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:244-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:252:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:252:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:252:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:252-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:252-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:252-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:252-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:252-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:252-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:253:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:253:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:253:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:253-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:253-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:253-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:253-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:253-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:253-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:254:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:254:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:254:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:254-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:254-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:254-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:254-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:254-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:254-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:255:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:255:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:255:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:256:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:256:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:256:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:256-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:256-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:256-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:256-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:256-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:256-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:258:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:258:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:258:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:258-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:258-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:258-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:259:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:259:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:259:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:259-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:259-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:259-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:260:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:260:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:260:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:260-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:260-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:260-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:261:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:261:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:261:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:261-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:261-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:261-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:262:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:262:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:262:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:262-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:262-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:262-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:263:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:263:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:263:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:263-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:263-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:263-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:264:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:264:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:264:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:264-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:264-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:264-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:265:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:265:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:265:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:265-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:265-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:265-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:267:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:267:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:267:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:267-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:267-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:267-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:267-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:267-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:267-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:268:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:268:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:268:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:268-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:268-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:268-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:268-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:268-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:268-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:270:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:270:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:270:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:270-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:270-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:270-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:270-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:270-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:270-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:270-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:270-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:270-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:271:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:271:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:271:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:272:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:272:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:272:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:272-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:272-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:272-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:272-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:272-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:272-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:272-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:272-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:272-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:273:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:273:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:273:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:273-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:273-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:273-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:273-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:273-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:273-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:273-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:273-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:273-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:275:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:275:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:275:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:275-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:275-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:275-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:219:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:219:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:219:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:219-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:219-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:219-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:283-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:283-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:283-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:284-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:284-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:284-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:284:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:284:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:284:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:285:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:285:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:285:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:285-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:285-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:285-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:285-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:285-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:285-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:286:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:286:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:286:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:286-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:286-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:286-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:286-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:286-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:286-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:287:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:287:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:287:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:287-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:287-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:287-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:287-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:287-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:287-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:288:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:288:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:288:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:288-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:288-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:288-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:288-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:288-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:288-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:289:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:289:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:289:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:289-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:289-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:289-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:289-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:289-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:289-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:290:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:290:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:290:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:290-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:290-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:290-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:290-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:290-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:290-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:291:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:291:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:291:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:291-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:291-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:291-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:291-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:291-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:291-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:292:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:292:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:292:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:292-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:292-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:292-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:292-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:292-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:292-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:298:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:298:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:298:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:299:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:299:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:299:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:299-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:299-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:299-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:299-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:299-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:299-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:300:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:300:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:300:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:300-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:300-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:300-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:300-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:300-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:300-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:301:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:301:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:301:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:301-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:301-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:301-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:301-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:301-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:301-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:303:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:303:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:303:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:303-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:303-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:303-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:303-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:303-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:303-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:304:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:304:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:304:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:304-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:304-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:304-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:304-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:304-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:304-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:306:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:306:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:306:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:306-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:306-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:306-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:306-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:306-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:306-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:307:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:307:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:307:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:307-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:307-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:307-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:307-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:307-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:307-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:309:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:309:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:309:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:309-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:309-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:309-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:309-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:309-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:309-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:317:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:317:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:317:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:317-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:317-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:317-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:317-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:317-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:317-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:318:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:318:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:318:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:318-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:318-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:318-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:318-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:318-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:318-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:319:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:319:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:319:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:319-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:319-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:319-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:319-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:319-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:319-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:320:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:320:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:320:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:320-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:320-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:320-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:320-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:320-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:320-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:321:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:321:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:321:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:321-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:321-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:321-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:321-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:321-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:321-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:323:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:323:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:323:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:323-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:323-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:323-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:324:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:324:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:324:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:324-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:324-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:324-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:325:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:325:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:325:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:325-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:325-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:325-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:326:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:326:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:326:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:326-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:326-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:326-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:327:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:327:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:327:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:327-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:327-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:327-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:328:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:328:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:328:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:328-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:328-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:328-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:329:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:329:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:329:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:329-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:329-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:329-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:330:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:330:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:330:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:330-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:330-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:330-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:332:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:332:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:332:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:332-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:332-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:332-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:332-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:332-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:332-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:333:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:333:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:333:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:333-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:333-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:333-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:333-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:333-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:333-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:335:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:335:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:335:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:335-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:335-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:335-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:335-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:335-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:335-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:335-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:335-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:335-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:337:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:337:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:337:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:337-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:337-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:337-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:337-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:337-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:337-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:337-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:337-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:337-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:339:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:339:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:339:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:339-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:339-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:339-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:339-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:339-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:339-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:339-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:339-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:339-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:341:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:341:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:341:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:341-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:341-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:341-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:341-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:341-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:341-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:341-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:341-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:341-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:344:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:344:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:344:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:344-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:344-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:344-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:284:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:284:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:284:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:284-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:284-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:284-:Refine (Assignment) bounded a pointer.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Repeating constant propagation.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Final stack-height from constant propagation for SP:sh
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Constant propagation changed nothing.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Arithmetic analysis is not needed.
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Time_State for bounds # 1 defined as COMPUTABLE
+Note:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:Freezing bounds # 1
+Note:main.elf::::Target-specific additional analysis starts.
+Note:main.elf::::Generic worst-case path and time analysis starts.
+Wcet:main.elf:jfdctint.c:jpeg_fdct_islow:206-346:14054
+Note:main.elf::::Creating SLI file sourceinfo.csv.

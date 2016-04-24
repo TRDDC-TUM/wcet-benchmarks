@@ -1,0 +1,91 @@
+creating lookup...
+getting timing...
+ERROR translating address 6556 to opcode. Skipped.
+ERROR translating address 6612 to opcode. Skipped.
+ERROR translating address 11656 to opcode. Skipped.
+ERROR translating address 11664 to opcode. Skipped.
+ERROR translating address 11708 to opcode. Skipped.
+ERROR translating address 13216 to opcode. Skipped.
+ERROR translating address 13718 to opcode. Skipped.
+ERROR translating address 13762 to opcode. Skipped.
+ERROR translating address 13808 to opcode. Skipped.
+ERROR translating address 14238 to opcode. Skipped.
+ERROR translating address 14282 to opcode. Skipped.
+ERROR translating address 14908 to opcode. Skipped.
+ERROR translating address 15266 to opcode. Skipped.
+ERROR translating address 15310 to opcode. Skipped.
+ERROR translating address 15324 to opcode. Skipped.
+ERROR translating address 15356 to opcode. Skipped.
+ERROR translating address 15532 to opcode. Skipped.
+ERROR translating address 15544 to opcode. Skipped.
+ERROR translating address 15590 to opcode. Skipped.
+ERROR translating address 16320 to opcode. Skipped.
+ERROR translating address 16326 to opcode. Skipped.
+ERROR translating address 16370 to opcode. Skipped.
+ERROR translating address 16418 to opcode. Skipped.
+ERROR translating address 17486 to opcode. Skipped.
+ERROR translating address 17530 to opcode. Skipped.
+ERROR translating address 17578 to opcode. Skipped.
+ERROR translating address 18372 to opcode. Skipped.
+ERROR translating address 18416 to opcode. Skipped.
+ERROR translating address 18462 to opcode. Skipped.
+ERROR translating address 18808 to opcode. Skipped.
+ERROR translating address 18852 to opcode. Skipped.
+ERROR translating address 19420 to opcode. Skipped.
+ERROR translating address 19664 to opcode. Skipped.
+ERROR translating address 19682 to opcode. Skipped.
+ERROR translating address 19714 to opcode. Skipped.
+ERROR translating address 19744 to opcode. Skipped.
+ERROR translating address 19774 to opcode. Skipped.
+ERROR translating address 19792 to opcode. Skipped.
+ERROR translating address 19816 to opcode. Skipped.
+ERROR translating address 19834 to opcode. Skipped.
+ERROR translating address 19876 to opcode. Skipped.
+ERROR translating address 19900 to opcode. Skipped.
+ERROR translating address 19900 to opcode. Skipped.
+Comparing against specification of 116 opcodes
+and; 2;1-1;1-1;0-0;valid
+rcall; 3;5-5;3-3;2-2;total too high (spec: <=3)
+ldd; 874;2-2;2-2;0-0;valid
+ldi; 95;1-1;1-1;0-0;valid
+pop; 166;2-2;2-2;0-0;valid
+lds; 280;2-2;2-2;0-0;valid
+lsr; 2;1-1;1-1;0-0;valid
+in; 36;1-1;1-1;0-0;valid
+movw; 196;1-1;1-1;0-0;valid
+ror; 31;1-1;1-1;0-0;valid
+sbci; 180;1-1;1-1;0-0;valid
+out; 54;1-1;1-1;0-0;valid
+ld; 76;2-2;2-2;0-0;valid
+cp; 4;1-1;1-1;0-0;valid
+andi; 4;1-1;1-1;0-0;valid
+sub; 5;1-1;1-1;0-0;valid
+neg; 2;1-1;1-1;0-0;valid
+add; 104;1-1;1-1;0-0;valid
+call; 75;6-6;4-4;2-2;total too high (spec: <=4)
+adc; 127;1-1;1-1;0-0;valid
+bld; 2;1-1;1-1;0-0;valid
+subi; 166;1-1;1-1;0-0;valid
+rjmp; 15;2-2;1-1;1-1;valid
+brlt; 8;1-2;1-1;0-1;valid
+asr; 9;1-1;1-1;0-0;valid
+adiw; 177;2-2;2-2;0-0;valid
+brpl; 1;1-2;1-1;0-1;valid
+mov; 728;1-1;1-1;0-0;valid
+sbc; 62;1-1;1-1;0-0;valid
+brne; 5;1-2;1-1;0-1;valid
+mul; 16;2-2;2-2;0-0;valid
+std; 690;2-2;2-2;0-0;valid
+cpi; 8;1-1;1-1;0-0;valid
+dec; 6;1-1;1-1;0-0;valid
+cpc; 42;1-1;1-1;0-0;valid
+sbrc; 4;1-2;1-1;0-1;valid
+st; 40;2-2;2-2;0-0;valid
+brge; 9;1-2;1-1;0-1;valid
+eor; 16;1-1;1-1;0-0;valid
+sts; 144;2-2;2-2;0-0;valid
+push; 166;2-2;2-2;0-0;valid
+brcc; 1;1-2;1-1;0-1;valid
+sbiw; 166;2-2;2-2;0-0;valid
+com; 12;1-1;1-1;0-0;valid
+breq; 3;1-2;1-1;0-1;valid

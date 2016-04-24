@@ -1,0 +1,1046 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muluhisi3.o)
+                              adpcm.o (__muluhisi3)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_mulsi3.o)
+                              adpcm.o (__mulsi3)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_divmodsi4.o)
+                              adpcm.o (__divmodsi4)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muldi3.o)
+                              adpcm.o (__muldi3)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_negdi2.o)
+                              adpcm.o (__negdi2)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o (exit)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+                              adpcm.o (__do_copy_data)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+                              adpcm.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashldi3.o)
+                              adpcm.o (__ashldi3)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashrdi3.o)
+                              adpcm.o (__ashrdi3)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3.o)
+                              adpcm.o (__adddi3)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3_s8.o)
+                              adpcm.o (__adddi3_s8)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_subdi3.o)
+                              adpcm.o (__subdi3)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2.o)
+                              adpcm.o (__cmpdi2)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2_s8.o)
+                              adpcm.o (__cmpdi2_s8)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_umulhisi3.o)
+                              /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muluhisi3.o) (__umulhisi3)
+/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_udivmodsi4.o)
+                              /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_divmodsi4.o) (__udivmodsi4)
+
+Allocating common symbols
+Common symbol       size              file
+
+rl                  0x4               adpcm.o
+dec_plt2            0x4               adpcm.o
+rh2                 0x4               adpcm.o
+spl                 0x4               adpcm.o
+szh                 0x4               adpcm.o
+dec_rlt             0x4               adpcm.o
+ih                  0x4               adpcm.o
+dec_plt1            0x4               adpcm.o
+nbl                 0x4               adpcm.o
+dec_nbh             0x4               adpcm.o
+delay_dltx          0x18              adpcm.o
+dec_del_dltx        0x18              adpcm.o
+dec_ph1             0x4               adpcm.o
+ph                  0x4               adpcm.o
+dh                  0x4               adpcm.o
+dec_sph             0x4               adpcm.o
+sh                  0x4               adpcm.o
+accumd              0x2c              adpcm.o
+detl                0x4               adpcm.o
+eh                  0x4               adpcm.o
+yh                  0x4               adpcm.o
+ah1                 0x4               adpcm.o
+rlt                 0x4               adpcm.o
+sl                  0x4               adpcm.o
+xout1               0x4               adpcm.o
+rs                  0x4               adpcm.o
+szl                 0x4               adpcm.o
+dec_ph2             0x4               adpcm.o
+dec_del_dhx         0x18              adpcm.o
+dec_ah1             0x4               adpcm.o
+dec_szl             0x4               adpcm.o
+dec_dh              0x4               adpcm.o
+rh                  0x4               adpcm.o
+deth                0x4               adpcm.o
+dec_rlt2            0x4               adpcm.o
+dec_rlt1            0x4               adpcm.o
+xh                  0x4               adpcm.o
+dec_sl              0x4               adpcm.o
+xout2               0x4               adpcm.o
+dec_deth            0x4               adpcm.o
+rlt2                0x4               adpcm.o
+ph2                 0x4               adpcm.o
+dec_dlt             0x4               adpcm.o
+ah2                 0x4               adpcm.o
+il                  0x4               adpcm.o
+ilr                 0x4               adpcm.o
+el                  0x4               adpcm.o
+dec_spl             0x4               adpcm.o
+delay_dhx           0x18              adpcm.o
+dec_szh             0x4               adpcm.o
+dec_nbl             0x4               adpcm.o
+dec_ph              0x4               adpcm.o
+sph                 0x4               adpcm.o
+dlt                 0x4               adpcm.o
+dl                  0x4               adpcm.o
+ph1                 0x4               adpcm.o
+tqmf                0x60              adpcm.o
+rh1                 0x4               adpcm.o
+dec_sh              0x4               adpcm.o
+dec_del_bph         0x18              adpcm.o
+xd                  0x4               adpcm.o
+plt2                0x4               adpcm.o
+dec_detl            0x4               adpcm.o
+dec_al2             0x4               adpcm.o
+accumc              0x2c              adpcm.o
+plt1                0x4               adpcm.o
+dec_plt             0x4               adpcm.o
+dec_rh2             0x4               adpcm.o
+al2                 0x4               adpcm.o
+dec_rh1             0x4               adpcm.o
+yl                  0x4               adpcm.o
+nbh                 0x4               adpcm.o
+delay_bpl           0x18              adpcm.o
+rlt1                0x4               adpcm.o
+dec_del_bpl         0x18              adpcm.o
+dec_al1             0x4               adpcm.o
+xl                  0x4               adpcm.o
+plt                 0x4               adpcm.o
+dec_ah2             0x4               adpcm.o
+xs                  0x4               adpcm.o
+al1                 0x4               adpcm.o
+dec_rh              0x4               adpcm.o
+delay_bph           0x18              adpcm.o
+dec_yh              0x4               adpcm.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800100 0x000000000000ff00 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+LOAD adpcm.o
+LOAD /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/libm.a
+LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
+LOAD /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/libc.a
+LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000     0x4e06
+ *(.vectors)
+ .vectors       0x0000000000000000       0x8c /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x000000000000008c                . = ALIGN (0x2)
+                0x000000000000008c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000000000008c        0x0 linker stubs
+ *(.trampolines*)
+                0x000000000000008c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000000000008c                __ctors_start = .
+ *(.ctors)
+                0x000000000000008c                __ctors_end = .
+                0x000000000000008c                __dtors_start = .
+ *(.dtors)
+                0x000000000000008c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000000000008c        0x0 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+                0x000000000000008c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000000000008c        0xc /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000098       0x1a /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+                0x0000000000000098                __do_copy_data
+ .init4         0x00000000000000b2       0x10 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+                0x00000000000000b2                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000000000000c2        0x8 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ *(.init9)
+ *(.text)
+ .text          0x00000000000000ca        0x4 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+                0x00000000000000ca                __vector_22
+                0x00000000000000ca                __vector_28
+                0x00000000000000ca                __vector_1
+                0x00000000000000ca                __vector_32
+                0x00000000000000ca                __vector_34
+                0x00000000000000ca                __vector_24
+                0x00000000000000ca                __vector_12
+                0x00000000000000ca                __bad_interrupt
+                0x00000000000000ca                __vector_6
+                0x00000000000000ca                __vector_31
+                0x00000000000000ca                __vector_3
+                0x00000000000000ca                __vector_23
+                0x00000000000000ca                __vector_30
+                0x00000000000000ca                __vector_25
+                0x00000000000000ca                __vector_11
+                0x00000000000000ca                __vector_13
+                0x00000000000000ca                __vector_17
+                0x00000000000000ca                __vector_19
+                0x00000000000000ca                __vector_7
+                0x00000000000000ca                __vector_27
+                0x00000000000000ca                __vector_5
+                0x00000000000000ca                __vector_33
+                0x00000000000000ca                __vector_4
+                0x00000000000000ca                __vector_9
+                0x00000000000000ca                __vector_2
+                0x00000000000000ca                __vector_21
+                0x00000000000000ca                __vector_15
+                0x00000000000000ca                __vector_29
+                0x00000000000000ca                __vector_8
+                0x00000000000000ca                __vector_26
+                0x00000000000000ca                __vector_14
+                0x00000000000000ca                __vector_10
+                0x00000000000000ca                __vector_16
+                0x00000000000000ca                __vector_18
+                0x00000000000000ca                __vector_20
+ .text          0x00000000000000ce     0x4afa adpcm.o
+                0x00000000000000ce                my_abs
+                0x0000000000000144                my_fabs
+                0x00000000000001ba                my_sin
+                0x0000000000000430                my_cos
+                0x0000000000000492                encode
+                0x000000000000196e                decode
+                0x0000000000002dbe                reset
+                0x0000000000003374                filtez
+                0x00000000000035c4                filtep
+                0x00000000000037cc                quantl
+                0x0000000000003a10                logscl
+                0x0000000000003bd0                scalel
+                0x0000000000003cba                upzero
+                0x0000000000003ff4                uppol2
+                0x000000000000447c                uppol1
+                0x00000000000047f2                logsch
+                0x00000000000049a6                main
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muluhisi3.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_mulsi3.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_divmodsi4.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muldi3.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_negdi2.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashldi3.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashrdi3.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3_s8.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_subdi3.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2_s8.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_umulhisi3.o)
+ .text          0x0000000000004bc8        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_udivmodsi4.o)
+                0x0000000000004bc8                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc.mul
+                0x0000000000004bc8       0x16 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muluhisi3.o)
+                0x0000000000004bc8                __muluhisi3
+ .text.libgcc.div
+                0x0000000000004bde        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x0000000000004bde        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000004bde        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000004bde        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000004bde        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muluhisi3.o)
+ .text.libgcc.mul
+                0x0000000000004bde       0x20 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_mulsi3.o)
+                0x0000000000004bde                __mulsi3
+ .text.libgcc.div
+                0x0000000000004bfe        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_mulsi3.o)
+ .text.libgcc   0x0000000000004bfe        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_mulsi3.o)
+ .text.libgcc.prologue
+                0x0000000000004bfe        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_mulsi3.o)
+ .text.libgcc.builtins
+                0x0000000000004bfe        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_mulsi3.o)
+ .text.libgcc.fmul
+                0x0000000000004bfe        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_mulsi3.o)
+ .text.libgcc.mul
+                0x0000000000004bfe        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_divmodsi4.o)
+ .text.libgcc.div
+                0x0000000000004bfe       0x38 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_divmodsi4.o)
+                0x0000000000004bfe                __divmodsi4
+ .text.libgcc   0x0000000000004c36        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_divmodsi4.o)
+ .text.libgcc.prologue
+                0x0000000000004c36        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_divmodsi4.o)
+ .text.libgcc.builtins
+                0x0000000000004c36        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_divmodsi4.o)
+ .text.libgcc.fmul
+                0x0000000000004c36        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_divmodsi4.o)
+ .text.libgcc.mul
+                0x0000000000004c36       0xae /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muldi3.o)
+                0x0000000000004c36                __muldi3
+ .text.libgcc.div
+                0x0000000000004ce4        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muldi3.o)
+ .text.libgcc   0x0000000000004ce4        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muldi3.o)
+ .text.libgcc.prologue
+                0x0000000000004ce4        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muldi3.o)
+ .text.libgcc.builtins
+                0x0000000000004ce4        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muldi3.o)
+ .text.libgcc.fmul
+                0x0000000000004ce4        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muldi3.o)
+ .text.libgcc.mul
+                0x0000000000004ce4        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_negdi2.o)
+ .text.libgcc.div
+                0x0000000000004ce4        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_negdi2.o)
+ .text.libgcc   0x0000000000004ce4       0x20 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_negdi2.o)
+                0x0000000000004ce4                __negdi2
+ .text.libgcc.prologue
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_negdi2.o)
+ .text.libgcc.builtins
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_negdi2.o)
+ .text.libgcc.fmul
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_negdi2.o)
+ .text.libgcc.mul
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashldi3.o)
+ .text.libgcc.div
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashldi3.o)
+ .text.libgcc   0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashldi3.o)
+ .text.libgcc.prologue
+                0x0000000000004d04        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashldi3.o)
+ .text.libgcc.builtins
+                0x0000000000004d04       0x1e /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashldi3.o)
+                0x0000000000004d04                __ashldi3
+ .text.libgcc.fmul
+                0x0000000000004d22        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashldi3.o)
+ .text.libgcc.mul
+                0x0000000000004d22        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashrdi3.o)
+ .text.libgcc.div
+                0x0000000000004d22        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashrdi3.o)
+ .text.libgcc   0x0000000000004d22        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashrdi3.o)
+ .text.libgcc.prologue
+                0x0000000000004d22        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashrdi3.o)
+ .text.libgcc.builtins
+                0x0000000000004d22       0x1e /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashrdi3.o)
+                0x0000000000004d22                __ashrdi3
+ .text.libgcc.fmul
+                0x0000000000004d40        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashrdi3.o)
+ .text.libgcc.mul
+                0x0000000000004d40        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3.o)
+ .text.libgcc.div
+                0x0000000000004d40        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3.o)
+ .text.libgcc   0x0000000000004d40       0x12 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3.o)
+                0x0000000000004d40                __adddi3
+ .text.libgcc.prologue
+                0x0000000000004d52        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3.o)
+ .text.libgcc.builtins
+                0x0000000000004d52        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3.o)
+ .text.libgcc.fmul
+                0x0000000000004d52        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3.o)
+ .text.libgcc.mul
+                0x0000000000004d52        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3_s8.o)
+ .text.libgcc.div
+                0x0000000000004d52        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3_s8.o)
+ .text.libgcc   0x0000000000004d52       0x18 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3_s8.o)
+                0x0000000000004d52                __adddi3_s8
+ .text.libgcc.prologue
+                0x0000000000004d6a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3_s8.o)
+ .text.libgcc.builtins
+                0x0000000000004d6a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3_s8.o)
+ .text.libgcc.fmul
+                0x0000000000004d6a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3_s8.o)
+ .text.libgcc.mul
+                0x0000000000004d6a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_subdi3.o)
+ .text.libgcc.div
+                0x0000000000004d6a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_subdi3.o)
+ .text.libgcc   0x0000000000004d6a       0x12 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_subdi3.o)
+                0x0000000000004d6a                __subdi3
+ .text.libgcc.prologue
+                0x0000000000004d7c        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_subdi3.o)
+ .text.libgcc.builtins
+                0x0000000000004d7c        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_subdi3.o)
+ .text.libgcc.fmul
+                0x0000000000004d7c        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_subdi3.o)
+ .text.libgcc.mul
+                0x0000000000004d7c        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2.o)
+ .text.libgcc.div
+                0x0000000000004d7c        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2.o)
+ .text.libgcc   0x0000000000004d7c       0x12 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2.o)
+                0x0000000000004d7c                __cmpdi2
+ .text.libgcc.prologue
+                0x0000000000004d8e        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2.o)
+ .text.libgcc.builtins
+                0x0000000000004d8e        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2.o)
+ .text.libgcc.fmul
+                0x0000000000004d8e        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2.o)
+ .text.libgcc.mul
+                0x0000000000004d8e        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2_s8.o)
+ .text.libgcc.div
+                0x0000000000004d8e        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2_s8.o)
+ .text.libgcc   0x0000000000004d8e       0x18 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2_s8.o)
+                0x0000000000004d8e                __cmpdi2_s8
+ .text.libgcc.prologue
+                0x0000000000004da6        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2_s8.o)
+ .text.libgcc.builtins
+                0x0000000000004da6        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2_s8.o)
+ .text.libgcc.fmul
+                0x0000000000004da6        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2_s8.o)
+ .text.libgcc.mul
+                0x0000000000004da6       0x18 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_umulhisi3.o)
+                0x0000000000004da6                __umulhisi3
+ .text.libgcc.div
+                0x0000000000004dbe        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x0000000000004dbe        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000004dbe        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000004dbe        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000004dbe        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_umulhisi3.o)
+ .text.libgcc.mul
+                0x0000000000004dbe        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.div
+                0x0000000000004dbe       0x44 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_udivmodsi4.o)
+                0x0000000000004dbe                __udivmodsi4
+ .text.libgcc   0x0000000000004e02        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x0000000000004e02        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x0000000000004e02        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x0000000000004e02        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_udivmodsi4.o)
+                0x0000000000004e02                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000004e02        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+                0x0000000000004e02                exit
+                0x0000000000004e02                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000004e02        0x4 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000004e06                _etext = .
+
+.data           0x0000000000800100      0x530 load address 0x0000000000004e06
+                0x0000000000800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .data          0x0000000000800100      0x490 adpcm.o
+                0x0000000000800100                h
+                0x0000000000800160                qq4_code4_table
+                0x00000000008001a0                qq5_code5_table
+                0x0000000000800220                qq6_code6_table
+                0x0000000000800320                wl_code_table
+                0x0000000000800360                wl_table
+                0x0000000000800380                ilb_table
+                0x0000000000800400                decis_levl
+                0x0000000000800478                quant26bt_pos
+                0x00000000008004f4                quant26bt_neg
+                0x0000000000800570                qq2_code2_table
+                0x0000000000800580                wh_code_table
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muluhisi3.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_mulsi3.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_divmodsi4.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muldi3.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_negdi2.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashldi3.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashrdi3.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3_s8.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_subdi3.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2_s8.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_umulhisi3.o)
+ .data          0x0000000000800590        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_udivmodsi4.o)
+ *(.data*)
+ *(.rodata)
+ .rodata        0x0000000000800590       0xa0 adpcm.o
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0000000000800630                . = ALIGN (0x2)
+                0x0000000000800630                _edata = .
+                0x0000000000800630                PROVIDE (__data_end, .)
+
+.bss            0x0000000000800630      0x38c
+                0x0000000000800630                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0000000000800630        0x0 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .bss           0x0000000000800630       0xf0 adpcm.o
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muluhisi3.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_mulsi3.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_divmodsi4.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muldi3.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_negdi2.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashldi3.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashrdi3.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3_s8.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_subdi3.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2_s8.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_umulhisi3.o)
+ .bss           0x0000000000800720        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_udivmodsi4.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0000000000800720      0x29c adpcm.o
+                0x0000000000800720                rl
+                0x0000000000800724                dec_plt2
+                0x0000000000800728                rh2
+                0x000000000080072c                spl
+                0x0000000000800730                szh
+                0x0000000000800734                dec_rlt
+                0x0000000000800738                ih
+                0x000000000080073c                dec_plt1
+                0x0000000000800740                nbl
+                0x0000000000800744                dec_nbh
+                0x0000000000800748                delay_dltx
+                0x0000000000800760                dec_del_dltx
+                0x0000000000800778                dec_ph1
+                0x000000000080077c                ph
+                0x0000000000800780                dh
+                0x0000000000800784                dec_sph
+                0x0000000000800788                sh
+                0x000000000080078c                accumd
+                0x00000000008007b8                detl
+                0x00000000008007bc                eh
+                0x00000000008007c0                yh
+                0x00000000008007c4                ah1
+                0x00000000008007c8                rlt
+                0x00000000008007cc                sl
+                0x00000000008007d0                xout1
+                0x00000000008007d4                rs
+                0x00000000008007d8                szl
+                0x00000000008007dc                dec_ph2
+                0x00000000008007e0                dec_del_dhx
+                0x00000000008007f8                dec_ah1
+                0x00000000008007fc                dec_szl
+                0x0000000000800800                dec_dh
+                0x0000000000800804                rh
+                0x0000000000800808                deth
+                0x000000000080080c                dec_rlt2
+                0x0000000000800810                dec_rlt1
+                0x0000000000800814                xh
+                0x0000000000800818                dec_sl
+                0x000000000080081c                xout2
+                0x0000000000800820                dec_deth
+                0x0000000000800824                rlt2
+                0x0000000000800828                ph2
+                0x000000000080082c                dec_dlt
+                0x0000000000800830                ah2
+                0x0000000000800834                il
+                0x0000000000800838                ilr
+                0x000000000080083c                el
+                0x0000000000800840                dec_spl
+                0x0000000000800844                delay_dhx
+                0x000000000080085c                dec_szh
+                0x0000000000800860                dec_nbl
+                0x0000000000800864                dec_ph
+                0x0000000000800868                sph
+                0x000000000080086c                dlt
+                0x0000000000800870                dl
+                0x0000000000800874                ph1
+                0x0000000000800878                tqmf
+                0x00000000008008d8                rh1
+                0x00000000008008dc                dec_sh
+                0x00000000008008e0                dec_del_bph
+                0x00000000008008f8                xd
+                0x00000000008008fc                plt2
+                0x0000000000800900                dec_detl
+                0x0000000000800904                dec_al2
+                0x0000000000800908                accumc
+                0x0000000000800934                plt1
+                0x0000000000800938                dec_plt
+                0x000000000080093c                dec_rh2
+                0x0000000000800940                al2
+                0x0000000000800944                dec_rh1
+                0x0000000000800948                yl
+                0x000000000080094c                nbh
+                0x0000000000800950                delay_bpl
+                0x0000000000800968                rlt1
+                0x000000000080096c                dec_del_bpl
+                0x0000000000800984                dec_al1
+                0x0000000000800988                xl
+                0x000000000080098c                plt
+                0x0000000000800990                dec_ah2
+                0x0000000000800994                xs
+                0x0000000000800998                al1
+                0x000000000080099c                dec_rh
+                0x00000000008009a0                delay_bph
+                0x00000000008009b8                dec_yh
+                0x00000000008009bc                PROVIDE (__bss_end, .)
+                0x0000000000004e06                __data_load_start = LOADADDR (.data)
+                0x0000000000005336                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00000000008009bc        0x0
+                0x00000000008009bc                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00000000008009bc                PROVIDE (__noinit_end, .)
+                0x00000000008009bc                _end = .
+                0x00000000008009bc                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x0000000000000000      0x6cc
+ *(.stab)
+ .stab          0x0000000000000000      0x6cc /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+
+.stabstr        0x0000000000000000       0x54
+ *(.stabstr)
+ .stabstr       0x0000000000000000       0x54 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x11
+ *(.comment)
+ .comment       0x0000000000000000       0x11 adpcm.o
+                                         0x12 (size before relaxing)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000       0x20
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 adpcm.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000      0xebd
+ *(.debug_info)
+ .debug_info    0x0000000000000000      0xebd adpcm.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x0000000000000000      0x14c
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x14c adpcm.o
+
+.debug_line     0x0000000000000000      0x49f
+ *(.debug_line)
+ .debug_line    0x0000000000000000      0x49f adpcm.o
+
+.debug_frame    0x0000000000000000      0x598
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000      0x598 adpcm.o
+
+.debug_str      0x0000000000000000      0x39e
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x39e adpcm.o
+                                        0x3f0 (size before relaxing)
+
+.debug_loc      0x0000000000000000      0xd7a
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0xd7a adpcm.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(main.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+__adddi3                                          /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3.o)
+                                                  adpcm.o
+__adddi3_s8                                       /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_adddi3_s8.o)
+                                                  adpcm.o
+__ashldi3                                         /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashldi3.o)
+                                                  adpcm.o
+__ashrdi3                                         /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_ashrdi3.o)
+                                                  adpcm.o
+__bad_interrupt                                   /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__bss_end                                         /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+__cmpdi2                                          /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2.o)
+                                                  adpcm.o
+__cmpdi2_s8                                       /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_cmpdi2_s8.o)
+                                                  adpcm.o
+__data_end                                        /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+__divmodsi4                                       /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_divmodsi4.o)
+                                                  adpcm.o
+__do_clear_bss                                    /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+                                                  adpcm.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+                                                  adpcm.o
+__heap_end                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__init                                            /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__muldi3                                          /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muldi3.o)
+                                                  adpcm.o
+__mulsi3                                          /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_mulsi3.o)
+                                                  adpcm.o
+__muluhisi3                                       /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muluhisi3.o)
+                                                  /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_mulsi3.o)
+                                                  adpcm.o
+__negdi2                                          /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_negdi2.o)
+                                                  adpcm.o
+__stack                                           /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__subdi3                                          /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_subdi3.o)
+                                                  adpcm.o
+__udivmodsi4                                      /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_udivmodsi4.o)
+                                                  /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_divmodsi4.o)
+__umulhisi3                                       /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_umulhisi3.o)
+                                                  /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muldi3.o)
+                                                  /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_muluhisi3.o)
+__vector_1                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_10                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_11                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_12                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_13                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_14                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_15                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_16                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_17                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_18                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_19                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_2                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_20                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_21                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_22                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_23                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_24                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_25                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_26                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_27                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_28                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_29                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_3                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_30                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_31                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_32                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_33                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_34                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_4                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_5                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_6                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_7                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_8                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_9                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vector_default                                  /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__vectors                                         /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+_exit                                             /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+accumc                                            adpcm.o
+accumd                                            adpcm.o
+ah1                                               adpcm.o
+ah2                                               adpcm.o
+al1                                               adpcm.o
+al2                                               adpcm.o
+dec_ah1                                           adpcm.o
+dec_ah2                                           adpcm.o
+dec_al1                                           adpcm.o
+dec_al2                                           adpcm.o
+dec_del_bph                                       adpcm.o
+dec_del_bpl                                       adpcm.o
+dec_del_dhx                                       adpcm.o
+dec_del_dltx                                      adpcm.o
+dec_deth                                          adpcm.o
+dec_detl                                          adpcm.o
+dec_dh                                            adpcm.o
+dec_dlt                                           adpcm.o
+dec_nbh                                           adpcm.o
+dec_nbl                                           adpcm.o
+dec_ph                                            adpcm.o
+dec_ph1                                           adpcm.o
+dec_ph2                                           adpcm.o
+dec_plt                                           adpcm.o
+dec_plt1                                          adpcm.o
+dec_plt2                                          adpcm.o
+dec_rh                                            adpcm.o
+dec_rh1                                           adpcm.o
+dec_rh2                                           adpcm.o
+dec_rlt                                           adpcm.o
+dec_rlt1                                          adpcm.o
+dec_rlt2                                          adpcm.o
+dec_sh                                            adpcm.o
+dec_sl                                            adpcm.o
+dec_sph                                           adpcm.o
+dec_spl                                           adpcm.o
+dec_szh                                           adpcm.o
+dec_szl                                           adpcm.o
+dec_yh                                            adpcm.o
+decis_levl                                        adpcm.o
+decode                                            adpcm.o
+delay_bph                                         adpcm.o
+delay_bpl                                         adpcm.o
+delay_dhx                                         adpcm.o
+delay_dltx                                        adpcm.o
+deth                                              adpcm.o
+detl                                              adpcm.o
+dh                                                adpcm.o
+dl                                                adpcm.o
+dlt                                               adpcm.o
+eh                                                adpcm.o
+el                                                adpcm.o
+encode                                            adpcm.o
+exit                                              /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+filtep                                            adpcm.o
+filtez                                            adpcm.o
+h                                                 adpcm.o
+ih                                                adpcm.o
+il                                                adpcm.o
+ilb_table                                         adpcm.o
+ilr                                               adpcm.o
+logsch                                            adpcm.o
+logscl                                            adpcm.o
+main                                              adpcm.o
+                                                  /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+my_abs                                            adpcm.o
+my_cos                                            adpcm.o
+my_fabs                                           adpcm.o
+my_sin                                            adpcm.o
+nbh                                               adpcm.o
+nbl                                               adpcm.o
+ph                                                adpcm.o
+ph1                                               adpcm.o
+ph2                                               adpcm.o
+plt                                               adpcm.o
+plt1                                              adpcm.o
+plt2                                              adpcm.o
+qq2_code2_table                                   adpcm.o
+qq4_code4_table                                   adpcm.o
+qq5_code5_table                                   adpcm.o
+qq6_code6_table                                   adpcm.o
+quant26bt_neg                                     adpcm.o
+quant26bt_pos                                     adpcm.o
+quantl                                            adpcm.o
+reset                                             adpcm.o
+rh                                                adpcm.o
+rh1                                               adpcm.o
+rh2                                               adpcm.o
+rl                                                adpcm.o
+rlt                                               adpcm.o
+rlt1                                              adpcm.o
+rlt2                                              adpcm.o
+rs                                                adpcm.o
+scalel                                            adpcm.o
+sh                                                adpcm.o
+sl                                                adpcm.o
+sph                                               adpcm.o
+spl                                               adpcm.o
+szh                                               adpcm.o
+szl                                               adpcm.o
+tqmf                                              adpcm.o
+uppol1                                            adpcm.o
+uppol2                                            adpcm.o
+upzero                                            adpcm.o
+wh_code_table                                     adpcm.o
+wl_code_table                                     adpcm.o
+wl_table                                          adpcm.o
+xd                                                adpcm.o
+xh                                                adpcm.o
+xl                                                adpcm.o
+xout1                                             adpcm.o
+xout2                                             adpcm.o
+xs                                                adpcm.o
+yh                                                adpcm.o
+yl                                                adpcm.o

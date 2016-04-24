@@ -1,0 +1,5 @@
+subprogram "foo"
+  all 4 Loops
+    Repeat <=5 Times;
+  end Loops;
+end "foo";

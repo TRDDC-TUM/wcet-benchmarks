@@ -1,0 +1,54 @@
+subprogram "des"
+  loop On Line 72
+    Repeats 31 Times;
+  end loop;
+  loop On Line 77
+    Repeats 28 Times;
+  end loop;
+  loop On Line 82 and That Contains loop
+    Repeats 16 Times;
+  end loop;
+  loop On Line 85
+    Repeats 32 Times;
+  end loop;
+  loop On Line 89
+    Repeats 16 Times;
+  end loop;
+  loop On Line 100 -- *out.r=...
+    Repeats 32 Times;
+  end loop;
+end "des";
+
+Subprogram "ks"
+  loop On Line 120 and That Contains loop
+    -- contains a shift loop
+    Repeats 2 Times;
+  end loop;
+  loop On Line 125
+    Repeats 16 Times;
+  end loop;  
+end "ks";
+
+Subprogram "cyfun"
+  loop On Line 185
+    Repeats 16 Times;
+  end loop;
+  loop On Line 195 and That Contains loop
+    -- it contains a shift loop...
+    Repeats 4 Times;
+  end loop;
+  loop On Line 202
+    Repeats 8 Times;
+  end loop;
+  loop On Line 212
+    Repeats 32 Times;
+  end loop;  
+  -- low-level shift loops that need annotations
+  loop That Executes "1032" -- line 198
+    Repeats <=6 Times;
+  end loop;
+  loop That Executes "1052" -- line 199
+    Repeats <=6 Times;
+  end loop;  
+  
+end "cyfun";

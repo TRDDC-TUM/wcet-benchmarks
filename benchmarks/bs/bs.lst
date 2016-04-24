@@ -1,0 +1,346 @@
+   1               		.file	"bs.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__RAMPZ__ = 0x3b
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.text
+   9               	.Ltext0:
+  10               	.global	data
+  11               		.data
+  14               	data:
+  15 0000 0100      		.word	1
+  16 0002 6400      		.word	100
+  17 0004 0500      		.word	5
+  18 0006 C800      		.word	200
+  19 0008 0600      		.word	6
+  20 000a 2C01      		.word	300
+  21 000c 0700      		.word	7
+  22 000e BC02      		.word	700
+  23 0010 0800      		.word	8
+  24 0012 8403      		.word	900
+  25 0014 0900      		.word	9
+  26 0016 FA00      		.word	250
+  27 0018 0A00      		.word	10
+  28 001a 9001      		.word	400
+  29 001c 0B00      		.word	11
+  30 001e 5802      		.word	600
+  31 0020 0C00      		.word	12
+  32 0022 2003      		.word	800
+  33 0024 0D00      		.word	13
+  34 0026 DC05      		.word	1500
+  35 0028 0E00      		.word	14
+  36 002a B004      		.word	1200
+  37 002c 0F00      		.word	15
+  38 002e 6E00      		.word	110
+  39 0030 1000      		.word	16
+  40 0032 8C00      		.word	140
+  41 0034 1100      		.word	17
+  42 0036 8500      		.word	133
+  43 0038 1200      		.word	18
+  44 003a 0A00      		.word	10
+  45               		.text
+  46               	.global	main
+  48               	main:
+  49               	.LFB0:
+  50               		.file 1 "bs.c"
+   1:bs.c          **** /*************************************************************************/
+   2:bs.c          **** /*                                                                       */
+   3:bs.c          **** /*   SNU-RT Benchmark Suite for Worst Case Timing Analysis               */
+   4:bs.c          **** /*   =====================================================               */
+   5:bs.c          **** /*                              Collected and Modified by S.-S. Lim      */
+   6:bs.c          **** /*                                           sslim@archi.snu.ac.kr       */
+   7:bs.c          **** /*                                         Real-Time Research Group      */
+   8:bs.c          **** /*                                        Seoul National University      */
+   9:bs.c          **** /*                                                                       */
+  10:bs.c          **** /*                                                                       */
+  11:bs.c          **** /*        < Features > - restrictions for our experimental environment   */
+  12:bs.c          **** /*                                                                       */
+  13:bs.c          **** /*          1. Completely structured.                                    */
+  14:bs.c          **** /*               - There are no unconditional jumps.                     */
+  15:bs.c          **** /*               - There are no exit from loop bodies.                   */
+  16:bs.c          **** /*                 (There are no 'break' or 'return' in loop bodies)     */
+  17:bs.c          **** /*          2. No 'switch' statements.                                   */
+  18:bs.c          **** /*          3. No 'do..while' statements.                                */
+  19:bs.c          **** /*          4. Expressions are restricted.                               */
+  20:bs.c          **** /*               - There are no multiple expressions joined by 'or',     */
+  21:bs.c          **** /*                'and' operations.                                      */
+  22:bs.c          **** /*          5. No library calls.                                         */
+  23:bs.c          **** /*               - All the functions needed are implemented in the       */
+  24:bs.c          **** /*                 source file.                                          */
+  25:bs.c          **** /*                                                                       */
+  26:bs.c          **** /*                                                                       */
+  27:bs.c          **** /*************************************************************************/
+  28:bs.c          **** /*                                                                       */
+  29:bs.c          **** /*  FILE: bs.c                                                           */
+  30:bs.c          **** /*  SOURCE : Public Domain Code                                          */
+  31:bs.c          **** /*                                                                       */
+  32:bs.c          **** /*  DESCRIPTION :                                                        */
+  33:bs.c          **** /*                                                                       */
+  34:bs.c          **** /*     Binary search for the array of 15 integer elements.               */
+  35:bs.c          **** /*                                                                       */
+  36:bs.c          **** /*  REMARK :                                                             */
+  37:bs.c          **** /*                                                                       */
+  38:bs.c          **** /*  EXECUTION TIME :                                                     */
+  39:bs.c          **** /*                                                                       */
+  40:bs.c          **** /*                                                                       */
+  41:bs.c          **** /*************************************************************************/
+  42:bs.c          **** 
+  43:bs.c          **** 
+  44:bs.c          **** 
+  45:bs.c          **** 
+  46:bs.c          **** struct DATA {
+  47:bs.c          ****   int  key;
+  48:bs.c          ****   int  value;
+  49:bs.c          **** }  ;
+  50:bs.c          **** 
+  51:bs.c          **** #ifdef DEBUG
+  52:bs.c          **** 	int cnt1;
+  53:bs.c          **** #endif 
+  54:bs.c          **** 
+  55:bs.c          **** struct DATA data[15] = { {1, 100},
+  56:bs.c          **** 	     {5,200},
+  57:bs.c          **** 	     {6, 300},
+  58:bs.c          **** 	     {7, 700},
+  59:bs.c          **** 	     {8, 900},
+  60:bs.c          **** 	     {9, 250},
+  61:bs.c          **** 	     {10, 400},
+  62:bs.c          **** 	     {11, 600},
+  63:bs.c          **** 	     {12, 800},
+  64:bs.c          **** 	     {13, 1500},
+  65:bs.c          **** 	     {14, 1200},
+  66:bs.c          **** 	     {15, 110},
+  67:bs.c          **** 	     {16, 140},
+  68:bs.c          **** 	     {17, 133},
+  69:bs.c          **** 	     {18, 10} };
+  70:bs.c          **** 
+  71:bs.c          **** main()
+  72:bs.c          **** {
+  51               		.loc 1 72 0
+  52 0000 CF93      		push r28
+  53               	.LCFI0:
+  54 0002 DF93      		push r29
+  55               	.LCFI1:
+  56 0004 CDB7      		in r28,__SP_L__
+  57 0006 DEB7      		in r29,__SP_H__
+  58               	.LCFI2:
+  59               	/* prologue: function */
+  60               	/* frame size = 0 */
+  61               	/* stack size = 2 */
+  62               	.L__stack_usage = 2
+  73:bs.c          **** 	binary_search(8);
+  63               		.loc 1 73 0
+  64 0008 88E0      		ldi r24,lo8(8)
+  65 000a 90E0      		ldi r25,0
+  66 000c 0E94 0000 		call binary_search
+  67 0010 80E0      		ldi r24,0
+  68 0012 90E0      		ldi r25,0
+  69               	/* epilogue start */
+  74:bs.c          **** }
+  70               		.loc 1 74 0
+  71 0014 DF91      		pop r29
+  72 0016 CF91      		pop r28
+  73 0018 0895      		ret
+  74               	.LFE0:
+  76               	.global	binary_search
+  78               	binary_search:
+  79               	.LFB1:
+  75:bs.c          **** 
+  76:bs.c          **** binary_search(x)
+  77:bs.c          **** {
+  80               		.loc 1 77 0
+  81 001a CF93      		push r28
+  82               	.LCFI3:
+  83 001c DF93      		push r29
+  84               	.LCFI4:
+  85 001e CDB7      		in r28,__SP_L__
+  86 0020 DEB7      		in r29,__SP_H__
+  87               	.LCFI5:
+  88 0022 2A97      		sbiw r28,10
+  89               	.LCFI6:
+  90 0024 0FB6      		in __tmp_reg__,__SREG__
+  91 0026 F894      		cli
+  92 0028 DEBF      		out __SP_H__,r29
+  93 002a 0FBE      		out __SREG__,__tmp_reg__
+  94 002c CDBF      		out __SP_L__,r28
+  95               	/* prologue: function */
+  96               	/* frame size = 10 */
+  97               	/* stack size = 12 */
+  98               	.L__stack_usage = 12
+  99 002e 9A87      		std Y+10,r25
+ 100 0030 8987      		std Y+9,r24
+  78:bs.c          ****   int fvalue, mid, up, low ;
+  79:bs.c          **** 
+  80:bs.c          ****   low = 0;
+ 101               		.loc 1 80 0
+ 102 0032 1E82      		std Y+6,__zero_reg__
+ 103 0034 1D82      		std Y+5,__zero_reg__
+  81:bs.c          ****   up = 14;
+ 104               		.loc 1 81 0
+ 105 0036 8EE0      		ldi r24,lo8(14)
+ 106 0038 90E0      		ldi r25,0
+ 107 003a 9C83      		std Y+4,r25
+ 108 003c 8B83      		std Y+3,r24
+  82:bs.c          ****   fvalue = -1 /* all data are positive */ ;
+ 109               		.loc 1 82 0
+ 110 003e 8FEF      		ldi r24,lo8(-1)
+ 111 0040 9FEF      		ldi r25,lo8(-1)
+ 112 0042 9A83      		std Y+2,r25
+ 113 0044 8983      		std Y+1,r24
+  83:bs.c          ****   while (low <= up) {
+ 114               		.loc 1 83 0
+ 115 0046 00C0      		rjmp .L4
+ 116               	.L7:
+  84:bs.c          ****     mid = (low + up) >> 1;
+ 117               		.loc 1 84 0
+ 118 0048 2D81      		ldd r18,Y+5
+ 119 004a 3E81      		ldd r19,Y+6
+ 120 004c 8B81      		ldd r24,Y+3
+ 121 004e 9C81      		ldd r25,Y+4
+ 122 0050 820F      		add r24,r18
+ 123 0052 931F      		adc r25,r19
+ 124 0054 9595      		asr r25
+ 125 0056 8795      		ror r24
+ 126 0058 9887      		std Y+8,r25
+ 127 005a 8F83      		std Y+7,r24
+  85:bs.c          ****     if ( data[mid].key == x ) {  /*  found  */
+ 128               		.loc 1 85 0
+ 129 005c 8F81      		ldd r24,Y+7
+ 130 005e 9885      		ldd r25,Y+8
+ 131 0060 880F      		lsl r24
+ 132 0062 991F      		rol r25
+ 133 0064 880F      		lsl r24
+ 134 0066 991F      		rol r25
+ 135 0068 8050      		subi r24,lo8(-(data))
+ 136 006a 9040      		sbci r25,hi8(-(data))
+ 137 006c FC01      		movw r30,r24
+ 138 006e 2081      		ld r18,Z
+ 139 0070 3181      		ldd r19,Z+1
+ 140 0072 8985      		ldd r24,Y+9
+ 141 0074 9A85      		ldd r25,Y+10
+ 142 0076 2817      		cp r18,r24
+ 143 0078 3907      		cpc r19,r25
+ 144 007a 01F4      		brne .L5
+  86:bs.c          ****       up = low - 1;
+ 145               		.loc 1 86 0
+ 146 007c 8D81      		ldd r24,Y+5
+ 147 007e 9E81      		ldd r25,Y+6
+ 148 0080 0197      		sbiw r24,1
+ 149 0082 9C83      		std Y+4,r25
+ 150 0084 8B83      		std Y+3,r24
+  87:bs.c          ****       fvalue = data[mid].value;
+ 151               		.loc 1 87 0
+ 152 0086 8F81      		ldd r24,Y+7
+ 153 0088 9885      		ldd r25,Y+8
+ 154 008a 880F      		lsl r24
+ 155 008c 991F      		rol r25
+ 156 008e 880F      		lsl r24
+ 157 0090 991F      		rol r25
+ 158 0092 8050      		subi r24,lo8(-(data+2))
+ 159 0094 9040      		sbci r25,hi8(-(data+2))
+ 160 0096 FC01      		movw r30,r24
+ 161 0098 8081      		ld r24,Z
+ 162 009a 9181      		ldd r25,Z+1
+ 163 009c 9A83      		std Y+2,r25
+ 164 009e 8983      		std Y+1,r24
+ 165 00a0 00C0      		rjmp .L4
+ 166               	.L5:
+  88:bs.c          **** #ifdef DEBUG
+  89:bs.c          **** 	printf("FOUND!!\n");
+  90:bs.c          **** #endif
+  91:bs.c          ****     }
+  92:bs.c          ****     else  /* not found */
+  93:bs.c          ****       if ( data[mid].key > x ) 	{
+ 167               		.loc 1 93 0
+ 168 00a2 8F81      		ldd r24,Y+7
+ 169 00a4 9885      		ldd r25,Y+8
+ 170 00a6 880F      		lsl r24
+ 171 00a8 991F      		rol r25
+ 172 00aa 880F      		lsl r24
+ 173 00ac 991F      		rol r25
+ 174 00ae 8050      		subi r24,lo8(-(data))
+ 175 00b0 9040      		sbci r25,hi8(-(data))
+ 176 00b2 FC01      		movw r30,r24
+ 177 00b4 2081      		ld r18,Z
+ 178 00b6 3181      		ldd r19,Z+1
+ 179 00b8 8985      		ldd r24,Y+9
+ 180 00ba 9A85      		ldd r25,Y+10
+ 181 00bc 8217      		cp r24,r18
+ 182 00be 9307      		cpc r25,r19
+ 183 00c0 04F4      		brge .L6
+  94:bs.c          **** 	up = mid - 1;
+ 184               		.loc 1 94 0
+ 185 00c2 8F81      		ldd r24,Y+7
+ 186 00c4 9885      		ldd r25,Y+8
+ 187 00c6 0197      		sbiw r24,1
+ 188 00c8 9C83      		std Y+4,r25
+ 189 00ca 8B83      		std Y+3,r24
+ 190 00cc 00C0      		rjmp .L4
+ 191               	.L6:
+  95:bs.c          **** #ifdef DEBUG
+  96:bs.c          **** 	printf("MID-1\n");
+  97:bs.c          **** #endif
+  98:bs.c          ****       }
+  99:bs.c          ****       else   {
+ 100:bs.c          ****              	low = mid + 1;
+ 192               		.loc 1 100 0
+ 193 00ce 8F81      		ldd r24,Y+7
+ 194 00d0 9885      		ldd r25,Y+8
+ 195 00d2 0196      		adiw r24,1
+ 196 00d4 9E83      		std Y+6,r25
+ 197 00d6 8D83      		std Y+5,r24
+ 198               	.L4:
+  83:bs.c          ****   while (low <= up) {
+ 199               		.loc 1 83 0 discriminator 1
+ 200 00d8 2D81      		ldd r18,Y+5
+ 201 00da 3E81      		ldd r19,Y+6
+ 202 00dc 8B81      		ldd r24,Y+3
+ 203 00de 9C81      		ldd r25,Y+4
+ 204 00e0 8217      		cp r24,r18
+ 205 00e2 9307      		cpc r25,r19
+ 206 00e4 04F0      		brlt .+2
+ 207 00e6 00C0      		rjmp .L7
+ 101:bs.c          **** #ifdef DEBUG
+ 102:bs.c          **** 	printf("MID+1\n");
+ 103:bs.c          **** #endif
+ 104:bs.c          ****       }
+ 105:bs.c          **** #ifdef DEBUG
+ 106:bs.c          **** 	cnt1++;
+ 107:bs.c          **** #endif
+ 108:bs.c          ****   }
+ 109:bs.c          **** #ifdef DEBUG
+ 110:bs.c          **** 	printf("Loop Count : %d\n", cnt1);
+ 111:bs.c          **** #endif
+ 112:bs.c          ****   return fvalue;
+ 208               		.loc 1 112 0
+ 209 00e8 8981      		ldd r24,Y+1
+ 210 00ea 9A81      		ldd r25,Y+2
+ 211               	/* epilogue start */
+ 113:bs.c          **** }
+ 212               		.loc 1 113 0
+ 213 00ec 2A96      		adiw r28,10
+ 214 00ee 0FB6      		in __tmp_reg__,__SREG__
+ 215 00f0 F894      		cli
+ 216 00f2 DEBF      		out __SP_H__,r29
+ 217 00f4 0FBE      		out __SREG__,__tmp_reg__
+ 218 00f6 CDBF      		out __SP_L__,r28
+ 219 00f8 DF91      		pop r29
+ 220 00fa CF91      		pop r28
+ 221 00fc 0895      		ret
+ 222               	.LFE1:
+ 294               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 bs.c
+     /tmp/ccDhUEyd.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccDhUEyd.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccDhUEyd.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccDhUEyd.s:5      *ABS*:000000000000003b __RAMPZ__
+     /tmp/ccDhUEyd.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccDhUEyd.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccDhUEyd.s:14     .data:0000000000000000 data
+     /tmp/ccDhUEyd.s:48     .text:0000000000000000 main
+     /tmp/ccDhUEyd.s:78     .text:000000000000001a binary_search
+
+UNDEFINED SYMBOLS
+__do_copy_data

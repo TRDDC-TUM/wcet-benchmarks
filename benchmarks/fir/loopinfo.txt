@@ -1,0 +1,8 @@
+subprogram "fir_filter_int" 
+  loop that is in loop
+    repeats <=35 times; -- fir.c:280-281
+  end loop;  
+  loop that contains loop
+    repeats 700 times; -- fir.c:271-295
+  end loop;
+end "fir_filter_int";

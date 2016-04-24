@@ -1,0 +1,50 @@
+...step #1: WCET in [0,9223372036854775807], precision=9223372036854775807
+......cand: 72057594037927296, 1, 2097151, 9223372036854703104, 268435455, 127, 4398046511103, 9223372036854775807, 562949953421306, 16383, 34359738367
+......CEGR: CBMCDriver1.assertion.2<=1, counterexample=69615
+......CEGR: CBMCDriver1.assertion.6<=127, counterexample=69615
+......CEGR: CBMCDriver1.assertion.10<=16383, counterexample=69615
+......time=440.67, mem=956608, complexity={'clauses': {'max': 490498, 'sum': 909050, 'n': 2, 'avg': 454525, 'min': 418552}, 'variables': {'max': 107540, 'sum': 215080, 'n': 2, 'avg': 107540, 'min': 107540}, 'steps': {'max': 3536, 'sum': 3536, 'n': 1, 'avg': 3536, 'min': 3536}}
+......WCET in [69615,2097151], precision=2027536
+......remaining steps <=7
+...step #2: WCET in [69615,2097151], precision=2027536
+......cand: 69615, 294896, 520178, 745460, 970742, 1196023, 1421305, 1646587, 1871869, 2097151
+......CEGR: CBMCDriver1.assertion.1<=69615, counterexample=69623
+......time=381.42, mem=695184, complexity={'clauses': {'max': 490698, 'sum': 909515, 'n': 2, 'avg': 454757, 'min': 418817}, 'variables': {'max': 107557, 'sum': 215114, 'n': 2, 'avg': 107557, 'min': 107557}, 'steps': {'max': 3537, 'sum': 3537, 'n': 1, 'avg': 3537, 'min': 3537}}
+......WCET in [69623,294896], precision=225273
+......remaining steps <=6
+...step #3: WCET in [69623,294896], precision=225273
+......cand: 294896, 119683, 269865, 144714, 219805, 169744, 244835, 194774, 69623, 94653
+......CEGR: CBMCDriver1.assertion.9<=69623, counterexample=69631
+......time=400.36, mem=709936, complexity={'clauses': {'max': 490698, 'sum': 909630, 'n': 2, 'avg': 454815, 'min': 418932}, 'variables': {'max': 107557, 'sum': 215114, 'n': 2, 'avg': 107557, 'min': 107557}, 'steps': {'max': 3537, 'sum': 3537, 'n': 1, 'avg': 3537, 'min': 3537}}
+......WCET in [69631,94653], precision=25022
+......remaining steps <=5
+...step #4: WCET in [69631,94653], precision=25022
+......cand: 91872, 89092, 86312, 83532, 80751, 77971, 75191, 72411, 94653, 69631
+......CEGR: CBMCDriver1.assertion.10<=69631, counterexample=69637
+......time=329.63, mem=607536, complexity={'clauses': {'max': 490707, 'sum': 909532, 'n': 2, 'avg': 454766, 'min': 418825}, 'variables': {'max': 107560, 'sum': 215120, 'n': 2, 'avg': 107560, 'min': 107560}, 'steps': {'max': 3537, 'sum': 3537, 'n': 1, 'avg': 3537, 'min': 3537}}
+......WCET in [69637,72411], precision=2774
+......remaining steps <=4
+...step #5: WCET in [69637,72411], precision=2774
+......cand: 70561, 69637, 72102, 71178, 70253, 71794, 70869, 69945, 72411, 71486
+......CEGR: CBMCDriver1.assertion.2<=69637, counterexample=69638
+......time=200.35, mem=648624, complexity={'clauses': {'max': 490680, 'sum': 909534, 'n': 2, 'avg': 454767, 'min': 418854}, 'variables': {'max': 107551, 'sum': 215102, 'n': 2, 'avg': 107551, 'min': 107551}, 'steps': {'max': 3537, 'sum': 3537, 'n': 1, 'avg': 3537, 'min': 3537}}
+......WCET in [69638,69945], precision=307
+......remaining steps <=3
+...step #6: WCET in [69638,69945], precision=307
+......cand: 69638, 69672, 69706, 69740, 69774, 69808, 69842, 69876, 69910, 69945
+......CEGR: CBMCDriver1.assertion.1<=69638, counterexample=69642
+......CEGR: CBMCDriver1.assertion.2<=69672, counterexample=69673
+......time=298.39, mem=662688, complexity={'clauses': {'max': 490665, 'sum': 1327593, 'n': 3, 'avg': 442531, 'min': 418104}, 'variables': {'max': 107546, 'sum': 322638, 'n': 3, 'avg': 107546, 'min': 107546}, 'steps': {'max': 3537, 'sum': 3537, 'n': 1, 'avg': 3537, 'min': 3537}}
+......WCET in [69673,69706], precision=33
+......remaining steps <=2
+...step #7: WCET in [69673,69706], precision=33
+......cand: 69698, 69702, 69673, 69706, 69676, 69680, 69684, 69687, 69691, 69695
+......time=63.98, mem=429376, complexity={'clauses': {'max': 490689, 'sum': 490689, 'n': 1, 'avg': 490689, 'min': 490689}, 'variables': {'max': 107554, 'sum': 107554, 'n': 1, 'avg': 107554, 'min': 107554}, 'steps': {'max': 3537, 'sum': 3537, 'n': 1, 'avg': 3537, 'min': 3537}}
+......WCET in [69673,69673], precision=0
+SUCCESS: Precise enough after 7 iterations, precision=0
+RESULT: 69673 < WCET <= 69673 cycles
+peak memory (kBytes): samples=7, min=429376.0, avg=672850.285714, max=956608.0, sum=4709952.0
+cbmc time (sec): samples=7, min=63.98, avg=302.114285714, max=440.67, sum=2114.8
+variables: samples=14, min=107540, avg=107551, max=107560, sum=1505722
+clauses: samples=14, min=418104, avg=454681, max=490707, sum=6365543
+steps: samples=7, min=3536, avg=3536, max=3537, sum=24758

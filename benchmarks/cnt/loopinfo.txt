@@ -1,0 +1,19 @@
+subprogram "Initialize"
+  loop that contains loop
+    repeats 10 times;
+  end loop;
+  loop that is in loop
+    repeats 10 times;
+  end loop;
+end "Initialize";
+  
+Subprogram "Sum"
+  loop That Contains loop
+    Repeats 10 Times;
+  end loop;
+  loop That is in loop
+    Repeats 10 Times;
+  end loop;
+end "Sum";
+  
+  

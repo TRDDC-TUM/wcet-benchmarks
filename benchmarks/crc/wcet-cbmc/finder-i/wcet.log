@@ -1,0 +1,25 @@
+...step #1: WCET in [0,9223372036854775807], precision=9223372036854775807
+......cand: 72057594037927296, 1, 2097151, 9223372036854703104, 268435455, 127, 4398046511103, 9223372036854775807, 562949953421306, 16383, 34359738367
+......CEGR: CBMCDriver.assertion.2<=1, counterexample=130091
+......CEGR: CBMCDriver.assertion.6<=127, counterexample=130091
+......CEGR: CBMCDriver.assertion.10<=16383, counterexample=130091
+......time=1.94, mem=321440, complexity={'clauses': {'max': 59271, 'sum': 111294, 'n': 2, 'avg': 55647, 'min': 52023}, 'variables': {'max': 16836, 'sum': 33672, 'n': 2, 'avg': 16836, 'min': 16836}, 'steps': {'max': 41398, 'sum': 41398, 'n': 1, 'avg': 41398, 'min': 41398}}
+......WCET in [130091,2097151], precision=1967060
+......remaining steps <=7
+...step #2: WCET in [130091,2097151], precision=1967060
+......cand: 130091, 348653, 567215, 785777, 1004339, 1222902, 1441464, 1660026, 1878588, 2097151
+......CEGR: CBMCDriver.assertion.1<=130091, counterexample=130114
+......time=1.85, mem=274912, complexity={'clauses': {'max': 59471, 'sum': 111778, 'n': 2, 'avg': 55889, 'min': 52307}, 'variables': {'max': 16853, 'sum': 33706, 'n': 2, 'avg': 16853, 'min': 16853}, 'steps': {'max': 41399, 'sum': 41399, 'n': 1, 'avg': 41399, 'min': 41399}}
+......WCET in [130114,348653], precision=218539
+......remaining steps <=6
+...step #3: WCET in [130114,348653], precision=218539
+......cand: 130114, 251524, 227242, 348653, 202960, 324370, 178678, 300088, 154396, 275806
+......time=1.8, mem=222304, complexity={'clauses': {'max': 59438, 'sum': 59438, 'n': 1, 'avg': 59438, 'min': 59438}, 'variables': {'max': 16842, 'sum': 16842, 'n': 1, 'avg': 16842, 'min': 16842}, 'steps': {'max': 41399, 'sum': 41399, 'n': 1, 'avg': 41399, 'min': 41399}}
+......WCET in [130114,130114], precision=0
+SUCCESS: Precise enough after 3 iterations, precision=0
+RESULT: 130114 < WCET <= 130114 cycles
+peak memory (kBytes): samples=3, min=222304.0, avg=272885.333333, max=321440.0, sum=818656.0
+cbmc time (sec): samples=3, min=1.8, avg=1.86333333333, max=1.94, sum=5.59
+variables: samples=5, min=16836, avg=16844, max=16853, sum=84220
+clauses: samples=5, min=52023, avg=56502, max=59471, sum=282510
+steps: samples=3, min=41398, avg=41398, max=41399, sum=124196

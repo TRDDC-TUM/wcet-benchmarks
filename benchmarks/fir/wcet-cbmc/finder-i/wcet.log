@@ -1,0 +1,11 @@
+...step #1: WCET in [0,9223372036854775807], precision=9223372036854775807
+......cand: 72057594037927296, 1, 2097151, 9223372036854703104, 268435455, 127, 4398046511103, 9223372036854775807, 562949953421306, 16383, 34359738367
+......time=598.07, mem=6998448, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}}
+......remaining steps <=19
+FAILURE: Reason: timeout (signal 2); no WCET value from solver
+RESULT: 0 < WCET <= 9223372036854775807 cycles
+peak memory (kBytes): samples=1, min=6998448.0, avg=6998448.0, max=6998448.0, sum=6998448.0
+cbmc time (sec): samples=1, min=598.07, avg=598.07, max=598.07, sum=598.07
+variables: samples=0, min=None, avg=None, max=None, sum=0
+clauses: samples=0, min=None, avg=None, max=None, sum=0
+steps: samples=0, min=None, avg=None, max=None, sum=0

@@ -1,0 +1,81 @@
+...step #1: WCET in [0,9223372036854775807], precision=9223372036854775807
+......cand: 72057594037927296, 1, 2097151, 9223372036854703104, 268435455, 127, 4398046511103, 9223372036854775807, 562949953421306, 16383, 34359738367
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.2
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.6
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
+......time=0.18, mem=103440, complexity={'clauses': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'variables': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'steps': {'max': 2366, 'sum': 2366, 'n': 1, 'avg': 2366, 'min': 2366}}
+......WCET in [16383,2097151], precision=2080768
+......remaining steps <=7
+...step #2: WCET in [16383,2097151], precision=2080768
+......cand: 1865954, 1634758, 2097151, 1403561, 1172365, 941168, 709972, 478775, 247579, 16383
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
+......time=0.15, mem=103408, complexity={'clauses': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'variables': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'steps': {'max': 2364, 'sum': 2364, 'n': 1, 'avg': 2364, 'min': 2364}}
+......WCET in [16383,247579], precision=231196
+......remaining steps <=6
+...step #3: WCET in [16383,247579], precision=231196
+......cand: 119136, 221890, 93448, 196202, 67759, 170513, 42071, 144825, 247579, 16383
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
+......time=0.14, mem=103408, complexity={'clauses': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'variables': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'steps': {'max': 2364, 'sum': 2364, 'n': 1, 'avg': 2364, 'min': 2364}}
+......WCET in [16383,42071], precision=25688
+......remaining steps <=5
+...step #4: WCET in [16383,42071], precision=25688
+......cand: 33508, 19237, 36362, 22091, 39216, 24945, 27799, 42071, 30654, 16383
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.1
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.2
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.3
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.4
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.6
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.7
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.9
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
+......time=0.18, mem=103424, complexity={'clauses': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'variables': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'steps': {'max': 2371, 'sum': 2371, 'n': 1, 'avg': 2371, 'min': 2371}}
+......WCET in [36362,39216], precision=2854
+......remaining steps <=4
+...step #5: WCET in [36362,39216], precision=2854
+......cand: 37313, 36996, 36679, 36362, 39216, 38898, 38581, 38264, 37947, 37630
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.1
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.2
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.3
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.4
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.6
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.7
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.8
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.9
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
+......time=0.23, mem=103408, complexity={'clauses': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'variables': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'steps': {'max': 2372, 'sum': 2372, 'n': 1, 'avg': 2372, 'min': 2372}}
+......WCET in [38898,39216], precision=318
+......remaining steps <=3
+...step #6: WCET in [38898,39216], precision=318
+......cand: 39074, 39110, 39145, 39180, 39216, 38898, 38933, 38968, 39004, 39039
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.6
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.7
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.8
+......time=0.23, mem=103408, complexity={'clauses': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'variables': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'steps': {'max': 2366, 'sum': 2366, 'n': 1, 'avg': 2366, 'min': 2366}}
+......WCET in [38968,39004], precision=36
+......remaining steps <=2
+...step #7: WCET in [38968,39004], precision=36
+......cand: 38976, 38980, 38984, 39004, 38988, 38992, 39000, 38996, 38968, 38972
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.1
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.2
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.3
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.5
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.9
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
+......time=0.23, mem=103408, complexity={'clauses': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'variables': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'steps': {'max': 2369, 'sum': 2369, 'n': 1, 'avg': 2369, 'min': 2369}}
+......WCET in [38988,38992], precision=4
+......remaining steps <=1
+...step #8: WCET in [38988,38992], precision=4
+......cand: 38992, 38988, 38989, 38990, 38991
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.2
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.3
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.4
+......WARNING: could not parse counterexample for property CBMCDriver.assertion.5
+......time=0.22, mem=103280, complexity={'clauses': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'variables': {'max': 0, 'sum': 0, 'n': 2, 'avg': 0, 'min': 0}, 'steps': {'max': 2367, 'sum': 2367, 'n': 1, 'avg': 2367, 'min': 2367}}
+......WCET in [38991,38992], precision=1
+SUCCESS: Precise enough after 8 iterations, precision=1
+RESULT: 38991 < WCET <= 38992 cycles
+peak memory (kBytes): samples=8, min=103280.0, avg=103398.0, max=103440.0, sum=827184.0
+cbmc time (sec): samples=8, min=0.14, avg=0.195, max=0.23, sum=1.56
+variables: samples=16, min=0, avg=0, max=0, sum=0
+clauses: samples=16, min=0, avg=0, max=0, sum=0
+steps: samples=8, min=2364, avg=2367, max=2372, sum=18939

@@ -1,0 +1,690 @@
+Note:::::Martin Becker: Writing source-level information to sourceinfo.csv
+Note:main.elf::::Bound-T 4c5 for Atmel-AVR
+Note:main.elf::::This AVR device has a 16-bit SP = SPH:SPL.
+Note:main.elf::::File format assumed to be ELF
+Note:main.elf::::Loading DWARF info section.
+Note:main.elf::::DWARF debug info ends without null entry.
+Note:main.elf::::Loading DWARF types for compilation unit 1
+Note:main.elf::::Parsing DWARF symbols.
+Note:main.elf::::Entering DWARF compilation unit for fir.c
+Note:main.elf::::Program implies calling protocol GCC.
+Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
+Note:main.elf:loopinfo.txt:::Routine at 00014C classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:fir.c:fir_filter_int:255:Root subprogram
+Note:main.elf::::Unused (# 1 = fir_filter_int at 00014C) is FALSE
+Note:main.elf::::Dynamism bounding iteration number 1
+Note:main.elf:fir.c:fir_filter_int:255:Unused (# 1 = fir_filter_int at 00014C) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255:Analysis for time is needed.
+Note:main.elf:fir.c:fir_filter_int:255:Control-flow analysis starts.
+Note:main.elf:fir.c:fir_filter_int:279-:Routine at 0003F6 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:fir.c:fir_filter_int:279-:Call to new subprogram # 2 = __mulsi3 at 0003F6
+Note:main.elf:fir.c:fir_filter_int:279-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:281-:Call to existing subprogram # 2 = __mulsi3 at 0003F6
+Note:main.elf:fir.c:fir_filter_int:281-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:282-:Routine at 000416 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:fir.c:fir_filter_int:282-:Call to new subprogram # 3 = __divmodsi4 at 000416
+Note:main.elf:fir.c:fir_filter_int:282-:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255:Control-flow analysis finished.
+Note:main.elf:fir.c:fir_filter_int:255:Dominator iterations 2 for 20 graph nodes.
+Note:main.elf:fir.c:fir_filter_int:255:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Analysis for time is needed.
+Note:main.elf:fir.c:__mulsi3:298-:Control-flow analysis starts.
+Note:main.elf:fir.c:__mulsi3:298-:Routine at 00044E classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:fir.c:__mulsi3:298-:Call to new subprogram # 4 = __muluhisi3 at 00044E
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Control-flow analysis finished.
+Note:main.elf:fir.c:__mulsi3:298-:Dominator iterations 1 for 3 graph nodes.
+Note:main.elf:fir.c:__mulsi3:298-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Analysis for time is needed.
+Note:main.elf:fir.c:__divmodsi4:298-:Control-flow analysis starts.
+Note:main.elf:fir.c:__divmodsi4:298-:Routine at 00042E classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:fir.c:__divmodsi4:298-:Call to new subprogram # 5 = fir.c|__divmodsi4_neg1 at 00042E
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Routine at 00043E classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:fir.c:__divmodsi4:298-:Call to new subprogram # 6 = fir.c|__divmodsi4_neg2 at 00043E
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Routine at 000464 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:fir.c:__divmodsi4:298-:Call to new subprogram # 7 = __udivmodsi4 at 000464
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Call to existing subprogram # 6 = fir.c|__divmodsi4_neg2 at 00043E
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Control-flow analysis finished.
+Note:main.elf:fir.c:__divmodsi4:298-:Dominator iterations 1 for 14 graph nodes.
+Note:main.elf:fir.c:__divmodsi4:298-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Analysis for time is needed.
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Control-flow analysis starts.
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Control-flow analysis finished.
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Dominator iterations 0 for 1 graph nodes.
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Analysis for time is needed.
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Control-flow analysis starts.
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Control-flow analysis finished.
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Dominator iterations 0 for 1 graph nodes.
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Analysis for time is needed.
+Note:main.elf:fir.c:__muluhisi3:298-:Control-flow analysis starts.
+Note:main.elf:fir.c:__muluhisi3:298-:Routine at 0004A8 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:fir.c:__muluhisi3:298-:Call to new subprogram # 8 = __umulhisi3 at 0004A8
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Control-flow analysis finished.
+Note:main.elf:fir.c:__muluhisi3:298-:Dominator iterations 1 for 3 graph nodes.
+Note:main.elf:fir.c:__muluhisi3:298-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:fir.c:__udivmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__udivmodsi4:298-:Analysis for time is needed.
+Note:main.elf:fir.c:__udivmodsi4:298-:Control-flow analysis starts.
+Note:main.elf:fir.c:__udivmodsi4:298-:Control-flow analysis finished.
+Note:main.elf:fir.c:__udivmodsi4:298-:Dominator iterations 1 for 5 graph nodes.
+Note:main.elf:fir.c:__udivmodsi4:298-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Analysis for time is needed.
+Note:main.elf:fir.c:__umulhisi3:298-:Control-flow analysis starts.
+Note:main.elf:fir.c:__umulhisi3:298-:No subprogram-symbol for entry address 0004B6
+Note:main.elf:fir.c:__umulhisi3:298-:Routine at 0004B6 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:fir.c:__umulhisi3:298-:Call to new subprogram # 9 = 0004B6 at 0004B6
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Control-flow analysis finished.
+Note:main.elf:fir.c:__umulhisi3:298-:Dominator iterations 1 for 3 graph nodes.
+Note:main.elf:fir.c:__umulhisi3:298-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:fir.c:0004B6:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:0004B6:298-:Analysis for time is needed.
+Note:main.elf:fir.c:0004B6:298-:Control-flow analysis starts.
+Note:main.elf:fir.c:0004B6:298-:Control-flow analysis finished.
+Note:main.elf:fir.c:0004B6:298-:Dominator iterations 0 for 1 graph nodes.
+Note:main.elf:fir.c:0004B6:298-:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:No execution bounds known yet.
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Repeating constant propagation.
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Maximum stack-height from constant propagation for SP:0
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Constant propagation changed nothing.
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Arithmetic analysis is not needed.
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Time_State for bounds # 1 defined as COMPUTABLE
+Note:main.elf:fir.c:__divmodsi4_neg1:298-:Freezing bounds # 1
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:No execution bounds known yet.
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Repeating constant propagation.
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Maximum stack-height from constant propagation for SP:0
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Constant propagation changed nothing.
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Arithmetic analysis is not needed.
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Time_State for bounds # 2 defined as COMPUTABLE
+Note:main.elf:fir.c:__divmodsi4_neg2:298-:Freezing bounds # 2
+Note:main.elf:fir.c:__udivmodsi4:298-:No execution bounds known yet.
+Note:main.elf:fir.c:__udivmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__udivmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__udivmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__udivmodsi4:298-:Repeating constant propagation.
+Note:main.elf:fir.c:__udivmodsi4:298-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf:fir.c:__udivmodsi4:298-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:fir.c:__udivmodsi4:298-:Maximum stack-height from constant propagation for SP:0
+Note:main.elf:fir.c:__udivmodsi4:298-:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf:fir.c:__udivmodsi4:298-:Constant propagation changed nothing.
+Note:main.elf:fir.c:__udivmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__udivmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__udivmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__udivmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__udivmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__udivmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__udivmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__udivmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__udivmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Loop_Bound:main.elf:fir.c:__udivmodsi4:298-:32
+Note:main.elf:fir.c:__udivmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__udivmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__udivmodsi4:298-:Time_State for bounds # 3 defined as COMPUTABLE
+Note:main.elf:fir.c:__udivmodsi4:298-:Freezing bounds # 3
+Note:main.elf:fir.c:0004B6:298-:No execution bounds known yet.
+Note:main.elf:fir.c:0004B6:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:0004B6:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:0004B6:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:0004B6:298-:Repeating constant propagation.
+Note:main.elf:fir.c:0004B6:298-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf:fir.c:0004B6:298-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:fir.c:0004B6:298-:Maximum stack-height from constant propagation for SP:0
+Note:main.elf:fir.c:0004B6:298-:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf:fir.c:0004B6:298-:Constant propagation changed nothing.
+Note:main.elf:fir.c:0004B6:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:0004B6:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:0004B6:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:0004B6:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:0004B6:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:0004B6:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:0004B6:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:0004B6:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:0004B6:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:0004B6:298-:Arithmetic analysis is not needed.
+Note:main.elf:fir.c:0004B6:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:0004B6:298-:Time_State for bounds # 4 defined as COMPUTABLE
+Note:main.elf:fir.c:0004B6:298-:Freezing bounds # 4
+Note:main.elf:fir.c:__divmodsi4:298-:No execution bounds known yet.
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:__divmodsi4:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:__divmodsi4:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:__divmodsi4:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:__divmodsi4:298-:Repeating constant propagation.
+Note:main.elf:fir.c:__divmodsi4:298-:Repeating constant propagation.
+Note:main.elf:fir.c:__divmodsi4:298-:Final stack-height in stack SP is constant for 2 of 2 return points.
+Note:main.elf:fir.c:__divmodsi4:298-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:fir.c:__divmodsi4:298-:Maximum stack-height from constant propagation for SP:2
+Note:main.elf:fir.c:__divmodsi4:298-:Take-off stack-height in stack SP is constant for 4 of 4 calls.
+Note:main.elf:fir.c:__divmodsi4:298-:Constant propagation changed nothing.
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 5 = fir.c|__divmodsi4_neg1 at 00042E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 7 = __udivmodsi4 at 000464) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 6 = fir.c|__divmodsi4_neg2 at 00043E) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Arithmetic analysis is not needed.
+Note:main.elf:fir.c:__divmodsi4:298-:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:__divmodsi4:298-:Time_State for bounds # 5 defined as COMPUTABLE
+Note:main.elf:fir.c:__divmodsi4:298-:Freezing bounds # 5
+Note:main.elf:fir.c:__umulhisi3:298-:No execution bounds known yet.
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:__umulhisi3:298-:Repeating constant propagation.
+Note:main.elf:fir.c:__umulhisi3:298-:Repeating constant propagation.
+Note:main.elf:fir.c:__umulhisi3:298-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf:fir.c:__umulhisi3:298-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:fir.c:__umulhisi3:298-:Maximum stack-height from constant propagation for SP:2
+Note:main.elf:fir.c:__umulhisi3:298-:Take-off stack-height in stack SP is constant for 1 of 1 calls.
+Note:main.elf:fir.c:__umulhisi3:298-:Constant propagation changed nothing.
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 9 = 0004B6 at 0004B6) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Arithmetic analysis is not needed.
+Note:main.elf:fir.c:__umulhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__umulhisi3:298-:Time_State for bounds # 6 defined as COMPUTABLE
+Note:main.elf:fir.c:__umulhisi3:298-:Freezing bounds # 6
+Note:main.elf:fir.c:__muluhisi3:298-:No execution bounds known yet.
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:__muluhisi3:298-:Repeating constant propagation.
+Note:main.elf:fir.c:__muluhisi3:298-:Repeating constant propagation.
+Note:main.elf:fir.c:__muluhisi3:298-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf:fir.c:__muluhisi3:298-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:fir.c:__muluhisi3:298-:Maximum stack-height from constant propagation for SP:2
+Note:main.elf:fir.c:__muluhisi3:298-:Take-off stack-height in stack SP is constant for 1 of 1 calls.
+Note:main.elf:fir.c:__muluhisi3:298-:Constant propagation changed nothing.
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 8 = __umulhisi3 at 0004A8) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Arithmetic analysis is not needed.
+Note:main.elf:fir.c:__muluhisi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__muluhisi3:298-:Time_State for bounds # 7 defined as COMPUTABLE
+Note:main.elf:fir.c:__muluhisi3:298-:Freezing bounds # 7
+Note:main.elf:fir.c:__mulsi3:298-:No execution bounds known yet.
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:__mulsi3:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:__mulsi3:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:__mulsi3:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:__mulsi3:298-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:__mulsi3:298-:Repeating constant propagation.
+Note:main.elf:fir.c:__mulsi3:298-:Repeating constant propagation.
+Note:main.elf:fir.c:__mulsi3:298-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf:fir.c:__mulsi3:298-:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf:fir.c:__mulsi3:298-:Maximum stack-height from constant propagation for SP:4
+Note:main.elf:fir.c:__mulsi3:298-:Take-off stack-height in stack SP is constant for 1 of 1 calls.
+Note:main.elf:fir.c:__mulsi3:298-:Constant propagation changed nothing.
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 4 = __muluhisi3 at 00044E) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Arithmetic analysis is not needed.
+Note:main.elf:fir.c:__mulsi3:298-:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:__mulsi3:298-:Time_State for bounds # 8 defined as COMPUTABLE
+Note:main.elf:fir.c:__mulsi3:298-:Freezing bounds # 8
+Note:main.elf:fir.c:fir_filter_int:255-298:No execution bounds known yet.
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 1 = fir_filter_int at 00014C) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 1 = fir_filter_int at 00014C) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 1 = fir_filter_int at 00014C) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-298:Repeating constant propagation.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:261:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:261:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:261:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:261-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:261-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:261-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:262:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:262:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:262:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:262-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:262-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:262-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:262-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:262-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:262-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:262-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:262-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:262-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:265:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:265:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:265:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:265-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:265-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:265-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:265-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:265-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:265-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:266:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:266:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:266:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:266-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:266-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:266-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:266-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:266-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:266-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:269:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:269:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:269:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:269-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:269-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:269-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:269-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:269-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:269-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:269-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:269-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:269-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:274:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:274:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:274:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:274-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:274-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:274-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:275:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:275:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:275:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:275-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:275-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:275-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:279-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:281-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:280-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:282-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:286:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:286:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:286:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:286-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:286-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:286-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:287:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:287:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:287:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:287-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:287-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:287-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:287-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:287-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:287-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:287-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:287-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:287-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:288:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:288:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:288:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:288-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:288-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:288-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:294-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:295:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:295:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:295:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:295-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:295-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:295-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:271-:Refine (Assignment) bounded a pointer.
+Note:main.elf:fir.c:fir_filter_int:255-298:Repeating constant propagation.
+Note:main.elf:fir.c:fir_filter_int:255-298:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf:fir.c:fir_filter_int:255-298:Final stack-height from constant propagation for SP:sh
+Note:main.elf:fir.c:fir_filter_int:255-298:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf:fir.c:fir_filter_int:255-298:Take-off stack-height in stack SP is constant for 0 of 3 calls.
+Note:main.elf:fir.c:fir_filter_int:255-298:Constant propagation changed nothing.
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 1 = fir_filter_int at 00014C) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 1 = fir_filter_int at 00014C) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 1 = fir_filter_int at 00014C) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 1 = fir_filter_int at 00014C) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 1 = fir_filter_int at 00014C) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 1 = fir_filter_int at 00014C) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 1 = fir_filter_int at 00014C) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 2 = __mulsi3 at 0003F6) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 3 = __divmodsi4 at 000416) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 1 = fir_filter_int at 00014C) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 1 = fir_filter_int at 00014C) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Arithmetic analysis is not needed.
+Note:main.elf:fir.c:fir_filter_int:255-298:Unused (# 1 = fir_filter_int at 00014C) is FALSE
+Note:main.elf:fir.c:fir_filter_int:255-298:Time_State for bounds # 9 defined as COMPUTABLE
+Note:main.elf:fir.c:fir_filter_int:255-298:Freezing bounds # 9
+Note:main.elf::::Target-specific additional analysis starts.
+Note:main.elf::::Generic worst-case path and time analysis starts.
+Wcet:main.elf:fir.c:0004B6:298-:8
+Wcet:main.elf:fir.c:__umulhisi3:298-:31
+Wcet:main.elf:fir.c:__muluhisi3:298-:52
+Wcet:main.elf:fir.c:__mulsi3:298-:82
+Wcet:main.elf:fir.c:__divmodsi4_neg1:298-:11
+Wcet:main.elf:fir.c:__divmodsi4_neg2:298-:11
+Wcet:main.elf:fir.c:__udivmodsi4:298-:665
+Wcet:main.elf:fir.c:__divmodsi4:298-:737
+Wcet:main.elf:fir.c:fir_filter_int:255-298:5690524
+Note:main.elf::::Creating SLI file sourceinfo.csv.

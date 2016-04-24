@@ -1,0 +1,39 @@
+
+subprogram "ludcmp"
+  all 9 loops  
+    repeat <=5 times;
+  end loop;
+  -- WCET=93487
+  
+  --  loop On Line 122
+  --    Repeats 5 Times;
+  --  end loop;
+  --  loop On Line 125 and That is in loop and That Contains loop
+  --    Repeats <= 5 Times;
+  --  end loop;
+  --  loop On Line 131 and That is in (loop That is in loop)
+  --    Repeats <= 5 Times;
+  --  end loop;
+  --  loop On Line 135 and That is in loop and That Contains loop
+  --    Repeats <= 5 Times;
+  --  end loop;
+  --  loop On Line 138 and That is in (loop That is in loop)
+  --    Repeats <= 5 Times;
+  --  end loop;
+  --  loop On Line 144 
+  --    Repeats 5 Times;
+  --  end loop;
+  --  loop On Line 147 and That is in loop
+  --    Repeats <= 5 Times;
+  --  end loop;
+  --  loop On Line 152
+  --    Repeats 5 Times;
+  --  end loop;
+  --  loop On Line 155 and That is in loop
+  --    Repeats <= 5 Times;
+  --  end loop;
+  --  -- WCET=93487
+
+  
+end "ludcmp";
+
