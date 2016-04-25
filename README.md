@@ -6,8 +6,6 @@ can now be analyzed at source level.
 
 For detailed information see the research paper "TIC: A Scalable Model Checking Based Approach to WCET Estimation"; Metta, Becker, Bokil, Chakraborty and Venkatesh; In ACM SIGPLAN/SIGBED Conference on Languages, Compilers, Tools and Theory for Embedded Systems (LCTES 2016), Santa Barbara, CA, USA.
 
-**Important note** At the moment, some scripts are missing. You cannot reproduce the WCET estimates from the Model Checker, yet. Soon to be fixed!
-
 ## What you can find here
  - a subset of the Mälardalen WCET benchmarks, where the sources are annotated with instruction timing f or Atmel Atmega microcontrollers
  - WCET estimate from the WCET analyzer Bound-T (http://www.bound-t.com/)

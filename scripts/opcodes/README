@@ -1,0 +1,6 @@
+Three scripts parsing and analyzing opcode timings from Bound-T/sourceinfo.csv.
+
+Usage
+-----
+get_opcode_timings.py: get list of [opcode, timing] from sourceinfo.csv and ELF
+filter_opcode.py: 
