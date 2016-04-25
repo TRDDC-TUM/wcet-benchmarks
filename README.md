@@ -43,3 +43,16 @@ A lot of log files are produced when running the above-mentioned scripts. Here i
  - <benchmark>/time_oc.log: output of GNU's time for the Omega Calculator employed by Bound-T
  - <benchmark>/simulate-single-input/alltimes: detailed timing from the simulator, with a statistical summary of observed WCET
  - <benchmark>/simulate-random-input/simlog: Summary of multiple random simulator runs, including statistical summary of observed WCET
+
+## How To: Run a WCET analysis with the Model Checker cbmc
+Let us take the example of matmult. This is how you can apply the Model Checker cbmc to our time-annotated sources to estimate the WCET value:
+ 1. cd benchmarks/matmult/wcet-cbmc/finder-i
+ 2. the time-annotated source is matmult_i.in. This file has a marker ###WCET_TEST### in it, which is iteratively replaced by the script find_wcet2.py to search for the WCET.
+ 3. Because the results are already computed (and we use Makefiles), you have to delete them to re-perform the analysis. Towards that: rm wcet.log
+ 4. make sure the folder "modelcheck" exists
+ 5. Now we are ready to run the analysis: make wcet
+ 6. The file wcet.log is produced, showing the iterations of the Model Checker, and the intermediate and final results. The final and most precise WCET value should be 1,010,394 cycles.
+
+You can reduce the precision (=speed up the search time) to, e.g., 1,000 cycles, by modifying the variable WCET_PREC in the Makefile. A precision of 1,000 means, that the estimate will be at most 1,000 larger then the most precise estimate. Note that the result is still safe, but just not tight.
+By default cbmc uses the minisat (SAT solver) backend. You can switch to the mathsat (SMT solver) backend by setting the environment variable CBMCFLAGS as CBMCFLAGS="--mathsat", see also runAllCbmc.sh.
+
