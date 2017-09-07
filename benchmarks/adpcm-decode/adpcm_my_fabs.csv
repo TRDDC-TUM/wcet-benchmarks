@@ -1,0 +1,8 @@
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
+0;exit;;;my_fabs;0;0;0;0;0;0;0;;;""
+1;node;;adpcm.c;my_fabs;282;3;282;11;0;0;0;;0;" return f;;"
+2;node;;adpcm.c;my_fabs;281;8;281;14;0;0;0;;1;" f = -n;"
+3;node;;adpcm.c;my_fabs;280;15;280;20;0;0;0;;1;" f = n;"
+4;node;;adpcm.c;my_fabs;278;3;280;13;0;0;0;;3,2;" int32_t f;; n >= 0;"
+5;entry;;;my_fabs;0;0;0;0;0;0;0;;4;""
+

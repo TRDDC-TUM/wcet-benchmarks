@@ -1,0 +1,5 @@
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
+0;exit;;;swap;0;0;0;0;0;0;0;;;""
+1;node;;prime.c;swap;35;3;37;11;0;0;0;;0;" uint tmp = *a;; *a = *b; *b = tmp;"
+2;entry;;;swap;0;0;0;0;0;0;0;;1;""
+

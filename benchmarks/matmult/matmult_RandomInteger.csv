@@ -1,0 +1,5 @@
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
+0;exit;;;RandomInteger;0;0;0;0;0;0;0;;;""
+1;node;;matmult.c;RandomInteger;126;4;127;17;0;0;0;;0;" Seed = ((Seed * 133) + 81) % 8095; return (Seed);;"
+2;entry;;;RandomInteger;0;0;0;0;0;0;0;;1;""
+

@@ -1,0 +1,11 @@
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
+0;exit;;;Initialize;0;0;0;0;0;0;0;;;""
+1;node;;matmult.c;Initialize;115;50;115;62;0;0;0;;6;" OuterIndex++;"
+2;node;;matmult.c;Initialize;116;53;116;65;0;0;0;;4;" InnerIndex++;"
+3;node;;matmult.c;Initialize;117;10;117;57;0;0;1;RandomInteger;2;" RandomInteger(); Array[OuterIndex][InnerIndex] = [B3.1];"
+4;node;;matmult.c;Initialize;116;28;116;51;0;0;0;;3,1;" InnerIndex < 20;"
+5;node;;matmult.c;Initialize;116;12;116;26;0;0;0;;4;" InnerIndex = 0;"
+6;node;;matmult.c;Initialize;115;25;115;48;0;0;0;;5,0;" OuterIndex < 20;"
+7;node;;matmult.c;Initialize;113;8;115;23;0;0;0;;6;" int OuterIndex;; int InnerIndex;; OuterIndex = 0;"
+8;entry;;;Initialize;0;0;0;0;0;0;0;;7;""
+

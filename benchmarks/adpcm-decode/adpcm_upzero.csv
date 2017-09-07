@@ -1,0 +1,17 @@
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
+0;exit;;;upzero;0;0;0;0;0;0;0;;;""
+1;node;;adpcm.c;upzero;746;5;751;11;0;0;0;;0;" dlti[5] = dlti[4]; dlti[4] = dlti[3]; dlti[3] = dlti[2]; dlti[1] = dlti[0]; dlti[0] = dlt; return;;"
+2;node;;adpcm.c;upzero;739;27;739;30;0;0;0;;7;" i++;"
+3;node;;adpcm.c;upzero;741;9;742;27;0;0;0;;2;" wd3 = (int32_t)((255L * bli[i]) >> 8L); bli[i] = wd2 + wd3;"
+4;node;;adpcm.c;upzero;740;55;740;65;0;0;0;;3;" wd2 = -128;"
+5;node;;adpcm.c;upzero;740;39;740;48;0;0;0;;3;" wd2 = 128;"
+6;node;;adpcm.c;upzero;740;12;740;37;0;0;0;;5,4;" (int64_t)dlt * dlti[i] >= 0;"
+7;node;;adpcm.c;upzero;739;19;739;24;0;0;0;;6,1;" i < 6;"
+8;node;;adpcm.c;upzero;739;11;739;16;0;0;0;;7;" i = 0;"
+9;node;;adpcm.c;upzero;734;27;734;30;0;0;0;;11;" i++;"
+10;node;;adpcm.c;upzero;735;9;735;48;0;0;0;;9;" bli[i] = (int32_t)((255L * bli[i]) >> 8L);"
+11;node;;adpcm.c;upzero;734;19;734;24;0;0;0;;10,1;" i < 6;"
+12;node;;adpcm.c;upzero;734;11;734;16;0;0;0;;11;" i = 0;"
+13;node;;adpcm.c;upzero;731;13;733;16;0;0;0;;12,8;" int32_t i;; int32_t wd2;; int32_t wd3;; dlt == 0;"
+14;entry;;;upzero;0;0;0;0;0;0;0;;13;""
+

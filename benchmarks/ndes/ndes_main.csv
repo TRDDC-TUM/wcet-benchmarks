@@ -1,0 +1,5 @@
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
+0;exit;;;main;0;0;0;0;0;0;0;;;""
+1;node;;ndes.c;main;223;12;236;11;0;0;1;des;0;" immense inp;; immense key;; immense out;; int newkey;; int isw;; inp.l = 1 * 35; inp.r = 1 * 26; key.l = 1 * 2; key.r = 1 * 16; newkey = value; isw = value; des(inp, key, &newkey, isw, &out); return 0;;"
+2;entry;;;main;0;0;0;0;0;0;0;;1;""
+
