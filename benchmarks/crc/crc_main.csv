@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;;main;0;0;0;0;0;0;0;;;""
-1;node;;crc.c;main;115;18;124;11;0;0;1;icrc,icrc;0;" unsigned short i1;; unsigned short i2;; unsigned long n;; n = 40; lin[n + 1] = 0; icrc(0, n, (short)0, 1); i1 = [B1.6]; lin[n + 1] = ((uchar)((i1) >> 8)); lin[n + 2] = ((uchar)((i1) & 255)); icrc(i1, n + 2, (short)0, 1); i2 = [B1.10]; return 0;;"
-2;entry;;;main;0;0;0;0;0;0;0;;1;""
+0;exit;;crc.c;;125;1;125;1;0;0;0;;;""
+1;node;;crc.c;main;115;3;124;11;0;0;1;icrc,icrc;0;" unsigned short i1;; unsigned short i2;; unsigned long n;; n = 40; lin[n + 1] = 0; icrc(0, n, (short)0, 1); i1 = [B1.6]; lin[n + 1] = ((uchar)((i1) >> 8)); lin[n + 2] = ((uchar)((i1) & 255)); icrc(i1, n + 2, (short)0, 1); i2 = [B1.10]; return 0;;"
+2;entry;;crc.c;;113;2;113;2;0;0;0;;1;""
 

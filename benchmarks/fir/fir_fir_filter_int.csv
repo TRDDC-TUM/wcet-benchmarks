@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;;fir_filter_int;0;0;0;0;0;0;0;;;""
+0;exit;;fir.c;;298;1;298;1;0;0;0;;;""
 1;node;;fir.c;fir_filter_int;271;28;271;31;0;0;0;;11;" i++;"
 2;node;;fir.c;fir_filter_int;295;7;295;15;0;0;0;;1;" in_ptr++;"
 3;node;;fir.c;fir_filter_int;294;33;294;45;0;0;0;;2;" acc_length++;"
@@ -11,6 +11,6 @@
 9;node;;fir.c;fir_filter_int;280;17;280;31;0;0;0;;8,6;" j < acc_length;"
 10;node;;fir.c;fir_filter_int;274;5;280;14;0;0;0;;9;" data_ptr = in_ptr; coef_ptr = coef_start; acc = (long)(*coef_ptr++) * (*data_ptr--); j = 1;"
 11;node;;fir.c;fir_filter_int;271;15;271;25;0;0;0;;10,0;" i < in_len;"
-12;node;;fir.c;fir_filter_int;256;8;271;12;0;0;0;;11;" long i;; long j;; long coef_len2;; long acc_length;; long acc;; long *in_ptr;; long *data_ptr;; long *coef_start;; long *coef_ptr;; long *in_end;; coef_start = coef; coef_len2 = (coef_len + 1) >> 1; in_end = in + in_len - 1; in_ptr = in + coef_len2 - 1; acc_length = coef_len2; i = 0;"
-13;entry;;;fir_filter_int;0;0;0;0;0;0;0;;12;""
+12;node;;fir.c;fir_filter_int;256;3;271;12;0;0;0;;11;" long i;; long j;; long coef_len2;; long acc_length;; long acc;; long *in_ptr;; long *data_ptr;; long *coef_start;; long *coef_ptr;; long *in_end;; coef_start = coef; coef_len2 = (coef_len + 1) >> 1; in_end = in + in_len - 1; in_ptr = in + coef_len2 - 1; acc_length = coef_len2; i = 0;"
+13;entry;;fir.c;;255;2;255;2;0;0;0;;12;""
 

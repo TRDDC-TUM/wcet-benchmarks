@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;;Multiply;0;0;0;0;0;0;0;;;""
+0;exit;;matmult.c;;162;1;162;1;0;0;0;;;""
 1;node;;matmult.c;Multiply;154;40;154;47;0;0;0;;9;" Outer++;"
 2;node;;matmult.c;Multiply;155;43;155;50;0;0;0;;7;" Inner++;"
 3;node;;matmult.c;Multiply;158;46;158;53;0;0;0;;5;" Index++;"
@@ -9,6 +9,6 @@
 7;node;;matmult.c;Multiply;155;23;155;41;0;0;0;;6,1;" Inner < 20;"
 8;node;;matmult.c;Multiply;155;12;155;21;0;0;0;;7;" Inner = 0;"
 9;node;;matmult.c;Multiply;154;20;154;38;0;0;0;;8,0;" Outer < 20;"
-10;node;;matmult.c;Multiply;152;17;154;18;0;0;0;;9;" register int Outer;; register int Inner;; register int Index;; Outer = 0;"
-11;entry;;;Multiply;0;0;0;0;0;0;0;;10;""
+10;node;;matmult.c;Multiply;152;4;154;18;0;0;0;;9;" register int Outer;; register int Inner;; register int Index;; Outer = 0;"
+11;entry;;matmult.c;;151;2;151;2;0;0;0;;10;""
 

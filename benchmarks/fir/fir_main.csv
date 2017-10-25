@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;;main;0;0;0;0;0;0;0;;;""
+0;exit;;fir.c;;228;1;228;1;0;0;0;;;""
 1;node;;fir.c;main;215;3;227;11;0;0;1;fir_filter_int;0;" long output[720];; fir_filter_int(in_data, output, 700, fir_int, 35, 285); return 0;;"
-2;entry;;;main;0;0;0;0;0;0;0;;1;""
+2;entry;;fir.c;;214;2;214;2;0;0;0;;1;""
 

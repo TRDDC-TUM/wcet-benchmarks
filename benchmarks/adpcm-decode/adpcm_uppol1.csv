@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;;uppol1;0;0;0;0;0;0;0;;;""
+0;exit;;adpcm.c;;797;1;797;1;0;0;0;;;""
 1;node;;adpcm.c;uppol1;796;5;796;17;0;0;0;;0;" return (apl1);;"
 2;node;;adpcm.c;uppol1;795;21;795;32;0;0;0;;1;" apl1 = -wd3;"
 3;node;;adpcm.c;uppol1;795;8;795;19;0;0;0;;2,1;" apl1 < -wd3;"
@@ -8,5 +8,5 @@
 6;node;;adpcm.c;uppol1;790;9;790;34;0;0;0;;5;" apl1 = (int32_t)wd2 - 192;"
 7;node;;adpcm.c;uppol1;787;9;787;34;0;0;0;;5;" apl1 = (int32_t)wd2 + 192;"
 8;node;;adpcm.c;uppol1;783;5;786;31;0;0;0;;7,6;" int64_t wd2;; int32_t wd3;; int32_t apl1;; wd2 = ((int64_t)al1 * 255L) >> 8L; (int64_t)plt * plt1 >= 0L;"
-9;entry;;;uppol1;0;0;0;0;0;0;0;;8;""
+9;entry;;adpcm.c;;782;2;782;2;0;0;0;;8;""
 

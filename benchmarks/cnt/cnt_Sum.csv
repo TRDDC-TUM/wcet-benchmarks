@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;;Sum;0;0;0;0;0;0;0;;;""
+0;exit;;cnt.c;;108;1;108;1;0;0;0;;;""
 1;node;;cnt.c;Sum;104;3;107;16;0;0;0;;0;" Postotal = Ptotal; Poscnt = Pcnt; Negtotal = Ntotal; Negcnt = Ncnt;"
 2;node;;cnt.c;Sum;89;36;89;43;0;0;0;;9;" Outer++;"
 3;node;;cnt.c;Sum;90;38;90;45;0;0;0;;7;" Inner++;"
@@ -9,6 +9,6 @@
 7;node;;cnt.c;Sum;90;21;90;36;0;0;0;;6,2;" Inner < 10;"
 8;node;;cnt.c;Sum;90;10;90;19;0;0;0;;7;" Inner = 0;"
 9;node;;cnt.c;Sum;89;19;89;34;0;0;0;;8,1;" Outer < 10;"
-10;node;;cnt.c;Sum;82;16;89;17;0;0;0;;9;" register int Outer;; register int Inner;; int Ptotal = 0;; int Ntotal = 0;; int Pcnt = 0;; int Ncnt = 0;; Outer = 0;"
-11;entry;;;Sum;0;0;0;0;0;0;0;;10;""
+10;node;;cnt.c;Sum;82;3;89;17;0;0;0;;9;" register int Outer;; register int Inner;; int Ptotal = 0;; int Ntotal = 0;; int Pcnt = 0;; int Ncnt = 0;; Outer = 0;"
+11;entry;;cnt.c;;81;2;81;2;0;0;0;;10;""
 

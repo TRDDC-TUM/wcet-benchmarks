@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;;ks;0;0;0;0;0;0;0;;;""
+0;exit;;ndes.c;;133;1;133;1;0;0;0;;;""
 1;node;;ndes.c;ks;125;31;125;42;0;0;0;;3;" j--; k--; ... , [B1.2]; l--; ... , [B1.4];"
 2;node;;ndes.c;ks;126;7;131;33;0;0;1;getbit,getbit,getbit;1;" getbit(icd, ipc2[j], 28); (*kn).r = ((*kn).r <<= 1) | (unsigned short)[B2.1]; getbit(icd, ipc2[k], 28); (*kn).c = ((*kn).c <<= 1) | (unsigned short)[B2.3]; getbit(icd, ipc2[l], 28); (*kn).l = ((*kn).l <<= 1) | (unsigned short)[B2.5];"
 3;node;;ndes.c;ks;125;25;125;29;0;0;0;;2,0;" j >= 1;"
@@ -12,6 +12,6 @@
 10;node;;ndes.c;ks;115;38;115;45;0;0;0;;9,8;" n == 16;"
 11;node;;ndes.c;ks;115;28;115;34;0;0;0;;9,10;" n == 9;"
 12;node;;ndes.c;ks;115;18;115;24;0;0;0;;9,11;" n == 2;"
-13;node;;ndes.c;ks;113;8;115;14;0;0;0;;9,12;" int i;; int j;; int k;; int l;; n == 1;"
-14;entry;;;ks;0;0;0;0;0;0;0;;13;""
+13;node;;ndes.c;ks;113;4;115;14;0;0;0;;9,12;" int i;; int j;; int k;; int l;; n == 1;"
+14;entry;;ndes.c;;112;46;112;46;0;0;0;;13;""
 

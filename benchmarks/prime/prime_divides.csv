@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;;divides;0;0;0;0;0;0;0;;;""
+0;exit;;prime.c;;17;1;17;1;0;0;0;;;""
 1;node;;prime.c;divides;16;3;16;22;0;0;0;;0;" return (m % n == 0);;"
-2;entry;;;divides;0;0;0;0;0;0;0;;1;""
+2;entry;;prime.c;;15;32;15;32;0;0;0;;1;""
 

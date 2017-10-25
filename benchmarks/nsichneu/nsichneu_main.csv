@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;;main;0;0;0;0;0;0;0;;;""
+0;exit;;nsichneu.c;;4246;1;4246;1;0;0;0;;;""
 1;node;;nsichneu.c;main;4241;4;4243;18;0;0;0;;0;" dummy_i = 77; return dummy_i;;"
 3;node;;nsichneu.c;main;4225;10;4234;27;0;0;0;;753;" P2_is_marked -= 4; c = a + b; P3_marking_member_0[P3_is_marked + 0] = a; P3_marking_member_0[P3_is_marked + 1] = b; P3_marking_member_0[P3_is_marked + 2] = c; P3_is_marked += 3;"
 4;node;;nsichneu.c;main;4214;10;4222;20;0;0;0;;3,753;" long a;; long b;; long c;; a = P2_marking_member_0[4]; b = P2_marking_member_0[3]; b > a;"
@@ -753,5 +753,5 @@
 752;node;;nsichneu.c;main;63;7;66;30;0;0;0;;751,747;" dummy_i--; P1_is_marked >= 3;"
 753;node;;nsichneu.c;main;61;11;61;22;0;0;0;;752,1;" dummy_i > 0;"
 754;node;;nsichneu.c;main;57;4;59;15;0;0;0;;753;" int dummy_i;; dummy_i = 2;"
-755;entry;;;main;0;0;0;0;0;0;0;;754;""
+755;entry;;nsichneu.c;;56;2;56;2;0;0;0;;754;""
 
