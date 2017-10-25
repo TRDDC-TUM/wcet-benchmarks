@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;cnt.c;;57;1;57;1;0;0;0;;;""
+0;exit;;cnt.c;Test;57;1;57;1;0;0;0;;;""
 1;node;;cnt.c;Test;41;4;56;12;0;0;1;Initialize,Sum;0;" long StartTime;; long StopTime;; float TotalTime;; Initialize(Array); StartTime = 1000.; Sum(Array); StopTime = 1500.; TotalTime = (StopTime - StartTime) / 1000.; return 0;;"
-2;entry;;cnt.c;;40;2;40;2;0;0;0;;1;""
+2;entry;;cnt.c;Test;40;2;40;2;0;0;0;;1;""
 

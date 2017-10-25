@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;ud.c;;114;1;114;1;0;0;0;;;""
+0;exit;;ud.c;main;114;1;114;1;0;0;0;;;""
 1;node;;ud.c;main;113;3;113;26;0;0;1;ludcmp;0;" ludcmp(nmax, n); chkerr = [B1.1];"
 2;node;;ud.c;main;99;22;99;25;0;0;0;;10;" i++;"
 3;node;;ud.c;main;109;7;109;15;0;0;0;;2;" b[i] = w;"
@@ -11,5 +11,5 @@
 9;node;;ud.c;main;101;7;102;16;0;0;0;;8;" w = 0.; j = 0;"
 10;node;;ud.c;main;99;14;99;20;0;0;0;;9,1;" i <= n;"
 11;node;;ud.c;main;93;3;99;12;0;0;0;;10;" int i;; int j;; int nmax = 50;; int n = 5;; int chkerr;; long w;; i = 0;"
-12;entry;;ud.c;;92;2;92;2;0;0;0;;11;""
+12;entry;;ud.c;main;92;2;92;2;0;0;0;;11;""
 

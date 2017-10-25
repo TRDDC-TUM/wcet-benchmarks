@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;adpcm.c;;469;1;469;1;0;0;0;;;""
+0;exit;;adpcm.c;encode;469;1;469;1;0;0;0;;;""
 1;node;;adpcm.c;encode;435;5;468;27;0;0;1;logsch,scalel,upzero,uppol2,uppol1;0;" dh = ((int64_t)deth * qq2_code2_table[ih]) >> 15L; logsch(ih, nbh); nbh = [B1.2]; scalel(nbh, 10); deth = [B1.4]; ph = dh + szh; upzero(dh, delay_dhx, delay_bph); uppol2(ah1, ah2, ph, ph1, ph2); ah2 = [B1.8]; uppol1(ah1, ah2, ph, ph1); ah1 = [B1.10]; yh = sh + dh; rh2 = rh1; rh1 = yh; ph2 = ph1; ph1 = ph; return (il | (ih << 6));;"
 2;node;;adpcm.c;encode;432;28;432;32;0;0;0;;1;" ih--;"
 3;node;;adpcm.c;encode;431;5;432;26;0;0;1;my_abs;2,1;" decis = (564L * (int64_t)deth) >> 12L; my_abs(eh); [B3.2] > decis;"
@@ -14,5 +14,5 @@
 12;node;;adpcm.c;encode;339;9;340;50;0;0;0;;11;" xa += (int64_t)(*tqmf_ptr++) * (*h_ptr++); xb += (int64_t)(*tqmf_ptr++) * (*h_ptr++);"
 13;node;;adpcm.c;encode;338;17;338;23;0;0;0;;12,10;" i < 10;"
 14;node;;adpcm.c;encode;326;5;338;14;0;0;0;;13;" int32_t i;; int32_t *h_ptr;; int32_t *tqmf_ptr;; int32_t *tqmf_ptr1;; int64_t xa;; int64_t xb;; int32_t decis;; h_ptr = h; tqmf_ptr = tqmf; xa = (int64_t)(*tqmf_ptr++) * (*h_ptr++); xb = (int64_t)(*tqmf_ptr++) * (*h_ptr++); i = 0;"
-15;entry;;adpcm.c;;325;2;325;2;0;0;0;;14;""
+15;entry;;adpcm.c;encode;325;2;325;2;0;0;0;;14;""
 

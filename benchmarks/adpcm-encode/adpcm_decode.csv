@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;adpcm.c;;606;1;606;1;0;0;0;;;""
+0;exit;;adpcm.c;decode;606;1;606;1;0;0;0;;;""
 1;node;;adpcm.c;decode;602;5;605;11;0;0;0;;0;" *ac_ptr = xd; *ad_ptr = xs; return;;"
 2;node;;adpcm.c;decode;598;26;598;29;0;0;0;;4;" i++;"
 3;node;;adpcm.c;decode;599;9;600;31;0;0;0;;2;" *ac_ptr-- = *ac_ptr1--; *ad_ptr-- = *ad_ptr1--;"
@@ -9,5 +9,5 @@
 7;node;;adpcm.c;decode;584;9;585;49;0;0;0;;6;" xa1 += (int64_t)(*ac_ptr++) * (*h_ptr++); xa2 += (int64_t)(*ad_ptr++) * (*h_ptr++);"
 8;node;;adpcm.c;decode;583;17;583;23;0;0;0;;7,5;" i < 10;"
 9;node;;adpcm.c;decode;475;5;583;14;0;0;1;filtez,filtep,logscl,scalel,upzero,uppol2,uppol1,filtez,filtep,logsch,scalel,upzero,uppol2,uppol1;8;" int32_t i;; int64_t xa1;; int64_t xa2;; int32_t *h_ptr;; int32_t *ac_ptr;; int32_t *ac_ptr1;; int32_t *ad_ptr;; int32_t *ad_ptr1;; ilr = input & 63; ih = input >> 6; filtez(dec_del_bpl, dec_del_dltx); dec_szl = [B9.11]; filtep(dec_rlt1, dec_al1, dec_rlt2, dec_al2); dec_spl = [B9.13]; dec_sl = dec_spl + dec_szl; dec_dlt = ((int64_t)dec_detl * qq4_code4_table[ilr >> 2]) >> 15; dl = ((int64_t)dec_detl * qq6_code6_table[il]) >> 15; rl = dl + dec_sl; logscl(ilr, dec_nbl); dec_nbl = [B9.19]; scalel(dec_nbl, 8); dec_detl = [B9.21]; dec_plt = dec_dlt + dec_szl; upzero(dec_dlt, dec_del_dltx, dec_del_bpl); uppol2(dec_al1, dec_al2, dec_plt, dec_plt1, dec_plt2); dec_al2 = [B9.25]; uppol1(dec_al1, dec_al2, dec_plt, dec_plt1); dec_al1 = [B9.27]; dec_rlt = dec_sl + dec_dlt; dec_rlt2 = dec_rlt1; dec_rlt1 = dec_rlt; dec_plt2 = dec_plt1; dec_plt1 = dec_plt; filtez(dec_del_bph, dec_del_dhx); dec_szh = [B9.34]; filtep(dec_rh1, dec_ah1, dec_rh2, dec_ah2); dec_sph = [B9.36]; dec_sh = dec_sph + dec_szh; dec_dh = ((int64_t)dec_deth * qq2_code2_table[ih]) >> 15L; logsch(ih, dec_nbh); dec_nbh = [B9.40]; scalel(dec_nbh, 10); dec_deth = [B9.42]; dec_ph = dec_dh + dec_szh; upzero(dec_dh, dec_del_dhx, dec_del_bph); uppol2(dec_ah1, dec_ah2, dec_ph, dec_ph1, dec_ph2); dec_ah2 = [B9.46]; uppol1(dec_ah1, dec_ah2, dec_ph, dec_ph1); dec_ah1 = [B9.48]; rh = dec_sh + dec_dh; dec_rh2 = dec_rh1; dec_rh1 = rh; dec_ph2 = dec_ph1; dec_ph1 = dec_ph; xd = rl - rh; xs = rl + rh; h_ptr = h; ac_ptr = accumc; ad_ptr = accumd; xa1 = (int64_t)xd * (*h_ptr++); xa2 = (int64_t)xs * (*h_ptr++); i = 0;"
-10;entry;;adpcm.c;;474;2;474;2;0;0;0;;9;""
+10;entry;;adpcm.c;decode;474;2;474;2;0;0;0;;9;""
 

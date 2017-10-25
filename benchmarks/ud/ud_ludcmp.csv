@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;ud.c;;160;1;160;1;0;0;0;;;""
+0;exit;;ud.c;ludcmp;160;1;160;1;0;0;0;;;""
 1;node;;ud.c;ludcmp;159;3;159;12;0;0;0;;0;" return (0);;"
 2;node;;ud.c;ludcmp;152;24;152;27;0;0;0;;8;" i--;"
 3;node;;ud.c;ludcmp;157;7;157;25;0;0;0;;2;" x[i] = w / a[i][i];"
@@ -37,5 +37,5 @@
 35;node;;ud.c;ludcmp;125;11;125;18;0;0;0;;34;" j = i + 1;"
 36;node;;ud.c;ludcmp;122;14;122;19;0;0;0;;35,17;" i < n;"
 37;node;;ud.c;ludcmp;118;3;122;12;0;0;0;;36;" int i;; int j;; int k;; long w;; long y[100];; i = 0;"
-38;entry;;ud.c;;117;2;117;2;0;0;0;;37;""
+38;entry;;ud.c;ludcmp;117;2;117;2;0;0;0;;37;""
 

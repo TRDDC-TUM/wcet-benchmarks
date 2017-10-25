@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;ndes.c;;110;1;110;1;0;0;0;;;""
+0;exit;;ndes.c;getbit;110;1;110;1;0;0;0;;;""
 1;node;;ndes.c;getbit;109;7;109;51;0;0;0;;0;" [B4.1] ? [B2.1] : [B3.1]; return [B1.1];;"
 2;node;;ndes.c;getbit;109;44;109;46;0;0;0;;1;" 1L;"
 3;node;;ndes.c;getbit;109;49;109;51;0;0;0;;1;" 0L;"
@@ -9,5 +9,5 @@
 7;node;;ndes.c;getbit;107;43;107;45;0;0;0;;5;" 0L;"
 8;node;;ndes.c;getbit;107;14;107;35;0;0;0;;6,7;" bit[bitno] & source.r;"
 9;node;;ndes.c;getbit;106;8;106;22;0;0;0;;8,4;" bitno <= nbits;"
-10;entry;;ndes.c;;105;61;105;61;0;0;0;;9;""
+10;entry;;ndes.c;getbit;105;61;105;61;0;0;0;;9;""
 

@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;ns.c;;521;1;521;1;0;0;0;;;""
+0;exit;;ns.c;foo;521;1;521;1;0;0;0;;;""
 1;node;;ns.c;foo;520;3;520;12;0;0;0;;0;" return -1;;"
 2;node;;ns.c;foo;504;17;504;20;0;0;0;;14;" i++;"
 3;node;;ns.c;foo;505;21;505;24;0;0;0;;12;" j++;"
@@ -15,5 +15,5 @@
 13;node;;ns.c;foo;505;9;505;12;0;0;0;;12;" j = 0;"
 14;node;;ns.c;foo;504;12;504;15;0;0;0;;13,1;" i < 5;"
 15;node;;ns.c;foo;502;3;504;10;0;0;0;;14;" int i;; int j;; int k;; int l;; i = 0;"
-16;entry;;ns.c;;498;2;498;2;0;0;0;;15;""
+16;entry;;ns.c;foo;498;2;498;2;0;0;0;;15;""
 

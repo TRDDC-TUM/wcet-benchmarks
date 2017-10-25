@@ -1,7 +1,7 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;prime.c;;45;1;45;1;0;0;0;;;""
+0;exit;;prime.c;main;45;1;45;1;0;0;0;;;""
 1;node;;prime.c;main;44;3;44;35;0;0;0;;0;" [B3.5] && [B2.2]; return (!([B1.1]));;"
 2;node;;prime.c;main;44;25;44;33;0;0;0;;1;" prime(y); [B2.1] (ImplicitCastExpr, IntegralCast, int);"
 3;node;;prime.c;main;41;3;44;21;0;0;1;swap;2,1;" uint x = 21649;; uint y = 513239;; swap(&x, &y); prime(x); [B3.4] (ImplicitCastExpr, IntegralCast, int);"
-4;entry;;prime.c;;40;14;40;14;0;0;0;;3;""
+4;entry;;prime.c;main;40;14;40;14;0;0;0;;3;""
 

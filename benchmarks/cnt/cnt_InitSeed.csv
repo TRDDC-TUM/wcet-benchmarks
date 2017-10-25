@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;cnt.c;;78;1;78;1;0;0;0;;;""
+0;exit;;cnt.c;InitSeed;78;1;78;1;0;0;0;;;""
 1;node;;cnt.c;InitSeed;76;4;77;12;0;0;0;;0;" Seed = 0; return 0;;"
-2;entry;;cnt.c;;75;2;75;2;0;0;0;;1;""
+2;entry;;cnt.c;InitSeed;75;2;75;2;0;0;0;;1;""
 

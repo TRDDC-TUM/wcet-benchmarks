@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;adpcm.c;;642;1;642;1;0;0;0;;;""
+0;exit;;adpcm.c;reset;642;1;642;1;0;0;0;;;""
 1;node;;adpcm.c;reset;641;5;641;11;0;0;0;;0;" return;;"
 2;node;;adpcm.c;reset;637;26;637;29;0;0;0;;4;" i++;"
 3;node;;adpcm.c;reset;638;9;639;22;0;0;0;;2;" accumc[i] = 0; accumd[i] = 0;"
@@ -17,5 +17,5 @@
 15;node;;adpcm.c;reset;622;9;625;27;0;0;0;;14;" delay_dltx[i] = 0; delay_dhx[i] = 0; dec_del_dltx[i] = 0; dec_del_dhx[i] = 0;"
 16;node;;adpcm.c;reset;621;17;621;22;0;0;0;;15,13;" i < 6;"
 17;node;;adpcm.c;reset;612;5;621;14;0;0;0;;16;" int32_t i;; detl = dec_detl = 32; deth = dec_deth = 8; nbl = al1 = al2 = plt1 = plt2 = rlt1 = rlt2 = 0; nbh = ah1 = ah2 = ph1 = ph2 = rh1 = rh2 = 0; dec_nbl = dec_al1 = dec_al2 = dec_plt1 = dec_plt2 = dec_rlt1 = dec_rlt2 = 0; dec_nbh = dec_ah1 = dec_ah2 = dec_ph1 = dec_ph2 = dec_rh1 = dec_rh2 = 0; i = 0;"
-18;entry;;adpcm.c;;611;2;611;2;0;0;0;;17;""
+18;entry;;adpcm.c;reset;611;2;611;2;0;0;0;;17;""
 

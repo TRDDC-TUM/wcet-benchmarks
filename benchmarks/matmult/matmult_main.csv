@@ -1,5 +1,5 @@
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;matmult.c;;62;1;62;1;0;0;0;;;""
+0;exit;;matmult.c;main;62;1;62;1;0;0;0;;;""
 1;node;;matmult.c;main;54;4;61;37;0;0;1;InitSeed,Test;0;" InitSeed(); Test(ArrayA, ArrayB, ResultArray);"
-2;entry;;matmult.c;;53;2;53;2;0;0;0;;1;""
+2;entry;;matmult.c;main;53;2;53;2;0;0;0;;1;""
 
