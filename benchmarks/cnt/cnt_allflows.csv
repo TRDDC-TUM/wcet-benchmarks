@@ -1,0 +1,46 @@
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
+0;exit;;cnt.c;InitSeed;78;1;78;1;0;0;0;;;""
+1;node;;cnt.c;InitSeed;76;4;77;12;0;0;0;;0;" Seed = 0; return 0;;"
+2;entry;;cnt.c;InitSeed;75;2;75;2;0;0;0;;1;""
+
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
+0;exit;;cnt.c;Initialize;70;1;70;1;0;0;0;;;""
+1;node;;cnt.c;Initialize;69;4;69;12;0;0;0;;0;" return 0;;"
+2;node;;cnt.c;Initialize;65;47;65;59;0;0;0;;7;" OuterIndex++;"
+3;node;;cnt.c;Initialize;66;50;66;62;0;0;0;;5;" InnerIndex++;"
+4;node;;cnt.c;Initialize;67;10;67;57;0;0;1;RandomInteger;3;" RandomInteger(); Array[OuterIndex][InnerIndex] = [B4.1];"
+5;node;;cnt.c;Initialize;66;28;66;48;0;0;0;;4,2;" InnerIndex < 10;"
+6;node;;cnt.c;Initialize;66;12;66;26;0;0;0;;5;" InnerIndex = 0;"
+7;node;;cnt.c;Initialize;65;25;65;45;0;0;0;;6,1;" OuterIndex < 10;"
+8;node;;cnt.c;Initialize;63;4;65;23;0;0;0;;7;" register int OuterIndex;; register int InnerIndex;; OuterIndex = 0;"
+9;entry;;cnt.c;Initialize;62;2;62;2;0;0;0;;8;""
+
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
+0;exit;;cnt.c;RandomInteger;128;1;128;1;0;0;0;;;""
+1;node;;cnt.c;RandomInteger;126;4;127;15;0;0;0;;0;" Seed = ((Seed * 133) + 81) % 8095; return Seed;;"
+2;entry;;cnt.c;RandomInteger;125;2;125;2;0;0;0;;1;""
+
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
+0;exit;;cnt.c;Sum;108;1;108;1;0;0;0;;;""
+1;node;;cnt.c;Sum;104;3;107;16;0;0;0;;0;" Postotal = Ptotal; Poscnt = Pcnt; Negtotal = Ntotal; Negcnt = Ncnt;"
+2;node;;cnt.c;Sum;89;36;89;43;0;0;0;;9;" Outer++;"
+3;node;;cnt.c;Sum;90;38;90;45;0;0;0;;7;" Inner++;"
+4;node;;cnt.c;Sum;100;4;101;10;0;0;0;;3;" Ntotal += Array[Outer][Inner]; Ncnt++;"
+5;node;;cnt.c;Sum;96;4;97;10;0;0;0;;3;" Ptotal += Array[Outer][Inner]; Pcnt++;"
+6;node;;cnt.c;Sum;94;6;94;29;0;0;0;;5,4;" Array[Outer][Inner] < 0;"
+7;node;;cnt.c;Sum;90;21;90;36;0;0;0;;6,2;" Inner < 10;"
+8;node;;cnt.c;Sum;90;10;90;19;0;0;0;;7;" Inner = 0;"
+9;node;;cnt.c;Sum;89;19;89;34;0;0;0;;8,1;" Outer < 10;"
+10;node;;cnt.c;Sum;82;3;89;17;0;0;0;;9;" register int Outer;; register int Inner;; int Ptotal = 0;; int Ntotal = 0;; int Pcnt = 0;; int Ncnt = 0;; Outer = 0;"
+11;entry;;cnt.c;Sum;81;2;81;2;0;0;0;;10;""
+
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
+0;exit;;cnt.c;Test;57;1;57;1;0;0;0;;;""
+1;node;;cnt.c;Test;41;4;56;12;0;0;1;Initialize,Sum;0;" long StartTime;; long StopTime;; float TotalTime;; Initialize(Array); StartTime = 1000.; Sum(Array); StopTime = 1500.; TotalTime = (StopTime - StartTime) / 1000.; return 0;;"
+2;entry;;cnt.c;Test;40;2;40;2;0;0;0;;1;""
+
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
+0;exit;;cnt.c;main;36;1;36;1;0;0;0;;;""
+1;node;;cnt.c;main;31;4;35;12;0;0;1;InitSeed,Test;0;" InitSeed(); Test(Array); return 1;;"
+2;entry;;cnt.c;main;30;2;30;2;0;0;0;;1;""
+
