@@ -6,7 +6,12 @@ unsigned char lin [ 256 ]
 = "asdffeagewaHAFEFaeDsFEawFdsFaefaeerdjgp"
 #endif
 ;
-
+#ifdef CBMC
+#define EXTRA_INSTRUCTION /* nada */
+#else
+#define EXTRA_INSTRUCTION __asm__("nop")
+#endif
+#define TINC(X) ({timeElapsed = timeElapsed + (X); EXTRA_INSTRUCTION;})
 unsigned short icrc1 ( unsigned short crc , unsigned char onech )
 {
 	int i ;
@@ -15,24 +20,24 @@ unsigned short icrc1 ( unsigned short crc , unsigned char onech )
 		=  ( crc ^ onech << 8 )
 #endif
 		;
-	timeElapsed = timeElapsed + 42; /* Block num 1*/
-	for ( i = 0 ; (timeElapsed = timeElapsed + (8)), /* Block num 2*/ i < 8 ; (timeElapsed = timeElapsed + 10), /* Block num 7*/ i ++ ) {
+	TINC( 42); /* Block num 1*/
+	for ( i = 0 ; (TINC( (8)), /* Block num 2*/ i < 8 ); TINC(10), /* Block num 7*/ i ++ ) {
 		{
-			if ( (timeElapsed = timeElapsed + (6)), /* Block num 3*/ (ans & 0x8000) )
+                    if ( TINC(6), /* Block num 3*/ (ans & 0x8000) )
 			{
-				timeElapsed = timeElapsed + 24; /* Block num 5*/
+				TINC( 24); /* Block num 5*/
 				ans = ( ans <<= 1 ) ^ 4129 ;
 			}
 			else
 			{
-				timeElapsed = timeElapsed + 1; /* Extra - Direct print */
-				timeElapsed = timeElapsed + 10; /* Block num 6*/
+				TINC( 1); /* Extra - Direct print */
+				TINC( 10); /* Block num 6*/
 				ans <<= 1 ;
 			}
 		}
 	}
-	timeElapsed = timeElapsed - 1; /* Extra - Direct print */
-	timeElapsed = timeElapsed + 19; /* Block num 4*/
+	TINC(- 1); /* Extra - Direct print */
+	TINC( 19); /* Block num 4*/
 	return ans ;
 }
 
@@ -58,84 +63,84 @@ unsigned short icrc ( unsigned short crc , unsigned long len , short jinit , int
 		}
 #endif
 	;
-	timeElapsed = timeElapsed + 52; /* Block num 1*/
+	TINC( 52); /* Block num 1*/
 	if ( /* Multiple basic blocks for this line */
 			! init )
 	{
-		(timeElapsed = timeElapsed + (1)); /* Extra - Direct print */
-		timeElapsed = timeElapsed + 12; /* Block num 3*/
+		(TINC( (1))); /* Extra - Direct print */
+		TINC( 12); /* Block num 3*/
 		init = 1 ;
 
-		for ( j = 0 ; (timeElapsed = timeElapsed + 7+2), (j <= 255) ; /*(timeElapsed = timeElapsed + 1),  Block num 8*/ j ++ ) {
+		for ( j = 0 ; (TINC( 7+2), (j <= 255) ); /*(timeElapsed = timeElapsed + 1),  Block num 8*/ j ++ ) {
 			{
-				timeElapsed = timeElapsed + 0; /* Block num 12*/
-				timeElapsed = timeElapsed + 70; /* Block num 14*/
+				TINC( 0); /* Block num 12*/
+				TINC( 70); /* Block num 14*/
 				/* Multiple basic blocks for this line */
 				icrctb [ j ] = icrc1 ( j << 8 , ( uchar ) 0 ) ;
 				rchr [ j ] = ( uchar )  ( it [ j & 0xF ] << 4 | it [ j >> 4 ] ) ;
-				(timeElapsed = timeElapsed + (13)); /* Block num 9*/
+				(TINC( (13))); /* Block num 9*/
 			}
 		}
-		//		timeElapsed = timeElapsed + 1; /* Extra - Direct print */
+		//		TINC( 1); /* Extra - Direct print */
 		//		icrc_glbVarsForExtra[2]++;		- Not needed
 	}
 	else{
-		(timeElapsed = timeElapsed + (2)); /* Block num 2*/
+		(TINC( (2))); /* Block num 2*/
 	}
-	if ( (timeElapsed = timeElapsed + (6)), /* Block num 4*/ /* Multiple basic blocks for this line */
+	if ( TINC(6), /* Block num 4*/ /* Multiple basic blocks for this line */
 			jinit >= 0 )
 	{
-		(timeElapsed = timeElapsed + (18)); /* Block num 6*/
+		(TINC( (18))); /* Block num 6*/
 		/* Multiple basic blocks for this line */
 		cword = (  ( uchar ) jinit ) | (  (  ( uchar ) jinit ) << 8 ) ;
 	}
 	else
 	{
-		timeElapsed = timeElapsed + 1; /* Extra - Direct print */
-		if ( (timeElapsed = timeElapsed + (6)), /* Block num 7 plus one for block num 8*/ jrev < 0 )
+		TINC( 1); /* Extra - Direct print */
+		if ( TINC(6), /* Block num 7 plus one for block num 8*/ jrev < 0 )
 		{
-			timeElapsed = timeElapsed + 34; /* Block num 11*/
+			TINC( 34); /* Block num 11*/
 			cword = rchr [ (  ( uchar )  (  ( cword ) >> 8 )  ) ] | rchr [ (  ( uchar )  (  ( cword ) & 0xFF )  ) ] << 8 ;
 		}
 		else
 		{
-			timeElapsed = timeElapsed + 1; /* Extra - Direct print */
+			TINC( 1); /* Extra - Direct print */
 		}
 	}
-	timeElapsed = timeElapsed + 8; /* Block num 10*/
-	for ( j = 1 ; (timeElapsed = timeElapsed + (20)), /* Block num 13*/ j <= len ; (timeElapsed = timeElapsed + 8), /* Block num 15*/ j ++ ) {
+	TINC( 8); /* Block num 10*/
+	for ( j = 1 ; (TINC( (20)), /* Block num 13*/ j <= len ); TINC(8), /* Block num 15*/ j ++ ) {
 		{
-			timeElapsed = timeElapsed + 35; /* Block num 21*/
+			TINC( 35); /* Block num 21*/
 			if ( jrev < 0 )
 			{
-				timeElapsed = timeElapsed + 31; /* Block num 17*/
+				TINC( 31); /* Block num 17*/
 				tmp1 = rchr [ lin [ j ] ] ^ (  ( uchar )  (  ( cword ) >> 8 )  ) ;
 			}
 			else
 			{
-				timeElapsed = timeElapsed + 1; /* Extra - Direct print */
+				TINC( 1); /* Extra - Direct print */
 				{
-					timeElapsed = timeElapsed + 22; /* Block num 18*/
+					TINC( 22); /* Block num 18*/
 					tmp1 = lin [ j ] ^ (  ( uchar )  (  ( cword ) >> 8 )  ) ;
 				}
 			} cword = icrctb [ tmp1 ] ^ (  ( uchar )  (  ( cword ) & 0xFF )  ) << 8 ;
 		}
 	}
-	timeElapsed = timeElapsed + 1; /* Extra - Direct print */
-	if ( (timeElapsed = timeElapsed + (6)), /* Block num 16*/ jrev >= 0 )
+	TINC( 1); /* Extra - Direct print */
+	if ( TINC(6), /* Block num 16*/ jrev >= 0 )
 	{
-		timeElapsed = timeElapsed + 10; /* Block num 19*/
+		TINC( 10); /* Block num 19*/
 		tmp2 = cword ;
 	}
 	else
 	{
-		timeElapsed = timeElapsed + 1; /* Extra - Direct print */
+		TINC( 1); /* Extra - Direct print */
 		{
-			timeElapsed = timeElapsed + 34; /* Block num 20*/
+			TINC( 34); /* Block num 20*/
 			tmp2 = rchr [ (  ( uchar )  (  ( cword ) >> 8 )  ) ] | rchr [ (  ( uchar )  (  ( cword ) & 0xFF )  ) ] << 8 ;
 		}
 	}
-	timeElapsed = timeElapsed + 23; /* Block num 22*/
+	TINC( 23); /* Block num 22*/
 	return  ( tmp2 ) ;
 }
 
