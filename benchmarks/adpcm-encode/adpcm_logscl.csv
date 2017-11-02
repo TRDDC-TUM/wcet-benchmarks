@@ -1,9 +1,0 @@
-#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;adpcm.c;logscl;713;1;713;1;0;0;0;;;""
-1;node;;adpcm.c;logscl;712;5;712;16;0;0;0;;0;" return (nbl);;"
-2;node;;adpcm.c;logscl;711;21;711;32;0;0;0;;1;" nbl = 18432;"
-3;node;;adpcm.c;logscl;711;8;711;19;0;0;0;;2,1;" nbl > 18432;"
-4;node;;adpcm.c;logscl;710;17;710;24;0;0;0;;3;" nbl = 0;"
-5;node;;adpcm.c;logscl;707;5;710;15;0;0;0;;4,3;" int64_t wd;; wd = ((int64_t)nbl * 127L) >> 7L; nbl = (int32_t)wd + wl_code_table[il >> 2]; nbl < 0;"
-6;entry;;adpcm.c;logscl;706;2;706;2;0;0;0;;5;""
-

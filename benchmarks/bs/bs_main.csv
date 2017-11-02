@@ -1,5 +1,0 @@
-#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;bs.c;main;74;1;74;1;0;0;0;;;""
-1;node;;bs.c;main;73;2;73;18;0;0;1;binary_search;0;" binary_search(8);"
-2;entry;;bs.c;main;72;2;72;2;0;0;0;;1;""
-

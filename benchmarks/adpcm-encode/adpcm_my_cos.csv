@@ -1,5 +1,0 @@
-#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;adpcm.c;my_cos;320;1;320;1;0;0;0;;;""
-1;node;;adpcm.c;my_cos;319;3;319;33;0;0;1;my_sin;0;" my_sin(3141 / 2 - rad); return ([B1.1]);;"
-2;entry;;adpcm.c;my_cos;318;2;318;2;0;0;0;;1;""
-

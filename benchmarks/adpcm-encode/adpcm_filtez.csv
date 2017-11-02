@@ -1,9 +1,0 @@
-#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;adpcm.c;filtez;657;1;657;1;0;0;0;;;""
-1;node;;adpcm.c;filtez;656;5;656;32;0;0;0;;0;" return ((int32_t)(zl >> 14));;"
-2;node;;adpcm.c;filtez;653;25;653;28;0;0;0;;4;" i++;"
-3;node;;adpcm.c;filtez;654;9;654;43;0;0;0;;2;" zl += (int64_t)(*bpl++) * (*dlt++);"
-4;node;;adpcm.c;filtez;653;17;653;22;0;0;0;;3,1;" i < 6;"
-5;node;;adpcm.c;filtez;649;5;653;14;0;0;0;;4;" int32_t i;; int64_t zl;; zl = (int64_t)(*bpl++) * (*dlt++); i = 1;"
-6;entry;;adpcm.c;filtez;648;2;648;2;0;0;0;;5;""
-

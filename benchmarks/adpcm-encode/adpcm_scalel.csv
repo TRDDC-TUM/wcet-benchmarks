@@ -1,5 +1,0 @@
-#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;adpcm.c;scalel;724;1;724;1;0;0;0;;;""
-1;node;;adpcm.c;scalel;719;5;723;21;0;0;0;;0;" int32_t wd1;; int32_t wd2;; int32_t wd3;; wd1 = (nbl >> 6) & 31; wd2 = nbl >> 11; wd3 = ilb_table[wd1] >> (shift_constant + 1 - wd2); return (wd3 << 3);;"
-2;entry;;adpcm.c;scalel;718;2;718;2;0;0;0;;1;""
-

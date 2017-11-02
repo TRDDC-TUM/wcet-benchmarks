@@ -1,5 +1,0 @@
-#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;adpcm.c;filtep;670;1;670;1;0;0;0;;;""
-1;node;;adpcm.c;filtep;664;5;669;32;0;0;0;;0;" int64_t pl;; int64_t pl2;; pl = 2 * rlt1; pl = (int64_t)al1 * pl; pl2 = 2 * rlt2; pl += (int64_t)al2 * pl2; return ((int32_t)(pl >> 15));;"
-2;entry;;adpcm.c;filtep;663;2;663;2;0;0;0;;1;""
-

@@ -48,7 +48,7 @@ void Test(matrix A, matrix B, matrix Res);
 void Initialize(matrix Array);
 int RandomInteger(void);
 #endif
-
+void main();
 void main()
 {
    InitSeed();

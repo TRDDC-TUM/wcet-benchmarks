@@ -1,5 +1,0 @@
-#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;fdct.c;main;244;1;244;1;0;0;0;;;""
-1;node;;fdct.c;main;237;3;243;18;0;0;1;fdct;0;" fdct(block, 8); return block[0];;"
-2;entry;;fdct.c;main;234;2;234;2;0;0;0;;1;""
-

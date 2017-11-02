@@ -1,5 +1,0 @@
-#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;fibcall.c;main;71;1;71;1;0;0;0;;;""
-1;node;;fibcall.c;main;66;3;70;11;0;0;1;fib;0;" int a;; a = 30; fib(a); return a;;"
-2;entry;;fibcall.c;main;65;2;65;2;0;0;0;;1;""
-

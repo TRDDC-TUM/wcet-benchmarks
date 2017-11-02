@@ -1,5 +1,0 @@
-#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;ns.c;main;531;1;531;1;0;0;0;;;""
-1;node;;ns.c;main;529;3;529;11;0;0;1;foo;0;" foo(400);"
-2;entry;;ns.c;main;525;2;525;2;0;0;0;;1;""
-
