@@ -19,13 +19,8 @@
 17;node;;crc.c;icrc;83;7;84;53;0;0;1;icrc1;16;" icrc1(j << 8, (uchar)0); icrctb[j] = [B17.1]; rchr[j] = (uchar)(it[j & 15] << 4 | it[j >> 4]);"
 18;node;;crc.c;icrc;82;14;82;20;0;0;0;;17,15;" j <= 255;"
 19;node;;crc.c;icrc;81;5;82;13;0;0;0;;18;" init = 1; j = 0;"
-20;node;;crc.c;icrc;80;7;80;12;0;0;0;;19,15;" !init;"
-21;node;;crc.c;icrc;78;3;78;63;0;0;0;;20;" static uchar it[16] = {0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15};;"
-22;node;;crc.c;icrc;77;3;77;41;0;0;0;;20,21;" unsigned short tmp1;; unsigned short tmp2;; unsigned short j;; unsigned short cword = crc;;"
-23;node;;crc.c;icrc;76;3;76;26;0;0;0;;22;" static uchar rchr[256];;"
-25;node;;crc.c;icrc;75;3;75;43;0;0;0;;22,23;" static unsigned short init = 0;;"
-27;node;;crc.c;icrc;75;3;75;36;0;0;0;;25;" static unsigned short icrctb[256];;"
-29;entry;;crc.c;icrc;73;2;73;2;0;0;0;;27;""
+20;node;;crc.c;icrc;75;3;80;12;0;0;0;;19,15;" static unsigned short icrctb[256];; static unsigned short init = 0;; static uchar rchr[256];; unsigned short tmp1;; unsigned short tmp2;; unsigned short j;; unsigned short cword = crc;; static uchar it[16] = {0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15};; !init;"
+21;entry;;crc.c;icrc;73;2;73;2;0;0;0;;20;""
 
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
 0;exit;;crc.c;icrc1;69;1;69;1;0;0;0;;;""
