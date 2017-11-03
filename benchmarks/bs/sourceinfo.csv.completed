@@ -29,7 +29,7 @@ bs.c;  binary_search; 83;  ;   6;  11- 12;  0;  2;  412;  414;  2;  0; ;
 bs.c;  binary_search; 83;  ;   6;  11- 12;  0;  2;  414;  416;  1;  0; ; 
 bs.c;  binary_search; 83;  ;   6;  11- 12;  0;  2;  416;  418;  1;  0; ; 
 bs.c;  binary_search; 83;  ;   6;  11- 12;  0;  2;  418;  420, 422;  1;  0- 1; ; 
-/home/becker/async/autosafe/trunk/tum/wcet-cbmc/benchmarks/bs/bs.c;  binary_search; 83;  ;   5;  40- 41;  0;  3;  420;  262;  1;  1; ; 
+bs.c;  binary_search; 83;  ;   5;  40- 41;  0;  3;  420;  262;  1;  1; ; 
 bs.c;  binary_search;   84;  ;   5;  40- 41;  0;  3;  262;  264;  2;  0; ; 
 bs.c;  binary_search; 84;  ;   5;  40- 41;  0;  3;  264;  266;  2;  0; ; 
 bs.c;  binary_search; 84;  ;   5;  40- 41;  0;  3;  266;  268;  2;  0; ; 

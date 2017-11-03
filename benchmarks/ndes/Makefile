@@ -21,7 +21,7 @@ WCET_TOOL=boundt_avr
 WCET_TOOL_OPTS=-device=ATmega128 -form=elf -draw deeply -elf_sym -v -sourceinfo $(SOURCEINFOFILE) -no_stack  -assert loopinfo-indent.txt
 SOURCEINFOFILE=sourceinfo.csv
 
-SRC_ALL=ndes-indent.c
+SRC_ALL=ndes.c
 
 ############# PLEASE DO NOT CHANGE ANYTHING BELOW THIS LINE ##############
 
