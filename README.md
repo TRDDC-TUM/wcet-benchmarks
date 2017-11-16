@@ -1,6 +1,6 @@
 # WCET Benchmarks for Atmel AVR 
 
-These are some of the Mälardalen WCET benchmarks, where instruction
+These are some of the Mälardalen WCET benchmarks and PapaBench, where instruction
 timing was annotated in the source code. As a consequence, the WCET 
 can now be analyzed at source level.
 
