@@ -82,6 +82,7 @@ wcet.log: $(TARGET).elf
 sourceinfo.csv: $(TARGET).elf
 	boundt_avr -device=ATmega163 -form=elf -no_stack -elf_sym -v -no_arithmetic -sourceinfo sourceinfo.csv $< main
 
-clean : avr_clean wcet.log sourceinfo.csv
+clean : avr_clean 
+	rm -rf wcet.log sourceinfo.csv
 
 ppm.s : $(VARINCLUDE)/radio.h
