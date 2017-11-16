@@ -1,0 +1,67 @@
+# Paparazzi $Id: README,v 1.2 2006/06/30 09:42:58 nemer Exp $
+# Copyright (C) 2003 Pascal Brisset Antoine Drouin
+#
+# This file is part of PapaBench.
+#
+# PapaBench is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+#
+# You should have received a copy of the GNU General Public License
+# along with paparazzi; see the file COPYING.  If not, write to
+# the Free Software Foundation, 59 Temple Place - Suite 330,
+# Boston, MA 02111-1307, USA.  
+# 
+
+Introduction
+------------
+
+Paparazzi is an attempt to develop a cheap fixed wing UAV (Unmanned Air Vehicle). It develops a complete system hardware and software that may be installed on a variety of aircrafts. It comprises an embedded system and a ground station.
+The Paparazzi distribution is only available for a Linux environment but may be configured for several aircraft configurations. 
+PapaBench is bound only to the embedded part of Paparazzi and to the default aircraft configuration. This configuration includes a Twinstar3 model-making aircraft, the flight plan used during the first European MAV Flight Competition held in Braunschweig Germany and a classic ground station consisting of the MC3030 radio-command, a radio receiver and a laptop.
+The first generation of the embedded system enables us to save the C header files found in sw/var/include directory. These headers are generated from XML files containing the configuration of the airframes, the radio commands and the flight plan.
+Then we analyzed the static sources and the generated headers in order to create PapaBench. We have excluded the sources of the ground station in charge of  monitoring the flight, display statistics, programming the mission and generating the embedded system sources.
+
+Directories description:
+-----------------------
+aadl_sources  :contains the aadl description of PapaBench. Their is four descriptions of the benchmark 
+	       since we analyzed four cases for the periodicity of tasks and interruptions.
+		- Version 1: Tasks and Interruptions are periodic non preemptive (PnP)
+		- Version 2: Tasks are periodic, Interruptions are aperiodic but both non preemptive (PnP, AnP)
+		- Version 3: Tasks and interruptions are periodic preemptive (PP)
+		- Version 4: Tasks are periodic , interruptions are aperiodic but both preemptive (PP, AP)
+
+avr  : holds the header files of the AVR C libc project
+
+conf : is the configuration directory
+
+sw   : has to sub-directories one for Fly_by_wire source code and the other for autopilot source code
+
+Loops_Bounds.txt  : gives for each loop encountered in the sources its maximum iteration number.
+
+pcg_autopilot.txt and pcg_fbw.txt  :provide the Program Call Graph for the autopilot and the fly_by_wire code respectively
+
+
+Compilation details
+-------------------
+Our objective was to enable a user to compile the benchmark without the requirement of the whole Paparazzi building environment and for different architectures. Until now, we have experimented the compilation for PowerPC and x86 architectures using the gcc compiler suite but it should be easy to adapt PapaBench to other configurations.
+
+***********************************************
+*                IMPORTANT                    *
+***********************************************
+It is important to mention that PapaBench includes header files from the AVR C libc library project containing macros providing access to the AVR hardware registers like IO ports, timers, and so on. As the benchmark does not target hardware simulation, either the hardware registers only matter by their temporal properties, or they may be simply considered as simple memory accesses.
+As they are mapped to low addresses (between 0x20 and 0x100), they might be impeding for some platforms where the addresses of interruptions vectors appear at this location. Fortunately, we can get rid of this problem by assigning in the compilation flags a compatible value to the SFR_OFFSET definition, which is the base of the hardware register addresses.
+
+
+To Compile PapaBench
+--------------------
+
+  1) Extract the archive
+
+  2) HAVE A LOOK at conf/Makefile.local 
+	- set the PAPARAZZI_HOME environment variable to the top directory.
+	- set the AMTEL_INCLUDES variable to: -I (path of the top directory)/avr/include 
+  3) Edit the conf/Makefile.avr to set the CC variable to the compilation command (ex: gcc, powerpc-linux-gnu-gcc,...)
+
+  4) "make" in top directory should compile everything

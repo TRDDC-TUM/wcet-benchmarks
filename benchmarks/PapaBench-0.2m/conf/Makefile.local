@@ -1,0 +1,9 @@
+PAPARAZZI_DIR = \"$(BASE)/\"
+ATMELBIN = /usr/bin
+#ATMEL_INCLUDES = -I $(BASE)/avr/include/
+ATMEL_INCLUDES = -I /usr/lib/avr/include/ # use system's Atmega headers, deb-4.8.1/Atmel3.4.4
+UISPBIN=/usr/bin
+PROG_PORT = /dev/parport0
+USB_PROG_PORT = /dev/ttyUSB1
+# definitions of LOCAL_CFLAGS and LOCAL_LDFLAGS are in the subdirectories, since the MMCU differs
+# WITH_RTTY=1 # If you want to support the telemetry through the audio input

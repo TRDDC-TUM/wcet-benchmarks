@@ -1,0 +1,175 @@
+package Data_Types
+public
+	data Integer 
+	properties
+		Source_Data_Size => 8 bits;
+	end Integer;
+	
+	data Boolean
+	properties
+		Source_Data_Size => 8 bits;
+	end Boolean;
+	
+	data Integer_16
+	properties
+		Source_Data_Size =>16 bits;
+	end Integer_16;
+	
+	data Float
+	properties
+		Source_Data_Size => 32 bits;
+	end Float;
+	
+	subprogram Get_Integer
+	features
+		Result : out parameter Integer;
+	end Get_Integer;
+	
+	subprogram Set_Integer
+	features
+		Int : in parameter Integer;
+	end Set_Integer;
+	
+	subprogram Get_Integer16
+	features
+		Result : out parameter Integer_16;
+	end Get_Integer16;
+	
+	subprogram Set_Integer16
+	features
+		Int : in parameter Integer_16;
+	end Set_Integer16;
+	
+	-- le type Lat_long est une structure de donnees pour stocker les 
+	-- longitudes et latitudes
+	data Lat_Long
+	features
+		Get_Degs : subprogram Get_Integer;
+		Set_Degs : subprogram Set_Integer;
+		Get_Mins : subprogram Get_Integer;
+		Set_Mins : subprogram Set_Integer;
+		Get_Secs : subprogram Get_Integer;
+		Set_Secs : subprogram Set_Integer;
+	end Lat_Long;
+		
+	data implementation Lat_Long.Generic
+	subcomponents
+		Degs : data Integer;
+		Mins : data Integer;
+		Secs : data Integer;
+	end Lat_Long.Generic;
+	
+	-- The Position type specifies a position
+	data Position
+	end Position;
+	
+	-- This data type represents the position
+	data implementation Position.simple
+	subcomponents 
+		Latitude : data Lat_long.generic;
+		Longitude : data Lat_long.generic;
+	end Position.simple;
+	
+	-- The data type that represents GPS sensor data
+		
+	data implementation Position.GPS extends Position.simple
+	subcomponents
+		Altitude : data Integer;
+		Cap		 : data Integer;
+	end Position.GPS;
+	
+	data Stream_Element
+	end Stream_Element;
+
+	data implementation Stream_Element.Generic
+	properties
+		Source_Data_Size => 8bits;
+	end Stream_Element.Generic;
+	
+	data Tab
+	end Tab;
+	data Tableau extends Tab
+	features
+		Get_Data0 : subprogram Get_Integer16;
+		Set_Data0 : subprogram Set_Integer16;
+		Get_Data1 : subprogram Get_Integer16;
+		Set_Data1 : subprogram Set_Integer16;
+		Get_Data2 : subprogram Get_Integer16;
+		Set_Data2 : subprogram Set_Integer16;
+		Get_Data3 : subprogram Get_Integer16;
+		Set_Data3 : subprogram Set_Integer16;
+		Get_Data4 : subprogram Get_Integer16;
+		Set_Data4 : subprogram Set_Integer16;
+		Get_Data5 : subprogram Get_Integer16;
+		Set_Data5 : subprogram Set_Integer16;
+		Get_Data6 : subprogram Get_Integer16;
+		Set_Data6 : subprogram Set_Integer16;
+		Get_Data7 : subprogram Get_Integer16;
+		Set_Data7 : subprogram Set_Integer16;
+		Get_Data8 : subprogram Get_Integer16;
+		Set_Data8 : subprogram Set_Integer16;
+	end Tableau;
+	
+	data implementation Tableau.Generic
+	subcomponents
+		data_0 : data Integer_16;
+		data_1 : data Integer_16;
+		data_2 : data Integer_16;
+		data_3 : data Integer_16;
+		data_4 : data Integer_16;
+		data_5 : data Integer_16;
+		data_6 : data Integer_16;
+		data_7 : data Integer_16;
+		data_8 : data Integer_16;
+		--etc selon le parametre RADIO_CTL_NB = 9 du fichier link_autopilot.h
+		--Valeur de RADIO_CTL_NB se trouve dans radio.h
+		--qui est egale a PPM_NB_OF_PULSE de ppm.h
+	end Tableau.Generic;
+	
+	data TabServos extends Tab
+	features
+		Get_MotorL : subprogram Get_Integer16;
+		Set_MotorL : subprogram Set_Integer16;
+		Get_MotorR : subprogram Get_Integer16;
+		Set_MotorR : subprogram Set_Integer16;
+		Get_AileronL : subprogram Get_Integer16;
+		Set_AileronL : subprogram Set_Integer16;
+		Get_AileronR : subprogram Get_Integer16;
+		Set_AileronR : subprogram Set_Integer16;
+		Get_Rudder : subprogram Get_Integer16;
+		Set_Rudder : subprogram Set_Integer16;
+		Get_Elevator : subprogram Get_Integer16;
+		Set_Elevator : subprogram Set_Integer16;
+	end TabServos;
+	
+	data Implementation TabServos.Impl
+	subcomponents
+		MotorL: data Integer_16;
+		MotorR: data Integer_16;
+		AileronL: data Integer_16;
+		AileronR: data Integer_16;
+		Rudder: data Integer_16;
+		Elevator: data Integer_16;
+	end TabServos.Impl;
+	
+	data inter_mcu_msg
+	features
+		Set_Ppm : subprogram Set_Integer;
+		Get_Ppm : subprogram Get_Integer;
+		Set_Status : subprogram Set_Integer;
+		Get_Status : subprogram Get_Integer;
+		Set_NbErr : subprogram Set_Integer;
+		Get_NbErr : subprogram Get_Integer;
+		Set_Vsupply : subprogram Set_Integer;
+		Get_Vsupply : subprogram Get_Integer;
+	end inter_mcu_msg;
+	
+	data implementation Inter_mcu_msg.Generic
+	subcomponents
+		channels : data Tableau.Generic;
+		ppm_cpt	: data Integer;
+		satus : data Integer;
+		nb_err : data Integer;
+		vsupply : data Integer;
+	end Inter_mcu_msg.generic;
+end Data_Types;

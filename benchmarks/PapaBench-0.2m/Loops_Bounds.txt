@@ -1,0 +1,43 @@
+Fly_By_wire
+----------------------------------------------------
+adc_fbw.c
+---------
+function adc_init 
+	Loop for : 8 iterations
+
+
+servo.c
+-------
+function servo_init
+	Loop for : 10 iterations
+function servo_transmit
+	Loop for : 10 iterations
+
+
+uart.c
+------
+function uart_print_string
+	Loop while used once in the main function, its iterations number is estimated to 100.
+
+main.c
+------
+function to_autopilot_from_last_radio
+	Loop for : 9 iterations
+
+-----------------------------------------------------------------
+Autopilot
+-----------------------------------------------------------------
+adc.c
+-----
+function adc_init
+	Loop for : 8 iterations
+
+mainloop.c
+----------
+function main
+	the fist while Loop has at most 31 iterations
+nav.c
+-----
+Macro NORMCOURSE
+	Loop while : 1 iteration
+	Loop while : 0 iterations

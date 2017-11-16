@@ -1,0 +1,9 @@
+The following modifications were made to make papabench v0.2 compile with recent
+avr-gcc deb4.8.1/Atmega3.4.4 utils:
+
+ 1. added -mmcu flags for both fbw and autopilot (fixes linker errors)
+ 2. updated code with new ISR names (was poisoned signals before). Followed substitutions given here: 
+    http://www.nongnu.org/avr-libc/user-manual/group__avr__interrupts.html
+    
+Martin Becker <becker@rcs.ei.tum.de>
+16.11.2017
