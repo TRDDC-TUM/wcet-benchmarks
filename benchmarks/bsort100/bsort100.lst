@@ -7,13 +7,14 @@
    7               	__zero_reg__ = 1
    8               		.text
    9               	.Ltext0:
-  10               		.comm	Array,202,1
-  11               		.comm	Seed,2,1
-  12               		.comm	factor,2,1
-  13               	.global	main
-  15               	main:
-  16               	.LFB1:
-  17               		.file 1 "bsort100.c"
+  10               		.cfi_sections	.debug_frame
+  11               		.comm	Array,202,1
+  12               		.comm	Seed,2,1
+  13               		.comm	factor,2,1
+  14               	.global	main
+  16               	main:
+  17               	.LFB1:
+  18               		.file 1 "bsort100.c"
    1:bsort100.c    **** /* bsort100.c */
    2:bsort100.c    **** 
    3:bsort100.c    **** /* All output disabled for wcsim */
@@ -49,18 +50,24 @@
   33:bsort100.c    **** 
   34:bsort100.c    **** main()
   35:bsort100.c    **** {
-  18               		.loc 1 35 0
-  19 0000 CF93      		push r28
-  20               	.LCFI0:
-  21 0002 DF93      		push r29
-  22               	.LCFI1:
-  23 0004 CDB7      		in r28,__SP_L__
-  24 0006 DEB7      		in r29,__SP_H__
-  25               	.LCFI2:
-  26               	/* prologue: function */
-  27               	/* frame size = 0 */
-  28               	/* stack size = 2 */
-  29               	.L__stack_usage = 2
+  19               		.loc 1 35 0
+  20               		.cfi_startproc
+  21 0000 CF93      		push r28
+  22               	.LCFI0:
+  23               		.cfi_def_cfa_offset 3
+  24               		.cfi_offset 28, -2
+  25 0002 DF93      		push r29
+  26               	.LCFI1:
+  27               		.cfi_def_cfa_offset 4
+  28               		.cfi_offset 29, -3
+  29 0004 CDB7      		in r28,__SP_L__
+  30 0006 DEB7      		in r29,__SP_H__
+  31               	.LCFI2:
+  32               		.cfi_def_cfa_register 28
+  33               	/* prologue: function */
+  34               	/* frame size = 0 */
+  35               	/* stack size = 2 */
+  36               	.L__stack_usage = 2
   36:bsort100.c    ****    long  StartTime, StopTime;
   37:bsort100.c    ****    float TotalTime;
   38:bsort100.c    **** 
@@ -69,19 +76,19 @@
   41:bsort100.c    ****    printf("RESULTS OF TEST:\n\n");
   42:bsort100.c    **** #endif
   43:bsort100.c    ****    Initialize(Array);
-  30               		.loc 1 43 0
-  31 0008 80E0      		ldi r24,lo8(Array)
-  32 000a 90E0      		ldi r25,hi8(Array)
-  33 000c 0E94 0000 		call Initialize
+  37               		.loc 1 43 0
+  38 0008 80E0      		ldi r24,lo8(Array)
+  39 000a 90E0      		ldi r25,hi8(Array)
+  40 000c 0E94 0000 		call Initialize
   44:bsort100.c    ****    /*   StartTime = ttime (); */
   45:bsort100.c    ****    BubbleSort(Array);
-  34               		.loc 1 45 0
-  35 0010 80E0      		ldi r24,lo8(Array)
-  36 0012 90E0      		ldi r25,hi8(Array)
-  37 0014 0E94 0000 		call BubbleSort
-  38 0018 80E0      		ldi r24,0
-  39 001a 90E0      		ldi r25,0
-  40               	/* epilogue start */
+  41               		.loc 1 45 0
+  42 0010 80E0      		ldi r24,lo8(Array)
+  43 0012 90E0      		ldi r25,hi8(Array)
+  44 0014 0E94 0000 		call BubbleSort
+  45 0018 80E0      		ldi r24,0
+  46 001a 90E0      		ldi r25,0
+  47               	/* epilogue start */
   46:bsort100.c    ****    /*   StopTime = ttime(); */
   47:bsort100.c    ****    /*   TotalTime = (StopTime - StartTime) / 1000.0; */
   48:bsort100.c    **** #ifdef WCSIM
@@ -89,14 +96,15 @@
   50:bsort100.c    ****    printf("     - Total time sorting is %3.3f seconds\n\n", TotalTime);
   51:bsort100.c    **** #endif
   52:bsort100.c    **** }
-  41               		.loc 1 52 0
-  42 001c DF91      		pop r29
-  43 001e CF91      		pop r28
-  44 0020 0895      		ret
-  45               	.LFE1:
-  47               	.global	Initialize
-  49               	Initialize:
-  50               	.LFB2:
+  48               		.loc 1 52 0
+  49 001c DF91      		pop r29
+  50 001e CF91      		pop r28
+  51 0020 0895      		ret
+  52               		.cfi_endproc
+  53               	.LFE1:
+  55               	.global	Initialize
+  57               	Initialize:
+  58               	.LFB2:
   53:bsort100.c    **** 
   54:bsort100.c    **** #ifdef MEASURETIME
   55:bsort100.c    **** int ttime()
@@ -120,106 +128,114 @@
   73:bsort100.c    ****  * Initializes given array with randomly generated integers.
   74:bsort100.c    ****  */
   75:bsort100.c    **** {
-  51               		.loc 1 75 0
-  52 0022 CF93      		push r28
-  53               	.LCFI3:
-  54 0024 DF93      		push r29
-  55               	.LCFI4:
-  56 0026 00D0      		rcall .
-  57 0028 00D0      		rcall .
-  58 002a 00D0      		rcall .
-  59               	.LCFI5:
-  60 002c CDB7      		in r28,__SP_L__
-  61 002e DEB7      		in r29,__SP_H__
-  62               	.LCFI6:
-  63               	/* prologue: function */
-  64               	/* frame size = 6 */
-  65               	/* stack size = 8 */
-  66               	.L__stack_usage = 8
-  67 0030 9E83      		std Y+6,r25
-  68 0032 8D83      		std Y+5,r24
+  59               		.loc 1 75 0
+  60               		.cfi_startproc
+  61 0022 CF93      		push r28
+  62               	.LCFI3:
+  63               		.cfi_def_cfa_offset 3
+  64               		.cfi_offset 28, -2
+  65 0024 DF93      		push r29
+  66               	.LCFI4:
+  67               		.cfi_def_cfa_offset 4
+  68               		.cfi_offset 29, -3
+  69 0026 00D0      		rcall .
+  70 0028 00D0      		rcall .
+  71 002a 00D0      		rcall .
+  72               	.LCFI5:
+  73               		.cfi_def_cfa_offset 10
+  74 002c CDB7      		in r28,__SP_L__
+  75 002e DEB7      		in r29,__SP_H__
+  76               	.LCFI6:
+  77               		.cfi_def_cfa_register 28
+  78               	/* prologue: function */
+  79               	/* frame size = 6 */
+  80               	/* stack size = 8 */
+  81               	.L__stack_usage = 8
+  82 0030 9E83      		std Y+6,r25
+  83 0032 8D83      		std Y+5,r24
   76:bsort100.c    ****    int  Index, fact;
   77:bsort100.c    **** 
   78:bsort100.c    **** #ifdef WORSTCASE
   79:bsort100.c    ****    factor = -1;
-  69               		.loc 1 79 0
-  70 0034 8FEF      		ldi r24,lo8(-1)
-  71 0036 9FEF      		ldi r25,lo8(-1)
-  72 0038 9093 0000 		sts factor+1,r25
-  73 003c 8093 0000 		sts factor,r24
+  84               		.loc 1 79 0
+  85 0034 8FEF      		ldi r24,lo8(-1)
+  86 0036 9FEF      		ldi r25,lo8(-1)
+  87 0038 9093 0000 		sts factor+1,r25
+  88 003c 8093 0000 		sts factor,r24
   80:bsort100.c    **** #else
   81:bsort100.c    ****    factor = 1;
   82:bsort100.c    **** #endif
   83:bsort100.c    **** 
   84:bsort100.c    **** fact = factor;
-  74               		.loc 1 84 0
-  75 0040 8091 0000 		lds r24,factor
-  76 0044 9091 0000 		lds r25,factor+1
-  77 0048 9C83      		std Y+4,r25
-  78 004a 8B83      		std Y+3,r24
+  89               		.loc 1 84 0
+  90 0040 8091 0000 		lds r24,factor
+  91 0044 9091 0000 		lds r25,factor+1
+  92 0048 9C83      		std Y+4,r25
+  93 004a 8B83      		std Y+3,r24
   85:bsort100.c    **** for (Index = 1; Index <= NUMELEMS; Index ++)
-  79               		.loc 1 85 0
-  80 004c 81E0      		ldi r24,lo8(1)
-  81 004e 90E0      		ldi r25,0
-  82 0050 9A83      		std Y+2,r25
-  83 0052 8983      		std Y+1,r24
-  84 0054 00C0      		rjmp .L4
-  85               	.L5:
+  94               		.loc 1 85 0
+  95 004c 81E0      		ldi r24,lo8(1)
+  96 004e 90E0      		ldi r25,0
+  97 0050 9A83      		std Y+2,r25
+  98 0052 8983      		std Y+1,r24
+  99 0054 00C0      		rjmp .L4
+ 100               	.L5:
   86:bsort100.c    ****     Array[Index] = Index*fact * KNOWN_VALUE;
-  86               		.loc 1 86 0 discriminator 2
-  87 0056 8981      		ldd r24,Y+1
-  88 0058 9A81      		ldd r25,Y+2
-  89 005a 880F      		lsl r24
-  90 005c 991F      		rol r25
-  91 005e 2D81      		ldd r18,Y+5
-  92 0060 3E81      		ldd r19,Y+6
-  93 0062 820F      		add r24,r18
-  94 0064 931F      		adc r25,r19
-  95 0066 6981      		ldd r22,Y+1
-  96 0068 7A81      		ldd r23,Y+2
-  97 006a 4B81      		ldd r20,Y+3
-  98 006c 5C81      		ldd r21,Y+4
-  99 006e 649F      		mul r22,r20
- 100 0070 9001      		movw r18,r0
- 101 0072 659F      		mul r22,r21
- 102 0074 300D      		add r19,r0
- 103 0076 749F      		mul r23,r20
- 104 0078 300D      		add r19,r0
- 105 007a 1124      		clr r1
- 106 007c FC01      		movw r30,r24
- 107 007e 3183      		std Z+1,r19
- 108 0080 2083      		st Z,r18
+ 101               		.loc 1 86 0 discriminator 2
+ 102 0056 8981      		ldd r24,Y+1
+ 103 0058 9A81      		ldd r25,Y+2
+ 104 005a 880F      		lsl r24
+ 105 005c 991F      		rol r25
+ 106 005e 2D81      		ldd r18,Y+5
+ 107 0060 3E81      		ldd r19,Y+6
+ 108 0062 820F      		add r24,r18
+ 109 0064 931F      		adc r25,r19
+ 110 0066 6981      		ldd r22,Y+1
+ 111 0068 7A81      		ldd r23,Y+2
+ 112 006a 4B81      		ldd r20,Y+3
+ 113 006c 5C81      		ldd r21,Y+4
+ 114 006e 649F      		mul r22,r20
+ 115 0070 9001      		movw r18,r0
+ 116 0072 659F      		mul r22,r21
+ 117 0074 300D      		add r19,r0
+ 118 0076 749F      		mul r23,r20
+ 119 0078 300D      		add r19,r0
+ 120 007a 1124      		clr r1
+ 121 007c FC01      		movw r30,r24
+ 122 007e 3183      		std Z+1,r19
+ 123 0080 2083      		st Z,r18
   85:bsort100.c    **** for (Index = 1; Index <= NUMELEMS; Index ++)
- 109               		.loc 1 85 0 discriminator 2
- 110 0082 8981      		ldd r24,Y+1
- 111 0084 9A81      		ldd r25,Y+2
- 112 0086 0196      		adiw r24,1
- 113 0088 9A83      		std Y+2,r25
- 114 008a 8983      		std Y+1,r24
- 115               	.L4:
+ 124               		.loc 1 85 0 discriminator 2
+ 125 0082 8981      		ldd r24,Y+1
+ 126 0084 9A81      		ldd r25,Y+2
+ 127 0086 0196      		adiw r24,1
+ 128 0088 9A83      		std Y+2,r25
+ 129 008a 8983      		std Y+1,r24
+ 130               	.L4:
   85:bsort100.c    **** for (Index = 1; Index <= NUMELEMS; Index ++)
- 116               		.loc 1 85 0 is_stmt 0 discriminator 1
- 117 008c 8981      		ldd r24,Y+1
- 118 008e 9A81      		ldd r25,Y+2
- 119 0090 8536      		cpi r24,101
- 120 0092 9105      		cpc r25,__zero_reg__
- 121 0094 04F0      		brlt .L5
- 122               	/* epilogue start */
+ 131               		.loc 1 85 0 is_stmt 0 discriminator 1
+ 132 008c 8981      		ldd r24,Y+1
+ 133 008e 9A81      		ldd r25,Y+2
+ 134 0090 8536      		cpi r24,101
+ 135 0092 9105      		cpc r25,__zero_reg__
+ 136 0094 04F0      		brlt .L5
+ 137               	/* epilogue start */
   87:bsort100.c    **** }
- 123               		.loc 1 87 0 is_stmt 1
- 124 0096 2696      		adiw r28,6
- 125 0098 0FB6      		in __tmp_reg__,__SREG__
- 126 009a F894      		cli
- 127 009c DEBF      		out __SP_H__,r29
- 128 009e 0FBE      		out __SREG__,__tmp_reg__
- 129 00a0 CDBF      		out __SP_L__,r28
- 130 00a2 DF91      		pop r29
- 131 00a4 CF91      		pop r28
- 132 00a6 0895      		ret
- 133               	.LFE2:
- 135               	.global	BubbleSort
- 137               	BubbleSort:
- 138               	.LFB3:
+ 138               		.loc 1 87 0 is_stmt 1
+ 139 0096 2696      		adiw r28,6
+ 140 0098 0FB6      		in __tmp_reg__,__SREG__
+ 141 009a F894      		cli
+ 142 009c DEBF      		out __SP_H__,r29
+ 143 009e 0FBE      		out __SREG__,__tmp_reg__
+ 144 00a0 CDBF      		out __SP_L__,r28
+ 145 00a2 DF91      		pop r29
+ 146 00a4 CF91      		pop r28
+ 147 00a6 0895      		ret
+ 148               		.cfi_endproc
+ 149               	.LFE2:
+ 151               	.global	BubbleSort
+ 153               	BubbleSort:
+ 154               	.LFB3:
   88:bsort100.c    **** 
   89:bsort100.c    **** 
   90:bsort100.c    **** 
@@ -229,222 +245,223 @@
   94:bsort100.c    ****  * Sorts an array of integers of size NUMELEMS in ascending order.
   95:bsort100.c    ****  */
   96:bsort100.c    **** {
- 139               		.loc 1 96 0
- 140 00a8 CF93      		push r28
- 141               	.LCFI7:
- 142 00aa DF93      		push r29
- 143               	.LCFI8:
- 144 00ac CDB7      		in r28,__SP_L__
- 145 00ae DEB7      		in r29,__SP_H__
- 146               	.LCFI9:
- 147 00b0 2A97      		sbiw r28,10
- 148               	.LCFI10:
- 149 00b2 0FB6      		in __tmp_reg__,__SREG__
- 150 00b4 F894      		cli
- 151 00b6 DEBF      		out __SP_H__,r29
- 152 00b8 0FBE      		out __SREG__,__tmp_reg__
- 153 00ba CDBF      		out __SP_L__,r28
- 154               	/* prologue: function */
- 155               	/* frame size = 10 */
- 156               	/* stack size = 12 */
- 157               	.L__stack_usage = 12
- 158 00bc 9A87      		std Y+10,r25
- 159 00be 8987      		std Y+9,r24
+ 155               		.loc 1 96 0
+ 156               		.cfi_startproc
+ 157 00a8 CF93      		push r28
+ 158               	.LCFI7:
+ 159               		.cfi_def_cfa_offset 3
+ 160               		.cfi_offset 28, -2
+ 161 00aa DF93      		push r29
+ 162               	.LCFI8:
+ 163               		.cfi_def_cfa_offset 4
+ 164               		.cfi_offset 29, -3
+ 165 00ac CDB7      		in r28,__SP_L__
+ 166 00ae DEB7      		in r29,__SP_H__
+ 167               	.LCFI9:
+ 168               		.cfi_def_cfa_register 28
+ 169 00b0 2A97      		sbiw r28,10
+ 170               	.LCFI10:
+ 171               		.cfi_def_cfa_offset 14
+ 172 00b2 0FB6      		in __tmp_reg__,__SREG__
+ 173 00b4 F894      		cli
+ 174 00b6 DEBF      		out __SP_H__,r29
+ 175 00b8 0FBE      		out __SREG__,__tmp_reg__
+ 176 00ba CDBF      		out __SP_L__,r28
+ 177               	/* prologue: function */
+ 178               	/* frame size = 10 */
+ 179               	/* stack size = 12 */
+ 180               	.L__stack_usage = 12
+ 181 00bc 9A87      		std Y+10,r25
+ 182 00be 8987      		std Y+9,r24
   97:bsort100.c    ****    int Sorted = FALSE;
- 160               		.loc 1 97 0
- 161 00c0 1A82      		std Y+2,__zero_reg__
- 162 00c2 1982      		std Y+1,__zero_reg__
+ 183               		.loc 1 97 0
+ 184 00c0 1A82      		std Y+2,__zero_reg__
+ 185 00c2 1982      		std Y+1,__zero_reg__
   98:bsort100.c    ****    int Temp, LastIndex, Index, i;
   99:bsort100.c    **** 
  100:bsort100.c    ****    for (i = 1;
- 163               		.loc 1 100 0
- 164 00c4 81E0      		ldi r24,lo8(1)
- 165 00c6 90E0      		ldi r25,0
- 166 00c8 9E83      		std Y+6,r25
- 167 00ca 8D83      		std Y+5,r24
- 168 00cc 00C0      		rjmp .L7
- 169               	.L15:
+ 186               		.loc 1 100 0
+ 187 00c4 81E0      		ldi r24,lo8(1)
+ 188 00c6 90E0      		ldi r25,0
+ 189 00c8 9E83      		std Y+6,r25
+ 190 00ca 8D83      		std Y+5,r24
+ 191 00cc 00C0      		rjmp .L7
+ 192               	.L15:
  101:bsort100.c    **** 	i <= NUMELEMS-1;           /* apsim_loop 1 0 */
  102:bsort100.c    **** 	i++)
  103:bsort100.c    ****    {
  104:bsort100.c    ****       Sorted = TRUE;
- 170               		.loc 1 104 0
- 171 00ce 81E0      		ldi r24,lo8(1)
- 172 00d0 90E0      		ldi r25,0
- 173 00d2 9A83      		std Y+2,r25
- 174 00d4 8983      		std Y+1,r24
+ 193               		.loc 1 104 0
+ 194 00ce 81E0      		ldi r24,lo8(1)
+ 195 00d0 90E0      		ldi r25,0
+ 196 00d2 9A83      		std Y+2,r25
+ 197 00d4 8983      		std Y+1,r24
  105:bsort100.c    ****       for (Index = 1;
- 175               		.loc 1 105 0
- 176 00d6 81E0      		ldi r24,lo8(1)
- 177 00d8 90E0      		ldi r25,0
- 178 00da 9C83      		std Y+4,r25
- 179 00dc 8B83      		std Y+3,r24
- 180 00de 00C0      		rjmp .L8
- 181               	.L12:
+ 198               		.loc 1 105 0
+ 199 00d6 81E0      		ldi r24,lo8(1)
+ 200 00d8 90E0      		ldi r25,0
+ 201 00da 9C83      		std Y+4,r25
+ 202 00dc 8B83      		std Y+3,r24
+ 203 00de 00C0      		rjmp .L8
+ 204               	.L12:
  106:bsort100.c    **** 	   Index <= NUMELEMS-1;      /* apsim_loop 10 1 */
  107:bsort100.c    **** 	   Index ++) {
  108:bsort100.c    ****          if (Index > NUMELEMS-i)
- 182               		.loc 1 108 0
- 183 00e0 24E6      		ldi r18,lo8(100)
- 184 00e2 30E0      		ldi r19,0
- 185 00e4 8D81      		ldd r24,Y+5
- 186 00e6 9E81      		ldd r25,Y+6
- 187 00e8 281B      		sub r18,r24
- 188 00ea 390B      		sbc r19,r25
- 189 00ec 8B81      		ldd r24,Y+3
- 190 00ee 9C81      		ldd r25,Y+4
- 191 00f0 2817      		cp r18,r24
- 192 00f2 3907      		cpc r19,r25
- 193 00f4 04F4      		brge .+2
- 194 00f6 00C0      		rjmp .L17
- 195               	.L9:
+ 205               		.loc 1 108 0
+ 206 00e0 24E6      		ldi r18,lo8(100)
+ 207 00e2 30E0      		ldi r19,0
+ 208 00e4 8D81      		ldd r24,Y+5
+ 209 00e6 9E81      		ldd r25,Y+6
+ 210 00e8 281B      		sub r18,r24
+ 211 00ea 390B      		sbc r19,r25
+ 212 00ec 8B81      		ldd r24,Y+3
+ 213 00ee 9C81      		ldd r25,Y+4
+ 214 00f0 2817      		cp r18,r24
+ 215 00f2 3907      		cpc r19,r25
+ 216 00f4 04F4      		brge .L9
  109:bsort100.c    ****             break;
+ 217               		.loc 1 109 0
+ 218 00f6 00C0      		rjmp .L10
+ 219               	.L9:
  110:bsort100.c    ****          if (Array[Index] > Array[Index + 1])
- 196               		.loc 1 110 0
- 197 00f8 8B81      		ldd r24,Y+3
- 198 00fa 9C81      		ldd r25,Y+4
- 199 00fc 880F      		lsl r24
- 200 00fe 991F      		rol r25
- 201 0100 2985      		ldd r18,Y+9
- 202 0102 3A85      		ldd r19,Y+10
- 203 0104 820F      		add r24,r18
- 204 0106 931F      		adc r25,r19
- 205 0108 FC01      		movw r30,r24
- 206 010a 2081      		ld r18,Z
- 207 010c 3181      		ldd r19,Z+1
- 208 010e 8B81      		ldd r24,Y+3
- 209 0110 9C81      		ldd r25,Y+4
- 210 0112 0196      		adiw r24,1
- 211 0114 880F      		lsl r24
- 212 0116 991F      		rol r25
- 213 0118 4985      		ldd r20,Y+9
- 214 011a 5A85      		ldd r21,Y+10
- 215 011c 840F      		add r24,r20
- 216 011e 951F      		adc r25,r21
- 217 0120 FC01      		movw r30,r24
- 218 0122 8081      		ld r24,Z
- 219 0124 9181      		ldd r25,Z+1
- 220 0126 8217      		cp r24,r18
- 221 0128 9307      		cpc r25,r19
- 222 012a 04F4      		brge .L11
+ 220               		.loc 1 110 0
+ 221 00f8 8B81      		ldd r24,Y+3
+ 222 00fa 9C81      		ldd r25,Y+4
+ 223 00fc 880F      		lsl r24
+ 224 00fe 991F      		rol r25
+ 225 0100 2985      		ldd r18,Y+9
+ 226 0102 3A85      		ldd r19,Y+10
+ 227 0104 820F      		add r24,r18
+ 228 0106 931F      		adc r25,r19
+ 229 0108 FC01      		movw r30,r24
+ 230 010a 2081      		ld r18,Z
+ 231 010c 3181      		ldd r19,Z+1
+ 232 010e 8B81      		ldd r24,Y+3
+ 233 0110 9C81      		ldd r25,Y+4
+ 234 0112 0196      		adiw r24,1
+ 235 0114 880F      		lsl r24
+ 236 0116 991F      		rol r25
+ 237 0118 4985      		ldd r20,Y+9
+ 238 011a 5A85      		ldd r21,Y+10
+ 239 011c 840F      		add r24,r20
+ 240 011e 951F      		adc r25,r21
+ 241 0120 FC01      		movw r30,r24
+ 242 0122 8081      		ld r24,Z
+ 243 0124 9181      		ldd r25,Z+1
+ 244 0126 8217      		cp r24,r18
+ 245 0128 9307      		cpc r25,r19
+ 246 012a 04F4      		brge .L11
  111:bsort100.c    ****          {
  112:bsort100.c    ****             Temp = Array[Index];
- 223               		.loc 1 112 0
- 224 012c 8B81      		ldd r24,Y+3
- 225 012e 9C81      		ldd r25,Y+4
- 226 0130 880F      		lsl r24
- 227 0132 991F      		rol r25
- 228 0134 2985      		ldd r18,Y+9
- 229 0136 3A85      		ldd r19,Y+10
- 230 0138 820F      		add r24,r18
- 231 013a 931F      		adc r25,r19
- 232 013c FC01      		movw r30,r24
- 233 013e 8081      		ld r24,Z
- 234 0140 9181      		ldd r25,Z+1
- 235 0142 9887      		std Y+8,r25
- 236 0144 8F83      		std Y+7,r24
+ 247               		.loc 1 112 0
+ 248 012c 8B81      		ldd r24,Y+3
+ 249 012e 9C81      		ldd r25,Y+4
+ 250 0130 880F      		lsl r24
+ 251 0132 991F      		rol r25
+ 252 0134 2985      		ldd r18,Y+9
+ 253 0136 3A85      		ldd r19,Y+10
+ 254 0138 820F      		add r24,r18
+ 255 013a 931F      		adc r25,r19
+ 256 013c FC01      		movw r30,r24
+ 257 013e 8081      		ld r24,Z
+ 258 0140 9181      		ldd r25,Z+1
+ 259 0142 9887      		std Y+8,r25
+ 260 0144 8F83      		std Y+7,r24
  113:bsort100.c    ****             Array[Index] = Array[Index+1];
- 237               		.loc 1 113 0
- 238 0146 8B81      		ldd r24,Y+3
- 239 0148 9C81      		ldd r25,Y+4
- 240 014a 880F      		lsl r24
- 241 014c 991F      		rol r25
- 242 014e 2985      		ldd r18,Y+9
- 243 0150 3A85      		ldd r19,Y+10
- 244 0152 820F      		add r24,r18
- 245 0154 931F      		adc r25,r19
- 246 0156 2B81      		ldd r18,Y+3
- 247 0158 3C81      		ldd r19,Y+4
- 248 015a 2F5F      		subi r18,-1
- 249 015c 3F4F      		sbci r19,-1
- 250 015e 220F      		lsl r18
- 251 0160 331F      		rol r19
- 252 0162 4985      		ldd r20,Y+9
- 253 0164 5A85      		ldd r21,Y+10
- 254 0166 240F      		add r18,r20
- 255 0168 351F      		adc r19,r21
- 256 016a F901      		movw r30,r18
- 257 016c 2081      		ld r18,Z
- 258 016e 3181      		ldd r19,Z+1
- 259 0170 FC01      		movw r30,r24
- 260 0172 3183      		std Z+1,r19
- 261 0174 2083      		st Z,r18
+ 261               		.loc 1 113 0
+ 262 0146 8B81      		ldd r24,Y+3
+ 263 0148 9C81      		ldd r25,Y+4
+ 264 014a 880F      		lsl r24
+ 265 014c 991F      		rol r25
+ 266 014e 2985      		ldd r18,Y+9
+ 267 0150 3A85      		ldd r19,Y+10
+ 268 0152 820F      		add r24,r18
+ 269 0154 931F      		adc r25,r19
+ 270 0156 2B81      		ldd r18,Y+3
+ 271 0158 3C81      		ldd r19,Y+4
+ 272 015a 2F5F      		subi r18,-1
+ 273 015c 3F4F      		sbci r19,-1
+ 274 015e 220F      		lsl r18
+ 275 0160 331F      		rol r19
+ 276 0162 4985      		ldd r20,Y+9
+ 277 0164 5A85      		ldd r21,Y+10
+ 278 0166 240F      		add r18,r20
+ 279 0168 351F      		adc r19,r21
+ 280 016a F901      		movw r30,r18
+ 281 016c 2081      		ld r18,Z
+ 282 016e 3181      		ldd r19,Z+1
+ 283 0170 FC01      		movw r30,r24
+ 284 0172 3183      		std Z+1,r19
+ 285 0174 2083      		st Z,r18
  114:bsort100.c    ****             Array[Index+1] = Temp;
- 262               		.loc 1 114 0
- 263 0176 8B81      		ldd r24,Y+3
- 264 0178 9C81      		ldd r25,Y+4
- 265 017a 0196      		adiw r24,1
- 266 017c 880F      		lsl r24
- 267 017e 991F      		rol r25
- 268 0180 2985      		ldd r18,Y+9
- 269 0182 3A85      		ldd r19,Y+10
- 270 0184 820F      		add r24,r18
- 271 0186 931F      		adc r25,r19
- 272 0188 2F81      		ldd r18,Y+7
- 273 018a 3885      		ldd r19,Y+8
- 274 018c FC01      		movw r30,r24
- 275 018e 3183      		std Z+1,r19
- 276 0190 2083      		st Z,r18
+ 286               		.loc 1 114 0
+ 287 0176 8B81      		ldd r24,Y+3
+ 288 0178 9C81      		ldd r25,Y+4
+ 289 017a 0196      		adiw r24,1
+ 290 017c 880F      		lsl r24
+ 291 017e 991F      		rol r25
+ 292 0180 2985      		ldd r18,Y+9
+ 293 0182 3A85      		ldd r19,Y+10
+ 294 0184 820F      		add r24,r18
+ 295 0186 931F      		adc r25,r19
+ 296 0188 2F81      		ldd r18,Y+7
+ 297 018a 3885      		ldd r19,Y+8
+ 298 018c FC01      		movw r30,r24
+ 299 018e 3183      		std Z+1,r19
+ 300 0190 2083      		st Z,r18
  115:bsort100.c    ****             Sorted = FALSE;
- 277               		.loc 1 115 0
- 278 0192 1A82      		std Y+2,__zero_reg__
- 279 0194 1982      		std Y+1,__zero_reg__
- 280               	.L11:
- 107:bsort100.c    **** 	   Index ++) {
- 281               		.loc 1 107 0
- 282 0196 8B81      		ldd r24,Y+3
- 283 0198 9C81      		ldd r25,Y+4
- 284 019a 0196      		adiw r24,1
- 285 019c 9C83      		std Y+4,r25
- 286 019e 8B83      		std Y+3,r24
- 287               	.L8:
- 105:bsort100.c    ****       for (Index = 1;
- 288               		.loc 1 105 0 discriminator 1
- 289 01a0 8B81      		ldd r24,Y+3
- 290 01a2 9C81      		ldd r25,Y+4
- 291 01a4 8436      		cpi r24,100
- 292 01a6 9105      		cpc r25,__zero_reg__
- 293 01a8 04F4      		brge .+2
- 294 01aa 00C0      		rjmp .L12
- 295 01ac 00C0      		rjmp .L10
- 296               	.L17:
- 109:bsort100.c    ****             break;
- 297               		.loc 1 109 0
- 298 01ae 0000      		nop
- 299               	.L10:
+ 301               		.loc 1 115 0
+ 302 0192 1A82      		std Y+2,__zero_reg__
+ 303 0194 1982      		std Y+1,__zero_reg__
+ 304               	.L11:
+ 107:bsort100.c    ****          if (Index > NUMELEMS-i)
+ 305               		.loc 1 107 0
+ 306 0196 8B81      		ldd r24,Y+3
+ 307 0198 9C81      		ldd r25,Y+4
+ 308 019a 0196      		adiw r24,1
+ 309 019c 9C83      		std Y+4,r25
+ 310 019e 8B83      		std Y+3,r24
+ 311               	.L8:
+ 105:bsort100.c    **** 	   Index <= NUMELEMS-1;      /* apsim_loop 10 1 */
+ 312               		.loc 1 105 0 discriminator 1
+ 313 01a0 8B81      		ldd r24,Y+3
+ 314 01a2 9C81      		ldd r25,Y+4
+ 315 01a4 8436      		cpi r24,100
+ 316 01a6 9105      		cpc r25,__zero_reg__
+ 317 01a8 04F4      		brge .+2
+ 318 01aa 00C0      		rjmp .L12
+ 319               	.L10:
  116:bsort100.c    ****          }
  117:bsort100.c    ****       }
  118:bsort100.c    **** 
  119:bsort100.c    ****       if (Sorted)
- 300               		.loc 1 119 0
- 301 01b0 8981      		ldd r24,Y+1
- 302 01b2 9A81      		ldd r25,Y+2
- 303 01b4 0097      		sbiw r24,0
- 304 01b6 01F4      		brne .L18
- 305               	.L13:
- 102:bsort100.c    **** 	i++)
- 306               		.loc 1 102 0
- 307 01b8 8D81      		ldd r24,Y+5
- 308 01ba 9E81      		ldd r25,Y+6
- 309 01bc 0196      		adiw r24,1
- 310 01be 9E83      		std Y+6,r25
- 311 01c0 8D83      		std Y+5,r24
- 312               	.L7:
- 100:bsort100.c    ****    for (i = 1;
- 313               		.loc 1 100 0 discriminator 1
- 314 01c2 8D81      		ldd r24,Y+5
- 315 01c4 9E81      		ldd r25,Y+6
- 316 01c6 8436      		cpi r24,100
- 317 01c8 9105      		cpc r25,__zero_reg__
- 318 01ca 04F4      		brge .+2
- 319 01cc 00C0      		rjmp .L15
- 320 01ce 00C0      		rjmp .L16
- 321               	.L18:
+ 320               		.loc 1 119 0
+ 321 01ac 8981      		ldd r24,Y+1
+ 322 01ae 9A81      		ldd r25,Y+2
+ 323 01b0 0097      		sbiw r24,0
+ 324 01b2 01F0      		breq .L13
  120:bsort100.c    ****          break;
- 322               		.loc 1 120 0
- 323 01d0 0000      		nop
- 324               	.L16:
- 325               	/* epilogue start */
+ 325               		.loc 1 120 0
+ 326 01b4 00C0      		rjmp .L16
+ 327               	.L13:
+ 102:bsort100.c    ****    {
+ 328               		.loc 1 102 0
+ 329 01b6 8D81      		ldd r24,Y+5
+ 330 01b8 9E81      		ldd r25,Y+6
+ 331 01ba 0196      		adiw r24,1
+ 332 01bc 9E83      		std Y+6,r25
+ 333 01be 8D83      		std Y+5,r24
+ 334               	.L7:
+ 100:bsort100.c    **** 	i <= NUMELEMS-1;           /* apsim_loop 1 0 */
+ 335               		.loc 1 100 0 discriminator 1
+ 336 01c0 8D81      		ldd r24,Y+5
+ 337 01c2 9E81      		ldd r25,Y+6
+ 338 01c4 8436      		cpi r24,100
+ 339 01c6 9105      		cpc r25,__zero_reg__
+ 340 01c8 04F4      		brge .+2
+ 341 01ca 00C0      		rjmp .L15
+ 342               	.L16:
+ 343               	/* epilogue start */
  121:bsort100.c    ****    }
  122:bsort100.c    **** 
  123:bsort100.c    **** #ifdef WCSIM
@@ -454,32 +471,33 @@
  127:bsort100.c    ****       fprintf(stderr, "array was unsuccessfully sorted in %d passes\n", i-1);
  128:bsort100.c    **** #endif
  129:bsort100.c    **** }
- 326               		.loc 1 129 0
- 327 01d2 2A96      		adiw r28,10
- 328 01d4 0FB6      		in __tmp_reg__,__SREG__
- 329 01d6 F894      		cli
- 330 01d8 DEBF      		out __SP_H__,r29
- 331 01da 0FBE      		out __SREG__,__tmp_reg__
- 332 01dc CDBF      		out __SP_L__,r28
- 333 01de DF91      		pop r29
- 334 01e0 CF91      		pop r28
- 335 01e2 0895      		ret
- 336               	.LFE3:
- 436               	.Letext0:
+ 344               		.loc 1 129 0
+ 345 01cc 2A96      		adiw r28,10
+ 346 01ce 0FB6      		in __tmp_reg__,__SREG__
+ 347 01d0 F894      		cli
+ 348 01d2 DEBF      		out __SP_H__,r29
+ 349 01d4 0FBE      		out __SREG__,__tmp_reg__
+ 350 01d6 CDBF      		out __SP_L__,r28
+ 351 01d8 DF91      		pop r29
+ 352 01da CF91      		pop r28
+ 353 01dc 0895      		ret
+ 354               		.cfi_endproc
+ 355               	.LFE3:
+ 357               	.Letext0:
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 bsort100.c
-     /tmp/ccMVtwvj.s:2      *ABS*:000000000000003e __SP_H__
-     /tmp/ccMVtwvj.s:3      *ABS*:000000000000003d __SP_L__
-     /tmp/ccMVtwvj.s:4      *ABS*:000000000000003f __SREG__
-     /tmp/ccMVtwvj.s:5      *ABS*:000000000000003b __RAMPZ__
-     /tmp/ccMVtwvj.s:6      *ABS*:0000000000000000 __tmp_reg__
-     /tmp/ccMVtwvj.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccTq3NOi.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccTq3NOi.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccTq3NOi.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccTq3NOi.s:5      *ABS*:000000000000003b __RAMPZ__
+     /tmp/ccTq3NOi.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccTq3NOi.s:7      *ABS*:0000000000000001 __zero_reg__
                             *COM*:00000000000000ca Array
                             *COM*:0000000000000002 Seed
                             *COM*:0000000000000002 factor
-     /tmp/ccMVtwvj.s:15     .text:0000000000000000 main
-     /tmp/ccMVtwvj.s:49     .text:0000000000000022 Initialize
-     /tmp/ccMVtwvj.s:137    .text:00000000000000a8 BubbleSort
+     /tmp/ccTq3NOi.s:16     .text:0000000000000000 main
+     /tmp/ccTq3NOi.s:57     .text:0000000000000022 Initialize
+     /tmp/ccTq3NOi.s:153    .text:00000000000000a8 BubbleSort
 
 UNDEFINED SYMBOLS
 __do_clear_bss

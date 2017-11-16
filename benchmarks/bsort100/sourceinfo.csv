@@ -17,13 +17,13 @@ bsort100.c; BubbleSort;  100; .BubbleSort;  1; 29; 0; 1; 376; 378; 1; 0
 bsort100.c; BubbleSort;  0; .BubbleSort;  1; 29; 0; 1; 378; 380; 1; 0
 bsort100.c; BubbleSort;  0; .BubbleSort;  1; 29; 0; 1; 380; 382; 2; 0
 bsort100.c; BubbleSort;  0; .BubbleSort;  1; 29; 0; 1; 382; 384; 2; 0
-bsort100.c; BubbleSort;  0; .BubbleSort;  1; 29; 0; 1; 384; 630; 1; 1
-bsort100.c; BubbleSort;  100; ;  1; 7- 8; 0; 2; 630; 632; 2; 0
-bsort100.c; BubbleSort;  0; ;  1; 7- 8; 0; 2; 632; 634; 2; 0
+bsort100.c; BubbleSort;  0; .BubbleSort;  1; 29; 0; 1; 384; 628; 1; 1
+bsort100.c; BubbleSort;  100; ;  1; 7- 8; 0; 2; 628; 630; 2; 0
+bsort100.c; BubbleSort;  0; ;  1; 7- 8; 0; 2; 630; 632; 2; 0
+bsort100.c; BubbleSort;  0; ;  1; 7- 8; 0; 2; 632; 634; 1; 0
 bsort100.c; BubbleSort;  0; ;  1; 7- 8; 0; 2; 634; 636; 1; 0
-bsort100.c; BubbleSort;  0; ;  1; 7- 8; 0; 2; 636; 638; 1; 0
-bsort100.c; BubbleSort;  0; ;  1; 7- 8; 0; 2; 638; 640, 642; 1; 0- 1
-; BubbleSort;  0; ;  1; 16; 0; 3; 640; 386; 1; 1
+bsort100.c; BubbleSort;  0; ;  1; 7- 8; 0; 2; 636; 638, 640; 1; 0- 1
+; BubbleSort;  0; ;  1; 16; 0; 3; 638; 386; 1; 1
 bsort100.c; BubbleSort;  104; ;  1; 16; 0; 3; 386; 388; 1; 0
 bsort100.c; BubbleSort;  0; ;  1; 16; 0; 3; 388; 390; 1; 0
 bsort100.c; BubbleSort;  0; ;  1; 16; 0; 3; 390; 392; 2; 0
@@ -33,66 +33,69 @@ bsort100.c; BubbleSort;  0; ;  1; 16; 0; 3; 396; 398; 1; 0
 bsort100.c; BubbleSort;  0; ;  1; 16; 0; 3; 398; 400; 2; 0
 bsort100.c; BubbleSort;  0; ;  1; 16; 0; 3; 400; 402; 2; 0
 bsort100.c; BubbleSort;  0; ;  1; 16; 0; 3; 402; 596; 1; 1
-; BubbleSort;  0; ;  0; 2; 0; 4; 642; 646; 1; 1
+bsort100.c; BubbleSort;  129; ;  1; 15; 0; 4; 640; 642; 2; 0
+bsort100.c; BubbleSort;  0; ;  1; 15; 0; 4; 642; 644; 1; 0
+bsort100.c; BubbleSort;  0; ;  1; 15; 0; 4; 644; 646; 1; 0
+bsort100.c; BubbleSort;  0; ;  1; 15; 0; 4; 646; 648; 1; 0
+bsort100.c; BubbleSort;  0; ;  1; 15; 0; 4; 648; 650; 1; 0
+bsort100.c; BubbleSort;  0; ;  1; 15; 0; 4; 650; 652; 1; 0
+bsort100.c; BubbleSort;  0; ;  1; 15; 0; 4; 652; 654; 2; 0
+bsort100.c; BubbleSort;  0; ;  1; 15; 0; 4; 654; 656; 2; 0
+bsort100.c; BubbleSort;  0; ;  1; 15; 0; 4; 656;; 4; 0
 bsort100.c; BubbleSort;  105; ;  100; 7- 8; 0; 5; 596; 598; 2; 0
 bsort100.c; BubbleSort;  0; ;  100; 7- 8; 0; 5; 598; 600; 2; 0
 bsort100.c; BubbleSort;  0; ;  100; 7- 8; 0; 5; 600; 602; 1; 0
 bsort100.c; BubbleSort;  0; ;  100; 7- 8; 0; 5; 602; 604; 1; 0
 bsort100.c; BubbleSort;  0; ;  100; 7- 8; 0; 5; 604; 606, 608; 1; 0- 1
-bsort100.c; BubbleSort;  129; ;  1; 15; 0; 6; 646; 648; 2; 0
-bsort100.c; BubbleSort;  0; ;  1; 15; 0; 6; 648; 650; 1; 0
-bsort100.c; BubbleSort;  0; ;  1; 15; 0; 6; 650; 652; 1; 0
-bsort100.c; BubbleSort;  0; ;  1; 15; 0; 6; 652; 654; 1; 0
-bsort100.c; BubbleSort;  0; ;  1; 15; 0; 6; 654; 656; 1; 0
-bsort100.c; BubbleSort;  0; ;  1; 15; 0; 6; 656; 658; 1; 0
-bsort100.c; BubbleSort;  0; ;  1; 15; 0; 6; 658; 660; 2; 0
-bsort100.c; BubbleSort;  0; ;  1; 15; 0; 6; 660; 662; 2; 0
-bsort100.c; BubbleSort;  0; ;  1; 15; 0; 6; 662;; 4; 0
-; BubbleSort;  0; ;  99; 17- 18; 0; 7; 606; 404; 1; 1
-bsort100.c; BubbleSort;  108; ;  99; 17- 18; 0; 7; 404; 406; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 7; 406; 408; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 7; 408; 410; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 7; 410; 412; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 7; 412; 414; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 7; 414; 416; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 7; 416; 418; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 7; 418; 420; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 7; 420; 422; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 7; 422; 424; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 7; 424; 426, 428; 1; 0- 1
-; BubbleSort;  0; ;  1; 2; 0; 8; 608; 612; 1; 1
-; BubbleSort;  0; ;  0; 3; 0; 9; 426; 610; 1; 1
-bsort100.c; BubbleSort;  109; ;  0; 3; 0; 9; 610; 612; 1; 0
-bsort100.c; BubbleSort;  110; ;  99; 39- 40; 0; 10; 428; 430; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 430; 432; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 432; 434; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 434; 436; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 436; 438; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 438; 440; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 440; 442; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 442; 444; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 444; 446; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 446; 448; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 448; 450; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 450; 452; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 452; 454; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 454; 456; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 456; 458; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 458; 460; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 460; 462; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 462; 464; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 464; 466; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 466; 468; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 468; 470; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 470; 472; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 472; 474; 2; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 474; 476; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 476; 478; 1; 0
-bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 10; 478; 480, 586; 1; 0- 1
-bsort100.c; BubbleSort;  119; ;  1; 7- 8; 0; 11; 612; 614; 2; 0
-bsort100.c; BubbleSort;  0; ;  1; 7- 8; 0; 11; 614; 616; 2; 0
-bsort100.c; BubbleSort;  0; ;  1; 7- 8; 0; 11; 616; 618; 2; 0
-bsort100.c; BubbleSort;  0; ;  1; 7- 8; 0; 11; 618; 620, 644; 1; 0- 1
+; BubbleSort;  0; ;  99; 17- 18; 0; 6; 606; 404; 1; 1
+bsort100.c; BubbleSort;  108; ;  99; 17- 18; 0; 6; 404; 406; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 6; 406; 408; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 6; 408; 410; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 6; 410; 412; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 6; 412; 414; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 6; 414; 416; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 6; 416; 418; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 6; 418; 420; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 6; 420; 422; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 6; 422; 424; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 17- 18; 0; 6; 424; 426, 428; 1; 0- 1
+bsort100.c; BubbleSort;  119; ;  1; 7- 8; 0; 7; 608; 610; 2; 0
+bsort100.c; BubbleSort;  0; ;  1; 7- 8; 0; 7; 610; 612; 2; 0
+bsort100.c; BubbleSort;  0; ;  1; 7- 8; 0; 7; 612; 614; 2; 0
+bsort100.c; BubbleSort;  0; ;  1; 7- 8; 0; 7; 614; 616, 618; 1; 0- 1
+bsort100.c; BubbleSort;  109; ;  0; 2; 0; 8; 426; 608; 1; 1
+bsort100.c; BubbleSort;  110; ;  99; 39- 40; 0; 9; 428; 430; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 430; 432; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 432; 434; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 434; 436; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 436; 438; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 438; 440; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 440; 442; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 442; 444; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 444; 446; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 446; 448; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 448; 450; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 450; 452; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 452; 454; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 454; 456; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 456; 458; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 458; 460; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 460; 462; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 462; 464; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 464; 466; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 466; 468; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 468; 470; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 470; 472; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 472; 474; 2; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 474; 476; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 476; 478; 1; 0
+bsort100.c; BubbleSort;  0; ;  99; 39- 40; 0; 9; 478; 480, 586; 1; 0- 1
+bsort100.c; BubbleSort;  120; ;  1; 2; 0; 10; 616; 640; 1; 1
+bsort100.c; BubbleSort;  102; ;  0; 10; 0; 11; 618; 620; 2; 0
+bsort100.c; BubbleSort;  0; ;  0; 10; 0; 11; 620; 622; 2; 0
+bsort100.c; BubbleSort;  0; ;  0; 10; 0; 11; 622; 624; 2; 0
+bsort100.c; BubbleSort;  0; ;  0; 10; 0; 11; 624; 626; 2; 0
+bsort100.c; BubbleSort;  0; ;  0; 10; 0; 11; 626; 628; 2; 0
 bsort100.c; BubbleSort;  112; ;  99; 84; 0; 12; 480; 482; 2; 0
 bsort100.c; BubbleSort;  0; ;  99; 84; 0; 12; 482; 484; 2; 0
 bsort100.c; BubbleSort;  0; ;  99; 84; 0; 12; 484; 486; 1; 0
@@ -151,9 +154,3 @@ bsort100.c; BubbleSort;  0; ;  99; 10; 0; 13; 588; 590; 2; 0
 bsort100.c; BubbleSort;  0; ;  99; 10; 0; 13; 590; 592; 2; 0
 bsort100.c; BubbleSort;  0; ;  99; 10; 0; 13; 592; 594; 2; 0
 bsort100.c; BubbleSort;  0; ;  99; 10; 0; 13; 594; 596; 2; 0
-bsort100.c; BubbleSort;  102; ;  0; 10; 0; 14; 620; 622; 2; 0
-bsort100.c; BubbleSort;  0; ;  0; 10; 0; 14; 622; 624; 2; 0
-bsort100.c; BubbleSort;  0; ;  0; 10; 0; 14; 624; 626; 2; 0
-bsort100.c; BubbleSort;  0; ;  0; 10; 0; 14; 626; 628; 2; 0
-bsort100.c; BubbleSort;  0; ;  0; 10; 0; 14; 628; 630; 2; 0
-bsort100.c; BubbleSort;  120; ;  1; 1; 0; 15; 644; 646; 1; 0

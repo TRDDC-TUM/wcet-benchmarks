@@ -1,8 +1,8 @@
 Archive member included because of file (symbol)
 
-/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
-                              /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o (exit)
-/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+/usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o (exit)
+/usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_clear_bss.o)
                               bsort100.o (__do_clear_bss)
 
 Allocating common symbols
@@ -21,17 +21,20 @@ eeprom           0x0000000000810000 0x0000000000010000 rw !x
 fuse             0x0000000000820000 0x0000000000000400 rw !x
 lock             0x0000000000830000 0x0000000000000400 rw !x
 signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
 *default*        0x0000000000000000 0xffffffffffffffff
 
 Linker script and memory map
 
 Address of section .data set to 0x800100
-LOAD /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+LOAD /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
 LOAD bsort100.o
-LOAD /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/libm.a
-LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
-LOAD /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/libc.a
-LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
+LOAD /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/libm.a
+START GROUP
+LOAD /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a
+LOAD /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/libm.a
+LOAD /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/libc.a
+END GROUP
 
 .hash
  *(.hash)
@@ -123,20 +126,21 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000      0x29c
+.text           0x0000000000000000      0x296
  *(.vectors)
- .vectors       0x0000000000000000       0x8c /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .vectors       0x0000000000000000       0x8c /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
                 0x0000000000000000                __vectors
                 0x0000000000000000                __vector_default
  *(.vectors)
  *(.progmem.gcc*)
- *(.progmem*)
                 0x000000000000008c                . = ALIGN (0x2)
                 0x000000000000008c                __trampolines_start = .
  *(.trampolines)
  .trampolines   0x000000000000008c        0x0 linker stubs
  *(.trampolines*)
                 0x000000000000008c                __trampolines_end = .
+ *(.progmem*)
+                0x000000000000008c                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
@@ -150,18 +154,18 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x000000000000008c        0x0 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .init0         0x000000000000008c        0x0 /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
                 0x000000000000008c                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x000000000000008c        0xc /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .init2         0x000000000000008c        0xc /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x0000000000000098       0x10 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+ .init4         0x0000000000000098       0x10 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_clear_bss.o)
                 0x0000000000000098                __do_clear_bss
  *(.init4)
  *(.init5)
@@ -173,10 +177,10 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000000000000a8        0x8 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .init9         0x00000000000000a8        0x8 /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
  *(.init9)
  *(.text)
- .text          0x00000000000000b0        0x4 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .text          0x00000000000000b0        0x4 /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
                 0x00000000000000b0                __vector_22
                 0x00000000000000b0                __vector_28
                 0x00000000000000b0                __vector_1
@@ -212,41 +216,45 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
                 0x00000000000000b0                __vector_16
                 0x00000000000000b0                __vector_18
                 0x00000000000000b0                __vector_20
- .text          0x00000000000000b4      0x1e4 bsort100.o
+ .text          0x00000000000000b4      0x1de bsort100.o
                 0x00000000000000b4                main
                 0x00000000000000d6                Initialize
                 0x000000000000015c                BubbleSort
- .text          0x0000000000000298        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
- .text          0x0000000000000298        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
-                0x0000000000000298                . = ALIGN (0x2)
+ .text          0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_exit.o)
+ .text          0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_clear_bss.o)
+                0x0000000000000292                . = ALIGN (0x2)
  *(.text.*)
  .text.libgcc.mul
-                0x0000000000000298        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+                0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_exit.o)
  .text.libgcc.div
-                0x0000000000000298        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
- .text.libgcc   0x0000000000000298        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+                0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x0000000000000298        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+                0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x0000000000000298        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+                0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x0000000000000298        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+                0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_exit.o)
  .text.libgcc.mul
-                0x0000000000000298        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+                0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_clear_bss.o)
  .text.libgcc.div
-                0x0000000000000298        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
- .text.libgcc   0x0000000000000298        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+                0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_clear_bss.o)
  .text.libgcc.prologue
-                0x0000000000000298        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+                0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_clear_bss.o)
  .text.libgcc.builtins
-                0x0000000000000298        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+                0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_clear_bss.o)
  .text.libgcc.fmul
-                0x0000000000000298        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
-                0x0000000000000298                . = ALIGN (0x2)
+                0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_clear_bss.o)
+                0x0000000000000292                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000000000000298        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
-                0x0000000000000298                exit
-                0x0000000000000298                _exit
+ .fini9         0x0000000000000292        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_exit.o)
+                0x0000000000000292                exit
+                0x0000000000000292                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -265,17 +273,17 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000000000000298        0x4 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+ .fini0         0x0000000000000292        0x4 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_exit.o)
  *(.fini0)
-                0x000000000000029c                _etext = .
+                0x0000000000000296                _etext = .
 
-.data           0x0000000000800100        0x0 load address 0x000000000000029c
+.data           0x0000000000800100        0x0 load address 0x0000000000000296
                 0x0000000000800100                PROVIDE (__data_start, .)
  *(.data)
- .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
  .data          0x0000000000800100        0x0 bsort100.o
- .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
- .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_exit.o)
+ .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_clear_bss.o)
  *(.data*)
  *(.rodata)
  *(.rodata*)
@@ -287,10 +295,10 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
 .bss            0x0000000000800100       0xce
                 0x0000000000800100                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x0000000000800100        0x0 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .bss           0x0000000000800100        0x0 /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
  .bss           0x0000000000800100        0x0 bsort100.o
- .bss           0x0000000000800100        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
- .bss           0x0000000000800100        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000800100        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_exit.o)
+ .bss           0x0000000000800100        0x0 /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_clear_bss.o)
  *(.bss*)
  *(COMMON)
  COMMON         0x0000000000800100       0xce bsort100.o
@@ -298,8 +306,8 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
                 0x0000000000800102                Array
                 0x00000000008001cc                factor
                 0x00000000008001ce                PROVIDE (__bss_end, .)
-                0x000000000000029c                __data_load_start = LOADADDR (.data)
-                0x000000000000029c                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000000000000296                __data_load_start = LOADADDR (.data)
+                0x0000000000000296                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00000000008001ce        0x0
                 0x00000000008001ce                PROVIDE (__noinit_start, .)
@@ -324,13 +332,14 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
 .signature
  *(.signature*)
 
-.stab           0x0000000000000000      0x6cc
- *(.stab)
- .stab          0x0000000000000000      0x6cc /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+.user_signatures
+ *(.user_signatures*)
 
-.stabstr        0x0000000000000000       0x54
+.stab
+ *(.stab)
+
+.stabstr
  *(.stabstr)
- .stabstr       0x0000000000000000       0x54 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
 
 .stab.excl
  *(.stab.excl)
@@ -348,6 +357,9 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
  *(.comment)
  .comment       0x0000000000000000       0x11 bsort100.o
                                          0x12 (size before relaxing)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
 
 .debug
  *(.debug)
@@ -370,26 +382,25 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
  *(.debug_pubnames)
 
 .debug_info     0x0000000000000000      0x1d5
- *(.debug_info)
+ *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0x1d5 bsort100.o
- *(.gnu.linkonce.wi.*)
 
 .debug_abbrev   0x0000000000000000       0xed
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000       0xed bsort100.o
 
-.debug_line     0x0000000000000000       0x85
- *(.debug_line)
- .debug_line    0x0000000000000000       0x85 bsort100.o
+.debug_line     0x0000000000000000       0x7a
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0x7a bsort100.o
 
-.debug_frame    0x0000000000000000       0x74
+.debug_frame    0x0000000000000000       0x7c
  *(.debug_frame)
- .debug_frame   0x0000000000000000       0x74 bsort100.o
+ .debug_frame   0x0000000000000000       0x7c bsort100.o
 
-.debug_str      0x0000000000000000      0x102
+.debug_str      0x0000000000000000      0x162
  *(.debug_str)
- .debug_str     0x0000000000000000      0x102 bsort100.o
-                                        0x141 (size before relaxing)
+ .debug_str     0x0000000000000000      0x162 bsort100.o
+                                        0x1a1 (size before relaxing)
 
 .debug_loc      0x0000000000000000       0xca
  *(.debug_loc)
@@ -397,6 +408,27 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
 
 .debug_macinfo
  *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
 OUTPUT(main.elf elf32-avr)
 LOAD linker stubs
 
@@ -407,53 +439,53 @@ Array                                             bsort100.o
 BubbleSort                                        bsort100.o
 Initialize                                        bsort100.o
 Seed                                              bsort100.o
-__bad_interrupt                                   /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__bss_end                                         /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
-__bss_start                                       /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
-__do_clear_bss                                    /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+__bad_interrupt                                   /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__bss_end                                         /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_clear_bss.o)
+__do_clear_bss                                    /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_clear_bss.o)
                                                   bsort100.o
-__heap_end                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__init                                            /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__stack                                           /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_1                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_10                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_11                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_12                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_13                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_14                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_15                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_16                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_17                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_18                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_19                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_2                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_20                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_21                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_22                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_23                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_24                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_25                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_26                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_27                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_28                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_29                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_3                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_30                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_31                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_32                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_33                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_34                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_4                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_5                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_6                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_7                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_8                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_9                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_default                                  /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vectors                                         /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-_exit                                             /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
-exit                                              /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
-                                                  /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__heap_end                                        /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__init                                            /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__stack                                           /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_1                                        /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_10                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_11                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_12                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_13                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_14                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_15                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_16                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_17                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_18                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_19                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_2                                        /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_20                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_21                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_22                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_23                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_24                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_25                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_26                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_27                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_28                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_29                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_3                                        /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_30                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_31                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_32                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_33                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_34                                       /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_4                                        /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_5                                        /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_6                                        /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_7                                        /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_8                                        /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_9                                        /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vector_default                                  /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+__vectors                                         /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
+_exit                                             /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_exit.o)
+exit                                              /usr/lib/gcc/avr/4.8.1/avr51/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o
 factor                                            bsort100.o
 main                                              bsort100.o
-                                                  /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+                                                  /usr/lib/gcc/avr/4.8.1/../../../avr/lib/avr51/crtm128.o

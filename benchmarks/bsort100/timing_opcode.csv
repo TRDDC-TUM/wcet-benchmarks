@@ -1,10 +1,8 @@
 creating lookup...
 getting timing...
 ERROR translating address 360 to opcode. Skipped.
-ERROR translating address 650 to opcode. Skipped.
-ERROR translating address 662 to opcode. Skipped.
-ERROR translating address 610 to opcode. Skipped.
 ERROR translating address 644 to opcode. Skipped.
+ERROR translating address 656 to opcode. Skipped.
 Comparing against specification of 116 opcodes
 ldd; 44;2-2;2-2;0-0;valid
 ldi; 8;1-1;1-1;0-0;valid
@@ -19,10 +17,9 @@ sub; 1;1-1;1-1;0-0;valid
 add; 12;1-1;1-1;0-0;valid
 adc; 12;1-1;1-1;0-0;valid
 out; 6;1-1;1-1;0-0;valid
-rjmp; 7;2-2;1-1;1-1;valid
+rjmp; 6;2-2;1-1;1-1;valid
 adiw; 5;2-2;2-2;0-0;valid
 sbc; 1;1-1;1-1;0-0;valid
-brne; 1;1-2;1-1;0-1;valid
 std; 20;2-2;2-2;0-0;valid
 cpi; 2;1-1;1-1;0-0;valid
 cpc; 4;1-1;1-1;0-0;valid
@@ -30,3 +27,4 @@ st; 2;2-2;2-2;0-0;valid
 brge; 4;1-2;1-1;0-1;valid
 push; 2;2-2;2-2;0-0;valid
 sbiw; 2;2-2;2-2;0-0;valid
+breq; 1;1-2;1-1;0-1;valid

@@ -80,5 +80,12 @@ nav.o : $(VARINCLUDE)/flight_plan.h
 gps_ubx.o : $(VARINCLUDE)/ubx_protocol.h
 if_calib.o : $(VARINCLUDE)/inflight_calib.h
 
+TIME=timeout -s INT 10m /usr/bin/time -v
+wcet.log: $(TARGET).elf
+	$(TIME) boundt_avr -device=ATmega128 -form=elf -no_stack -loop first -elf_sym -anatime -v $< main | tee $@
+	
+sourceinfo.csv: $(TARGET).elf
+	boundt_avr -device=ATmega128 -form=elf -no_stack -dump -elf_sym -sourceinfo sourceinfo.csv $< main
+
 clean : avr_clean
-	rm -f *.out *.cm* messages.h flight_plan.h ubx_protocol.h inflight_calib.h
+	rm -f *.out *.cm* messages.h flight_plan.h ubx_protocol.h inflight_calib.h wcet.log sourceinfo.csv

@@ -21,8 +21,7 @@
 # 
 
 
-#LOCAL_CFLAGS= $(CTL_BRD_FLAGS) -D__AVR_ATmega8__ # builds
-LOCAL_CFLAGS= $(CTL_BRD_FLAGS) -mmcu=atmega8 # error: "attempt to use poisened..."
+LOCAL_CFLAGS= $(CTL_BRD_FLAGS) -mmcu=atmega8
 LOCAL_LDFLAGS=-mmcu=atmega8
 
 ARCH	  = atmega8
@@ -75,6 +74,14 @@ warn_conf :
 
 main.o .depend : $(VARINCLUDE)/radio.h $(VARINCLUDE)/airframe.h
 
-clean : avr_clean
+# note that Atmega8 is not supported by Bound-T. closest thing is Atmega163
+TIME=timeout -s INT 10m /usr/bin/time -v
+wcet.log: $(TARGET).elf
+	$(TIME) boundt_avr -device=ATmega163 -form=elf -no_stack -loop first -elf_sym -anatime -imp limit=hull -v $< main 2> stderr.log | tee $@ 
+
+sourceinfo.csv: $(TARGET).elf
+	boundt_avr -device=ATmega163 -form=elf -no_stack -elf_sym -v -no_arithmetic -sourceinfo sourceinfo.csv $< main
+
+clean : avr_clean wcet.log sourceinfo.csv
 
 ppm.s : $(VARINCLUDE)/radio.h

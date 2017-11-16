@@ -1,0 +1,88 @@
+Note:::::Martin Becker: Writing source-level information to sourceinfo.csv
+Note:main.elf::::Bound-T 4c5 for Atmel-AVR
+Note:main.elf::::This AVR device has a 16-bit SP = SPH:SPL.
+Note:main.elf::::File format assumed to be ELF
+Note:main.elf::::Segment 2 not loaded:Zero length in memory
+Note:main.elf::::Segment 3 not loaded:Zero length in file
+Note:main.elf::::Loading DWARF info section.
+Note:main.elf::::DWARF debug info ends without null entry.
+Note:main.elf::::Loading DWARF types for compilation unit 1
+Note:main.elf::::Parsing DWARF symbols.
+Note:main.elf::::Entering DWARF compilation unit for matmult.c
+Note:main.elf::::Program implies calling protocol GCC.
+Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
+Note:main.elf:loopinfo.txt:::Routine at 000212 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:matmult.c:Multiply:151:Root subprogram
+Note:main.elf::::Unused (# 1 = Multiply at 000212) is FALSE
+Note:main.elf::::Dynamism bounding iteration number 1
+Note:main.elf:matmult.c:Multiply:151:Unused (# 1 = Multiply at 000212) is FALSE
+Note:main.elf:matmult.c:Multiply:151:Analysis for time is needed.
+Note:main.elf:matmult.c:Multiply:151:Control-flow analysis starts.
+Warning:main.elf:matmult.c:Multiply:154:Large combined 16-bit literal 65535 taken as signed = -1
+Note:main.elf:matmult.c:Multiply:151:Control-flow analysis finished.
+Note:main.elf:matmult.c:Multiply:151:Dominator iterations 1 for 10 graph nodes.
+Note:main.elf:matmult.c:Multiply:151:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:matmult.c:Multiply:151-162:No execution bounds known yet.
+Note:main.elf:matmult.c:Multiply:151-162:Unused (# 1 = Multiply at 000212) is FALSE
+Note:main.elf:matmult.c:Multiply:151-162:Unused (# 1 = Multiply at 000212) is FALSE
+Note:main.elf:matmult.c:Multiply:151-162:Unused (# 1 = Multiply at 000212) is FALSE
+Note:main.elf:matmult.c:Multiply:151:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-162:Repeating constant propagation.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:157-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:157-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:157-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:159-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:159-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:159-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:159-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:159-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:159-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:160-:Refine (Assignment) bounded a pointer.
+Note:main.elf:matmult.c:Multiply:151-162:Repeating constant propagation.
+Note:main.elf:matmult.c:Multiply:151-162:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf:matmult.c:Multiply:151-162:Final stack-height from constant propagation for SP:sh
+Note:main.elf:matmult.c:Multiply:151-162:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf:matmult.c:Multiply:151-162:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf:matmult.c:Multiply:151-162:Constant propagation changed nothing.
+Note:main.elf:matmult.c:Multiply:151-162:Unused (# 1 = Multiply at 000212) is FALSE
+Note:main.elf:matmult.c:Multiply:151-162:Unused (# 1 = Multiply at 000212) is FALSE
+Note:main.elf:matmult.c:Multiply:151-162:Unused (# 1 = Multiply at 000212) is FALSE
+Note:main.elf:matmult.c:Multiply:151-162:Unused (# 1 = Multiply at 000212) is FALSE
+Note:main.elf:matmult.c:Multiply:151-162:Unused (# 1 = Multiply at 000212) is FALSE
+Note:main.elf:matmult.c:Multiply:151-162:Unused (# 1 = Multiply at 000212) is FALSE
+Note:main.elf:matmult.c:Multiply:151-162:Unused (# 1 = Multiply at 000212) is FALSE
+Note:main.elf:matmult.c:Multiply:151-162:Unused (# 1 = Multiply at 000212) is FALSE
+Note:main.elf:matmult.c:Multiply:151-162:Unused (# 1 = Multiply at 000212) is FALSE
+Note:main.elf:matmult.c:Multiply:151-162:Arithmetic analysis is not needed.
+Note:main.elf:matmult.c:Multiply:151-162:Unused (# 1 = Multiply at 000212) is FALSE
+Note:main.elf:matmult.c:Multiply:151-162:Time_State for bounds # 1 defined as COMPUTABLE
+Note:main.elf:matmult.c:Multiply:151-162:Freezing bounds # 1
+Note:main.elf::::Target-specific additional analysis starts.
+Note:main.elf::::Generic worst-case path and time analysis starts.
+Wcet:main.elf:matmult.c:Multiply:151-162:1010394
+Note:main.elf::::Creating DOT file flowgraphs/cg_Multiply_001.dot.
+Note:main.elf::::Creating SLI file sourceinfo.csv.
