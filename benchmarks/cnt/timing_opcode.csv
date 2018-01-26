@@ -1,8 +1,9 @@
 creating lookup...
 getting timing...
 ERROR translating address 572 to opcode. Skipped.
-ERROR translating address 856 to opcode. Skipped.
-ERROR translating address 876 to opcode. Skipped.
+ERROR translating address 852 to opcode. Skipped.
+ERROR translating address 858 to opcode. Skipped.
+ERROR translating address 878 to opcode. Skipped.
 Comparing against specification of 116 opcodes
 and; 1;1-1;1-1;0-0;valid
 ldd; 25;2-2;2-2;0-0;valid

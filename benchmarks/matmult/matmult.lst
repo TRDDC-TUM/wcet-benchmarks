@@ -717,22 +717,22 @@
  556               	.Letext0:
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 matmult.c
-     /tmp/ccbTjnSO.s:2      *ABS*:000000000000003e __SP_H__
-     /tmp/ccbTjnSO.s:3      *ABS*:000000000000003d __SP_L__
-     /tmp/ccbTjnSO.s:4      *ABS*:000000000000003f __SREG__
-     /tmp/ccbTjnSO.s:5      *ABS*:000000000000003b __RAMPZ__
-     /tmp/ccbTjnSO.s:6      *ABS*:0000000000000000 __tmp_reg__
-     /tmp/ccbTjnSO.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccbjeL38.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccbjeL38.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccbjeL38.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccbjeL38.s:5      *ABS*:000000000000003b __RAMPZ__
+     /tmp/ccbjeL38.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccbjeL38.s:7      *ABS*:0000000000000001 __zero_reg__
                             *COM*:0000000000000002 Seed
                             *COM*:0000000000000320 ArrayA
                             *COM*:0000000000000320 ArrayB
                             *COM*:0000000000000320 ResultArray
-     /tmp/ccbTjnSO.s:17     .text:0000000000000000 main
-     /tmp/ccbTjnSO.s:58     .text:0000000000000022 InitSeed
-     /tmp/ccbTjnSO.s:91     .text:0000000000000038 Test
-     /tmp/ccbTjnSO.s:155    .text:0000000000000086 Initialize
-     /tmp/ccbTjnSO.s:324    .text:000000000000015e Multiply
-     /tmp/ccbTjnSO.s:269    .text:0000000000000118 RandomInteger
+     /tmp/ccbjeL38.s:17     .text:0000000000000000 main
+     /tmp/ccbjeL38.s:58     .text:0000000000000022 InitSeed
+     /tmp/ccbjeL38.s:91     .text:0000000000000038 Test
+     /tmp/ccbjeL38.s:155    .text:0000000000000086 Initialize
+     /tmp/ccbjeL38.s:324    .text:000000000000015e Multiply
+     /tmp/ccbjeL38.s:269    .text:0000000000000118 RandomInteger
 
 UNDEFINED SYMBOLS
 __divmodhi4

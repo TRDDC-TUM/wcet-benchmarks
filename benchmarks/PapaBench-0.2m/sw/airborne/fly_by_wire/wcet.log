@@ -1,0 +1,2234 @@
+Note:fbw.elf::::Bound-T 4c5 for Atmel-AVR
+Note:fbw.elf::::This AVR device has a 16-bit SP = SPH:SPL.
+Note:fbw.elf::::File format assumed to be ELF
+Note:fbw.elf::::Segment 3 not loaded:Zero length in file
+Note:fbw.elf::::Loading DWARF info section.
+Note:fbw.elf::::DWARF debug info ends at End_Index without null entry.
+Note:fbw.elf::::DWARF debug info ends at End_Index without null entry.
+Note:fbw.elf::::DWARF debug info ends at End_Index without null entry.
+Note:fbw.elf::::DWARF debug info ends at End_Index without null entry.
+Note:fbw.elf::::DWARF debug info ends at End_Index without null entry.
+Note:fbw.elf::::DWARF debug info ends without null entry.
+Note:fbw.elf::::Loading DWARF types for compilation unit 1
+Note:fbw.elf::::Loading DWARF types for compilation unit 2
+Note:fbw.elf::::Loading DWARF types for compilation unit 3
+Note:fbw.elf::::Loading DWARF types for compilation unit 4
+Note:fbw.elf::::Loading DWARF types for compilation unit 5
+Note:fbw.elf::::Loading DWARF types for compilation unit 6
+Note:fbw.elf::::Parsing DWARF symbols.
+Note:fbw.elf::::Entering DWARF compilation unit for main.c
+Note:fbw.elf::::DWARF node visit aborted; missing attribute.
+Note:fbw.elf::::DWARF node visit aborted; missing attribute.
+Note:fbw.elf::::DWARF node visit aborted; missing attribute.
+Note:fbw.elf::::DWARF node visit aborted; missing attribute.
+Note:fbw.elf::::DWARF node visit aborted; missing attribute.
+Note:fbw.elf::::DWARF node visit aborted; missing attribute.
+Note:fbw.elf::::DWARF node visit aborted; missing attribute.
+Note:fbw.elf::::DWARF node visit aborted; missing attribute.
+Note:fbw.elf::::DWARF node visit aborted; missing attribute.
+Note:fbw.elf::::Entering DWARF compilation unit for ppm.c
+Note:fbw.elf::::Entering DWARF compilation unit for servo.c
+Note:fbw.elf::::DWARF node visit aborted; missing attribute.
+Note:fbw.elf::::Entering DWARF compilation unit for spi.c
+Note:fbw.elf::::Entering DWARF compilation unit for uart.c
+Note:fbw.elf::::DWARF node visit aborted; missing attribute.
+Note:fbw.elf::::DWARF node visit aborted; missing attribute.
+Note:fbw.elf::::DWARF node visit aborted; missing attribute.
+Note:fbw.elf::::Entering DWARF compilation unit for adc_fbw.c
+Warning:fbw.elf::::Duplicated symbol:Variable:main.c|last_ppm_cpt:[all] => dC4:Variable:main.c|last_ppm_cpt:[all] => d8000C4
+Warning:fbw.elf::::Duplicated symbol:Variable:main.c|ppm_cpt:[all] => dC5:Variable:main.c|ppm_cpt:[all] => d8000C5
+Warning:fbw.elf::::Duplicated symbol:Variable:main.c|time_since_last_ppm:[all] => dwC6:Variable:main.c|time_since_last_ppm:[all] => dw8000C6
+Warning:fbw.elf::::Duplicated symbol:Variable:main.c|time_since_last_mega128:[all] => dC8:Variable:main.c|time_since_last_mega128:[all] => d8000C8
+Note:fbw.elf::::Duplicated symbol and value:Subprogram:main.c|periodic_task:0001F0
+Warning:fbw.elf::::Duplicated symbol:Variable:spi.c|idx_buf:[all] => dE9:Variable:spi.c|idx_buf:[all] => d8000E9
+Warning:fbw.elf::::Duplicated symbol:Variable:spi.c|xor_in:[all] => dE8:Variable:spi.c|xor_in:[all] => d8000E8
+Warning:fbw.elf::::Duplicated symbol:Variable:spi.c|xor_out:[all] => dE7:Variable:spi.c|xor_out:[all] => d8000E7
+Warning:fbw.elf::::Duplicated symbol:Variable:uart.c|tx_tail:[all] => d1EA:Variable:uart.c|tx_tail:[all] => d8001EA
+Warning:fbw.elf::::Duplicated symbol:Variable:uart.c|tx_head:[all] => d1EB:Variable:uart.c|tx_head:[all] => d8001EB
+Note:fbw.elf::::Program implies calling protocol GCC.
+Note:fbw.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
+Note:fbw.elf:loopinfo.txt:::Routine at 000C42 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:loopinfo.txt:::Routine at 000BC0 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:loopinfo.txt:::Routine at 0006F0 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:loopinfo.txt:::Routine at 000FC2 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:loopinfo.txt:::Routine at 000E36 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:loopinfo.txt:::Routine at 000D22 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:loopinfo.txt:::Routine at 000D86 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:loopinfo.txt:::Routine at 00005E classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:loopinfo.txt:::Routine at 0007C8 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:loopinfo.txt:::Routine at 000E8E classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:loopinfo.txt:::Routine at 000E92 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf::::Full subprogram name:main.c|periodic_task
+Note:fbw.elf::::Routine at 0001F0 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:main.c:periodic_task:110-111:Root subprogram
+Note:fbw.elf::::Unused (# 12 = main.c|periodic_task at 0001F0) is FALSE
+Note:fbw.elf::::Dynamism bounding iteration number 1
+Note:fbw.elf:main.c:periodic_task:110-111:Unused (# 12 = main.c|periodic_task at 0001F0) is FALSE
+Note:fbw.elf:main.c:periodic_task:110-111:Analysis for time is needed.
+Note:fbw.elf:main.c:periodic_task:110-111:Control-flow analysis starts.
+Note:fbw.elf:main.c:periodic_task:110-111:Routine at 000102 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:main.c:periodic_task:110-111:Using symbol for subprogram at address 000102:main.c|test_ppm_task
+Note:fbw.elf:main.c:periodic_task:110-111:Other symbol for subprogram at address 000102:|test_ppm_task
+Note:fbw.elf:main.c:periodic_task:110-111:Call to new subprogram # 13 = main.c|test_ppm_task at 000102
+Note:fbw.elf:main.c:periodic_task:110-111:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Note:fbw.elf:main.c:periodic_task:112:Routine at 0001B6 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:main.c:periodic_task:112:Using symbol for subprogram at address 0001B6:main.c|check_mega128_values_task
+Note:fbw.elf:main.c:periodic_task:112:Other symbol for subprogram at address 0001B6:|check_mega128_values_task
+Note:fbw.elf:main.c:periodic_task:112:Call to new subprogram # 14 = main.c|check_mega128_values_task at 0001B6
+Note:fbw.elf:main.c:periodic_task:112:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Note:fbw.elf:main.c:periodic_task:113:Call to existing subprogram # 8 = send_data_to_autopilot_task at 00005E
+Note:fbw.elf:main.c:periodic_task:113:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Note:fbw.elf:main.c:periodic_task:114:Routine at 000190 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:main.c:periodic_task:114:Using symbol for subprogram at address 000190:main.c|check_failsafe_task
+Note:fbw.elf:main.c:periodic_task:114:Other symbol for subprogram at address 000190:|check_failsafe_task
+Note:fbw.elf:main.c:periodic_task:114:Call to new subprogram # 15 = main.c|check_failsafe_task at 000190
+Note:fbw.elf:main.c:periodic_task:114:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Warning:fbw.elf:main.c:periodic_task:119-:Immediate octet 255 used signed = -1
+Warning:fbw.elf:main.c:periodic_task:120-:Immediate octet 255 used signed = -1
+Note:fbw.elf:main.c:periodic_task:130:Call to existing subprogram # 9 = servo_transmit at 0007C8
+Note:fbw.elf:main.c:periodic_task:130:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Warning:fbw.elf:main.c:periodic_task:134:Immediate octet 255 used signed = -1
+Note:fbw.elf:main.c:periodic_task:110-111:Control-flow analysis finished.
+Note:fbw.elf:main.c:periodic_task:110-111:Dominator iterations 2 for 20 graph nodes.
+Note:fbw.elf:main.c:periodic_task:110-111:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:main.c:send_data_to_autopilot_task:100-101:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Note:fbw.elf:main.c:send_data_to_autopilot_task:100-101:Analysis for time is needed.
+Note:fbw.elf:main.c:send_data_to_autopilot_task:100-101:Control-flow analysis starts.
+Note:fbw.elf:main.c:send_data_to_autopilot_task:93-:Call to existing subprogram # 10 = __floatunsisf at 000E8E
+Note:fbw.elf:main.c:send_data_to_autopilot_task:93-:Unused (# 10 = __floatunsisf at 000E8E) is FALSE
+Note:fbw.elf:main.c:send_data_to_autopilot_task:93-:Routine at 000FAA classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:main.c:send_data_to_autopilot_task:93-:Call to new subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:main.c:send_data_to_autopilot_task:93-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:send_data_to_autopilot_task:93-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:main.c:send_data_to_autopilot_task:93-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:send_data_to_autopilot_task:93-:Routine at 000D64 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:main.c:send_data_to_autopilot_task:93-:Call to new subprogram # 17 = __addsf3 at 000D64
+Note:fbw.elf:main.c:send_data_to_autopilot_task:93-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:main.c:send_data_to_autopilot_task:93-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:main.c:send_data_to_autopilot_task:93-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:send_data_to_autopilot_task:93-:Call to existing subprogram # 5 = __fixunssfsi at 000E36
+Note:fbw.elf:main.c:send_data_to_autopilot_task:93-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Warning:fbw.elf:spi.c:send_data_to_autopilot_task:54-:Large combined 16-bit literal 64813 taken as signed = -723
+Note:fbw.elf:main.c:send_data_to_autopilot_task:100-101:Control-flow analysis finished.
+Note:fbw.elf:main.c:send_data_to_autopilot_task:100-101:Dominator iterations 2 for 28 graph nodes.
+Note:fbw.elf:main.c:send_data_to_autopilot_task:100-101:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:main.c:test_ppm_task:162-163:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-163:Analysis for time is needed.
+Note:fbw.elf:main.c:test_ppm_task:162-163:Control-flow analysis starts.
+Warning:fbw.elf:main.c:test_ppm_task:166-:Immediate octet 255 used signed = -1
+Note:fbw.elf:main.c:test_ppm_task:170:Routine at 000304 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:main.c:test_ppm_task:170:Using symbol for subprogram at address 000304:ppm.c|last_radio_from_ppm
+Note:fbw.elf:main.c:test_ppm_task:170:Other symbol for subprogram at address 000304:|last_radio_from_ppm
+Note:fbw.elf:main.c:test_ppm_task:170:Call to new subprogram # 18 = ppm.c|last_radio_from_ppm at 000304
+Note:fbw.elf:main.c:test_ppm_task:170:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:177-:Routine at 0007FE classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:main.c:test_ppm_task:177-:Using symbol for subprogram at address 0007FE:servo.c|servo_set
+Note:fbw.elf:main.c:test_ppm_task:177-:Other symbol for subprogram at address 0007FE:|servo_set
+Note:fbw.elf:main.c:test_ppm_task:177-:Call to new subprogram # 19 = servo.c|servo_set at 0007FE
+Note:fbw.elf:main.c:test_ppm_task:177-:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-163:Control-flow analysis finished.
+Note:fbw.elf:main.c:test_ppm_task:162-163:Dominator iterations 2 for 20 graph nodes.
+Note:fbw.elf:main.c:test_ppm_task:162-163:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:main.c:check_failsafe_task:194-195:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Note:fbw.elf:main.c:check_failsafe_task:194-195:Analysis for time is needed.
+Note:fbw.elf:main.c:check_failsafe_task:194-195:Control-flow analysis starts.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Routine at 000E2C classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to new subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:servo.c:check_failsafe_task:195-:Large combined 16-bit literal 49536 taken as signed = -16000
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:servo.c:check_failsafe_task:195-:Large combined 16-bit literal 49536 taken as signed = -16000
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:servo.c:check_failsafe_task:195-:Large combined 16-bit literal 41056 taken as signed = -24480
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Warning:fbw.elf:servo.c:check_failsafe_task:195-:Large combined 16-bit literal 52429 taken as signed = -13107
+Warning:fbw.elf:servo.c:check_failsafe_task:195-:Large combined 16-bit literal 48908 taken as signed = -16628
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:servo.c:check_failsafe_task:195-:Immediate octet 156 used signed = -100
+Warning:fbw.elf:servo.c:check_failsafe_task:195:Large combined 16-bit literal 62915 taken as signed = -2621
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Warning:fbw.elf:servo.c:check_failsafe_task:195-:Large combined 16-bit literal 48901 taken as signed = -16635
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:servo.c:check_failsafe_task:195-:Large combined 16-bit literal 39136 taken as signed = -26400
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 17 = __addsf3 at 000D64
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Warning:fbw.elf:servo.c:check_failsafe_task:195-:Large combined 16-bit literal 48887 taken as signed = -16649
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:servo.c:check_failsafe_task:195-:Large combined 16-bit literal 42336 taken as signed = -23200
+Note:fbw.elf:main.c:check_failsafe_task:194-195:Control-flow analysis finished.
+Note:fbw.elf:main.c:check_failsafe_task:194-195:Dominator iterations 1 for 92 graph nodes.
+Note:fbw.elf:main.c:check_failsafe_task:194-195:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:main.c:check_mega128_values_task:202-203:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-203:Analysis for time is needed.
+Note:fbw.elf:main.c:check_mega128_values_task:202-203:Control-flow analysis starts.
+Note:fbw.elf:main.c:check_mega128_values_task:210-:Call to existing subprogram # 19 = servo.c|servo_set at 0007FE
+Note:fbw.elf:main.c:check_mega128_values_task:210-:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-203:Control-flow analysis finished.
+Note:fbw.elf:main.c:check_mega128_values_task:202-203:Dominator iterations 1 for 10 graph nodes.
+Note:fbw.elf:main.c:check_mega128_values_task:202-203:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:servo.c:servo_transmit:176:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Note:fbw.elf:servo.c:servo_transmit:176:Analysis for time is needed.
+Note:fbw.elf:servo.c:servo_transmit:176:Control-flow analysis starts.
+Note:fbw.elf:servo.c:servo_transmit:178-:Routine at 000B1A classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:servo.c:servo_transmit:178-:Call to new subprogram # 21 = uart_transmit at 000B1A
+Note:fbw.elf:servo.c:servo_transmit:178-:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:servo.c:servo_transmit:178-:Call to existing subprogram # 21 = uart_transmit at 000B1A
+Note:fbw.elf:servo.c:servo_transmit:178-:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:servo.c:servo_transmit:181-:Call to existing subprogram # 21 = uart_transmit at 000B1A
+Note:fbw.elf:servo.c:servo_transmit:181-:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:servo.c:servo_transmit:182-:Call to existing subprogram # 21 = uart_transmit at 000B1A
+Note:fbw.elf:servo.c:servo_transmit:182-:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Warning:fbw.elf:uart.c:servo_transmit:66-:Large combined 16-bit literal 65535 taken as signed = -1
+Warning:fbw.elf:uart.c:servo_transmit:70-:Large combined 16-bit literal 65302 taken as signed = -234
+Warning:fbw.elf:uart.c:servo_transmit:71:Immediate octet 255 used signed = -1
+Note:fbw.elf:servo.c:servo_transmit:176:Control-flow analysis finished.
+Note:fbw.elf:servo.c:servo_transmit:176:Dominator iterations 1 for 15 graph nodes.
+Note:fbw.elf:servo.c:servo_transmit:176:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103:Analysis for time is needed.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103:Control-flow analysis starts.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104:Large combined 16-bit literal 55936 taken as signed = -9600
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104:Large combined 16-bit literal 55936 taken as signed = -9600
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104:Large combined 16-bit literal 55936 taken as signed = -9600
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104-:Large combined 16-bit literal 52429 taken as signed = -13107
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 17 = __addsf3 at 000D64
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104-:Large combined 16-bit literal 52429 taken as signed = -13107
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 17 = __addsf3 at 000D64
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104-:Large combined 16-bit literal 52429 taken as signed = -13107
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 17 = __addsf3 at 000D64
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104-:Large combined 16-bit literal 52429 taken as signed = -13107
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 17 = __addsf3 at 000D64
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104-:Large combined 16-bit literal 52429 taken as signed = -13107
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 17 = __addsf3 at 000D64
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104-:Immediate octet 255 used signed = -1
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104:Large combined 16-bit literal 55936 taken as signed = -9600
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104:Large combined 16-bit literal 55936 taken as signed = -9600
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104:Large combined 16-bit literal 55936 taken as signed = -9600
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104:Large combined 16-bit literal 55936 taken as signed = -9600
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104:Large combined 16-bit literal 55936 taken as signed = -9600
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103:Control-flow analysis finished.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103:Dominator iterations 2 for 124 graph nodes.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:servo.c:servo_set:194:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:servo.c:servo_set:194:Analysis for time is needed.
+Note:fbw.elf:servo.c:servo_set:194:Control-flow analysis starts.
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:servo.c:servo_set:195-:Large combined 16-bit literal 49536 taken as signed = -16000
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:servo.c:servo_set:195-:Large combined 16-bit literal 49536 taken as signed = -16000
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:servo.c:servo_set:195-:Large combined 16-bit literal 41056 taken as signed = -24480
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Warning:fbw.elf:servo.c:servo_set:195-:Large combined 16-bit literal 52429 taken as signed = -13107
+Warning:fbw.elf:servo.c:servo_set:195-:Large combined 16-bit literal 48908 taken as signed = -16628
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:servo.c:servo_set:195-:Immediate octet 156 used signed = -100
+Warning:fbw.elf:servo.c:servo_set:195:Large combined 16-bit literal 62915 taken as signed = -2621
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Warning:fbw.elf:servo.c:servo_set:195-:Large combined 16-bit literal 48901 taken as signed = -16635
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:servo.c:servo_set:195-:Large combined 16-bit literal 39136 taken as signed = -26400
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 11 = __floatsisf at 000E92
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 17 = __addsf3 at 000D64
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Warning:fbw.elf:servo.c:servo_set:195-:Large combined 16-bit literal 48887 taken as signed = -16649
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 16 = __mulsf3 at 000FAA
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:195-:Call to existing subprogram # 20 = __fixsfsi at 000E2C
+Note:fbw.elf:servo.c:servo_set:195-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:servo.c:servo_set:195-:Large combined 16-bit literal 42336 taken as signed = -23200
+Note:fbw.elf:servo.c:servo_set:194:Control-flow analysis finished.
+Note:fbw.elf:servo.c:servo_set:194:Dominator iterations 1 for 85 graph nodes.
+Note:fbw.elf:servo.c:servo_set:194:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:uart.c:uart_transmit:63-64:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:uart.c:uart_transmit:63-64:Analysis for time is needed.
+Note:fbw.elf:uart.c:uart_transmit:63-64:Control-flow analysis starts.
+Warning:fbw.elf:uart.c:uart_transmit:66-:Large combined 16-bit literal 65535 taken as signed = -1
+Warning:fbw.elf:uart.c:uart_transmit:70-:Large combined 16-bit literal 65302 taken as signed = -234
+Warning:fbw.elf:uart.c:uart_transmit:71:Immediate octet 255 used signed = -1
+Note:fbw.elf:uart.c:uart_transmit:63-64:Control-flow analysis finished.
+Note:fbw.elf:uart.c:uart_transmit:63-64:Dominator iterations 1 for 5 graph nodes.
+Note:fbw.elf:uart.c:uart_transmit:63-64:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Analysis for time is needed.
+Note:fbw.elf:main.c:__addsf3:157-:Control-flow analysis starts.
+Note:fbw.elf:main.c:__addsf3:157-:Call to existing subprogram # 7 = __addsf3x at 000D86
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Warning:fbw.elf:main.c:__addsf3:157-:Large combined 16-bit literal 65535 taken as signed = -1
+Note:fbw.elf:main.c:__addsf3:157-:Control-flow analysis finished.
+Note:fbw.elf:main.c:__addsf3:157-:Dominator iterations 1 for 10 graph nodes.
+Note:fbw.elf:main.c:__addsf3:157-:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Analysis for time is needed.
+Note:fbw.elf:main.c:__fixsfsi:157-:Control-flow analysis starts.
+Note:fbw.elf:main.c:__fixsfsi:157-:Call to existing subprogram # 5 = __fixunssfsi at 000E36
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Control-flow analysis finished.
+Note:fbw.elf:main.c:__fixsfsi:157-:Dominator iterations 1 for 5 graph nodes.
+Note:fbw.elf:main.c:__fixsfsi:157-:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Analysis for time is needed.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Control-flow analysis starts.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Routine at 000F68 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Call to new subprogram # 22 = __fp_splitA at 000F68
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Routine at 000F9C classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Call to new subprogram # 23 = __fp_zero at 000F9C
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Warning:fbw.elf:main.c:__fixunssfsi:157-:Immediate octet 248 used signed = -8
+Note:fbw.elf:main.c:__fixunssfsi:157-:Control-flow analysis finished.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Dominator iterations 2 for 20 graph nodes.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:main.c:__floatunsisf:157-:Unused (# 10 = __floatunsisf at 000E8E) is FALSE
+Note:fbw.elf:main.c:__floatunsisf:157-:Using stub for flow-graph.
+Note:fbw.elf:main.c:__floatunsisf:157-:Stub set to TRUE
+Note:fbw.elf:main.c:__floatunsisf:157-:Dominator iterations 0 for 1 graph nodes.
+Note:fbw.elf:main.c:__floatunsisf:157-:Freezing bounds # 1
+Note:fbw.elf:main.c:__floatsisf:157-:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:main.c:__floatsisf:157-:Using stub for flow-graph.
+Note:fbw.elf:main.c:__floatsisf:157-:Stub set to TRUE
+Note:fbw.elf:main.c:__floatsisf:157-:Dominator iterations 0 for 1 graph nodes.
+Note:fbw.elf:main.c:__floatsisf:157-:Freezing bounds # 2
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Analysis for time is needed.
+Note:fbw.elf:main.c:__mulsf3:157-:Control-flow analysis starts.
+Note:fbw.elf:main.c:__mulsf3:157-:Call to existing subprogram # 4 = __mulsf3x at 000FC2
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Warning:fbw.elf:main.c:__mulsf3:157-:Large combined 16-bit literal 65535 taken as signed = -1
+Note:fbw.elf:main.c:__mulsf3:157-:Control-flow analysis finished.
+Note:fbw.elf:main.c:__mulsf3:157-:Dominator iterations 1 for 10 graph nodes.
+Note:fbw.elf:main.c:__mulsf3:157-:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Analysis for time is needed.
+Note:fbw.elf:main.c:__addsf3x:157-:Control-flow analysis starts.
+Note:fbw.elf:main.c:__addsf3x:157-:Routine at 000F58 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:main.c:__addsf3x:157-:Call to new subprogram # 24 = __fp_split3 at 000F58
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Routine at 000F1A classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:main.c:__addsf3x:157-:Call to new subprogram # 25 = __fp_pscA at 000F1A
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Routine at 000F28 classified as NORMAL after inspecting 1 instructions.
+Note:fbw.elf:main.c:__addsf3x:157-:Call to new subprogram # 26 = __fp_pscB at 000F28
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Warning:fbw.elf:main.c:__addsf3x:157-:Immediate octet 248 used signed = -8
+Warning:fbw.elf:main.c:__addsf3x:157-:Large combined 16-bit literal 65472 taken as signed = -64
+Note:fbw.elf:main.c:__addsf3x:157-:Control-flow analysis finished.
+Note:fbw.elf:main.c:__addsf3x:157-:Dominator iterations 3 for 41 graph nodes.
+Note:fbw.elf:main.c:__addsf3x:157-:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:main.c:__fp_splitA:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_splitA:157-:Analysis for time is needed.
+Note:fbw.elf:main.c:__fp_splitA:157-:Control-flow analysis starts.
+Note:fbw.elf:main.c:__fp_splitA:157-:Control-flow analysis finished.
+Note:fbw.elf:main.c:__fp_splitA:157-:Dominator iterations 1 for 5 graph nodes.
+Note:fbw.elf:main.c:__fp_splitA:157-:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:main.c:__fp_zero:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fp_zero:157-:Analysis for time is needed.
+Note:fbw.elf:main.c:__fp_zero:157-:Control-flow analysis starts.
+Note:fbw.elf:main.c:__fp_zero:157-:Control-flow analysis finished.
+Note:fbw.elf:main.c:__fp_zero:157-:Dominator iterations 0 for 1 graph nodes.
+Note:fbw.elf:main.c:__fp_zero:157-:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Analysis for time is needed.
+Note:fbw.elf:main.c:__mulsf3x:157-:Control-flow analysis starts.
+Note:fbw.elf:main.c:__mulsf3x:157-:Call to existing subprogram # 24 = __fp_split3 at 000F58
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Call to existing subprogram # 25 = __fp_pscA at 000F1A
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Call to existing subprogram # 26 = __fp_pscB at 000F28
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Warning:fbw.elf:main.c:__mulsf3x:157-:Large combined 16-bit literal 65472 taken as signed = -64
+Warning:fbw.elf:main.c:__mulsf3x:157-:Immediate octet 255 used signed = -1
+Note:fbw.elf:main.c:__mulsf3x:157-:Control-flow analysis finished.
+Note:fbw.elf:main.c:__mulsf3x:157-:Dominator iterations 2 for 27 graph nodes.
+Note:fbw.elf:main.c:__mulsf3x:157-:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:main.c:__fp_pscA:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__fp_pscA:157-:Analysis for time is needed.
+Note:fbw.elf:main.c:__fp_pscA:157-:Control-flow analysis starts.
+Note:fbw.elf:main.c:__fp_pscA:157-:Control-flow analysis finished.
+Note:fbw.elf:main.c:__fp_pscA:157-:Dominator iterations 0 for 1 graph nodes.
+Note:fbw.elf:main.c:__fp_pscA:157-:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:main.c:__fp_pscB:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__fp_pscB:157-:Analysis for time is needed.
+Note:fbw.elf:main.c:__fp_pscB:157-:Control-flow analysis starts.
+Note:fbw.elf:main.c:__fp_pscB:157-:Control-flow analysis finished.
+Note:fbw.elf:main.c:__fp_pscB:157-:Dominator iterations 0 for 1 graph nodes.
+Note:fbw.elf:main.c:__fp_pscB:157-:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Analysis for time is needed.
+Note:fbw.elf:main.c:__fp_split3:157-:Control-flow analysis starts.
+Warning:fbw.elf:main.c:__fp_split3:157-:Immediate octet 128 used signed = -128
+Note:fbw.elf:main.c:__fp_split3:157-:Call to existing subprogram # 22 = __fp_splitA at 000F68
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Control-flow analysis finished.
+Note:fbw.elf:main.c:__fp_split3:157-:Dominator iterations 1 for 14 graph nodes.
+Note:fbw.elf:main.c:__fp_split3:157-:Assertions resolved 0 of 0 dynamic calls.
+Note:fbw.elf:uart.c:uart_transmit:63-74:No execution bounds known yet.
+Note:fbw.elf:uart.c:uart_transmit:63-74:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:uart.c:uart_transmit:63-74:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:uart.c:uart_transmit:63-74:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:uart.c:uart_transmit:63-74:Repeating constant propagation.
+Note:fbw.elf:uart.c:uart_transmit:63-74:Final stack-height in stack SP is constant for 2 of 2 return points.
+Note:fbw.elf:uart.c:uart_transmit:63-74:Final stack-height from constant propagation for SP:sh=-2
+Note:fbw.elf:uart.c:uart_transmit:63-74:Maximum stack-height from constant propagation for SP:0
+Note:fbw.elf:uart.c:uart_transmit:63-74:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:fbw.elf:uart.c:uart_transmit:63-74:Constant propagation changed nothing.
+Note:fbw.elf:uart.c:uart_transmit:63-74:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:uart.c:uart_transmit:63-74:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:uart.c:uart_transmit:63-74:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:uart.c:uart_transmit:63-74:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:uart.c:uart_transmit:63-74:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:uart.c:uart_transmit:63-74:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:uart.c:uart_transmit:63-74:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:uart.c:uart_transmit:63-74:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:uart.c:uart_transmit:63-74:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:uart.c:uart_transmit:63-74:Arithmetic analysis is not needed.
+Note:fbw.elf:uart.c:uart_transmit:63-74:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Note:fbw.elf:uart.c:uart_transmit:63-74:Time_State for bounds # 3 defined as COMPUTABLE
+Note:fbw.elf:uart.c:uart_transmit:63-74:Freezing bounds # 3
+Note:fbw.elf:main.c:__fp_pscA:157-:No execution bounds known yet.
+Note:fbw.elf:main.c:__fp_pscA:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__fp_pscA:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__fp_pscA:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__fp_pscA:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__fp_pscA:157-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:fbw.elf:main.c:__fp_pscA:157-:Final stack-height from constant propagation for SP:sh=-2
+Note:fbw.elf:main.c:__fp_pscA:157-:Maximum stack-height from constant propagation for SP:0
+Note:fbw.elf:main.c:__fp_pscA:157-:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:fbw.elf:main.c:__fp_pscA:157-:Constant propagation changed nothing.
+Note:fbw.elf:main.c:__fp_pscA:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__fp_pscA:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__fp_pscA:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__fp_pscA:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__fp_pscA:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__fp_pscA:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__fp_pscA:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__fp_pscA:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__fp_pscA:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__fp_pscA:157-:Arithmetic analysis is not needed.
+Note:fbw.elf:main.c:__fp_pscA:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__fp_pscA:157-:Time_State for bounds # 4 defined as COMPUTABLE
+Note:fbw.elf:main.c:__fp_pscA:157-:Freezing bounds # 4
+Note:fbw.elf:main.c:__fp_pscB:157-:No execution bounds known yet.
+Note:fbw.elf:main.c:__fp_pscB:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__fp_pscB:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__fp_pscB:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__fp_pscB:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__fp_pscB:157-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:fbw.elf:main.c:__fp_pscB:157-:Final stack-height from constant propagation for SP:sh=-2
+Note:fbw.elf:main.c:__fp_pscB:157-:Maximum stack-height from constant propagation for SP:0
+Note:fbw.elf:main.c:__fp_pscB:157-:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:fbw.elf:main.c:__fp_pscB:157-:Constant propagation changed nothing.
+Note:fbw.elf:main.c:__fp_pscB:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__fp_pscB:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__fp_pscB:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__fp_pscB:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__fp_pscB:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__fp_pscB:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__fp_pscB:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__fp_pscB:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__fp_pscB:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__fp_pscB:157-:Arithmetic analysis is not needed.
+Note:fbw.elf:main.c:__fp_pscB:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__fp_pscB:157-:Time_State for bounds # 5 defined as COMPUTABLE
+Note:fbw.elf:main.c:__fp_pscB:157-:Freezing bounds # 5
+Note:fbw.elf:main.c:__fp_splitA:157-:No execution bounds known yet.
+Note:fbw.elf:main.c:__fp_splitA:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_splitA:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_splitA:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_splitA:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__fp_splitA:157-:Final stack-height in stack SP is constant for 2 of 2 return points.
+Note:fbw.elf:main.c:__fp_splitA:157-:Final stack-height from constant propagation for SP:sh=-2
+Note:fbw.elf:main.c:__fp_splitA:157-:Maximum stack-height from constant propagation for SP:0
+Note:fbw.elf:main.c:__fp_splitA:157-:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:fbw.elf:main.c:__fp_splitA:157-:Constant propagation changed nothing.
+Note:fbw.elf:main.c:__fp_splitA:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_splitA:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_splitA:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_splitA:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_splitA:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_splitA:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_splitA:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_splitA:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_splitA:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_splitA:157-:Arithmetic analysis is not needed.
+Note:fbw.elf:main.c:__fp_splitA:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_splitA:157-:Time_State for bounds # 6 defined as COMPUTABLE
+Note:fbw.elf:main.c:__fp_splitA:157-:Freezing bounds # 6
+Note:fbw.elf:main.c:__fp_zero:157-:No execution bounds known yet.
+Note:fbw.elf:main.c:__fp_zero:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fp_zero:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fp_zero:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fp_zero:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__fp_zero:157-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:fbw.elf:main.c:__fp_zero:157-:Final stack-height from constant propagation for SP:sh=-2
+Note:fbw.elf:main.c:__fp_zero:157-:Maximum stack-height from constant propagation for SP:0
+Note:fbw.elf:main.c:__fp_zero:157-:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:fbw.elf:main.c:__fp_zero:157-:Constant propagation changed nothing.
+Note:fbw.elf:main.c:__fp_zero:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fp_zero:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fp_zero:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fp_zero:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fp_zero:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fp_zero:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fp_zero:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fp_zero:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fp_zero:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fp_zero:157-:Arithmetic analysis is not needed.
+Note:fbw.elf:main.c:__fp_zero:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fp_zero:157-:Time_State for bounds # 7 defined as COMPUTABLE
+Note:fbw.elf:main.c:__fp_zero:157-:Freezing bounds # 7
+Note:fbw.elf:servo.c:servo_transmit:176-185:No execution bounds known yet.
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:176-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:176-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:176-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:178-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:178-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:181-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:182-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:185:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:185:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:185-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:185-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:185-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:185-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:185-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:185-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_transmit:176-185:Repeating constant propagation.
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Repeating constant propagation.
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Final stack-height in stack SP is constant for 2 of 2 return points.
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Final stack-height from constant propagation for SP:sh=-2
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Maximum stack-height from constant propagation for SP:6
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Take-off stack-height in stack SP is constant for 4 of 4 calls.
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Constant propagation changed nothing.
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:180-182:Loop 1 exits only at its end.
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 21 = uart_transmit at 000B1A) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Arithmetic analysis is not needed.
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Time_State for bounds # 8 defined as COMPUTABLE
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:servo.c:servo_transmit:176-185:Freezing bounds # 8
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Note:fbw.elf:main.c:__fp_split3:157-:No execution bounds known yet.
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:main.c:__fp_split3:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__fp_split3:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__fp_split3:157-:Final stack-height in stack SP is constant for 2 of 2 return points.
+Note:fbw.elf:main.c:__fp_split3:157-:Final stack-height from constant propagation for SP:sh=-2
+Note:fbw.elf:main.c:__fp_split3:157-:Maximum stack-height from constant propagation for SP:2
+Note:fbw.elf:main.c:__fp_split3:157-:Take-off stack-height in stack SP is constant for 1 of 1 calls.
+Note:fbw.elf:main.c:__fp_split3:157-:Constant propagation changed nothing.
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Arithmetic analysis is not needed.
+Note:fbw.elf:main.c:__fp_split3:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__fp_split3:157-:Time_State for bounds # 9 defined as COMPUTABLE
+Note:fbw.elf:main.c:__fp_split3:157-:Freezing bounds # 9
+Note:fbw.elf:main.c:__fixunssfsi:157-:No execution bounds known yet.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Final stack-height in stack SP is constant for 3 of 3 return points.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Final stack-height from constant propagation for SP:sh=-2
+Note:fbw.elf:main.c:__fixunssfsi:157-:Maximum stack-height from constant propagation for SP:2
+Note:fbw.elf:main.c:__fixunssfsi:157-:Take-off stack-height in stack SP is constant for 2 of 2 calls.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Constant propagation changed nothing.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Loop 1 exits only at its end.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 22 = __fp_splitA at 000F68) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 23 = __fp_zero at 000F9C) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Arithmetic analysis is not needed.
+Note:fbw.elf:main.c:__fixunssfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Time_State for bounds # 10 defined as COMPUTABLE
+Note:fbw.elf:main.c:__fixunssfsi:157-:Freezing bounds # 10
+Note:fbw.elf:main.c:__mulsf3x:157-:No execution bounds known yet.
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:main.c:__mulsf3x:157-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:main.c:__mulsf3x:157-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:main.c:__mulsf3x:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__mulsf3x:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__mulsf3x:157-:Final stack-height in stack SP is constant for 4 of 4 return points.
+Note:fbw.elf:main.c:__mulsf3x:157-:Final stack-height from constant propagation for SP:sh=-2
+Note:fbw.elf:main.c:__mulsf3x:157-:Maximum stack-height from constant propagation for SP:2
+Note:fbw.elf:main.c:__mulsf3x:157-:Take-off stack-height in stack SP is constant for 3 of 3 calls.
+Note:fbw.elf:main.c:__mulsf3x:157-:Constant propagation changed nothing.
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Loop 1 exits only at its end.
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Arithmetic analysis is not needed.
+Note:fbw.elf:main.c:__mulsf3x:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3x:157-:Time_State for bounds # 11 defined as COMPUTABLE
+Note:fbw.elf:main.c:__mulsf3x:157-:Freezing bounds # 11
+Note:fbw.elf:main.c:__addsf3x:157-:No execution bounds known yet.
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:main.c:__addsf3x:157-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:main.c:__addsf3x:157-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:main.c:__addsf3x:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__addsf3x:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__addsf3x:157-:Final stack-height in stack SP is constant for 4 of 4 return points.
+Note:fbw.elf:main.c:__addsf3x:157-:Final stack-height from constant propagation for SP:sh=-2
+Note:fbw.elf:main.c:__addsf3x:157-:Maximum stack-height from constant propagation for SP:2
+Note:fbw.elf:main.c:__addsf3x:157-:Take-off stack-height in stack SP is constant for 3 of 3 calls.
+Note:fbw.elf:main.c:__addsf3x:157-:Constant propagation changed nothing.
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Loop 1 exits only at its end.
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 24 = __fp_split3 at 000F58) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 25 = __fp_pscA at 000F1A) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 26 = __fp_pscB at 000F28) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Arithmetic analysis is not needed.
+Note:fbw.elf:main.c:__addsf3x:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3x:157-:Time_State for bounds # 12 defined as COMPUTABLE
+Note:fbw.elf:main.c:__addsf3x:157-:Freezing bounds # 12
+Note:fbw.elf:main.c:__fixsfsi:157-:No execution bounds known yet.
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:main.c:__fixsfsi:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__fixsfsi:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__fixsfsi:157-:Final stack-height in stack SP is constant for 2 of 2 return points.
+Note:fbw.elf:main.c:__fixsfsi:157-:Final stack-height from constant propagation for SP:sh=-2
+Note:fbw.elf:main.c:__fixsfsi:157-:Maximum stack-height from constant propagation for SP:2
+Note:fbw.elf:main.c:__fixsfsi:157-:Take-off stack-height in stack SP is constant for 1 of 1 calls.
+Note:fbw.elf:main.c:__fixsfsi:157-:Constant propagation changed nothing.
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Arithmetic analysis is not needed.
+Note:fbw.elf:main.c:__fixsfsi:157-:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:main.c:__fixsfsi:157-:Time_State for bounds # 13 defined as COMPUTABLE
+Note:fbw.elf:main.c:__fixsfsi:157-:Freezing bounds # 13
+Note:fbw.elf:main.c:__mulsf3:157-:No execution bounds known yet.
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:main.c:__mulsf3:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__mulsf3:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__mulsf3:157-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:fbw.elf:main.c:__mulsf3:157-:Final stack-height from constant propagation for SP:sh=-2
+Note:fbw.elf:main.c:__mulsf3:157-:Maximum stack-height from constant propagation for SP:2
+Note:fbw.elf:main.c:__mulsf3:157-:Take-off stack-height in stack SP is constant for 1 of 1 calls.
+Note:fbw.elf:main.c:__mulsf3:157-:Constant propagation changed nothing.
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 4 = __mulsf3x at 000FC2) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Arithmetic analysis is not needed.
+Note:fbw.elf:main.c:__mulsf3:157-:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:main.c:__mulsf3:157-:Time_State for bounds # 14 defined as COMPUTABLE
+Note:fbw.elf:main.c:__mulsf3:157-:Freezing bounds # 14
+Note:fbw.elf:main.c:__addsf3:157-:No execution bounds known yet.
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:main.c:__addsf3:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__addsf3:157-:Repeating constant propagation.
+Note:fbw.elf:main.c:__addsf3:157-:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:fbw.elf:main.c:__addsf3:157-:Final stack-height from constant propagation for SP:sh=-2
+Note:fbw.elf:main.c:__addsf3:157-:Maximum stack-height from constant propagation for SP:2
+Note:fbw.elf:main.c:__addsf3:157-:Take-off stack-height in stack SP is constant for 1 of 1 calls.
+Note:fbw.elf:main.c:__addsf3:157-:Constant propagation changed nothing.
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 7 = __addsf3x at 000D86) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Arithmetic analysis is not needed.
+Note:fbw.elf:main.c:__addsf3:157-:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:main.c:__addsf3:157-:Time_State for bounds # 15 defined as COMPUTABLE
+Note:fbw.elf:main.c:__addsf3:157-:Freezing bounds # 15
+Note:fbw.elf:servo.c:servo_set:194-196:No execution bounds known yet.
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:servo.c:servo_set@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:servo_set@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:servo_set@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:servo_set@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:servo_set@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:servo_set@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:servo.c:servo_set:194:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_set:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_set:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_set:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_set:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_set:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_set:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_set:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_set:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_set:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_set:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_set:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:servo_set:195-:Refine (Assignment) bounded a pointer.
+Warning:fbw.elf:servo.c:servo_set@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:servo_set@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:servo_set@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:servo_set@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:servo_set@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:servo_set@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Note:fbw.elf:servo.c:servo_set:194-196:Repeating constant propagation.
+Note:fbw.elf:servo.c:servo_set:194-196:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:fbw.elf:servo.c:servo_set:194-196:Final stack-height from constant propagation for SP:sh
+Note:fbw.elf:servo.c:servo_set:194-196:Maximum stack-height from constant propagation for SP:+inf
+Note:fbw.elf:servo.c:servo_set:194-196:Take-off stack-height in stack SP is constant for 1 of 21 calls.
+Note:fbw.elf:servo.c:servo_set:194-196:Constant propagation changed nothing.
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Arithmetic analysis is not needed.
+Note:fbw.elf:servo.c:servo_set:194-196:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:servo.c:servo_set:194-196:Time_State for bounds # 16 defined as COMPUTABLE
+Note:fbw.elf:servo.c:servo_set:194-196:Freezing bounds # 16
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:No execution bounds known yet.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104-:Large combined 16-bit literal 55936 taken as signed = -9600
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104-:Large combined 16-bit literal 55845 taken as signed = -9691
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104-:Large combined 16-bit literal 55936 taken as signed = -9600
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104-:Large combined 16-bit literal 55936 taken as signed = -9600
+Warning:fbw.elf:ppm.c:last_radio_from_ppm:104-:Large combined 16-bit literal 55936 taken as signed = -9600
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-:Refine (Assignment) bounded a pointer.
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Repeating constant propagation.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:104:Refine (Assignment) bounded a pointer.
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:ppm.c:last_radio_from_ppm@104-=>__floatsisf:104-:Final effect on stack SP not exactly known:sh
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Repeating constant propagation.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Final stack-height from constant propagation for SP:sh
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Maximum stack-height from constant propagation for SP:+inf
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Take-off stack-height in stack SP is constant for 0 of 28 calls.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Constant propagation changed nothing.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Arithmetic analysis is not needed.
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Time_State for bounds # 17 defined as COMPUTABLE
+Note:fbw.elf:ppm.c:last_radio_from_ppm:103-105:Freezing bounds # 17
+Note:fbw.elf:main.c:check_failsafe_task:194-198:No execution bounds known yet.
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Warning:fbw.elf:servo.c:check_failsafe_task@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:check_failsafe_task@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:check_failsafe_task@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:check_failsafe_task@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:check_failsafe_task@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:check_failsafe_task@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:servo.c:check_failsafe_task:194:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:194-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Note:fbw.elf:servo.c:check_failsafe_task:195-:Refine (Assignment) bounded a pointer.
+Warning:fbw.elf:servo.c:check_failsafe_task@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:check_failsafe_task@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:check_failsafe_task@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:check_failsafe_task@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:check_failsafe_task@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:servo.c:check_failsafe_task@195-=>__floatsisf:195-:Final effect on stack SP not exactly known:sh
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Repeating constant propagation.
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Final stack-height in stack SP is constant for 2 of 3 return points.
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Final stack-height from constant propagation for SP:sh
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Maximum stack-height from constant propagation for SP:+inf
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Take-off stack-height in stack SP is constant for 1 of 21 calls.
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Constant propagation changed nothing.
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 11 = __floatsisf at 000E92) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 20 = __fixsfsi at 000E2C) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Arithmetic analysis is not needed.
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Time_State for bounds # 18 defined as COMPUTABLE
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:check_failsafe_task:194-198:Freezing bounds # 18
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:No execution bounds known yet.
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 10 = __floatunsisf at 000E8E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 10 = __floatunsisf at 000E8E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Warning:fbw.elf:main.c:send_data_to_autopilot_task@93-=>__floatunsisf:93-:Final effect on stack SP not exactly known:sh
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 10 = __floatunsisf at 000E8E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:93-:Refine (Assignment) bounded a pointer.
+Warning:fbw.elf:main.c:send_data_to_autopilot_task@93-=>__floatunsisf:93-:Final effect on stack SP not exactly known:sh
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Repeating constant propagation.
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Final stack-height in stack SP is constant for 1 of 2 return points.
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Final stack-height from constant propagation for SP:sh
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Maximum stack-height from constant propagation for SP:+inf
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Take-off stack-height in stack SP is constant for 1 of 6 calls.
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Constant propagation changed nothing.
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 10 = __floatunsisf at 000E8E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 10 = __floatunsisf at 000E8E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-84:Loop 1 exits only at its end.
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 10 = __floatunsisf at 000E8E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 10 = __floatunsisf at 000E8E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 17 = __addsf3 at 000D64) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 16 = __mulsf3 at 000FAA) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 5 = __fixunssfsi at 000E36) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Arithmetic analysis is not needed.
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Time_State for bounds # 19 defined as COMPUTABLE
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:send_data_to_autopilot_task:83-105:Freezing bounds # 19
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:No execution bounds known yet.
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Warning:fbw.elf:main.c:check_mega128_values_task@210-=>servo_set:210-:Final effect on stack SP not exactly known:sh
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:210-:Refine (Assignment) bounded a pointer.
+Warning:fbw.elf:main.c:check_mega128_values_task@210-=>servo_set:210-:Final effect on stack SP not exactly known:sh
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Repeating constant propagation.
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Final stack-height from constant propagation for SP:sh
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Maximum stack-height from constant propagation for SP:+inf
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Take-off stack-height in stack SP is constant for 1 of 1 calls.
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Constant propagation changed nothing.
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Arithmetic analysis is not needed.
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Time_State for bounds # 20 defined as COMPUTABLE
+Note:fbw.elf:main.c:check_mega128_values_task:202-214:Freezing bounds # 20
+Note:fbw.elf:main.c:test_ppm_task:162-190:No execution bounds known yet.
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Warning:fbw.elf:main.c:test_ppm_task@170=>last_radio_from_ppm:170:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:main.c:test_ppm_task@177-=>servo_set:177-:Final effect on stack SP not exactly known:sh
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:170:Refine (Assignment) bounded a pointer.
+Warning:fbw.elf:main.c:test_ppm_task@170=>last_radio_from_ppm:170:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:main.c:test_ppm_task@177-=>servo_set:177-:Final effect on stack SP not exactly known:sh
+Note:fbw.elf:main.c:test_ppm_task:162-190:Repeating constant propagation.
+Note:fbw.elf:main.c:test_ppm_task:162-190:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:fbw.elf:main.c:test_ppm_task:162-190:Final stack-height from constant propagation for SP:sh
+Note:fbw.elf:main.c:test_ppm_task:162-190:Maximum stack-height from constant propagation for SP:+inf
+Note:fbw.elf:main.c:test_ppm_task:162-190:Take-off stack-height in stack SP is constant for 1 of 2 calls.
+Note:fbw.elf:main.c:test_ppm_task:162-190:Constant propagation changed nothing.
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 18 = ppm.c|last_radio_from_ppm at 000304) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 19 = servo.c|servo_set at 0007FE) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Arithmetic analysis is not needed.
+Note:fbw.elf:main.c:test_ppm_task:162-190:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Time_State for bounds # 21 defined as COMPUTABLE
+Note:fbw.elf:main.c:test_ppm_task:162-190:Freezing bounds # 21
+Note:fbw.elf:main.c:periodic_task:110-136:No execution bounds known yet.
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Warning:fbw.elf:main.c:periodic_task@110-111=>test_ppm_task:110-111:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:main.c:periodic_task@112=>check_mega128_values_task:112:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:main.c:periodic_task@113=>send_data_to_autopilot_task:113:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:main.c:periodic_task@114=>check_failsafe_task:114:Final effect on stack SP not exactly known:sh
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 12 = main.c|periodic_task at 0001F0) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 12 = main.c|periodic_task at 0001F0) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 12 = main.c|periodic_task at 0001F0) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-111:Refine (Assignment) bounded a pointer.
+Warning:fbw.elf:main.c:periodic_task@110-111=>test_ppm_task:110-111:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:main.c:periodic_task@112=>check_mega128_values_task:112:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:main.c:periodic_task@113=>send_data_to_autopilot_task:113:Final effect on stack SP not exactly known:sh
+Warning:fbw.elf:main.c:periodic_task@114=>check_failsafe_task:114:Final effect on stack SP not exactly known:sh
+Note:fbw.elf:main.c:periodic_task:110-136:Repeating constant propagation.
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Final stack-height in stack SP is constant for 0 of 1 return points.
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Final stack-height from constant propagation for SP:sh
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Maximum stack-height from constant propagation for SP:+inf
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Take-off stack-height in stack SP is constant for 1 of 5 calls.
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Constant propagation changed nothing.
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 12 = main.c|periodic_task at 0001F0) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 12 = main.c|periodic_task at 0001F0) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 12 = main.c|periodic_task at 0001F0) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 12 = main.c|periodic_task at 0001F0) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 12 = main.c|periodic_task at 0001F0) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 12 = main.c|periodic_task at 0001F0) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 12 = main.c|periodic_task at 0001F0) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 13 = main.c|test_ppm_task at 000102) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 14 = main.c|check_mega128_values_task at 0001B6) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 8 = send_data_to_autopilot_task at 00005E) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 15 = main.c|check_failsafe_task at 000190) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 9 = servo_transmit at 0007C8) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 12 = main.c|periodic_task at 0001F0) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 12 = main.c|periodic_task at 0001F0) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Arithmetic analysis is not needed.
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Unused (# 12 = main.c|periodic_task at 0001F0) is FALSE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Time_State for bounds # 22 defined as COMPUTABLE
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf:main.c:periodic_task:110-136:Freezing bounds # 22
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Note:fbw.elf::::Target-specific additional analysis starts.
+Note:fbw.elf::::Generic worst-case path and time analysis starts.
+Wcet:fbw.elf:main.c:__fp_splitA:157-:16
+Wcet:fbw.elf:main.c:__fp_split3:157-:35
+Wcet:fbw.elf:main.c:__fp_pscA:157-:10
+Wcet:fbw.elf:main.c:__fp_pscB:157-:10
+Wcet:fbw.elf:main.c:__mulsf3x:157-:884
+Wcet:fbw.elf:main.c:__mulsf3:157-:909
+Wcet:fbw.elf:main.c:__fp_zero:157-:10
+Wcet:fbw.elf:main.c:__fixunssfsi:157-:936
+Wcet:fbw.elf:main.c:__fixsfsi:157-:952
+Wcet:fbw.elf:main.c:__addsf3x:157-:2055
+Wcet:fbw.elf:main.c:__addsf3:157-:2082
+Wcet:fbw.elf:ppm.c:last_radio_from_ppm:103-105:22880
+Wcet:fbw.elf:servo.c:servo_set:194-196:15785
+Wcet:fbw.elf:main.c:test_ppm_task:162-190:38733
+Wcet:fbw.elf:main.c:check_mega128_values_task:202-214:15819
+Wcet:fbw.elf:main.c:send_data_to_autopilot_task:83-105:6033
+Also:fbw.elf:spi.c:send_data_to_autopilot_task:51-56:
+Wcet:fbw.elf:main.c:check_failsafe_task:194-198:15800
+Also:fbw.elf:servo.c:check_failsafe_task:194-196:
+Wcet:fbw.elf:uart.c:uart_transmit:63-74:27
+Wcet:fbw.elf:servo.c:servo_transmit:176-185:839
+Also:fbw.elf:uart.c:servo_transmit:63-74:
+Wcet:fbw.elf:main.c:periodic_task:110-136:77293
+Also:fbw.elf:timer.h:periodic_task:86-89:
+Analysis_Time:fbw.elf::::0.442

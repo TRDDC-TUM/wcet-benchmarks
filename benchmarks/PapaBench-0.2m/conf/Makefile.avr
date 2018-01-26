@@ -76,7 +76,7 @@ CFLAGS		=							\
 	-Wall 								\
 	-Wstrict-prototypes						\
 	$(LOCAL_CFLAGS)							\
-	-O2								\
+	-g -gdwarf-3							\
 
 LDFLAGS		=	-lm						\
 

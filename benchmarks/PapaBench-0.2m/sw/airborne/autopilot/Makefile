@@ -25,7 +25,7 @@ FBW=../fly_by_wire
 
 
 #LOCAL_CFLAGS= $(CTL_BRD_FLAGS) $(GPS_FLAGS) $(SIMUL_FLAGS) -D __AVR_ATmega128__
-LOCAL_CFLAGS= $(CTL_BRD_FLAGS) $(GPS_FLAGS) $(SIMUL_FLAGS) -mmcu=atmega128
+LOCAL_CFLAGS= $(CTL_BRD_FLAGS) $(GPS_FLAGS) $(SIMUL_FLAGS) -mmcu=atmega128 -O0
 LOCAL_LDFLAGS=-mmcu=atmega128
 
 VARINCLUDE=../../var/include
@@ -82,10 +82,10 @@ if_calib.o : $(VARINCLUDE)/inflight_calib.h
 
 TIME=timeout -s INT 10m /usr/bin/time -v
 wcet.log: $(TARGET).elf
-	$(TIME) boundt_avr -device=ATmega128 -form=elf -no_stack -loop first -elf_sym -anatime -v $< main | tee $@
+	$(TIME) boundt_avr -device=ATmega128 -form=elf -no_stack -loop first -elf_sym -anatime -no_arithmetic -assert loopinfo.txt -v $< periodic_task | tee $@
 	
-sourceinfo.csv: $(TARGET).elf
-	boundt_avr -device=ATmega128 -form=elf -no_stack -dump -elf_sym -sourceinfo sourceinfo.csv $< main
+sourceinfo.csv.completed: $(TARGET).elf
+	~/async/autosafe/trunk/tum/wcet-cbmc/scripts/analyze_binary.py --target=avr --device=ATmega128 -o $@ $(TARGET).elf
 
 clean : avr_clean
 	rm -f *.out *.cm* messages.h flight_plan.h ubx_protocol.h inflight_calib.h wcet.log sourceinfo.csv

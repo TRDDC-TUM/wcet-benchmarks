@@ -1,0 +1,51 @@
+Error:fbw.elf:loopinfo.txt:uart_transmit:50:Loop matches too few (0) entities in uart_transmit
+Error:fbw.elf:loopinfo.txt:__fp_pscA:50:Loop matches too few (0) entities in __fp_pscA
+Error:fbw.elf:loopinfo.txt:__fp_pscB:50:Loop matches too few (0) entities in __fp_pscB
+Error:fbw.elf:loopinfo.txt:__fp_splitA:50:Loop matches too few (0) entities in __fp_splitA
+Error:fbw.elf:loopinfo.txt:__fp_zero:50:Loop matches too few (0) entities in __fp_zero
+Error:fbw.elf:loopinfo.txt:servo_transmit:50:Loop matches too few (0) entities in servo_transmit
+Error:fbw.elf:loopinfo.txt:__fp_split3:50:Loop matches too few (0) entities in __fp_split3
+Error:fbw.elf:loopinfo.txt:__fixunssfsi:44:Loop matches too many (3) entities in __fixunssfsi
+Error:fbw.elf:loopinfo.txt:__fixunssfsi:44:Match 1:main.c::157-
+Error:fbw.elf:loopinfo.txt:__fixunssfsi:44:Match 2:main.c::157-
+Error:fbw.elf:loopinfo.txt:__fixunssfsi:44:Match 3:main.c::157-
+Error:fbw.elf:loopinfo.txt:__fixunssfsi:50:Loop matches too few (0) entities in __fixunssfsi
+Error:fbw.elf:loopinfo.txt:__mulsf3x:50:Loop matches too few (0) entities in __mulsf3x
+Error:fbw.elf:loopinfo.txt:__addsf3x:50:Loop matches too few (0) entities in __addsf3x
+Error:fbw.elf:loopinfo.txt:__addsf3x:66:Loop matches too many (3) entities in __addsf3x
+Error:fbw.elf:loopinfo.txt:__addsf3x:66:Match 1:main.c::157-
+Error:fbw.elf:loopinfo.txt:__addsf3x:66:Match 2:main.c::157-
+Error:fbw.elf:loopinfo.txt:__addsf3x:66:Match 3:main.c::157-
+Error:fbw.elf:loopinfo.txt:__fixsfsi:50:Loop matches too few (0) entities in __fixsfsi
+Error:fbw.elf:loopinfo.txt:__mulsf3:50:Loop matches too few (0) entities in __mulsf3
+Error:fbw.elf:loopinfo.txt:__addsf3:50:Loop matches too few (0) entities in __addsf3
+Error:fbw.elf:loopinfo.txt:servo_set:50:Loop matches too few (0) entities in servo_set
+Error:fbw.elf:loopinfo.txt:last_radio_from_ppm:50:Loop matches too few (0) entities in last_radio_from_ppm
+Error:fbw.elf:loopinfo.txt:check_failsafe_task:50:Loop matches too few (0) entities in check_failsafe_task
+Error:fbw.elf:loopinfo.txt:send_data_to_autopilot_task:50:Loop matches too few (0) entities in send_data_to_autopilot_task
+Error:fbw.elf:loopinfo.txt:check_mega128_values_task:50:Loop matches too few (0) entities in check_mega128_values_task
+Error:fbw.elf:loopinfo.txt:test_ppm_task:50:Loop matches too few (0) entities in test_ppm_task
+Error:fbw.elf:loopinfo.txt:periodic_task:50:Loop matches too few (0) entities in periodic_task
+	Command being timed: "boundt_avr -device=ATmega163 -form=elf -no_stack -loop first -elf_sym -anatime -imp limit=hull -no_arithmetic -assert loopinfo.txt -v fbw.elf periodic_task"
+	User time (seconds): 0.34
+	System time (seconds): 0.02
+	Percent of CPU this job got: 64%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 12652
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 11917
+	Voluntary context switches: 254
+	Involuntary context switches: 161
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 168
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

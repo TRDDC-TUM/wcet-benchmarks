@@ -70,6 +70,7 @@ CFLAGS += -Wa,-adhlns=$(<:.c=.lst)
 CFLAGS += $(patsubst %,-I%,$(EXTRAINCDIRS))
 CFLAGS += $(CSTANDARD)
 CFLAGS += -DF_OSC=$(F_OSC)
+#CFLAGS += -fprofile-generate
 
 # Assembler flags.
 #  -Wa,...:   tell GCC to pass this to the assembler.
@@ -101,6 +102,7 @@ LDFLAGS = -Wl,-Map=$(TARGET).map,--cref
 LDFLAGS += $(EXTMEMOPTS)
 #LDFLAGS += $(PRINTF_LIB) $(SCANF_LIB) $(MATH_LIB)
 LDFLAGS += -gc-sections -lm
+#LDFLAGS += -lgcov
 
 
 # Define all object files.

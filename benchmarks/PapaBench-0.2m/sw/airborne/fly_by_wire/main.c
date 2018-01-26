@@ -106,22 +106,7 @@ void send_data_to_autopilot_task(void)//added 04-05-06
    }
 }
 
-int main( void )
-{
-  uart_init_tx();
-  uart_print_string("FBW Booting $Id: main.c,v 1.1 2006/06/15 09:27:07 casse Exp $\n");
-
-#ifndef CTL_BRD_V1_1
-  adc_init();
-  adc_buf_channel(3, &vsupply_adc_buf);
-  adc_buf_channel(6, &vservos_adc_buf);
-#endif
-  timer_init();
-  servo_init();
-  ppm_init();
-  spi_init();
-  //sei(); //FN
-  while( 1 ) 
+static void __attribute__ ((noinline)) periodic_task(void)
   {
     test_ppm_task(); 	
     check_mega128_values_task();
@@ -150,6 +135,26 @@ int main( void )
       if (time_since_last_ppm < REALLY_STALLED_TIME)
 	time_since_last_ppm++;
     }
+}
+
+int main( void )
+{
+  uart_init_tx();
+  uart_print_string("FBW Booting $Id: main.c,v 1.1 2006/06/15 09:27:07 casse Exp $\n");
+
+#ifndef CTL_BRD_V1_1
+  adc_init();
+  adc_buf_channel(3, &vsupply_adc_buf);
+  adc_buf_channel(6, &vservos_adc_buf);
+#endif
+  timer_init();
+  servo_init();
+  ppm_init();
+  spi_init();
+  //sei(); //FN
+  while( 1 ) 
+  {
+    periodic_task();
   } 
   return 0;
 }

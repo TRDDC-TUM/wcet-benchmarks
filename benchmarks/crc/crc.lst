@@ -7,24 +7,25 @@
    7               	__zero_reg__ = 1
    8               		.text
    9               	.Ltext0:
-  10               	.global	lin
-  11               		.data
-  14               	lin:
-  15 0000 6173 6466 		.string	"asdffeagewaHAFEFaeDsFEawFdsFaefaeerdjgp"
-  15      6665 6167 
-  15      6577 6148 
-  15      4146 4546 
-  15      6165 4473 
-  16 0028 0000 0000 		.zero	216
-  16      0000 0000 
-  16      0000 0000 
-  16      0000 0000 
-  16      0000 0000 
-  17               		.text
-  18               	.global	icrc1
-  20               	icrc1:
-  21               	.LFB0:
-  22               		.file 1 "crc.c"
+  10               		.cfi_sections	.debug_frame
+  11               	.global	lin
+  12               		.data
+  15               	lin:
+  16 0000 6173 6466 		.string	"asdffeagewaHAFEFaeDsFEawFdsFaefaeerdjgp"
+  16      6665 6167 
+  16      6577 6148 
+  16      4146 4546 
+  16      6165 4473 
+  17 0028 0000 0000 		.zero	216
+  17      0000 0000 
+  17      0000 0000 
+  17      0000 0000 
+  17      0000 0000 
+  18               		.text
+  19               	.global	icrc1
+  21               	icrc1:
+  22               	.LFB0:
+  23               		.file 1 "crc.c"
    1:crc.c         **** /* $Id: crc.c,v 1.2 2005/04/04 11:34:58 csg Exp $ */
    2:crc.c         **** 
    3:crc.c         **** /*************************************************************************/
@@ -83,682 +84,712 @@
   56:crc.c         **** 
   57:crc.c         **** unsigned short icrc1(unsigned short crc, unsigned char onech)
   58:crc.c         **** {
-  23               		.loc 1 58 0
-  24 0000 CF93      		push r28
-  25               	.LCFI0:
-  26 0002 DF93      		push r29
-  27               	.LCFI1:
-  28 0004 CDB7      		in r28,__SP_L__
-  29 0006 DEB7      		in r29,__SP_H__
-  30               	.LCFI2:
-  31 0008 2797      		sbiw r28,7
-  32               	.LCFI3:
-  33 000a 0FB6      		in __tmp_reg__,__SREG__
-  34 000c F894      		cli
-  35 000e DEBF      		out __SP_H__,r29
-  36 0010 0FBE      		out __SREG__,__tmp_reg__
-  37 0012 CDBF      		out __SP_L__,r28
-  38               	/* prologue: function */
-  39               	/* frame size = 7 */
-  40               	/* stack size = 9 */
-  41               	.L__stack_usage = 9
-  42 0014 9E83      		std Y+6,r25
-  43 0016 8D83      		std Y+5,r24
-  44 0018 6F83      		std Y+7,r22
+  24               		.loc 1 58 0
+  25               		.cfi_startproc
+  26 0000 CF93      		push r28
+  27               	.LCFI0:
+  28               		.cfi_def_cfa_offset 3
+  29               		.cfi_offset 28, -2
+  30 0002 DF93      		push r29
+  31               	.LCFI1:
+  32               		.cfi_def_cfa_offset 4
+  33               		.cfi_offset 29, -3
+  34 0004 00D0      		rcall .
+  35 0006 00D0      		rcall .
+  36 0008 00D0      		rcall .
+  37 000a 1F92      		push __zero_reg__
+  38               	.LCFI2:
+  39               		.cfi_def_cfa_offset 11
+  40 000c CDB7      		in r28,__SP_L__
+  41 000e DEB7      		in r29,__SP_H__
+  42               	.LCFI3:
+  43               		.cfi_def_cfa_register 28
+  44               	/* prologue: function */
+  45               	/* frame size = 7 */
+  46               	/* stack size = 9 */
+  47               	.L__stack_usage = 9
+  48 0010 9E83      		std Y+6,r25
+  49 0012 8D83      		std Y+5,r24
+  50 0014 6F83      		std Y+7,r22
   59:crc.c         **** 	int i;
   60:crc.c         **** 	unsigned short ans=(crc^onech << 8);
-  45               		.loc 1 60 0
-  46 001a 8F81      		ldd r24,Y+7
-  47 001c 882F      		mov r24,r24
-  48 001e 90E0      		ldi r25,0
-  49 0020 982F      		mov r25,r24
-  50 0022 8827      		clr r24
-  51 0024 9C01      		movw r18,r24
-  52 0026 8D81      		ldd r24,Y+5
-  53 0028 9E81      		ldd r25,Y+6
-  54 002a 8227      		eor r24,r18
-  55 002c 9327      		eor r25,r19
-  56 002e 9C83      		std Y+4,r25
-  57 0030 8B83      		std Y+3,r24
+  51               		.loc 1 60 0
+  52 0016 8F81      		ldd r24,Y+7
+  53 0018 882F      		mov r24,r24
+  54 001a 90E0      		ldi r25,0
+  55 001c 982F      		mov r25,r24
+  56 001e 8827      		clr r24
+  57 0020 9C01      		movw r18,r24
+  58 0022 8D81      		ldd r24,Y+5
+  59 0024 9E81      		ldd r25,Y+6
+  60 0026 8227      		eor r24,r18
+  61 0028 9327      		eor r25,r19
+  62 002a 9C83      		std Y+4,r25
+  63 002c 8B83      		std Y+3,r24
   61:crc.c         **** 
   62:crc.c         **** 	for (i=0;i<8;i++) {
-  58               		.loc 1 62 0
-  59 0032 1A82      		std Y+2,__zero_reg__
-  60 0034 1982      		std Y+1,__zero_reg__
-  61 0036 00C0      		rjmp .L2
-  62               	.L5:
+  64               		.loc 1 62 0
+  65 002e 1A82      		std Y+2,__zero_reg__
+  66 0030 1982      		std Y+1,__zero_reg__
+  67 0032 00C0      		rjmp .L2
+  68               	.L5:
   63:crc.c         **** 		if (ans & 0x8000)
-  63               		.loc 1 63 0
-  64 0038 8B81      		ldd r24,Y+3
-  65 003a 9C81      		ldd r25,Y+4
-  66 003c 9923      		tst r25
-  67 003e 04F4      		brge .L3
+  69               		.loc 1 63 0
+  70 0034 8B81      		ldd r24,Y+3
+  71 0036 9C81      		ldd r25,Y+4
+  72 0038 9923      		tst r25
+  73 003a 04F4      		brge .L3
   64:crc.c         **** 			ans = (ans <<= 1) ^ 4129;
-  68               		.loc 1 64 0
-  69 0040 8B81      		ldd r24,Y+3
-  70 0042 9C81      		ldd r25,Y+4
-  71 0044 880F      		lsl r24
-  72 0046 991F      		rol r25
-  73 0048 9C83      		std Y+4,r25
-  74 004a 8B83      		std Y+3,r24
-  75 004c 8B81      		ldd r24,Y+3
-  76 004e 9C81      		ldd r25,Y+4
-  77 0050 21E2      		ldi r18,33
-  78 0052 8227      		eor r24,r18
-  79 0054 20E1      		ldi r18,16
-  80 0056 9227      		eor r25,r18
-  81 0058 9C83      		std Y+4,r25
-  82 005a 8B83      		std Y+3,r24
-  83 005c 00C0      		rjmp .L4
-  84               	.L3:
+  74               		.loc 1 64 0
+  75 003c 8B81      		ldd r24,Y+3
+  76 003e 9C81      		ldd r25,Y+4
+  77 0040 880F      		lsl r24
+  78 0042 991F      		rol r25
+  79 0044 9C83      		std Y+4,r25
+  80 0046 8B83      		std Y+3,r24
+  81 0048 8B81      		ldd r24,Y+3
+  82 004a 9C81      		ldd r25,Y+4
+  83 004c 21E2      		ldi r18,33
+  84 004e 8227      		eor r24,r18
+  85 0050 20E1      		ldi r18,16
+  86 0052 9227      		eor r25,r18
+  87 0054 9C83      		std Y+4,r25
+  88 0056 8B83      		std Y+3,r24
+  89 0058 00C0      		rjmp .L4
+  90               	.L3:
   65:crc.c         **** 		else
   66:crc.c         **** 			ans <<= 1;
-  85               		.loc 1 66 0
-  86 005e 8B81      		ldd r24,Y+3
-  87 0060 9C81      		ldd r25,Y+4
-  88 0062 880F      		lsl r24
-  89 0064 991F      		rol r25
-  90 0066 9C83      		std Y+4,r25
-  91 0068 8B83      		std Y+3,r24
-  92               	.L4:
-  62:crc.c         **** 	for (i=0;i<8;i++) {
-  93               		.loc 1 62 0
-  94 006a 8981      		ldd r24,Y+1
-  95 006c 9A81      		ldd r25,Y+2
-  96 006e 0196      		adiw r24,1
-  97 0070 9A83      		std Y+2,r25
-  98 0072 8983      		std Y+1,r24
-  99               	.L2:
-  62:crc.c         **** 	for (i=0;i<8;i++) {
- 100               		.loc 1 62 0 is_stmt 0 discriminator 1
- 101 0074 8981      		ldd r24,Y+1
- 102 0076 9A81      		ldd r25,Y+2
- 103 0078 8830      		cpi r24,8
- 104 007a 9105      		cpc r25,__zero_reg__
- 105 007c 04F0      		brlt .L5
+  91               		.loc 1 66 0
+  92 005a 8B81      		ldd r24,Y+3
+  93 005c 9C81      		ldd r25,Y+4
+  94 005e 880F      		lsl r24
+  95 0060 991F      		rol r25
+  96 0062 9C83      		std Y+4,r25
+  97 0064 8B83      		std Y+3,r24
+  98               	.L4:
+  62:crc.c         **** 		if (ans & 0x8000)
+  99               		.loc 1 62 0 discriminator 2
+ 100 0066 8981      		ldd r24,Y+1
+ 101 0068 9A81      		ldd r25,Y+2
+ 102 006a 0196      		adiw r24,1
+ 103 006c 9A83      		std Y+2,r25
+ 104 006e 8983      		std Y+1,r24
+ 105               	.L2:
+  62:crc.c         **** 		if (ans & 0x8000)
+ 106               		.loc 1 62 0 is_stmt 0 discriminator 1
+ 107 0070 8981      		ldd r24,Y+1
+ 108 0072 9A81      		ldd r25,Y+2
+ 109 0074 0897      		sbiw r24,8
+ 110 0076 04F0      		brlt .L5
   67:crc.c         **** 	}
   68:crc.c         **** 	return ans;
- 106               		.loc 1 68 0 is_stmt 1
- 107 007e 8B81      		ldd r24,Y+3
- 108 0080 9C81      		ldd r25,Y+4
- 109               	/* epilogue start */
+ 111               		.loc 1 68 0 is_stmt 1
+ 112 0078 8B81      		ldd r24,Y+3
+ 113 007a 9C81      		ldd r25,Y+4
+ 114               	/* epilogue start */
   69:crc.c         **** }
- 110               		.loc 1 69 0
- 111 0082 2796      		adiw r28,7
- 112 0084 0FB6      		in __tmp_reg__,__SREG__
- 113 0086 F894      		cli
- 114 0088 DEBF      		out __SP_H__,r29
- 115 008a 0FBE      		out __SREG__,__tmp_reg__
- 116 008c CDBF      		out __SP_L__,r28
- 117 008e DF91      		pop r29
- 118 0090 CF91      		pop r28
- 119 0092 0895      		ret
- 120               	.LFE0:
- 122               	.global	icrc
- 124               	icrc:
- 125               	.LFB1:
+ 115               		.loc 1 69 0
+ 116 007c 2796      		adiw r28,7
+ 117 007e 0FB6      		in __tmp_reg__,__SREG__
+ 118 0080 F894      		cli
+ 119 0082 DEBF      		out __SP_H__,r29
+ 120 0084 0FBE      		out __SREG__,__tmp_reg__
+ 121 0086 CDBF      		out __SP_L__,r28
+ 122 0088 DF91      		pop r29
+ 123 008a CF91      		pop r28
+ 124 008c 0895      		ret
+ 125               		.cfi_endproc
+ 126               	.LFE0:
+ 128               	.global	icrc
+ 130               	icrc:
+ 131               	.LFB1:
   70:crc.c         **** 
   71:crc.c         **** unsigned short icrc(unsigned short crc, unsigned long len,
   72:crc.c         **** 		    short jinit, int jrev)
   73:crc.c         **** {
- 126               		.loc 1 73 0
- 127 0094 0F93      		push r16
- 128               	.LCFI4:
- 129 0096 1F93      		push r17
- 130               	.LCFI5:
- 131 0098 CF93      		push r28
- 132               	.LCFI6:
- 133 009a DF93      		push r29
- 134               	.LCFI7:
- 135 009c CDB7      		in r28,__SP_L__
- 136 009e DEB7      		in r29,__SP_H__
- 137               	.LCFI8:
- 138 00a0 6297      		sbiw r28,18
- 139               	.LCFI9:
- 140 00a2 0FB6      		in __tmp_reg__,__SREG__
- 141 00a4 F894      		cli
- 142 00a6 DEBF      		out __SP_H__,r29
- 143 00a8 0FBE      		out __SREG__,__tmp_reg__
- 144 00aa CDBF      		out __SP_L__,r28
- 145               	/* prologue: function */
- 146               	/* frame size = 18 */
- 147               	/* stack size = 22 */
- 148               	.L__stack_usage = 22
- 149 00ac 9A87      		std Y+10,r25
- 150 00ae 8987      		std Y+9,r24
- 151 00b0 4B87      		std Y+11,r20
- 152 00b2 5C87      		std Y+12,r21
- 153 00b4 6D87      		std Y+13,r22
- 154 00b6 7E87      		std Y+14,r23
- 155 00b8 388B      		std Y+16,r19
- 156 00ba 2F87      		std Y+15,r18
- 157 00bc 1A8B      		std Y+18,r17
- 158 00be 098B      		std Y+17,r16
+ 132               		.loc 1 73 0
+ 133               		.cfi_startproc
+ 134 008e 0F93      		push r16
+ 135               	.LCFI4:
+ 136               		.cfi_def_cfa_offset 3
+ 137               		.cfi_offset 16, -2
+ 138 0090 1F93      		push r17
+ 139               	.LCFI5:
+ 140               		.cfi_def_cfa_offset 4
+ 141               		.cfi_offset 17, -3
+ 142 0092 CF93      		push r28
+ 143               	.LCFI6:
+ 144               		.cfi_def_cfa_offset 5
+ 145               		.cfi_offset 28, -4
+ 146 0094 DF93      		push r29
+ 147               	.LCFI7:
+ 148               		.cfi_def_cfa_offset 6
+ 149               		.cfi_offset 29, -5
+ 150 0096 CDB7      		in r28,__SP_L__
+ 151 0098 DEB7      		in r29,__SP_H__
+ 152               	.LCFI8:
+ 153               		.cfi_def_cfa_register 28
+ 154 009a 6297      		sbiw r28,18
+ 155               	.LCFI9:
+ 156               		.cfi_def_cfa_offset 24
+ 157 009c 0FB6      		in __tmp_reg__,__SREG__
+ 158 009e F894      		cli
+ 159 00a0 DEBF      		out __SP_H__,r29
+ 160 00a2 0FBE      		out __SREG__,__tmp_reg__
+ 161 00a4 CDBF      		out __SP_L__,r28
+ 162               	/* prologue: function */
+ 163               	/* frame size = 18 */
+ 164               	/* stack size = 22 */
+ 165               	.L__stack_usage = 22
+ 166 00a6 9A87      		std Y+10,r25
+ 167 00a8 8987      		std Y+9,r24
+ 168 00aa 4B87      		std Y+11,r20
+ 169 00ac 5C87      		std Y+12,r21
+ 170 00ae 6D87      		std Y+13,r22
+ 171 00b0 7E87      		std Y+14,r23
+ 172 00b2 388B      		std Y+16,r19
+ 173 00b4 2F87      		std Y+15,r18
+ 174 00b6 1A8B      		std Y+18,r17
+ 175 00b8 098B      		std Y+17,r16
   74:crc.c         ****   unsigned short icrc1(unsigned short crc, unsigned char onech);
   75:crc.c         ****   static unsigned short icrctb[256],init=0;
   76:crc.c         ****   static uchar rchr[256];
   77:crc.c         ****   unsigned short tmp1, tmp2, j,cword=crc;
- 159               		.loc 1 77 0
- 160 00c0 8985      		ldd r24,Y+9
- 161 00c2 9A85      		ldd r25,Y+10
- 162 00c4 9887      		std Y+8,r25
- 163 00c6 8F83      		std Y+7,r24
+ 176               		.loc 1 77 0
+ 177 00ba 8985      		ldd r24,Y+9
+ 178 00bc 9A85      		ldd r25,Y+10
+ 179 00be 9887      		std Y+8,r25
+ 180 00c0 8F83      		std Y+7,r24
   78:crc.c         ****   static uchar it[16]={0,8,4,12,2,10,6,14,1,9,5,13,3,11,7,15};
   79:crc.c         **** 
   80:crc.c         ****   if (!init) {
- 164               		.loc 1 80 0
- 165 00c8 8091 0000 		lds r24,init.1372
- 166 00cc 9091 0000 		lds r25,init.1372+1
- 167 00d0 0097      		sbiw r24,0
- 168 00d2 01F0      		breq .+2
- 169 00d4 00C0      		rjmp .L8
+ 181               		.loc 1 80 0
+ 182 00c2 8091 0000 		lds r24,init.1485
+ 183 00c6 9091 0000 		lds r25,init.1485+1
+ 184 00ca 892B      		or r24,r25
+ 185 00cc 01F0      		breq .+2
+ 186 00ce 00C0      		rjmp .L8
   81:crc.c         ****     init=1;
- 170               		.loc 1 81 0
- 171 00d6 81E0      		ldi r24,lo8(1)
- 172 00d8 90E0      		ldi r25,0
- 173 00da 9093 0000 		sts init.1372+1,r25
- 174 00de 8093 0000 		sts init.1372,r24
+ 187               		.loc 1 81 0
+ 188 00d0 81E0      		ldi r24,lo8(1)
+ 189 00d2 90E0      		ldi r25,0
+ 190 00d4 9093 0000 		sts init.1485+1,r25
+ 191 00d8 8093 0000 		sts init.1485,r24
   82:crc.c         ****     for (j=0;j<=255;j++) {
- 175               		.loc 1 82 0
- 176 00e2 1E82      		std Y+6,__zero_reg__
- 177 00e4 1D82      		std Y+5,__zero_reg__
- 178 00e6 00C0      		rjmp .L9
- 179               	.L10:
+ 192               		.loc 1 82 0
+ 193 00dc 1E82      		std Y+6,__zero_reg__
+ 194 00de 1D82      		std Y+5,__zero_reg__
+ 195 00e0 00C0      		rjmp .L9
+ 196               	.L10:
   83:crc.c         ****       icrctb[j]=icrc1(j << 8,(uchar)0);
- 180               		.loc 1 83 0 discriminator 2
- 181 00e8 8D81      		ldd r24,Y+5
- 182 00ea 9E81      		ldd r25,Y+6
- 183 00ec 982F      		mov r25,r24
- 184 00ee 8827      		clr r24
- 185 00f0 60E0      		ldi r22,0
- 186 00f2 0E94 0000 		call icrc1
- 187 00f6 9C01      		movw r18,r24
- 188 00f8 8D81      		ldd r24,Y+5
- 189 00fa 9E81      		ldd r25,Y+6
- 190 00fc 880F      		lsl r24
- 191 00fe 991F      		rol r25
- 192 0100 8050      		subi r24,lo8(-(icrctb.1371))
- 193 0102 9040      		sbci r25,hi8(-(icrctb.1371))
- 194 0104 FC01      		movw r30,r24
- 195 0106 3183      		std Z+1,r19
- 196 0108 2083      		st Z,r18
+ 197               		.loc 1 83 0 discriminator 3
+ 198 00e2 8D81      		ldd r24,Y+5
+ 199 00e4 9E81      		ldd r25,Y+6
+ 200 00e6 982F      		mov r25,r24
+ 201 00e8 8827      		clr r24
+ 202 00ea 60E0      		ldi r22,0
+ 203 00ec 0E94 0000 		call icrc1
+ 204 00f0 9C01      		movw r18,r24
+ 205 00f2 8D81      		ldd r24,Y+5
+ 206 00f4 9E81      		ldd r25,Y+6
+ 207 00f6 880F      		lsl r24
+ 208 00f8 991F      		rol r25
+ 209 00fa 8050      		subi r24,lo8(-(icrctb.1484))
+ 210 00fc 9040      		sbci r25,hi8(-(icrctb.1484))
+ 211 00fe FC01      		movw r30,r24
+ 212 0100 3183      		std Z+1,r19
+ 213 0102 2083      		st Z,r18
   84:crc.c         ****       rchr[j]=(uchar)(it[j & 0xF] << 4 | it[j >> 4]);
- 197               		.loc 1 84 0 discriminator 2
- 198 010a 8D81      		ldd r24,Y+5
- 199 010c 9E81      		ldd r25,Y+6
- 200 010e 8F70      		andi r24,15
- 201 0110 9927      		clr r25
- 202 0112 8050      		subi r24,lo8(-(it.1378))
- 203 0114 9040      		sbci r25,hi8(-(it.1378))
- 204 0116 FC01      		movw r30,r24
- 205 0118 8081      		ld r24,Z
- 206 011a 882F      		mov r24,r24
- 207 011c 90E0      		ldi r25,0
- 208 011e 8295      		swap r24
- 209 0120 9295      		swap r25
- 210 0122 907F      		andi r25,0xf0
- 211 0124 9827      		eor r25,r24
- 212 0126 807F      		andi r24,0xf0
- 213 0128 9827      		eor r25,r24
- 214 012a 282F      		mov r18,r24
- 215 012c 8D81      		ldd r24,Y+5
- 216 012e 9E81      		ldd r25,Y+6
- 217 0130 9295      		swap r25
- 218 0132 8295      		swap r24
- 219 0134 8F70      		andi r24,0x0f
- 220 0136 8927      		eor r24,r25
- 221 0138 9F70      		andi r25,0x0f
- 222 013a 8927      		eor r24,r25
- 223 013c 8050      		subi r24,lo8(-(it.1378))
- 224 013e 9040      		sbci r25,hi8(-(it.1378))
- 225 0140 FC01      		movw r30,r24
- 226 0142 8081      		ld r24,Z
- 227 0144 822B      		or r24,r18
- 228 0146 282F      		mov r18,r24
- 229 0148 8D81      		ldd r24,Y+5
- 230 014a 9E81      		ldd r25,Y+6
- 231 014c 8050      		subi r24,lo8(-(rchr.1373))
- 232 014e 9040      		sbci r25,hi8(-(rchr.1373))
- 233 0150 FC01      		movw r30,r24
- 234 0152 2083      		st Z,r18
+ 214               		.loc 1 84 0 discriminator 3
+ 215 0104 8D81      		ldd r24,Y+5
+ 216 0106 9E81      		ldd r25,Y+6
+ 217 0108 8F70      		andi r24,15
+ 218 010a 9927      		clr r25
+ 219 010c 8050      		subi r24,lo8(-(it.1491))
+ 220 010e 9040      		sbci r25,hi8(-(it.1491))
+ 221 0110 FC01      		movw r30,r24
+ 222 0112 8081      		ld r24,Z
+ 223 0114 882F      		mov r24,r24
+ 224 0116 90E0      		ldi r25,0
+ 225 0118 8295      		swap r24
+ 226 011a 9295      		swap r25
+ 227 011c 907F      		andi r25,0xf0
+ 228 011e 9827      		eor r25,r24
+ 229 0120 807F      		andi r24,0xf0
+ 230 0122 9827      		eor r25,r24
+ 231 0124 282F      		mov r18,r24
+ 232 0126 8D81      		ldd r24,Y+5
+ 233 0128 9E81      		ldd r25,Y+6
+ 234 012a 9295      		swap r25
+ 235 012c 8295      		swap r24
+ 236 012e 8F70      		andi r24,0x0f
+ 237 0130 8927      		eor r24,r25
+ 238 0132 9F70      		andi r25,0x0f
+ 239 0134 8927      		eor r24,r25
+ 240 0136 8050      		subi r24,lo8(-(it.1491))
+ 241 0138 9040      		sbci r25,hi8(-(it.1491))
+ 242 013a FC01      		movw r30,r24
+ 243 013c 8081      		ld r24,Z
+ 244 013e 822B      		or r24,r18
+ 245 0140 282F      		mov r18,r24
+ 246 0142 8D81      		ldd r24,Y+5
+ 247 0144 9E81      		ldd r25,Y+6
+ 248 0146 8050      		subi r24,lo8(-(rchr.1486))
+ 249 0148 9040      		sbci r25,hi8(-(rchr.1486))
+ 250 014a FC01      		movw r30,r24
+ 251 014c 2083      		st Z,r18
   82:crc.c         ****     for (j=0;j<=255;j++) {
- 235               		.loc 1 82 0 discriminator 2
- 236 0154 8D81      		ldd r24,Y+5
- 237 0156 9E81      		ldd r25,Y+6
- 238 0158 0196      		adiw r24,1
- 239 015a 9E83      		std Y+6,r25
- 240 015c 8D83      		std Y+5,r24
- 241               	.L9:
+ 252               		.loc 1 82 0 discriminator 3
+ 253 014e 8D81      		ldd r24,Y+5
+ 254 0150 9E81      		ldd r25,Y+6
+ 255 0152 0196      		adiw r24,1
+ 256 0154 9E83      		std Y+6,r25
+ 257 0156 8D83      		std Y+5,r24
+ 258               	.L9:
   82:crc.c         ****     for (j=0;j<=255;j++) {
- 242               		.loc 1 82 0 is_stmt 0 discriminator 1
- 243 015e 8D81      		ldd r24,Y+5
- 244 0160 9E81      		ldd r25,Y+6
- 245 0162 8F3F      		cpi r24,-1
- 246 0164 9105      		cpc r25,__zero_reg__
- 247 0166 01F0      		breq .+2
- 248 0168 00F4      		brsh .+2
- 249 016a 00C0      		rjmp .L10
- 250               	.L8:
+ 259               		.loc 1 82 0 is_stmt 0 discriminator 1
+ 260 0158 8D81      		ldd r24,Y+5
+ 261 015a 9E81      		ldd r25,Y+6
+ 262 015c 8F3F      		cpi r24,-1
+ 263 015e 9105      		cpc r25,__zero_reg__
+ 264 0160 01F0      		breq .+2
+ 265 0162 00F4      		brsh .+2
+ 266 0164 00C0      		rjmp .L10
+ 267               	.L8:
   85:crc.c         ****     }
   86:crc.c         ****   }
   87:crc.c         ****   if (jinit >= 0) cword=((uchar) jinit) | (((uchar) jinit) << 8);
- 251               		.loc 1 87 0 is_stmt 1
- 252 016c 8F85      		ldd r24,Y+15
- 253 016e 9889      		ldd r25,Y+16
- 254 0170 9923      		tst r25
- 255 0172 04F0      		brlt .L11
- 256               		.loc 1 87 0 is_stmt 0 discriminator 1
- 257 0174 8F85      		ldd r24,Y+15
- 258 0176 282F      		mov r18,r24
- 259 0178 30E0      		ldi r19,0
- 260 017a 8F85      		ldd r24,Y+15
- 261 017c 882F      		mov r24,r24
- 262 017e 90E0      		ldi r25,0
- 263 0180 982F      		mov r25,r24
- 264 0182 8827      		clr r24
- 265 0184 822B      		or r24,r18
- 266 0186 932B      		or r25,r19
- 267 0188 9887      		std Y+8,r25
- 268 018a 8F83      		std Y+7,r24
- 269 018c 00C0      		rjmp .L12
- 270               	.L11:
+ 268               		.loc 1 87 0 is_stmt 1
+ 269 0166 8F85      		ldd r24,Y+15
+ 270 0168 9889      		ldd r25,Y+16
+ 271 016a 9923      		tst r25
+ 272 016c 04F0      		brlt .L11
+ 273               		.loc 1 87 0 is_stmt 0 discriminator 1
+ 274 016e 8F85      		ldd r24,Y+15
+ 275 0170 282F      		mov r18,r24
+ 276 0172 30E0      		ldi r19,0
+ 277 0174 8F85      		ldd r24,Y+15
+ 278 0176 882F      		mov r24,r24
+ 279 0178 90E0      		ldi r25,0
+ 280 017a 982F      		mov r25,r24
+ 281 017c 8827      		clr r24
+ 282 017e 822B      		or r24,r18
+ 283 0180 932B      		or r25,r19
+ 284 0182 9887      		std Y+8,r25
+ 285 0184 8F83      		std Y+7,r24
+ 286 0186 00C0      		rjmp .L12
+ 287               	.L11:
   88:crc.c         ****   else if (jrev < 0)
- 271               		.loc 1 88 0 is_stmt 1
- 272 018e 8989      		ldd r24,Y+17
- 273 0190 9A89      		ldd r25,Y+18
- 274 0192 9923      		tst r25
- 275 0194 04F4      		brge .L12
+ 288               		.loc 1 88 0 is_stmt 1
+ 289 0188 8989      		ldd r24,Y+17
+ 290 018a 9A89      		ldd r25,Y+18
+ 291 018c 9923      		tst r25
+ 292 018e 04F4      		brge .L12
   89:crc.c         ****     cword=rchr[HIBYTE(cword)] | rchr[LOBYTE(cword)] << 8;
- 276               		.loc 1 89 0
- 277 0196 8F81      		ldd r24,Y+7
- 278 0198 9885      		ldd r25,Y+8
- 279 019a 892F      		mov r24,r25
- 280 019c 9927      		clr r25
- 281 019e 882F      		mov r24,r24
- 282 01a0 90E0      		ldi r25,0
- 283 01a2 8050      		subi r24,lo8(-(rchr.1373))
- 284 01a4 9040      		sbci r25,hi8(-(rchr.1373))
- 285 01a6 FC01      		movw r30,r24
- 286 01a8 8081      		ld r24,Z
- 287 01aa 282F      		mov r18,r24
- 288 01ac 30E0      		ldi r19,0
- 289 01ae 8F81      		ldd r24,Y+7
- 290 01b0 882F      		mov r24,r24
- 291 01b2 90E0      		ldi r25,0
- 292 01b4 8050      		subi r24,lo8(-(rchr.1373))
- 293 01b6 9040      		sbci r25,hi8(-(rchr.1373))
- 294 01b8 FC01      		movw r30,r24
- 295 01ba 8081      		ld r24,Z
- 296 01bc 882F      		mov r24,r24
- 297 01be 90E0      		ldi r25,0
- 298 01c0 982F      		mov r25,r24
- 299 01c2 8827      		clr r24
- 300 01c4 822B      		or r24,r18
- 301 01c6 932B      		or r25,r19
- 302 01c8 9887      		std Y+8,r25
- 303 01ca 8F83      		std Y+7,r24
- 304               	.L12:
+ 293               		.loc 1 89 0
+ 294 0190 8F81      		ldd r24,Y+7
+ 295 0192 9885      		ldd r25,Y+8
+ 296 0194 892F      		mov r24,r25
+ 297 0196 9927      		clr r25
+ 298 0198 882F      		mov r24,r24
+ 299 019a 90E0      		ldi r25,0
+ 300 019c 8050      		subi r24,lo8(-(rchr.1486))
+ 301 019e 9040      		sbci r25,hi8(-(rchr.1486))
+ 302 01a0 FC01      		movw r30,r24
+ 303 01a2 8081      		ld r24,Z
+ 304 01a4 282F      		mov r18,r24
+ 305 01a6 30E0      		ldi r19,0
+ 306 01a8 8F81      		ldd r24,Y+7
+ 307 01aa 882F      		mov r24,r24
+ 308 01ac 90E0      		ldi r25,0
+ 309 01ae 8050      		subi r24,lo8(-(rchr.1486))
+ 310 01b0 9040      		sbci r25,hi8(-(rchr.1486))
+ 311 01b2 FC01      		movw r30,r24
+ 312 01b4 8081      		ld r24,Z
+ 313 01b6 882F      		mov r24,r24
+ 314 01b8 90E0      		ldi r25,0
+ 315 01ba 982F      		mov r25,r24
+ 316 01bc 8827      		clr r24
+ 317 01be 822B      		or r24,r18
+ 318 01c0 932B      		or r25,r19
+ 319 01c2 9887      		std Y+8,r25
+ 320 01c4 8F83      		std Y+7,r24
+ 321               	.L12:
   90:crc.c         **** #ifdef DEBUG
   91:crc.c         ****   printf("len = %d\n", len);
   92:crc.c         **** #endif
   93:crc.c         ****   for (j=1;j<=len;j++) {
- 305               		.loc 1 93 0
- 306 01cc 81E0      		ldi r24,lo8(1)
- 307 01ce 90E0      		ldi r25,0
- 308 01d0 9E83      		std Y+6,r25
- 309 01d2 8D83      		std Y+5,r24
- 310 01d4 00C0      		rjmp .L13
- 311               	.L16:
+ 322               		.loc 1 93 0
+ 323 01c6 81E0      		ldi r24,lo8(1)
+ 324 01c8 90E0      		ldi r25,0
+ 325 01ca 9E83      		std Y+6,r25
+ 326 01cc 8D83      		std Y+5,r24
+ 327 01ce 00C0      		rjmp .L13
+ 328               	.L16:
   94:crc.c         ****     if (jrev < 0) {
- 312               		.loc 1 94 0
- 313 01d6 8989      		ldd r24,Y+17
- 314 01d8 9A89      		ldd r25,Y+18
- 315 01da 9923      		tst r25
- 316 01dc 04F4      		brge .L14
+ 329               		.loc 1 94 0
+ 330 01d0 8989      		ldd r24,Y+17
+ 331 01d2 9A89      		ldd r25,Y+18
+ 332 01d4 9923      		tst r25
+ 333 01d6 04F4      		brge .L14
   95:crc.c         ****       tmp1 = rchr[lin[j]]^ HIBYTE(cword);
- 317               		.loc 1 95 0
- 318 01de 8D81      		ldd r24,Y+5
- 319 01e0 9E81      		ldd r25,Y+6
- 320 01e2 8050      		subi r24,lo8(-(lin))
- 321 01e4 9040      		sbci r25,hi8(-(lin))
- 322 01e6 FC01      		movw r30,r24
- 323 01e8 8081      		ld r24,Z
- 324 01ea 882F      		mov r24,r24
- 325 01ec 90E0      		ldi r25,0
- 326 01ee 8050      		subi r24,lo8(-(rchr.1373))
- 327 01f0 9040      		sbci r25,hi8(-(rchr.1373))
- 328 01f2 FC01      		movw r30,r24
- 329 01f4 2081      		ld r18,Z
- 330 01f6 8F81      		ldd r24,Y+7
- 331 01f8 9885      		ldd r25,Y+8
- 332 01fa 892F      		mov r24,r25
- 333 01fc 9927      		clr r25
- 334 01fe 8227      		eor r24,r18
- 335 0200 882F      		mov r24,r24
- 336 0202 90E0      		ldi r25,0
- 337 0204 9A83      		std Y+2,r25
- 338 0206 8983      		std Y+1,r24
- 339 0208 00C0      		rjmp .L15
- 340               	.L14:
+ 334               		.loc 1 95 0
+ 335 01d8 8D81      		ldd r24,Y+5
+ 336 01da 9E81      		ldd r25,Y+6
+ 337 01dc 8050      		subi r24,lo8(-(lin))
+ 338 01de 9040      		sbci r25,hi8(-(lin))
+ 339 01e0 FC01      		movw r30,r24
+ 340 01e2 8081      		ld r24,Z
+ 341 01e4 882F      		mov r24,r24
+ 342 01e6 90E0      		ldi r25,0
+ 343 01e8 8050      		subi r24,lo8(-(rchr.1486))
+ 344 01ea 9040      		sbci r25,hi8(-(rchr.1486))
+ 345 01ec FC01      		movw r30,r24
+ 346 01ee 2081      		ld r18,Z
+ 347 01f0 8F81      		ldd r24,Y+7
+ 348 01f2 9885      		ldd r25,Y+8
+ 349 01f4 892F      		mov r24,r25
+ 350 01f6 9927      		clr r25
+ 351 01f8 8227      		eor r24,r18
+ 352 01fa 882F      		mov r24,r24
+ 353 01fc 90E0      		ldi r25,0
+ 354 01fe 9A83      		std Y+2,r25
+ 355 0200 8983      		std Y+1,r24
+ 356 0202 00C0      		rjmp .L15
+ 357               	.L14:
   96:crc.c         ****     }
   97:crc.c         ****     else {
   98:crc.c         ****       tmp1 = lin[j]^ HIBYTE(cword);
- 341               		.loc 1 98 0
- 342 020a 8D81      		ldd r24,Y+5
- 343 020c 9E81      		ldd r25,Y+6
- 344 020e 8050      		subi r24,lo8(-(lin))
- 345 0210 9040      		sbci r25,hi8(-(lin))
- 346 0212 FC01      		movw r30,r24
- 347 0214 2081      		ld r18,Z
- 348 0216 8F81      		ldd r24,Y+7
- 349 0218 9885      		ldd r25,Y+8
- 350 021a 892F      		mov r24,r25
- 351 021c 9927      		clr r25
- 352 021e 8227      		eor r24,r18
- 353 0220 882F      		mov r24,r24
- 354 0222 90E0      		ldi r25,0
- 355 0224 9A83      		std Y+2,r25
- 356 0226 8983      		std Y+1,r24
- 357               	.L15:
+ 358               		.loc 1 98 0
+ 359 0204 8D81      		ldd r24,Y+5
+ 360 0206 9E81      		ldd r25,Y+6
+ 361 0208 8050      		subi r24,lo8(-(lin))
+ 362 020a 9040      		sbci r25,hi8(-(lin))
+ 363 020c FC01      		movw r30,r24
+ 364 020e 2081      		ld r18,Z
+ 365 0210 8F81      		ldd r24,Y+7
+ 366 0212 9885      		ldd r25,Y+8
+ 367 0214 892F      		mov r24,r25
+ 368 0216 9927      		clr r25
+ 369 0218 8227      		eor r24,r18
+ 370 021a 882F      		mov r24,r24
+ 371 021c 90E0      		ldi r25,0
+ 372 021e 9A83      		std Y+2,r25
+ 373 0220 8983      		std Y+1,r24
+ 374               	.L15:
   99:crc.c         ****     }
  100:crc.c         ****     cword = icrctb[tmp1] ^ LOBYTE(cword) << 8;
- 358               		.loc 1 100 0
- 359 0228 8981      		ldd r24,Y+1
- 360 022a 9A81      		ldd r25,Y+2
- 361 022c 880F      		lsl r24
- 362 022e 991F      		rol r25
- 363 0230 8050      		subi r24,lo8(-(icrctb.1371))
- 364 0232 9040      		sbci r25,hi8(-(icrctb.1371))
- 365 0234 FC01      		movw r30,r24
- 366 0236 2081      		ld r18,Z
- 367 0238 3181      		ldd r19,Z+1
- 368 023a 8F81      		ldd r24,Y+7
- 369 023c 882F      		mov r24,r24
- 370 023e 90E0      		ldi r25,0
- 371 0240 982F      		mov r25,r24
- 372 0242 8827      		clr r24
- 373 0244 8227      		eor r24,r18
- 374 0246 9327      		eor r25,r19
- 375 0248 9887      		std Y+8,r25
- 376 024a 8F83      		std Y+7,r24
-  93:crc.c         ****   for (j=1;j<=len;j++) {
- 377               		.loc 1 93 0
- 378 024c 8D81      		ldd r24,Y+5
- 379 024e 9E81      		ldd r25,Y+6
- 380 0250 0196      		adiw r24,1
- 381 0252 9E83      		std Y+6,r25
- 382 0254 8D83      		std Y+5,r24
- 383               	.L13:
-  93:crc.c         ****   for (j=1;j<=len;j++) {
- 384               		.loc 1 93 0 is_stmt 0 discriminator 1
- 385 0256 8D81      		ldd r24,Y+5
- 386 0258 9E81      		ldd r25,Y+6
- 387 025a 9C01      		movw r18,r24
- 388 025c 40E0      		ldi r20,0
- 389 025e 50E0      		ldi r21,0
- 390 0260 8B85      		ldd r24,Y+11
- 391 0262 9C85      		ldd r25,Y+12
- 392 0264 AD85      		ldd r26,Y+13
- 393 0266 BE85      		ldd r27,Y+14
- 394 0268 8217      		cp r24,r18
- 395 026a 9307      		cpc r25,r19
- 396 026c A407      		cpc r26,r20
- 397 026e B507      		cpc r27,r21
- 398 0270 00F0      		brlo .+2
- 399 0272 00C0      		rjmp .L16
+ 375               		.loc 1 100 0 discriminator 2
+ 376 0222 8981      		ldd r24,Y+1
+ 377 0224 9A81      		ldd r25,Y+2
+ 378 0226 880F      		lsl r24
+ 379 0228 991F      		rol r25
+ 380 022a 8050      		subi r24,lo8(-(icrctb.1484))
+ 381 022c 9040      		sbci r25,hi8(-(icrctb.1484))
+ 382 022e FC01      		movw r30,r24
+ 383 0230 8081      		ld r24,Z
+ 384 0232 9181      		ldd r25,Z+1
+ 385 0234 2F81      		ldd r18,Y+7
+ 386 0236 222F      		mov r18,r18
+ 387 0238 30E0      		ldi r19,0
+ 388 023a 322F      		mov r19,r18
+ 389 023c 2227      		clr r18
+ 390 023e 8227      		eor r24,r18
+ 391 0240 9327      		eor r25,r19
+ 392 0242 9887      		std Y+8,r25
+ 393 0244 8F83      		std Y+7,r24
+  93:crc.c         ****     if (jrev < 0) {
+ 394               		.loc 1 93 0 discriminator 2
+ 395 0246 8D81      		ldd r24,Y+5
+ 396 0248 9E81      		ldd r25,Y+6
+ 397 024a 0196      		adiw r24,1
+ 398 024c 9E83      		std Y+6,r25
+ 399 024e 8D83      		std Y+5,r24
+ 400               	.L13:
+  93:crc.c         ****     if (jrev < 0) {
+ 401               		.loc 1 93 0 is_stmt 0 discriminator 1
+ 402 0250 8D81      		ldd r24,Y+5
+ 403 0252 9E81      		ldd r25,Y+6
+ 404 0254 CC01      		movw r24,r24
+ 405 0256 A0E0      		ldi r26,0
+ 406 0258 B0E0      		ldi r27,0
+ 407 025a 2B85      		ldd r18,Y+11
+ 408 025c 3C85      		ldd r19,Y+12
+ 409 025e 4D85      		ldd r20,Y+13
+ 410 0260 5E85      		ldd r21,Y+14
+ 411 0262 2817      		cp r18,r24
+ 412 0264 3907      		cpc r19,r25
+ 413 0266 4A07      		cpc r20,r26
+ 414 0268 5B07      		cpc r21,r27
+ 415 026a 00F0      		brlo .+2
+ 416 026c 00C0      		rjmp .L16
  101:crc.c         ****   }
  102:crc.c         ****   if (jrev >= 0) {
- 400               		.loc 1 102 0 is_stmt 1
- 401 0274 8989      		ldd r24,Y+17
- 402 0276 9A89      		ldd r25,Y+18
- 403 0278 9923      		tst r25
- 404 027a 04F0      		brlt .L17
+ 417               		.loc 1 102 0 is_stmt 1
+ 418 026e 8989      		ldd r24,Y+17
+ 419 0270 9A89      		ldd r25,Y+18
+ 420 0272 9923      		tst r25
+ 421 0274 04F0      		brlt .L17
  103:crc.c         ****     tmp2 = cword;
- 405               		.loc 1 103 0
- 406 027c 8F81      		ldd r24,Y+7
- 407 027e 9885      		ldd r25,Y+8
- 408 0280 9C83      		std Y+4,r25
- 409 0282 8B83      		std Y+3,r24
- 410 0284 00C0      		rjmp .L18
- 411               	.L17:
+ 422               		.loc 1 103 0
+ 423 0276 8F81      		ldd r24,Y+7
+ 424 0278 9885      		ldd r25,Y+8
+ 425 027a 9C83      		std Y+4,r25
+ 426 027c 8B83      		std Y+3,r24
+ 427 027e 00C0      		rjmp .L18
+ 428               	.L17:
  104:crc.c         ****   }
  105:crc.c         ****   else {
  106:crc.c         ****     tmp2 = rchr[HIBYTE(cword)] | rchr[LOBYTE(cword)] << 8;
- 412               		.loc 1 106 0
- 413 0286 8F81      		ldd r24,Y+7
- 414 0288 9885      		ldd r25,Y+8
- 415 028a 892F      		mov r24,r25
- 416 028c 9927      		clr r25
- 417 028e 882F      		mov r24,r24
- 418 0290 90E0      		ldi r25,0
- 419 0292 8050      		subi r24,lo8(-(rchr.1373))
- 420 0294 9040      		sbci r25,hi8(-(rchr.1373))
- 421 0296 FC01      		movw r30,r24
- 422 0298 8081      		ld r24,Z
- 423 029a 282F      		mov r18,r24
- 424 029c 30E0      		ldi r19,0
- 425 029e 8F81      		ldd r24,Y+7
- 426 02a0 882F      		mov r24,r24
- 427 02a2 90E0      		ldi r25,0
- 428 02a4 8050      		subi r24,lo8(-(rchr.1373))
- 429 02a6 9040      		sbci r25,hi8(-(rchr.1373))
- 430 02a8 FC01      		movw r30,r24
- 431 02aa 8081      		ld r24,Z
- 432 02ac 882F      		mov r24,r24
- 433 02ae 90E0      		ldi r25,0
- 434 02b0 982F      		mov r25,r24
- 435 02b2 8827      		clr r24
- 436 02b4 822B      		or r24,r18
- 437 02b6 932B      		or r25,r19
- 438 02b8 9C83      		std Y+4,r25
- 439 02ba 8B83      		std Y+3,r24
- 440               	.L18:
+ 429               		.loc 1 106 0
+ 430 0280 8F81      		ldd r24,Y+7
+ 431 0282 9885      		ldd r25,Y+8
+ 432 0284 892F      		mov r24,r25
+ 433 0286 9927      		clr r25
+ 434 0288 882F      		mov r24,r24
+ 435 028a 90E0      		ldi r25,0
+ 436 028c 8050      		subi r24,lo8(-(rchr.1486))
+ 437 028e 9040      		sbci r25,hi8(-(rchr.1486))
+ 438 0290 FC01      		movw r30,r24
+ 439 0292 8081      		ld r24,Z
+ 440 0294 282F      		mov r18,r24
+ 441 0296 30E0      		ldi r19,0
+ 442 0298 8F81      		ldd r24,Y+7
+ 443 029a 882F      		mov r24,r24
+ 444 029c 90E0      		ldi r25,0
+ 445 029e 8050      		subi r24,lo8(-(rchr.1486))
+ 446 02a0 9040      		sbci r25,hi8(-(rchr.1486))
+ 447 02a2 FC01      		movw r30,r24
+ 448 02a4 8081      		ld r24,Z
+ 449 02a6 882F      		mov r24,r24
+ 450 02a8 90E0      		ldi r25,0
+ 451 02aa 982F      		mov r25,r24
+ 452 02ac 8827      		clr r24
+ 453 02ae 822B      		or r24,r18
+ 454 02b0 932B      		or r25,r19
+ 455 02b2 9C83      		std Y+4,r25
+ 456 02b4 8B83      		std Y+3,r24
+ 457               	.L18:
  107:crc.c         ****   }
  108:crc.c         ****   return (tmp2 );
- 441               		.loc 1 108 0
- 442 02bc 8B81      		ldd r24,Y+3
- 443 02be 9C81      		ldd r25,Y+4
- 444               	/* epilogue start */
+ 458               		.loc 1 108 0
+ 459 02b6 8B81      		ldd r24,Y+3
+ 460 02b8 9C81      		ldd r25,Y+4
+ 461               	/* epilogue start */
  109:crc.c         **** }
- 445               		.loc 1 109 0
- 446 02c0 6296      		adiw r28,18
- 447 02c2 0FB6      		in __tmp_reg__,__SREG__
- 448 02c4 F894      		cli
- 449 02c6 DEBF      		out __SP_H__,r29
- 450 02c8 0FBE      		out __SREG__,__tmp_reg__
- 451 02ca CDBF      		out __SP_L__,r28
- 452 02cc DF91      		pop r29
- 453 02ce CF91      		pop r28
- 454 02d0 1F91      		pop r17
- 455 02d2 0F91      		pop r16
- 456 02d4 0895      		ret
- 457               	.LFE1:
- 459               	.global	main
- 461               	main:
- 462               	.LFB2:
+ 462               		.loc 1 109 0
+ 463 02ba 6296      		adiw r28,18
+ 464 02bc 0FB6      		in __tmp_reg__,__SREG__
+ 465 02be F894      		cli
+ 466 02c0 DEBF      		out __SP_H__,r29
+ 467 02c2 0FBE      		out __SREG__,__tmp_reg__
+ 468 02c4 CDBF      		out __SP_L__,r28
+ 469 02c6 DF91      		pop r29
+ 470 02c8 CF91      		pop r28
+ 471 02ca 1F91      		pop r17
+ 472 02cc 0F91      		pop r16
+ 473 02ce 0895      		ret
+ 474               		.cfi_endproc
+ 475               	.LFE1:
+ 477               	.global	main
+ 479               	main:
+ 480               	.LFB2:
  110:crc.c         **** 
  111:crc.c         **** 
  112:crc.c         **** int main(void)
  113:crc.c         **** {
- 463               		.loc 1 113 0
- 464 02d6 0F93      		push r16
- 465               	.LCFI10:
- 466 02d8 1F93      		push r17
- 467               	.LCFI11:
- 468 02da CF93      		push r28
- 469               	.LCFI12:
- 470 02dc DF93      		push r29
- 471               	.LCFI13:
- 472 02de CDB7      		in r28,__SP_L__
- 473 02e0 DEB7      		in r29,__SP_H__
- 474               	.LCFI14:
- 475 02e2 2897      		sbiw r28,8
- 476               	.LCFI15:
- 477 02e4 0FB6      		in __tmp_reg__,__SREG__
- 478 02e6 F894      		cli
- 479 02e8 DEBF      		out __SP_H__,r29
- 480 02ea 0FBE      		out __SREG__,__tmp_reg__
- 481 02ec CDBF      		out __SP_L__,r28
- 482               	/* prologue: function */
- 483               	/* frame size = 8 */
- 484               	/* stack size = 12 */
- 485               	.L__stack_usage = 12
+ 481               		.loc 1 113 0
+ 482               		.cfi_startproc
+ 483 02d0 0F93      		push r16
+ 484               	.LCFI10:
+ 485               		.cfi_def_cfa_offset 3
+ 486               		.cfi_offset 16, -2
+ 487 02d2 1F93      		push r17
+ 488               	.LCFI11:
+ 489               		.cfi_def_cfa_offset 4
+ 490               		.cfi_offset 17, -3
+ 491 02d4 CF93      		push r28
+ 492               	.LCFI12:
+ 493               		.cfi_def_cfa_offset 5
+ 494               		.cfi_offset 28, -4
+ 495 02d6 DF93      		push r29
+ 496               	.LCFI13:
+ 497               		.cfi_def_cfa_offset 6
+ 498               		.cfi_offset 29, -5
+ 499 02d8 CDB7      		in r28,__SP_L__
+ 500 02da DEB7      		in r29,__SP_H__
+ 501               	.LCFI14:
+ 502               		.cfi_def_cfa_register 28
+ 503 02dc 2897      		sbiw r28,8
+ 504               	.LCFI15:
+ 505               		.cfi_def_cfa_offset 14
+ 506 02de 0FB6      		in __tmp_reg__,__SREG__
+ 507 02e0 F894      		cli
+ 508 02e2 DEBF      		out __SP_H__,r29
+ 509 02e4 0FBE      		out __SREG__,__tmp_reg__
+ 510 02e6 CDBF      		out __SP_L__,r28
+ 511               	/* prologue: function */
+ 512               	/* frame size = 8 */
+ 513               	/* stack size = 12 */
+ 514               	.L__stack_usage = 12
  114:crc.c         **** 
  115:crc.c         ****   unsigned short i1,i2;
  116:crc.c         ****   unsigned long n;
  117:crc.c         **** 
  118:crc.c         ****   n=40;
- 486               		.loc 1 118 0
- 487 02ee 88E2      		ldi r24,lo8(40)
- 488 02f0 90E0      		ldi r25,0
- 489 02f2 A0E0      		ldi r26,0
- 490 02f4 B0E0      		ldi r27,0
- 491 02f6 8983      		std Y+1,r24
- 492 02f8 9A83      		std Y+2,r25
- 493 02fa AB83      		std Y+3,r26
- 494 02fc BC83      		std Y+4,r27
+ 515               		.loc 1 118 0
+ 516 02e8 88E2      		ldi r24,lo8(40)
+ 517 02ea 90E0      		ldi r25,0
+ 518 02ec A0E0      		ldi r26,0
+ 519 02ee B0E0      		ldi r27,0
+ 520 02f0 8983      		std Y+1,r24
+ 521 02f2 9A83      		std Y+2,r25
+ 522 02f4 AB83      		std Y+3,r26
+ 523 02f6 BC83      		std Y+4,r27
  119:crc.c         ****   lin[n+1]=0;
- 495               		.loc 1 119 0
- 496 02fe 8981      		ldd r24,Y+1
- 497 0300 9A81      		ldd r25,Y+2
- 498 0302 AB81      		ldd r26,Y+3
- 499 0304 BC81      		ldd r27,Y+4
- 500 0306 0196      		adiw r24,1
- 501 0308 A11D      		adc r26,__zero_reg__
- 502 030a B11D      		adc r27,__zero_reg__
- 503 030c 8050      		subi r24,lo8(-(lin))
- 504 030e 9040      		sbci r25,hi8(-(lin))
- 505 0310 FC01      		movw r30,r24
- 506 0312 1082      		st Z,__zero_reg__
+ 524               		.loc 1 119 0
+ 525 02f8 8981      		ldd r24,Y+1
+ 526 02fa 9A81      		ldd r25,Y+2
+ 527 02fc AB81      		ldd r26,Y+3
+ 528 02fe BC81      		ldd r27,Y+4
+ 529 0300 0196      		adiw r24,1
+ 530 0302 A11D      		adc r26,__zero_reg__
+ 531 0304 B11D      		adc r27,__zero_reg__
+ 532 0306 8050      		subi r24,lo8(-(lin))
+ 533 0308 9040      		sbci r25,hi8(-(lin))
+ 534 030a FC01      		movw r30,r24
+ 535 030c 1082      		st Z,__zero_reg__
  120:crc.c         ****   i1=icrc(0,n,(short)0,1);
- 507               		.loc 1 120 0
- 508 0314 8981      		ldd r24,Y+1
- 509 0316 9A81      		ldd r25,Y+2
- 510 0318 AB81      		ldd r26,Y+3
- 511 031a BC81      		ldd r27,Y+4
- 512 031c 01E0      		ldi r16,lo8(1)
- 513 031e 10E0      		ldi r17,0
- 514 0320 20E0      		ldi r18,0
- 515 0322 30E0      		ldi r19,0
- 516 0324 AC01      		movw r20,r24
- 517 0326 BD01      		movw r22,r26
- 518 0328 80E0      		ldi r24,0
- 519 032a 90E0      		ldi r25,0
- 520 032c 0E94 0000 		call icrc
- 521 0330 9E83      		std Y+6,r25
- 522 0332 8D83      		std Y+5,r24
+ 536               		.loc 1 120 0
+ 537 030e 8981      		ldd r24,Y+1
+ 538 0310 9A81      		ldd r25,Y+2
+ 539 0312 AB81      		ldd r26,Y+3
+ 540 0314 BC81      		ldd r27,Y+4
+ 541 0316 01E0      		ldi r16,lo8(1)
+ 542 0318 10E0      		ldi r17,0
+ 543 031a 20E0      		ldi r18,0
+ 544 031c 30E0      		ldi r19,0
+ 545 031e AC01      		movw r20,r24
+ 546 0320 BD01      		movw r22,r26
+ 547 0322 80E0      		ldi r24,0
+ 548 0324 90E0      		ldi r25,0
+ 549 0326 0E94 0000 		call icrc
+ 550 032a 9E83      		std Y+6,r25
+ 551 032c 8D83      		std Y+5,r24
  121:crc.c         ****   lin[n+1]=HIBYTE(i1);
- 523               		.loc 1 121 0
- 524 0334 8981      		ldd r24,Y+1
- 525 0336 9A81      		ldd r25,Y+2
- 526 0338 AB81      		ldd r26,Y+3
- 527 033a BC81      		ldd r27,Y+4
- 528 033c 0196      		adiw r24,1
- 529 033e A11D      		adc r26,__zero_reg__
- 530 0340 B11D      		adc r27,__zero_reg__
- 531 0342 2D81      		ldd r18,Y+5
- 532 0344 3E81      		ldd r19,Y+6
- 533 0346 232F      		mov r18,r19
- 534 0348 3327      		clr r19
- 535 034a 8050      		subi r24,lo8(-(lin))
- 536 034c 9040      		sbci r25,hi8(-(lin))
- 537 034e FC01      		movw r30,r24
- 538 0350 2083      		st Z,r18
+ 552               		.loc 1 121 0
+ 553 032e 8D81      		ldd r24,Y+5
+ 554 0330 9E81      		ldd r25,Y+6
+ 555 0332 292F      		mov r18,r25
+ 556 0334 3327      		clr r19
+ 557 0336 8981      		ldd r24,Y+1
+ 558 0338 9A81      		ldd r25,Y+2
+ 559 033a AB81      		ldd r26,Y+3
+ 560 033c BC81      		ldd r27,Y+4
+ 561 033e 0196      		adiw r24,1
+ 562 0340 A11D      		adc r26,__zero_reg__
+ 563 0342 B11D      		adc r27,__zero_reg__
+ 564 0344 8050      		subi r24,lo8(-(lin))
+ 565 0346 9040      		sbci r25,hi8(-(lin))
+ 566 0348 FC01      		movw r30,r24
+ 567 034a 2083      		st Z,r18
  122:crc.c         ****   lin[n+2]=LOBYTE(i1);
- 539               		.loc 1 122 0
- 540 0352 8981      		ldd r24,Y+1
- 541 0354 9A81      		ldd r25,Y+2
- 542 0356 AB81      		ldd r26,Y+3
- 543 0358 BC81      		ldd r27,Y+4
- 544 035a 0296      		adiw r24,2
- 545 035c A11D      		adc r26,__zero_reg__
- 546 035e B11D      		adc r27,__zero_reg__
- 547 0360 2D81      		ldd r18,Y+5
- 548 0362 8050      		subi r24,lo8(-(lin))
- 549 0364 9040      		sbci r25,hi8(-(lin))
- 550 0366 FC01      		movw r30,r24
- 551 0368 2083      		st Z,r18
+ 568               		.loc 1 122 0
+ 569 034c 8981      		ldd r24,Y+1
+ 570 034e 9A81      		ldd r25,Y+2
+ 571 0350 AB81      		ldd r26,Y+3
+ 572 0352 BC81      		ldd r27,Y+4
+ 573 0354 0296      		adiw r24,2
+ 574 0356 A11D      		adc r26,__zero_reg__
+ 575 0358 B11D      		adc r27,__zero_reg__
+ 576 035a 2D81      		ldd r18,Y+5
+ 577 035c 8050      		subi r24,lo8(-(lin))
+ 578 035e 9040      		sbci r25,hi8(-(lin))
+ 579 0360 FC01      		movw r30,r24
+ 580 0362 2083      		st Z,r18
  123:crc.c         ****   i2=icrc(i1,n+2,(short)0,1);
- 552               		.loc 1 123 0
- 553 036a 8981      		ldd r24,Y+1
- 554 036c 9A81      		ldd r25,Y+2
- 555 036e AB81      		ldd r26,Y+3
- 556 0370 BC81      		ldd r27,Y+4
- 557 0372 0296      		adiw r24,2
- 558 0374 A11D      		adc r26,__zero_reg__
- 559 0376 B11D      		adc r27,__zero_reg__
- 560 0378 ED81      		ldd r30,Y+5
- 561 037a FE81      		ldd r31,Y+6
- 562 037c 01E0      		ldi r16,lo8(1)
- 563 037e 10E0      		ldi r17,0
- 564 0380 20E0      		ldi r18,0
- 565 0382 30E0      		ldi r19,0
- 566 0384 AC01      		movw r20,r24
- 567 0386 BD01      		movw r22,r26
- 568 0388 CF01      		movw r24,r30
- 569 038a 0E94 0000 		call icrc
- 570 038e 9887      		std Y+8,r25
- 571 0390 8F83      		std Y+7,r24
+ 581               		.loc 1 123 0
+ 582 0364 8981      		ldd r24,Y+1
+ 583 0366 9A81      		ldd r25,Y+2
+ 584 0368 AB81      		ldd r26,Y+3
+ 585 036a BC81      		ldd r27,Y+4
+ 586 036c 0296      		adiw r24,2
+ 587 036e A11D      		adc r26,__zero_reg__
+ 588 0370 B11D      		adc r27,__zero_reg__
+ 589 0372 ED81      		ldd r30,Y+5
+ 590 0374 FE81      		ldd r31,Y+6
+ 591 0376 01E0      		ldi r16,lo8(1)
+ 592 0378 10E0      		ldi r17,0
+ 593 037a 20E0      		ldi r18,0
+ 594 037c 30E0      		ldi r19,0
+ 595 037e AC01      		movw r20,r24
+ 596 0380 BD01      		movw r22,r26
+ 597 0382 CF01      		movw r24,r30
+ 598 0384 0E94 0000 		call icrc
+ 599 0388 9887      		std Y+8,r25
+ 600 038a 8F83      		std Y+7,r24
  124:crc.c         ****   return 0;
- 572               		.loc 1 124 0
- 573 0392 80E0      		ldi r24,0
- 574 0394 90E0      		ldi r25,0
- 575               	/* epilogue start */
+ 601               		.loc 1 124 0
+ 602 038c 80E0      		ldi r24,0
+ 603 038e 90E0      		ldi r25,0
+ 604               	/* epilogue start */
  125:crc.c         **** }
- 576               		.loc 1 125 0
- 577 0396 2896      		adiw r28,8
- 578 0398 0FB6      		in __tmp_reg__,__SREG__
- 579 039a F894      		cli
- 580 039c DEBF      		out __SP_H__,r29
- 581 039e 0FBE      		out __SREG__,__tmp_reg__
- 582 03a0 CDBF      		out __SP_L__,r28
- 583 03a2 DF91      		pop r29
- 584 03a4 CF91      		pop r28
- 585 03a6 1F91      		pop r17
- 586 03a8 0F91      		pop r16
- 587 03aa 0895      		ret
- 588               	.LFE2:
- 590               		.local	init.1372
- 591               		.comm	init.1372,2,1
- 592               		.local	icrctb.1371
- 593               		.comm	icrctb.1371,512,1
- 594               		.data
- 597               	it.1378:
- 598 0100 00        		.byte	0
- 599 0101 08        		.byte	8
- 600 0102 04        		.byte	4
- 601 0103 0C        		.byte	12
- 602 0104 02        		.byte	2
- 603 0105 0A        		.byte	10
- 604 0106 06        		.byte	6
- 605 0107 0E        		.byte	14
- 606 0108 01        		.byte	1
- 607 0109 09        		.byte	9
- 608 010a 05        		.byte	5
- 609 010b 0D        		.byte	13
- 610 010c 03        		.byte	3
- 611 010d 0B        		.byte	11
- 612 010e 07        		.byte	7
- 613 010f 0F        		.byte	15
- 614               		.local	rchr.1373
- 615               		.comm	rchr.1373,256,1
- 742               	.Letext0:
+ 605               		.loc 1 125 0
+ 606 0390 2896      		adiw r28,8
+ 607 0392 0FB6      		in __tmp_reg__,__SREG__
+ 608 0394 F894      		cli
+ 609 0396 DEBF      		out __SP_H__,r29
+ 610 0398 0FBE      		out __SREG__,__tmp_reg__
+ 611 039a CDBF      		out __SP_L__,r28
+ 612 039c DF91      		pop r29
+ 613 039e CF91      		pop r28
+ 614 03a0 1F91      		pop r17
+ 615 03a2 0F91      		pop r16
+ 616 03a4 0895      		ret
+ 617               		.cfi_endproc
+ 618               	.LFE2:
+ 620               		.local	init.1485
+ 621               		.comm	init.1485,2,1
+ 622               		.local	icrctb.1484
+ 623               		.comm	icrctb.1484,512,1
+ 624               		.data
+ 627               	it.1491:
+ 628 0100 00        		.byte	0
+ 629 0101 08        		.byte	8
+ 630 0102 04        		.byte	4
+ 631 0103 0C        		.byte	12
+ 632 0104 02        		.byte	2
+ 633 0105 0A        		.byte	10
+ 634 0106 06        		.byte	6
+ 635 0107 0E        		.byte	14
+ 636 0108 01        		.byte	1
+ 637 0109 09        		.byte	9
+ 638 010a 05        		.byte	5
+ 639 010b 0D        		.byte	13
+ 640 010c 03        		.byte	3
+ 641 010d 0B        		.byte	11
+ 642 010e 07        		.byte	7
+ 643 010f 0F        		.byte	15
+ 644               		.local	rchr.1486
+ 645               		.comm	rchr.1486,256,1
+ 646               		.text
+ 647               	.Letext0:
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 crc.c
-     /tmp/ccbXodCD.s:2      *ABS*:000000000000003e __SP_H__
-     /tmp/ccbXodCD.s:3      *ABS*:000000000000003d __SP_L__
-     /tmp/ccbXodCD.s:4      *ABS*:000000000000003f __SREG__
-     /tmp/ccbXodCD.s:5      *ABS*:000000000000003b __RAMPZ__
-     /tmp/ccbXodCD.s:6      *ABS*:0000000000000000 __tmp_reg__
-     /tmp/ccbXodCD.s:7      *ABS*:0000000000000001 __zero_reg__
-     /tmp/ccbXodCD.s:14     .data:0000000000000000 lin
-     /tmp/ccbXodCD.s:20     .text:0000000000000000 icrc1
-     /tmp/ccbXodCD.s:124    .text:0000000000000094 icrc
-                             .bss:0000000000000000 init.1372
-     /tmp/ccbXodCD.s:591    .bss:0000000000000002 icrctb.1371
-     /tmp/ccbXodCD.s:597    .data:0000000000000100 it.1378
-     /tmp/ccbXodCD.s:593    .bss:0000000000000202 rchr.1373
-     /tmp/ccbXodCD.s:461    .text:00000000000002d6 main
+     /tmp/ccmKIip4.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccmKIip4.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccmKIip4.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccmKIip4.s:5      *ABS*:000000000000003b __RAMPZ__
+     /tmp/ccmKIip4.s:6      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccmKIip4.s:7      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccmKIip4.s:15     .data:0000000000000000 lin
+     /tmp/ccmKIip4.s:21     .text:0000000000000000 icrc1
+     /tmp/ccmKIip4.s:130    .text:000000000000008e icrc
+                             .bss:0000000000000000 init.1485
+     /tmp/ccmKIip4.s:621    .bss:0000000000000002 icrctb.1484
+     /tmp/ccmKIip4.s:627    .data:0000000000000100 it.1491
+     /tmp/ccmKIip4.s:623    .bss:0000000000000202 rchr.1486
+     /tmp/ccmKIip4.s:479    .text:00000000000002d0 main
 
 UNDEFINED SYMBOLS
 __do_copy_data

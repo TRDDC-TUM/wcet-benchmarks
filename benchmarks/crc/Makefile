@@ -18,7 +18,7 @@ REMOVE = rm -f
 COPY = cp
 WCET_FUN=icrc
 WCET_TOOL=boundt_avr
-WCET_TOOL_OPTS=-device=ATmega128 -form=elf -draw deeply  -draw max -draw address -draw index -draw symbol -elf_sym -v -sourceinfo $(SOURCEINFOFILE) -no_stack  -assert loopinfo.txt -dot_dir flowgraphs
+WCET_TOOL_OPTS=-keep_lp -device=ATmega128 -form=elf -draw deeply  -draw max -draw address -draw index -draw symbol -elf_sym -v -sourceinfo $(SOURCEINFOFILE) -no_stack  -assert loopinfo.txt -dot_dir flowgraphs
 SOURCEINFOFILE=sourceinfo.csv
 
 ############# PLEASE DO NOT CHANGE ANYTHING BELOW THIS LINE ##############
@@ -100,7 +100,8 @@ MATH_LIB = -lm
 LDFLAGS = -Wl,-Map=$(TARGET).map,--cref
 LDFLAGS += $(EXTMEMOPTS)
 #LDFLAGS += $(PRINTF_LIB) $(SCANF_LIB) $(MATH_LIB)
-LDFLAGS += -gc-sections -lm
+#LDFLAGS += -gc-sections 
+LDFLAGS += -lm
 
 
 # Define all object files.

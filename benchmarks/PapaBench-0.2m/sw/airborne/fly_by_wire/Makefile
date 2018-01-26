@@ -20,8 +20,7 @@
 # Boston, MA 02111-1307, USA.  
 # 
 
-
-LOCAL_CFLAGS= $(CTL_BRD_FLAGS) -mmcu=atmega8
+LOCAL_CFLAGS= $(CTL_BRD_FLAGS) -mmcu=atmega8 -Os
 LOCAL_LDFLAGS=-mmcu=atmega8
 
 ARCH	  = atmega8
@@ -74,13 +73,13 @@ warn_conf :
 
 main.o .depend : $(VARINCLUDE)/radio.h $(VARINCLUDE)/airframe.h
 
-# note that Atmega8 is not supported by Bound-T. closest thing is Atmega163
+# note that Atmega8 is not supported by Bound-T. closest thing is Atmega163. That should be okay.
 TIME=timeout -s INT 10m /usr/bin/time -v
 wcet.log: $(TARGET).elf
-	$(TIME) boundt_avr -device=ATmega163 -form=elf -no_stack -loop first -elf_sym -anatime -imp limit=hull -v $< main 2> stderr.log | tee $@ 
+	$(TIME) boundt_avr -device=ATmega163 -form=elf -no_stack -loop first -elf_sym -anatime -imp limit=hull -no_arithmetic -assert loopinfo.txt -v $< periodic_task 2> stderr.log | tee $@ 
 
-sourceinfo.csv: $(TARGET).elf
-	boundt_avr -device=ATmega163 -form=elf -no_stack -elf_sym -v -no_arithmetic -sourceinfo sourceinfo.csv $< main
+sourceinfo.csv.completed: $(TARGET).elf
+	~/async/autosafe/trunk/tum/wcet-cbmc/scripts/analyze_binary.py --target=avr --device=ATmega163 -o $@ $(TARGET).elf
 
 clean : avr_clean 
 	rm -rf wcet.log sourceinfo.csv

@@ -1,10 +1,10 @@
-Archive member included because of file (symbol)
+Archive member included to satisfy reference by file (symbol)
 
-/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
-                              /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o (exit)
-/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+/home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
+                              /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o (exit)
+/home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
                               crc.o (__do_copy_data)
-/usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+/home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
                               crc.o (__do_clear_bss)
 
 Memory Configuration
@@ -16,17 +16,28 @@ eeprom           0x0000000000810000 0x0000000000010000 rw !x
 fuse             0x0000000000820000 0x0000000000000400 rw !x
 lock             0x0000000000830000 0x0000000000000400 rw !x
 signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
 *default*        0x0000000000000000 0xffffffffffffffff
 
 Linker script and memory map
 
 Address of section .data set to 0x800100
-LOAD /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+LOAD /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
 LOAD crc.o
-LOAD /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/libm.a
-LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
-LOAD /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/libc.a
-LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
+LOAD /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/libm.a
+START GROUP
+LOAD /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a
+LOAD /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/libm.a
+LOAD /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/libc.a
+LOAD /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/libatmega128.a
+END GROUP
+                0x0000000000020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x000000000000ff00                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xff00
+                0x0000000000010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                0x0000000000000400                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
 
 .hash
  *(.hash)
@@ -118,22 +129,23 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000      0x47e
+.text           0x0000000000000000      0x478
  *(.vectors)
- .vectors       0x0000000000000000       0x8c /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .vectors       0x0000000000000000       0x8c /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
                 0x0000000000000000                __vectors
                 0x0000000000000000                __vector_default
  *(.vectors)
  *(.progmem.gcc*)
- *(.progmem*)
                 0x000000000000008c                . = ALIGN (0x2)
                 0x000000000000008c                __trampolines_start = .
  *(.trampolines)
  .trampolines   0x000000000000008c        0x0 linker stubs
  *(.trampolines*)
                 0x000000000000008c                __trampolines_end = .
- *(.jumptables)
- *(.jumptables*)
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x000000000000008c                . = ALIGN (0x2)
  *(.lowtext)
  *(.lowtext*)
                 0x000000000000008c                __ctors_start = .
@@ -145,20 +157,20 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x000000000000008c        0x0 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .init0         0x000000000000008c        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
                 0x000000000000008c                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x000000000000008c        0xc /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .init2         0x000000000000008c        0xc /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x0000000000000098       0x1a /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+ .init4         0x0000000000000098       0x1a /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
                 0x0000000000000098                __do_copy_data
- .init4         0x00000000000000b2       0x10 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+ .init4         0x00000000000000b2       0x10 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
                 0x00000000000000b2                __do_clear_bss
  *(.init4)
  *(.init5)
@@ -170,10 +182,10 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000000000000c2        0x8 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .init9         0x00000000000000c2        0x8 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
  *(.init9)
  *(.text)
- .text          0x00000000000000ca        0x4 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .text          0x00000000000000ca        0x4 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
                 0x00000000000000ca                __vector_22
                 0x00000000000000ca                __vector_28
                 0x00000000000000ca                __vector_1
@@ -209,53 +221,59 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
                 0x00000000000000ca                __vector_16
                 0x00000000000000ca                __vector_18
                 0x00000000000000ca                __vector_20
- .text          0x00000000000000ce      0x3ac crc.o
+ .text          0x00000000000000ce      0x3a6 crc.o
                 0x00000000000000ce                icrc1
-                0x0000000000000162                icrc
-                0x00000000000003a4                main
- .text          0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
- .text          0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
- .text          0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
-                0x000000000000047a                . = ALIGN (0x2)
+                0x000000000000015c                icrc
+                0x000000000000039e                main
+ .text          0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
+ .text          0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
+ .text          0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
+                0x0000000000000474                . = ALIGN (0x2)
  *(.text.*)
  .text.libgcc.mul
-                0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
  .text.libgcc.div
-                0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
- .text.libgcc   0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
  .text.libgcc.mul
-                0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
  .text.libgcc.div
-                0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
- .text.libgcc   0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
  .text.libgcc.prologue
-                0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
  .text.libgcc.builtins
-                0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
  .text.libgcc.fmul
-                0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
  .text.libgcc.mul
-                0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
  .text.libgcc.div
-                0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
- .text.libgcc   0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
  .text.libgcc.prologue
-                0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
  .text.libgcc.builtins
-                0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
  .text.libgcc.fmul
-                0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
-                0x000000000000047a                . = ALIGN (0x2)
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
+                0x0000000000000474                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000000000000047a        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
-                0x000000000000047a                exit
-                0x000000000000047a                _exit
+ .fini9         0x0000000000000474        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
+                0x0000000000000474                exit
+                0x0000000000000474                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -274,23 +292,29 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000000000000047a        0x4 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
+ .fini0         0x0000000000000474        0x4 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
  *(.fini0)
-                0x000000000000047e                _etext = .
+ *(.hightext)
+ *(.hightext*)
+                0x0000000000000478                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+                0x0000000000000478                _etext = .
 
-.data           0x0000000000800100      0x110 load address 0x000000000000047e
+.data           0x0000000000800100      0x110 load address 0x0000000000000478
                 0x0000000000800100                PROVIDE (__data_start, .)
  *(.data)
- .data          0x0000000000800100        0x0 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .data          0x0000000000800100        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
  .data          0x0000000000800100      0x110 crc.o
                 0x0000000000800100                lin
- .data          0x0000000000800210        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
- .data          0x0000000000800210        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
- .data          0x0000000000800210        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+ .data          0x0000000000800210        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
+ .data          0x0000000000800210        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
+ .data          0x0000000000800210        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
  *(.data*)
+ *(.gnu.linkonce.d*)
  *(.rodata)
  *(.rodata*)
- *(.gnu.linkonce.d*)
+ *(.gnu.linkonce.r*)
                 0x0000000000800210                . = ALIGN (0x2)
                 0x0000000000800210                _edata = .
                 0x0000000000800210                PROVIDE (__data_end, .)
@@ -298,23 +322,23 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
 .bss            0x0000000000800210      0x302
                 0x0000000000800210                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x0000000000800210        0x0 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .bss           0x0000000000800210        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
  .bss           0x0000000000800210      0x302 crc.o
- .bss           0x0000000000800512        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
- .bss           0x0000000000800512        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
- .bss           0x0000000000800512        0x0 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000800512        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
+ .bss           0x0000000000800512        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
+ .bss           0x0000000000800512        0x0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
  *(.bss*)
  *(COMMON)
                 0x0000000000800512                PROVIDE (__bss_end, .)
-                0x000000000000047e                __data_load_start = LOADADDR (.data)
-                0x000000000000058e                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000000000000478                __data_load_start = LOADADDR (.data)
+                0x0000000000000588                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0000000000800512        0x0
-                0x0000000000800512                PROVIDE (__noinit_start, .)
+                [!provide]                        PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x0000000000800512                PROVIDE (__noinit_end, .)
+                [!provide]                        PROVIDE (__noinit_end, .)
                 0x0000000000800512                _end = .
-                0x0000000000800512                PROVIDE (__heap_start, .)
+                [!provide]                        PROVIDE (__heap_start, .)
 
 .eeprom         0x0000000000810000        0x0
  *(.eeprom*)
@@ -332,13 +356,17 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
 .signature
  *(.signature*)
 
-.stab           0x0000000000000000      0x6cc
+.stab           0x0000000000000000      0x21c
  *(.stab)
- .stab          0x0000000000000000      0x6cc /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .stab          0x0000000000000000       0x78 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
+ .stab          0x0000000000000078       0xf0 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
+                                         0xfc (size before relaxing)
+ .stab          0x0000000000000168       0xb4 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
+                                         0xc0 (size before relaxing)
 
-.stabstr        0x0000000000000000       0x54
+.stabstr        0x0000000000000000       0x9c
  *(.stabstr)
- .stabstr       0x0000000000000000       0x54 /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+ .stabstr       0x0000000000000000       0x9c /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
 
 .stab.excl
  *(.stab.excl)
@@ -356,6 +384,14 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
  *(.comment)
  .comment       0x0000000000000000       0x11 crc.o
                                          0x12 (size before relaxing)
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
 
 .debug
  *(.debug)
@@ -377,94 +413,121 @@ LOAD /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000      0x234
- *(.debug_info)
- .debug_info    0x0000000000000000      0x234 crc.o
- *(.gnu.linkonce.wi.*)
+.debug_info     0x0000000000000000      0x9b0
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x780 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+ .debug_info    0x0000000000000780      0x230 crc.o
 
-.debug_abbrev   0x0000000000000000       0xea
+.debug_abbrev   0x0000000000000000      0x800
  *(.debug_abbrev)
- .debug_abbrev  0x0000000000000000       0xea crc.o
+ .debug_abbrev  0x0000000000000000      0x718 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+ .debug_abbrev  0x0000000000000718       0xe8 crc.o
 
-.debug_line     0x0000000000000000       0xa1
- *(.debug_line)
- .debug_line    0x0000000000000000       0xa1 crc.o
+.debug_line     0x0000000000000000      0x185
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0x1d /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+ .debug_line    0x000000000000001d      0x168 crc.o
 
-.debug_frame    0x0000000000000000       0x8c
+.debug_frame    0x0000000000000000       0x98
  *(.debug_frame)
- .debug_frame   0x0000000000000000       0x8c crc.o
+ .debug_frame   0x0000000000000000       0x98 crc.o
 
-.debug_str      0x0000000000000000       0xda
+.debug_str      0x0000000000000000      0x3c6
  *(.debug_str)
- .debug_str     0x0000000000000000       0xda crc.o
-                                         0xdf (size before relaxing)
+ .debug_str     0x0000000000000000      0x27d /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+ .debug_str     0x000000000000027d      0x149 crc.o
+                                        0x15b (size before relaxing)
 
-.debug_loc      0x0000000000000000      0x109
+.debug_loc      0x0000000000000000      0x10a
  *(.debug_loc)
- .debug_loc     0x0000000000000000      0x109 crc.o
+ .debug_loc     0x0000000000000000      0x10a crc.o
 
 .debug_macinfo
  *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_addr
+ *(.debug_addr)
 OUTPUT(main.elf elf32-avr)
 LOAD linker stubs
 
 Cross Reference Table
 
 Symbol                                            File
-__bad_interrupt                                   /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__bss_end                                         /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
-__bss_start                                       /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
-__data_end                                        /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
-__data_load_start                                 /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
-__data_start                                      /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
-__do_clear_bss                                    /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_clear_bss.o)
+__bad_interrupt                                   /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__bss_end                                         /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
+__bss_start                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
+__data_end                                        /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
+__data_load_start                                 /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
+__data_start                                      /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
+__do_clear_bss                                    /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_clear_bss.o)
                                                   crc.o
-__do_copy_data                                    /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_copy_data.o)
+__do_copy_data                                    /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_copy_data.o)
                                                   crc.o
-__heap_end                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__init                                            /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__stack                                           /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_1                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_10                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_11                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_12                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_13                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_14                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_15                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_16                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_17                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_18                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_19                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_2                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_20                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_21                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_22                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_23                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_24                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_25                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_26                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_27                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_28                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_29                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_3                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_30                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_31                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_32                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_33                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_34                                       /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_4                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_5                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_6                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_7                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_8                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_9                                        /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vector_default                                  /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-__vectors                                         /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
-_exit                                             /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
-exit                                              /usr/lib/gcc/avr/4.7.2/avr51/libgcc.a(_exit.o)
-                                                  /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+__heap_end                                        /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__init                                            /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__stack                                           /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_1                                        /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_10                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_11                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_12                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_13                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_14                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_15                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_16                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_17                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_18                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_19                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_2                                        /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_20                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_21                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_22                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_23                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_24                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_25                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_26                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_27                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_28                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_29                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_3                                        /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_30                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_31                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_32                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_33                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_34                                       /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_4                                        /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_5                                        /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_6                                        /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_7                                        /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_8                                        /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_9                                        /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vector_default                                  /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+__vectors                                         /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
+_exit                                             /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
+exit                                              /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/avr51/libgcc.a(_exit.o)
+                                                  /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
 icrc                                              crc.o
 icrc1                                             crc.o
 lin                                               crc.o
 main                                              crc.o
-                                                  /usr/lib/gcc/avr/4.7.2/../../../avr/lib/avr51/crtm128.o
+                                                  /home/becker/bin/avr-gcc-7.2/lib/gcc/avr/7.2.0/../../../../avr/lib/avr51/crtatmega128.o
