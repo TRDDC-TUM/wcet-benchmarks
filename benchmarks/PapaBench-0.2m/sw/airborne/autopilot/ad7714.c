@@ -108,6 +108,6 @@ void ad7714_init( void ) {
 }
 
 
-SIGNAL(SIG_INTERRUPT6) {
+ISR(INT6_vect) {
   ad7714_on_it();
 }
