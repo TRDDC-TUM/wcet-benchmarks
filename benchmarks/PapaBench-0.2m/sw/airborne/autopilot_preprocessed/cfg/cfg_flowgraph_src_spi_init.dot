@@ -1,0 +1,9 @@
+digraph spiinit{ 
+  label="flow graph for spi_init"
+  labelloc="t"
+  0 [label=<<TABLE border="0" cellborder="0" cellpadding="0"><TR><TD border="0" bgcolor="#ffffff" sides="b"><FONT color="#000000"><B>exit</B></FONT></TD></TR><TR><TD>136c1</TD></TR></TABLE>>, shape=doublecircle, margin=0]
+  1 [label=<<TABLE border="0" cellborder="0" cellpadding="0"><TR><TD border="1" bgcolor="#0000ff" sides="b"><FONT color="#ffffff"><B>BB#1</B></FONT></TD></TR><TR><TD align="left">begin: line 130 col 3</TD></TR><TR><TD align="left">end: line 135 col 20</TD></TR></TABLE>>, shape=box]
+  1->0[label="" fontcolor=dimgray color=dimgray]
+  2 [label=<<TABLE border="0" cellborder="0" cellpadding="0"><TR><TD border="0" bgcolor="#ffffff" sides="b"><FONT color="#000000"><B>entry</B></FONT></TD></TR><TR><TD>129c23</TD></TR></TABLE>>, shape=circle, margin=0]
+  2->1[label="true" fontcolor=dimgray color=dimgray]
+}

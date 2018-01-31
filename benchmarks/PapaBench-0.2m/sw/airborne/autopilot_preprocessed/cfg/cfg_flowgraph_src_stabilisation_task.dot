@@ -1,0 +1,23 @@
+digraph stabilisationtask{ 
+  label="flow graph for stabilisation_task"
+  labelloc="t"
+  0 [label=<<TABLE border="0" cellborder="0" cellpadding="0"><TR><TD border="0" bgcolor="#ffffff" sides="b"><FONT color="#000000"><B>exit</B></FONT></TD></TR><TR><TD>516c1</TD></TR></TABLE>>, shape=doublecircle, margin=0]
+  1 [label=<<TABLE border="0" cellborder="0" cellpadding="0"><TR><TD border="1" bgcolor="#0000ff" sides="b"><FONT color="#ffffff"><B>BB#1</B></FONT></TD></TR><TR><TD align="left">begin: line 515 col 5</TD></TR><TR><TD align="left">end: line 515 col 186</TD></TR></TABLE>>, shape=box]
+  1->0[label="" fontcolor=dimgray color=dimgray]
+  2 [label=<<TABLE border="0" cellborder="0" cellpadding="0"><TR><TD border="1" bgcolor="#0000ff" sides="b"><FONT color="#ffffff"><B>BB#2</B></FONT></TD></TR><TR><TD align="left">begin: line 515 col 76</TD></TR><TR><TD align="left">end: line 515 col 87</TD></TR></TABLE>>, shape=box]
+  2->1[label="" fontcolor=dimgray color=dimgray]
+  3 [label=<<TABLE border="0" cellborder="0" cellpadding="0"><TR><TD border="1" bgcolor="#0000ff" sides="b"><FONT color="#ffffff"><B>BB#3</B></FONT></TD></TR><TR><TD align="left">begin: line 515 col 91</TD></TR><TR><TD align="left">end: line 515 col 184</TD></TR></TABLE>>, shape=box]
+  3->1[label="" fontcolor=dimgray color=dimgray]
+  4 [label=<<TABLE border="0" cellborder="0" cellpadding="0"><TR><TD border="1" bgcolor="#0000ff" sides="b"><FONT color="#ffffff"><B>BB#4</B></FONT></TD></TR><TR><TD align="left">begin: line 515 col 139</TD></TR><TR><TD align="left">end: line 515 col 149</TD></TR></TABLE>>, shape=box]
+  4->3[label="" fontcolor=dimgray color=dimgray]
+  5 [label=<<TABLE border="0" cellborder="0" cellpadding="0"><TR><TD border="1" bgcolor="#0000ff" sides="b"><FONT color="#ffffff"><B>BB#5</B></FONT></TD></TR><TR><TD align="left">begin: line 515 col 152</TD></TR><TR><TD align="left">end: line 515 col 184</TD></TR></TABLE>>, shape=box]
+  5->3[label="" fontcolor=dimgray color=dimgray]
+  6 [label=<<TABLE border="0" cellborder="0" cellpadding="0"><TR><TD border="1" bgcolor="#0000ff" sides="b"><FONT color="#ffffff"><B>BB#6</B></FONT></TD></TR><TR><TD align="left">begin: line 515 col 91</TD></TR><TR><TD align="left">end: line 515 col 136</TD></TR></TABLE>>, shape=box]
+  6->4[label="" fontcolor=dimgray color=dimgray]
+  6->5[label="" fontcolor=dimgray color=dimgray]
+  7 [label=<<TABLE border="0" cellborder="0" cellpadding="0"><TR><TD border="1" bgcolor="#0000ff" sides="b"><FONT color="#ffffff"><B>BB#7</B></FONT></TD></TR><TR><TD align="left">begin: line 509 col 5</TD></TR><TR><TD align="left">end: line 515 col 73</TD></TR></TABLE>>, shape=box]
+  7->2[label="" fontcolor=dimgray color=dimgray]
+  7->6[label="" fontcolor=dimgray color=dimgray]
+  8 [label=<<TABLE border="0" cellborder="0" cellpadding="0"><TR><TD border="0" bgcolor="#ffffff" sides="b"><FONT color="#000000"><B>entry</B></FONT></TD></TR><TR><TD>508c2</TD></TR></TABLE>>, shape=circle, margin=0]
+  8->7[label="true" fontcolor=dimgray color=dimgray]
+}
