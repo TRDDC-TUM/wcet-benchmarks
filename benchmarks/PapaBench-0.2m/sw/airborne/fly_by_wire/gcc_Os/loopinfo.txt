@@ -1,0 +1,100 @@
+-- loop bounds for Bound-T
+--   most values are obtained from analyzing the individual function individually with -arithmetic
+--   In that case, Bound-T writes the repetition count of back edges, i.e., usually count-1
+
+--   main@115=>adc_init
+--      Loop unbounded (exits at end only) at adc_fbw.c:76-77, offset 00000010
+subprogram "adc_init"
+  loop on line 76
+    repeats 8 times; -- verified
+  end loop;
+end "adc_init";
+
+--   main@112-=>uart_print_string
+--      Loop unbounded at uart.c:96-98, offset 00000010
+subprogram "uart_print_string"
+  loop on line 96
+    repeats 100 times; -- estimate, see Loop_Bounds.txt. Not boundable.
+  end loop;
+end "uart_print_string";
+
+--   main@120=>servo_init
+--      Loop unbounded (exits at end only) at ppm.c:472-477, offset 00000010
+subprogram "servo_init"
+  loop on line 472
+    repeats 10 times; -- verified
+  end loop;
+end "servo_init";
+
+--   main@126=>test_ppm_task@165=>last_radio_from_ppm@104-=>__mulsf3@145-=>__mulsf3x
+--      Loop unbounded (exits at end only) at main.c:145-, offset 00000090
+--      Loop unbounded at main.c:145-, offset 00000068
+subprogram "__mulsf3x"
+   all loops
+     repeats 64 times; -- FIXME: arbitrary. not boundable.
+   end loops;
+end "__mulsf3x";
+
+--   main@126=>test_ppm_task@165=>last_radio_from_ppm@104-=>__fixsfsi@145-=>__fixunssfsi
+--      Loop unbounded (exits at end only) at main.c:145-, offset 0000003C
+--      Loop unbounded at main.c:145-, offset 00000038
+--      Loop unbounded at main.c:145-, offset 00000012
+subprogram "__fixunssfsi"
+   loop on line 157
+     repeats 64 times; -- FIXME: arbitrary. not boundable.
+   end loop;
+end "__fixunssfsi";
+
+--   Loop unbounded at timer.h:86-89, offset 0000004C
+loop at line 86 in "timer.h"
+  repeats 64 times; -- FIXME: arbitrary.
+end loop;
+
+--   Loop unbounded (eternal) at main.c:126-151, offset 0000003E => consider 1 iteration
+subprogram "main"
+   loop on line 126
+     repeats 1 times;
+   end loop;
+end "main";
+
+--   main@126=>test_ppm_task@165=>last_radio_from_ppm@104-=>__addsf3@145-=>__addsf3x
+--      Loop unbounded (exits at end only) at main.c:145-, offset 0000004E
+--      Loop unbounded at main.c:145-, offset 0000006A
+--      Loop unbounded at main.c:145-, offset 00000034
+subprogram "__addsf3x"
+   loop on line 157
+     repeats 64 times; -- FIXME: arbitrary. not boundable.
+   end loop;
+end "__addsf3x";
+
+--   main@128=>send_data_to_autopilot_task
+--      Loop unbounded (exits at end only) at main.c:83-84, offset 0000001A
+subprogram "send_data_to_autopilot_task"
+   loop on line 83
+     repeats 9 times; -- manual inspection of source code.
+   end loop;
+end "send_data_to_autopilot_task";
+
+--   main@145=>servo_transmit
+--      Loop unbounded (exits at end only) at ppm.c:591-604, offset 00000014
+subprogram "servo_transmit"
+   loop
+     repeats 10 times; -- verified
+   end loop;
+end "servo_transmit";
+
+--      main@128=>send_data_to_autopilot_task@93-=>__floatunsisf
+--         Irreducible flow-graph at main.c:145-
+subprogram "__floatunsisf"
+    time 64 cycles; -- FIXME: arbitrary. not boundable.
+    enough for time; -- try to go ahead despite irred. flows
+end "__floatunsisf";
+
+--   main@126=>test_ppm_task@165=>last_radio_from_ppm@104-=>__floatsisf
+--      Irreducible flow-graph at main.c:145-
+subprogram "__floatsisf"
+    time 64 cycles; -- FIXME: arbitrary. not boundable.
+    enough for time; -- try to go ahead despite irred. flows
+end "__floatsisf";
+
+

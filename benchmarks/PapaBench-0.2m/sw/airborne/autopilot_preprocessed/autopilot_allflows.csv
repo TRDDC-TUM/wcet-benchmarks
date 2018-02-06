@@ -1515,9 +1515,9 @@
 0;exit;;pp_pid.c;climb_pid_run;352;1;352;1;0;0;0;;;""
 1;node;;pp_pid.c;climb_pid_run;349;5;350;44;0;0;0;;0;" [B7.1] ? [B2.1] : ([B3.1]); desired_gaz = ([B1.1]); desired_pitch = nav_pitch + pitch_of_vz;"
 2;node;;pp_pid.c;climb_pid_run;349;44;349;45;0;0;0;;1;" 0 (ImplicitCastExpr, IntegralToFloating, float);"
-3;node;;pp_pid.c;climb_pid_run;349;49;349;112;0;0;0;;1;" [B6.1] ? [B4.1] : [B5.1];"
-4;node;;pp_pid.c;climb_pid_run;349;82;349;92;0;0;0;;3;" (600 * 16) (ImplicitCastExpr, IntegralToFloating, float);"
-5;node;;pp_pid.c;climb_pid_run;349;95;349;112;0;0;0;;3;" fgaz * (600 * 16);"
+#3;node;;pp_pid.c;climb_pid_run;349;49;349;112;0;0;0;;1;" [B6.1] ? [B4.1] : [B5.1];" # LLVM inconvenience: virtual BB (there is no LHS, so this is not a BB)
+4;node;;pp_pid.c;climb_pid_run;349;82;349;92;0;0;0;;1;" (600 * 16) (ImplicitCastExpr, IntegralToFloating, float);"
+5;node;;pp_pid.c;climb_pid_run;349;95;349;112;0;0;0;;1;" fgaz * (600 * 16);"
 6;node;;pp_pid.c;climb_pid_run;349;49;349;79;0;0;0;;4,5;" fgaz * (600 * 16) > (600 * 16);"
 7;node;;pp_pid.c;climb_pid_run;349;20;349;41;0;0;0;;2,6;" fgaz * (600 * 16) < 0;"
 8;node;;pp_pid.c;climb_pid_run;348;32;348;53;0;0;0;;7;" climb_sum_err = -100;"
