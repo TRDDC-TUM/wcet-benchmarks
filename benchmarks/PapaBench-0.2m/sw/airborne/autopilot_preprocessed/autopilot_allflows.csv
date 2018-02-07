@@ -71,8 +71,8 @@
 1;node;;pp_estimator.c;estimator_update_state_infrared;209;3;212;41;0;0;0;;0;" ([B5.1] && (([B4.1]))) ? [B2.1] : [B3.1]; float rad_of_ir = (ir_estim_mode == 1 && ((!0))) ? estimator_rad_of_ir : ir_rad_of_ir;; estimator_phi = rad_of_ir * ir_roll; estimator_theta = rad_of_ir * ir_pitch;"
 2;node;;pp_estimator.c;estimator_update_state_infrared;210;5;210;24;0;0;0;;1;" estimator_rad_of_ir (ImplicitCastExpr, LValueToRValue, float);"
 3;node;;pp_estimator.c;estimator_update_state_infrared;210;27;210;39;0;0;0;;1;" ir_rad_of_ir (ImplicitCastExpr, LValueToRValue, float);"
-4;node;;pp_estimator.c;estimator_update_state_infrared;209;46;209;48;0;0;0;;2,3;" !0;"
-5;node;;pp_estimator.c;estimator_update_state_infrared;209;22;209;40;0;0;0;;4,3;" ir_estim_mode == 1;"
+#4;node;;pp_estimator.c;estimator_update_state_infrared;209;46;209;48;0;0;0;;2,3;" !0;" # LLVM TODO: trivially true expression; no code generated
+5;node;;pp_estimator.c;estimator_update_state_infrared;209;22;209;40;0;0;0;;2,3;" ir_estim_mode == 1;"
 6;entry;;pp_estimator.c;estimator_update_state_infrared;208;47;208;47;0;0;0;;5;""
 
 #BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
