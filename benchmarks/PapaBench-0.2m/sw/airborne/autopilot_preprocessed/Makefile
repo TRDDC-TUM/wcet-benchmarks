@@ -25,7 +25,7 @@ FBW=../fly_by_wire
 
 
 #LOCAL_CFLAGS= $(CTL_BRD_FLAGS) $(GPS_FLAGS) $(SIMUL_FLAGS) -D __AVR_ATmega128__
-LOCAL_CFLAGS= $(CTL_BRD_FLAGS) $(GPS_FLAGS) $(SIMUL_FLAGS) -mmcu=atmega128 -O0
+LOCAL_CFLAGS= $(CTL_BRD_FLAGS) $(GPS_FLAGS) $(SIMUL_FLAGS) -mmcu=atmega128 -O0 -fno-jump-tables
 LOCAL_LDFLAGS=-mmcu=atmega128
 
 VARINCLUDE=../../var/include
