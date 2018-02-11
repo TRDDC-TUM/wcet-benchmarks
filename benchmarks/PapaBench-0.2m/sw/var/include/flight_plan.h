@@ -30,12 +30,17 @@ static inline void auto_nav(void) {
     switch(nav_stage) {
       Label(while_1)
       Stage(0)
-        if (! (!(estimator_flight_time))) Goto(endwhile_2) else NextStage();
+        if (! (!(estimator_flight_time))) 
+          Goto(endwhile_2) 
+        else 
+          NextStage();
         Stage(1)
           Goto(while_1)
         Label(endwhile_2)
       Stage(2)
-        if ((estimator_flight_time>8)) NextStage() else {
+        if ((estimator_flight_time>8)) 
+          NextStage() 
+        else {
           desired_course = RadOfDeg(QFU);
           auto_pitch = FALSE;
           nav_pitch = 0.150000;
@@ -44,7 +49,9 @@ static inline void auto_nav(void) {
         }
         return;
       Stage(3)
-        if ((estimator_z>SECURITY_ALT)) NextStage() else {
+        if ((estimator_z>SECURITY_ALT)) 
+          NextStage() 
+        else {
           desired_course = RadOfDeg(QFU);
           auto_pitch = FALSE;
           nav_pitch = 0.000000;
@@ -57,13 +64,20 @@ static inline void auto_nav(void) {
     }
 
     Block(1) // two
-    if RcEvent1() { GotoBlock(2) }
+    if RcEvent1() { 
+      GotoBlock(2) 
+    }
     switch(nav_stage) {
       Label(while_3)
       Stage(0)
-        if (! (TRUE)) Goto(endwhile_4) else NextStage();
+        if (! (TRUE)) 
+          Goto(endwhile_4) 
+        else 
+          NextStage();
         Stage(1)
-          if (approaching(1)) NextStageFrom(1) else {
+          if (approaching(1))
+            NextStageFrom(1) 
+          else {
             fly_to(1);
             auto_pitch = FALSE;
             nav_pitch = 0.000000;
@@ -73,7 +87,9 @@ static inline void auto_nav(void) {
           }
           return;
         Stage(2)
-          if (approaching(4)) NextStageFrom(4) else {
+          if (approaching(4)) 
+            NextStageFrom(4) 
+          else {
             fly_to(4);
             auto_pitch = FALSE;
             nav_pitch = 0.000000;
@@ -90,13 +106,20 @@ static inline void auto_nav(void) {
     }
 
     Block(2) // height
-    if RcEvent1() { GotoBlock(3) }
+    if RcEvent1() { 
+        GotoBlock(3) 
+    }
     switch(nav_stage) {
       Label(while_5)
       Stage(0)
-        if (! (TRUE)) Goto(endwhile_6) else NextStage();
+        if (! (TRUE)) 
+          Goto(endwhile_6) 
+        else 
+          NextStage();
         Stage(1)
-          if (approaching(6)) NextStageFrom(6) else {
+          if (approaching(6)) 
+            NextStageFrom(6) 
+          else {
             fly_to(6);
             auto_pitch = FALSE;
             nav_pitch = 0.000000;
@@ -106,7 +129,9 @@ static inline void auto_nav(void) {
           }
           return;
         Stage(2)
-          if (approaching(1)) NextStageFrom(1) else {
+          if (approaching(1)) 
+            NextStageFrom(1) 
+          else {
             fly_to(1);
             auto_pitch = FALSE;
             nav_pitch = 0.000000;
@@ -116,7 +141,9 @@ static inline void auto_nav(void) {
           }
           return;
         Stage(3)
-          if (approaching(2)) NextStageFrom(2) else {
+          if (approaching(2)) 
+            NextStageFrom(2) 
+          else {
             route_to(last_wp, 2);
             auto_pitch = FALSE;
             nav_pitch = 0.000000;
@@ -126,7 +153,9 @@ static inline void auto_nav(void) {
           }
           return;
         Stage(4)
-          if (approaching(3)) NextStageFrom(3) else {
+          if (approaching(3)) 
+            NextStageFrom(3) 
+          else {
             fly_to(3);
             auto_pitch = FALSE;
             nav_pitch = 0.000000;
@@ -136,7 +165,9 @@ static inline void auto_nav(void) {
           }
           return;
         Stage(5)
-          if (approaching(4)) NextStageFrom(4) else {
+          if (approaching(4)) 
+            NextStageFrom(4) 
+          else {
             fly_to(4);
             auto_pitch = FALSE;
             nav_pitch = 0.000000;
@@ -146,7 +177,9 @@ static inline void auto_nav(void) {
           }
           return;
         Stage(6)
-          if (approaching(5)) NextStageFrom(5) else {
+          if (approaching(5)) 
+            NextStageFrom(5) 
+          else {
             route_to(last_wp, 5);
             auto_pitch = FALSE;
             nav_pitch = 0.000000;
@@ -163,7 +196,9 @@ static inline void auto_nav(void) {
     }
 
     Block(3) // xyz
-    if RcEvent1() { GotoBlock(4) }
+    if RcEvent1() { 
+      GotoBlock(4) 
+    }
     switch(nav_stage) {
       Stage(0)
         Goto3D(50)
@@ -173,7 +208,9 @@ static inline void auto_nav(void) {
     }
 
     Block(4) // circle
-    if RcEvent1() { GotoBlock(5) }
+    if RcEvent1() { 
+      GotoBlock(5) 
+    }
     switch(nav_stage) {
       Stage(0)
         auto_pitch = FALSE;
@@ -192,7 +229,10 @@ static inline void auto_nav(void) {
     switch(nav_stage) {
       Label(while_7)
       Stage(0)
-        if (! (TRUE)) Goto(endwhile_8) else NextStage();
+        if (! (TRUE)) 
+          Goto(endwhile_8) 
+        else 
+          NextStage();
         Stage(1)
           auto_pitch = FALSE;
           nav_pitch = 0.000000;

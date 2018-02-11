@@ -13217,9 +13217,9 @@ auto_nav():
     79fc:	90 91 9d 07 	lds	r25, 0x079D
     7a00:	00 97       	sbiw	r24, 0x00	; 0
     7a02:	09 f0       	breq	.+2      	; 0x7a06 <auto_nav+0xb6>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:209 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:210
     7a04:	37 c0       	rjmp	.+110    	; 0x7a74 <auto_nav+0x124>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:209 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:212
     7a06:	80 91 93 07 	lds	r24, 0x0793
     7a0a:	8f 5f       	subi	r24, 0xFF	; 255
     7a0c:	80 93 93 07 	sts	0x0793, r24
@@ -13246,21 +13246,21 @@ auto_nav():
     7a60:	10 92 7c 07 	sts	0x077C, r1
     7a64:	10 92 7d 07 	sts	0x077D, r1
     7a68:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:210
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:213
     7a6c:	81 e0       	ldi	r24, 0x01	; 1
     7a6e:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:211
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:214
     7a72:	c0 cf       	rjmp	.-128    	; 0x79f4 <auto_nav+0xa4>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:213
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:216
     7a74:	82 e0       	ldi	r24, 0x02	; 2
     7a76:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:214
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:217
     7a7a:	80 91 9c 07 	lds	r24, 0x079C
     7a7e:	90 91 9d 07 	lds	r25, 0x079D
     7a82:	89 30       	cpi	r24, 0x09	; 9
     7a84:	91 05       	cpc	r25, r1
     7a86:	98 f1       	brcs	.+102    	; 0x7aee <auto_nav+0x19e>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:214 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:218
     7a88:	80 91 93 07 	lds	r24, 0x0793
     7a8c:	8f 5f       	subi	r24, 0xFF	; 255
     7a8e:	80 93 93 07 	sts	0x0793, r24
@@ -13287,7 +13287,7 @@ auto_nav():
     7ae2:	10 92 7c 07 	sts	0x077C, r1
     7ae6:	10 92 7d 07 	sts	0x077D, r1
     7aea:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:215
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:220
     7aee:	84 ee       	ldi	r24, 0xE4	; 228
     7af0:	9b ec       	ldi	r25, 0xCB	; 203
     7af2:	a6 e9       	ldi	r26, 0x96	; 150
@@ -13296,9 +13296,9 @@ auto_nav():
     7afa:	90 93 91 03 	sts	0x0391, r25
     7afe:	a0 93 92 03 	sts	0x0392, r26
     7b02:	b0 93 93 03 	sts	0x0393, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:216
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:221
     7b06:	10 92 cc 01 	sts	0x01CC, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:217
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:222
     7b0a:	8a e9       	ldi	r24, 0x9A	; 154
     7b0c:	99 e9       	ldi	r25, 0x99	; 153
     7b0e:	a9 e1       	ldi	r26, 0x19	; 25
@@ -13307,20 +13307,20 @@ auto_nav():
     7b16:	90 93 a5 03 	sts	0x03A5, r25
     7b1a:	a0 93 a6 03 	sts	0x03A6, r26
     7b1e:	b0 93 a7 03 	sts	0x03A7, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:218
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:223
     7b22:	81 e0       	ldi	r24, 0x01	; 1
     7b24:	80 93 ca 01 	sts	0x01CA, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:219
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:224
     7b28:	80 e0       	ldi	r24, 0x00	; 0
     7b2a:	9e e1       	ldi	r25, 0x1E	; 30
     7b2c:	90 93 83 07 	sts	0x0783, r25
     7b30:	80 93 82 07 	sts	0x0782, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:221
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:226
     7b34:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:222
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:227
     7b38:	83 e0       	ldi	r24, 0x03	; 3
     7b3a:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:223
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:228
     7b3e:	80 91 a6 07 	lds	r24, 0x07A6
     7b42:	90 91 a7 07 	lds	r25, 0x07A7
     7b46:	a0 91 a8 07 	lds	r26, 0x07A8
@@ -13334,7 +13334,7 @@ auto_nav():
     7b5a:	0e 94 f1 5d 	call	0xbbe2	; 0xbbe2 <__gesf2>
     7b5e:	18 16       	cp	r1, r24
     7b60:	9c f5       	brge	.+102    	; 0x7bc8 <auto_nav+0x278>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:223 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:229
     7b62:	80 91 93 07 	lds	r24, 0x0793
     7b66:	8f 5f       	subi	r24, 0xFF	; 255
     7b68:	80 93 93 07 	sts	0x0793, r24
@@ -13361,7 +13361,7 @@ auto_nav():
     7bbc:	10 92 7c 07 	sts	0x077C, r1
     7bc0:	10 92 7d 07 	sts	0x077D, r1
     7bc4:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:224
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:231
     7bc8:	84 ee       	ldi	r24, 0xE4	; 228
     7bca:	9b ec       	ldi	r25, 0xCB	; 203
     7bcc:	a6 e9       	ldi	r26, 0x96	; 150
@@ -13370,17 +13370,17 @@ auto_nav():
     7bd4:	90 93 91 03 	sts	0x0391, r25
     7bd8:	a0 93 92 03 	sts	0x0392, r26
     7bdc:	b0 93 93 03 	sts	0x0393, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:225
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:232
     7be0:	10 92 cc 01 	sts	0x01CC, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:226
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:233
     7be4:	10 92 a4 03 	sts	0x03A4, r1
     7be8:	10 92 a5 03 	sts	0x03A5, r1
     7bec:	10 92 a6 03 	sts	0x03A6, r1
     7bf0:	10 92 a7 03 	sts	0x03A7, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:227
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:234
     7bf4:	82 e0       	ldi	r24, 0x02	; 2
     7bf6:	80 93 ca 01 	sts	0x01CA, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:228
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:235
     7bfa:	80 e0       	ldi	r24, 0x00	; 0
     7bfc:	90 e0       	ldi	r25, 0x00	; 0
     7bfe:	a0 e0       	ldi	r26, 0x00	; 0
@@ -13389,12 +13389,12 @@ auto_nav():
     7c06:	90 93 95 03 	sts	0x0395, r25
     7c0a:	a0 93 96 03 	sts	0x0396, r26
     7c0e:	b0 93 97 03 	sts	0x0397, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:230
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:237
     7c12:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:231
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:238
     7c16:	84 e0       	ldi	r24, 0x04	; 4
     7c18:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:232
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:239
     7c1c:	80 91 88 07 	lds	r24, 0x0788
     7c20:	8f 5f       	subi	r24, 0xFF	; 255
     7c22:	80 93 88 07 	sts	0x0788, r24
@@ -13424,23 +13424,23 @@ auto_nav():
     7c82:	10 92 7c 07 	sts	0x077C, r1
     7c86:	10 92 7d 07 	sts	0x077D, r1
     7c8a:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:234
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:241
     7c8e:	81 e0       	ldi	r24, 0x01	; 1
     7c90:	80 93 88 07 	sts	0x0788, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:235
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:242
     7c94:	80 91 ef 05 	lds	r24, 0x05EF
     7c98:	88 23       	and	r24, r24
     7c9a:	21 f0       	breq	.+8      	; 0x7ca4 <auto_nav+0x354>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:235 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:242 (discriminator 1)
     7c9c:	10 92 ef 05 	sts	0x05EF, r1
     7ca0:	81 e0       	ldi	r24, 0x01	; 1
     7ca2:	01 c0       	rjmp	.+2      	; 0x7ca6 <auto_nav+0x356>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:235 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:242 (discriminator 2)
     7ca4:	80 e0       	ldi	r24, 0x00	; 0
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:235 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:242 (discriminator 3)
     7ca6:	88 23       	and	r24, r24
     7ca8:	b9 f1       	breq	.+110    	; 0x7d18 <auto_nav+0x3c8>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:235 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:243
     7caa:	82 e0       	ldi	r24, 0x02	; 2
     7cac:	80 93 88 07 	sts	0x0788, r24
     7cb0:	10 92 93 07 	sts	0x0793, r1
@@ -13469,7 +13469,7 @@ auto_nav():
     7d0c:	10 92 7c 07 	sts	0x077C, r1
     7d10:	10 92 7d 07 	sts	0x077D, r1
     7d14:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:236
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:245
     7d18:	80 91 93 07 	lds	r24, 0x0793
     7d1c:	88 2f       	mov	r24, r24
     7d1e:	90 e0       	ldi	r25, 0x00	; 0
@@ -13496,9 +13496,9 @@ auto_nav():
     7d48:	09 f4       	brne	.+2      	; 0x7d4c <auto_nav+0x3fc>
     7d4a:	0a c1       	rjmp	.+532    	; 0x7f60 <auto_nav+0x610>
     7d4c:	45 c1       	rjmp	.+650    	; 0x7fd8 <auto_nav+0x688>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:238
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:247
     7d4e:	10 92 93 07 	sts	0x0793, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:239
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:251
     7d52:	80 91 93 07 	lds	r24, 0x0793
     7d56:	8f 5f       	subi	r24, 0xFF	; 255
     7d58:	80 93 93 07 	sts	0x0793, r24
@@ -13525,15 +13525,15 @@ auto_nav():
     7dac:	10 92 7c 07 	sts	0x077C, r1
     7db0:	10 92 7d 07 	sts	0x077D, r1
     7db4:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:240
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:252
     7db8:	81 e0       	ldi	r24, 0x01	; 1
     7dba:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:241
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:253
     7dbe:	81 e0       	ldi	r24, 0x01	; 1
     7dc0:	0e 94 f1 4c 	call	0x99e2	; 0x99e2 <approaching>
     7dc4:	88 23       	and	r24, r24
     7dc6:	b1 f1       	breq	.+108    	; 0x7e34 <auto_nav+0x4e4>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:241 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:254
     7dc8:	81 e0       	ldi	r24, 0x01	; 1
     7dca:	80 93 b0 03 	sts	0x03B0, r24
     7dce:	80 91 93 07 	lds	r24, 0x0793
@@ -13562,20 +13562,20 @@ auto_nav():
     7e28:	10 92 7c 07 	sts	0x077C, r1
     7e2c:	10 92 7d 07 	sts	0x077D, r1
     7e30:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:242
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:256
     7e34:	81 e0       	ldi	r24, 0x01	; 1
     7e36:	0e 94 d7 4e 	call	0x9dae	; 0x9dae <fly_to>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:243
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:257
     7e3a:	10 92 cc 01 	sts	0x01CC, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:244
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:258
     7e3e:	10 92 a4 03 	sts	0x03A4, r1
     7e42:	10 92 a5 03 	sts	0x03A5, r1
     7e46:	10 92 a6 03 	sts	0x03A6, r1
     7e4a:	10 92 a7 03 	sts	0x03A7, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:245
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:259
     7e4e:	83 e0       	ldi	r24, 0x03	; 3
     7e50:	80 93 ca 01 	sts	0x01CA, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:246
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:260
     7e54:	80 91 4d 01 	lds	r24, 0x014D
     7e58:	90 91 4e 01 	lds	r25, 0x014E
     7e5c:	a0 91 4f 01 	lds	r26, 0x014F
@@ -13584,22 +13584,22 @@ auto_nav():
     7e68:	90 93 36 01 	sts	0x0136, r25
     7e6c:	a0 93 37 01 	sts	0x0137, r26
     7e70:	b0 93 38 01 	sts	0x0138, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:247
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:261
     7e74:	10 92 98 03 	sts	0x0398, r1
     7e78:	10 92 99 03 	sts	0x0399, r1
     7e7c:	10 92 9a 03 	sts	0x039A, r1
     7e80:	10 92 9b 03 	sts	0x039B, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:249
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:263
     7e84:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:250
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:264
     7e88:	82 e0       	ldi	r24, 0x02	; 2
     7e8a:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:251
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:265
     7e8e:	84 e0       	ldi	r24, 0x04	; 4
     7e90:	0e 94 f1 4c 	call	0x99e2	; 0x99e2 <approaching>
     7e94:	88 23       	and	r24, r24
     7e96:	b1 f1       	breq	.+108    	; 0x7f04 <auto_nav+0x5b4>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:251 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:266
     7e98:	84 e0       	ldi	r24, 0x04	; 4
     7e9a:	80 93 b0 03 	sts	0x03B0, r24
     7e9e:	80 91 93 07 	lds	r24, 0x0793
@@ -13628,20 +13628,20 @@ auto_nav():
     7ef8:	10 92 7c 07 	sts	0x077C, r1
     7efc:	10 92 7d 07 	sts	0x077D, r1
     7f00:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:252
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:268
     7f04:	84 e0       	ldi	r24, 0x04	; 4
     7f06:	0e 94 d7 4e 	call	0x9dae	; 0x9dae <fly_to>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:253
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:269
     7f0a:	10 92 cc 01 	sts	0x01CC, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:254
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:270
     7f0e:	10 92 a4 03 	sts	0x03A4, r1
     7f12:	10 92 a5 03 	sts	0x03A5, r1
     7f16:	10 92 a6 03 	sts	0x03A6, r1
     7f1a:	10 92 a7 03 	sts	0x03A7, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:255
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:271
     7f1e:	83 e0       	ldi	r24, 0x03	; 3
     7f20:	80 93 ca 01 	sts	0x01CA, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:256
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:272
     7f24:	80 91 71 01 	lds	r24, 0x0171
     7f28:	90 91 72 01 	lds	r25, 0x0172
     7f2c:	a0 91 73 01 	lds	r26, 0x0173
@@ -13650,22 +13650,22 @@ auto_nav():
     7f38:	90 93 36 01 	sts	0x0136, r25
     7f3c:	a0 93 37 01 	sts	0x0137, r26
     7f40:	b0 93 38 01 	sts	0x0138, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:257
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:273
     7f44:	10 92 98 03 	sts	0x0398, r1
     7f48:	10 92 99 03 	sts	0x0399, r1
     7f4c:	10 92 9a 03 	sts	0x039A, r1
     7f50:	10 92 9b 03 	sts	0x039B, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:259
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:275
     7f54:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:260
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:276
     7f58:	83 e0       	ldi	r24, 0x03	; 3
     7f5a:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:261
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:277
     7f5e:	f7 ce       	rjmp	.-530    	; 0x7d4e <auto_nav+0x3fe>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:263
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:279
     7f60:	84 e0       	ldi	r24, 0x04	; 4
     7f62:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:264
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:280
     7f66:	80 91 88 07 	lds	r24, 0x0788
     7f6a:	8f 5f       	subi	r24, 0xFF	; 255
     7f6c:	80 93 88 07 	sts	0x0788, r24
@@ -13695,23 +13695,23 @@ auto_nav():
     7fcc:	10 92 7c 07 	sts	0x077C, r1
     7fd0:	10 92 7d 07 	sts	0x077D, r1
     7fd4:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:266
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:282
     7fd8:	82 e0       	ldi	r24, 0x02	; 2
     7fda:	80 93 88 07 	sts	0x0788, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:267
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:283
     7fde:	80 91 ef 05 	lds	r24, 0x05EF
     7fe2:	88 23       	and	r24, r24
     7fe4:	21 f0       	breq	.+8      	; 0x7fee <auto_nav+0x69e>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:267 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:283 (discriminator 1)
     7fe6:	10 92 ef 05 	sts	0x05EF, r1
     7fea:	81 e0       	ldi	r24, 0x01	; 1
     7fec:	01 c0       	rjmp	.+2      	; 0x7ff0 <auto_nav+0x6a0>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:267 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:283 (discriminator 2)
     7fee:	80 e0       	ldi	r24, 0x00	; 0
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:267 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:283 (discriminator 3)
     7ff0:	88 23       	and	r24, r24
     7ff2:	b9 f1       	breq	.+110    	; 0x8062 <auto_nav+0x712>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:267 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:284
     7ff4:	83 e0       	ldi	r24, 0x03	; 3
     7ff6:	80 93 88 07 	sts	0x0788, r24
     7ffa:	10 92 93 07 	sts	0x0793, r1
@@ -13740,7 +13740,7 @@ auto_nav():
     8056:	10 92 7c 07 	sts	0x077C, r1
     805a:	10 92 7d 07 	sts	0x077D, r1
     805e:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:268
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:286
     8062:	80 91 93 07 	lds	r24, 0x0793
     8066:	88 2f       	mov	r24, r24
     8068:	90 e0       	ldi	r25, 0x00	; 0
@@ -13787,9 +13787,9 @@ auto_nav():
     80ba:	09 f4       	brne	.+2      	; 0x80be <auto_nav+0x76e>
     80bc:	ae c2       	rjmp	.+1372   	; 0x861a <auto_nav+0xcca>
     80be:	e9 c2       	rjmp	.+1490   	; 0x8692 <auto_nav+0xd42>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:270
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:288
     80c0:	10 92 93 07 	sts	0x0793, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:271
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:292
     80c4:	80 91 93 07 	lds	r24, 0x0793
     80c8:	8f 5f       	subi	r24, 0xFF	; 255
     80ca:	80 93 93 07 	sts	0x0793, r24
@@ -13816,15 +13816,15 @@ auto_nav():
     811e:	10 92 7c 07 	sts	0x077C, r1
     8122:	10 92 7d 07 	sts	0x077D, r1
     8126:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:272
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:293
     812a:	81 e0       	ldi	r24, 0x01	; 1
     812c:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:273
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:294
     8130:	86 e0       	ldi	r24, 0x06	; 6
     8132:	0e 94 f1 4c 	call	0x99e2	; 0x99e2 <approaching>
     8136:	88 23       	and	r24, r24
     8138:	b1 f1       	breq	.+108    	; 0x81a6 <auto_nav+0x856>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:273 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:295
     813a:	86 e0       	ldi	r24, 0x06	; 6
     813c:	80 93 b0 03 	sts	0x03B0, r24
     8140:	80 91 93 07 	lds	r24, 0x0793
@@ -13853,20 +13853,20 @@ auto_nav():
     819a:	10 92 7c 07 	sts	0x077C, r1
     819e:	10 92 7d 07 	sts	0x077D, r1
     81a2:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:274
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:297
     81a6:	86 e0       	ldi	r24, 0x06	; 6
     81a8:	0e 94 d7 4e 	call	0x9dae	; 0x9dae <fly_to>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:275
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:298
     81ac:	10 92 cc 01 	sts	0x01CC, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:276
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:299
     81b0:	10 92 a4 03 	sts	0x03A4, r1
     81b4:	10 92 a5 03 	sts	0x03A5, r1
     81b8:	10 92 a6 03 	sts	0x03A6, r1
     81bc:	10 92 a7 03 	sts	0x03A7, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:277
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:300
     81c0:	83 e0       	ldi	r24, 0x03	; 3
     81c2:	80 93 ca 01 	sts	0x01CA, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:278
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:301
     81c6:	80 91 89 01 	lds	r24, 0x0189
     81ca:	90 91 8a 01 	lds	r25, 0x018A
     81ce:	a0 91 8b 01 	lds	r26, 0x018B
@@ -13875,22 +13875,22 @@ auto_nav():
     81da:	90 93 36 01 	sts	0x0136, r25
     81de:	a0 93 37 01 	sts	0x0137, r26
     81e2:	b0 93 38 01 	sts	0x0138, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:279
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:302
     81e6:	10 92 98 03 	sts	0x0398, r1
     81ea:	10 92 99 03 	sts	0x0399, r1
     81ee:	10 92 9a 03 	sts	0x039A, r1
     81f2:	10 92 9b 03 	sts	0x039B, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:281
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:304
     81f6:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:282
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:305
     81fa:	82 e0       	ldi	r24, 0x02	; 2
     81fc:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:283
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:306
     8200:	81 e0       	ldi	r24, 0x01	; 1
     8202:	0e 94 f1 4c 	call	0x99e2	; 0x99e2 <approaching>
     8206:	88 23       	and	r24, r24
     8208:	b1 f1       	breq	.+108    	; 0x8276 <auto_nav+0x926>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:283 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:307
     820a:	81 e0       	ldi	r24, 0x01	; 1
     820c:	80 93 b0 03 	sts	0x03B0, r24
     8210:	80 91 93 07 	lds	r24, 0x0793
@@ -13919,20 +13919,20 @@ auto_nav():
     826a:	10 92 7c 07 	sts	0x077C, r1
     826e:	10 92 7d 07 	sts	0x077D, r1
     8272:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:284
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:309
     8276:	81 e0       	ldi	r24, 0x01	; 1
     8278:	0e 94 d7 4e 	call	0x9dae	; 0x9dae <fly_to>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:285
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:310
     827c:	10 92 cc 01 	sts	0x01CC, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:286
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:311
     8280:	10 92 a4 03 	sts	0x03A4, r1
     8284:	10 92 a5 03 	sts	0x03A5, r1
     8288:	10 92 a6 03 	sts	0x03A6, r1
     828c:	10 92 a7 03 	sts	0x03A7, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:287
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:312
     8290:	83 e0       	ldi	r24, 0x03	; 3
     8292:	80 93 ca 01 	sts	0x01CA, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:288
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:313
     8296:	80 91 4d 01 	lds	r24, 0x014D
     829a:	90 91 4e 01 	lds	r25, 0x014E
     829e:	a0 91 4f 01 	lds	r26, 0x014F
@@ -13941,22 +13941,22 @@ auto_nav():
     82aa:	90 93 36 01 	sts	0x0136, r25
     82ae:	a0 93 37 01 	sts	0x0137, r26
     82b2:	b0 93 38 01 	sts	0x0138, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:289
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:314
     82b6:	10 92 98 03 	sts	0x0398, r1
     82ba:	10 92 99 03 	sts	0x0399, r1
     82be:	10 92 9a 03 	sts	0x039A, r1
     82c2:	10 92 9b 03 	sts	0x039B, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:291
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:316
     82c6:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:292
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:317
     82ca:	83 e0       	ldi	r24, 0x03	; 3
     82cc:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:293
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:318
     82d0:	82 e0       	ldi	r24, 0x02	; 2
     82d2:	0e 94 f1 4c 	call	0x99e2	; 0x99e2 <approaching>
     82d6:	88 23       	and	r24, r24
     82d8:	b1 f1       	breq	.+108    	; 0x8346 <auto_nav+0x9f6>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:293 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:319
     82da:	82 e0       	ldi	r24, 0x02	; 2
     82dc:	80 93 b0 03 	sts	0x03B0, r24
     82e0:	80 91 93 07 	lds	r24, 0x0793
@@ -13985,21 +13985,21 @@ auto_nav():
     833a:	10 92 7c 07 	sts	0x077C, r1
     833e:	10 92 7d 07 	sts	0x077D, r1
     8342:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:294
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:321
     8346:	80 91 b0 03 	lds	r24, 0x03B0
     834a:	62 e0       	ldi	r22, 0x02	; 2
     834c:	0e 94 0b 4f 	call	0x9e16	; 0x9e16 <route_to>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:295
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:322
     8350:	10 92 cc 01 	sts	0x01CC, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:296
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:323
     8354:	10 92 a4 03 	sts	0x03A4, r1
     8358:	10 92 a5 03 	sts	0x03A5, r1
     835c:	10 92 a6 03 	sts	0x03A6, r1
     8360:	10 92 a7 03 	sts	0x03A7, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:297
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:324
     8364:	83 e0       	ldi	r24, 0x03	; 3
     8366:	80 93 ca 01 	sts	0x01CA, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:298
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:325
     836a:	80 91 59 01 	lds	r24, 0x0159
     836e:	90 91 5a 01 	lds	r25, 0x015A
     8372:	a0 91 5b 01 	lds	r26, 0x015B
@@ -14008,22 +14008,22 @@ auto_nav():
     837e:	90 93 36 01 	sts	0x0136, r25
     8382:	a0 93 37 01 	sts	0x0137, r26
     8386:	b0 93 38 01 	sts	0x0138, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:299
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:326
     838a:	10 92 98 03 	sts	0x0398, r1
     838e:	10 92 99 03 	sts	0x0399, r1
     8392:	10 92 9a 03 	sts	0x039A, r1
     8396:	10 92 9b 03 	sts	0x039B, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:301
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:328
     839a:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:302
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:329
     839e:	84 e0       	ldi	r24, 0x04	; 4
     83a0:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:303
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:330
     83a4:	83 e0       	ldi	r24, 0x03	; 3
     83a6:	0e 94 f1 4c 	call	0x99e2	; 0x99e2 <approaching>
     83aa:	88 23       	and	r24, r24
     83ac:	b1 f1       	breq	.+108    	; 0x841a <auto_nav+0xaca>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:303 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:331
     83ae:	83 e0       	ldi	r24, 0x03	; 3
     83b0:	80 93 b0 03 	sts	0x03B0, r24
     83b4:	80 91 93 07 	lds	r24, 0x0793
@@ -14052,20 +14052,20 @@ auto_nav():
     840e:	10 92 7c 07 	sts	0x077C, r1
     8412:	10 92 7d 07 	sts	0x077D, r1
     8416:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:304
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:333
     841a:	83 e0       	ldi	r24, 0x03	; 3
     841c:	0e 94 d7 4e 	call	0x9dae	; 0x9dae <fly_to>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:305
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:334
     8420:	10 92 cc 01 	sts	0x01CC, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:306
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:335
     8424:	10 92 a4 03 	sts	0x03A4, r1
     8428:	10 92 a5 03 	sts	0x03A5, r1
     842c:	10 92 a6 03 	sts	0x03A6, r1
     8430:	10 92 a7 03 	sts	0x03A7, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:307
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:336
     8434:	83 e0       	ldi	r24, 0x03	; 3
     8436:	80 93 ca 01 	sts	0x01CA, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:308
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:337
     843a:	80 91 65 01 	lds	r24, 0x0165
     843e:	90 91 66 01 	lds	r25, 0x0166
     8442:	a0 91 67 01 	lds	r26, 0x0167
@@ -14074,22 +14074,22 @@ auto_nav():
     844e:	90 93 36 01 	sts	0x0136, r25
     8452:	a0 93 37 01 	sts	0x0137, r26
     8456:	b0 93 38 01 	sts	0x0138, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:309
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:338
     845a:	10 92 98 03 	sts	0x0398, r1
     845e:	10 92 99 03 	sts	0x0399, r1
     8462:	10 92 9a 03 	sts	0x039A, r1
     8466:	10 92 9b 03 	sts	0x039B, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:311
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:340
     846a:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:312
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:341
     846e:	85 e0       	ldi	r24, 0x05	; 5
     8470:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:313
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342
     8474:	84 e0       	ldi	r24, 0x04	; 4
     8476:	0e 94 f1 4c 	call	0x99e2	; 0x99e2 <approaching>
     847a:	88 23       	and	r24, r24
     847c:	b1 f1       	breq	.+108    	; 0x84ea <auto_nav+0xb9a>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:313 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:343
     847e:	84 e0       	ldi	r24, 0x04	; 4
     8480:	80 93 b0 03 	sts	0x03B0, r24
     8484:	80 91 93 07 	lds	r24, 0x0793
@@ -14118,20 +14118,20 @@ auto_nav():
     84de:	10 92 7c 07 	sts	0x077C, r1
     84e2:	10 92 7d 07 	sts	0x077D, r1
     84e6:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:314
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:345
     84ea:	84 e0       	ldi	r24, 0x04	; 4
     84ec:	0e 94 d7 4e 	call	0x9dae	; 0x9dae <fly_to>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:315
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:346
     84f0:	10 92 cc 01 	sts	0x01CC, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:316
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:347
     84f4:	10 92 a4 03 	sts	0x03A4, r1
     84f8:	10 92 a5 03 	sts	0x03A5, r1
     84fc:	10 92 a6 03 	sts	0x03A6, r1
     8500:	10 92 a7 03 	sts	0x03A7, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:317
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:348
     8504:	83 e0       	ldi	r24, 0x03	; 3
     8506:	80 93 ca 01 	sts	0x01CA, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:318
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:349
     850a:	80 91 71 01 	lds	r24, 0x0171
     850e:	90 91 72 01 	lds	r25, 0x0172
     8512:	a0 91 73 01 	lds	r26, 0x0173
@@ -14140,22 +14140,22 @@ auto_nav():
     851e:	90 93 36 01 	sts	0x0136, r25
     8522:	a0 93 37 01 	sts	0x0137, r26
     8526:	b0 93 38 01 	sts	0x0138, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:319
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:350
     852a:	10 92 98 03 	sts	0x0398, r1
     852e:	10 92 99 03 	sts	0x0399, r1
     8532:	10 92 9a 03 	sts	0x039A, r1
     8536:	10 92 9b 03 	sts	0x039B, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:321
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:352
     853a:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:322
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:353
     853e:	86 e0       	ldi	r24, 0x06	; 6
     8540:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:323
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:354
     8544:	85 e0       	ldi	r24, 0x05	; 5
     8546:	0e 94 f1 4c 	call	0x99e2	; 0x99e2 <approaching>
     854a:	88 23       	and	r24, r24
     854c:	b1 f1       	breq	.+108    	; 0x85ba <auto_nav+0xc6a>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:323 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:355
     854e:	85 e0       	ldi	r24, 0x05	; 5
     8550:	80 93 b0 03 	sts	0x03B0, r24
     8554:	80 91 93 07 	lds	r24, 0x0793
@@ -14184,21 +14184,21 @@ auto_nav():
     85ae:	10 92 7c 07 	sts	0x077C, r1
     85b2:	10 92 7d 07 	sts	0x077D, r1
     85b6:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:324
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:357
     85ba:	80 91 b0 03 	lds	r24, 0x03B0
     85be:	65 e0       	ldi	r22, 0x05	; 5
     85c0:	0e 94 0b 4f 	call	0x9e16	; 0x9e16 <route_to>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:325
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:358
     85c4:	10 92 cc 01 	sts	0x01CC, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:326
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:359
     85c8:	10 92 a4 03 	sts	0x03A4, r1
     85cc:	10 92 a5 03 	sts	0x03A5, r1
     85d0:	10 92 a6 03 	sts	0x03A6, r1
     85d4:	10 92 a7 03 	sts	0x03A7, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:327
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:360
     85d8:	83 e0       	ldi	r24, 0x03	; 3
     85da:	80 93 ca 01 	sts	0x01CA, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:328
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:361
     85de:	80 91 7d 01 	lds	r24, 0x017D
     85e2:	90 91 7e 01 	lds	r25, 0x017E
     85e6:	a0 91 7f 01 	lds	r26, 0x017F
@@ -14207,22 +14207,22 @@ auto_nav():
     85f2:	90 93 36 01 	sts	0x0136, r25
     85f6:	a0 93 37 01 	sts	0x0137, r26
     85fa:	b0 93 38 01 	sts	0x0138, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:329
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:362
     85fe:	10 92 98 03 	sts	0x0398, r1
     8602:	10 92 99 03 	sts	0x0399, r1
     8606:	10 92 9a 03 	sts	0x039A, r1
     860a:	10 92 9b 03 	sts	0x039B, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:331
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:364
     860e:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:332
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:365
     8612:	87 e0       	ldi	r24, 0x07	; 7
     8614:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:333
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:366
     8618:	53 cd       	rjmp	.-1370   	; 0x80c0 <auto_nav+0x770>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:335
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:368
     861a:	88 e0       	ldi	r24, 0x08	; 8
     861c:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:336
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:369
     8620:	80 91 88 07 	lds	r24, 0x0788
     8624:	8f 5f       	subi	r24, 0xFF	; 255
     8626:	80 93 88 07 	sts	0x0788, r24
@@ -14252,23 +14252,23 @@ auto_nav():
     8686:	10 92 7c 07 	sts	0x077C, r1
     868a:	10 92 7d 07 	sts	0x077D, r1
     868e:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:338
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:371
     8692:	83 e0       	ldi	r24, 0x03	; 3
     8694:	80 93 88 07 	sts	0x0788, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:339
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:372
     8698:	80 91 ef 05 	lds	r24, 0x05EF
     869c:	88 23       	and	r24, r24
     869e:	21 f0       	breq	.+8      	; 0x86a8 <auto_nav+0xd58>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:339 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:372 (discriminator 1)
     86a0:	10 92 ef 05 	sts	0x05EF, r1
     86a4:	81 e0       	ldi	r24, 0x01	; 1
     86a6:	01 c0       	rjmp	.+2      	; 0x86aa <auto_nav+0xd5a>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:339 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:372 (discriminator 2)
     86a8:	80 e0       	ldi	r24, 0x00	; 0
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:339 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:372 (discriminator 3)
     86aa:	88 23       	and	r24, r24
     86ac:	b9 f1       	breq	.+110    	; 0x871c <auto_nav+0xdcc>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:339 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:373
     86ae:	84 e0       	ldi	r24, 0x04	; 4
     86b0:	80 93 88 07 	sts	0x0788, r24
     86b4:	10 92 93 07 	sts	0x0793, r1
@@ -14297,7 +14297,7 @@ auto_nav():
     8710:	10 92 7c 07 	sts	0x077C, r1
     8714:	10 92 7d 07 	sts	0x077D, r1
     8718:	0c 94 e0 4c 	jmp	0x99c0	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:340
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:375
     871c:	80 91 93 07 	lds	r24, 0x0793
     8720:	88 2f       	mov	r24, r24
     8722:	90 e0       	ldi	r25, 0x00	; 0
@@ -14308,14 +14308,14 @@ auto_nav():
     872c:	09 f4       	brne	.+2      	; 0x8730 <auto_nav+0xde0>
     872e:	09 c3       	rjmp	.+1554   	; 0x8d42 <auto_nav+0x13f2>
     8730:	43 c3       	rjmp	.+1670   	; 0x8db8 <auto_nav+0x1468>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:341
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:376
     8732:	10 92 93 07 	sts	0x0793, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377
     8736:	80 91 c9 01 	lds	r24, 0x01C9
     873a:	82 30       	cpi	r24, 0x02	; 2
     873c:	09 f0       	breq	.+2      	; 0x8740 <auto_nav+0xdf0>
     873e:	d9 c1       	rjmp	.+946    	; 0x8af2 <auto_nav+0x11a2>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 1)
     8740:	80 91 1c 07 	lds	r24, 0x071C
     8744:	90 91 1d 07 	lds	r25, 0x071D
     8748:	9a 83       	std	Y+2, r25	; 0x02
@@ -14326,7 +14326,7 @@ auto_nav():
     8752:	21 e0       	ldi	r18, 0x01	; 1
     8754:	92 07       	cpc	r25, r18
     8756:	3c f4       	brge	.+14     	; 0x8766 <auto_nav+0xe16>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 2)
     8758:	89 81       	ldd	r24, Y+1	; 0x01
     875a:	9a 81       	ldd	r25, Y+2	; 0x02
     875c:	80 32       	cpi	r24, 0x20	; 32
@@ -14334,7 +14334,7 @@ auto_nav():
     8760:	92 07       	cpc	r25, r18
     8762:	0c f0       	brlt	.+2      	; 0x8766 <auto_nav+0xe16>
     8764:	8d c0       	rjmp	.+282    	; 0x8880 <auto_nav+0xf30>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 1)
     8766:	89 81       	ldd	r24, Y+1	; 0x01
     8768:	9a 81       	ldd	r25, Y+2	; 0x02
     876a:	aa 27       	eor	r26, r26
@@ -14403,12 +14403,12 @@ auto_nav():
     8810:	a0 91 c3 03 	lds	r26, 0x03C3
     8814:	b0 91 c4 03 	lds	r27, 0x03C4
     8818:	04 c0       	rjmp	.+8      	; 0x8822 <auto_nav+0xed2>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 2)
     881a:	80 e0       	ldi	r24, 0x00	; 0
     881c:	90 e0       	ldi	r25, 0x00	; 0
     881e:	aa e7       	ldi	r26, 0x7A	; 122
     8820:	b3 e4       	ldi	r27, 0x43	; 67
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 3)
     8822:	80 93 c1 03 	sts	0x03C1, r24
     8826:	90 93 c2 03 	sts	0x03C2, r25
     882a:	a0 93 c3 03 	sts	0x03C3, r26
@@ -14426,23 +14426,23 @@ auto_nav():
     884e:	0e 94 f1 5d 	call	0xbbe2	; 0xbbe2 <__gesf2>
     8852:	18 16       	cp	r1, r24
     8854:	4c f4       	brge	.+18     	; 0x8868 <auto_nav+0xf18>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 1)
     8856:	80 91 c1 03 	lds	r24, 0x03C1
     885a:	90 91 c2 03 	lds	r25, 0x03C2
     885e:	a0 91 c3 03 	lds	r26, 0x03C3
     8862:	b0 91 c4 03 	lds	r27, 0x03C4
     8866:	04 c0       	rjmp	.+8      	; 0x8870 <auto_nav+0xf20>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 2)
     8868:	80 e0       	ldi	r24, 0x00	; 0
     886a:	90 e0       	ldi	r25, 0x00	; 0
     886c:	aa e7       	ldi	r26, 0x7A	; 122
     886e:	b3 ec       	ldi	r27, 0xC3	; 195
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 3)
     8870:	80 93 c1 03 	sts	0x03C1, r24
     8874:	90 93 c2 03 	sts	0x03C2, r25
     8878:	a0 93 c3 03 	sts	0x03C3, r26
     887c:	b0 93 c4 03 	sts	0x03C4, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 1)
     8880:	80 91 1a 07 	lds	r24, 0x071A
     8884:	90 91 1b 07 	lds	r25, 0x071B
     8888:	9c 83       	std	Y+4, r25	; 0x04
@@ -14453,7 +14453,7 @@ auto_nav():
     8892:	21 e0       	ldi	r18, 0x01	; 1
     8894:	92 07       	cpc	r25, r18
     8896:	3c f4       	brge	.+14     	; 0x88a6 <auto_nav+0xf56>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 2)
     8898:	8b 81       	ldd	r24, Y+3	; 0x03
     889a:	9c 81       	ldd	r25, Y+4	; 0x04
     889c:	80 32       	cpi	r24, 0x20	; 32
@@ -14461,7 +14461,7 @@ auto_nav():
     88a0:	92 07       	cpc	r25, r18
     88a2:	0c f0       	brlt	.+2      	; 0x88a6 <auto_nav+0xf56>
     88a4:	8d c0       	rjmp	.+282    	; 0x89c0 <auto_nav+0x1070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 1)
     88a6:	8b 81       	ldd	r24, Y+3	; 0x03
     88a8:	9c 81       	ldd	r25, Y+4	; 0x04
     88aa:	aa 27       	eor	r26, r26
@@ -14530,12 +14530,12 @@ auto_nav():
     8950:	a0 91 c7 03 	lds	r26, 0x03C7
     8954:	b0 91 c8 03 	lds	r27, 0x03C8
     8958:	04 c0       	rjmp	.+8      	; 0x8962 <auto_nav+0x1012>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 2)
     895a:	80 e0       	ldi	r24, 0x00	; 0
     895c:	90 e0       	ldi	r25, 0x00	; 0
     895e:	aa e7       	ldi	r26, 0x7A	; 122
     8960:	b3 e4       	ldi	r27, 0x43	; 67
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 3)
     8962:	80 93 c5 03 	sts	0x03C5, r24
     8966:	90 93 c6 03 	sts	0x03C6, r25
     896a:	a0 93 c7 03 	sts	0x03C7, r26
@@ -14553,23 +14553,23 @@ auto_nav():
     898e:	0e 94 f1 5d 	call	0xbbe2	; 0xbbe2 <__gesf2>
     8992:	18 16       	cp	r1, r24
     8994:	4c f4       	brge	.+18     	; 0x89a8 <auto_nav+0x1058>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 1)
     8996:	80 91 c5 03 	lds	r24, 0x03C5
     899a:	90 91 c6 03 	lds	r25, 0x03C6
     899e:	a0 91 c7 03 	lds	r26, 0x03C7
     89a2:	b0 91 c8 03 	lds	r27, 0x03C8
     89a6:	04 c0       	rjmp	.+8      	; 0x89b0 <auto_nav+0x1060>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 2)
     89a8:	80 e0       	ldi	r24, 0x00	; 0
     89aa:	90 e0       	ldi	r25, 0x00	; 0
     89ac:	aa e7       	ldi	r26, 0x7A	; 122
     89ae:	b3 ec       	ldi	r27, 0xC3	; 195
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 3)
     89b0:	80 93 c5 03 	sts	0x03C5, r24
     89b4:	90 93 c6 03 	sts	0x03C6, r25
     89b8:	a0 93 c7 03 	sts	0x03C7, r26
     89bc:	b0 93 c8 03 	sts	0x03C8, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 1)
     89c0:	83 e0       	ldi	r24, 0x03	; 3
     89c2:	80 93 ca 01 	sts	0x01CA, r24
     89c6:	80 91 18 07 	lds	r24, 0x0718
@@ -14582,7 +14582,7 @@ auto_nav():
     89d8:	21 e0       	ldi	r18, 0x01	; 1
     89da:	92 07       	cpc	r25, r18
     89dc:	3c f4       	brge	.+14     	; 0x89ec <auto_nav+0x109c>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 2)
     89de:	8d 81       	ldd	r24, Y+5	; 0x05
     89e0:	9e 81       	ldd	r25, Y+6	; 0x06
     89e2:	80 32       	cpi	r24, 0x20	; 32
@@ -14590,7 +14590,7 @@ auto_nav():
     89e6:	92 07       	cpc	r25, r18
     89e8:	0c f0       	brlt	.+2      	; 0x89ec <auto_nav+0x109c>
     89ea:	83 c0       	rjmp	.+262    	; 0x8af2 <auto_nav+0x11a2>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 1)
     89ec:	8d 81       	ldd	r24, Y+5	; 0x05
     89ee:	9e 81       	ldd	r25, Y+6	; 0x06
     89f0:	aa 27       	eor	r26, r26
@@ -14650,12 +14650,12 @@ auto_nav():
     8a82:	a0 91 37 01 	lds	r26, 0x0137
     8a86:	b0 91 38 01 	lds	r27, 0x0138
     8a8a:	04 c0       	rjmp	.+8      	; 0x8a94 <auto_nav+0x1144>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 2)
     8a8c:	80 e0       	ldi	r24, 0x00	; 0
     8a8e:	90 e0       	ldi	r25, 0x00	; 0
     8a90:	af e2       	ldi	r26, 0x2F	; 47
     8a92:	b3 e4       	ldi	r27, 0x43	; 67
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 3)
     8a94:	80 93 35 01 	sts	0x0135, r24
     8a98:	90 93 36 01 	sts	0x0136, r25
     8a9c:	a0 93 37 01 	sts	0x0137, r26
@@ -14673,23 +14673,23 @@ auto_nav():
     8ac0:	0e 94 41 5c 	call	0xb882	; 0xb882 <__cmpsf2>
     8ac4:	88 23       	and	r24, r24
     8ac6:	4c f4       	brge	.+18     	; 0x8ada <auto_nav+0x118a>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 1)
     8ac8:	80 91 35 01 	lds	r24, 0x0135
     8acc:	90 91 36 01 	lds	r25, 0x0136
     8ad0:	a0 91 37 01 	lds	r26, 0x0137
     8ad4:	b0 91 38 01 	lds	r27, 0x0138
     8ad8:	04 c0       	rjmp	.+8      	; 0x8ae2 <auto_nav+0x1192>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 2)
     8ada:	80 e0       	ldi	r24, 0x00	; 0
     8adc:	90 e8       	ldi	r25, 0x80	; 128
     8ade:	a9 e8       	ldi	r26, 0x89	; 137
     8ae0:	b3 e4       	ldi	r27, 0x43	; 67
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 3)
     8ae2:	80 93 35 01 	sts	0x0135, r24
     8ae6:	90 93 36 01 	sts	0x0136, r25
     8aea:	a0 93 37 01 	sts	0x0137, r26
     8aee:	b0 93 38 01 	sts	0x0138, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 2)
     8af2:	80 91 ca 07 	lds	r24, 0x07CA
     8af6:	90 91 cb 07 	lds	r25, 0x07CB
     8afa:	a0 91 cc 07 	lds	r26, 0x07CC
@@ -14867,7 +14867,7 @@ auto_nav():
     8cb8:	90 93 b2 03 	sts	0x03B2, r25
     8cbc:	a0 93 b3 03 	sts	0x03B3, r26
     8cc0:	b0 93 b4 03 	sts	0x03B4, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 1)
     8cc4:	80 91 b1 03 	lds	r24, 0x03B1
     8cc8:	90 91 b2 03 	lds	r25, 0x03B2
     8ccc:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -14880,9 +14880,9 @@ auto_nav():
     8cde:	0e 94 41 5c 	call	0xb882	; 0xb882 <__cmpsf2>
     8ce2:	88 23       	and	r24, r24
     8ce4:	ac f2       	brlt	.-86     	; 0x8c90 <auto_nav+0x1340>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 3)
     8ce6:	1a c0       	rjmp	.+52     	; 0x8d1c <auto_nav+0x13cc>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 2)
     8ce8:	80 91 b1 03 	lds	r24, 0x03B1
     8cec:	90 91 b2 03 	lds	r25, 0x03B2
     8cf0:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -14900,7 +14900,7 @@ auto_nav():
     8d10:	90 93 b2 03 	sts	0x03B2, r25
     8d14:	a0 93 b3 03 	sts	0x03B3, r26
     8d18:	b0 93 b4 03 	sts	0x03B4, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:342 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377 (discriminator 1)
     8d1c:	80 91 b1 03 	lds	r24, 0x03B1
     8d20:	90 91 b2 03 	lds	r25, 0x03B2
     8d24:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -14914,12 +14914,12 @@ auto_nav():
     8d38:	0e 94 f1 5d 	call	0xbbe2	; 0xbbe2 <__gesf2>
     8d3c:	88 23       	and	r24, r24
     8d3e:	a4 f6       	brge	.-88     	; 0x8ce8 <auto_nav+0x1398>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:343
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:378
     8d40:	3f c6       	rjmp	.+3198   	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:344
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:379
     8d42:	81 e0       	ldi	r24, 0x01	; 1
     8d44:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:345
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:380
     8d48:	80 91 88 07 	lds	r24, 0x0788
     8d4c:	8f 5f       	subi	r24, 0xFF	; 255
     8d4e:	80 93 88 07 	sts	0x0788, r24
@@ -14949,23 +14949,23 @@ auto_nav():
     8dae:	10 92 7c 07 	sts	0x077C, r1
     8db2:	10 92 7d 07 	sts	0x077D, r1
     8db6:	04 c6       	rjmp	.+3080   	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:347
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:382
     8db8:	84 e0       	ldi	r24, 0x04	; 4
     8dba:	80 93 88 07 	sts	0x0788, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:348
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:383
     8dbe:	80 91 ef 05 	lds	r24, 0x05EF
     8dc2:	88 23       	and	r24, r24
     8dc4:	21 f0       	breq	.+8      	; 0x8dce <auto_nav+0x147e>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:348 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:383 (discriminator 1)
     8dc6:	10 92 ef 05 	sts	0x05EF, r1
     8dca:	81 e0       	ldi	r24, 0x01	; 1
     8dcc:	01 c0       	rjmp	.+2      	; 0x8dd0 <auto_nav+0x1480>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:348 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:383 (discriminator 2)
     8dce:	80 e0       	ldi	r24, 0x00	; 0
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:348 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:383 (discriminator 3)
     8dd0:	88 23       	and	r24, r24
     8dd2:	b1 f1       	breq	.+108    	; 0x8e40 <auto_nav+0x14f0>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:348 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:384
     8dd4:	85 e0       	ldi	r24, 0x05	; 5
     8dd6:	80 93 88 07 	sts	0x0788, r24
     8dda:	10 92 93 07 	sts	0x0793, r1
@@ -14994,7 +14994,7 @@ auto_nav():
     8e36:	10 92 7c 07 	sts	0x077C, r1
     8e3a:	10 92 7d 07 	sts	0x077D, r1
     8e3e:	c0 c5       	rjmp	.+2944   	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:349
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:386
     8e40:	80 91 93 07 	lds	r24, 0x0793
     8e44:	88 2f       	mov	r24, r24
     8e46:	90 e0       	ldi	r25, 0x00	; 0
@@ -15005,19 +15005,19 @@ auto_nav():
     8e50:	09 f4       	brne	.+2      	; 0x8e54 <auto_nav+0x1504>
     8e52:	54 c1       	rjmp	.+680    	; 0x90fc <auto_nav+0x17ac>
     8e54:	8e c1       	rjmp	.+796    	; 0x9172 <auto_nav+0x1822>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:350
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:387
     8e56:	10 92 93 07 	sts	0x0793, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:351
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:388
     8e5a:	10 92 cc 01 	sts	0x01CC, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:352
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:389
     8e5e:	10 92 a4 03 	sts	0x03A4, r1
     8e62:	10 92 a5 03 	sts	0x03A5, r1
     8e66:	10 92 a6 03 	sts	0x03A6, r1
     8e6a:	10 92 a7 03 	sts	0x03A7, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:353
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:390
     8e6e:	83 e0       	ldi	r24, 0x03	; 3
     8e70:	80 93 ca 01 	sts	0x01CA, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:354
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:391
     8e74:	80 91 41 01 	lds	r24, 0x0141
     8e78:	90 91 42 01 	lds	r25, 0x0142
     8e7c:	a0 91 43 01 	lds	r26, 0x0143
@@ -15026,12 +15026,12 @@ auto_nav():
     8e88:	90 93 36 01 	sts	0x0136, r25
     8e8c:	a0 93 37 01 	sts	0x0137, r26
     8e90:	b0 93 38 01 	sts	0x0138, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:355
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:392
     8e94:	10 92 98 03 	sts	0x0398, r1
     8e98:	10 92 99 03 	sts	0x0399, r1
     8e9c:	10 92 9a 03 	sts	0x039A, r1
     8ea0:	10 92 9b 03 	sts	0x039B, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:356
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:393
     8ea4:	80 91 ca 07 	lds	r24, 0x07CA
     8ea8:	90 91 cb 07 	lds	r25, 0x07CB
     8eac:	a0 91 cc 07 	lds	r26, 0x07CC
@@ -15196,7 +15196,7 @@ auto_nav():
     9040:	a0 93 b3 03 	sts	0x03B3, r26
     9044:	b0 93 b4 03 	sts	0x03B4, r27
     9048:	1a c0       	rjmp	.+52     	; 0x907e <auto_nav+0x172e>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:356 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:393 (discriminator 2)
     904a:	80 91 b1 03 	lds	r24, 0x03B1
     904e:	90 91 b2 03 	lds	r25, 0x03B2
     9052:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15214,7 +15214,7 @@ auto_nav():
     9072:	90 93 b2 03 	sts	0x03B2, r25
     9076:	a0 93 b3 03 	sts	0x03B3, r26
     907a:	b0 93 b4 03 	sts	0x03B4, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:356 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:393 (discriminator 1)
     907e:	80 91 b1 03 	lds	r24, 0x03B1
     9082:	90 91 b2 03 	lds	r25, 0x03B2
     9086:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15227,9 +15227,9 @@ auto_nav():
     9098:	0e 94 41 5c 	call	0xb882	; 0xb882 <__cmpsf2>
     909c:	88 23       	and	r24, r24
     909e:	ac f2       	brlt	.-86     	; 0x904a <auto_nav+0x16fa>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:356 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:393 (discriminator 3)
     90a0:	1a c0       	rjmp	.+52     	; 0x90d6 <auto_nav+0x1786>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:356 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:393 (discriminator 2)
     90a2:	80 91 b1 03 	lds	r24, 0x03B1
     90a6:	90 91 b2 03 	lds	r25, 0x03B2
     90aa:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15247,7 +15247,7 @@ auto_nav():
     90ca:	90 93 b2 03 	sts	0x03B2, r25
     90ce:	a0 93 b3 03 	sts	0x03B3, r26
     90d2:	b0 93 b4 03 	sts	0x03B4, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:356 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:393 (discriminator 1)
     90d6:	80 91 b1 03 	lds	r24, 0x03B1
     90da:	90 91 b2 03 	lds	r25, 0x03B2
     90de:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15261,12 +15261,12 @@ auto_nav():
     90f2:	0e 94 f1 5d 	call	0xbbe2	; 0xbbe2 <__gesf2>
     90f6:	88 23       	and	r24, r24
     90f8:	a4 f6       	brge	.-88     	; 0x90a2 <auto_nav+0x1752>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:357
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:394
     90fa:	62 c4       	rjmp	.+2244   	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:358
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:395
     90fc:	81 e0       	ldi	r24, 0x01	; 1
     90fe:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:359
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:396
     9102:	80 91 88 07 	lds	r24, 0x0788
     9106:	8f 5f       	subi	r24, 0xFF	; 255
     9108:	80 93 88 07 	sts	0x0788, r24
@@ -15296,23 +15296,23 @@ auto_nav():
     9168:	10 92 7c 07 	sts	0x077C, r1
     916c:	10 92 7d 07 	sts	0x077D, r1
     9170:	27 c4       	rjmp	.+2126   	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:361
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:398
     9172:	85 e0       	ldi	r24, 0x05	; 5
     9174:	80 93 88 07 	sts	0x0788, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:362
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:399
     9178:	80 91 ef 05 	lds	r24, 0x05EF
     917c:	88 23       	and	r24, r24
     917e:	21 f0       	breq	.+8      	; 0x9188 <auto_nav+0x1838>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:362 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:399 (discriminator 1)
     9180:	10 92 ef 05 	sts	0x05EF, r1
     9184:	81 e0       	ldi	r24, 0x01	; 1
     9186:	01 c0       	rjmp	.+2      	; 0x918a <auto_nav+0x183a>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:362 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:399 (discriminator 2)
     9188:	80 e0       	ldi	r24, 0x00	; 0
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:362 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:399 (discriminator 3)
     918a:	88 23       	and	r24, r24
     918c:	b1 f1       	breq	.+108    	; 0x91fa <auto_nav+0x18aa>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:362 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:399 (discriminator 1)
     918e:	81 e0       	ldi	r24, 0x01	; 1
     9190:	80 93 88 07 	sts	0x0788, r24
     9194:	10 92 93 07 	sts	0x0793, r1
@@ -15341,7 +15341,7 @@ auto_nav():
     91f0:	10 92 7c 07 	sts	0x077C, r1
     91f4:	10 92 7d 07 	sts	0x077D, r1
     91f8:	e3 c3       	rjmp	.+1990   	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:363
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:400
     91fa:	80 91 93 07 	lds	r24, 0x0793
     91fe:	88 2f       	mov	r24, r24
     9200:	90 e0       	ldi	r25, 0x00	; 0
@@ -15368,9 +15368,9 @@ auto_nav():
     922a:	09 f4       	brne	.+2      	; 0x922e <auto_nav+0x18de>
     922c:	8e c3       	rjmp	.+1820   	; 0x994a <auto_nav+0x1ffa>
     922e:	c8 c3       	rjmp	.+1936   	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:365
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:402
     9230:	10 92 93 07 	sts	0x0793, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:366
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:406
     9234:	80 91 93 07 	lds	r24, 0x0793
     9238:	8f 5f       	subi	r24, 0xFF	; 255
     923a:	80 93 93 07 	sts	0x0793, r24
@@ -15397,20 +15397,20 @@ auto_nav():
     928e:	10 92 7c 07 	sts	0x077C, r1
     9292:	10 92 7d 07 	sts	0x077D, r1
     9296:	94 c3       	rjmp	.+1832   	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:367
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:407
     9298:	81 e0       	ldi	r24, 0x01	; 1
     929a:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:368
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:408
     929e:	10 92 cc 01 	sts	0x01CC, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:369
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:409
     92a2:	10 92 a4 03 	sts	0x03A4, r1
     92a6:	10 92 a5 03 	sts	0x03A5, r1
     92aa:	10 92 a6 03 	sts	0x03A6, r1
     92ae:	10 92 a7 03 	sts	0x03A7, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:370
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:410
     92b2:	83 e0       	ldi	r24, 0x03	; 3
     92b4:	80 93 ca 01 	sts	0x01CA, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:371
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:411
     92b8:	80 91 4d 01 	lds	r24, 0x014D
     92bc:	90 91 4e 01 	lds	r25, 0x014E
     92c0:	a0 91 4f 01 	lds	r26, 0x014F
@@ -15419,12 +15419,12 @@ auto_nav():
     92cc:	90 93 36 01 	sts	0x0136, r25
     92d0:	a0 93 37 01 	sts	0x0137, r26
     92d4:	b0 93 38 01 	sts	0x0138, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:372
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:412
     92d8:	10 92 98 03 	sts	0x0398, r1
     92dc:	10 92 99 03 	sts	0x0399, r1
     92e0:	10 92 9a 03 	sts	0x039A, r1
     92e4:	10 92 9b 03 	sts	0x039B, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:373
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:413
     92e8:	80 91 ca 07 	lds	r24, 0x07CA
     92ec:	90 91 cb 07 	lds	r25, 0x07CB
     92f0:	a0 91 cc 07 	lds	r26, 0x07CC
@@ -15589,7 +15589,7 @@ auto_nav():
     9484:	a0 93 b3 03 	sts	0x03B3, r26
     9488:	b0 93 b4 03 	sts	0x03B4, r27
     948c:	1a c0       	rjmp	.+52     	; 0x94c2 <auto_nav+0x1b72>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:373 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:413 (discriminator 2)
     948e:	80 91 b1 03 	lds	r24, 0x03B1
     9492:	90 91 b2 03 	lds	r25, 0x03B2
     9496:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15607,7 +15607,7 @@ auto_nav():
     94b6:	90 93 b2 03 	sts	0x03B2, r25
     94ba:	a0 93 b3 03 	sts	0x03B3, r26
     94be:	b0 93 b4 03 	sts	0x03B4, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:373 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:413 (discriminator 1)
     94c2:	80 91 b1 03 	lds	r24, 0x03B1
     94c6:	90 91 b2 03 	lds	r25, 0x03B2
     94ca:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15620,9 +15620,9 @@ auto_nav():
     94dc:	0e 94 41 5c 	call	0xb882	; 0xb882 <__cmpsf2>
     94e0:	88 23       	and	r24, r24
     94e2:	ac f2       	brlt	.-86     	; 0x948e <auto_nav+0x1b3e>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:373 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:413 (discriminator 3)
     94e4:	1a c0       	rjmp	.+52     	; 0x951a <auto_nav+0x1bca>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:373 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:413 (discriminator 2)
     94e6:	80 91 b1 03 	lds	r24, 0x03B1
     94ea:	90 91 b2 03 	lds	r25, 0x03B2
     94ee:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15640,7 +15640,7 @@ auto_nav():
     950e:	90 93 b2 03 	sts	0x03B2, r25
     9512:	a0 93 b3 03 	sts	0x03B3, r26
     9516:	b0 93 b4 03 	sts	0x03B4, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:373 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:413 (discriminator 1)
     951a:	80 91 b1 03 	lds	r24, 0x03B1
     951e:	90 91 b2 03 	lds	r25, 0x03B2
     9522:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15654,7 +15654,7 @@ auto_nav():
     9536:	0e 94 f1 5d 	call	0xbbe2	; 0xbbe2 <__gesf2>
     953a:	88 23       	and	r24, r24
     953c:	a4 f6       	brge	.-88     	; 0x94e6 <auto_nav+0x1b96>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:374
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:414
     953e:	80 91 b1 03 	lds	r24, 0x03B1
     9542:	90 91 b2 03 	lds	r25, 0x03B2
     9546:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15667,9 +15667,9 @@ auto_nav():
     9558:	0e 94 f1 5d 	call	0xbbe2	; 0xbbe2 <__gesf2>
     955c:	18 16       	cp	r1, r24
     955e:	0c f0       	brlt	.+2      	; 0x9562 <auto_nav+0x1c12>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:375
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:415
     9560:	2f c2       	rjmp	.+1118   	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:374 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:414 (discriminator 1)
     9562:	80 91 b1 03 	lds	r24, 0x03B1
     9566:	90 91 b2 03 	lds	r25, 0x03B2
     956a:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15683,9 +15683,9 @@ auto_nav():
     957e:	0e 94 41 5c 	call	0xb882	; 0xb882 <__cmpsf2>
     9582:	88 23       	and	r24, r24
     9584:	0c f0       	brlt	.+2      	; 0x9588 <auto_nav+0x1c38>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:375 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:415 (discriminator 1)
     9586:	1c c2       	rjmp	.+1080   	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:374 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:414 (discriminator 1)
     9588:	80 91 93 07 	lds	r24, 0x0793
     958c:	8f 5f       	subi	r24, 0xFF	; 255
     958e:	80 93 93 07 	sts	0x0793, r24
@@ -15712,20 +15712,20 @@ auto_nav():
     95e2:	10 92 7c 07 	sts	0x077C, r1
     95e6:	10 92 7d 07 	sts	0x077D, r1
     95ea:	ea c1       	rjmp	.+980    	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:376
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:416
     95ec:	82 e0       	ldi	r24, 0x02	; 2
     95ee:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:377
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:417
     95f2:	10 92 cc 01 	sts	0x01CC, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:378
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:418
     95f6:	10 92 a4 03 	sts	0x03A4, r1
     95fa:	10 92 a5 03 	sts	0x03A5, r1
     95fe:	10 92 a6 03 	sts	0x03A6, r1
     9602:	10 92 a7 03 	sts	0x03A7, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:379
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:419
     9606:	83 e0       	ldi	r24, 0x03	; 3
     9608:	80 93 ca 01 	sts	0x01CA, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:380
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:420
     960c:	80 91 71 01 	lds	r24, 0x0171
     9610:	90 91 72 01 	lds	r25, 0x0172
     9614:	a0 91 73 01 	lds	r26, 0x0173
@@ -15734,12 +15734,12 @@ auto_nav():
     9620:	90 93 36 01 	sts	0x0136, r25
     9624:	a0 93 37 01 	sts	0x0137, r26
     9628:	b0 93 38 01 	sts	0x0138, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:381
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:421
     962c:	10 92 98 03 	sts	0x0398, r1
     9630:	10 92 99 03 	sts	0x0399, r1
     9634:	10 92 9a 03 	sts	0x039A, r1
     9638:	10 92 9b 03 	sts	0x039B, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:382
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:422
     963c:	80 91 ca 07 	lds	r24, 0x07CA
     9640:	90 91 cb 07 	lds	r25, 0x07CB
     9644:	a0 91 cc 07 	lds	r26, 0x07CC
@@ -15904,7 +15904,7 @@ auto_nav():
     97d8:	a0 93 b3 03 	sts	0x03B3, r26
     97dc:	b0 93 b4 03 	sts	0x03B4, r27
     97e0:	1a c0       	rjmp	.+52     	; 0x9816 <auto_nav+0x1ec6>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:382 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:422 (discriminator 2)
     97e2:	80 91 b1 03 	lds	r24, 0x03B1
     97e6:	90 91 b2 03 	lds	r25, 0x03B2
     97ea:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15922,7 +15922,7 @@ auto_nav():
     980a:	90 93 b2 03 	sts	0x03B2, r25
     980e:	a0 93 b3 03 	sts	0x03B3, r26
     9812:	b0 93 b4 03 	sts	0x03B4, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:382 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:422 (discriminator 1)
     9816:	80 91 b1 03 	lds	r24, 0x03B1
     981a:	90 91 b2 03 	lds	r25, 0x03B2
     981e:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15935,9 +15935,9 @@ auto_nav():
     9830:	0e 94 41 5c 	call	0xb882	; 0xb882 <__cmpsf2>
     9834:	88 23       	and	r24, r24
     9836:	ac f2       	brlt	.-86     	; 0x97e2 <auto_nav+0x1e92>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:382 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:422 (discriminator 3)
     9838:	1a c0       	rjmp	.+52     	; 0x986e <auto_nav+0x1f1e>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:382 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:422 (discriminator 2)
     983a:	80 91 b1 03 	lds	r24, 0x03B1
     983e:	90 91 b2 03 	lds	r25, 0x03B2
     9842:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15955,7 +15955,7 @@ auto_nav():
     9862:	90 93 b2 03 	sts	0x03B2, r25
     9866:	a0 93 b3 03 	sts	0x03B3, r26
     986a:	b0 93 b4 03 	sts	0x03B4, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:382 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:422 (discriminator 1)
     986e:	80 91 b1 03 	lds	r24, 0x03B1
     9872:	90 91 b2 03 	lds	r25, 0x03B2
     9876:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15969,7 +15969,7 @@ auto_nav():
     988a:	0e 94 f1 5d 	call	0xbbe2	; 0xbbe2 <__gesf2>
     988e:	88 23       	and	r24, r24
     9890:	a4 f6       	brge	.-88     	; 0x983a <auto_nav+0x1eea>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:383
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:423
     9892:	80 91 b1 03 	lds	r24, 0x03B1
     9896:	90 91 b2 03 	lds	r25, 0x03B2
     989a:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15983,9 +15983,9 @@ auto_nav():
     98ae:	0e 94 f1 5d 	call	0xbbe2	; 0xbbe2 <__gesf2>
     98b2:	18 16       	cp	r1, r24
     98b4:	0c f0       	brlt	.+2      	; 0x98b8 <auto_nav+0x1f68>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:384
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:424
     98b6:	84 c0       	rjmp	.+264    	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:383 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:423 (discriminator 1)
     98b8:	80 91 b1 03 	lds	r24, 0x03B1
     98bc:	90 91 b2 03 	lds	r25, 0x03B2
     98c0:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -15999,9 +15999,9 @@ auto_nav():
     98d4:	0e 94 41 5c 	call	0xb882	; 0xb882 <__cmpsf2>
     98d8:	88 23       	and	r24, r24
     98da:	0c f0       	brlt	.+2      	; 0x98de <auto_nav+0x1f8e>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:384 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:424 (discriminator 1)
     98dc:	71 c0       	rjmp	.+226    	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:383 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:423 (discriminator 1)
     98de:	80 91 93 07 	lds	r24, 0x0793
     98e2:	8f 5f       	subi	r24, 0xFF	; 255
     98e4:	80 93 93 07 	sts	0x0793, r24
@@ -16028,15 +16028,15 @@ auto_nav():
     9938:	10 92 7c 07 	sts	0x077C, r1
     993c:	10 92 7d 07 	sts	0x077D, r1
     9940:	3f c0       	rjmp	.+126    	; 0x99c0 <auto_nav+0x2070>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:385
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:425
     9942:	83 e0       	ldi	r24, 0x03	; 3
     9944:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:386
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:426
     9948:	73 cc       	rjmp	.-1818   	; 0x9230 <auto_nav+0x18e0>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:388
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:428
     994a:	84 e0       	ldi	r24, 0x04	; 4
     994c:	80 93 93 07 	sts	0x0793, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:389
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:429
     9950:	80 91 88 07 	lds	r24, 0x0788
     9954:	8f 5f       	subi	r24, 0xFF	; 255
     9956:	80 93 88 07 	sts	0x0788, r24
@@ -16066,7 +16066,7 @@ auto_nav():
     99b6:	10 92 7c 07 	sts	0x077C, r1
     99ba:	10 92 7d 07 	sts	0x077D, r1
     99be:	00 00       	nop
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:392
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:432
     99c0:	a6 96       	adiw	r28, 0x26	; 38
     99c2:	0f b6       	in	r0, 0x3f	; 63
     99c4:	f8 94       	cli
@@ -16087,7 +16087,7 @@ auto_nav():
 
 000099e2 <approaching>:
 approaching():
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:405
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:445
     99e2:	cf 92       	push	r12
     99e4:	df 92       	push	r13
     99e6:	ef 92       	push	r14
@@ -16104,7 +16104,7 @@ approaching():
     99fc:	0f be       	out	0x3f, r0	; 63
     99fe:	cd bf       	out	0x3d, r28	; 61
     9a00:	8d 87       	std	Y+13, r24	; 0x0d
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:406
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:446
     9a02:	8d 85       	ldd	r24, Y+13	; 0x0d
     9a04:	28 2f       	mov	r18, r24
     9a06:	30 e0       	ldi	r19, 0x00	; 0
@@ -16137,7 +16137,7 @@ approaching():
     9a46:	9a 83       	std	Y+2, r25	; 0x02
     9a48:	ab 83       	std	Y+3, r26	; 0x03
     9a4a:	bc 83       	std	Y+4, r27	; 0x04
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:407
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:447
     9a4c:	8d 85       	ldd	r24, Y+13	; 0x0d
     9a4e:	28 2f       	mov	r18, r24
     9a50:	30 e0       	ldi	r19, 0x00	; 0
@@ -16170,7 +16170,7 @@ approaching():
     9a90:	9e 83       	std	Y+6, r25	; 0x06
     9a92:	af 83       	std	Y+7, r26	; 0x07
     9a94:	b8 87       	std	Y+8, r27	; 0x08
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:409
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:449
     9a96:	29 81       	ldd	r18, Y+1	; 0x01
     9a98:	3a 81       	ldd	r19, Y+2	; 0x02
     9a9a:	4b 81       	ldd	r20, Y+3	; 0x03
@@ -16206,7 +16206,7 @@ approaching():
     9ade:	90 93 73 07 	sts	0x0773, r25
     9ae2:	a0 93 74 07 	sts	0x0774, r26
     9ae6:	b0 93 75 07 	sts	0x0775, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:410
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:450
     9aea:	80 91 ba 07 	lds	r24, 0x07BA
     9aee:	90 91 bb 07 	lds	r25, 0x07BB
     9af2:	a0 91 bc 07 	lds	r26, 0x07BC
@@ -16224,7 +16224,7 @@ approaching():
     9b12:	90 93 b6 03 	sts	0x03B6, r25
     9b16:	a0 93 b7 03 	sts	0x03B7, r26
     9b1a:	b0 93 b8 03 	sts	0x03B8, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:411
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:451
     9b1e:	80 91 b5 03 	lds	r24, 0x03B5
     9b22:	90 91 b6 03 	lds	r25, 0x03B6
     9b26:	a0 91 b7 03 	lds	r26, 0x03B7
@@ -16238,23 +16238,23 @@ approaching():
     9b3a:	0e 94 41 5c 	call	0xb882	; 0xb882 <__cmpsf2>
     9b3e:	88 23       	and	r24, r24
     9b40:	2c f4       	brge	.+10     	; 0x9b4c <approaching+0x16a>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:411 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:451 (discriminator 1)
     9b42:	80 e0       	ldi	r24, 0x00	; 0
     9b44:	90 e0       	ldi	r25, 0x00	; 0
     9b46:	a0 e2       	ldi	r26, 0x20	; 32
     9b48:	b2 e4       	ldi	r27, 0x42	; 66
     9b4a:	08 c0       	rjmp	.+16     	; 0x9b5c <approaching+0x17a>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:411 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:451 (discriminator 2)
     9b4c:	80 91 b5 03 	lds	r24, 0x03B5
     9b50:	90 91 b6 03 	lds	r25, 0x03B6
     9b54:	a0 91 b7 03 	lds	r26, 0x03B7
     9b58:	b0 91 b8 03 	lds	r27, 0x03B8
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:411 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:451 (discriminator 3)
     9b5c:	80 93 b5 03 	sts	0x03B5, r24
     9b60:	90 93 b6 03 	sts	0x03B6, r25
     9b64:	a0 93 b7 03 	sts	0x03B7, r26
     9b68:	b0 93 b8 03 	sts	0x03B8, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:412 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:452 (discriminator 3)
     9b6c:	80 91 b5 03 	lds	r24, 0x03B5
     9b70:	90 91 b6 03 	lds	r25, 0x03B6
     9b74:	a0 91 b7 03 	lds	r26, 0x03B7
@@ -16277,10 +16277,10 @@ approaching():
     9bac:	0e 94 f1 5d 	call	0xbbe2	; 0xbbe2 <__gesf2>
     9bb0:	18 16       	cp	r1, r24
     9bb2:	14 f4       	brge	.+4      	; 0x9bb8 <approaching+0x1d6>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:413
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:453
     9bb4:	81 e0       	ldi	r24, 0x01	; 1
     9bb6:	72 c0       	rjmp	.+228    	; 0x9c9c <approaching+0x2ba>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:414
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:454
     9bb8:	8d 85       	ldd	r24, Y+13	; 0x0d
     9bba:	28 2f       	mov	r18, r24
     9bbc:	30 e0       	ldi	r19, 0x00	; 0
@@ -16368,7 +16368,7 @@ approaching():
     9c7a:	9a 87       	std	Y+10, r25	; 0x0a
     9c7c:	ab 87       	std	Y+11, r26	; 0x0b
     9c7e:	bc 87       	std	Y+12, r27	; 0x0c
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:415
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:455
     9c80:	11 e0       	ldi	r17, 0x01	; 1
     9c82:	20 e0       	ldi	r18, 0x00	; 0
     9c84:	30 e0       	ldi	r19, 0x00	; 0
@@ -16382,7 +16382,7 @@ approaching():
     9c96:	0c f0       	brlt	.+2      	; 0x9c9a <approaching+0x2b8>
     9c98:	10 e0       	ldi	r17, 0x00	; 0
     9c9a:	81 2f       	mov	r24, r17
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:416
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:456
     9c9c:	2d 96       	adiw	r28, 0x0d	; 13
     9c9e:	0f b6       	in	r0, 0x3f	; 63
     9ca0:	f8 94       	cli
@@ -16400,7 +16400,7 @@ approaching():
 
 00009cb8 <fly_to_xy>:
 fly_to_xy():
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:418
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:458
     9cb8:	cf 92       	push	r12
     9cba:	df 92       	push	r13
     9cbc:	ef 92       	push	r14
@@ -16423,7 +16423,7 @@ fly_to_xy():
     9cde:	3e 83       	std	Y+6, r19	; 0x06
     9ce0:	4f 83       	std	Y+7, r20	; 0x07
     9ce2:	58 87       	std	Y+8, r21	; 0x08
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:419
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:459
     9ce4:	89 81       	ldd	r24, Y+1	; 0x01
     9ce6:	9a 81       	ldd	r25, Y+2	; 0x02
     9ce8:	ab 81       	ldd	r26, Y+3	; 0x03
@@ -16432,7 +16432,7 @@ fly_to_xy():
     9cf0:	90 93 77 07 	sts	0x0777, r25
     9cf4:	a0 93 78 07 	sts	0x0778, r26
     9cf8:	b0 93 79 07 	sts	0x0779, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:420
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:460
     9cfc:	8d 81       	ldd	r24, Y+5	; 0x05
     9cfe:	9e 81       	ldd	r25, Y+6	; 0x06
     9d00:	af 81       	ldd	r26, Y+7	; 0x07
@@ -16441,7 +16441,7 @@ fly_to_xy():
     9d08:	90 93 7f 07 	sts	0x077F, r25
     9d0c:	a0 93 80 07 	sts	0x0780, r26
     9d10:	b0 93 81 07 	sts	0x0781, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:421
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:461
     9d14:	80 91 ca 07 	lds	r24, 0x07CA
     9d18:	90 91 cb 07 	lds	r25, 0x07CB
     9d1c:	a0 91 cc 07 	lds	r26, 0x07CC
@@ -16490,7 +16490,7 @@ fly_to_xy():
     9d88:	90 93 91 03 	sts	0x0391, r25
     9d8c:	a0 93 92 03 	sts	0x0392, r26
     9d90:	b0 93 93 03 	sts	0x0393, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:422
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:462
     9d94:	28 96       	adiw	r28, 0x08	; 8
     9d96:	0f b6       	in	r0, 0x3f	; 63
     9d98:	f8 94       	cli
@@ -16507,14 +16507,14 @@ fly_to_xy():
 
 00009dae <fly_to>:
 fly_to():
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:423
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:463
     9dae:	cf 93       	push	r28
     9db0:	df 93       	push	r29
     9db2:	1f 92       	push	r1
     9db4:	cd b7       	in	r28, 0x3d	; 61
     9db6:	de b7       	in	r29, 0x3e	; 62
     9db8:	89 83       	std	Y+1, r24	; 0x01
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:424
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:464
     9dba:	89 81       	ldd	r24, Y+1	; 0x01
     9dbc:	28 2f       	mov	r18, r24
     9dbe:	30 e0       	ldi	r19, 0x00	; 0
@@ -16556,7 +16556,7 @@ fly_to():
     9e06:	bc 01       	movw	r22, r24
     9e08:	cd 01       	movw	r24, r26
     9e0a:	0e 94 5c 4e 	call	0x9cb8	; 0x9cb8 <fly_to_xy>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:425
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:465
     9e0e:	0f 90       	pop	r0
     9e10:	df 91       	pop	r29
     9e12:	cf 91       	pop	r28
@@ -16564,7 +16564,7 @@ fly_to():
 
 00009e16 <route_to>:
 route_to():
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:428
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:468
     9e16:	cf 92       	push	r12
     9e18:	df 92       	push	r13
     9e1a:	ef 92       	push	r14
@@ -16581,7 +16581,7 @@ route_to():
     9e30:	cd bf       	out	0x3d, r28	; 61
     9e32:	8d 8b       	std	Y+21, r24	; 0x15
     9e34:	6e 8b       	std	Y+22, r22	; 0x16
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:429
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:469
     9e36:	8d 89       	ldd	r24, Y+21	; 0x15
     9e38:	28 2f       	mov	r18, r24
     9e3a:	30 e0       	ldi	r19, 0x00	; 0
@@ -16605,7 +16605,7 @@ route_to():
     9e5e:	9a 83       	std	Y+2, r25	; 0x02
     9e60:	ab 83       	std	Y+3, r26	; 0x03
     9e62:	bc 83       	std	Y+4, r27	; 0x04
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:430
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:470
     9e64:	8d 89       	ldd	r24, Y+21	; 0x15
     9e66:	28 2f       	mov	r18, r24
     9e68:	30 e0       	ldi	r19, 0x00	; 0
@@ -16629,7 +16629,7 @@ route_to():
     9e8c:	9e 83       	std	Y+6, r25	; 0x06
     9e8e:	af 83       	std	Y+7, r26	; 0x07
     9e90:	b8 87       	std	Y+8, r27	; 0x08
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:431
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:471
     9e92:	8e 89       	ldd	r24, Y+22	; 0x16
     9e94:	28 2f       	mov	r18, r24
     9e96:	30 e0       	ldi	r19, 0x00	; 0
@@ -16662,7 +16662,7 @@ route_to():
     9ece:	9a 87       	std	Y+10, r25	; 0x0a
     9ed0:	ab 87       	std	Y+11, r26	; 0x0b
     9ed2:	bc 87       	std	Y+12, r27	; 0x0c
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:432
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:472
     9ed4:	8e 89       	ldd	r24, Y+22	; 0x16
     9ed6:	28 2f       	mov	r18, r24
     9ed8:	30 e0       	ldi	r19, 0x00	; 0
@@ -16695,7 +16695,7 @@ route_to():
     9f10:	9e 87       	std	Y+14, r25	; 0x0e
     9f12:	af 87       	std	Y+15, r26	; 0x0f
     9f14:	b8 8b       	std	Y+16, r27	; 0x10
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:433
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:473
     9f16:	29 85       	ldd	r18, Y+9	; 0x09
     9f18:	3a 85       	ldd	r19, Y+10	; 0x0a
     9f1a:	4b 85       	ldd	r20, Y+11	; 0x0b
@@ -16731,7 +16731,7 @@ route_to():
     9f5c:	9a 8b       	std	Y+18, r25	; 0x12
     9f5e:	ab 8b       	std	Y+19, r26	; 0x13
     9f60:	bc 8b       	std	Y+20, r27	; 0x14
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:434
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:474
     9f62:	80 91 ca 07 	lds	r24, 0x07CA
     9f66:	90 91 cb 07 	lds	r25, 0x07CB
     9f6a:	a0 91 cc 07 	lds	r26, 0x07CC
@@ -16798,7 +16798,7 @@ route_to():
     9ffe:	90 93 ba 03 	sts	0x03BA, r25
     a002:	a0 93 bb 03 	sts	0x03BB, r26
     a006:	b0 93 bc 03 	sts	0x03BC, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:435
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:475
     a00a:	80 91 b9 03 	lds	r24, 0x03B9
     a00e:	90 91 ba 03 	lds	r25, 0x03BA
     a012:	a0 91 bb 03 	lds	r26, 0x03BB
@@ -16811,22 +16811,22 @@ route_to():
     a024:	0e 94 f1 5d 	call	0xbbe2	; 0xbbe2 <__gesf2>
     a028:	18 16       	cp	r1, r24
     a02a:	4c f4       	brge	.+18     	; 0xa03e <route_to+0x228>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:435 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:475 (discriminator 1)
     a02c:	80 91 b9 03 	lds	r24, 0x03B9
     a030:	90 91 ba 03 	lds	r25, 0x03BA
     a034:	a0 91 bb 03 	lds	r26, 0x03BB
     a038:	b0 91 bc 03 	lds	r27, 0x03BC
     a03c:	03 c0       	rjmp	.+6      	; 0xa044 <route_to+0x22e>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:435 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:475 (discriminator 2)
     a03e:	80 e0       	ldi	r24, 0x00	; 0
     a040:	90 e0       	ldi	r25, 0x00	; 0
     a042:	dc 01       	movw	r26, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:435 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:475 (discriminator 3)
     a044:	80 93 b9 03 	sts	0x03B9, r24
     a048:	90 93 ba 03 	sts	0x03BA, r25
     a04c:	a0 93 bb 03 	sts	0x03BB, r26
     a050:	b0 93 bc 03 	sts	0x03BC, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:436 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:476 (discriminator 3)
     a054:	89 89       	ldd	r24, Y+17	; 0x11
     a056:	9a 89       	ldd	r25, Y+18	; 0x12
     a058:	ab 89       	ldd	r26, Y+19	; 0x13
@@ -16840,7 +16840,7 @@ route_to():
     a06c:	90 93 be 03 	sts	0x03BE, r25
     a070:	a0 93 bf 03 	sts	0x03BF, r26
     a074:	b0 93 c0 03 	sts	0x03C0, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:437 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:477 (discriminator 3)
     a078:	80 91 b5 03 	lds	r24, 0x03B5
     a07c:	90 91 b6 03 	lds	r25, 0x03B6
     a080:	a0 91 b7 03 	lds	r26, 0x03B7
@@ -16862,7 +16862,7 @@ route_to():
     a0ae:	0e 94 f1 5d 	call	0xbbe2	; 0xbbe2 <__gesf2>
     a0b2:	18 16       	cp	r1, r24
     a0b4:	bc f4       	brge	.+46     	; 0xa0e4 <route_to+0x2ce>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:437 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:477 (discriminator 1)
     a0b6:	80 91 b5 03 	lds	r24, 0x03B5
     a0ba:	90 91 b6 03 	lds	r25, 0x03B6
     a0be:	a0 91 b7 03 	lds	r26, 0x03B7
@@ -16877,11 +16877,11 @@ route_to():
     a0de:	dc 01       	movw	r26, r24
     a0e0:	cb 01       	movw	r24, r22
     a0e2:	03 c0       	rjmp	.+6      	; 0xa0ea <route_to+0x2d4>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:437 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:477 (discriminator 2)
     a0e4:	80 e0       	ldi	r24, 0x00	; 0
     a0e6:	90 e0       	ldi	r25, 0x00	; 0
     a0e8:	dc 01       	movw	r26, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:437 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:477 (discriminator 3)
     a0ea:	20 91 b9 03 	lds	r18, 0x03B9
     a0ee:	30 91 ba 03 	lds	r19, 0x03BA
     a0f2:	40 91 bb 03 	lds	r20, 0x03BB
@@ -16895,7 +16895,7 @@ route_to():
     a10a:	90 93 ba 03 	sts	0x03BA, r25
     a10e:	a0 93 bb 03 	sts	0x03BB, r26
     a112:	b0 93 bc 03 	sts	0x03BC, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:438 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:478 (discriminator 3)
     a116:	80 91 b9 03 	lds	r24, 0x03B9
     a11a:	90 91 ba 03 	lds	r25, 0x03BA
     a11e:	a0 91 bb 03 	lds	r26, 0x03BB
@@ -16909,23 +16909,23 @@ route_to():
     a132:	0e 94 f1 5d 	call	0xbbe2	; 0xbbe2 <__gesf2>
     a136:	18 16       	cp	r1, r24
     a138:	2c f4       	brge	.+10     	; 0xa144 <route_to+0x32e>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:438 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:478 (discriminator 1)
     a13a:	80 e0       	ldi	r24, 0x00	; 0
     a13c:	90 e0       	ldi	r25, 0x00	; 0
     a13e:	a0 e8       	ldi	r26, 0x80	; 128
     a140:	bf e3       	ldi	r27, 0x3F	; 63
     a142:	08 c0       	rjmp	.+16     	; 0xa154 <route_to+0x33e>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:438 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:478 (discriminator 2)
     a144:	80 91 b9 03 	lds	r24, 0x03B9
     a148:	90 91 ba 03 	lds	r25, 0x03BA
     a14c:	a0 91 bb 03 	lds	r26, 0x03BB
     a150:	b0 91 bc 03 	lds	r27, 0x03BC
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:438 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:478 (discriminator 3)
     a154:	80 93 b9 03 	sts	0x03B9, r24
     a158:	90 93 ba 03 	sts	0x03BA, r25
     a15c:	a0 93 bb 03 	sts	0x03BB, r26
     a160:	b0 93 bc 03 	sts	0x03BC, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:439 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:479 (discriminator 3)
     a164:	80 91 b9 03 	lds	r24, 0x03B9
     a168:	90 91 ba 03 	lds	r25, 0x03BA
     a16c:	a0 91 bb 03 	lds	r26, 0x03BB
@@ -16977,7 +16977,7 @@ route_to():
     a1dc:	bc 01       	movw	r22, r24
     a1de:	cd 01       	movw	r24, r26
     a1e0:	0e 94 5c 4e 	call	0x9cb8	; 0x9cb8 <fly_to_xy>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:440 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:480 (discriminator 3)
     a1e4:	66 96       	adiw	r28, 0x16	; 22
     a1e6:	0f b6       	in	r0, 0x3f	; 63
     a1e8:	f8 94       	cli
@@ -16994,7 +16994,7 @@ route_to():
 
 0000a1fe <glide_to>:
 glide_to():
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:441
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:481
     a1fe:	cf 93       	push	r28
     a200:	df 93       	push	r29
     a202:	00 d0       	rcall	.+0      	; 0xa204 <glide_to+0x6>
@@ -17004,7 +17004,7 @@ glide_to():
     a20a:	de b7       	in	r29, 0x3e	; 62
     a20c:	8d 83       	std	Y+5, r24	; 0x05
     a20e:	6e 83       	std	Y+6, r22	; 0x06
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:442
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:482
     a210:	8d 81       	ldd	r24, Y+5	; 0x05
     a212:	28 2f       	mov	r18, r24
     a214:	30 e0       	ldi	r19, 0x00	; 0
@@ -17028,7 +17028,7 @@ glide_to():
     a238:	9a 83       	std	Y+2, r25	; 0x02
     a23a:	ab 83       	std	Y+3, r26	; 0x03
     a23c:	bc 83       	std	Y+4, r27	; 0x04
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:443
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:483
     a23e:	8e 81       	ldd	r24, Y+6	; 0x06
     a240:	28 2f       	mov	r18, r24
     a242:	30 e0       	ldi	r19, 0x00	; 0
@@ -17079,7 +17079,7 @@ glide_to():
     a2ac:	90 93 36 01 	sts	0x0136, r25
     a2b0:	a0 93 37 01 	sts	0x0137, r26
     a2b4:	b0 93 38 01 	sts	0x0138, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:444
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:484
     a2b8:	8e 81       	ldd	r24, Y+6	; 0x06
     a2ba:	28 2f       	mov	r18, r24
     a2bc:	30 e0       	ldi	r19, 0x00	; 0
@@ -17130,7 +17130,7 @@ glide_to():
     a326:	90 93 99 03 	sts	0x0399, r25
     a32a:	a0 93 9a 03 	sts	0x039A, r26
     a32e:	b0 93 9b 03 	sts	0x039B, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:445
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:485
     a332:	26 96       	adiw	r28, 0x06	; 6
     a334:	0f b6       	in	r0, 0x3f	; 63
     a336:	f8 94       	cli
@@ -17143,7 +17143,7 @@ glide_to():
 
 0000a344 <compute_dist2_to_home>:
 compute_dist2_to_home():
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:446
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:486
     a344:	cf 92       	push	r12
     a346:	df 92       	push	r13
     a348:	ef 92       	push	r14
@@ -17159,7 +17159,7 @@ compute_dist2_to_home():
     a35c:	de bf       	out	0x3e, r29	; 62
     a35e:	0f be       	out	0x3f, r0	; 63
     a360:	cd bf       	out	0x3d, r28	; 61
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:447
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:487
     a362:	80 91 39 01 	lds	r24, 0x0139
     a366:	90 91 3a 01 	lds	r25, 0x013A
     a36a:	a0 91 3b 01 	lds	r26, 0x013B
@@ -17177,7 +17177,7 @@ compute_dist2_to_home():
     a390:	9a 83       	std	Y+2, r25	; 0x02
     a392:	ab 83       	std	Y+3, r26	; 0x03
     a394:	bc 83       	std	Y+4, r27	; 0x04
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:448
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:488
     a396:	80 91 3d 01 	lds	r24, 0x013D
     a39a:	90 91 3e 01 	lds	r25, 0x013E
     a39e:	a0 91 3f 01 	lds	r26, 0x013F
@@ -17195,7 +17195,7 @@ compute_dist2_to_home():
     a3c4:	9e 83       	std	Y+6, r25	; 0x06
     a3c6:	af 83       	std	Y+7, r26	; 0x07
     a3c8:	b8 87       	std	Y+8, r27	; 0x08
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:449
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:489
     a3ca:	29 81       	ldd	r18, Y+1	; 0x01
     a3cc:	3a 81       	ldd	r19, Y+2	; 0x02
     a3ce:	4b 81       	ldd	r20, Y+3	; 0x03
@@ -17231,7 +17231,7 @@ compute_dist2_to_home():
     a412:	90 93 90 07 	sts	0x0790, r25
     a416:	a0 93 91 07 	sts	0x0791, r26
     a41a:	b0 93 92 07 	sts	0x0792, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:450
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:490
     a41e:	80 91 8f 07 	lds	r24, 0x078F
     a422:	90 91 90 07 	lds	r25, 0x0790
     a426:	a0 91 91 07 	lds	r26, 0x0791
@@ -17249,7 +17249,7 @@ compute_dist2_to_home():
     a444:	10 e0       	ldi	r17, 0x00	; 0
     a446:	81 2f       	mov	r24, r17
     a448:	80 93 89 07 	sts	0x0789, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:451
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:491
     a44c:	28 96       	adiw	r28, 0x08	; 8
     a44e:	0f b6       	in	r0, 0x3f	; 63
     a450:	f8 94       	cli
@@ -17267,7 +17267,7 @@ compute_dist2_to_home():
 
 0000a468 <nav_home>:
 nav_home():
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:452
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:492
     a468:	8f 92       	push	r8
     a46a:	9f 92       	push	r9
     a46c:	af 92       	push	r10
@@ -17286,7 +17286,7 @@ nav_home():
     a486:	de bf       	out	0x3e, r29	; 62
     a488:	0f be       	out	0x3f, r0	; 63
     a48a:	cd bf       	out	0x3d, r28	; 61
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:453
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:493
     a48c:	80 91 ca 07 	lds	r24, 0x07CA
     a490:	90 91 cb 07 	lds	r25, 0x07CB
     a494:	a0 91 cc 07 	lds	r26, 0x07CC
@@ -17451,7 +17451,7 @@ nav_home():
     a628:	a0 93 b3 03 	sts	0x03B3, r26
     a62c:	b0 93 b4 03 	sts	0x03B4, r27
     a630:	1a c0       	rjmp	.+52     	; 0xa666 <nav_home+0x1fe>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:453 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:493 (discriminator 2)
     a632:	80 91 b1 03 	lds	r24, 0x03B1
     a636:	90 91 b2 03 	lds	r25, 0x03B2
     a63a:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -17469,7 +17469,7 @@ nav_home():
     a65a:	90 93 b2 03 	sts	0x03B2, r25
     a65e:	a0 93 b3 03 	sts	0x03B3, r26
     a662:	b0 93 b4 03 	sts	0x03B4, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:453 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:493 (discriminator 1)
     a666:	80 91 b1 03 	lds	r24, 0x03B1
     a66a:	90 91 b2 03 	lds	r25, 0x03B2
     a66e:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -17482,9 +17482,9 @@ nav_home():
     a680:	0e 94 41 5c 	call	0xb882	; 0xb882 <__cmpsf2>
     a684:	88 23       	and	r24, r24
     a686:	ac f2       	brlt	.-86     	; 0xa632 <nav_home+0x1ca>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:453 (discriminator 3)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:493 (discriminator 3)
     a688:	1a c0       	rjmp	.+52     	; 0xa6be <nav_home+0x256>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:453 (discriminator 2)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:493 (discriminator 2)
     a68a:	80 91 b1 03 	lds	r24, 0x03B1
     a68e:	90 91 b2 03 	lds	r25, 0x03B2
     a692:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -17502,7 +17502,7 @@ nav_home():
     a6b2:	90 93 b2 03 	sts	0x03B2, r25
     a6b6:	a0 93 b3 03 	sts	0x03B3, r26
     a6ba:	b0 93 b4 03 	sts	0x03B4, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:453 (discriminator 1)
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:493 (discriminator 1)
     a6be:	80 91 b1 03 	lds	r24, 0x03B1
     a6c2:	90 91 b2 03 	lds	r25, 0x03B2
     a6c6:	a0 91 b3 03 	lds	r26, 0x03B3
@@ -17516,15 +17516,15 @@ nav_home():
     a6da:	0e 94 f1 5d 	call	0xbbe2	; 0xbbe2 <__gesf2>
     a6de:	88 23       	and	r24, r24
     a6e0:	a4 f6       	brge	.-88     	; 0xa68a <nav_home+0x222>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:454
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:494
     a6e2:	10 92 a4 03 	sts	0x03A4, r1
     a6e6:	10 92 a5 03 	sts	0x03A5, r1
     a6ea:	10 92 a6 03 	sts	0x03A6, r1
     a6ee:	10 92 a7 03 	sts	0x03A7, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:455
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:495
     a6f2:	83 e0       	ldi	r24, 0x03	; 3
     a6f4:	80 93 ca 01 	sts	0x01CA, r24
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:456
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:496
     a6f8:	80 e0       	ldi	r24, 0x00	; 0
     a6fa:	90 e0       	ldi	r25, 0x00	; 0
     a6fc:	af e2       	ldi	r26, 0x2F	; 47
@@ -17533,9 +17533,9 @@ nav_home():
     a704:	90 93 36 01 	sts	0x0136, r25
     a708:	a0 93 37 01 	sts	0x0137, r26
     a70c:	b0 93 38 01 	sts	0x0138, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:457
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:497
     a710:	0e 94 a2 51 	call	0xa344	; 0xa344 <compute_dist2_to_home>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:458
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:498
     a714:	80 91 8f 07 	lds	r24, 0x078F
     a718:	90 91 90 07 	lds	r25, 0x0790
     a71c:	a0 91 91 07 	lds	r26, 0x0791
@@ -17544,7 +17544,7 @@ nav_home():
     a728:	90 93 73 07 	sts	0x0773, r25
     a72c:	a0 93 74 07 	sts	0x0774, r26
     a730:	b0 93 75 07 	sts	0x0775, r27
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:459
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:499
     a734:	28 96       	adiw	r28, 0x08	; 8
     a736:	0f b6       	in	r0, 0x3f	; 63
     a738:	f8 94       	cli
@@ -17565,32 +17565,32 @@ nav_home():
 
 0000a756 <nav_update>:
 nav_update():
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:460
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:500
     a756:	cf 93       	push	r28
     a758:	df 93       	push	r29
     a75a:	cd b7       	in	r28, 0x3d	; 61
     a75c:	de b7       	in	r29, 0x3e	; 62
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:461
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:501
     a75e:	0e 94 a2 51 	call	0xa344	; 0xa344 <compute_dist2_to_home>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:462
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:502
     a762:	0e 94 a8 3c 	call	0x7950	; 0x7950 <auto_nav>
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:463
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:503
     a766:	df 91       	pop	r29
     a768:	cf 91       	pop	r28
     a76a:	08 95       	ret
 
 0000a76c <nav_init>:
 nav_init():
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:464
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:504
     a76c:	cf 93       	push	r28
     a76e:	df 93       	push	r29
     a770:	cd b7       	in	r28, 0x3d	; 61
     a772:	de b7       	in	r29, 0x3e	; 62
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:465
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:505
     a774:	10 92 88 07 	sts	0x0788, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:466
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:506
     a778:	10 92 93 07 	sts	0x0793, r1
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:467
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_nav.c:507
     a77c:	df 91       	pop	r29
     a77e:	cf 91       	pop	r28
     a780:	08 95       	ret
@@ -24456,36 +24456,36 @@ reporting_task():
     187c:	00 0b       	sbc	r16, r16
     187e:	4c 0a       	sbc	r4, r28
     1880:	00 00       	nop
-    1882:	01 d4       	rcall	.+2050   	; 0x2086 <__stack+0xf87>
+    1882:	01 d7       	rcall	.+3586   	; 0x2686 <__stack+0x1587>
     1884:	74 7a       	andi	r23, 0xA4	; 164
     1886:	00 00       	nop
     1888:	0b 9a       	sbi	0x01, 3	; 1
     188a:	0b 00       	.word	0x000b	; ????
     188c:	00 01       	movw	r0, r0
-    188e:	ed 4e       	sbci	r30, 0xED	; 237
+    188e:	f6 4e       	sbci	r31, 0xE6	; 230
     1890:	7d 00       	.word	0x007d	; ????
     1892:	00 0c       	add	r0, r0
     1894:	5d 0a       	sbc	r5, r29
     1896:	00 00       	nop
-    1898:	01 06       	cpc	r0, r17
+    1898:	01 16       	cp	r0, r17
     189a:	01 60       	ori	r16, 0x01	; 1
     189c:	7f 00       	.word	0x007f	; ????
     189e:	00 0c       	add	r0, r0
     18a0:	b2 0b       	sbc	r27, r18
     18a2:	00 00       	nop
-    18a4:	01 0d       	add	r16, r1
+    18a4:	01 1f       	adc	r16, r17
     18a6:	01 c0       	rjmp	.+2      	; 0x18aa <__stack+0x7ab>
     18a8:	80 00       	.word	0x0080	; ????
     18aa:	00 0c       	add	r0, r0
     18ac:	78 0a       	sbc	r7, r24
     18ae:	00 00       	nop
-    18b0:	01 4e       	sbci	r16, 0xE1	; 225
+    18b0:	01 6f       	ori	r16, 0xF1	; 241
     18b2:	01 1a       	sub	r0, r17
     18b4:	86 00       	.word	0x0086	; ????
     18b6:	00 0c       	add	r0, r0
     18b8:	c0 0b       	sbc	r28, r16
     18ba:	00 00       	nop
-    18bc:	01 6c       	ori	r16, 0xC1	; 193
+    18bc:	01 91       	ld	r16, Z+
     18be:	01 30       	cpi	r16, 0x01	; 1
     18c0:	92 00       	.word	0x0092	; ????
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
@@ -24493,7 +24493,7 @@ reporting_task():
     18c4:	89 0a       	sbc	r8, r25
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
     18c6:	00 00       	nop
-    18c8:	01 83       	std	Z+1, r16	; 0x01
+    18c8:	01 ab       	std	Z+49, r16	; 0x31
     18ca:	01 4a       	sbci	r16, 0xA1	; 161
     18cc:	99 00       	.word	0x0099	; ????
     18ce:	00 0d       	add	r16, r0
@@ -24506,7 +24506,7 @@ reporting_task():
     18dc:	0e 9a       	sbi	0x01, 6	; 1
     18de:	0a 00       	.word	0x000a	; ????
     18e0:	00 01       	movw	r0, r0
-    18e2:	56 01       	movw	r10, r12
+    18e2:	79 01       	movw	r14, r18
     18e4:	bf 00       	.word	0x00bf	; ????
     18e6:	00 00       	nop
     18e8:	05 03       	mulsu	r16, r21
@@ -24515,7 +24515,7 @@ reporting_task():
     18ee:	0e a3       	std	Y+38, r16	; 0x26
     18f0:	0a 00       	.word	0x000a	; ????
     18f2:	00 01       	movw	r0, r0
-    18f4:	56 01       	movw	r10, r12
+    18f4:	79 01       	movw	r14, r18
     18f6:	bf 00       	.word	0x00bf	; ????
     18f8:	00 00       	nop
     18fa:	05 03       	mulsu	r16, r21
@@ -24524,7 +24524,7 @@ reporting_task():
     1900:	0e cf       	rjmp	.-484    	; 0x171e <__stack+0x61f>
     1902:	0a 00       	.word	0x000a	; ????
     1904:	00 01       	movw	r0, r0
-    1906:	56 01       	movw	r10, r12
+    1906:	79 01       	movw	r14, r18
     1908:	3e 00       	.word	0x003e	; ????
     190a:	00 00       	nop
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
@@ -24533,7 +24533,7 @@ reporting_task():
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
     1910:	c6 00       	.word	0x00c6	; ????
     1912:	00 00       	nop
-    1914:	01 56       	subi	r16, 0x61	; 97
+    1914:	01 79       	andi	r16, 0x91	; 145
     1916:	01 3e       	cpi	r16, 0xE1	; 225
     1918:	00 00       	nop
     191a:	00 02       	muls	r16, r16
@@ -24547,7 +24547,7 @@ reporting_task():
     192a:	00 0f       	add	r16, r16
     192c:	79 61       	ori	r23, 0x19	; 25
     192e:	77 00       	.word	0x0077	; ????
-    1930:	01 56       	subi	r16, 0x61	; 97
+    1930:	01 79       	andi	r16, 0x91	; 145
     1932:	01 3e       	cpi	r16, 0xE1	; 225
     1934:	00 00       	nop
     1936:	00 02       	muls	r16, r16
@@ -24560,14 +24560,14 @@ reporting_task():
     1944:	0e 66       	ori	r16, 0x6E	; 110
     1946:	0b 00       	.word	0x000b	; ????
     1948:	00 01       	movw	r0, r0
-    194a:	56 01       	movw	r10, r12
+    194a:	79 01       	movw	r14, r18
     194c:	bf 00       	.word	0x00bf	; ????
     194e:	00 00       	nop
     1950:	02 8c       	ldd	r0, Z+26	; 0x1a
     1952:	07 0e       	add	r0, r23
     1954:	3f 0a       	sbc	r3, r31
     1956:	00 00       	nop
-    1958:	01 56       	subi	r16, 0x61	; 97
+    1958:	01 79       	andi	r16, 0x91	; 145
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
     195a:	01 bf       	out	0x31, r16	; 49
     195c:	00 00       	nop
@@ -24584,7 +24584,7 @@ reporting_task():
     1970:	00 0e       	add	r0, r16
     1972:	66 0b       	sbc	r22, r22
     1974:	00 00       	nop
-    1976:	01 64       	ori	r16, 0x41	; 65
+    1976:	01 89       	ldd	r16, Z+17	; 0x11
     1978:	01 bf       	out	0x31, r16	; 49
     197a:	00 00       	nop
     197c:	00 02       	muls	r16, r16
@@ -24592,7 +24592,7 @@ reporting_task():
     1980:	0e 3f       	cpi	r16, 0xFE	; 254
     1982:	0a 00       	.word	0x000a	; ????
     1984:	00 01       	movw	r0, r0
-    1986:	64 01       	movw	r12, r8
+    1986:	89 01       	movw	r16, r18
     1988:	bf 00       	.word	0x00bf	; ????
     198a:	00 00       	nop
     198c:	02 8c       	ldd	r0, Z+26	; 0x1a
@@ -24606,7 +24606,7 @@ reporting_task():
     199c:	00 0e       	add	r0, r16
     199e:	66 0b       	sbc	r22, r22
     19a0:	00 00       	nop
-    19a2:	01 75       	andi	r16, 0x51	; 81
+    19a2:	01 9d       	mul	r16, r1
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
     19a4:	01 bf       	out	0x31, r16	; 49
     19a6:	00 00       	nop
@@ -24616,7 +24616,7 @@ reporting_task():
     19ac:	0e 3f       	cpi	r16, 0xFE	; 254
     19ae:	0a 00       	.word	0x000a	; ????
     19b0:	00 01       	movw	r0, r0
-    19b2:	75 01       	movw	r14, r10
+    19b2:	9d 01       	movw	r18, r26
     19b4:	bf 00       	.word	0x00bf	; ????
     19b6:	00 00       	nop
     19b8:	02 8c       	ldd	r0, Z+26	; 0x1a
@@ -24627,7 +24627,7 @@ reporting_task():
     19c4:	00 0e       	add	r0, r16
     19c6:	66 0b       	sbc	r22, r22
     19c8:	00 00       	nop
-    19ca:	01 7e       	andi	r16, 0xE1	; 225
+    19ca:	01 a6       	std	Z+41, r0	; 0x29
     19cc:	01 bf       	out	0x31, r16	; 49
     19ce:	00 00       	nop
     19d0:	00 02       	muls	r16, r16
@@ -24635,7 +24635,7 @@ reporting_task():
     19d4:	0e 3f       	cpi	r16, 0xFE	; 254
     19d6:	0a 00       	.word	0x000a	; ????
     19d8:	00 01       	movw	r0, r0
-    19da:	7e 01       	movw	r14, r28
+    19da:	a6 01       	movw	r20, r12
     19dc:	bf 00       	.word	0x00bf	; ????
     19de:	00 00       	nop
     19e0:	02 8c       	ldd	r0, Z+26	; 0x1a
@@ -24643,7 +24643,7 @@ reporting_task():
     19e4:	00 11       	cpse	r16, r0
     19e6:	dc 0a       	sbc	r13, r28
     19e8:	00 00       	nop
-    19ea:	01 95       	neg	r16
+    19ea:	01 bd       	out	0x21, r16	; 33
     19ec:	01 01       	movw	r0, r2
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
     19ee:	89 00       	.word	0x0089	; ????
@@ -24659,14 +24659,14 @@ reporting_task():
     1a00:	00 12       	cpse	r0, r16
     1a02:	77 70       	andi	r23, 0x07	; 7
     1a04:	00 01       	movw	r0, r0
-    1a06:	95 01       	movw	r18, r10
+    1a06:	bd 01       	movw	r22, r26
     1a08:	2c 00       	.word	0x002c	; ????
     1a0a:	00 00       	nop
     1a0c:	02 8c       	ldd	r0, Z+26	; 0x1a
     1a0e:	0d 0e       	add	r0, r29
     1a10:	5c 0b       	sbc	r21, r28
     1a12:	00 00       	nop
-    1a14:	01 96       	adiw	r24, 0x01	; 1
+    1a14:	01 be       	out	0x31, r0	; 49
     1a16:	01 bf       	out	0x31, r16	; 49
     1a18:	00 00       	nop
     1a1a:	00 02       	muls	r16, r16
@@ -24674,14 +24674,14 @@ reporting_task():
     1a1e:	0e 61       	ori	r16, 0x1E	; 30
     1a20:	0b 00       	.word	0x000b	; ????
     1a22:	00 01       	movw	r0, r0
-    1a24:	97 01       	movw	r18, r14
+    1a24:	bf 01       	movw	r22, r30
     1a26:	bf 00       	.word	0x00bf	; ????
     1a28:	00 00       	nop
     1a2a:	02 8c       	ldd	r0, Z+26	; 0x1a
     1a2c:	05 0e       	add	r0, r21
     1a2e:	e8 0a       	sbc	r14, r24
     1a30:	00 00       	nop
-    1a32:	01 98       	cbi	0x00, 1	; 0
+    1a32:	01 c0       	rjmp	.+2      	; 0x1a36 <__stack+0x937>
     1a34:	01 bf       	out	0x31, r16	; 49
     1a36:	00 00       	nop
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
@@ -24691,7 +24691,7 @@ reporting_task():
     1a3c:	00 13       	cpse	r16, r16
     1a3e:	82 0b       	sbc	r24, r18
     1a40:	00 00       	nop
-    1a42:	01 a1       	ldd	r16, Z+33	; 0x21
+    1a42:	01 c9       	rjmp	.-3582   	; 0xc46 <mcu1_status_update+0x1a>
     1a44:	01 01       	movw	r0, r2
     1a46:	b8 9c       	mul	r11, r8
     1a48:	00 00       	nop
@@ -24702,7 +24702,7 @@ reporting_task():
     1a52:	03 00       	.word	0x0003	; ????
     1a54:	00 12       	cpse	r0, r16
     1a56:	78 00       	.word	0x0078	; ????
-    1a58:	01 a1       	ldd	r16, Z+33	; 0x21
+    1a58:	01 c9       	rjmp	.-3582   	; 0xc5c <mcu1_status_update+0x30>
     1a5a:	01 bf       	out	0x31, r16	; 49
     1a5c:	00 00       	nop
     1a5e:	00 02       	muls	r16, r16
@@ -24711,7 +24711,7 @@ reporting_task():
     1a62:	12 79       	andi	r17, 0x92	; 146
     1a64:	00 01       	movw	r0, r0
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    1a66:	a1 01       	movw	r20, r2
+    1a66:	c9 01       	movw	r24, r18
     1a68:	bf 00       	.word	0x00bf	; ????
     1a6a:	00 00       	nop
     1a6c:	02 8c       	ldd	r0, Z+26	; 0x1a
@@ -24719,7 +24719,7 @@ reporting_task():
     1a70:	13 55       	subi	r17, 0x53	; 83
     1a72:	0b 00       	.word	0x000b	; ????
     1a74:	00 01       	movw	r0, r0
-    1a76:	a7 01       	movw	r20, r14
+    1a76:	cf 01       	movw	r24, r30
     1a78:	01 ae       	std	Z+57, r0	; 0x39
     1a7a:	9d 00       	.word	0x009d	; ????
     1a7c:	00 16       	cp	r0, r16
@@ -24731,7 +24731,7 @@ reporting_task():
     1a88:	12 77       	andi	r17, 0x72	; 114
     1a8a:	70 00       	.word	0x0070	; ????
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    1a8c:	01 a7       	std	Z+41, r16	; 0x29
+    1a8c:	01 cf       	rjmp	.-510    	; 0x1890 <__stack+0x791>
     1a8e:	01 2c       	mov	r0, r1
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
     1a90:	00 00       	nop
@@ -24740,7 +24740,7 @@ reporting_task():
     1a96:	00 13       	cpse	r16, r16
     1a98:	2e 0b       	sbc	r18, r30
     1a9a:	00 00       	nop
-    1a9c:	01 ab       	std	Z+49, r16	; 0x31
+    1a9c:	01 d3       	rcall	.+1538   	; 0x20a0 <__stack+0xfa1>
     1a9e:	01 01       	movw	r0, r2
     1aa0:	16 9e       	mul	r1, r22
     1aa2:	00 00       	nop
@@ -24753,14 +24753,14 @@ reporting_task():
     1aae:	00 14       	cp	r0, r0
     1ab0:	f2 0a       	sbc	r15, r18
     1ab2:	00 00       	nop
-    1ab4:	01 ab       	std	Z+49, r16	; 0x31
+    1ab4:	01 d3       	rcall	.+1538   	; 0x20b8 <__stack+0xfb9>
     1ab6:	01 2c       	mov	r0, r1
     1ab8:	00 00       	nop
     1aba:	00 02       	muls	r16, r16
     1abc:	8c 15       	cp	r24, r12
     1abe:	12 77       	andi	r17, 0x72	; 114
     1ac0:	70 00       	.word	0x0070	; ????
-    1ac2:	01 ab       	std	Z+49, r16	; 0x31
+    1ac2:	01 d3       	rcall	.+1538   	; 0x20c6 <__stack+0xfc7>
     1ac4:	01 2c       	mov	r0, r1
     1ac6:	00 00       	nop
     1ac8:	00 02       	muls	r16, r16
@@ -24769,14 +24769,14 @@ reporting_task():
     1ace:	0b 00       	.word	0x000b	; ????
     1ad0:	00 01       	movw	r0, r0
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    1ad2:	ad 01       	movw	r20, r26
+    1ad2:	d5 01       	movw	r26, r10
     1ad4:	bf 00       	.word	0x00bf	; ????
     1ad6:	00 00       	nop
     1ad8:	02 8c       	ldd	r0, Z+26	; 0x1a
     1ada:	01 0e       	add	r0, r17
     1adc:	d8 0b       	sbc	r29, r24
     1ade:	00 00       	nop
-    1ae0:	01 ae       	std	Z+57, r0	; 0x39
+    1ae0:	01 d6       	rcall	.+3074   	; 0x26e4 <__stack+0x15e5>
     1ae2:	01 bf       	out	0x31, r16	; 49
     1ae4:	00 00       	nop
     1ae6:	00 02       	muls	r16, r16
@@ -24784,14 +24784,14 @@ reporting_task():
     1aea:	0e 33       	cpi	r16, 0x3E	; 62
     1aec:	0a 00       	.word	0x000a	; ????
     1aee:	00 01       	movw	r0, r0
-    1af0:	af 01       	movw	r20, r30
+    1af0:	d7 01       	movw	r26, r14
     1af2:	bf 00       	.word	0x00bf	; ????
     1af4:	00 00       	nop
     1af6:	02 8c       	ldd	r0, Z+26	; 0x1a
     1af8:	09 0e       	add	r0, r25
     1afa:	39 0a       	sbc	r3, r25
     1afc:	00 00       	nop
-    1afe:	01 b0       	in	r0, 0x01	; 1
+    1afe:	01 d8       	rcall	.-4094   	; 0xb02 <ground_calibrate+0x9e8>
     1b00:	01 bf       	out	0x31, r16	; 49
     1b02:	00 00       	nop
     1b04:	00 02       	muls	r16, r16
@@ -24799,7 +24799,7 @@ reporting_task():
     1b08:	0e 50       	subi	r16, 0x0E	; 14
     1b0a:	0b 00       	.word	0x000b	; ????
     1b0c:	00 01       	movw	r0, r0
-    1b0e:	b1 01       	movw	r22, r2
+    1b0e:	d9 01       	movw	r26, r18
     1b10:	bf 00       	.word	0x00bf	; ????
     1b12:	00 00       	nop
     1b14:	02 8c       	ldd	r0, Z+26	; 0x1a
@@ -24807,7 +24807,7 @@ reporting_task():
     1b18:	13 47       	sbci	r17, 0x73	; 115
     1b1a:	0b 00       	.word	0x000b	; ????
     1b1c:	00 01       	movw	r0, r0
-    1b1e:	b9 01       	movw	r22, r18
+    1b1e:	e1 01       	movw	r28, r2
     1b20:	01 fe       	sbrs	r0, 1
     1b22:	a1 00       	.word	0x00a1	; ????
     1b24:	00 44       	sbci	r16, 0x40	; 64
@@ -24820,21 +24820,21 @@ reporting_task():
     1b30:	14 f2       	brlt	.-124    	; 0x1ab6 <__stack+0x9b7>
     1b32:	0a 00       	.word	0x000a	; ????
     1b34:	00 01       	movw	r0, r0
-    1b36:	b9 01       	movw	r22, r18
+    1b36:	e1 01       	movw	r28, r2
     1b38:	2c 00       	.word	0x002c	; ????
     1b3a:	00 00       	nop
     1b3c:	02 8c       	ldd	r0, Z+26	; 0x1a
     1b3e:	05 12       	cpse	r0, r21
     1b40:	77 70       	andi	r23, 0x07	; 7
     1b42:	00 01       	movw	r0, r0
-    1b44:	b9 01       	movw	r22, r18
+    1b44:	e1 01       	movw	r28, r2
     1b46:	2c 00       	.word	0x002c	; ????
     1b48:	00 00       	nop
     1b4a:	02 8c       	ldd	r0, Z+26	; 0x1a
     1b4c:	06 0e       	add	r0, r22
     1b4e:	2a 0a       	sbc	r2, r26
     1b50:	00 00       	nop
-    1b52:	01 ba       	out	0x11, r0	; 17
+    1b52:	01 e2       	ldi	r16, 0x21	; 33
     1b54:	01 bf       	out	0x31, r16	; 49
     1b56:	00 00       	nop
     1b58:	00 02       	muls	r16, r16
@@ -24843,7 +24843,7 @@ reporting_task():
     1b5c:	00 13       	cpse	r16, r16
     1b5e:	6c 0b       	sbc	r22, r28
     1b60:	00 00       	nop
-    1b62:	01 be       	out	0x31, r0	; 49
+    1b62:	01 e6       	ldi	r16, 0x61	; 97
     1b64:	01 01       	movw	r0, r2
     1b66:	44 a3       	std	Z+36, r20	; 0x24
     1b68:	00 00       	nop
@@ -24855,7 +24855,7 @@ reporting_task():
     1b74:	00 0e       	add	r0, r16
     1b76:	10 0b       	sbc	r17, r16
     1b78:	00 00       	nop
-    1b7a:	01 bf       	out	0x31, r16	; 49
+    1b7a:	01 e7       	ldi	r16, 0x71	; 113
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 3)
     1b7c:	01 bf       	out	0x31, r16	; 49
     1b7e:	00 00       	nop
@@ -24865,7 +24865,7 @@ reporting_task():
     1b84:	0e 15       	cp	r16, r14
     1b86:	0b 00       	.word	0x000b	; ????
     1b88:	00 01       	movw	r0, r0
-    1b8a:	c0 01       	movw	r24, r0
+    1b8a:	e8 01       	movw	r28, r16
     1b8c:	bf 00       	.word	0x00bf	; ????
     1b8e:	00 00       	nop
     1b90:	02 8c       	ldd	r0, Z+26	; 0x1a
@@ -24873,7 +24873,7 @@ reporting_task():
     1b94:	15 01       	movw	r2, r10
     1b96:	b8 0a       	sbc	r11, r24
     1b98:	00 00       	nop
-    1b9a:	01 c4       	rjmp	.+2050   	; 0x239e <__stack+0x129f>
+    1b9a:	01 ec       	ldi	r16, 0xC1	; 193
     1b9c:	01 01       	movw	r0, r2
     1b9e:	68 a4       	ldd	r6, Y+40	; 0x28
     1ba0:	00 00       	nop
@@ -24891,14 +24891,14 @@ reporting_task():
     1bb6:	0e 66       	ori	r16, 0x6E	; 110
     1bb8:	0b 00       	.word	0x000b	; ????
     1bba:	00 01       	movw	r0, r0
-    1bbc:	c5 01       	movw	r24, r10
+    1bbc:	ed 01       	movw	r28, r26
     1bbe:	bf 00       	.word	0x00bf	; ????
     1bc0:	00 00       	nop
     1bc2:	02 8c       	ldd	r0, Z+26	; 0x1a
     1bc4:	01 0e       	add	r0, r17
     1bc6:	3f 0a       	sbc	r3, r31
     1bc8:	00 00       	nop
-    1bca:	01 c5       	rjmp	.+2562   	; 0x25ce <__stack+0x14cf>
+    1bca:	01 ed       	ldi	r16, 0xD1	; 209
     1bcc:	01 bf       	out	0x31, r16	; 49
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
     1bce:	00 00       	nop
@@ -24909,7 +24909,7 @@ reporting_task():
     1bd6:	16 01       	movw	r2, r12
     1bd8:	23 0b       	sbc	r18, r19
     1bda:	00 00       	nop
-    1bdc:	01 cc       	rjmp	.-2046   	; 0x13e0 <__stack+0x2e1>
+    1bdc:	01 f4       	brne	.+0      	; 0x1bde <__stack+0xadf>
     1bde:	01 01       	movw	r0, r2
     1be0:	56 a7       	std	Z+46, r21	; 0x2e
     1be2:	00 00       	nop
@@ -24920,7 +24920,7 @@ reporting_task():
     1bec:	01 3e       	cpi	r16, 0xE1	; 225
     1bee:	0b 00       	.word	0x000b	; ????
     1bf0:	00 01       	movw	r0, r0
-    1bf2:	d0 01       	movw	r26, r0
+    1bf2:	f8 01       	movw	r30, r16
     1bf4:	01 6c       	ori	r16, 0xC1	; 193
     1bf6:	a7 00       	.word	0x00a7	; ????
     1bf8:	00 82       	st	Z, r0
@@ -24966,7 +24966,7 @@ reporting_task():
     1c44:	0e 45       	sbci	r16, 0x5E	; 94
     1c46:	0a 00       	.word	0x000a	; ????
     1c48:	00 01       	movw	r0, r0
-    1c4a:	94 01       	movw	r18, r8
+    1c4a:	bc 01       	movw	r22, r24
     1c4c:	bf 00       	.word	0x00bf	; ????
     1c4e:	00 00       	nop
     1c50:	05 03       	mulsu	r16, r21
@@ -24975,7 +24975,7 @@ reporting_task():
     1c56:	0e 66       	ori	r16, 0x6E	; 110
     1c58:	0b 00       	.word	0x000b	; ????
     1c5a:	00 01       	movw	r0, r0
-    1c5c:	aa 01       	movw	r20, r20
+    1c5c:	d2 01       	movw	r26, r4
     1c5e:	bf 00       	.word	0x00bf	; ????
     1c60:	00 00       	nop
     1c62:	05 03       	mulsu	r16, r21
@@ -24984,7 +24984,7 @@ reporting_task():
     1c68:	0f 6c       	ori	r16, 0xCF	; 207
     1c6a:	65 67       	ori	r22, 0x75	; 117
     1c6c:	00 01       	movw	r0, r0
-    1c6e:	aa 01       	movw	r20, r20
+    1c6e:	d2 01       	movw	r26, r4
     1c70:	bf 00       	.word	0x00bf	; ????
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
     1c72:	00 00       	nop
@@ -25013,7 +25013,7 @@ reporting_task():
     1c9e:	1b 71       	andi	r17, 0x1B	; 27
     1ca0:	05 00       	.word	0x0005	; ????
     1ca2:	00 01       	movw	r0, r0
-    1ca4:	90 01       	movw	r18, r0
+    1ca4:	b8 01       	movw	r22, r16
     1ca6:	bf 00       	.word	0x00bf	; ????
     1ca8:	00 00       	nop
     1caa:	01 05       	cpc	r16, r1
@@ -25022,7 +25022,7 @@ reporting_task():
     1cb0:	00 1b       	sub	r16, r16
     1cb2:	74 0b       	sbc	r23, r20
     1cb4:	00 00       	nop
-    1cb6:	01 90       	ld	r0, Z+
+    1cb6:	01 b8       	out	0x01, r0	; 1
     1cb8:	01 bf       	out	0x31, r16	; 49
     1cba:	00 00       	nop
     1cbc:	00 01       	movw	r0, r0
@@ -25034,7 +25034,7 @@ reporting_task():
     1cc4:	1b 6e       	ori	r17, 0xEB	; 235
     1cc6:	0a 00       	.word	0x000a	; ????
     1cc8:	00 01       	movw	r0, r0
-    1cca:	89 01       	movw	r16, r18
+    1cca:	b1 01       	movw	r22, r2
     1ccc:	a2 05       	cpc	r26, r2
     1cce:	00 00       	nop
     1cd0:	01 05       	cpc	r16, r1
@@ -25046,7 +25046,7 @@ reporting_task():
     1cdc:	1b c1       	rjmp	.+566    	; 0x1f14 <__stack+0xe15>
     1cde:	0a 00       	.word	0x000a	; ????
     1ce0:	00 01       	movw	r0, r0
-    1ce2:	8a 01       	movw	r16, r20
+    1ce2:	b2 01       	movw	r22, r4
     1ce4:	a2 05       	cpc	r26, r2
     1ce6:	00 00       	nop
     1ce8:	01 05       	cpc	r16, r1
@@ -25055,7 +25055,7 @@ reporting_task():
     1cee:	00 1b       	sub	r16, r16
     1cf0:	ac 0a       	sbc	r10, r28
     1cf2:	00 00       	nop
-    1cf4:	01 92       	st	Z+, r0
+    1cf4:	01 ba       	out	0x11, r0	; 17
     1cf6:	01 cd       	rjmp	.-1534   	; 0x16fa <__stack+0x5fb>
     1cf8:	05 00       	.word	0x0005	; ????
     1cfa:	00 01       	movw	r0, r0
@@ -25077,7 +25077,7 @@ reporting_task():
     1d16:	00 1b       	sub	r16, r16
     1d18:	a8 0b       	sbc	r26, r24
     1d1a:	00 00       	nop
-    1d1c:	01 93       	st	Z+, r16
+    1d1c:	01 bb       	out	0x11, r16	; 17
     1d1e:	01 d2       	rcall	.+1026   	; 0x2122 <__stack+0x1023>
     1d20:	05 00       	.word	0x0005	; ????
     1d22:	00 01       	movw	r0, r0
@@ -25087,7 +25087,7 @@ reporting_task():
     1d2a:	1b 53       	subi	r17, 0x3B	; 59
     1d2c:	06 00       	.word	0x0006	; ????
     1d2e:	00 01       	movw	r0, r0
-    1d30:	8b 01       	movw	r16, r22
+    1d30:	b3 01       	movw	r22, r6
     1d32:	bf 00       	.word	0x00bf	; ????
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
     1d34:	00 00       	nop
@@ -25098,7 +25098,7 @@ reporting_task():
     1d3c:	00 1b       	sub	r16, r16
     1d3e:	56 03       	mulsu	r21, r22
     1d40:	00 00       	nop
-    1d42:	01 8c       	ldd	r0, Z+25	; 0x19
+    1d42:	01 b4       	in	r0, 0x21	; 33
     1d44:	01 bf       	out	0x31, r16	; 49
     1d46:	00 00       	nop
     1d48:	00 01       	movw	r0, r0
@@ -25108,7 +25108,7 @@ reporting_task():
     1d50:	1b 60       	ori	r17, 0x0B	; 11
     1d52:	03 00       	.word	0x0003	; ????
     1d54:	00 01       	movw	r0, r0
-    1d56:	8c 01       	movw	r16, r24
+    1d56:	b4 01       	movw	r22, r8
     1d58:	bf 00       	.word	0x00bf	; ????
     1d5a:	00 00       	nop
     1d5c:	01 05       	cpc	r16, r1
@@ -25119,7 +25119,7 @@ reporting_task():
     1d62:	00 1b       	sub	r16, r16
     1d64:	d4 05       	cpc	r29, r4
     1d66:	00 00       	nop
-    1d68:	01 8d       	ldd	r16, Z+25	; 0x19
+    1d68:	01 b5       	in	r16, 0x21	; 33
     1d6a:	01 50       	subi	r16, 0x01	; 1
     1d6c:	00 00       	nop
     1d6e:	00 01       	movw	r0, r0
@@ -25130,7 +25130,7 @@ reporting_task():
     1d76:	1b 7c       	andi	r17, 0xCB	; 203
     1d78:	09 00       	.word	0x0009	; ????
     1d7a:	00 01       	movw	r0, r0
-    1d7c:	8e 01       	movw	r16, r28
+    1d7c:	b6 01       	movw	r22, r12
     1d7e:	bf 00       	.word	0x00bf	; ????
     1d80:	00 00       	nop
     1d82:	01 05       	cpc	r16, r1
@@ -25148,7 +25148,7 @@ reporting_task():
     1d9a:	00 1b       	sub	r16, r16
     1d9c:	9f 01       	movw	r18, r30
     1d9e:	00 00       	nop
-    1da0:	01 91       	ld	r16, Z+
+    1da0:	01 b9       	out	0x01, r16	; 1
     1da2:	01 89       	ldd	r16, Z+17	; 0x11
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
     1da4:	00 00       	nop
@@ -25186,7 +25186,7 @@ reporting_task():
     1de4:	1b ba       	out	0x1b, r1	; 27
     1de6:	00 00       	nop
     1de8:	00 01       	movw	r0, r0
-    1dea:	8f 01       	movw	r16, r30
+    1dea:	b7 01       	movw	r22, r14
     1dec:	bf 00       	.word	0x00bf	; ????
     1dee:	00 00       	nop
     1df0:	01 05       	cpc	r16, r1
@@ -25310,7 +25310,7 @@ reporting_task():
     1ece:	00 00       	nop
     1ed0:	f4 aa       	std	Z+52, r15	; 0x34
     1ed2:	00 00       	nop
-    1ed4:	92 18       	sub	r9, r2
+    1ed4:	3c 18       	sub	r3, r12
     1ed6:	00 00       	nop
     1ed8:	02 01       	movw	r0, r4
     1eda:	06 0d       	add	r16, r6
@@ -25606,7 +25606,7 @@ reporting_task():
     2102:	00 00       	nop
     2104:	98 b2       	in	r9, 0x18	; 24
     2106:	00 00       	nop
-    2108:	0a 19       	sub	r16, r10
+    2108:	b4 18       	sub	r11, r4
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
     210a:	00 00       	nop
     210c:	02 01       	movw	r0, r4
@@ -26103,7 +26103,7 @@ reporting_task():
     24ae:	00 00       	nop
     24b0:	24 b6       	in	r2, 0x34	; 52
     24b2:	00 00       	nop
-    24b4:	d7 19       	sub	r29, r7
+    24b4:	81 19       	sub	r24, r1
     24b6:	00 00       	nop
     24b8:	02 01       	movw	r0, r4
     24ba:	06 0d       	add	r16, r6
@@ -26390,8 +26390,8 @@ reporting_task():
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
     26d0:	00 f4       	brcc	.+0      	; 0x26d2 <__stack+0x15d3>
     26d2:	b6 00       	.word	0x00b6	; ????
-    26d4:	00 37       	cpi	r16, 0x70	; 112
-    26d6:	1a 00       	.word	0x001a	; ????
+    26d4:	00 e1       	ldi	r16, 0x10	; 16
+    26d6:	19 00       	.word	0x0019	; ????
     26d8:	00 02       	muls	r16, r16
     26da:	01 06       	cpc	r0, r17
     26dc:	0d 03       	fmul	r16, r21
@@ -30969,7 +30969,7 @@ reporting_task():
     14aa:	02 07       	cpc	r16, r18
     14ac:	00 01       	movw	r0, r0
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:373 (discriminator 2)
-    14ae:	01 df       	rcall	.-510    	; 0x12b2 <__stack+0x1b3>
+    14ae:	01 89       	ldd	r16, Z+17	; 0x11
     14b0:	03 00       	.word	0x0003	; ????
     14b2:	00 02       	muls	r16, r16
     14b4:	00 1c       	adc	r0, r0
@@ -30998,783 +30998,736 @@ reporting_task():
     14e2:	02 23       	and	r16, r18
     14e4:	10 2c       	mov	r1, r0
     14e6:	08 9d       	mul	r16, r8
-    14e8:	2c 00       	.word	0x002c	; ????
-    14ea:	02 04       	cpc	r0, r2
-    14ec:	01 06       	cpc	r0, r17
-    14ee:	63 00       	.word	0x0063	; ????
-    14f0:	02 04       	cpc	r0, r2
-    14f2:	02 1d       	adc	r16, r2
+    14e8:	2c 64       	ori	r18, 0x4C	; 76
+    14ea:	1f 02       	muls	r17, r31
+    14ec:	33 10       	cpse	r3, r3
+    14ee:	3a 1f       	adc	r19, r26
+    14f0:	3a 72       	andi	r19, 0x2A	; 42
+    14f2:	02 33       	cpi	r16, 0x32	; 50
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:373 (discriminator 1)
-    14f4:	06 02       	muls	r16, r22
-    14f6:	33 10       	cpse	r3, r3
+    14f4:	11 b8       	out	0x01, r1	; 1
+    14f6:	2c b8       	out	0x0c, r2	; 12
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:373 (discriminator 2)
-    14f8:	3a 1f       	adc	r19, r26
-    14fa:	3a 00       	.word	0x003a	; ????
-    14fc:	02 04       	cpc	r0, r2
-    14fe:	01 06       	cpc	r0, r17
-    1500:	71 06       	cpc	r7, r17
-    1502:	02 33       	cpi	r16, 0x32	; 50
-    1504:	10 b8       	out	0x00, r1	; 0
-    1506:	2c b8       	out	0x0c, r2	; 12
-    1508:	3a 65       	ori	r19, 0x5A	; 90
-    150a:	2c 3a       	cpi	r18, 0xAC	; 172
+    14f8:	3a 65       	ori	r19, 0x5A	; 90
+    14fa:	2c 3a       	cpi	r18, 0xAC	; 172
+    14fc:	08 1e       	adc	r0, r24
+    14fe:	02 33       	cpi	r16, 0x32	; 50
+    1500:	11 b8       	out	0x01, r1	; 1
+    1502:	2c 80       	ldd	r2, Y+4	; 0x04
+    1504:	3a b9       	out	0x0a, r19	; 10
+    1506:	2c 3a       	cpi	r18, 0xAC	; 172
+    1508:	02 39       	cpi	r16, 0x92	; 146
+    150a:	11 3a       	cpi	r17, 0xA1	; 161
     150c:	00 02       	muls	r16, r16
     150e:	04 01       	movw	r0, r8
-    1510:	06 08       	sbc	r0, r6
-    1512:	1d 06       	cpc	r1, r29
-    1514:	02 33       	cpi	r16, 0x32	; 50
-    1516:	10 b8       	out	0x00, r1	; 0
-    1518:	2c 80       	ldd	r2, Y+4	; 0x04
-    151a:	3a b9       	out	0x0a, r19	; 10
-    151c:	2c 3a       	cpi	r18, 0xAC	; 172
+    1510:	06 47       	sbci	r16, 0x76	; 118
+    1512:	00 02       	muls	r16, r16
+    1514:	04 02       	muls	r16, r20
+    1516:	47 00       	.word	0x0047	; ????
+    1518:	02 04       	cpc	r0, r2
+    151a:	03 1d       	adc	r16, r3
+    151c:	06 2c       	mov	r0, r6
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:373 (discriminator 1)
-    151e:	02 39       	cpi	r16, 0x92	; 146
-    1520:	11 3a       	cpi	r17, 0xA1	; 161
+    151e:	02 37       	cpi	r16, 0x72	; 114
+    1520:	11 08       	sbc	r1, r1
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:373 (discriminator 2)
-    1522:	00 02       	muls	r16, r16
-    1524:	04 01       	movw	r0, r8
-    1526:	06 47       	sbci	r16, 0x76	; 118
-    1528:	00 02       	muls	r16, r16
-    152a:	04 02       	muls	r16, r20
-    152c:	47 00       	.word	0x0047	; ????
-    152e:	02 04       	cpc	r0, r2
-    1530:	03 1d       	adc	r16, r3
-    1532:	00 02       	muls	r16, r16
-    1534:	04 01       	movw	r0, r8
-    1536:	2b 06       	cpc	r2, r27
-    1538:	02 37       	cpi	r16, 0x72	; 114
-    153a:	10 08       	sbc	r1, r0
-    153c:	9d 2c       	mov	r9, r13
-    153e:	02 33       	cpi	r16, 0x32	; 50
-    1540:	10 3a       	cpi	r17, 0xA0	; 160
-    1542:	00 02       	muls	r16, r16
-    1544:	04 01       	movw	r0, r8
-    1546:	06 55       	subi	r16, 0x56	; 86
+    1522:	9d 2f       	mov	r25, r29
+    1524:	02 33       	cpi	r16, 0x32	; 50
+    1526:	10 3a       	cpi	r17, 0xA0	; 160
+    1528:	56 02       	muls	r21, r22
+    152a:	36 11       	cpse	r19, r6
+    152c:	3a 2c       	mov	r3, r10
+    152e:	80 3a       	cpi	r24, 0xA0	; 160
+    1530:	f0 81       	ld	r31, Z
+    1532:	2c 3a       	cpi	r18, 0xAC	; 172
+    1534:	56 02       	muls	r21, r22
+    1536:	36 11       	cpse	r19, r6
+    1538:	3a 2c       	mov	r3, r10
+    153a:	80 3a       	cpi	r24, 0xA0	; 160
+    153c:	f0 81       	ld	r31, Z
+    153e:	2c 3a       	cpi	r18, 0xAC	; 172
+    1540:	1f 3a       	cpi	r17, 0xAF	; 175
+    1542:	02 39       	cpi	r16, 0x92	; 146
+    1544:	11 3a       	cpi	r17, 0xA1	; 161
+    1546:	00 02       	muls	r16, r16
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:373 (discriminator 1)
-    1548:	06 02       	muls	r16, r22
-    154a:	36 10       	cpse	r3, r6
+    1548:	04 01       	movw	r0, r8
+    154a:	06 47       	sbci	r16, 0x76	; 118
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:373 (discriminator 2)
-    154c:	3a 2c       	mov	r3, r10
-    154e:	80 3a       	cpi	r24, 0xA0	; 160
-    1550:	f0 81       	ld	r31, Z
-    1552:	2c 3a       	cpi	r18, 0xAC	; 172
-    1554:	00 02       	muls	r16, r16
-    1556:	04 01       	movw	r0, r8
-    1558:	06 55       	subi	r16, 0x56	; 86
-    155a:	06 02       	muls	r16, r22
-    155c:	36 10       	cpse	r3, r6
-    155e:	3a 2c       	mov	r3, r10
+    154c:	00 02       	muls	r16, r16
+    154e:	04 02       	muls	r16, r20
+    1550:	47 00       	.word	0x0047	; ????
+    1552:	02 04       	cpc	r0, r2
+    1554:	03 1d       	adc	r16, r3
+    1556:	06 2c       	mov	r0, r6
+    1558:	02 37       	cpi	r16, 0x72	; 114
+    155a:	11 02       	muls	r17, r17
+    155c:	2f 11       	cpse	r18, r15
+    155e:	2f 02       	muls	r18, r31
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:373 (discriminator 1)
-    1560:	80 3a       	cpi	r24, 0xA0	; 160
-    1562:	f0 81       	ld	r31, Z
-    1564:	2c 3a       	cpi	r18, 0xAC	; 172
-    1566:	1f 3a       	cpi	r17, 0xAF	; 175
-    1568:	02 39       	cpi	r16, 0x92	; 146
-    156a:	11 3a       	cpi	r17, 0xA1	; 161
-    156c:	00 02       	muls	r16, r16
-    156e:	04 01       	movw	r0, r8
-    1570:	06 47       	sbci	r16, 0x76	; 118
-    1572:	00 02       	muls	r16, r16
-    1574:	04 02       	muls	r16, r20
-    1576:	47 00       	.word	0x0047	; ????
-    1578:	02 04       	cpc	r0, r2
-    157a:	03 1d       	adc	r16, r3
-    157c:	00 02       	muls	r16, r16
-    157e:	04 01       	movw	r0, r8
-    1580:	2b 06       	cpc	r2, r27
-    1582:	02 37       	cpi	r16, 0x72	; 114
-    1584:	10 02       	muls	r17, r16
-    1586:	2f 11       	cpse	r18, r15
-    1588:	2c 02       	muls	r18, r28
-    158a:	33 10       	cpse	r3, r3
-    158c:	3a 00       	.word	0x003a	; ????
+    1560:	33 10       	cpse	r3, r3
+    1562:	3a 56       	subi	r19, 0x6A	; 106
+    1564:	02 36       	cpi	r16, 0x62	; 98
+    1566:	11 3a       	cpi	r17, 0xA1	; 161
+    1568:	2c 80       	ldd	r2, Y+4	; 0x04
+    156a:	3a f0       	brmi	.+14     	; 0x157a <__stack+0x47b>
+    156c:	81 2c       	mov	r8, r1
+    156e:	3a 56       	subi	r19, 0x6A	; 106
+    1570:	02 36       	cpi	r16, 0x62	; 98
+    1572:	11 3a       	cpi	r17, 0xA1	; 161
+    1574:	2c 80       	ldd	r2, Y+4	; 0x04
+    1576:	3a f0       	brmi	.+14     	; 0x1586 <__stack+0x487>
+    1578:	81 2c       	mov	r8, r1
+    157a:	3a 56       	subi	r19, 0x6A	; 106
+    157c:	02 36       	cpi	r16, 0x62	; 98
+    157e:	11 56       	subi	r17, 0x61	; 97
+    1580:	2c 80       	ldd	r2, Y+4	; 0x04
+    1582:	3a f0       	brmi	.+14     	; 0x1592 <__stack+0x493>
+    1584:	81 2c       	mov	r8, r1
+    1586:	3a 56       	subi	r19, 0x6A	; 106
+    1588:	02 36       	cpi	r16, 0x62	; 98
+    158a:	11 3a       	cpi	r17, 0xA1	; 161
+    158c:	2c 80       	ldd	r2, Y+4	; 0x04
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:373 (discriminator 2)
-    158e:	02 04       	cpc	r0, r2
-    1590:	01 06       	cpc	r0, r17
-    1592:	55 06       	cpc	r5, r21
+    158e:	3a f0       	brmi	.+14     	; 0x159e <__stack+0x49f>
+    1590:	81 2c       	mov	r8, r1
+    1592:	3a 56       	subi	r19, 0x6A	; 106
     1594:	02 36       	cpi	r16, 0x62	; 98
-    1596:	10 3a       	cpi	r17, 0xA0	; 160
+    1596:	11 3a       	cpi	r17, 0xA1	; 161
     1598:	2c 80       	ldd	r2, Y+4	; 0x04
     159a:	3a f0       	brmi	.+14     	; 0x15aa <__stack+0x4ab>
     159c:	81 2c       	mov	r8, r1
-    159e:	3a 00       	.word	0x003a	; ????
-    15a0:	02 04       	cpc	r0, r2
-    15a2:	01 06       	cpc	r0, r17
-    15a4:	55 06       	cpc	r5, r21
-    15a6:	02 36       	cpi	r16, 0x62	; 98
-    15a8:	10 3a       	cpi	r17, 0xA0	; 160
-    15aa:	2c 80       	ldd	r2, Y+4	; 0x04
-    15ac:	3a f0       	brmi	.+14     	; 0x15bc <__stack+0x4bd>
-    15ae:	81 2c       	mov	r8, r1
+    159e:	3a 56       	subi	r19, 0x6A	; 106
+    15a0:	02 36       	cpi	r16, 0x62	; 98
+    15a2:	11 56       	subi	r17, 0x61	; 97
+    15a4:	2c 80       	ldd	r2, Y+4	; 0x04
+    15a6:	3a f0       	brmi	.+14     	; 0x15b6 <__stack+0x4b7>
+    15a8:	81 2c       	mov	r8, r1
+    15aa:	3a 1f       	adc	r19, r26
+    15ac:	3a 02       	muls	r19, r26
+    15ae:	39 11       	cpse	r19, r9
     15b0:	3a 00       	.word	0x003a	; ????
     15b2:	02 04       	cpc	r0, r2
     15b4:	01 06       	cpc	r0, r17
-    15b6:	55 06       	cpc	r5, r21
-    15b8:	02 36       	cpi	r16, 0x62	; 98
-    15ba:	10 56       	subi	r17, 0x60	; 96
-    15bc:	2c 80       	ldd	r2, Y+4	; 0x04
+    15b6:	47 00       	.word	0x0047	; ????
+    15b8:	02 04       	cpc	r0, r2
+    15ba:	02 47       	sbci	r16, 0x72	; 114
+    15bc:	00 02       	muls	r16, r16
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:374 (discriminator 1)
-    15be:	3a f0       	brmi	.+14     	; 0x15ce <__stack+0x4cf>
-    15c0:	81 2c       	mov	r8, r1
-    15c2:	3a 00       	.word	0x003a	; ????
-    15c4:	02 04       	cpc	r0, r2
+    15be:	04 03       	mulsu	r16, r20
+    15c0:	1d 06       	cpc	r1, r29
+    15c2:	2c 02       	muls	r18, r28
+    15c4:	37 11       	cpse	r19, r7
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377
-    15c6:	01 06       	cpc	r0, r17
-    15c8:	55 06       	cpc	r5, r21
-    15ca:	02 36       	cpi	r16, 0x62	; 98
-    15cc:	10 3a       	cpi	r17, 0xA0	; 160
-    15ce:	2c 80       	ldd	r2, Y+4	; 0x04
-    15d0:	3a f0       	brmi	.+14     	; 0x15e0 <__stack+0x4e1>
-    15d2:	81 2c       	mov	r8, r1
-    15d4:	3a 00       	.word	0x003a	; ????
-    15d6:	02 04       	cpc	r0, r2
+    15c6:	aa 2c       	mov	r10, r10
+    15c8:	00 02       	muls	r16, r16
+    15ca:	04 01       	movw	r0, r8
+    15cc:	06 55       	subi	r16, 0x56	; 86
+    15ce:	00 02       	muls	r16, r16
+    15d0:	04 02       	muls	r16, r20
+    15d2:	b7 00       	.word	0x00b7	; ????
+    15d4:	02 04       	cpc	r0, r2
+    15d6:	01 71       	andi	r16, 0x11	; 17
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    15d8:	01 06       	cpc	r0, r17
-    15da:	55 06       	cpc	r5, r21
+    15d8:	00 02       	muls	r16, r16
+    15da:	04 02       	muls	r16, r20
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    15dc:	02 36       	cpi	r16, 0x62	; 98
-    15de:	10 3a       	cpi	r17, 0xA0	; 160
-    15e0:	2c 80       	ldd	r2, Y+4	; 0x04
-    15e2:	3a f0       	brmi	.+14     	; 0x15f2 <__stack+0x4f3>
-    15e4:	81 2c       	mov	r8, r1
-    15e6:	3a 00       	.word	0x003a	; ????
-    15e8:	02 04       	cpc	r0, r2
-    15ea:	01 06       	cpc	r0, r17
-    15ec:	55 06       	cpc	r5, r21
-    15ee:	02 36       	cpi	r16, 0x62	; 98
-    15f0:	10 56       	subi	r17, 0x60	; 96
-    15f2:	2c 80       	ldd	r2, Y+4	; 0x04
-    15f4:	3a f0       	brmi	.+14     	; 0x1604 <__stack+0x505>
-    15f6:	81 2c       	mov	r8, r1
-    15f8:	3a 1f       	adc	r19, r26
-    15fa:	3a 02       	muls	r19, r26
-    15fc:	39 11       	cpse	r19, r9
-    15fe:	3a 00       	.word	0x003a	; ????
+    15dc:	02 5a       	subi	r16, 0xA2	; 162
+    15de:	0f 00       	.word	0x000f	; ????
+    15e0:	02 04       	cpc	r0, r2
+    15e2:	03 47       	sbci	r16, 0x73	; 115
+    15e4:	00 02       	muls	r16, r16
+    15e6:	04 01       	movw	r0, r8
+    15e8:	08 8d       	ldd	r16, Y+24	; 0x18
+    15ea:	00 02       	muls	r16, r16
+    15ec:	04 02       	muls	r16, r20
+    15ee:	8d 00       	.word	0x008d	; ????
+    15f0:	02 04       	cpc	r0, r2
+    15f2:	03 47       	sbci	r16, 0x73	; 115
+    15f4:	00 02       	muls	r16, r16
+    15f6:	04 01       	movw	r0, r8
+    15f8:	7f 00       	.word	0x007f	; ????
+    15fa:	02 04       	cpc	r0, r2
+    15fc:	02 b7       	in	r16, 0x32	; 50
+    15fe:	00 02       	muls	r16, r16
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    1600:	02 04       	cpc	r0, r2
-    1602:	01 06       	cpc	r0, r17
-    1604:	47 00       	.word	0x0047	; ????
-    1606:	02 04       	cpc	r0, r2
-    1608:	02 47       	sbci	r16, 0x72	; 114
+    1600:	04 01       	movw	r0, r8
+    1602:	71 00       	.word	0x0071	; ????
+    1604:	02 04       	cpc	r0, r2
+    1606:	02 02       	muls	r16, r18
+    1608:	5a 0f       	add	r21, r26
     160a:	00 02       	muls	r16, r16
     160c:	04 03       	mulsu	r16, r20
-    160e:	1d 00       	.word	0x001d	; ????
+    160e:	47 00       	.word	0x0047	; ????
     1610:	02 04       	cpc	r0, r2
-    1612:	01 2b       	or	r16, r17
-    1614:	06 02       	muls	r16, r22
-    1616:	37 10       	cpse	r3, r7
-    1618:	aa 2c       	mov	r10, r10
+    1612:	01 08       	sbc	r0, r1
+    1614:	8d 00       	.word	0x008d	; ????
+    1616:	02 04       	cpc	r0, r2
+    1618:	02 8d       	ldd	r16, Z+26	; 0x1a
     161a:	00 02       	muls	r16, r16
-    161c:	04 01       	movw	r0, r8
-    161e:	06 55       	subi	r16, 0x56	; 86
-    1620:	00 02       	muls	r16, r16
-    1622:	04 02       	muls	r16, r20
-    1624:	b7 00       	.word	0x00b7	; ????
-    1626:	02 04       	cpc	r0, r2
-    1628:	01 71       	andi	r16, 0x11	; 17
-    162a:	00 02       	muls	r16, r16
-    162c:	04 02       	muls	r16, r20
-    162e:	02 5a       	subi	r16, 0xA2	; 162
-    1630:	0f 00       	.word	0x000f	; ????
-    1632:	02 04       	cpc	r0, r2
+    161c:	04 03       	mulsu	r16, r20
+    161e:	47 00       	.word	0x0047	; ????
+    1620:	02 04       	cpc	r0, r2
+    1622:	01 7f       	andi	r16, 0xF1	; 241
+    1624:	00 02       	muls	r16, r16
+    1626:	04 02       	muls	r16, r20
+    1628:	e1 00       	.word	0x00e1	; ????
+    162a:	02 04       	cpc	r0, r2
+    162c:	01 71       	andi	r16, 0x11	; 17
+    162e:	00 02       	muls	r16, r16
+    1630:	04 02       	muls	r16, r20
+    1632:	02 50       	subi	r16, 0x02	; 2
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    1634:	03 47       	sbci	r16, 0x73	; 115
-    1636:	00 02       	muls	r16, r16
-    1638:	04 01       	movw	r0, r8
-    163a:	08 8d       	ldd	r16, Y+24	; 0x18
-    163c:	00 02       	muls	r16, r16
-    163e:	04 02       	muls	r16, r20
-    1640:	8d 00       	.word	0x008d	; ????
-    1642:	02 04       	cpc	r0, r2
-    1644:	03 47       	sbci	r16, 0x73	; 115
-    1646:	00 02       	muls	r16, r16
-    1648:	04 01       	movw	r0, r8
-    164a:	7f 00       	.word	0x007f	; ????
-    164c:	02 04       	cpc	r0, r2
-    164e:	02 b7       	in	r16, 0x32	; 50
-    1650:	00 02       	muls	r16, r16
-    1652:	04 01       	movw	r0, r8
-    1654:	71 00       	.word	0x0071	; ????
+    1634:	0f 00       	.word	0x000f	; ????
+    1636:	02 04       	cpc	r0, r2
+    1638:	03 47       	sbci	r16, 0x73	; 115
+    163a:	00 02       	muls	r16, r16
+    163c:	04 01       	movw	r0, r8
+    163e:	08 8d       	ldd	r16, Y+24	; 0x18
+    1640:	00 02       	muls	r16, r16
+    1642:	04 02       	muls	r16, r20
+    1644:	8d 00       	.word	0x008d	; ????
+    1646:	02 04       	cpc	r0, r2
+    1648:	03 47       	sbci	r16, 0x73	; 115
+    164a:	00 02       	muls	r16, r16
+    164c:	04 02       	muls	r16, r20
+    164e:	7f 00       	.word	0x007f	; ????
+    1650:	02 04       	cpc	r0, r2
+    1652:	01 02       	muls	r16, r17
+    1654:	e9 01       	movw	r28, r18
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 3)
-    1656:	02 04       	cpc	r0, r2
-    1658:	02 02       	muls	r16, r18
-    165a:	5a 0f       	add	r21, r26
+    1656:	0f 00       	.word	0x000f	; ????
+    1658:	02 04       	cpc	r0, r2
+    165a:	03 fd       	sbrc	r16, 3
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
     165c:	00 02       	muls	r16, r16
-    165e:	04 03       	mulsu	r16, r20
-    1660:	47 00       	.word	0x0047	; ????
+    165e:	04 02       	muls	r16, r20
+    1660:	1d 00       	.word	0x001d	; ????
     1662:	02 04       	cpc	r0, r2
     1664:	01 08       	sbc	r0, r1
-    1666:	8d 00       	.word	0x008d	; ????
-    1668:	02 04       	cpc	r0, r2
-    166a:	02 8d       	ldd	r16, Z+26	; 0x1a
-    166c:	00 02       	muls	r16, r16
-    166e:	04 03       	mulsu	r16, r20
-    1670:	47 00       	.word	0x0047	; ????
-    1672:	02 04       	cpc	r0, r2
-    1674:	01 7f       	andi	r16, 0xF1	; 241
+    1666:	8d 06       	cpc	r8, r29
+    1668:	08 1e       	adc	r0, r24
+    166a:	1e 3a       	cpi	r17, 0xAE	; 174
+    166c:	02 38       	cpi	r16, 0x82	; 130
+    166e:	11 3a       	cpi	r17, 0xA1	; 161
+    1670:	00 02       	muls	r16, r16
+    1672:	04 01       	movw	r0, r8
+    1674:	06 47       	sbci	r16, 0x76	; 118
     1676:	00 02       	muls	r16, r16
     1678:	04 02       	muls	r16, r20
-    167a:	e1 00       	.word	0x00e1	; ????
+    167a:	47 00       	.word	0x0047	; ????
     167c:	02 04       	cpc	r0, r2
-    167e:	01 71       	andi	r16, 0x11	; 17
-    1680:	00 02       	muls	r16, r16
-    1682:	04 02       	muls	r16, r20
+    167e:	03 1d       	adc	r16, r3
+    1680:	06 2c       	mov	r0, r6
+    1682:	02 36       	cpi	r16, 0x62	; 98
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    1684:	02 50       	subi	r16, 0x02	; 2
-    1686:	0f 00       	.word	0x000f	; ????
-    1688:	02 04       	cpc	r0, r2
-    168a:	03 47       	sbci	r16, 0x73	; 115
+    1684:	11 aa       	std	Z+49, r1	; 0x31
+    1686:	2c 2c       	mov	r2, r12
+    1688:	80 3a       	cpi	r24, 0xA0	; 160
+    168a:	f0 80       	ld	r15, Z
     168c:	00 02       	muls	r16, r16
-    168e:	04 01       	movw	r0, r8
-    1690:	08 8d       	ldd	r16, Y+24	; 0x18
-    1692:	00 02       	muls	r16, r16
-    1694:	04 02       	muls	r16, r20
-    1696:	8d 00       	.word	0x008d	; ????
-    1698:	02 04       	cpc	r0, r2
-    169a:	03 47       	sbci	r16, 0x73	; 115
-    169c:	00 02       	muls	r16, r16
-    169e:	04 02       	muls	r16, r20
-    16a0:	7f 00       	.word	0x007f	; ????
-    16a2:	02 04       	cpc	r0, r2
-    16a4:	01 02       	muls	r16, r17
-    16a6:	e9 01       	movw	r28, r18
+    168e:	04 02       	muls	r16, r20
+    1690:	06 02       	muls	r16, r22
+    1692:	d3 01       	movw	r26, r6
+    1694:	0f 00       	.word	0x000f	; ????
+    1696:	02 04       	cpc	r0, r2
+    1698:	01 08       	sbc	r0, r1
+    169a:	8d 00       	.word	0x008d	; ????
+    169c:	02 04       	cpc	r0, r2
+    169e:	03 fd       	sbrc	r16, 3
+    16a0:	00 02       	muls	r16, r16
+    16a2:	04 02       	muls	r16, r20
+    16a4:	1d 00       	.word	0x001d	; ????
+    16a6:	02 04       	cpc	r0, r2
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    16a8:	0f 00       	.word	0x000f	; ????
-    16aa:	02 04       	cpc	r0, r2
+    16a8:	01 08       	sbc	r0, r1
+    16aa:	8d 06       	cpc	r8, r29
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    16ac:	03 fd       	sbrc	r16, 3
-    16ae:	00 02       	muls	r16, r16
-    16b0:	04 02       	muls	r16, r20
-    16b2:	1d 00       	.word	0x001d	; ????
-    16b4:	02 04       	cpc	r0, r2
-    16b6:	01 08       	sbc	r0, r1
-    16b8:	8d 06       	cpc	r8, r29
-    16ba:	08 1e       	adc	r0, r24
-    16bc:	1e 3a       	cpi	r17, 0xAE	; 174
-    16be:	02 38       	cpi	r16, 0x82	; 130
-    16c0:	11 3a       	cpi	r17, 0xA1	; 161
-    16c2:	00 02       	muls	r16, r16
-    16c4:	04 01       	movw	r0, r8
-    16c6:	06 47       	sbci	r16, 0x76	; 118
-    16c8:	00 02       	muls	r16, r16
-    16ca:	04 02       	muls	r16, r20
-    16cc:	47 00       	.word	0x0047	; ????
-    16ce:	02 04       	cpc	r0, r2
-    16d0:	03 1d       	adc	r16, r3
-    16d2:	00 02       	muls	r16, r16
-    16d4:	04 01       	movw	r0, r8
-    16d6:	2b 06       	cpc	r2, r27
-    16d8:	02 36       	cpi	r16, 0x62	; 98
-    16da:	10 aa       	std	Z+48, r1	; 0x30
-    16dc:	2c 2c       	mov	r2, r12
-    16de:	80 3a       	cpi	r24, 0xA0	; 160
-    16e0:	f0 80       	ld	r15, Z
+    16ac:	08 1e       	adc	r0, r24
+    16ae:	1e 3a       	cpi	r17, 0xAE	; 174
+    16b0:	02 38       	cpi	r16, 0x82	; 130
+    16b2:	11 3a       	cpi	r17, 0xA1	; 161
+    16b4:	00 02       	muls	r16, r16
+    16b6:	04 01       	movw	r0, r8
+    16b8:	06 47       	sbci	r16, 0x76	; 118
+    16ba:	00 02       	muls	r16, r16
+    16bc:	04 02       	muls	r16, r20
+    16be:	47 00       	.word	0x0047	; ????
+    16c0:	02 04       	cpc	r0, r2
+    16c2:	03 1d       	adc	r16, r3
+    16c4:	00 02       	muls	r16, r16
+    16c6:	04 01       	movw	r0, r8
+    16c8:	2b 06       	cpc	r2, r27
+    16ca:	02 36       	cpi	r16, 0x62	; 98
+    16cc:	10 08       	sbc	r1, r0
+    16ce:	9d 2f       	mov	r25, r29
+    16d0:	02 32       	cpi	r16, 0x22	; 34
+    16d2:	10 3a       	cpi	r17, 0xA0	; 160
+    16d4:	2c 80       	ldd	r2, Y+4	; 0x04
+    16d6:	3a f0       	brmi	.+14     	; 0x16e6 <__stack+0x5e7>
+    16d8:	80 00       	.word	0x0080	; ????
+    16da:	02 04       	cpc	r0, r2
+    16dc:	02 06       	cpc	r0, r18
+    16de:	02 d3       	rcall	.+1540   	; 0x1ce4 <__stack+0xbe5>
+    16e0:	01 0f       	add	r16, r17
     16e2:	00 02       	muls	r16, r16
-    16e4:	04 02       	muls	r16, r20
-    16e6:	06 02       	muls	r16, r22
-    16e8:	d3 01       	movw	r26, r6
-    16ea:	0f 00       	.word	0x000f	; ????
-    16ec:	02 04       	cpc	r0, r2
-    16ee:	01 08       	sbc	r0, r1
-    16f0:	8d 00       	.word	0x008d	; ????
-    16f2:	02 04       	cpc	r0, r2
-    16f4:	03 fd       	sbrc	r16, 3
-    16f6:	00 02       	muls	r16, r16
-    16f8:	04 02       	muls	r16, r20
-    16fa:	1d 00       	.word	0x001d	; ????
-    16fc:	02 04       	cpc	r0, r2
-    16fe:	01 08       	sbc	r0, r1
-    1700:	8d 06       	cpc	r8, r29
+    16e4:	04 01       	movw	r0, r8
+    16e6:	08 8d       	ldd	r16, Y+24	; 0x18
+    16e8:	00 02       	muls	r16, r16
+    16ea:	04 03       	mulsu	r16, r20
+    16ec:	fd 00       	.word	0x00fd	; ????
+    16ee:	02 04       	cpc	r0, r2
+    16f0:	02 1d       	adc	r16, r2
+    16f2:	00 02       	muls	r16, r16
+    16f4:	04 01       	movw	r0, r8
+    16f6:	08 8d       	ldd	r16, Y+24	; 0x18
+    16f8:	06 08       	sbc	r0, r6
+    16fa:	1e fe       	.word	0xfe1e	; ????
+    16fc:	00 02       	muls	r16, r16
+    16fe:	04 01       	movw	r0, r8
+    1700:	1c 00       	.word	0x001c	; ????
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    1702:	08 1e       	adc	r0, r24
-    1704:	1e 3a       	cpi	r17, 0xAE	; 174
+    1702:	02 04       	cpc	r0, r2
+    1704:	01 08       	sbc	r0, r1
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    1706:	02 38       	cpi	r16, 0x82	; 130
-    1708:	11 3a       	cpi	r17, 0xA1	; 161
-    170a:	00 02       	muls	r16, r16
-    170c:	04 01       	movw	r0, r8
-    170e:	06 47       	sbci	r16, 0x76	; 118
-    1710:	00 02       	muls	r16, r16
-    1712:	04 02       	muls	r16, r20
-    1714:	47 00       	.word	0x0047	; ????
+    1706:	1e 00       	.word	0x001e	; ????
+    1708:	02 04       	cpc	r0, r2
+    170a:	01 1c       	adc	r0, r1
+    170c:	02 32       	cpi	r16, 0x22	; 34
+    170e:	11 3a       	cpi	r17, 0xA1	; 161
+    1710:	2c 80       	ldd	r2, Y+4	; 0x04
+    1712:	3a f0       	brmi	.+14     	; 0x1722 <__stack+0x623>
+    1714:	80 00       	.word	0x0080	; ????
     1716:	02 04       	cpc	r0, r2
-    1718:	03 1d       	adc	r16, r3
-    171a:	00 02       	muls	r16, r16
-    171c:	04 01       	movw	r0, r8
-    171e:	2b 06       	cpc	r2, r27
-    1720:	02 36       	cpi	r16, 0x62	; 98
-    1722:	10 08       	sbc	r1, r0
-    1724:	9d 2c       	mov	r9, r13
-    1726:	02 32       	cpi	r16, 0x22	; 34
-    1728:	10 3a       	cpi	r17, 0xA0	; 160
-    172a:	2c 80       	ldd	r2, Y+4	; 0x04
-    172c:	3a f0       	brmi	.+14     	; 0x173c <__stack+0x63d>
-    172e:	80 00       	.word	0x0080	; ????
-    1730:	02 04       	cpc	r0, r2
-    1732:	02 06       	cpc	r0, r18
-    1734:	02 d3       	rcall	.+1540   	; 0x1d3a <__stack+0xc3b>
-    1736:	01 0f       	add	r16, r17
-    1738:	00 02       	muls	r16, r16
-    173a:	04 01       	movw	r0, r8
-    173c:	08 8d       	ldd	r16, Y+24	; 0x18
+    1718:	02 06       	cpc	r0, r18
+    171a:	02 d3       	rcall	.+1540   	; 0x1d20 <__stack+0xc21>
+    171c:	01 0f       	add	r16, r17
+    171e:	00 02       	muls	r16, r16
+    1720:	04 01       	movw	r0, r8
+    1722:	08 8d       	ldd	r16, Y+24	; 0x18
+    1724:	00 02       	muls	r16, r16
+    1726:	04 03       	mulsu	r16, r20
+    1728:	fd 00       	.word	0x00fd	; ????
+    172a:	02 04       	cpc	r0, r2
+    172c:	02 1d       	adc	r16, r2
+    172e:	00 02       	muls	r16, r16
+    1730:	04 01       	movw	r0, r8
+    1732:	08 8d       	ldd	r16, Y+24	; 0x18
+    1734:	06 08       	sbc	r0, r6
+    1736:	1e 08       	sbc	r1, r14
+    1738:	1e 00       	.word	0x001e	; ????
+    173a:	02 04       	cpc	r0, r2
+    173c:	01 1c       	adc	r0, r1
     173e:	00 02       	muls	r16, r16
-    1740:	04 03       	mulsu	r16, r20
-    1742:	fd 00       	.word	0x00fd	; ????
-    1744:	02 04       	cpc	r0, r2
-    1746:	02 1d       	adc	r16, r2
-    1748:	00 02       	muls	r16, r16
-    174a:	04 01       	movw	r0, r8
+    1740:	04 01       	movw	r0, r8
+    1742:	08 1e       	adc	r0, r24
+    1744:	00 02       	muls	r16, r16
+    1746:	04 01       	movw	r0, r8
+    1748:	1c 02       	muls	r17, r28
+    174a:	32 11       	cpse	r19, r2
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    174c:	08 8d       	ldd	r16, Y+24	; 0x18
-    174e:	06 08       	sbc	r0, r6
+    174c:	3a 1f       	adc	r19, r26
+    174e:	3a 02       	muls	r19, r26
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    1750:	1e fe       	.word	0xfe1e	; ????
-    1752:	00 02       	muls	r16, r16
-    1754:	04 01       	movw	r0, r8
-    1756:	1c 00       	.word	0x001c	; ????
-    1758:	02 04       	cpc	r0, r2
-    175a:	01 08       	sbc	r0, r1
-    175c:	1e 00       	.word	0x001e	; ????
-    175e:	02 04       	cpc	r0, r2
-    1760:	01 1c       	adc	r0, r1
-    1762:	02 32       	cpi	r16, 0x22	; 34
-    1764:	11 3a       	cpi	r17, 0xA1	; 161
-    1766:	2c 80       	ldd	r2, Y+4	; 0x04
-    1768:	3a f0       	brmi	.+14     	; 0x1778 <__stack+0x679>
-    176a:	80 00       	.word	0x0080	; ????
-    176c:	02 04       	cpc	r0, r2
-    176e:	02 06       	cpc	r0, r18
-    1770:	02 d3       	rcall	.+1540   	; 0x1d76 <__stack+0xc77>
-    1772:	01 0f       	add	r16, r17
-    1774:	00 02       	muls	r16, r16
-    1776:	04 01       	movw	r0, r8
-    1778:	08 8d       	ldd	r16, Y+24	; 0x18
-    177a:	00 02       	muls	r16, r16
-    177c:	04 03       	mulsu	r16, r20
-    177e:	fd 00       	.word	0x00fd	; ????
-    1780:	02 04       	cpc	r0, r2
-    1782:	02 1d       	adc	r16, r2
-    1784:	00 02       	muls	r16, r16
-    1786:	04 01       	movw	r0, r8
-    1788:	08 8d       	ldd	r16, Y+24	; 0x18
-    178a:	06 08       	sbc	r0, r6
-    178c:	1e 08       	sbc	r1, r14
-    178e:	1e 00       	.word	0x001e	; ????
-    1790:	02 04       	cpc	r0, r2
-    1792:	01 1c       	adc	r0, r1
-    1794:	00 02       	muls	r16, r16
+    1750:	38 12       	cpse	r3, r24
+    1752:	03 0d       	add	r16, r3
+    1754:	fd f0       	brhs	.+62     	; 0x1794 <__stack+0x695>
+    1756:	02 25       	eor	r16, r2
+    1758:	10 02       	muls	r17, r16
+    175a:	25 11       	cpse	r18, r5
+    175c:	02 2a       	or	r0, r18
+    175e:	10 08       	sbc	r1, r0
+    1760:	8e 00       	.word	0x008e	; ????
+    1762:	02 04       	cpc	r0, r2
+    1764:	01 06       	cpc	r0, r17
+    1766:	08 1d       	adc	r16, r8
+    1768:	00 02       	muls	r16, r16
+    176a:	04 02       	muls	r16, r20
+    176c:	55 00       	.word	0x0055	; ????
+    176e:	02 04       	cpc	r0, r2
+    1770:	03 7f       	andi	r16, 0xF3	; 243
+    1772:	00 02       	muls	r16, r16
+    1774:	04 03       	mulsu	r16, r20
+    1776:	06 80       	ldd	r0, Z+6	; 0x06
+    1778:	02 24       	eor	r0, r2
+    177a:	10 2c       	mov	r1, r0
+    177c:	02 64       	ori	r16, 0x42	; 66
+    177e:	10 d4       	rcall	.+2080   	; 0x1fa0 <__stack+0xea1>
+    1780:	d5 08       	sbc	r13, r5
+    1782:	56 b8       	out	0x06, r5	; 6
+    1784:	b8 02       	muls	r27, r24
+    1786:	40 10       	cpse	r4, r0
+    1788:	c6 64       	ori	r28, 0x46	; 70
+    178a:	02 2a       	or	r0, r18
+    178c:	10 4a       	sbci	r17, 0xA0	; 160
+    178e:	f0 08       	sbc	r15, r0
+    1790:	64 08       	sbc	r6, r4
+    1792:	64 08       	sbc	r6, r4
+    1794:	f0 08       	sbc	r15, r0
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    1796:	04 01       	movw	r0, r8
-    1798:	08 1e       	adc	r0, r24
+    1796:	f0 02       	muls	r31, r16
+    1798:	26 10       	cpse	r2, r6
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    179a:	00 02       	muls	r16, r16
-    179c:	04 01       	movw	r0, r8
-    179e:	1c 02       	muls	r17, r28
-    17a0:	32 11       	cpse	r19, r2
-    17a2:	3a 1f       	adc	r19, r26
-    17a4:	3a 02       	muls	r19, r26
-    17a6:	38 12       	cpse	r3, r24
-    17a8:	03 0d       	add	r16, r3
-    17aa:	fd f0       	brhs	.+62     	; 0x17ea <__stack+0x6eb>
-    17ac:	02 25       	eor	r16, r2
-    17ae:	10 02       	muls	r17, r16
-    17b0:	25 11       	cpse	r18, r5
-    17b2:	02 2a       	or	r0, r18
-    17b4:	10 08       	sbc	r1, r0
-    17b6:	8e 00       	.word	0x008e	; ????
-    17b8:	02 04       	cpc	r0, r2
-    17ba:	01 06       	cpc	r0, r17
-    17bc:	08 1d       	adc	r16, r8
-    17be:	00 02       	muls	r16, r16
-    17c0:	04 02       	muls	r16, r20
-    17c2:	55 00       	.word	0x0055	; ????
-    17c4:	02 04       	cpc	r0, r2
-    17c6:	03 7f       	andi	r16, 0xF3	; 243
-    17c8:	00 02       	muls	r16, r16
-    17ca:	04 03       	mulsu	r16, r20
-    17cc:	06 80       	ldd	r0, Z+6	; 0x06
-    17ce:	02 24       	eor	r0, r2
-    17d0:	10 2c       	mov	r1, r0
-    17d2:	02 64       	ori	r16, 0x42	; 66
-    17d4:	10 d4       	rcall	.+2080   	; 0x1ff6 <__stack+0xef7>
-    17d6:	d5 08       	sbc	r13, r5
-    17d8:	56 b8       	out	0x06, r5	; 6
-    17da:	b8 02       	muls	r27, r24
-    17dc:	40 10       	cpse	r4, r0
-    17de:	c6 64       	ori	r28, 0x46	; 70
+    179a:	02 54       	subi	r16, 0x42	; 66
+    179c:	10 00       	.word	0x0010	; ????
+    179e:	02 04       	cpc	r0, r2
+    17a0:	01 06       	cpc	r0, r17
+    17a2:	fd 00       	.word	0x00fd	; ????
+    17a4:	02 04       	cpc	r0, r2
+    17a6:	02 8d       	ldd	r16, Z+26	; 0x1a
+    17a8:	00 02       	muls	r16, r16
+    17aa:	04 03       	mulsu	r16, r20
+    17ac:	39 00       	.word	0x0039	; ????
+    17ae:	02 04       	cpc	r0, r2
+    17b0:	03 06       	cpc	r0, r19
+    17b2:	80 00       	.word	0x0080	; ????
+    17b4:	02 04       	cpc	r0, r2
+    17b6:	03 08       	sbc	r0, r3
+    17b8:	1e 00       	.word	0x001e	; ????
+    17ba:	02 04       	cpc	r0, r2
+    17bc:	01 06       	cpc	r0, r17
+    17be:	08 d3       	rcall	.+1552   	; 0x1dd0 <__stack+0xcd1>
+    17c0:	00 02       	muls	r16, r16
+    17c2:	04 02       	muls	r16, r20
+    17c4:	08 63       	ori	r16, 0x38	; 56
+    17c6:	00 02       	muls	r16, r16
+    17c8:	04 03       	mulsu	r16, r20
+    17ca:	39 00       	.word	0x0039	; ????
+    17cc:	02 04       	cpc	r0, r2
+    17ce:	03 06       	cpc	r0, r19
+    17d0:	08 56       	subi	r16, 0x68	; 104
+    17d2:	00 02       	muls	r16, r16
+    17d4:	04 01       	movw	r0, r8
+    17d6:	06 08       	sbc	r0, r6
+    17d8:	1d 00       	.word	0x001d	; ????
+    17da:	02 04       	cpc	r0, r2
+    17dc:	02 55       	subi	r16, 0x52	; 82
+    17de:	00 02       	muls	r16, r16
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    17e0:	02 2a       	or	r0, r18
-    17e2:	10 4a       	sbci	r17, 0xA0	; 160
+    17e0:	04 03       	mulsu	r16, r20
+    17e2:	7f 00       	.word	0x007f	; ????
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    17e4:	f0 08       	sbc	r15, r0
-    17e6:	64 08       	sbc	r6, r4
-    17e8:	64 08       	sbc	r6, r4
-    17ea:	f0 08       	sbc	r15, r0
-    17ec:	f0 02       	muls	r31, r16
-    17ee:	26 10       	cpse	r2, r6
-    17f0:	02 54       	subi	r16, 0x42	; 66
-    17f2:	10 00       	.word	0x0010	; ????
-    17f4:	02 04       	cpc	r0, r2
-    17f6:	01 06       	cpc	r0, r17
-    17f8:	fd 00       	.word	0x00fd	; ????
-    17fa:	02 04       	cpc	r0, r2
-    17fc:	02 8d       	ldd	r16, Z+26	; 0x1a
-    17fe:	00 02       	muls	r16, r16
-    1800:	04 03       	mulsu	r16, r20
-    1802:	39 00       	.word	0x0039	; ????
-    1804:	02 04       	cpc	r0, r2
-    1806:	03 06       	cpc	r0, r19
-    1808:	80 00       	.word	0x0080	; ????
-    180a:	02 04       	cpc	r0, r2
-    180c:	03 08       	sbc	r0, r3
-    180e:	1e 00       	.word	0x001e	; ????
-    1810:	02 04       	cpc	r0, r2
-    1812:	01 06       	cpc	r0, r17
-    1814:	08 d3       	rcall	.+1552   	; 0x1e26 <__stack+0xd27>
-    1816:	00 02       	muls	r16, r16
-    1818:	04 02       	muls	r16, r20
-    181a:	08 63       	ori	r16, 0x38	; 56
+    17e4:	02 04       	cpc	r0, r2
+    17e6:	03 06       	cpc	r0, r19
+    17e8:	80 00       	.word	0x0080	; ????
+    17ea:	02 04       	cpc	r0, r2
+    17ec:	03 02       	muls	r16, r19
+    17ee:	40 10       	cpse	r4, r0
+    17f0:	c6 8e       	std	Z+30, r12	; 0x1e
+    17f2:	08 64       	ori	r16, 0x48	; 72
+    17f4:	02 3d       	cpi	r16, 0xD2	; 210
+    17f6:	10 02       	muls	r17, r16
+    17f8:	3d 10       	cpse	r3, r13
+    17fa:	8e e2       	ldi	r24, 0x2E	; 46
+    17fc:	08 8e       	std	Y+24, r0	; 0x18
+    17fe:	08 8e       	std	Y+24, r0	; 0x18
+    1800:	02 2a       	or	r0, r18
+    1802:	10 08       	sbc	r1, r0
+    1804:	64 d4       	rcall	.+2248   	; 0x20ce <__stack+0xfcf>
+    1806:	08 1e       	adc	r0, r24
+    1808:	00 02       	muls	r16, r16
+    180a:	04 02       	muls	r16, r20
+    180c:	06 02       	muls	r16, r22
+    180e:	d3 01       	movw	r26, r6
+    1810:	0f 00       	.word	0x000f	; ????
+    1812:	02 04       	cpc	r0, r2
+    1814:	01 08       	sbc	r0, r1
+    1816:	8d 00       	.word	0x008d	; ????
+    1818:	02 04       	cpc	r0, r2
+    181a:	03 fd       	sbrc	r16, 3
     181c:	00 02       	muls	r16, r16
-    181e:	04 03       	mulsu	r16, r20
-    1820:	39 00       	.word	0x0039	; ????
+    181e:	04 02       	muls	r16, r20
+    1820:	1d 00       	.word	0x001d	; ????
     1822:	02 04       	cpc	r0, r2
-    1824:	03 06       	cpc	r0, r19
-    1826:	08 56       	subi	r16, 0x68	; 104
-    1828:	00 02       	muls	r16, r16
-    182a:	04 01       	movw	r0, r8
-    182c:	06 08       	sbc	r0, r6
+    1824:	01 08       	sbc	r0, r1
+    1826:	8d 06       	cpc	r8, r29
+    1828:	08 1e       	adc	r0, r24
+    182a:	80 3a       	cpi	r24, 0xA0	; 160
+    182c:	b8 2c       	mov	r11, r8
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    182e:	1d 00       	.word	0x001d	; ????
-    1830:	02 04       	cpc	r0, r2
+    182e:	f0 fe       	sbrs	r15, 0
+    1830:	48 2c       	mov	r4, r8
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    1832:	02 55       	subi	r16, 0x52	; 82
-    1834:	00 02       	muls	r16, r16
-    1836:	04 03       	mulsu	r16, r20
-    1838:	7f 00       	.word	0x007f	; ????
-    183a:	02 04       	cpc	r0, r2
-    183c:	03 06       	cpc	r0, r19
-    183e:	80 00       	.word	0x0080	; ????
-    1840:	02 04       	cpc	r0, r2
-    1842:	03 02       	muls	r16, r19
-    1844:	40 10       	cpse	r4, r0
-    1846:	c6 8e       	std	Z+30, r12	; 0x1e
-    1848:	08 64       	ori	r16, 0x48	; 72
-    184a:	02 3d       	cpi	r16, 0xD2	; 210
-    184c:	10 02       	muls	r17, r16
-    184e:	3d 10       	cpse	r3, r13
-    1850:	8e e2       	ldi	r24, 0x2E	; 46
-    1852:	08 8e       	std	Y+24, r0	; 0x18
-    1854:	08 8e       	std	Y+24, r0	; 0x18
-    1856:	02 2a       	or	r0, r18
-    1858:	10 08       	sbc	r1, r0
-    185a:	64 d4       	rcall	.+2248   	; 0x2124 <__stack+0x1025>
-    185c:	08 1e       	adc	r0, r24
-    185e:	00 02       	muls	r16, r16
-    1860:	04 02       	muls	r16, r20
-    1862:	06 02       	muls	r16, r22
-    1864:	d3 01       	movw	r26, r6
-    1866:	0f 00       	.word	0x000f	; ????
-    1868:	02 04       	cpc	r0, r2
-    186a:	01 08       	sbc	r0, r1
-    186c:	8d 00       	.word	0x008d	; ????
-    186e:	02 04       	cpc	r0, r2
-    1870:	03 fd       	sbrc	r16, 3
-    1872:	00 02       	muls	r16, r16
-    1874:	04 02       	muls	r16, r20
-    1876:	1d 00       	.word	0x001d	; ????
+    1832:	2c 3a       	cpi	r18, 0xAC	; 172
+    1834:	48 2c       	mov	r4, r8
+    1836:	2c 02       	muls	r18, r28
+    1838:	03 00       	.word	0x0003	; ????
+    183a:	01 01       	movw	r0, r2
+    183c:	74 00       	.word	0x0074	; ????
+    183e:	00 00       	nop
+    1840:	02 00       	.word	0x0002	; ????
+    1842:	1d 00       	.word	0x001d	; ????
+    1844:	00 00       	nop
+    1846:	02 01       	movw	r0, r4
+    1848:	fb 0e       	add	r15, r27
+    184a:	0a 00       	.word	0x000a	; ????
+    184c:	01 01       	movw	r0, r2
+    184e:	01 01       	movw	r0, r2
+    1850:	00 00       	nop
+    1852:	00 01       	movw	r0, r0
+    1854:	00 70       	andi	r16, 0x00	; 0
+    1856:	70 5f       	subi	r23, 0xF0	; 240
+    1858:	75 61       	ori	r23, 0x15	; 21
+    185a:	72 74       	andi	r23, 0x42	; 66
+    185c:	2e 63       	ori	r18, 0x3E	; 62
+    185e:	00 00       	nop
+    1860:	00 00       	nop
+    1862:	00 00       	nop
+    1864:	05 02       	muls	r16, r21
+    1866:	82 a7       	std	Z+42, r24	; 0x2a
+    1868:	00 00       	nop
+    186a:	03 dd       	rcall	.-1530   	; 0x1272 <__stack+0x173>
+    186c:	00 01       	movw	r0, r0
+    186e:	64 9c       	mul	r6, r4
+    1870:	b8 1f       	adc	r27, r24
+    1872:	8e 65       	ori	r24, 0x5E	; 94
+    1874:	56 8f       	std	Z+30, r21	; 0x1e
+    1876:	48 64       	ori	r20, 0x48	; 72
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    1878:	02 04       	cpc	r0, r2
-    187a:	01 08       	sbc	r0, r1
+    1878:	9c b8       	out	0x0c, r9	; 12
+    187a:	1f 8e       	std	Y+31, r1	; 0x1f
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    187c:	8d 06       	cpc	r8, r29
-    187e:	08 1e       	adc	r0, r24
-    1880:	80 3a       	cpi	r24, 0xA0	; 160
-    1882:	b8 2c       	mov	r11, r8
-    1884:	f0 fe       	sbrs	r15, 0
-    1886:	48 2c       	mov	r4, r8
-    1888:	2c 3a       	cpi	r18, 0xAC	; 172
-    188a:	48 2c       	mov	r4, r8
-    188c:	2c 02       	muls	r18, r28
-    188e:	03 00       	.word	0x0003	; ????
-    1890:	01 01       	movw	r0, r2
-    1892:	74 00       	.word	0x0074	; ????
-    1894:	00 00       	nop
-    1896:	02 00       	.word	0x0002	; ????
-    1898:	1d 00       	.word	0x001d	; ????
-    189a:	00 00       	nop
-    189c:	02 01       	movw	r0, r4
-    189e:	fb 0e       	add	r15, r27
-    18a0:	0a 00       	.word	0x000a	; ????
-    18a2:	01 01       	movw	r0, r2
-    18a4:	01 01       	movw	r0, r2
-    18a6:	00 00       	nop
-    18a8:	00 01       	movw	r0, r0
-    18aa:	00 70       	andi	r16, 0x00	; 0
-    18ac:	70 5f       	subi	r23, 0xF0	; 240
-    18ae:	75 61       	ori	r23, 0x15	; 21
-    18b0:	72 74       	andi	r23, 0x42	; 66
-    18b2:	2e 63       	ori	r18, 0x3E	; 62
-    18b4:	00 00       	nop
+    187c:	65 56       	subi	r22, 0x65	; 101
+    187e:	8f 48       	sbci	r24, 0x8F	; 143
+    1880:	80 1e       	adc	r8, r16
+    1882:	1e aa       	std	Y+54, r1	; 0x36
+    1884:	00 02       	muls	r16, r16
+    1886:	04 01       	movw	r0, r8
+    1888:	37 ad       	ldd	r19, Z+63	; 0x3f
+    188a:	64 aa       	std	Z+52, r6	; 0x34
+    188c:	8f 48       	sbci	r24, 0x8F	; 143
+    188e:	3a b8       	out	0x0a, r3	; 10
+    1890:	b8 8f       	std	Y+24, r27	; 0x18
+    1892:	08 2c       	mov	r0, r8
+    1894:	64 9d       	mul	r22, r4
+    1896:	b8 57       	subi	r27, 0x78	; 120
+    1898:	ff 08       	sbc	r15, r15
+    189a:	2c 64       	ori	r18, 0x4C	; 76
+    189c:	9d b8       	out	0x0d, r9	; 13
+    189e:	57 fe       	sbrs	r5, 7
+    18a0:	48 48       	sbci	r20, 0x88	; 136
+    18a2:	56 48       	sbci	r21, 0x86	; 134
+    18a4:	56 56       	subi	r21, 0x66	; 102
+    18a6:	8e 3a       	cpi	r24, 0xAE	; 174
+    18a8:	48 48       	sbci	r20, 0x88	; 136
+    18aa:	56 48       	sbci	r21, 0x86	; 134
+    18ac:	56 56       	subi	r21, 0x66	; 102
+    18ae:	8e 02       	muls	r24, r30
+    18b0:	03 00       	.word	0x0003	; ????
+    18b2:	01 01       	movw	r0, r2
+    18b4:	c9 00       	.word	0x00c9	; ????
     18b6:	00 00       	nop
-    18b8:	00 00       	nop
-    18ba:	05 02       	muls	r16, r21
-    18bc:	82 a7       	std	Z+42, r24	; 0x2a
-    18be:	00 00       	nop
-    18c0:	03 dd       	rcall	.-1530   	; 0x12c8 <__stack+0x1c9>
+    18b8:	02 00       	.word	0x0002	; ????
+    18ba:	22 00       	.word	0x0022	; ????
+    18bc:	00 00       	nop
+    18be:	02 01       	movw	r0, r4
+    18c0:	fb 0e       	add	r15, r27
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    18c2:	00 01       	movw	r0, r0
-    18c4:	64 9c       	mul	r6, r4
+    18c2:	0a 00       	.word	0x000a	; ????
+    18c4:	01 01       	movw	r0, r2
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    18c6:	b8 1f       	adc	r27, r24
-    18c8:	8e 65       	ori	r24, 0x5E	; 94
-    18ca:	56 8f       	std	Z+30, r21	; 0x1e
-    18cc:	48 64       	ori	r20, 0x48	; 72
-    18ce:	9c b8       	out	0x0c, r9	; 12
-    18d0:	1f 8e       	std	Y+31, r1	; 0x1f
-    18d2:	65 56       	subi	r22, 0x65	; 101
-    18d4:	8f 48       	sbci	r24, 0x8F	; 143
-    18d6:	80 1e       	adc	r8, r16
-    18d8:	1e aa       	std	Y+54, r1	; 0x36
-    18da:	00 02       	muls	r16, r16
-    18dc:	04 01       	movw	r0, r8
-    18de:	37 ad       	ldd	r19, Z+63	; 0x3f
-    18e0:	64 aa       	std	Z+52, r6	; 0x34
-    18e2:	8f 48       	sbci	r24, 0x8F	; 143
-    18e4:	3a b8       	out	0x0a, r3	; 10
-    18e6:	b8 8f       	std	Y+24, r27	; 0x18
-    18e8:	08 2c       	mov	r0, r8
-    18ea:	64 9d       	mul	r22, r4
-    18ec:	b8 57       	subi	r27, 0x78	; 120
-    18ee:	ff 08       	sbc	r15, r15
-    18f0:	2c 64       	ori	r18, 0x4C	; 76
-    18f2:	9d b8       	out	0x0d, r9	; 13
-    18f4:	57 fe       	sbrs	r5, 7
-    18f6:	48 48       	sbci	r20, 0x88	; 136
-    18f8:	56 48       	sbci	r21, 0x86	; 134
-    18fa:	56 56       	subi	r21, 0x66	; 102
-    18fc:	8e 3a       	cpi	r24, 0xAE	; 174
-    18fe:	48 48       	sbci	r20, 0x88	; 136
-    1900:	56 48       	sbci	r21, 0x86	; 134
-    1902:	56 56       	subi	r21, 0x66	; 102
-    1904:	8e 02       	muls	r24, r30
-    1906:	03 00       	.word	0x0003	; ????
-    1908:	01 01       	movw	r0, r2
-    190a:	c9 00       	.word	0x00c9	; ????
+    18c6:	01 01       	movw	r0, r2
+    18c8:	00 00       	nop
+    18ca:	00 01       	movw	r0, r0
+    18cc:	00 70       	andi	r16, 0x00	; 0
+    18ce:	70 5f       	subi	r23, 0xF0	; 240
+    18d0:	65 73       	andi	r22, 0x35	; 53
+    18d2:	74 69       	ori	r23, 0x94	; 148
+    18d4:	6d 61       	ori	r22, 0x1D	; 29
+    18d6:	74 6f       	ori	r23, 0xF4	; 244
+    18d8:	72 2e       	mov	r7, r18
+    18da:	63 00       	.word	0x0063	; ????
+    18dc:	00 00       	nop
+    18de:	00 00       	nop
+    18e0:	00 05       	cpc	r16, r0
+    18e2:	02 f4       	brpl	.+0      	; 0x18e4 <__stack+0x7e5>
+    18e4:	aa 00       	.word	0x00aa	; ????
+    18e6:	00 03       	mulsu	r16, r16
+    18e8:	c7 01       	movw	r24, r14
+    18ea:	01 48       	sbci	r16, 0x81	; 129
+    18ec:	08 72       	andi	r16, 0x28	; 40
+    18ee:	08 72       	andi	r16, 0x28	; 40
+    18f0:	08 72       	andi	r16, 0x28	; 40
+    18f2:	08 72       	andi	r16, 0x28	; 40
+    18f4:	48 f0       	brcs	.+18     	; 0x1908 <__stack+0x809>
+    18f6:	3a 64       	ori	r19, 0x4A	; 74
+    18f8:	2c 00       	.word	0x002c	; ????
+    18fa:	02 04       	cpc	r0, r2
+    18fc:	01 06       	cpc	r0, r17
+    18fe:	2b 00       	.word	0x002b	; ????
+    1900:	02 04       	cpc	r0, r2
+    1902:	02 8d       	ldd	r16, Z+26	; 0x1a
+    1904:	06 7e       	andi	r16, 0xE6	; 230
+    1906:	49 08       	sbc	r4, r9
+    1908:	e2 08       	sbc	r14, r2
+    190a:	e2 72       	andi	r30, 0x22	; 34
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    190c:	00 00       	nop
-    190e:	02 00       	.word	0x0002	; ????
+    190c:	da 57       	subi	r29, 0x7A	; 122
+    190e:	08 8e       	std	Y+24, r0	; 0x18
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    1910:	22 00       	.word	0x0022	; ????
-    1912:	00 00       	nop
-    1914:	02 01       	movw	r0, r4
-    1916:	fb 0e       	add	r15, r27
-    1918:	0a 00       	.word	0x000a	; ????
-    191a:	01 01       	movw	r0, r2
-    191c:	01 01       	movw	r0, r2
-    191e:	00 00       	nop
-    1920:	00 01       	movw	r0, r0
-    1922:	00 70       	andi	r16, 0x00	; 0
-    1924:	70 5f       	subi	r23, 0xF0	; 240
-    1926:	65 73       	andi	r22, 0x35	; 53
-    1928:	74 69       	ori	r23, 0x94	; 148
-    192a:	6d 61       	ori	r22, 0x1D	; 29
-    192c:	74 6f       	ori	r23, 0xF4	; 244
-    192e:	72 2e       	mov	r7, r18
-    1930:	63 00       	.word	0x0063	; ????
-    1932:	00 00       	nop
-    1934:	00 00       	nop
-    1936:	00 05       	cpc	r16, r0
-    1938:	02 f4       	brpl	.+0      	; 0x193a <__stack+0x83b>
-    193a:	aa 00       	.word	0x00aa	; ????
-    193c:	00 03       	mulsu	r16, r16
-    193e:	c7 01       	movw	r24, r14
-    1940:	01 48       	sbci	r16, 0x81	; 129
-    1942:	08 72       	andi	r16, 0x28	; 40
-    1944:	08 72       	andi	r16, 0x28	; 40
-    1946:	08 72       	andi	r16, 0x28	; 40
-    1948:	08 72       	andi	r16, 0x28	; 40
-    194a:	48 f0       	brcs	.+18     	; 0x195e <__stack+0x85f>
-    194c:	3a 64       	ori	r19, 0x4A	; 74
-    194e:	2c 00       	.word	0x002c	; ????
-    1950:	02 04       	cpc	r0, r2
-    1952:	01 06       	cpc	r0, r17
-    1954:	2b 00       	.word	0x002b	; ????
-    1956:	02 04       	cpc	r0, r2
-    1958:	02 8d       	ldd	r16, Z+26	; 0x1a
+    1910:	c6 08       	sbc	r12, r6
+    1912:	8e 00       	.word	0x008e	; ????
+    1914:	02 04       	cpc	r0, r2
+    1916:	02 06       	cpc	r0, r18
+    1918:	1d 00       	.word	0x001d	; ????
+    191a:	02 04       	cpc	r0, r2
+    191c:	01 ef       	ldi	r16, 0xF1	; 241
+    191e:	00 02       	muls	r16, r16
+    1920:	04 03       	mulsu	r16, r20
+    1922:	b7 00       	.word	0x00b7	; ????
+    1924:	02 04       	cpc	r0, r2
+    1926:	02 1d       	adc	r16, r2
+    1928:	00 02       	muls	r16, r16
+    192a:	04 01       	movw	r0, r8
+    192c:	ef 06       	cpc	r14, r31
+    192e:	b8 02       	muls	r27, r24
+    1930:	24 10       	cpse	r2, r4
+    1932:	00 02       	muls	r16, r16
+    1934:	04 02       	muls	r16, r20
+    1936:	06 1d       	adc	r16, r6
+    1938:	00 02       	muls	r16, r16
+    193a:	04 01       	movw	r0, r8
+    193c:	ef 00       	.word	0x00ef	; ????
+    193e:	02 04       	cpc	r0, r2
+    1940:	03 b7       	in	r16, 0x33	; 51
+    1942:	00 02       	muls	r16, r16
+    1944:	04 02       	muls	r16, r20
+    1946:	1d 00       	.word	0x001d	; ????
+    1948:	02 04       	cpc	r0, r2
+    194a:	01 ef       	ldi	r16, 0xF1	; 241
+    194c:	06 b8       	out	0x06, r0	; 6
+    194e:	08 56       	subi	r16, 0x68	; 104
+    1950:	b8 8e       	std	Y+24, r11	; 0x18
+    1952:	00 02       	muls	r16, r16
+    1954:	04 01       	movw	r0, r8
+    1956:	06 c5       	rjmp	.+2572   	; 0x2364 <__stack+0x1265>
+    1958:	06 02       	muls	r16, r22
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    195a:	06 7e       	andi	r16, 0xE6	; 230
-    195c:	49 08       	sbc	r4, r9
+    195a:	34 10       	cpse	r3, r4
+    195c:	02 3a       	cpi	r16, 0xA2	; 162
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    195e:	e2 08       	sbc	r14, r2
-    1960:	e2 72       	andi	r30, 0x22	; 34
-    1962:	da 57       	subi	r29, 0x7A	; 122
-    1964:	08 8e       	std	Y+24, r0	; 0x18
-    1966:	c6 08       	sbc	r12, r6
-    1968:	8e 00       	.word	0x008e	; ????
-    196a:	02 04       	cpc	r0, r2
-    196c:	02 06       	cpc	r0, r18
-    196e:	1d 00       	.word	0x001d	; ????
-    1970:	02 04       	cpc	r0, r2
-    1972:	01 ef       	ldi	r16, 0xF1	; 241
-    1974:	00 02       	muls	r16, r16
-    1976:	04 03       	mulsu	r16, r20
-    1978:	b7 00       	.word	0x00b7	; ????
-    197a:	02 04       	cpc	r0, r2
-    197c:	02 1d       	adc	r16, r2
-    197e:	00 02       	muls	r16, r16
-    1980:	04 01       	movw	r0, r8
-    1982:	ef 06       	cpc	r14, r31
-    1984:	b8 02       	muls	r27, r24
-    1986:	24 10       	cpse	r2, r4
-    1988:	00 02       	muls	r16, r16
-    198a:	04 02       	muls	r16, r20
-    198c:	06 1d       	adc	r16, r6
-    198e:	00 02       	muls	r16, r16
-    1990:	04 01       	movw	r0, r8
-    1992:	ef 00       	.word	0x00ef	; ????
-    1994:	02 04       	cpc	r0, r2
-    1996:	03 b7       	in	r16, 0x33	; 51
-    1998:	00 02       	muls	r16, r16
-    199a:	04 02       	muls	r16, r20
-    199c:	1d 00       	.word	0x001d	; ????
-    199e:	02 04       	cpc	r0, r2
-    19a0:	01 ef       	ldi	r16, 0xF1	; 241
-    19a2:	06 b8       	out	0x06, r0	; 6
+    195e:	10 02       	muls	r17, r16
+    1960:	3a 10       	cpse	r3, r10
+    1962:	08 e5       	ldi	r16, 0x58	; 88
+    1964:	3a 08       	sbc	r3, r10
+    1966:	1e f0       	brts	.+6      	; 0x196e <__stack+0x86f>
+    1968:	02 24       	eor	r0, r2
+    196a:	10 08       	sbc	r1, r0
+    196c:	3b f0       	brvs	.+14     	; 0x197c <__stack+0x87d>
+    196e:	f0 c6       	rjmp	.+3552   	; 0x2750 <__stack+0x1651>
+    1970:	48 56       	subi	r20, 0x68	; 104
+    1972:	02 30       	cpi	r16, 0x02	; 2
+    1974:	10 02       	muls	r17, r16
+    1976:	30 10       	cpse	r3, r0
+    1978:	64 2d       	mov	r22, r4
+    197a:	3a 48       	sbci	r19, 0x8A	; 138
+    197c:	02 03       	mulsu	r16, r18
+    197e:	00 01       	movw	r0, r0
+    1980:	01 5c       	subi	r16, 0xC1	; 193
+    1982:	00 00       	nop
+    1984:	00 02       	muls	r16, r16
+    1986:	00 21       	and	r16, r0
+    1988:	00 00       	nop
+    198a:	00 02       	muls	r16, r16
+    198c:	01 fb       	bst	r16, 1
+    198e:	0e 0a       	sbc	r0, r30
+    1990:	00 01       	movw	r0, r0
+    1992:	01 01       	movw	r0, r2
+    1994:	01 00       	.word	0x0001	; ????
+    1996:	00 00       	nop
+    1998:	01 00       	.word	0x0001	; ????
+    199a:	70 70       	andi	r23, 0x00	; 0
+    199c:	5f 69       	ori	r21, 0x9F	; 159
+    199e:	66 5f       	subi	r22, 0xF6	; 246
+    19a0:	63 61       	ori	r22, 0x13	; 19
+    19a2:	6c 69       	ori	r22, 0x9C	; 156
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    19a4:	08 56       	subi	r16, 0x68	; 104
-    19a6:	b8 8e       	std	Y+24, r11	; 0x18
+    19a4:	62 2e       	mov	r6, r18
+    19a6:	63 00       	.word	0x0063	; ????
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    19a8:	00 02       	muls	r16, r16
-    19aa:	04 01       	movw	r0, r8
-    19ac:	06 c5       	rjmp	.+2572   	; 0x23ba <__stack+0x12bb>
-    19ae:	06 02       	muls	r16, r22
-    19b0:	34 10       	cpse	r3, r4
-    19b2:	02 3a       	cpi	r16, 0xA2	; 162
-    19b4:	10 02       	muls	r17, r16
-    19b6:	3a 10       	cpse	r3, r10
-    19b8:	08 e5       	ldi	r16, 0x58	; 88
-    19ba:	3a 08       	sbc	r3, r10
-    19bc:	1e f0       	brts	.+6      	; 0x19c4 <__stack+0x8c5>
-    19be:	02 24       	eor	r0, r2
-    19c0:	10 08       	sbc	r1, r0
-    19c2:	3b f0       	brvs	.+14     	; 0x19d2 <__stack+0x8d3>
-    19c4:	f0 c6       	rjmp	.+3552   	; 0x27a6 <__stack+0x16a7>
-    19c6:	48 56       	subi	r20, 0x68	; 104
-    19c8:	02 30       	cpi	r16, 0x02	; 2
-    19ca:	10 02       	muls	r17, r16
-    19cc:	30 10       	cpse	r3, r0
-    19ce:	64 2d       	mov	r22, r4
-    19d0:	3a 48       	sbci	r19, 0x8A	; 138
-    19d2:	02 03       	mulsu	r16, r18
-    19d4:	00 01       	movw	r0, r0
-    19d6:	01 5c       	subi	r16, 0xC1	; 193
-    19d8:	00 00       	nop
-    19da:	00 02       	muls	r16, r16
-    19dc:	00 21       	and	r16, r0
-    19de:	00 00       	nop
-    19e0:	00 02       	muls	r16, r16
-    19e2:	01 fb       	bst	r16, 1
-    19e4:	0e 0a       	sbc	r0, r30
-    19e6:	00 01       	movw	r0, r0
-    19e8:	01 01       	movw	r0, r2
-    19ea:	01 00       	.word	0x0001	; ????
-    19ec:	00 00       	nop
+    19a8:	00 00       	nop
+    19aa:	00 00       	nop
+    19ac:	00 05       	cpc	r16, r0
+    19ae:	02 98       	cbi	0x00, 2	; 0
+    19b0:	b2 00       	.word	0x00b2	; ????
+    19b2:	00 03       	mulsu	r16, r16
+    19b4:	fb 00       	.word	0x00fb	; ????
+    19b6:	01 64       	ori	r16, 0x41	; 65
+    19b8:	56 57       	subi	r21, 0x76	; 118
+    19ba:	3a 80       	ldd	r3, Y+2	; 0x02
+    19bc:	81 02       	muls	r24, r17
+    19be:	3b 10       	cpse	r3, r11
+    19c0:	08 57       	subi	r16, 0x78	; 120
+    19c2:	57 3a       	cpi	r21, 0xA7	; 167
+    19c4:	80 81       	ld	r24, Z
+    19c6:	02 3b       	cpi	r16, 0xB2	; 178
+    19c8:	10 08       	sbc	r1, r0
+    19ca:	58 56       	subi	r21, 0x68	; 104
+    19cc:	57 3a       	cpi	r21, 0xA7	; 167
+    19ce:	f0 81       	ld	r31, Z
+    19d0:	02 40       	sbci	r16, 0x02	; 2
+    19d2:	10 f1       	brcs	.+68     	; 0x1a18 <__stack+0x919>
+    19d4:	57 3a       	cpi	r21, 0xA7	; 167
+    19d6:	f0 81       	ld	r31, Z
+    19d8:	02 40       	sbci	r16, 0x02	; 2
+    19da:	10 f2       	brcs	.-124    	; 0x1960 <__stack+0x861>
+    19dc:	02 04       	cpc	r0, r2
+    19de:	00 01       	movw	r0, r0
+    19e0:	01 61       	ori	r16, 0x11	; 17
+    19e2:	00 00       	nop
+    19e4:	00 02       	muls	r16, r16
+    19e6:	00 21       	and	r16, r0
+    19e8:	00 00       	nop
+    19ea:	00 02       	muls	r16, r16
+    19ec:	01 fb       	bst	r16, 1
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    19ee:	01 00       	.word	0x0001	; ????
-    19f0:	70 70       	andi	r23, 0x00	; 0
+    19ee:	0e 0a       	sbc	r0, r30
+    19f0:	00 01       	movw	r0, r0
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    19f2:	5f 69       	ori	r21, 0x9F	; 159
-    19f4:	66 5f       	subi	r22, 0xF6	; 246
-    19f6:	63 61       	ori	r22, 0x13	; 19
-    19f8:	6c 69       	ori	r22, 0x9C	; 156
-    19fa:	62 2e       	mov	r6, r18
-    19fc:	63 00       	.word	0x0063	; ????
-    19fe:	00 00       	nop
-    1a00:	00 00       	nop
-    1a02:	00 05       	cpc	r16, r0
-    1a04:	02 98       	cbi	0x00, 2	; 0
-    1a06:	b2 00       	.word	0x00b2	; ????
-    1a08:	00 03       	mulsu	r16, r16
-    1a0a:	fb 00       	.word	0x00fb	; ????
-    1a0c:	01 64       	ori	r16, 0x41	; 65
-    1a0e:	56 57       	subi	r21, 0x76	; 118
-    1a10:	3a 80       	ldd	r3, Y+2	; 0x02
-    1a12:	81 02       	muls	r24, r17
-    1a14:	3b 10       	cpse	r3, r11
-    1a16:	08 57       	subi	r16, 0x78	; 120
-    1a18:	57 3a       	cpi	r21, 0xA7	; 167
-    1a1a:	80 81       	ld	r24, Z
-    1a1c:	02 3b       	cpi	r16, 0xB2	; 178
-    1a1e:	10 08       	sbc	r1, r0
-    1a20:	58 56       	subi	r21, 0x68	; 104
-    1a22:	57 3a       	cpi	r21, 0xA7	; 167
-    1a24:	f0 81       	ld	r31, Z
-    1a26:	02 40       	sbci	r16, 0x02	; 2
-    1a28:	10 f1       	brcs	.+68     	; 0x1a6e <__stack+0x96f>
-    1a2a:	57 3a       	cpi	r21, 0xA7	; 167
-    1a2c:	f0 81       	ld	r31, Z
-    1a2e:	02 40       	sbci	r16, 0x02	; 2
-    1a30:	10 f2       	brcs	.-124    	; 0x19b6 <__stack+0x8b7>
-    1a32:	02 04       	cpc	r0, r2
-    1a34:	00 01       	movw	r0, r0
-    1a36:	01 61       	ori	r16, 0x11	; 17
+    19f2:	01 01       	movw	r0, r2
+    19f4:	01 00       	.word	0x0001	; ????
+    19f6:	00 00       	nop
+    19f8:	01 00       	.word	0x0001	; ????
+    19fa:	70 70       	andi	r23, 0x00	; 0
+    19fc:	5f 6d       	ori	r21, 0xDF	; 223
+    19fe:	61 69       	ori	r22, 0x91	; 145
+    1a00:	6e 6c       	ori	r22, 0xCE	; 206
+    1a02:	6f 6f       	ori	r22, 0xFF	; 255
+    1a04:	70 2e       	mov	r7, r16
+    1a06:	63 00       	.word	0x0063	; ????
+    1a08:	00 00       	nop
+    1a0a:	00 00       	nop
+    1a0c:	00 05       	cpc	r16, r0
+    1a0e:	02 24       	eor	r0, r2
+    1a10:	b6 00       	.word	0x00b6	; ????
+    1a12:	00 03       	mulsu	r16, r16
+    1a14:	d1 00       	.word	0x00d1	; ????
+    1a16:	01 48       	sbci	r16, 0x81	; 129
+    1a18:	48 56       	subi	r20, 0x68	; 104
+    1a1a:	56 03       	mulsu	r21, r22
+    1a1c:	0d 39       	cpi	r16, 0x9D	; 157
+    1a1e:	48 9c       	mul	r4, r8
+    1a20:	2c 56       	subi	r18, 0x6C	; 108
+    1a22:	1e 03       	fmul	r17, r22
+    1a24:	fe 00       	.word	0x00fe	; ????
+    1a26:	39 57       	subi	r19, 0x79	; 121
+    1a28:	2c 2c       	mov	r2, r12
+    1a2a:	2c 2c       	mov	r2, r12
+    1a2c:	2c 2c       	mov	r2, r12
+    1a2e:	2c 2c       	mov	r2, r12
+    1a30:	2c 2c       	mov	r2, r12
+    1a32:	1e 48       	sbci	r17, 0x8E	; 142
+    1a34:	00 02       	muls	r16, r16
+    1a36:	04 01       	movw	r0, r8
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    1a38:	00 00       	nop
-    1a3a:	00 02       	muls	r16, r16
+    1a38:	37 3e       	cpi	r19, 0xE7	; 231
+    1a3a:	48 2c       	mov	r4, r8
 /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    1a3c:	00 21       	and	r16, r0
-    1a3e:	00 00       	nop
-    1a40:	00 02       	muls	r16, r16
-    1a42:	01 fb       	bst	r16, 1
-    1a44:	0e 0a       	sbc	r0, r30
-    1a46:	00 01       	movw	r0, r0
-    1a48:	01 01       	movw	r0, r2
-    1a4a:	01 00       	.word	0x0001	; ????
-    1a4c:	00 00       	nop
-    1a4e:	01 00       	.word	0x0001	; ????
-    1a50:	70 70       	andi	r23, 0x00	; 0
-    1a52:	5f 6d       	ori	r21, 0xDF	; 223
-    1a54:	61 69       	ori	r22, 0x91	; 145
-    1a56:	6e 6c       	ori	r22, 0xCE	; 206
-    1a58:	6f 6f       	ori	r22, 0xFF	; 255
-    1a5a:	70 2e       	mov	r7, r16
-    1a5c:	63 00       	.word	0x0063	; ????
-    1a5e:	00 00       	nop
-    1a60:	00 00       	nop
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    1a62:	00 05       	cpc	r16, r0
-    1a64:	02 24       	eor	r0, r2
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    1a66:	b6 00       	.word	0x00b6	; ????
-    1a68:	00 03       	mulsu	r16, r16
-    1a6a:	d1 00       	.word	0x00d1	; ????
-    1a6c:	01 48       	sbci	r16, 0x81	; 129
-    1a6e:	48 56       	subi	r20, 0x68	; 104
-    1a70:	56 03       	mulsu	r21, r22
-    1a72:	0d 39       	cpi	r16, 0x9D	; 157
-    1a74:	48 9c       	mul	r4, r8
-    1a76:	2c 56       	subi	r18, 0x6C	; 108
-    1a78:	1e 03       	fmul	r17, r22
-    1a7a:	fe 00       	.word	0x00fe	; ????
-    1a7c:	39 57       	subi	r19, 0x79	; 121
-    1a7e:	2c 2c       	mov	r2, r12
-    1a80:	2c 2c       	mov	r2, r12
-    1a82:	2c 2c       	mov	r2, r12
-    1a84:	2c 2c       	mov	r2, r12
-    1a86:	2c 2c       	mov	r2, r12
-    1a88:	1e 48       	sbci	r17, 0x8E	; 142
-    1a8a:	00 02       	muls	r16, r16
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 1)
-    1a8c:	04 01       	movw	r0, r8
-    1a8e:	37 3e       	cpi	r19, 0xE7	; 231
-/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/autopilot_preprocessed/pp_main.c:377 (discriminator 2)
-    1a90:	48 2c       	mov	r4, r8
-    1a92:	49 2d       	mov	r20, r9
-    1a94:	48 2c       	mov	r4, r8
-    1a96:	2d 02       	muls	r18, r29
-    1a98:	02 00       	.word	0x0002	; ????
-    1a9a:	01 01       	movw	r0, r2
+    1a3c:	49 2d       	mov	r20, r9
+    1a3e:	48 2c       	mov	r4, r8
+    1a40:	2d 02       	muls	r18, r29
+    1a42:	02 00       	.word	0x0002	; ????
+    1a44:	01 01       	movw	r0, r2
 
 Disassembly of section .debug_frame:
 

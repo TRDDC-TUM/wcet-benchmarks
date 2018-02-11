@@ -72,17 +72,49 @@ static void glide_to(uint8_t last_wp, uint8_t wp);
 
 #define DegOfRad(x) ((x) / M_PI * 180.)
 #define RadOfDeg(x) ((x)/180. * M_PI)
-#define NormCourse(x) { while (x < 0) x += 360; while (x >= 360) x -= 360;}
+#define NormCourse(x) { \
+    while (x < 0) x += 360; \
+    while (x >= 360) x -= 360; \
+}
 
 static float qdr; /* Degrees from 0 to 360 */
 
-#define CircleXY(x,y,radius) { float alpha = atan2(estimator_y - y, estimator_x - x);float alpha_carrot = alpha + CARROT / -radius * estimator_hspeed_mod; fly_to_xy(x+cos(alpha_carrot)*fabs(radius),y+sin(alpha_carrot)*fabs(radius)); qdr = DegOfRad(M_PI/2 - alpha_carrot); NormCourse(qdr);}
+#define CircleXY(x,y,radius) { \
+    float alpha = atan2(estimator_y - y, estimator_x - x);\
+    float alpha_carrot = alpha + CARROT / -radius * estimator_hspeed_mod;\
+    fly_to_xy(x+cos(alpha_carrot)*fabs(radius),y+sin(alpha_carrot)*fabs(radius));\
+    qdr = DegOfRad(M_PI/2 - alpha_carrot); NormCourse(qdr);\
+}
 
 #define MAX_DIST_CARROT 250.
 #define MIN_HEIGHT_CARROT 50.
 #define MAX_HEIGHT_CARROT 150.
 
-#define Goto3D(radius) { static float carrot_x, carrot_y; int16_t pitch; int16_t roll; if (pprz_mode == PPRZ_MODE_AUTO2) { int16_t yaw = from_fbw.channels[RADIO_YAW]; if (yaw > MIN_DX || yaw < -MIN_DX) { carrot_x += FLOAT_OF_PPRZ(yaw, 0, -20.);carrot_x = Min(carrot_x, MAX_DIST_CARROT); carrot_x = Max(carrot_x, -MAX_DIST_CARROT); } pitch = from_fbw.channels[RADIO_PITCH]; if (pitch > MIN_DX || pitch < -MIN_DX) { carrot_y += FLOAT_OF_PPRZ(pitch, 0, -20.); carrot_y = Min(carrot_y, MAX_DIST_CARROT); carrot_y = Max(carrot_y, -MAX_DIST_CARROT);} vertical_mode = VERTICAL_MODE_AUTO_ALT; roll =  from_fbw.channels[RADIO_ROLL]; if (roll > MIN_DX || roll < -MIN_DX) { desired_altitude += FLOAT_OF_PPRZ(roll, 0, -1.0); desired_altitude = Max(desired_altitude, MIN_HEIGHT_CARROT+GROUND_ALT); desired_altitude = Min(desired_altitude, MAX_HEIGHT_CARROT+GROUND_ALT); } } CircleXY(carrot_x, carrot_y, radius); }
+#define Goto3D(radius) { \
+    static float carrot_x, carrot_y; int16_t pitch; int16_t roll;\
+    if (pprz_mode == PPRZ_MODE_AUTO2) {\
+        int16_t yaw = from_fbw.channels[RADIO_YAW];\
+        if (yaw > MIN_DX || yaw < -MIN_DX) {\
+            carrot_x += FLOAT_OF_PPRZ(yaw, 0, -20.);\
+            carrot_x = Min(carrot_x, MAX_DIST_CARROT);\
+            carrot_x = Max(carrot_x, -MAX_DIST_CARROT);\
+        } \
+        pitch = from_fbw.channels[RADIO_PITCH];\
+        if (pitch > MIN_DX || pitch < -MIN_DX) {\
+            carrot_y += FLOAT_OF_PPRZ(pitch, 0, -20.);\
+            carrot_y = Min(carrot_y, MAX_DIST_CARROT);\
+            carrot_y = Max(carrot_y, -MAX_DIST_CARROT);\
+        } \
+        vertical_mode = VERTICAL_MODE_AUTO_ALT;\
+        roll =  from_fbw.channels[RADIO_ROLL];\
+        if (roll > MIN_DX || roll < -MIN_DX) { \
+            desired_altitude += FLOAT_OF_PPRZ(roll, 0, -1.0);\
+            desired_altitude = Max(desired_altitude, MIN_HEIGHT_CARROT+GROUND_ALT);\
+            desired_altitude = Min(desired_altitude, MAX_HEIGHT_CARROT+GROUND_ALT);\
+        }\
+    }\
+    CircleXY(carrot_x, carrot_y, radius);\
+}
 
 #define Circle(wp, radius) CircleXY(waypoints[wp].x, waypoints[wp].y, radius)
 

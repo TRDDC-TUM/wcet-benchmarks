@@ -206,12 +206,17 @@ static inline void auto_nav(void) {
     switch(nav_stage) {
       label_while_1:
       case 0: nav_stage=0;
-        if (! (!(estimator_flight_time))) { goto label_endwhile_2; } else { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } };
+        if (! (!(estimator_flight_time)))
+          { goto label_endwhile_2; }
+        else
+          { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } };
         case 1: nav_stage=1;
           { goto label_while_1; }
         label_endwhile_2:
       case 2: nav_stage=2;
-        if ((estimator_flight_time>8)) { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } else {
+        if ((estimator_flight_time>8))
+          { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } }
+        else {
           desired_course = ((270.0)/180. * 3.14159265358979323846);
           auto_pitch = 0;
           nav_pitch = 0.150000;
@@ -220,7 +225,9 @@ static inline void auto_nav(void) {
         }
         return;
       case 3: nav_stage=3;
-        if ((estimator_z>150.)) { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } else {
+        if ((estimator_z>150.))
+          { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } }
+        else {
           desired_course = ((270.0)/180. * 3.14159265358979323846);
           auto_pitch = 0;
           nav_pitch = 0.000000;
@@ -232,13 +239,20 @@ static inline void auto_nav(void) {
         { nav_block++; { nav_stage = 0; block_time = 0; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; }; }; }
     }
     case 1: nav_block=1;
-    if (rc_event_1 ? rc_event_1 = 0, (!0) : 0) { { nav_block=2; { nav_stage = 0; block_time = 0; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; }; }; } }
+    if (rc_event_1 ? rc_event_1 = 0, (!0) : 0) {
+      { nav_block=2; { nav_stage = 0; block_time = 0; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; }; }; }
+    }
     switch(nav_stage) {
       label_while_3:
       case 0: nav_stage=0;
-        if (! ((!0))) { goto label_endwhile_4; } else { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } };
+        if (! ((!0)))
+          { goto label_endwhile_4; }
+        else
+          { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } };
         case 1: nav_stage=1;
-          if (approaching(1)) { last_wp = 1; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } } else {
+          if (approaching(1))
+            { last_wp = 1; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } }
+          else {
             fly_to(1);
             auto_pitch = 0;
             nav_pitch = 0.000000;
@@ -248,7 +262,9 @@ static inline void auto_nav(void) {
           }
           return;
         case 2: nav_stage=2;
-          if (approaching(4)) { last_wp = 4; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } } else {
+          if (approaching(4))
+            { last_wp = 4; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } }
+          else {
             fly_to(4);
             auto_pitch = 0;
             nav_pitch = 0.000000;
@@ -264,13 +280,20 @@ static inline void auto_nav(void) {
         { nav_block++; { nav_stage = 0; block_time = 0; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; }; }; }
     }
     case 2: nav_block=2;
-    if (rc_event_1 ? rc_event_1 = 0, (!0) : 0) { { nav_block=3; { nav_stage = 0; block_time = 0; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; }; }; } }
+    if (rc_event_1 ? rc_event_1 = 0, (!0) : 0) {
+        { nav_block=3; { nav_stage = 0; block_time = 0; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; }; }; }
+    }
     switch(nav_stage) {
       label_while_5:
       case 0: nav_stage=0;
-        if (! ((!0))) { goto label_endwhile_6; } else { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } };
+        if (! ((!0)))
+          { goto label_endwhile_6; }
+        else
+          { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } };
         case 1: nav_stage=1;
-          if (approaching(6)) { last_wp = 6; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } } else {
+          if (approaching(6))
+            { last_wp = 6; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } }
+          else {
             fly_to(6);
             auto_pitch = 0;
             nav_pitch = 0.000000;
@@ -280,7 +303,9 @@ static inline void auto_nav(void) {
           }
           return;
         case 2: nav_stage=2;
-          if (approaching(1)) { last_wp = 1; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } } else {
+          if (approaching(1))
+            { last_wp = 1; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } }
+          else {
             fly_to(1);
             auto_pitch = 0;
             nav_pitch = 0.000000;
@@ -290,7 +315,9 @@ static inline void auto_nav(void) {
           }
           return;
         case 3: nav_stage=3;
-          if (approaching(2)) { last_wp = 2; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } } else {
+          if (approaching(2))
+            { last_wp = 2; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } }
+          else {
             route_to(last_wp, 2);
             auto_pitch = 0;
             nav_pitch = 0.000000;
@@ -300,7 +327,9 @@ static inline void auto_nav(void) {
           }
           return;
         case 4: nav_stage=4;
-          if (approaching(3)) { last_wp = 3; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } } else {
+          if (approaching(3))
+            { last_wp = 3; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } }
+          else {
             fly_to(3);
             auto_pitch = 0;
             nav_pitch = 0.000000;
@@ -310,7 +339,9 @@ static inline void auto_nav(void) {
           }
           return;
         case 5: nav_stage=5;
-          if (approaching(4)) { last_wp = 4; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } } else {
+          if (approaching(4))
+            { last_wp = 4; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } }
+          else {
             fly_to(4);
             auto_pitch = 0;
             nav_pitch = 0.000000;
@@ -320,7 +351,9 @@ static inline void auto_nav(void) {
           }
           return;
         case 6: nav_stage=6;
-          if (approaching(5)) { last_wp = 5; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } } else {
+          if (approaching(5))
+            { last_wp = 5; { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } } }
+          else {
             route_to(last_wp, 5);
             auto_pitch = 0;
             nav_pitch = 0.000000;
@@ -336,16 +369,20 @@ static inline void auto_nav(void) {
         { nav_block++; { nav_stage = 0; block_time = 0; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; }; }; }
     }
     case 3: nav_block=3;
-    if (rc_event_1 ? rc_event_1 = 0, (!0) : 0) { { nav_block=4; { nav_stage = 0; block_time = 0; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; }; }; } }
+    if (rc_event_1 ? rc_event_1 = 0, (!0) : 0) {
+      { nav_block=4; { nav_stage = 0; block_time = 0; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; }; }; }
+    }
     switch(nav_stage) {
       case 0: nav_stage=0;
-        { static float carrot_x, carrot_y; int16_t pitch; int16_t roll; if (pprz_mode == 2) { int16_t yaw = from_fbw.channels[3]; if (yaw > ((int16_t)((600 * 16) * 0.05)) || yaw < -((int16_t)((600 * 16) * 0.05))) { carrot_x += ((float)yaw / (float)(600 * 16) * -20. + 0);carrot_x = (carrot_x < 250. ? carrot_x : 250.); carrot_x = (carrot_x > -250. ? carrot_x : -250.); } pitch = from_fbw.channels[2]; if (pitch > ((int16_t)((600 * 16) * 0.05)) || pitch < -((int16_t)((600 * 16) * 0.05))) { carrot_y += ((float)pitch / (float)(600 * 16) * -20. + 0); carrot_y = (carrot_y < 250. ? carrot_y : 250.); carrot_y = (carrot_y > -250. ? carrot_y : -250.);} vertical_mode = 3; roll = from_fbw.channels[1]; if (roll > ((int16_t)((600 * 16) * 0.05)) || roll < -((int16_t)((600 * 16) * 0.05))) { desired_altitude += ((float)roll / (float)(600 * 16) * -1.0 + 0); desired_altitude = (desired_altitude > 50. +125. ? desired_altitude : 50. +125.); desired_altitude = (desired_altitude < 150. +125. ? desired_altitude : 150. +125.); } } { float alpha = atan2(estimator_y - carrot_y, estimator_x - carrot_x);float alpha_carrot = alpha + 5. / -50 * estimator_hspeed_mod; fly_to_xy(carrot_x+cos(alpha_carrot)*fabs(50),carrot_y+sin(alpha_carrot)*fabs(50)); qdr = ((3.14159265358979323846/2 - alpha_carrot) / 3.14159265358979323846 * 180.); { while (qdr < 0) qdr += 360; while (qdr >= 360) qdr -= 360;};}; }
+        { static float carrot_x, carrot_y; int16_t pitch; int16_t roll; if (pprz_mode == 2) { int16_t yaw = from_fbw.channels[3]; if (yaw > ((int16_t)((600 * 16) * 0.05)) || yaw < -((int16_t)((600 * 16) * 0.05))) { carrot_x += ((float)yaw / (float)(600 * 16) * -20. + 0); carrot_x = (carrot_x < 250. ? carrot_x : 250.); carrot_x = (carrot_x > -250. ? carrot_x : -250.); } pitch = from_fbw.channels[2]; if (pitch > ((int16_t)((600 * 16) * 0.05)) || pitch < -((int16_t)((600 * 16) * 0.05))) { carrot_y += ((float)pitch / (float)(600 * 16) * -20. + 0); carrot_y = (carrot_y < 250. ? carrot_y : 250.); carrot_y = (carrot_y > -250. ? carrot_y : -250.); } vertical_mode = 3; roll = from_fbw.channels[1]; if (roll > ((int16_t)((600 * 16) * 0.05)) || roll < -((int16_t)((600 * 16) * 0.05))) { desired_altitude += ((float)roll / (float)(600 * 16) * -1.0 + 0); desired_altitude = (desired_altitude > 50. +125. ? desired_altitude : 50. +125.); desired_altitude = (desired_altitude < 150. +125. ? desired_altitude : 150. +125.); } } { float alpha = atan2(estimator_y - carrot_y, estimator_x - carrot_x); float alpha_carrot = alpha + 5. / -50 * estimator_hspeed_mod; fly_to_xy(carrot_x+cos(alpha_carrot)*fabs(50),carrot_y+sin(alpha_carrot)*fabs(50)); qdr = ((3.14159265358979323846/2 - alpha_carrot) / 3.14159265358979323846 * 180.); { while (qdr < 0) qdr += 360; while (qdr >= 360) qdr -= 360; };};}
         return;
       case 1: nav_stage=1;
         { nav_block++; { nav_stage = 0; block_time = 0; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; }; }; }
     }
     case 4: nav_block=4;
-    if (rc_event_1 ? rc_event_1 = 0, (!0) : 0) { { nav_block=5; { nav_stage = 0; block_time = 0; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; }; }; } }
+    if (rc_event_1 ? rc_event_1 = 0, (!0) : 0) {
+      { nav_block=5; { nav_stage = 0; block_time = 0; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; }; }; }
+    }
     switch(nav_stage) {
       case 0: nav_stage=0;
         auto_pitch = 0;
@@ -353,7 +390,7 @@ static inline void auto_nav(void) {
         vertical_mode = 3;
         desired_altitude = waypoints[0].a;
         pre_climb = 0.;
-        { float alpha = atan2(estimator_y - waypoints[0].y, estimator_x - waypoints[0].x);float alpha_carrot = alpha + 5. / -150 * estimator_hspeed_mod; fly_to_xy(waypoints[0].x+cos(alpha_carrot)*fabs(150),waypoints[0].y+sin(alpha_carrot)*fabs(150)); qdr = ((3.14159265358979323846/2 - alpha_carrot) / 3.14159265358979323846 * 180.); { while (qdr < 0) qdr += 360; while (qdr >= 360) qdr -= 360;};};
+        { float alpha = atan2(estimator_y - waypoints[0].y, estimator_x - waypoints[0].x); float alpha_carrot = alpha + 5. / -150 * estimator_hspeed_mod; fly_to_xy(waypoints[0].x+cos(alpha_carrot)*fabs(150),waypoints[0].y+sin(alpha_carrot)*fabs(150)); qdr = ((3.14159265358979323846/2 - alpha_carrot) / 3.14159265358979323846 * 180.); { while (qdr < 0) qdr += 360; while (qdr >= 360) qdr -= 360; };};
         return;
       case 1: nav_stage=1;
         { nav_block++; { nav_stage = 0; block_time = 0; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; }; }; }
@@ -363,14 +400,17 @@ static inline void auto_nav(void) {
     switch(nav_stage) {
       label_while_7:
       case 0: nav_stage=0;
-        if (! ((!0))) { goto label_endwhile_8; } else { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } };
+        if (! ((!0)))
+          { goto label_endwhile_8; }
+        else
+          { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } };
         case 1: nav_stage=1;
           auto_pitch = 0;
           nav_pitch = 0.000000;
           vertical_mode = 3;
           desired_altitude = waypoints[1].a;
           pre_climb = 0.;
-          { float alpha = atan2(estimator_y - waypoints[1].y, estimator_x - waypoints[1].x);float alpha_carrot = alpha + 5. / -100 * estimator_hspeed_mod; fly_to_xy(waypoints[1].x+cos(alpha_carrot)*fabs(100),waypoints[1].y+sin(alpha_carrot)*fabs(100)); qdr = ((3.14159265358979323846/2 - alpha_carrot) / 3.14159265358979323846 * 180.); { while (qdr < 0) qdr += 360; while (qdr >= 360) qdr -= 360;};};
+          { float alpha = atan2(estimator_y - waypoints[1].y, estimator_x - waypoints[1].x); float alpha_carrot = alpha + 5. / -100 * estimator_hspeed_mod; fly_to_xy(waypoints[1].x+cos(alpha_carrot)*fabs(100),waypoints[1].y+sin(alpha_carrot)*fabs(100)); qdr = ((3.14159265358979323846/2 - alpha_carrot) / 3.14159265358979323846 * 180.); { while (qdr < 0) qdr += 360; while (qdr >= 360) qdr -= 360; };};
           if (((0 < 350 ? 0 : 350) < qdr && qdr < 0 +10)) { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } };
           return;
         case 2: nav_stage=2;
@@ -379,7 +419,7 @@ static inline void auto_nav(void) {
           vertical_mode = 3;
           desired_altitude = waypoints[4].a;
           pre_climb = 0.;
-          { float alpha = atan2(estimator_y - waypoints[4].y, estimator_x - waypoints[4].x);float alpha_carrot = alpha + 5. / -100 * estimator_hspeed_mod; fly_to_xy(waypoints[4].x+cos(alpha_carrot)*fabs(100),waypoints[4].y+sin(alpha_carrot)*fabs(100)); qdr = ((3.14159265358979323846/2 - alpha_carrot) / 3.14159265358979323846 * 180.); { while (qdr < 0) qdr += 360; while (qdr >= 360) qdr -= 360;};};
+          { float alpha = atan2(estimator_y - waypoints[4].y, estimator_x - waypoints[4].x); float alpha_carrot = alpha + 5. / -100 * estimator_hspeed_mod; fly_to_xy(waypoints[4].x+cos(alpha_carrot)*fabs(100),waypoints[4].y+sin(alpha_carrot)*fabs(100)); qdr = ((3.14159265358979323846/2 - alpha_carrot) / 3.14159265358979323846 * 180.); { while (qdr < 0) qdr += 360; while (qdr >= 360) qdr -= 360; };};
           if (((180 < 350 ? 180 : 350) < qdr && qdr < 180 +10)) { nav_stage++; { last_x = estimator_x; last_y = estimator_y; stage_time = 0; stage_time_ds = 0; return; } };
           return;
         case 3: nav_stage=3;
@@ -450,7 +490,7 @@ static inline void compute_dist2_to_home(void) {
   too_far_from_home = dist2_to_home > (500.*500.);
 }
 void nav_home(void) {
-  { float alpha = atan2(estimator_y - waypoints[0].y, estimator_x - waypoints[0].x);float alpha_carrot = alpha + 5. / -50 * estimator_hspeed_mod; fly_to_xy(waypoints[0].x+cos(alpha_carrot)*fabs(50),waypoints[0].y+sin(alpha_carrot)*fabs(50)); qdr = ((3.14159265358979323846/2 - alpha_carrot) / 3.14159265358979323846 * 180.); { while (qdr < 0) qdr += 360; while (qdr >= 360) qdr -= 360;};};
+  { float alpha = atan2(estimator_y - waypoints[0].y, estimator_x - waypoints[0].x); float alpha_carrot = alpha + 5. / -50 * estimator_hspeed_mod; fly_to_xy(waypoints[0].x+cos(alpha_carrot)*fabs(50),waypoints[0].y+sin(alpha_carrot)*fabs(50)); qdr = ((3.14159265358979323846/2 - alpha_carrot) / 3.14159265358979323846 * 180.); { while (qdr < 0) qdr += 360; while (qdr >= 360) qdr -= 360; };};
   nav_pitch = 0.;
   vertical_mode = 3;
   desired_altitude = 125. +50;
