@@ -91,9 +91,17 @@ pp_%.c: %.c
 TIME=timeout -s INT 10m /usr/bin/time -v
 wcet.log: $(TARGET).elf
 	$(TIME) boundt_avr -device=ATmega128 -form=elf -no_stack -loop first -elf_sym -anatime -no_arithmetic -assert loopinfo.txt -v $< periodic_task | tee $@
+
+SIMULATOR=simulavr
+SIM_ANALYZER=~/async/WCET_gitlab/scripts/simulavr2times.py
+SIM_FLAGS=-l0 -datmega128 -Texit -ttrace
+sim.log: $(TARGET).elf
+	$(SIMULATOR) $(SIM_FLAGS) -f $<
+	$(SIM_ANALYZER) -ttrace | tee $@
+	rm -f trace
 	
 sourceinfo.csv.completed: $(TARGET).elf
 	~/async/autosafe/trunk/tum/wcet-cbmc/scripts/analyze_binary.py --target=avr --device=ATmega128 -o $@ $(TARGET).elf
 
 clean : avr_clean
-	rm -f *.out *.cm* messages.h flight_plan.h ubx_protocol.h inflight_calib.h wcet.log sourceinfo.csv pp_*.c
+	rm -f *.out *.cm* messages.h flight_plan.h ubx_protocol.h inflight_calib.h wcet.log sourceinfo.csv pp_*.c sim.log

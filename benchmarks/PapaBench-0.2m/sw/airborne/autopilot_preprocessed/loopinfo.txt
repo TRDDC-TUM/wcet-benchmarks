@@ -1,161 +1,96 @@
 -- loop bounds for Bound-T
 
-----   Loop unbounded at timer.h:85-88, offset 0000002E
---subprogram "main"
-    --loop exactly at line 85 in "timer.h"
-      --repeats 64 times; -- FIXME: no bound known (shift loop)
-    --end loop;
---end "main";
-
-----main@71=>periodic_task@440=>navigation_task@352=>nav_update
-----   Loop unbounded at flight_plan.h:184-, offset 00000A3C
-----   Loop unbounded at flight_plan.h:169-, offset 00000EF4
-----   Loop unbounded at flight_plan.h:211-, offset 00000CAC
-----   Loop unbounded at flight_plan.h:184-, offset 00000A96
-----   Loop unbounded at flight_plan.h:169-, offset 00000F4E
-----   Loop unbounded at flight_plan.h:202-, offset 0000055C
-----   Loop unbounded at flight_plan.h:211-, offset 00000CF6
-----   Loop unbounded at flight_plan.h:202-, offset 000005A6
-----   All not boundable even with all other assertions here.
+--  periodic_task@484=>navigation_task@426=>nav_update@502=>auto_nav
+--    Loop unbounded at pp_nav.c:422, offset 00001EC6
+--    Loop unbounded at pp_nav.c:377, offset 00001374
+--    Loop unbounded at pp_nav.c:413, offset 00001B72
+--    Loop unbounded at pp_nav.c:422, offset 00001F1E
+--    Loop unbounded at pp_nav.c:377, offset 000013CC
+--    Loop unbounded at pp_nav.c:413, offset 00001BCA
 subprogram "auto_nav"
-    loop that executes offset "16fe" -- Norm_Course?
-      -- in file "flight_plan.h"
-      repeats 1 times; -- FIXME: arbitrary value, not boundable.
-    end loop;
-    loop that executes offset "1756" -- Norm_Course?
-      -- in file "flight_plan.h"
-      repeats 1 times; -- FIXME: arbitrary value, not boundable.
-    end loop;
-    all 2 loops on line 382 -- Norm_Course?
-      --in file "flight_plan.h" 
-      repeats 1 times; -- FIXME: arbitrary value, not boundable.
+    all 2 loops on line 377
+       repeat <= 1 times; -- Norm_Course
     end loops;
-    all 2 loops on line 342 -- Norm_Course?
-      --in file "flight_plan.h"
-      repeats 1 times; -- FIXME: arbitrary value, not boundable.
+
+    all 2 loops on line 393
+       repeat <= 1 times; -- Norm_Course
     end loops;
-    all 2 loops on line 373 -- Norm_Course?
-      --in file "flight_plan.h"
-      repeats 1 times; -- FIXME: arbitrary value, not boundable.
+
+    all 2 loops on line 413
+       repeat <= 1 times; -- Norm_Course
+    end loops;
+
+    all 2 loops on line 422
+       repeat <= 1 times; -- Norm_Course
     end loops;
 end "auto_nav";
 
---   main@71=>periodic_task@440=>navigation_task@350=>nav_home
---      Loop unbounded at nav.c:175, offset 000001F4
---      Loop unbounded at nav.c:175, offset 0000024E
+-- periodic_task@484=>navigation_task@424=>nav_home
+--    Loop unbounded at pp_nav.c:493, offset 000001FE
+--    Loop unbounded at pp_nav.c:493, offset 00000256
 subprogram "nav_home"
-  all loops --on line 175
-    repeat 1 times;  -- fabs?
+  all 2 loops
+    repeat <=1 times; -- Norm_Course
   end loop;
 end "nav_home";
 
---   main@71=>periodic_task@440=>navigation_task@359=>course_pid_run
---      Loop unbounded at pid.c:66-67, offset 0000003E
---      Loop unbounded at pid.c:67, offset 0000006C
-subprogram "course_pid_run" -- norm_course?
-  all loops --on line 66
-    repeat 1 times; -- FIXME: arbitrary value, not boundable.
+-- periodic_task@484=>navigation_task@431=>course_pid_run
+--    Loop unbounded at pp_pid.c:311, offset 00000062
+--    Loop unbounded at pp_pid.c:311, offset 0000009C
+subprogram "course_pid_run"
+  all 2 loops
+    repeat <=1 times; -- similar to Norm_Course
   end loops;
 end "course_pid_run";
 
---------------------------
----- Compiler functions --
---------------------------
+-------------------
+-- from WCET lib --
+-------------------
 
---   main@71=>periodic_task@413-=>__addsf3@78-=>__addsf3x
---      Loop unbounded (exits at end only) at mainloop.c:78-, offset 0000004E
---      Loop unbounded at mainloop.c:78-, offset 0000006A
---      Loop unbounded at mainloop.c:78-, offset 00000034
-subprogram "__addsf3x"
-  all loops -- on line 78
-    repeat 64 times; -- FIXME: arbitrary value, not boundable.
-  end loops;
-end "__addsf3x";
+subprogram "__fp_norm2"
+   time 164 cycles;
+end "__fp_norm2";
 
---   main@71=>periodic_task@430-=>__fixsfsi@78-=>__fixunssfsi
---      Loop unbounded (exits at end only) at mainloop.c:78-, offset 0000003C
---      Loop unbounded at mainloop.c:78-, offset 00000038
---      Loop unbounded at mainloop.c:78-, offset 00000012
-subprogram "__fixunssfsi"
-  all loops --on line 78
-    repeat 64 times;  -- FIXME: arbitrary value, not boundable.
-  end loops;
-end "__fixunssfsi";
-
---   main@71=>periodic_task@457=>stabilisation_task@468=>estimator_update_state_infrared@116-=>__mulsf3@78-=>__mulsf3x
---      Loop unbounded (exits at end only) at mainloop.c:78-, offset 00000090
---      Loop unbounded at mainloop.c:78-, offset 00000068
-subprogram "__mulsf3x"
-  all loops -- on line 78
-    repeat 64 times;  -- FIXME: arbitrary value, not boundable.
-  end loops;
-end "__mulsf3x";
-
--- main@74=>receive_gps_data_task@480-481=>parse_gps_msg@111-=>__divmodsi4@78-=>__udivmodsi4
---   Loop unbounded at mainloop.c:78-, offset 00000026
 subprogram "__udivmodsi4"
-  loop on line 78
-    repeats 32 times; -- verified, time=665
-  end loop;
+   time 665 cycles;
 end "__udivmodsi4";
 
---main@71=>periodic_task@440=>navigation_task@352=>nav_update@202-=>atan2@78-=>atan@78-=>inverse@78-=>__divsf3x
---   Loop unbounded (exits at end only) at mainloop.c:78-, offset 00000078
---   Loop unbounded at mainloop.c:78-, offset 00000014
---   Loop unbounded (exits at end only) at mainloop.c:78-, offset 00000030
+subprogram "__addsf3x"
+   time 290 cycles;
+end "__addsf3x";
+
+subprogram "__fixunssfsi"
+  time 104 cycles;
+end "__fixunssfsi";
+
+subprogram "__mulsf3x"
+   time 393 cycles;
+end "__mulsf3x";
+
 subprogram "__divsf3x"
-   all loops
-      repeat 64 times; -- FIXME: arbitrary value, not boundable.
-   end loops;
+   time 1198 cycles;
 end "__divsf3x";
 
---main@71=>periodic_task@440=>navigation_task@352=>nav_update@202-=>atan2@78-=>__divsf3_pse
---   Loop unbounded (exits at end only) at mainloop.c:78-, offset 00000074
---   Loop unbounded at mainloop.c:78-, offset 00000010
---   Loop unbounded (exits at end only) at mainloop.c:78-, offset 0000002C
---   main@71=>periodic_task@440=>navigation_task@352=>nav_update@202-=>atan2@78-=>__divsf3_pse@78-=>00812C
---      Loop unbounded (exits at end only) at mainloop.c:78-, offset 00000002
---   main@71=>periodic_task@440=>navigation_task@352=>nav_update@202-=>atan2@78-=>__divsf3_pse@78-=>00812E
---      Loop unbounded (exits at end only) at mainloop.c:78-, offset 00000000
 subprogram "__divsf3_pse"
-   all loops
-      repeat 64 times; -- FIXME: arbitrary value, not boundable.
-   end loops;
+   time 444 cycles;
 end "__divsf3_pse";
-subprogram address "B90A" -- used by __divsf3x
-   loop
-     repeats 64 times; -- FIXME: arbitrary value, not boundable.
-   end loop;
-end subprogram;
-subprogram address "B90C" -- used by __divsf3x
-   loop
-     repeats 64 times; -- FIXME: arbitrary value, not boundable.
-   end loop;
-end subprogram;
 
---main@71=>periodic_task@440=>navigation_task@352=>nav_update@202-=>atan2@78-=>atan@78-=>__fp_powser
---   Loop unbounded at mainloop.c:78-, offset 00000020
 subprogram "__fp_powser"
-   loop
-      repeats 64 times; -- FIXME: arbitrary value, not boundable.
-   end loop;
+   time 2400 cycles;
 end "__fp_powser";
 
-
--- main@71=>periodic_task@430-=>__floatsisf
---    Irreducible flow-graph at mainloop.c:78-
 subprogram "__floatsisf"
-   time 100 cycles; -- FIXME: arbitrary value, not boundable.
+   time 74 cycles;
 end "__floatsisf";
 
--- main@71=>periodic_task@440=>navigation_task@352=>nav_update@202-=>sin@78-=>__fp_rempio2
---    Irreducible flow-graph at mainloop.c:78-
 subprogram "__fp_rempio2"
-   time 100 cycles; -- FIXME: arbitrary value, not boundable.
+   time 272 cycles;
 end "__fp_rempio2";
 
--- main@74=>receive_gps_data_task@480-481=>parse_gps_msg@106-=>__floatunsisf
---    Irreducible flow-graph at mainloop.c:78-
 subprogram "__floatunsisf"
-   time 100 cycles; -- FIXME: arbitrary value, not boundable.
+   time 98 cycles;
 end "__floatunsisf";
+
+subprogram "sqrt"
+   time 648 cycles;
+end "sqrt";
