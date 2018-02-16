@@ -88,7 +88,7 @@ SIMULATOR=simulavr
 SIM_ANALYZER=~/async/WCET_gitlab/scripts/simulavr2times.py
 SIM_FLAGS=-l0 -datmega128 -Texit
 sim.log: $(TARGET).elf
-	python -u $(SIM_ANALYZER) -e $< -s "$(SIM_FLAGS)" | tee $@
+	python -u $(SIM_ANALYZER) --coverage --pretty -e $< -s "$(SIM_FLAGS)" | tee $@
 	
 clean : avr_clean
 	rm -f *.out *.cm* messages.h flight_plan.h ubx_protocol.h inflight_calib.h

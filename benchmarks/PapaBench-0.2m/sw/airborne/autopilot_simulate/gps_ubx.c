@@ -91,10 +91,24 @@ void gps_init( void ) {
 #else
   uart1_init();
 #endif
+#ifdef SIMULATE
+      gps_utm_east = 0.f;
+      gps_utm_north += 0.f;
+      gps_falt += 0.f;
+      gps_mode = 0;
+      gps_fspeed = 0.f;
+      gps_fclimb = 0.f;
+      gps_fcourse = RadianOfDeg(10.f);
+      gps_ftow = 0.f;
+      gps_east += .1f; // m
+      gps_north += .1f; // m
+      gps_pos_available = TRUE;
+#endif
   ubx_status = UNINIT;
 }
 
 void parse_gps_msg( void ) {
+#ifndef SIMULATE
   if (ubx_class == UBX_NAV_ID) {
     if (ubx_id == UBX_NAV_POSUTM_ID) {
       gps_utm_east = UBX_NAV_POSUTM_EAST(ubx_msg_buf);
@@ -115,6 +129,23 @@ void parse_gps_msg( void ) {
       gps_pos_available = TRUE; /* The 3 UBX messages are sent in one rafale */
     }
   }
+#else
+    // fake GPS messages to force sim into flight mode.
+    {
+      gps_utm_east += .1f;
+      gps_utm_north += .1f;
+      gps_falt += 0.01f;
+      gps_mode = 3; // valid fix
+      gps_fspeed = .2f;
+      gps_fclimb = .1f;
+      gps_fcourse = RadianOfDeg(45.f);
+      gps_ftow += 1.f; // milliseconds time of week
+      gps_east += .1f; // m
+      gps_north += .1f; // m
+      gps_pos_available = TRUE; /* The 3 UBX messages are sent in one rafale */
+    }
+#endif
+
 #ifdef SIMUL
   if (ubx_class == UBX_USR_ID) {
     if (ubx_id == UBX_USR_IRSIM_ID) {

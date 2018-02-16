@@ -40,7 +40,7 @@
 // SIM: done
 int main( void )
 {
-  uint16_t l;
+  uint32_t l;
   uint8_t init_cpt;
   /* init peripherals */
   timer_init();
@@ -67,7 +67,7 @@ int main( void )
   }
 
   /*  enter mainloop */
-  for (l=0; l<2000; ++l) { // simulation shall terminate after 2000*1/(60Hz) = 100/3 seconds
+  for (l=0; l<100000; ++l) { // simulation shall terminate after 100,000*1/(60Hz) = 5000/3 seconds ~ 1666 seconds processor time
     if(SIMULATE_COND(timer_periodic()))
       periodic_task();
     if (SIMULATE_COND(gps_msg_received))

@@ -144,6 +144,10 @@ subprogram "__floatsisf"
    time 100 cycles; -- FIXME: arbitrary value, not boundable.
 end "__floatsisf";
 
+subprogram "__fp_norm2"
+   time 100 cycles; -- FIXME: arbitrary value, not boundable.
+end "__fp_norm2";
+
 -- main@71=>periodic_task@440=>navigation_task@352=>nav_update@202-=>sin@78-=>__fp_rempio2
 --    Irreducible flow-graph at mainloop.c:78-
 subprogram "__fp_rempio2"

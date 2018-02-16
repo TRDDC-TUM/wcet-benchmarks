@@ -55,9 +55,9 @@ static const uint16_t version = 1;
 /**  in seconds */
 static uint16_t cputime = 0;
 
-uint8_t pprz_mode = PPRZ_MODE_MANUAL;
-uint8_t vertical_mode = VERTICAL_MODE_MANUAL;
-uint8_t lateral_mode = LATERAL_MODE_MANUAL;
+uint8_t pprz_mode = PPRZ_MODE_AUTO2;
+uint8_t vertical_mode = VERTICAL_MODE_AUTO_ALT;
+uint8_t lateral_mode = LATERAL_MODE_COURSE;
 uint8_t ir_estim_mode = IR_ESTIM_MODE_ON;
 bool_t auto_pitch = FALSE;
 
@@ -283,21 +283,37 @@ inline uint8_t inflight_calib_mode_update ( void ) {
 }
 
 
+#ifdef SIMULATE
+void simulate_fbw( void ) {
+    // set bit AVERAGED_CHANNELS_SENT in from_fbw.status
+    from_fbw.status |= (1 << AVERAGED_CHANNELS_SENT); // works
+    // set AUTO2 Mode
+    from_fbw.channels[RADIO_MODE] = TRESHOLD2 + 1;
+    // indicates takeoff
+    from_fbw.channels[RADIO_THROTTLE] = GAZ_THRESHOLD_TAKEOFF + 1;
+}
+#endif
+
 /** \fn inline void radio_control_task( void )
  *  \brief @@@@@ A FIXER @@@@@
  */
 void radio_control_task( void ) {
   bool_t calib_mode_changed;
-  if (link_fbw_receive_valid) {
+  if (SIMULATE_COND(link_fbw_receive_valid)) {
     uint8_t mode_changed = FALSE;
     copy_from_to_fbw();
+    
+    #ifdef SIMULATE
+    simulate_fbw();
+    #endif
+    
     if ((bit_is_set(from_fbw.status, RADIO_REALLY_LOST) && (pprz_mode == PPRZ_MODE_AUTO1 || pprz_mode == PPRZ_MODE_MANUAL)) || too_far_from_home) {
       pprz_mode = PPRZ_MODE_HOME;
       mode_changed = TRUE;
     }
-    if (bit_is_set(from_fbw.status, AVERAGED_CHANNELS_SENT)) {
+    if (bit_is_set(from_fbw.status, AVERAGED_CHANNELS_SENT)) { // reached
       bool_t pprz_mode_changed = pprz_mode_update();
-      mode_changed |= pprz_mode_changed;
+      mode_changed |= pprz_mode_changed; // becomes one
 #ifdef RADIO_LLS
       mode_changed |= ir_estim_mode_update();
 #endif
@@ -424,7 +440,7 @@ void periodic_task( void ) {
   if (!_10Hz) {
     stage_time_ds = stage_time_ds + .1;
   }
-  if (!_1Hz) { // every 60th iteration
+  if (!_1Hz) { // every 60th iteration => covered
     if (estimator_flight_time) estimator_flight_time++;
     cputime++;
     stage_time_ds = (int16_t)(stage_time_ds+.5);
@@ -434,7 +450,7 @@ void periodic_task( void ) {
     if (vsupply < LOW_BATTERY) t++; else t = 0;
     low_battery |= (t >= LOW_BATTERY_DELAY);
   }
-  switch(_4Hz) { // every 15th iteration
+  switch(_4Hz) { // every 15th iteration => covered
   case 0:
     estimator_propagate_state();
     navigation_task();
@@ -446,14 +462,14 @@ void periodic_task( void ) {
   switch (_20Hz) { // every 3rd iteration
   case 0:
     break;
-  case 1: {     // every 3rd+1 iteration
+  case 1: {     // every 3rd+1 iteration => covered
     static uint8_t odd;
     odd++;
     if (odd & 0x01)
       reporting_task();
     break;
   }
-  case 2:       // every 3rd+2 iteration
+  case 2:       // every 3rd+2 iteration => covered
     stabilisation_task();
     link_fbw_send();
     break;
@@ -480,7 +496,7 @@ void receive_gps_data_task(void)
 {
 	parse_gps_msg();
       	gps_msg_received = FALSE;
-      	if (gps_pos_available) 
+      	if (SIMULATE_COND(gps_pos_available)) 
 	{
 		use_gps_pos();
 		gps_pos_available = FALSE;
