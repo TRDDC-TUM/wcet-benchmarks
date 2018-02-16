@@ -40,7 +40,7 @@
 // SIM: done
 int main( void )
 {
-  uint8_t l;
+  uint16_t l;
   uint8_t init_cpt;
   /* init peripherals */
   timer_init();
