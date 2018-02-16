@@ -1,0 +1,103 @@
+main.o: main.c /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/4.8.1/include/stdint.h /usr/lib/avr/include/stdint.h \
+ /usr/lib/avr/include/math.h ../fly_by_wire/link_autopilot.h \
+ ../../include/std.h ../../var/include/radio.h \
+ ../../var/include/airframe.h timer.h \
+ /usr/lib/avr/include/avr/interrupt.h /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/avr/iom128.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h adc.h pid.h gps.h ubx.h infrared.h \
+ downlink.h modem.h ../../var/include/messages.h nav.h autopilot.h \
+ estimator.h if_calib.h link_fbw.h
+modem.o: modem.c /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/4.8.1/include/stdint.h /usr/lib/avr/include/stdint.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/iom128.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/interrupt.h /usr/lib/avr/include/stdlib.h \
+ /usr/lib/gcc/avr/4.8.1/include/stddef.h modem.h \
+ ../../var/include/airframe.h ../../include/std.h
+link_fbw.o: link_fbw.c /usr/lib/avr/include/avr/io.h \
+ /usr/lib/avr/include/avr/sfr_defs.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/4.8.1/include/stdint.h /usr/lib/avr/include/stdint.h \
+ /usr/lib/avr/include/avr/iom128.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/interrupt.h link_fbw.h \
+ ../fly_by_wire/link_autopilot.h ../../include/std.h \
+ ../../var/include/radio.h ../../var/include/airframe.h spi.h
+spi.o: spi.c /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/4.8.1/include/stdint.h /usr/lib/avr/include/stdint.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/iom128.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/interrupt.h spi.h autopilot.h \
+ ../fly_by_wire/link_autopilot.h ../../include/std.h \
+ ../../var/include/radio.h ../../var/include/airframe.h link_fbw.h \
+ ad7714.h
+adc.o: adc.c /usr/lib/avr/include/avr/interrupt.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/4.8.1/include/stdint.h \
+ /usr/lib/avr/include/stdint.h /usr/lib/avr/include/avr/iom128.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../../var/include/airframe.h \
+ ../../include/std.h adc.h
+gps_ubx.o: gps_ubx.c /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/4.8.1/include/stdint.h /usr/lib/avr/include/stdint.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/avr/iom128.h /usr/lib/avr/include/avr/portpins.h \
+ /usr/lib/avr/include/avr/common.h /usr/lib/avr/include/avr/version.h \
+ /usr/lib/avr/include/avr/fuse.h /usr/lib/avr/include/avr/lock.h \
+ /usr/lib/avr/include/avr/interrupt.h /usr/lib/avr/include/string.h \
+ /usr/lib/gcc/avr/4.8.1/include/stddef.h /usr/lib/avr/include/math.h \
+ ../../var/include/flight_plan.h uart.h gps.h ../../include/std.h ubx.h \
+ ../../var/include/ubx_protocol.h
+infrared.o: infrared.c adc.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/4.8.1/include/stdint.h /usr/lib/avr/include/stdint.h \
+ infrared.h autopilot.h ../fly_by_wire/link_autopilot.h \
+ ../../include/std.h ../../var/include/radio.h \
+ ../../var/include/airframe.h estimator.h
+pid.o: pid.c /usr/lib/avr/include/stdlib.h \
+ /usr/lib/gcc/avr/4.8.1/include/stddef.h /usr/lib/avr/include/math.h \
+ pid.h /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/4.8.1/include/stdint.h /usr/lib/avr/include/stdint.h \
+ autopilot.h ../fly_by_wire/link_autopilot.h ../../include/std.h \
+ ../../var/include/radio.h ../../var/include/airframe.h infrared.h \
+ estimator.h nav.h
+nav.o: nav.c /usr/lib/avr/include/math.h nav.h ../../include/std.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/4.8.1/include/stdint.h \
+ /usr/lib/avr/include/stdint.h estimator.h pid.h autopilot.h \
+ ../fly_by_wire/link_autopilot.h ../../var/include/radio.h \
+ ../../var/include/airframe.h link_fbw.h ../../var/include/flight_plan.h
+uart.o: uart.c /usr/lib/avr/include/avr/interrupt.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/4.8.1/include/stdint.h \
+ /usr/lib/avr/include/stdint.h /usr/lib/avr/include/avr/iom128.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h uart.h ../../include/std.h
+estimator.o: estimator.c /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/4.8.1/include/stdint.h /usr/lib/avr/include/stdint.h \
+ /usr/lib/avr/include/math.h estimator.h gps.h ../../include/std.h ubx.h \
+ pid.h infrared.h autopilot.h ../fly_by_wire/link_autopilot.h \
+ ../../var/include/radio.h ../../var/include/airframe.h
+if_calib.o: if_calib.c /usr/lib/avr/include/inttypes.h \
+ /usr/lib/gcc/avr/4.8.1/include/stdint.h /usr/lib/avr/include/stdint.h \
+ ../../var/include/radio.h autopilot.h ../fly_by_wire/link_autopilot.h \
+ ../../include/std.h ../../var/include/airframe.h if_calib.h link_fbw.h \
+ infrared.h pid.h nav.h ../../var/include/inflight_calib.h
+mainloop.o: mainloop.c /usr/lib/avr/include/avr/interrupt.h \
+ /usr/lib/avr/include/avr/io.h /usr/lib/avr/include/avr/sfr_defs.h \
+ /usr/lib/avr/include/inttypes.h /usr/lib/gcc/avr/4.8.1/include/stdint.h \
+ /usr/lib/avr/include/stdint.h /usr/lib/avr/include/avr/iom128.h \
+ /usr/lib/avr/include/avr/portpins.h /usr/lib/avr/include/avr/common.h \
+ /usr/lib/avr/include/avr/version.h /usr/lib/avr/include/avr/fuse.h \
+ /usr/lib/avr/include/avr/lock.h ../../include/std.h timer.h modem.h \
+ ../../var/include/airframe.h adc.h autopilot.h \
+ ../fly_by_wire/link_autopilot.h ../../var/include/radio.h spi.h \
+ link_fbw.h gps.h ubx.h nav.h infrared.h estimator.h downlink.h \
+ ../../var/include/messages.h
