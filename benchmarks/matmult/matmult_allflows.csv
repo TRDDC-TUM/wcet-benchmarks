@@ -1,45 +1,45 @@
-#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;matmult.c;InitSeed;74;1;74;1;0;0;0;;;""
-1;node;;matmult.c;InitSeed;73;3;73;11;0;0;0;;0;" Seed = 0;"
-2;entry;;matmult.c;InitSeed;69;2;69;2;0;0;0;;1;""
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;VarWrite;VarRead;Code
+0;exit;;matmult.c;InitSeed;74;1;74;1;0;0;0;;;;;""
+1;node;;matmult.c;InitSeed;73;3;73;11;0;0;0;;0;Seed;;" Seed = 0;"
+2;entry;;matmult.c;InitSeed;69;2;69;2;0;0;0;;1;;;""
 
-#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;matmult.c;Initialize;118;1;118;1;0;0;0;;;""
-1;node;;matmult.c;Initialize;115;50;115;62;0;0;0;;6;" OuterIndex++;"
-2;node;;matmult.c;Initialize;116;53;116;65;0;0;0;;4;" InnerIndex++;"
-3;node;;matmult.c;Initialize;117;10;117;57;0;0;1;RandomInteger;2;" RandomInteger(); Array[OuterIndex][InnerIndex] = [B3.1];"
-4;node;;matmult.c;Initialize;116;28;116;51;0;0;0;;3,1;" InnerIndex < 20;"
-5;node;;matmult.c;Initialize;116;12;116;26;0;0;0;;4;" InnerIndex = 0;"
-6;node;;matmult.c;Initialize;115;25;115;48;0;0;0;;5,0;" OuterIndex < 20;"
-7;node;;matmult.c;Initialize;113;4;115;23;0;0;0;;6;" int OuterIndex;; int InnerIndex;; OuterIndex = 0;"
-8;entry;;matmult.c;Initialize;112;2;112;2;0;0;0;;7;""
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;VarWrite;VarRead;Code
+0;exit;;matmult.c;Initialize;118;1;118;1;0;0;0;;;;;""
+1;node;;matmult.c;Initialize;115;50;115;62;0;0;0;;6;OuterIndex;OuterIndex;" OuterIndex++;"
+2;node;;matmult.c;Initialize;116;53;116;65;0;0;0;;4;InnerIndex;InnerIndex;" InnerIndex++;"
+3;node;;matmult.c;Initialize;117;10;117;57;0;0;1;RandomInteger;2;Array,InnerIndex,OuterIndex;;" RandomInteger(); Array[OuterIndex][InnerIndex] = [B3.1];"
+4;node;;matmult.c;Initialize;116;28;116;51;0;0;0;;3,1;;InnerIndex;" InnerIndex < 20;"
+5;node;;matmult.c;Initialize;116;12;116;26;0;0;0;;4;InnerIndex;;" InnerIndex = 0;"
+6;node;;matmult.c;Initialize;115;25;115;48;0;0;0;;5,0;;OuterIndex;" OuterIndex < 20;"
+7;node;;matmult.c;Initialize;113;4;115;23;0;0;0;;6;OuterIndex;;" int OuterIndex;; int InnerIndex;; OuterIndex = 0;"
+8;entry;;matmult.c;Initialize;112;2;112;2;0;0;0;;7;;;""
 
-#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;matmult.c;Multiply;162;1;162;1;0;0;0;;;""
-1;node;;matmult.c;Multiply;154;40;154;47;0;0;0;;9;" Outer++;"
-2;node;;matmult.c;Multiply;155;43;155;50;0;0;0;;7;" Inner++;"
-3;node;;matmult.c;Multiply;158;46;158;53;0;0;0;;5;" Index++;"
-4;node;;matmult.c;Multiply;159;13;160;49;0;0;0;;3;" Res[Outer][Inner] += A[Outer][Index] * B[Index][Inner];"
-5;node;;matmult.c;Multiply;158;26;158;44;0;0;0;;4,2;" Index < 20;"
-6;node;;matmult.c;Multiply;157;10;158;24;0;0;0;;5;" Res[Outer][Inner] = 0; Index = 0;"
-7;node;;matmult.c;Multiply;155;23;155;41;0;0;0;;6,1;" Inner < 20;"
-8;node;;matmult.c;Multiply;155;12;155;21;0;0;0;;7;" Inner = 0;"
-9;node;;matmult.c;Multiply;154;20;154;38;0;0;0;;8,0;" Outer < 20;"
-10;node;;matmult.c;Multiply;152;4;154;18;0;0;0;;9;" register int Outer;; register int Inner;; register int Index;; Outer = 0;"
-11;entry;;matmult.c;Multiply;151;2;151;2;0;0;0;;10;""
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;VarWrite;VarRead;Code
+0;exit;;matmult.c;Multiply;162;1;162;1;0;0;0;;;;;""
+1;node;;matmult.c;Multiply;154;40;154;47;0;0;0;;9;Outer;Outer;" Outer++;"
+2;node;;matmult.c;Multiply;155;43;155;50;0;0;0;;7;Inner;Inner;" Inner++;"
+3;node;;matmult.c;Multiply;158;46;158;53;0;0;0;;5;Index;Index;" Index++;"
+4;node;;matmult.c;Multiply;159;13;160;49;0;0;0;;3;Inner,Outer,Res;A,B,Index,Inner,Outer;" Res[Outer][Inner] += A[Outer][Index] * B[Index][Inner];"
+5;node;;matmult.c;Multiply;158;26;158;44;0;0;0;;4,2;;Index;" Index < 20;"
+6;node;;matmult.c;Multiply;157;10;158;24;0;0;0;;5;Index,Inner,Outer,Res;;" Res[Outer][Inner] = 0; Index = 0;"
+7;node;;matmult.c;Multiply;155;23;155;41;0;0;0;;6,1;;Inner;" Inner < 20;"
+8;node;;matmult.c;Multiply;155;12;155;21;0;0;0;;7;Inner;;" Inner = 0;"
+9;node;;matmult.c;Multiply;154;20;154;38;0;0;0;;8,0;;Outer;" Outer < 20;"
+10;node;;matmult.c;Multiply;152;4;154;18;0;0;0;;9;Outer;;" register int Outer;; register int Inner;; register int Index;; Outer = 0;"
+11;entry;;matmult.c;Multiply;151;2;151;2;0;0;0;;10;;;""
 
-#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;matmult.c;RandomInteger;128;1;128;1;0;0;0;;;""
-1;node;;matmult.c;RandomInteger;126;4;127;17;0;0;0;;0;" Seed = ((Seed * 133) + 81) % 8095; return (Seed);;"
-2;entry;;matmult.c;RandomInteger;125;2;125;2;0;0;0;;1;""
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;VarWrite;VarRead;Code
+0;exit;;matmult.c;RandomInteger;128;1;128;1;0;0;0;;;;;""
+1;node;;matmult.c;RandomInteger;126;4;127;17;0;0;0;;0;Seed;Seed;" Seed = ((Seed * 133) + 81) % 8095; return (Seed);;"
+2;entry;;matmult.c;RandomInteger;125;2;125;2;0;0;0;;1;;;""
 
-#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;matmult.c;Test;105;1;105;1;0;0;0;;;""
-1;node;;matmult.c;Test;88;4;96;23;0;0;1;Initialize,Initialize,Multiply;0;" Initialize(A); Initialize(B); Multiply(A, B, Res);"
-2;entry;;matmult.c;Test;82;2;82;2;0;0;0;;1;""
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;VarWrite;VarRead;Code
+0;exit;;matmult.c;Test;105;1;105;1;0;0;0;;;;;""
+1;node;;matmult.c;Test;88;4;96;23;0;0;1;Initialize,Initialize,Multiply;0;A,B,Res;A,B,Res;" Initialize(A); Initialize(B); Multiply(A, B, Res);"
+2;entry;;matmult.c;Test;82;2;82;2;0;0;0;;1;;;""
 
-#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;Code
-0;exit;;matmult.c;main;62;1;62;1;0;0;0;;;""
-1;node;;matmult.c;main;54;4;61;37;0;0;1;InitSeed,Test;0;" InitSeed(); Test(ArrayA, ArrayB, ResultArray);"
-2;entry;;matmult.c;main;53;2;53;2;0;0;0;;1;""
+#BB.index;BB.type;BB.label;File;Subprogram;Line.Begin;Col.Begin;Line.End;Col.End;Exec.Count;Exec.Time.Per;function.call.type;function.call.callees;Successors;VarWrite;VarRead;Code
+0;exit;;matmult.c;main;62;1;62;1;0;0;0;;;;;""
+1;node;;matmult.c;main;54;4;61;37;0;0;1;InitSeed,Test;0;ArrayA,ArrayB,ResultArray;ArrayA,ArrayB,ResultArray;" InitSeed(); Test(ArrayA, ArrayB, ResultArray);"
+2;entry;;matmult.c;main;53;2;53;2;0;0;0;;1;;;""
 
