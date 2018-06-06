@@ -119,7 +119,8 @@ void parse_gps_msg( void ) {
     } else if (ubx_id == UBX_NAV_VELNED_ID) {
       gps_fspeed = ((float)UBX_NAV_VELNED_GSpeed(ubx_msg_buf)) / 1e2; 
       gps_fclimb = ((float)UBX_NAV_VELNED_VEL_D(ubx_msg_buf)) / -1e2;
-      gps_fcourse = RadianOfDeg(((float)UBX_NAV_VELNED_Heading(ubx_msg_buf)) / 1e5);
+      gps_fcourse += RadianOfDeg(2.f);
+      if (gps_fcourse > 2.*M_PI) gps_fcourse -= 2.*M_PI;
       gps_ftow = ((float)UBX_NAV_VELNED_ITOW(ubx_msg_buf)) / 1e3;
       
       gps_east = gps_utm_east / 100 - NAV_UTM_EAST0;

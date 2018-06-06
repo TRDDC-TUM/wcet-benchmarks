@@ -167,7 +167,7 @@ wcet: $(TARGET).elf
 	rm -f lp_out_* lp_in_*
 	$(TIME) $(WCET_TOOL) $(WCET_TOOL_OPTS) $(TARGET).elf $(WCET_FUN) > wcet.log 2> stderr.log
 	./../../scripts/complete_sourceinfo.py -i $(SOURCEINFOFILE)
-	./../../scripts/opcodes/get_opcode_timings.py -c -s ../../scripts/opcodes/avr-spec.csv -i $(SOURCEINFOFILE) -e $(TARGET).elf > timing_opcode.csv
+#	./../../scripts/opcodes/get_opcode_timings.py -c -s ../../scripts/opcodes/avr-spec.csv -i $(SOURCEINFOFILE) -e $(TARGET).elf > timing_opcode.csv
 
 # Target: clean project.
 clean: 

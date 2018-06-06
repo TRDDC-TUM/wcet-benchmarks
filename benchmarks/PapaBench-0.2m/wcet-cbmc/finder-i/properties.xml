@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cprover>
+<program>CBMC 5.6</program>
+<message type="STATUS-MESSAGE">
+  <text>CBMC version 5.6 64-bit x86_64 linux</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Parsing ./tmp_pp_main_i.c</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Parsing pp_if_calib_i.c</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Parsing pp_adc_i.c</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Parsing pp_nav_i.c</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Parsing pp_gps_ubx_i.c</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Parsing pp_infrared_i.c</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Parsing pp_spi_i.c</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Parsing pp_modem_i.c</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Parsing pp_pid_i.c</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Parsing pp_uart_i.c</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Parsing pp_estimator_i.c</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Parsing pp_link_fbw_i.c</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Parsing pp_mainloop_i.c</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Converting</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking pp_adc_i</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking pp_estimator_i</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking pp_gps_ubx_i</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking pp_if_calib_i</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking pp_infrared_i</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking pp_link_fbw_i</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking pp_mainloop_i</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking pp_modem_i</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking pp_nav_i</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking pp_pid_i</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking pp_spi_i</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking pp_uart_i</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Type-checking tmp_pp_main_i</text>
+</message>
+
+<message type="WARNING">
+  <location file="./tmp_pp_main_i.c" function="periodic_task" line="512"/>
+  <text>function `assert' is not declared</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Generating GOTO Program</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Adding CPROVER library (x86_64)</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Removal of function pointers and virtual functions</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Partial Inlining</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Generic Property Instrumentation</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Adding nondeterministic initialization of static/global variables</text>
+</message>
+
+<property class="assertion" name="periodic_task.assertion.1">
+  <location file="./tmp_pp_main_i.c" function="periodic_task" line="512"/>
+  <description>assertion timeElapsed &lt;= (unsigned long int)33193l</description>
+  <expression>timeElapsed &lt;= (unsigned long int)33193l</expression>
+</property>
+
+<property class="assertion" name="periodic_task.assertion.2">
+  <location file="./tmp_pp_main_i.c" function="periodic_task" line="513"/>
+  <description>assertion timeElapsed &lt;= (unsigned long int)33194l</description>
+  <expression>timeElapsed &lt;= (unsigned long int)33194l</expression>
+</property>
+
+<property class="assertion" name="periodic_task.assertion.3">
+  <location file="./tmp_pp_main_i.c" function="periodic_task" line="514"/>
+  <description>assertion timeElapsed &lt;= (unsigned long int)33195l</description>
+  <expression>timeElapsed &lt;= (unsigned long int)33195l</expression>
+</property>
+
+</cprover>

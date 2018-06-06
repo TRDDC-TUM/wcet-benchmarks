@@ -1,0 +1,114 @@
+CBMCFLAGS: -DIS_ANALYSIS -DCBMC -DNEWCODE --unwind 1 --unwindset nav_home.0:2,nav_home.1:2 --function periodic_task --all-properties --slice-formula --nondet-static --16 --trace
+GOTOINSFLAGS: 
+Initial guess: 0..0
+Requested WCET precision: 1
+Assertions per step: 10
+Max steps: 0
+Output path: /home/becker/async/autosafe/trunk/tum/wcet-cbmc/benchmarks/PapaBench-AP-0.2m/wcet-cbmc/finder-i
+Output path intermediate: .
+Template file: pp_main_i.in
+Other files: pp_adc_i.c, pp_estimator_i.c, pp_gps_ubx_i.c, pp_if_calib_i.c, pp_infrared_i.c, pp_link_fbw_i.c, pp_mainloop_i.c, pp_modem_i.c, pp_nav_i.c, pp_pid_i.c, pp_spi_i.c, pp_uart_i.c
+...step #1: WCET in [0,9223372036854775807], precision=9223372036854775807
+......cand: 6208, 1, 18854838150406, 1485633833817296, 78, 38543920, 3037000499, 239295116727, 489178, 117057906865942864, 9223372036854775807
+......Reading properties from ['./tmp_pp_main_i.c', 'pp_adc_i.c', 'pp_estimator_i.c', 'pp_gps_ubx_i.c', 'pp_if_calib_i.c', 'pp_infrared_i.c', 'pp_link_fbw_i.c', 'pp_mainloop_i.c', 'pp_modem_i.c', 'pp_nav_i.c', 'pp_pid_i.c', 'pp_spi_i.c', 'pp_uart_i.c']
+......Running cbmc on files ...
+......counterexample [periodic_task.assertion.1]: <{'xml': None, 'max': 10168, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.1<=6208, counterexample=10168
+......counterexample [periodic_task.assertion.2]: <{'xml': None, 'max': 4574, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.2<=1, counterexample=4574
+......counterexample [periodic_task.assertion.5]: <{'xml': None, 'max': 4574, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.5<=78, counterexample=4574
+......walltime=156.02, usertime=155.12, dbg_time1=159.51, mem=1829840, complexity={'clauses': {'max': 1575657, 'sum': 1575657, 'n': 1, 'avg': 1575657, 'min': 1575657}, 'variables': {'max': 446353, 'sum': 446353, 'n': 1, 'avg': 446353, 'min': 446353}, 'steps': {'max': 10259, 'sum': 10259, 'n': 1, 'avg': 10259, 'min': 10259}}
+......WCET in [10168,489178], precision=479010
+......remaining steps <=6
+...step #2: WCET in [10168,489178], precision=479010
+......cand: 393376, 345475, 297574, 249673, 201772, 153871, 105970, 58069, 10168, 489178, 441277
+......Reading properties from ['./tmp_pp_main_i.c', 'pp_adc_i.c', 'pp_estimator_i.c', 'pp_gps_ubx_i.c', 'pp_if_calib_i.c', 'pp_infrared_i.c', 'pp_link_fbw_i.c', 'pp_mainloop_i.c', 'pp_modem_i.c', 'pp_nav_i.c', 'pp_pid_i.c', 'pp_spi_i.c', 'pp_uart_i.c']
+......Running cbmc on files ...
+......counterexample [periodic_task.assertion.9]: <{'xml': None, 'max': 10185, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.9<=10168, counterexample=10185
+......walltime=261.39, usertime=260.31, dbg_time1=264.65, mem=1892704, complexity={'clauses': {'max': 1596914, 'sum': 1596914, 'n': 1, 'avg': 1596914, 'min': 1596914}, 'variables': {'max': 446407, 'sum': 446407, 'n': 1, 'avg': 446407, 'min': 446407}, 'steps': {'max': 10261, 'sum': 10261, 'n': 1, 'avg': 10261, 'min': 10261}}
+......WCET in [10185,58069], precision=47884
+......remaining steps <=5
+...step #3: WCET in [10185,58069], precision=47884
+......cand: 53280, 38915, 24550, 10185, 48492, 34127, 19761, 58069, 43703, 29338, 14973
+......Reading properties from ['./tmp_pp_main_i.c', 'pp_adc_i.c', 'pp_estimator_i.c', 'pp_gps_ubx_i.c', 'pp_if_calib_i.c', 'pp_infrared_i.c', 'pp_link_fbw_i.c', 'pp_mainloop_i.c', 'pp_modem_i.c', 'pp_nav_i.c', 'pp_pid_i.c', 'pp_spi_i.c', 'pp_uart_i.c']
+......Running cbmc on files ...
+......counterexample [periodic_task.assertion.3]: <{'xml': None, 'max': 27486, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.3<=24550, counterexample=27486
+......counterexample [periodic_task.assertion.4]: <{'xml': None, 'max': 12578, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.4<=10185, counterexample=12578
+......counterexample [periodic_task.assertion.7]: <{'xml': None, 'max': 27486, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.7<=19761, counterexample=27486
+......counterexample [periodic_task.assertion.10]: <{'xml': None, 'max': 29727, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.10<=29338, counterexample=29727
+......counterexample [periodic_task.assertion.11]: <{'xml': None, 'max': 27486, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.11<=14973, counterexample=27486
+......walltime=478.85, usertime=477.64, dbg_time1=482.15, mem=1925952, complexity={'clauses': {'max': 1549113, 'sum': 1549113, 'n': 1, 'avg': 1549113, 'min': 1549113}, 'variables': {'max': 446410, 'sum': 446410, 'n': 1, 'avg': 446410, 'min': 446410}, 'steps': {'max': 10261, 'sum': 10261, 'n': 1, 'avg': 10261, 'min': 10261}}
+......WCET in [29727,34127], precision=4400
+......remaining steps <=4
+...step #4: WCET in [29727,34127], precision=4400
+......cand: 32367, 31047, 31927, 30607, 34127, 33687, 33247, 30167, 32807, 29727, 31487
+......Reading properties from ['./tmp_pp_main_i.c', 'pp_adc_i.c', 'pp_estimator_i.c', 'pp_gps_ubx_i.c', 'pp_if_calib_i.c', 'pp_infrared_i.c', 'pp_link_fbw_i.c', 'pp_mainloop_i.c', 'pp_modem_i.c', 'pp_nav_i.c', 'pp_pid_i.c', 'pp_spi_i.c', 'pp_uart_i.c']
+......Running cbmc on files ...
+......counterexample [periodic_task.assertion.1]: <{'xml': None, 'max': 32368, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.1<=32367, counterexample=32368
+......counterexample [periodic_task.assertion.2]: <{'xml': None, 'max': 31181, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.2<=31047, counterexample=31181
+......counterexample [periodic_task.assertion.3]: <{'xml': None, 'max': 31939, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.3<=31927, counterexample=31939
+......counterexample [periodic_task.assertion.4]: <{'xml': None, 'max': 30835, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.4<=30607, counterexample=30835
+......counterexample [periodic_task.assertion.8]: <{'xml': None, 'max': 30202, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.8<=30167, counterexample=30202
+......counterexample [periodic_task.assertion.10]: <{'xml': None, 'max': 30202, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.10<=29727, counterexample=30202
+......counterexample [periodic_task.assertion.11]: <{'xml': None, 'max': 31895, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.11<=31487, counterexample=31895
+......walltime=643.49, usertime=642.22, dbg_time1=646.79, mem=1973504, complexity={'clauses': {'max': 956556, 'sum': 956556, 'n': 1, 'avg': 956556, 'min': 956556}, 'variables': {'max': 446417, 'sum': 446417, 'n': 1, 'avg': 446417, 'min': 446417}, 'steps': {'max': 10261, 'sum': 10261, 'n': 1, 'avg': 10261, 'min': 10261}}
+......WCET in [32368,32807], precision=439
+......remaining steps <=3
+...step #5: WCET in [32368,32807], precision=439
+......cand: 32675, 32455, 32587, 32719, 32368, 32499, 32631, 32763, 32807, 32411, 32543
+......Reading properties from ['./tmp_pp_main_i.c', 'pp_adc_i.c', 'pp_estimator_i.c', 'pp_gps_ubx_i.c', 'pp_if_calib_i.c', 'pp_infrared_i.c', 'pp_link_fbw_i.c', 'pp_mainloop_i.c', 'pp_modem_i.c', 'pp_nav_i.c', 'pp_pid_i.c', 'pp_spi_i.c', 'pp_uart_i.c']
+......Running cbmc on files ...
+......counterexample [periodic_task.assertion.5]: <{'xml': None, 'max': 32368, 'readable': True, 'min': 362}
+......walltime=190.65, usertime=189.74, dbg_time1=193.59, mem=1843968, complexity={'clauses': {'max': 1596531, 'sum': 1596531, 'n': 1, 'avg': 1596531, 'min': 1596531}, 'variables': {'max': 446416, 'sum': 446416, 'n': 1, 'avg': 446416, 'min': 446416}, 'steps': {'max': 10261, 'sum': 10261, 'n': 1, 'avg': 10261, 'min': 10261}}
+......WCET in [32368,32411], precision=43
+......remaining steps <=2
+...step #6: WCET in [32368,32411], precision=43
+......cand: 32385, 32389, 32393, 32398, 32368, 32402, 32372, 32406, 32376, 32411, 32380
+......Reading properties from ['./tmp_pp_main_i.c', 'pp_adc_i.c', 'pp_estimator_i.c', 'pp_gps_ubx_i.c', 'pp_if_calib_i.c', 'pp_infrared_i.c', 'pp_link_fbw_i.c', 'pp_mainloop_i.c', 'pp_modem_i.c', 'pp_nav_i.c', 'pp_pid_i.c', 'pp_spi_i.c', 'pp_uart_i.c']
+......Running cbmc on files ...
+......counterexample [periodic_task.assertion.1]: <{'xml': None, 'max': 32391, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.1<=32385, counterexample=32391
+......counterexample [periodic_task.assertion.2]: <{'xml': None, 'max': 32391, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.2<=32389, counterexample=32391
+......counterexample [periodic_task.assertion.5]: <{'xml': None, 'max': 32369, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.5<=32368, counterexample=32369
+......counterexample [periodic_task.assertion.7]: <{'xml': None, 'max': 32375, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.7<=32372, counterexample=32375
+......counterexample [periodic_task.assertion.9]: <{'xml': None, 'max': 32376, 'readable': True, 'min': 362}
+......counterexample [periodic_task.assertion.11]: <{'xml': None, 'max': 32391, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.11<=32380, counterexample=32391
+......walltime=273.13, usertime=271.94, dbg_time1=276.41, mem=1845792, complexity={'clauses': {'max': 821952, 'sum': 821952, 'n': 1, 'avg': 821952, 'min': 821952}, 'variables': {'max': 446404, 'sum': 446404, 'n': 1, 'avg': 446404, 'min': 446404}, 'steps': {'max': 10261, 'sum': 10261, 'n': 1, 'avg': 10261, 'min': 10261}}
+......WCET in [32391,32393], precision=2
+......remaining steps <=1
+...step #7: WCET in [32391,32393], precision=2
+......cand: 32392, 32393, 32391
+......Reading properties from ['./tmp_pp_main_i.c', 'pp_adc_i.c', 'pp_estimator_i.c', 'pp_gps_ubx_i.c', 'pp_if_calib_i.c', 'pp_infrared_i.c', 'pp_link_fbw_i.c', 'pp_mainloop_i.c', 'pp_modem_i.c', 'pp_nav_i.c', 'pp_pid_i.c', 'pp_spi_i.c', 'pp_uart_i.c']
+......Running cbmc on files ...
+......counterexample [periodic_task.assertion.1]: <{'xml': None, 'max': 32392, 'readable': True, 'min': 362}
+......counterexample [periodic_task.assertion.3]: <{'xml': None, 'max': 32392, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.3<=32391, counterexample=32392
+......walltime=290.35, usertime=289.37, dbg_time1=293.66, mem=1814528, complexity={'clauses': {'max': 1595956, 'sum': 1595956, 'n': 1, 'avg': 1595956, 'min': 1595956}, 'variables': {'max': 446136, 'sum': 446136, 'n': 1, 'avg': 446136, 'min': 446136}, 'steps': {'max': 10253, 'sum': 10253, 'n': 1, 'avg': 10253, 'min': 10253}}
+......WCET in [32392,32393], precision=1
+SUCCESS: Precise enough after 7 iterations, precision=1
+RESULT: 32392 < WCET <= 32393 cycles
+peak memory (kBytes): samples=7, min=1814528.0, avg=1875184.0, max=1973504.0, sum=13126288.0
+cbmc walltime (sec): samples=7, min=156.02, avg=327.697142857, max=643.49, sum=2293.88
+cbmc usertime (sec): samples=7, min=155.12, avg=326.62, max=642.22, sum=2286.34
+variables: samples=7, min=446136, avg=446363, max=446417, sum=3124543
+clauses: samples=7, min=821952, avg=1384668, max=1596914, sum=9692679
+steps: samples=7, min=10253, avg=10259, max=10261, sum=71817
+Script: alltime=2317.95, selftime=24.07, ret=0

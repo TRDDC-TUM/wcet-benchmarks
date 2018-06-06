@@ -4,34 +4,20 @@ Note:main.elf::::This AVR device has a 16-bit SP = SPH:SPL.
 Note:main.elf::::File format assumed to be ELF
 Note:main.elf::::Segment 3 not loaded:Zero length in file
 Note:main.elf::::Loading DWARF info section.
-Note:main.elf::::DWARF debug info ends at End_Index without null entry.
 Note:main.elf::::DWARF debug info ends without null entry.
 Note:main.elf::::Loading DWARF types for compilation unit 1
-Note:main.elf::::Loading DWARF types for compilation unit 2
 Note:main.elf::::Parsing DWARF symbols.
-Note:main.elf::::Entering DWARF compilation unit for [no name]
-Note:main.elf::::Duplicated symbol and value:Variable:MCUCSR:[all] => d800054
-Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
-Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
-Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
-Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
-Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
-Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
-Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
-Note:main.elf::::Duplicated symbol and value:Variable:ETIMSK:[all] => d80007D
-Note:main.elf::::Duplicated symbol and value:Variable:ETIFR:[all] => d80007C
-Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
 Note:main.elf::::Entering DWARF compilation unit for crc.c
 Note:main.elf::::DWARF node visit aborted; missing attribute.
 Note:main.elf::::DWARF node visit aborted; missing attribute.
 Note:main.elf::::Program implies calling protocol GCC.
 Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
 Note:main.elf:loopinfo.txt:::Routine at 0000CE classified as NORMAL after inspecting 1 instructions.
-Note:main.elf:loopinfo.txt:::Routine at 00015C classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:loopinfo.txt:::Routine at 000162 classified as NORMAL after inspecting 1 instructions.
 Note:main.elf:crc.c:icrc:73:Root subprogram
-Note:main.elf::::Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::::Unused (# 2 = icrc at 000162) is FALSE
 Note:main.elf::::Dynamism bounding iteration number 1
-Note:main.elf:crc.c:icrc:73:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf:crc.c:icrc:73:Unused (# 2 = icrc at 000162) is FALSE
 Note:main.elf:crc.c:icrc:73:Analysis for time is needed.
 Note:main.elf:crc.c:icrc:73:Control-flow analysis starts.
 Note:main.elf:crc.c:icrc:83-:Call to existing subprogram # 1 = icrc1 at 0000CE
@@ -62,10 +48,6 @@ Note:main.elf:crc.c:icrc1:58-69:Unused (# 1 = icrc1 at 0000CE) is FALSE
 Note:main.elf:crc.c:icrc1:58-69:Unused (# 1 = icrc1 at 0000CE) is FALSE
 Note:main.elf:crc.c:icrc1:58-69:Unused (# 1 = icrc1 at 0000CE) is FALSE
 Note:main.elf:crc.c:icrc1:58:Refine (Assignment) bounded a pointer.
-Note:main.elf:crc.c:icrc1:58-:Refine (Assignment) bounded a pointer.
-Note:main.elf:crc.c:icrc1:58-:Refine (Assignment) bounded a pointer.
-Note:main.elf:crc.c:icrc1:58-:Refine (Assignment) bounded a pointer.
-Note:main.elf:crc.c:icrc1:58-:Refine (Assignment) bounded a pointer.
 Note:main.elf:crc.c:icrc1:58-:Refine (Assignment) bounded a pointer.
 Note:main.elf:crc.c:icrc1:58-69:Repeating constant propagation.
 Note:main.elf:crc.c:icrc1:58-:Refine (Assignment) bounded a pointer.
@@ -138,10 +120,10 @@ Note:main.elf:crc.c:icrc:73-109:No execution bounds known yet.
 Note:main.elf:crc.c:icrc:73-109:Unused (# 1 = icrc1 at 0000CE) is FALSE
 Note:main.elf:crc.c:icrc:73-109:Unused (# 1 = icrc1 at 0000CE) is FALSE
 Warning:main.elf:crc.c:icrc@83-=>icrc1:83-:Final effect on stack SP not exactly known:sh
-Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 000162) is FALSE
 Note:main.elf:crc.c:icrc:73-109:Unused (# 1 = icrc1 at 0000CE) is FALSE
-Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 00015C) is FALSE
-Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 000162) is FALSE
+Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 000162) is FALSE
 Note:main.elf:crc.c:icrc:73:Refine (Assignment) bounded a pointer.
 Note:main.elf:crc.c:icrc:73-:Refine (Assignment) bounded a pointer.
 Note:main.elf:crc.c:icrc:73-:Refine (Assignment) bounded a pointer.
@@ -290,25 +272,28 @@ Note:main.elf:crc.c:icrc:73-109:Maximum stack-height from constant propagation f
 Note:main.elf:crc.c:icrc:73-109:Take-off stack-height in stack SP is constant for 0 of 1 calls.
 Note:main.elf:crc.c:icrc:73-109:Constant propagation changed nothing.
 Note:main.elf:crc.c:icrc:73-109:Unused (# 1 = icrc1 at 0000CE) is FALSE
-Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 00015C) is FALSE
-Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 000162) is FALSE
+Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 000162) is FALSE
 Note:main.elf:crc.c:icrc:73-109:Unused (# 1 = icrc1 at 0000CE) is FALSE
-Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 00015C) is FALSE
-Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 00015C) is FALSE
-Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 000162) is FALSE
+Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 000162) is FALSE
+Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 000162) is FALSE
 Note:main.elf:crc.c:icrc:73-109:Unused (# 1 = icrc1 at 0000CE) is FALSE
-Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 00015C) is FALSE
-Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 000162) is FALSE
+Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 000162) is FALSE
 Note:main.elf:crc.c:icrc:73-109:Unused (# 1 = icrc1 at 0000CE) is FALSE
-Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 00015C) is FALSE
-Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 000162) is FALSE
+Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 000162) is FALSE
 Note:main.elf:crc.c:icrc:73-109:Arithmetic analysis is not needed.
-Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf:crc.c:icrc:73-109:Unused (# 2 = icrc at 000162) is FALSE
 Note:main.elf:crc.c:icrc:73-109:Time_State for bounds # 2 defined as COMPUTABLE
 Note:main.elf:crc.c:icrc:73-109:Freezing bounds # 2
 Note:main.elf::::Target-specific additional analysis starts.
 Note:main.elf::::Generic worst-case path and time analysis starts.
-Wcet:main.elf:crc.c:icrc1:58-69:456
-Wcet:main.elf:crc.c:icrc:73-109:143646
+Wcet:main.elf:crc.c:icrc1:58-69:452
+Wcet:main.elf:crc.c:icrc:73-109:143137
 Note:main.elf::::Creating DOT file flowgraphs/cg_icrc_001.dot.
+Note:main.elf::::Unused (# 2 = icrc at 000162) is FALSE
+Note:main.elf::::Creating DOT file flowgraphs/fg_icrc1_002.dot.
+Note:main.elf::::Creating DOT file flowgraphs/fg_icrc_003.dot.
 Note:main.elf::::Creating SLI file sourceinfo.csv.

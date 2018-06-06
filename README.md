@@ -4,17 +4,20 @@ These are some of the Mälardalen WCET benchmarks and PapaBench, where instructi
 timing was annotated in the source code. As a consequence, the WCET 
 can now be analyzed at source level.
 
-For detailed information see the research paper "TIC: A Scalable Model Checking Based Approach to WCET Estimation"; Metta, Becker, Bokil, Chakraborty and Venkatesh; In ACM SIGPLAN/SIGBED Conference on Languages, Compilers, Tools and Theory for Embedded Systems (LCTES 2016), Santa Barbara, CA, USA.
+For detailed information see the research paper "SCALABLE AND PRECISE ESTIMATION AND DEBUGGING OF THE WORST-CASE EXECUTION TIME FOR ANALYSIS-FRIENDLY PROCESSORS"; Martin Becker, Ravindra Metta, R. Venkatesh and Samarjit Chakraborty; In International Journal on Software Tools for Technology Transfer (STTT), Springer Heidelberg, Germany, DOI 10.1007/s10009-018-0497-2.
 
 ## What you can find here
- - a subset of the Mälardalen WCET benchmarks, where the sources are annotated with instruction timing f or Atmel Atmega microcontrollers
- - WCET estimate from the WCET analyzer Bound-T (http://www.bound-t.com/)
- - WCET estimate from a Model Checker (http://www.cprover.org/cbmc/)
+ - a subset of the Mälardalen WCET benchmarks, where the sources are annotated with instruction timing for Atmel Atmega microcontrollers
+ - WCET estimate from the WCET analyzer Bound-T v4.5 (http://www.bound-t.com/)
+ - WCET estimate from Model Checker CBMC v5.6 (http://www.cprover.org/cbmc/)
  - Timing of cycle-accurate simulation runs (http://www.nongnu.org/simulavr/) as a lower bound for WCET, i.e., to sanity-check the estimates
 
 ## Processor Architecture
  - we are using Mälardalen's benchmarks, ported to the Atmel ATmega 128 processor, a cache-less and pipelined (however, pipeline does not interfere with timing), microcontroller
  - type changes (because Atmega is 16bit integer): int -> int32, long -> int64
+
+## Compiler
+All benchmarks but PapaBench were compiled with avr-gcc 4.7.2. For PapaBench we used avr-gcc 4.8.1.
 
 ## About the WCETs
  - WCET estimates from Bound-T are given in 'wcet.log' in the benchmark folders

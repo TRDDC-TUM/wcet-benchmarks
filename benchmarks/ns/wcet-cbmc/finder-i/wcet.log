@@ -1,22 +1,23 @@
+CBMCFLAGS: --yices -DIS_ANALYSIS -DCBMC -DNEWCODE  --function CBMCDriver --all-properties --slice-formula
 ...step #1: WCET in [0,9223372036854775807], precision=9223372036854775807
 ......cand: 72057594037927296, 1, 2097151, 9223372036854703104, 268435455, 127, 4398046511103, 9223372036854775807, 562949953421306, 16383, 34359738367
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.2
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.6
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
-......time=16.09, mem=337168, complexity={'clauses': {'max': 424191, 'sum': 435480, 'n': 3, 'avg': 145160, 'min': 100}, 'variables': {'max': 12187, 'sum': 36561, 'n': 3, 'avg': 12187, 'min': 12187}, 'steps': {'max': 22398, 'sum': 22398, 'n': 1, 'avg': 22398, 'min': 22398}}
+......time=9.61, mem=211560, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 22393, 'sum': 22393, 'n': 1, 'avg': 22393, 'min': 22393}}
 ......WCET in [16383,2097151], precision=2080768
 ......remaining steps <=7
 ...step #2: WCET in [16383,2097151], precision=2080768
 ......cand: 1865954, 1634758, 2097151, 1403561, 1172365, 941168, 709972, 478775, 247579, 16383
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
-......time=349.01, mem=335008, complexity={'clauses': {'max': 424140, 'sum': 431010, 'n': 2, 'avg': 215505, 'min': 6870}, 'variables': {'max': 12180, 'sum': 24360, 'n': 2, 'avg': 12180, 'min': 12180}, 'steps': {'max': 22399, 'sum': 22399, 'n': 1, 'avg': 22399, 'min': 22399}}
+......time=9.32, mem=211644, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 22394, 'sum': 22394, 'n': 1, 'avg': 22394, 'min': 22394}}
 ......WCET in [16383,247579], precision=231196
 ......remaining steps <=6
 ...step #3: WCET in [16383,247579], precision=231196
 ......cand: 119136, 221890, 93448, 196202, 67759, 170513, 42071, 144825, 247579, 16383
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.7
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
-......time=16.28, mem=343872, complexity={'clauses': {'max': 424165, 'sum': 435604, 'n': 3, 'avg': 145201, 'min': 1620}, 'variables': {'max': 12183, 'sum': 36549, 'n': 3, 'avg': 12183, 'min': 12183}, 'steps': {'max': 22399, 'sum': 22399, 'n': 1, 'avg': 22399, 'min': 22399}}
+......time=9.44, mem=211572, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 22394, 'sum': 22394, 'n': 1, 'avg': 22394, 'min': 22394}}
 ......WCET in [42071,67759], precision=25688
 ......remaining steps <=5
 ...step #4: WCET in [42071,67759], precision=25688
@@ -27,13 +28,13 @@
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.6
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.7
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
-......time=15.31, mem=342720, complexity={'clauses': {'max': 424302, 'sum': 436318, 'n': 2, 'avg': 218159, 'min': 12016}, 'variables': {'max': 12196, 'sum': 24392, 'n': 2, 'avg': 12196, 'min': 12196}, 'steps': {'max': 22399, 'sum': 22399, 'n': 1, 'avg': 22399, 'min': 22399}}
+......time=9.07, mem=211592, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 22394, 'sum': 22394, 'n': 1, 'avg': 22394, 'min': 22394}}
 ......WCET in [56342,59196], precision=2854
 ......remaining steps <=4
 ...step #5: WCET in [56342,59196], precision=2854
 ......cand: 58561, 58244, 57927, 57610, 57293, 56976, 56659, 56342, 59196, 58878
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.8
-......time=16.19, mem=346720, complexity={'clauses': {'max': 424321, 'sum': 436355, 'n': 2, 'avg': 218177, 'min': 12034}, 'variables': {'max': 12198, 'sum': 24396, 'n': 2, 'avg': 12198, 'min': 12198}, 'steps': {'max': 22399, 'sum': 22399, 'n': 1, 'avg': 22399, 'min': 22399}}
+......time=9.13, mem=211484, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 22394, 'sum': 22394, 'n': 1, 'avg': 22394, 'min': 22394}}
 ......WCET in [56342,56659], precision=317
 ......remaining steps <=3
 ...step #6: WCET in [56342,56659], precision=317
@@ -42,13 +43,13 @@
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.8
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.9
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
-......time=14.7, mem=350288, complexity={'clauses': {'max': 424342, 'sum': 436342, 'n': 2, 'avg': 218171, 'min': 12000}, 'variables': {'max': 12205, 'sum': 24410, 'n': 2, 'avg': 12205, 'min': 12205}, 'steps': {'max': 22399, 'sum': 22399, 'n': 1, 'avg': 22399, 'min': 22399}}
+......time=10.6, mem=211616, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 22394, 'sum': 22394, 'n': 1, 'avg': 22394, 'min': 22394}}
 ......WCET in [56447,56482], precision=35
 ......remaining steps <=2
 ...step #7: WCET in [56447,56482], precision=35
 ......cand: 56450, 56454, 56458, 56482, 56462, 56466, 56470, 56474, 56478, 56447
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
-......time=16.19, mem=344064, complexity={'clauses': {'max': 424297, 'sum': 436312, 'n': 2, 'avg': 218156, 'min': 12015}, 'variables': {'max': 12190, 'sum': 24380, 'n': 2, 'avg': 12190, 'min': 12190}, 'steps': {'max': 22399, 'sum': 22399, 'n': 1, 'avg': 22399, 'min': 22399}}
+......time=9.0, mem=211704, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 22394, 'sum': 22394, 'n': 1, 'avg': 22394, 'min': 22394}}
 ......WCET in [56447,56450], precision=3
 ......remaining steps <=1
 ...step #8: WCET in [56447,56450], precision=3
@@ -56,12 +57,12 @@
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.1
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.2
 ......WARNING: could not parse counterexample for property CBMCDriver.assertion.4
-......time=16.57, mem=344672, complexity={'clauses': {'max': 423955, 'sum': 435839, 'n': 2, 'avg': 217919, 'min': 11884}, 'variables': {'max': 12104, 'sum': 24208, 'n': 2, 'avg': 12104, 'min': 12104}, 'steps': {'max': 22393, 'sum': 22393, 'n': 1, 'avg': 22393, 'min': 22393}}
+......time=9.03, mem=211444, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 22388, 'sum': 22388, 'n': 1, 'avg': 22388, 'min': 22388}}
 ......WCET in [56449,56450], precision=1
 SUCCESS: Precise enough after 8 iterations, precision=1
 RESULT: 56449 < WCET <= 56450 cycles
-peak memory (kBytes): samples=8, min=335008.0, avg=343064.0, max=350288.0, sum=2744512.0
-cbmc time (sec): samples=8, min=14.7, avg=57.5425, max=349.01, sum=460.34
-variables: samples=18, min=12104, avg=12180, max=12205, sum=219256
-clauses: samples=18, min=100, avg=193514, max=424342, sum=3483260
-steps: samples=8, min=22393, avg=22398, max=22399, sum=179185
+peak memory (kBytes): samples=8, min=211444.0, avg=211577.0, max=211704.0, sum=1692616.0
+cbmc time (sec): samples=8, min=9.0, avg=9.4, max=10.6, sum=75.2
+variables: samples=0, min=None, avg=None, max=None, sum=0
+clauses: samples=0, min=None, avg=None, max=None, sum=0
+steps: samples=8, min=22388, avg=22393, max=22394, sum=179145

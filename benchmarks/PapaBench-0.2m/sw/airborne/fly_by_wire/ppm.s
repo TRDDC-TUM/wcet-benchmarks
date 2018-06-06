@@ -1607,8 +1607,6 @@ last_radio_contains_avg_channels:
 	.string	"pprz_t"
 .LASF26:
 	.string	"last_radio_contains_avg_channels"
-.LASF31:
-	.string	"/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/sw/airborne/fly_by_wire"
 .LASF5:
 	.string	"unsigned int"
 .LASF10:
@@ -1651,5 +1649,7 @@ last_radio_contains_avg_channels:
 	.string	"ppm_pulses"
 .LASF14:
 	.string	"last"
+.LASF31:
+	.string	"/home/becker/async/autosafe/trunk/tum/wcet-cbmc/benchmarks/PapaBench-AP-0.2m/sw/airborne/fly_by_wire"
 	.ident	"GCC: (GNU) 4.8.1"
 .global __do_clear_bss
