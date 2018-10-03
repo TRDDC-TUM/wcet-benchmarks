@@ -1,4 +1,0 @@
-Watchpoints: 0 => {}
-foo time=56409 (called @22538, return @78947)
-main time=56429 (called @22526, return @78955)
-{'__do_copy_data': {'count': 1, 'bcet': 9223372036854775807, 'fun': '__do_copy_data', 'running': True, 'valid': True, 'wcet': 0, 'lastcall': 10}, 'main': {'count': 1, 'bcet': 56429, 'fun': 'main', 'running': False, 'valid': True, 'wcet': 56429, 'lastcall': 22526}, ',__vector_default': {'count': 1, 'bcet': 9223372036854775807, 'fun': ',__vector_default', 'running': True, 'valid': True, 'wcet': 0, 'lastcall': 1}, '__trampolines_start,__trampolines_end,__dtors_end,__init,__ctors_start,__dtors_start,__ctors_end': {'count': 1, 'bcet': 9223372036854775807, 'fun': '__trampolines_start,__trampolines_end,__dtors_end,__init,__ctors_start,__dtors_start,__ctors_end', 'running': True, 'valid': True, 'wcet': 0, 'lastcall': 4}, 'foo': {'count': 1, 'bcet': 56409, 'fun': 'foo', 'running': False, 'valid': True, 'wcet': 56409, 'lastcall': 22538}}

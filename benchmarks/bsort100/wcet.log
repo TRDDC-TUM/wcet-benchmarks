@@ -1,144 +1,151 @@
 Note:::::Martin Becker: Writing source-level information to sourceinfo.csv
-Note:main.elf.manipulated::::Bound-T 4c5 for Atmel-AVR
-Note:main.elf.manipulated::::This AVR device has a 16-bit SP = SPH:SPL.
-Note:main.elf.manipulated::::File format assumed to be ELF
-Note:main.elf.manipulated::::Segment 2 not loaded:Zero length in file
-Note:main.elf.manipulated::::Loading DWARF info section.
-Note:main.elf.manipulated::::DWARF debug info ends without null entry.
-Note:main.elf.manipulated::::Loading DWARF types for compilation unit 1
-Note:main.elf.manipulated::::Parsing DWARF symbols.
-Note:main.elf.manipulated::::Entering DWARF compilation unit for bsort100.c
-Note:main.elf.manipulated::::DWARF node visit aborted; missing attribute.
-Note:main.elf.manipulated::::Program implies calling protocol GCC.
-Note:main.elf.manipulated::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
-Note:main.elf.manipulated:loopinfo.txt:::Routine at 00014C classified as NORMAL after inspecting 1 instructions.
-Note:main.elf.manipulated:loopinfo.txt:::Routine at 0001EC classified as NORMAL after inspecting 1 instructions.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94:Root subprogram
-Note:main.elf.manipulated::::Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated::::Dynamism bounding iteration number 1
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94:Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94:Analysis for time is needed.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94:Control-flow analysis starts.
-Warning:main.elf.manipulated:bsort100.c:BubbleSort:111-:Large combined 16-bit literal 65535 taken as signed = -1
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94:Control-flow analysis finished.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94:Dominator iterations 1 for 10 graph nodes.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94:Assertions resolved 0 of 0 dynamic calls.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:No execution bounds known yet.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Repeating constant propagation.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:95:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:95-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:98-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:98-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:98-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:98:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:98:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:98:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:102-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:102-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:102-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:103-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:103-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:103-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:103:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:103:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:103:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:106-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:106-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:106-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:106-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:106-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:106-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:108:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:108:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:108:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:108-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:108-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:108-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:108-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:108-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:108-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:108-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:108-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:108-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:110:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:110:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:110:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:110-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:110-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:110-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:110-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:110-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:110-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:111:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:111:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:111:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:111-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:111-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:111-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:111-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:111-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:111-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:111-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:111-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:111-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:112:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:112:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:112:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:112-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:112-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:112-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:112-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:112-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:112-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:113:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:113-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:105:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:105:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:105:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:105-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:105-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:105-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:117:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:117:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:117:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:100:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:100:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:100:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:100-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:100-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:100-:Refine (Assignment) bounded a pointer.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Repeating constant propagation.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Repeating constant propagation.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Final stack-height in stack SP is constant for 0 of 1 return points.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Final stack-height from constant propagation for SP:sh
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Maximum stack-height from constant propagation for SP:+inf
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Take-off stack-height in stack SP is constant for 0 of 0 calls.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Constant propagation changed nothing.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Arithmetic analysis is not needed.
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Time_State for bounds # 1 defined as COMPUTABLE
-Note:main.elf.manipulated:bsort100.c:BubbleSort:94-127:Freezing bounds # 1
-Note:main.elf.manipulated::::Target-specific additional analysis starts.
-Note:main.elf.manipulated::::Generic worst-case path and time analysis starts.
-Wcet:main.elf.manipulated:bsort100.c:BubbleSort:94-127:1553661
-Note:main.elf.manipulated::::Creating DOT file flowgraphs/cg_BubbleSort_001.dot.
-Note:main.elf.manipulated::::Unused (# 2 = BubbleSort at 0001EC) is FALSE
-Note:main.elf.manipulated::::Creating DOT file flowgraphs/fg_BubbleSort_002.dot.
-Note:main.elf.manipulated::::Creating SLI file sourceinfo.csv.
+Note:main.elf::::Bound-T 4c5 for Atmel-AVR
+Note:main.elf::::This AVR device has a 16-bit SP = SPH:SPL.
+Note:main.elf::::File format assumed to be ELF
+Note:main.elf::::Segment 2 not loaded:Zero length in memory
+Note:main.elf::::Segment 3 not loaded:Zero length in file
+Note:main.elf::::Loading DWARF info section.
+Note:main.elf::::DWARF debug info ends without null entry.
+Note:main.elf::::Loading DWARF types for compilation unit 1
+Note:main.elf::::Parsing DWARF symbols.
+Note:main.elf::::Entering DWARF compilation unit for bsort100.c
+Note:main.elf::::DWARF node visit aborted; missing attribute.
+Note:main.elf::::Program implies calling protocol GCC.
+Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
+Note:main.elf:loopinfo.txt:::Routine at 0000D6 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:loopinfo.txt:::Routine at 00015C classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:bsort100.c:BubbleSort:96:Root subprogram
+Note:main.elf::::Unused (# 2 = BubbleSort at 00015C) is FALSE
+Note:main.elf::::Dynamism bounding iteration number 1
+Note:main.elf:bsort100.c:BubbleSort:96:Unused (# 2 = BubbleSort at 00015C) is FALSE
+Note:main.elf:bsort100.c:BubbleSort:96:Analysis for time is needed.
+Note:main.elf:bsort100.c:BubbleSort:96:Control-flow analysis starts.
+Warning:main.elf:bsort100.c:BubbleSort:113-:Large combined 16-bit literal 65535 taken as signed = -1
+Note:main.elf:bsort100.c:BubbleSort:96:Control-flow analysis finished.
+Note:main.elf:bsort100.c:BubbleSort:96:Dominator iterations 1 for 13 graph nodes.
+Note:main.elf:bsort100.c:BubbleSort:96:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:bsort100.c:BubbleSort:96-129:No execution bounds known yet.
+Note:main.elf:bsort100.c:BubbleSort:96-129:Unused (# 2 = BubbleSort at 00015C) is FALSE
+Note:main.elf:bsort100.c:BubbleSort:96-129:Unused (# 2 = BubbleSort at 00015C) is FALSE
+Note:main.elf:bsort100.c:BubbleSort:96-129:Unused (# 2 = BubbleSort at 00015C) is FALSE
+Note:main.elf:bsort100.c:BubbleSort:96:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:96-129:Repeating constant propagation.
+Note:main.elf:bsort100.c:BubbleSort:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:97:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:97-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:100-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:100:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:100:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:100:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:104-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:104-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:104-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:105-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:105-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:105-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:105:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:105:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:105:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:108-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:108-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:108-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:108-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:108-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:108-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:110:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:110:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:110:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:110-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:112:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:112:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:112:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:112-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:112-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:112-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:112-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:112-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:112-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:113:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:113:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:113:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:113-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:113-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:113-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:113-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:113-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:113-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:113-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:113-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:113-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:114:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:114:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:114:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:114-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:114-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:114-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:114-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:114-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:114-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:115:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:115-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:107:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:107:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:107:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:107-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:107-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:107-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:119:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:119:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:119:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:102:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:102:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:102:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:102-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:102-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:102-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bsort100.c:BubbleSort:96-129:Repeating constant propagation.
+Note:main.elf:bsort100.c:BubbleSort:119-:Infeasible flow to 102[00026A]
+Warning:main.elf:bsort100.c:BubbleSort:119-:Unreachable flow to instruction at 102[00026A]
+Note:main.elf:bsort100.c:BubbleSort:96-129:Loop 2 is not feasibly repeatable.
+Note:main.elf:bsort100.c:BubbleSort:96-129:Repeating constant propagation.
+Note:main.elf:bsort100.c:BubbleSort:96-129:Repeating constant propagation.
+Note:main.elf:bsort100.c:BubbleSort:96-129:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf:bsort100.c:BubbleSort:96-129:Final stack-height from constant propagation for SP:sh
+Note:main.elf:bsort100.c:BubbleSort:96-129:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf:bsort100.c:BubbleSort:96-129:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf:bsort100.c:BubbleSort:96-129:Constant propagation changed nothing.
+Note:main.elf:bsort100.c:BubbleSort:96-129:Unused (# 2 = BubbleSort at 00015C) is FALSE
+Note:main.elf:bsort100.c:BubbleSort:96-129:Unused (# 2 = BubbleSort at 00015C) is FALSE
+Note:main.elf:bsort100.c:BubbleSort:96-129:Unused (# 2 = BubbleSort at 00015C) is FALSE
+Note:main.elf:bsort100.c:BubbleSort:96-129:Unused (# 2 = BubbleSort at 00015C) is FALSE
+Note:main.elf:bsort100.c:BubbleSort:96-129:Loop 2 is not feasibly repeatable.
+Note:main.elf:bsort100.c:BubbleSort:96-129:Unused (# 2 = BubbleSort at 00015C) is FALSE
+Note:main.elf:bsort100.c:BubbleSort:96-129:Unused (# 2 = BubbleSort at 00015C) is FALSE
+Note:main.elf:bsort100.c:BubbleSort:96-129:Unused (# 2 = BubbleSort at 00015C) is FALSE
+Note:main.elf:bsort100.c:BubbleSort:96-129:Unused (# 2 = BubbleSort at 00015C) is FALSE
+Note:main.elf:bsort100.c:BubbleSort:96-129:Unused (# 2 = BubbleSort at 00015C) is FALSE
+Note:main.elf:bsort100.c:BubbleSort:96-129:Loop 2 is not feasibly repeatable.
+Note:main.elf:bsort100.c:BubbleSort:96-129:Arithmetic analysis is not needed.
+Note:main.elf:bsort100.c:BubbleSort:96-129:Unused (# 2 = BubbleSort at 00015C) is FALSE
+Note:main.elf:bsort100.c:BubbleSort:96-129:Loop 2 is not feasibly repeatable.
+Note:main.elf:bsort100.c:BubbleSort:96-129:Time_State for bounds # 1 defined as COMPUTABLE
+Note:main.elf:bsort100.c:BubbleSort:96-129:Freezing bounds # 1
+Note:main.elf::::Target-specific additional analysis starts.
+Note:main.elf::::Generic worst-case path and time analysis starts.
+Note:main.elf:bsort100.c:BubbleSort:96-129:Loop 2 is not feasibly repeatable.
+Wcet:main.elf:bsort100.c:BubbleSort:96-129:15726
+Note:main.elf::::Creating DOT file flowgraphs/cg_BubbleSort_001.dot.
+Note:main.elf::::Creating SLI file sourceinfo.csv.

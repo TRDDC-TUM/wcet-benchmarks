@@ -1,4 +1,0 @@
-Watchpoints: 0 => {}
-fib time=1777 (called @37, return @1814)
-main time=1816 (called @14, return @1830)
-{'fib': {'count': 1, 'bcet': 1777, 'fun': 'fib', 'running': False, 'valid': True, 'wcet': 1777, 'lastcall': 37}, 'main': {'count': 1, 'bcet': 1816, 'fun': 'main', 'running': False, 'valid': True, 'wcet': 1816, 'lastcall': 14}, ',__vector_default': {'count': 1, 'bcet': 9223372036854775807, 'fun': ',__vector_default', 'running': True, 'valid': True, 'wcet': 0, 'lastcall': 1}, '__trampolines_start,__trampolines_end,__dtors_end,__init,__ctors_start,__dtors_start,__ctors_end': {'count': 1, 'bcet': 9223372036854775807, 'fun': '__trampolines_start,__trampolines_end,__dtors_end,__init,__ctors_start,__dtors_start,__ctors_end', 'running': True, 'valid': True, 'wcet': 0, 'lastcall': 4}}

@@ -1,4 +1,0 @@
-Watchpoints: 0 => {}
-binary_search time=401 (called @578, return @979)
-main time=423 (called @566, return @989)
-{'__do_copy_data': {'count': 1, 'bcet': 9223372036854775807, 'fun': '__do_copy_data', 'running': True, 'valid': True, 'wcet': 0, 'lastcall': 10}, 'main': {'count': 1, 'bcet': 423, 'fun': 'main', 'running': False, 'valid': True, 'wcet': 423, 'lastcall': 566}, ',__vector_default': {'count': 1, 'bcet': 9223372036854775807, 'fun': ',__vector_default', 'running': True, 'valid': True, 'wcet': 0, 'lastcall': 1}, '__trampolines_start,__trampolines_end,__dtors_end,__init,__ctors_start,__dtors_start,__ctors_end': {'count': 1, 'bcet': 9223372036854775807, 'fun': '__trampolines_start,__trampolines_end,__dtors_end,__init,__ctors_start,__dtors_start,__ctors_end', 'running': True, 'valid': True, 'wcet': 0, 'lastcall': 4}, 'binary_search': {'count': 1, 'bcet': 401, 'fun': 'binary_search', 'running': False, 'valid': True, 'wcet': 401, 'lastcall': 578}}

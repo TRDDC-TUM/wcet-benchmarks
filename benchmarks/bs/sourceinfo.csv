@@ -1,115 +1,115 @@
-#File; Subprogram; Line; Scope; Exec.Count; Exec.Time.Per; Callee.Time.Per; BB.index; Step.Addr; Step.Target.Addr; Step.Time; Step.Time.Exit
-bs.c; binary_search;  77; .binary_search;  1; 35; 0; 1; 216; 218; 2; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 218; 220; 2; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 220; 222; 1; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 222; 224; 1; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 224; 226; 2; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 226; 228; 1; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 228; 230; 1; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 230; 232; 1; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 232; 234; 1; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 234; 236; 1; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 236; 238; 2; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 238; 240; 2; 0
-bs.c; binary_search;  80; .binary_search;  1; 35; 0; 1; 240; 242; 2; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 242; 244; 2; 0
-bs.c; binary_search;  81; .binary_search;  1; 35; 0; 1; 244; 246; 1; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 246; 248; 1; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 248; 250; 2; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 250; 252; 2; 0
-bs.c; binary_search;  82; .binary_search;  1; 35; 0; 1; 252; 254; 1; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 254; 256; 1; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 256; 258; 2; 0
-bs.c; binary_search;  0; .binary_search;  1; 35; 0; 1; 258; 260; 2; 0
-bs.c; binary_search;  83; .binary_search;  1; 35; 0; 1; 260; 406; 1; 1
-bs.c; binary_search;  83; ;  6; 11- 12; 0; 2; 406; 408; 2; 0
-bs.c; binary_search;  0; ;  6; 11- 12; 0; 2; 408; 410; 2; 0
-bs.c; binary_search;  0; ;  6; 11- 12; 0; 2; 410; 412; 2; 0
-bs.c; binary_search;  0; ;  6; 11- 12; 0; 2; 412; 414; 2; 0
-bs.c; binary_search;  0; ;  6; 11- 12; 0; 2; 414; 416; 1; 0
-bs.c; binary_search;  0; ;  6; 11- 12; 0; 2; 416; 418; 1; 0
-bs.c; binary_search;  0; ;  6; 11- 12; 0; 2; 418; 420, 422; 1; 0- 1
-; binary_search;  0; ;  5; 40- 41; 0; 3; 420; 262; 1; 1
-bs.c; binary_search;  84; ;  5; 40- 41; 0; 3; 262; 264; 2; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 264; 266; 2; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 266; 268; 2; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 268; 270; 2; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 270; 272; 1; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 272; 274; 1; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 274; 276; 1; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 276; 278; 1; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 278; 280; 2; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 280; 282; 2; 0
-bs.c; binary_search;  85; ;  5; 40- 41; 0; 3; 282; 284; 2; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 284; 286; 2; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 286; 288; 1; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 288; 290; 1; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 290; 292; 1; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 292; 294; 1; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 294; 296; 1; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 296; 298; 1; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 298; 300; 1; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 300; 302; 2; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 302; 304; 2; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 304; 306; 2; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 306; 308; 2; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 308; 310; 1; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 310; 312; 1; 0
-bs.c; binary_search;  0; ;  5; 40- 41; 0; 3; 312; 314, 352; 1; 0- 1
-bs.c; binary_search;  112; ;  1; 19; 0; 4; 422; 424; 2; 0
-bs.c; binary_search;  0; ;  1; 19; 0; 4; 424; 426; 2; 0
-bs.c; binary_search;  113; ;  1; 19; 0; 4; 426; 428; 2; 0
-bs.c; binary_search;  0; ;  1; 19; 0; 4; 428; 430; 1; 0
-bs.c; binary_search;  0; ;  1; 19; 0; 4; 430; 432; 1; 0
-bs.c; binary_search;  0; ;  1; 19; 0; 4; 432; 434; 1; 0
-bs.c; binary_search;  0; ;  1; 19; 0; 4; 434; 436; 1; 0
-bs.c; binary_search;  0; ;  1; 19; 0; 4; 436; 438; 1; 0
-bs.c; binary_search;  0; ;  1; 19; 0; 4; 438; 440; 2; 0
-bs.c; binary_search;  0; ;  1; 19; 0; 4; 440; 442; 2; 0
-bs.c; binary_search;  0; ;  1; 19; 0; 4; 442;; 4; 0
-bs.c; binary_search;  86; ;  0; 31; 0; 5; 314; 316; 2; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 316; 318; 2; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 318; 320; 2; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 320; 322; 2; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 322; 324; 2; 0
-bs.c; binary_search;  87; ;  0; 31; 0; 5; 324; 326; 2; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 326; 328; 2; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 328; 330; 1; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 330; 332; 1; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 332; 334; 1; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 334; 336; 1; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 336; 338; 1; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 338; 340; 1; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 340; 342; 1; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 342; 344; 2; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 344; 346; 2; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 346; 348; 2; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 348; 350; 2; 0
-bs.c; binary_search;  0; ;  0; 31; 0; 5; 350; 406; 1; 1
-bs.c; binary_search;  93; ;  5; 22- 23; 0; 6; 352; 354; 2; 0
-bs.c; binary_search;  0; ;  5; 22- 23; 0; 6; 354; 356; 2; 0
-bs.c; binary_search;  0; ;  5; 22- 23; 0; 6; 356; 358; 1; 0
-bs.c; binary_search;  0; ;  5; 22- 23; 0; 6; 358; 360; 1; 0
-bs.c; binary_search;  0; ;  5; 22- 23; 0; 6; 360; 362; 1; 0
-bs.c; binary_search;  0; ;  5; 22- 23; 0; 6; 362; 364; 1; 0
-bs.c; binary_search;  0; ;  5; 22- 23; 0; 6; 364; 366; 1; 0
-bs.c; binary_search;  0; ;  5; 22- 23; 0; 6; 366; 368; 1; 0
-bs.c; binary_search;  0; ;  5; 22- 23; 0; 6; 368; 370; 1; 0
-bs.c; binary_search;  0; ;  5; 22- 23; 0; 6; 370; 372; 2; 0
-bs.c; binary_search;  0; ;  5; 22- 23; 0; 6; 372; 374; 2; 0
-bs.c; binary_search;  0; ;  5; 22- 23; 0; 6; 374; 376; 2; 0
-bs.c; binary_search;  0; ;  5; 22- 23; 0; 6; 376; 378; 2; 0
-bs.c; binary_search;  0; ;  5; 22- 23; 0; 6; 378; 380; 1; 0
-bs.c; binary_search;  0; ;  5; 22- 23; 0; 6; 380; 382; 1; 0
-bs.c; binary_search;  0; ;  5; 22- 23; 0; 6; 382; 384, 396; 1; 0- 1
-bs.c; binary_search;  94; ;  5; 12; 0; 7; 384; 386; 2; 0
-bs.c; binary_search;  0; ;  5; 12; 0; 7; 386; 388; 2; 0
-bs.c; binary_search;  0; ;  5; 12; 0; 7; 388; 390; 2; 0
-bs.c; binary_search;  0; ;  5; 12; 0; 7; 390; 392; 2; 0
-bs.c; binary_search;  0; ;  5; 12; 0; 7; 392; 394; 2; 0
-bs.c; binary_search;  0; ;  5; 12; 0; 7; 394; 406; 1; 1
-bs.c; binary_search;  100; ;  0; 10; 0; 8; 396; 398; 2; 0
-bs.c; binary_search;  0; ;  0; 10; 0; 8; 398; 400; 2; 0
-bs.c; binary_search;  0; ;  0; 10; 0; 8; 400; 402; 2; 0
-bs.c; binary_search;  0; ;  0; 10; 0; 8; 402; 404; 2; 0
-bs.c; binary_search;  0; ;  0; 10; 0; 8; 404; 406; 2; 0
+#BB.index; BB.Target.index; BB.Target.EdgeId; Step.Target.Addr; Step.Addr; File; Subprogram; Line; Scope; Exec.Count; Exec.Time.Per; Step.Time; Step.Time.Exit; Callee.Time.Per
+ 1;  2;  1;  218;  216; bs.c; binary_search;  79; .binary_search;  1;  35;  2;  0;  0
+ 1;  2;  1;  220;  218; bs.c; binary_search;  0; .binary_search;  1;  35;  2;  0;  0
+ 1;  2;  1;  222;  220; bs.c; binary_search;  0; .binary_search;  1;  35;  1;  0;  0
+ 1;  2;  1;  224;  222; bs.c; binary_search;  0; .binary_search;  1;  35;  1;  0;  0
+ 1;  2;  1;  226;  224; bs.c; binary_search;  0; .binary_search;  1;  35;  2;  0;  0
+ 1;  2;  1;  228;  226; bs.c; binary_search;  0; .binary_search;  1;  35;  1;  0;  0
+ 1;  2;  1;  230;  228; bs.c; binary_search;  0; .binary_search;  1;  35;  1;  0;  0
+ 1;  2;  1;  232;  230; bs.c; binary_search;  0; .binary_search;  1;  35;  1;  0;  0
+ 1;  2;  1;  234;  232; bs.c; binary_search;  0; .binary_search;  1;  35;  1;  0;  0
+ 1;  2;  1;  236;  234; bs.c; binary_search;  0; .binary_search;  1;  35;  1;  0;  0
+ 1;  2;  1;  238;  236; bs.c; binary_search;  0; .binary_search;  1;  35;  2;  0;  0
+ 1;  2;  1;  240;  238; bs.c; binary_search;  0; .binary_search;  1;  35;  2;  0;  0
+ 1;  2;  1;  242;  240; bs.c; binary_search;  82; .binary_search;  1;  35;  2;  0;  0
+ 1;  2;  1;  244;  242; bs.c; binary_search;  0; .binary_search;  1;  35;  2;  0;  0
+ 1;  2;  1;  246;  244; bs.c; binary_search;  83; .binary_search;  1;  35;  1;  0;  0
+ 1;  2;  1;  248;  246; bs.c; binary_search;  0; .binary_search;  1;  35;  1;  0;  0
+ 1;  2;  1;  250;  248; bs.c; binary_search;  0; .binary_search;  1;  35;  2;  0;  0
+ 1;  2;  1;  252;  250; bs.c; binary_search;  0; .binary_search;  1;  35;  2;  0;  0
+ 1;  2;  1;  254;  252; bs.c; binary_search;  84; .binary_search;  1;  35;  1;  0;  0
+ 1;  2;  1;  256;  254; bs.c; binary_search;  0; .binary_search;  1;  35;  1;  0;  0
+ 1;  2;  1;  258;  256; bs.c; binary_search;  0; .binary_search;  1;  35;  2;  0;  0
+ 1;  2;  1;  260;  258; bs.c; binary_search;  0; .binary_search;  1;  35;  2;  0;  0
+ 1;  2;  1;  406;  260; bs.c; binary_search;  85; .binary_search;  1;  35;  1;  1;  0
+ 2;  3, 4;  2, 3;  408;  406; bs.c; binary_search;  85; ;  6;  11- 12;  2;  0;  0
+ 2;  3, 4;  2, 3;  410;  408; bs.c; binary_search;  0; ;  6;  11- 12;  2;  0;  0
+ 2;  3, 4;  2, 3;  412;  410; bs.c; binary_search;  0; ;  6;  11- 12;  2;  0;  0
+ 2;  3, 4;  2, 3;  414;  412; bs.c; binary_search;  0; ;  6;  11- 12;  2;  0;  0
+ 2;  3, 4;  2, 3;  416;  414; bs.c; binary_search;  0; ;  6;  11- 12;  1;  0;  0
+ 2;  3, 4;  2, 3;  418;  416; bs.c; binary_search;  0; ;  6;  11- 12;  1;  0;  0
+ 2;  3, 4;  2, 3;  420, 422;  418; bs.c; binary_search;  0; ;  6;  11- 12;  1;  0- 1;  0
+ 3;  5, 6;  4, 5;  262;  420; ; binary_search;  0; ;  5;  40- 41;  1;  1;  0
+ 3;  5, 6;  4, 5;  264;  262; bs.c; binary_search;  86; ;  5;  40- 41;  2;  0;  0
+ 3;  5, 6;  4, 5;  266;  264; bs.c; binary_search;  0; ;  5;  40- 41;  2;  0;  0
+ 3;  5, 6;  4, 5;  268;  266; bs.c; binary_search;  0; ;  5;  40- 41;  2;  0;  0
+ 3;  5, 6;  4, 5;  270;  268; bs.c; binary_search;  0; ;  5;  40- 41;  2;  0;  0
+ 3;  5, 6;  4, 5;  272;  270; bs.c; binary_search;  0; ;  5;  40- 41;  1;  0;  0
+ 3;  5, 6;  4, 5;  274;  272; bs.c; binary_search;  0; ;  5;  40- 41;  1;  0;  0
+ 3;  5, 6;  4, 5;  276;  274; bs.c; binary_search;  0; ;  5;  40- 41;  1;  0;  0
+ 3;  5, 6;  4, 5;  278;  276; bs.c; binary_search;  0; ;  5;  40- 41;  1;  0;  0
+ 3;  5, 6;  4, 5;  280;  278; bs.c; binary_search;  0; ;  5;  40- 41;  2;  0;  0
+ 3;  5, 6;  4, 5;  282;  280; bs.c; binary_search;  0; ;  5;  40- 41;  2;  0;  0
+ 3;  5, 6;  4, 5;  284;  282; bs.c; binary_search;  87; ;  5;  40- 41;  2;  0;  0
+ 3;  5, 6;  4, 5;  286;  284; bs.c; binary_search;  0; ;  5;  40- 41;  2;  0;  0
+ 3;  5, 6;  4, 5;  288;  286; bs.c; binary_search;  0; ;  5;  40- 41;  1;  0;  0
+ 3;  5, 6;  4, 5;  290;  288; bs.c; binary_search;  0; ;  5;  40- 41;  1;  0;  0
+ 3;  5, 6;  4, 5;  292;  290; bs.c; binary_search;  0; ;  5;  40- 41;  1;  0;  0
+ 3;  5, 6;  4, 5;  294;  292; bs.c; binary_search;  0; ;  5;  40- 41;  1;  0;  0
+ 3;  5, 6;  4, 5;  296;  294; bs.c; binary_search;  0; ;  5;  40- 41;  1;  0;  0
+ 3;  5, 6;  4, 5;  298;  296; bs.c; binary_search;  0; ;  5;  40- 41;  1;  0;  0
+ 3;  5, 6;  4, 5;  300;  298; bs.c; binary_search;  0; ;  5;  40- 41;  1;  0;  0
+ 3;  5, 6;  4, 5;  302;  300; bs.c; binary_search;  0; ;  5;  40- 41;  2;  0;  0
+ 3;  5, 6;  4, 5;  304;  302; bs.c; binary_search;  0; ;  5;  40- 41;  2;  0;  0
+ 3;  5, 6;  4, 5;  306;  304; bs.c; binary_search;  0; ;  5;  40- 41;  2;  0;  0
+ 3;  5, 6;  4, 5;  308;  306; bs.c; binary_search;  0; ;  5;  40- 41;  2;  0;  0
+ 3;  5, 6;  4, 5;  310;  308; bs.c; binary_search;  0; ;  5;  40- 41;  1;  0;  0
+ 3;  5, 6;  4, 5;  312;  310; bs.c; binary_search;  0; ;  5;  40- 41;  1;  0;  0
+ 3;  5, 6;  4, 5;  314, 352;  312; bs.c; binary_search;  0; ;  5;  40- 41;  1;  0- 1;  0
+ 4; ; ;  424;  422; bs.c; binary_search;  114; ;  1;  19;  2;  0;  0
+ 4; ; ;  426;  424; bs.c; binary_search;  0; ;  1;  19;  2;  0;  0
+ 4; ; ;  428;  426; bs.c; binary_search;  115; ;  1;  19;  2;  0;  0
+ 4; ; ;  430;  428; bs.c; binary_search;  0; ;  1;  19;  1;  0;  0
+ 4; ; ;  432;  430; bs.c; binary_search;  0; ;  1;  19;  1;  0;  0
+ 4; ; ;  434;  432; bs.c; binary_search;  0; ;  1;  19;  1;  0;  0
+ 4; ; ;  436;  434; bs.c; binary_search;  0; ;  1;  19;  1;  0;  0
+ 4; ; ;  438;  436; bs.c; binary_search;  0; ;  1;  19;  1;  0;  0
+ 4; ; ;  440;  438; bs.c; binary_search;  0; ;  1;  19;  2;  0;  0
+ 4; ; ;  442;  440; bs.c; binary_search;  0; ;  1;  19;  2;  0;  0
+ 4; ; ; ;  442; bs.c; binary_search;  0; ;  1;  19;  4;  0;  0
+ 5;  2;  6;  316;  314; bs.c; binary_search;  88; ;  0;  31;  2;  0;  0
+ 5;  2;  6;  318;  316; bs.c; binary_search;  0; ;  0;  31;  2;  0;  0
+ 5;  2;  6;  320;  318; bs.c; binary_search;  0; ;  0;  31;  2;  0;  0
+ 5;  2;  6;  322;  320; bs.c; binary_search;  0; ;  0;  31;  2;  0;  0
+ 5;  2;  6;  324;  322; bs.c; binary_search;  0; ;  0;  31;  2;  0;  0
+ 5;  2;  6;  326;  324; bs.c; binary_search;  89; ;  0;  31;  2;  0;  0
+ 5;  2;  6;  328;  326; bs.c; binary_search;  0; ;  0;  31;  2;  0;  0
+ 5;  2;  6;  330;  328; bs.c; binary_search;  0; ;  0;  31;  1;  0;  0
+ 5;  2;  6;  332;  330; bs.c; binary_search;  0; ;  0;  31;  1;  0;  0
+ 5;  2;  6;  334;  332; bs.c; binary_search;  0; ;  0;  31;  1;  0;  0
+ 5;  2;  6;  336;  334; bs.c; binary_search;  0; ;  0;  31;  1;  0;  0
+ 5;  2;  6;  338;  336; bs.c; binary_search;  0; ;  0;  31;  1;  0;  0
+ 5;  2;  6;  340;  338; bs.c; binary_search;  0; ;  0;  31;  1;  0;  0
+ 5;  2;  6;  342;  340; bs.c; binary_search;  0; ;  0;  31;  1;  0;  0
+ 5;  2;  6;  344;  342; bs.c; binary_search;  0; ;  0;  31;  2;  0;  0
+ 5;  2;  6;  346;  344; bs.c; binary_search;  0; ;  0;  31;  2;  0;  0
+ 5;  2;  6;  348;  346; bs.c; binary_search;  0; ;  0;  31;  2;  0;  0
+ 5;  2;  6;  350;  348; bs.c; binary_search;  0; ;  0;  31;  2;  0;  0
+ 5;  2;  6;  406;  350; bs.c; binary_search;  0; ;  0;  31;  1;  1;  0
+ 6;  7, 8;  7, 8;  354;  352; bs.c; binary_search;  95; ;  5;  22- 23;  2;  0;  0
+ 6;  7, 8;  7, 8;  356;  354; bs.c; binary_search;  0; ;  5;  22- 23;  2;  0;  0
+ 6;  7, 8;  7, 8;  358;  356; bs.c; binary_search;  0; ;  5;  22- 23;  1;  0;  0
+ 6;  7, 8;  7, 8;  360;  358; bs.c; binary_search;  0; ;  5;  22- 23;  1;  0;  0
+ 6;  7, 8;  7, 8;  362;  360; bs.c; binary_search;  0; ;  5;  22- 23;  1;  0;  0
+ 6;  7, 8;  7, 8;  364;  362; bs.c; binary_search;  0; ;  5;  22- 23;  1;  0;  0
+ 6;  7, 8;  7, 8;  366;  364; bs.c; binary_search;  0; ;  5;  22- 23;  1;  0;  0
+ 6;  7, 8;  7, 8;  368;  366; bs.c; binary_search;  0; ;  5;  22- 23;  1;  0;  0
+ 6;  7, 8;  7, 8;  370;  368; bs.c; binary_search;  0; ;  5;  22- 23;  1;  0;  0
+ 6;  7, 8;  7, 8;  372;  370; bs.c; binary_search;  0; ;  5;  22- 23;  2;  0;  0
+ 6;  7, 8;  7, 8;  374;  372; bs.c; binary_search;  0; ;  5;  22- 23;  2;  0;  0
+ 6;  7, 8;  7, 8;  376;  374; bs.c; binary_search;  0; ;  5;  22- 23;  2;  0;  0
+ 6;  7, 8;  7, 8;  378;  376; bs.c; binary_search;  0; ;  5;  22- 23;  2;  0;  0
+ 6;  7, 8;  7, 8;  380;  378; bs.c; binary_search;  0; ;  5;  22- 23;  1;  0;  0
+ 6;  7, 8;  7, 8;  382;  380; bs.c; binary_search;  0; ;  5;  22- 23;  1;  0;  0
+ 6;  7, 8;  7, 8;  384, 396;  382; bs.c; binary_search;  0; ;  5;  22- 23;  1;  0- 1;  0
+ 7;  2;  9;  386;  384; bs.c; binary_search;  96; ;  5;  12;  2;  0;  0
+ 7;  2;  9;  388;  386; bs.c; binary_search;  0; ;  5;  12;  2;  0;  0
+ 7;  2;  9;  390;  388; bs.c; binary_search;  0; ;  5;  12;  2;  0;  0
+ 7;  2;  9;  392;  390; bs.c; binary_search;  0; ;  5;  12;  2;  0;  0
+ 7;  2;  9;  394;  392; bs.c; binary_search;  0; ;  5;  12;  2;  0;  0
+ 7;  2;  9;  406;  394; bs.c; binary_search;  0; ;  5;  12;  1;  1;  0
+ 8;  2;  10;  398;  396; bs.c; binary_search;  102; ;  0;  10;  2;  0;  0
+ 8;  2;  10;  400;  398; bs.c; binary_search;  0; ;  0;  10;  2;  0;  0
+ 8;  2;  10;  402;  400; bs.c; binary_search;  0; ;  0;  10;  2;  0;  0
+ 8;  2;  10;  404;  402; bs.c; binary_search;  0; ;  0;  10;  2;  0;  0
+ 8;  2;  10;  406;  404; bs.c; binary_search;  0; ;  0;  10;  2;  0;  0

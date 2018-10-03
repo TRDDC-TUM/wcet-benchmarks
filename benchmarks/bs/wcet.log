@@ -10,49 +10,34 @@ Note:main.elf::::Entering DWARF compilation unit for bs.c
 Note:main.elf::::Program implies calling protocol GCC.
 Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
 Note:main.elf:loopinfo.txt:::Routine at 0000D8 classified as NORMAL after inspecting 1 instructions.
-Note:main.elf:bs.c:binary_search:77:Root subprogram
+Note:main.elf:bs.c:binary_search:79:Root subprogram
 Note:main.elf::::Unused (# 1 = binary_search at 0000D8) is FALSE
 Note:main.elf::::Dynamism bounding iteration number 1
-Note:main.elf:bs.c:binary_search:77:Unused (# 1 = binary_search at 0000D8) is FALSE
-Note:main.elf:bs.c:binary_search:77:Analysis for time is needed.
-Note:main.elf:bs.c:binary_search:77:Control-flow analysis starts.
-Warning:main.elf:bs.c:binary_search:82:Large combined 16-bit literal 65535 taken as signed = -1
-Warning:main.elf:bs.c:binary_search:85-:Large combined 16-bit literal 65280 taken as signed = -256
-Warning:main.elf:bs.c:binary_search:87-:Large combined 16-bit literal 65278 taken as signed = -258
-Warning:main.elf:bs.c:binary_search:93-:Large combined 16-bit literal 65280 taken as signed = -256
-Note:main.elf:bs.c:binary_search:77:Control-flow analysis finished.
-Note:main.elf:bs.c:binary_search:77:Dominator iterations 1 for 8 graph nodes.
-Note:main.elf:bs.c:binary_search:77:Assertions resolved 0 of 0 dynamic calls.
-Note:main.elf:bs.c:binary_search:77-113:No execution bounds known yet.
-Note:main.elf:bs.c:binary_search:77-113:Unused (# 1 = binary_search at 0000D8) is FALSE
-Note:main.elf:bs.c:binary_search:77-113:Unused (# 1 = binary_search at 0000D8) is FALSE
-Note:main.elf:bs.c:binary_search:77-113:Unused (# 1 = binary_search at 0000D8) is FALSE
-Note:main.elf:bs.c:binary_search:77:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:77-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:77-113:Repeating constant propagation.
-Note:main.elf:bs.c:binary_search:77-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:77-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:77-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:80:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:80-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:81-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:81-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:81-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:79:Unused (# 1 = binary_search at 0000D8) is FALSE
+Note:main.elf:bs.c:binary_search:79:Analysis for time is needed.
+Note:main.elf:bs.c:binary_search:79:Control-flow analysis starts.
+Warning:main.elf:bs.c:binary_search:84:Large combined 16-bit literal 65535 taken as signed = -1
+Warning:main.elf:bs.c:binary_search:87-:Large combined 16-bit literal 65280 taken as signed = -256
+Warning:main.elf:bs.c:binary_search:89-:Large combined 16-bit literal 65278 taken as signed = -258
+Warning:main.elf:bs.c:binary_search:95-:Large combined 16-bit literal 65280 taken as signed = -256
+Note:main.elf:bs.c:binary_search:79:Control-flow analysis finished.
+Note:main.elf:bs.c:binary_search:79:Dominator iterations 1 for 8 graph nodes.
+Note:main.elf:bs.c:binary_search:79:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf:bs.c:binary_search:79-115:No execution bounds known yet.
+Note:main.elf:bs.c:binary_search:79-115:Unused (# 1 = binary_search at 0000D8) is FALSE
+Note:main.elf:bs.c:binary_search:79-115:Unused (# 1 = binary_search at 0000D8) is FALSE
+Note:main.elf:bs.c:binary_search:79-115:Unused (# 1 = binary_search at 0000D8) is FALSE
+Note:main.elf:bs.c:binary_search:79:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:79-115:Repeating constant propagation.
+Note:main.elf:bs.c:binary_search:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:79-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:82:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:82-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:82-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:82-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:83:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:83:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:83:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:83-:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:83-:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:83-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:84:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:84:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:84:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:84-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:84-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:84-:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:84-:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:84-:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:84-:Refine (Assignment) bounded a pointer.
@@ -68,53 +53,68 @@ Note:main.elf:bs.c:binary_search:86:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:86-:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:86-:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:86-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:86-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:86-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:86-:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:87:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:87:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:87:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:87-:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:87-:Refine (Assignment) bounded a pointer.
 Note:main.elf:bs.c:binary_search:87-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:93:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:93:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:93:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:93-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:93-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:93-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:94:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:94:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:94:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:94-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:94-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:94-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:100:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:100:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:100:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:100-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:100-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:100-:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:112:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:112:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:112:Refine (Assignment) bounded a pointer.
-Note:main.elf:bs.c:binary_search:77-113:Repeating constant propagation.
-Note:main.elf:bs.c:binary_search:77-113:Final stack-height in stack SP is constant for 0 of 1 return points.
-Note:main.elf:bs.c:binary_search:77-113:Final stack-height from constant propagation for SP:sh
-Note:main.elf:bs.c:binary_search:77-113:Maximum stack-height from constant propagation for SP:+inf
-Note:main.elf:bs.c:binary_search:77-113:Take-off stack-height in stack SP is constant for 0 of 0 calls.
-Note:main.elf:bs.c:binary_search:77-113:Constant propagation changed nothing.
-Note:main.elf:bs.c:binary_search:77-113:Unused (# 1 = binary_search at 0000D8) is FALSE
-Note:main.elf:bs.c:binary_search:77-113:Unused (# 1 = binary_search at 0000D8) is FALSE
-Note:main.elf:bs.c:binary_search:77-113:Unused (# 1 = binary_search at 0000D8) is FALSE
-Note:main.elf:bs.c:binary_search:77-113:Unused (# 1 = binary_search at 0000D8) is FALSE
-Note:main.elf:bs.c:binary_search:77-113:Unused (# 1 = binary_search at 0000D8) is FALSE
-Note:main.elf:bs.c:binary_search:77-113:Unused (# 1 = binary_search at 0000D8) is FALSE
-Note:main.elf:bs.c:binary_search:77-113:Unused (# 1 = binary_search at 0000D8) is FALSE
-Note:main.elf:bs.c:binary_search:77-113:Unused (# 1 = binary_search at 0000D8) is FALSE
-Note:main.elf:bs.c:binary_search:77-113:Unused (# 1 = binary_search at 0000D8) is FALSE
-Note:main.elf:bs.c:binary_search:77-113:Arithmetic analysis is not needed.
-Note:main.elf:bs.c:binary_search:77-113:Unused (# 1 = binary_search at 0000D8) is FALSE
-Note:main.elf:bs.c:binary_search:77-113:Time_State for bounds # 1 defined as COMPUTABLE
-Note:main.elf:bs.c:binary_search:77-113:Freezing bounds # 1
+Note:main.elf:bs.c:binary_search:88:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:88:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:88:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:88-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:88-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:88-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:89:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:89:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:89:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:89-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:89-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:89-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:95:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:95:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:95:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:95-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:95-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:95-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:96:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:96:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:96:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:96-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:102:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:102:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:102:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:102-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:102-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:102-:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:114:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:114:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:114:Refine (Assignment) bounded a pointer.
+Note:main.elf:bs.c:binary_search:79-115:Repeating constant propagation.
+Note:main.elf:bs.c:binary_search:79-115:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf:bs.c:binary_search:79-115:Final stack-height from constant propagation for SP:sh
+Note:main.elf:bs.c:binary_search:79-115:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf:bs.c:binary_search:79-115:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf:bs.c:binary_search:79-115:Constant propagation changed nothing.
+Note:main.elf:bs.c:binary_search:79-115:Unused (# 1 = binary_search at 0000D8) is FALSE
+Note:main.elf:bs.c:binary_search:79-115:Unused (# 1 = binary_search at 0000D8) is FALSE
+Note:main.elf:bs.c:binary_search:79-115:Unused (# 1 = binary_search at 0000D8) is FALSE
+Note:main.elf:bs.c:binary_search:79-115:Unused (# 1 = binary_search at 0000D8) is FALSE
+Note:main.elf:bs.c:binary_search:79-115:Unused (# 1 = binary_search at 0000D8) is FALSE
+Note:main.elf:bs.c:binary_search:79-115:Unused (# 1 = binary_search at 0000D8) is FALSE
+Note:main.elf:bs.c:binary_search:79-115:Unused (# 1 = binary_search at 0000D8) is FALSE
+Note:main.elf:bs.c:binary_search:79-115:Unused (# 1 = binary_search at 0000D8) is FALSE
+Note:main.elf:bs.c:binary_search:79-115:Unused (# 1 = binary_search at 0000D8) is FALSE
+Note:main.elf:bs.c:binary_search:79-115:Arithmetic analysis is not needed.
+Note:main.elf:bs.c:binary_search:79-115:Unused (# 1 = binary_search at 0000D8) is FALSE
+Note:main.elf:bs.c:binary_search:79-115:Time_State for bounds # 1 defined as COMPUTABLE
+Note:main.elf:bs.c:binary_search:79-115:Freezing bounds # 1
 Note:main.elf::::Target-specific additional analysis starts.
 Note:main.elf::::Generic worst-case path and time analysis starts.
-Wcet:main.elf:bs.c:binary_search:77-113:496
+Wcet:main.elf:bs.c:binary_search:79-115:496
 Note:main.elf::::Creating SLI file sourceinfo.csv.
