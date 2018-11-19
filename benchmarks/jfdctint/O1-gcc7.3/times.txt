@@ -1,0 +1,123 @@
+pretty-print on
+WARN: Symbol at 8c already has a name: __ctors_end. Updating to __ctors_start.
+WARN: Symbol at 8c already has a name: __ctors_start. Updating to __dtors_end.
+WARN: Symbol at 8c already has a name: __dtors_end. Updating to __dtors_start.
+WARN: Symbol at 7a4 already has a name: exit. Updating to _exit.
+WARN: Symbol at 8c already has a name: __dtors_start. Updating to __init.
+WARN: Symbol at 8c already has a name: __init. Updating to __trampolines_end.
+WARN: Symbol at 8c already has a name: __trampolines_end. Updating to __trampolines_start.
+WARN: Symbol at b0 already has a name: __bad_interrupt. Updating to __vector_1.
+WARN: Symbol at b0 already has a name: __vector_1. Updating to __vector_10.
+WARN: Symbol at b0 already has a name: __vector_10. Updating to __vector_11.
+WARN: Symbol at b0 already has a name: __vector_11. Updating to __vector_12.
+WARN: Symbol at b0 already has a name: __vector_12. Updating to __vector_13.
+WARN: Symbol at b0 already has a name: __vector_13. Updating to __vector_14.
+WARN: Symbol at b0 already has a name: __vector_14. Updating to __vector_15.
+WARN: Symbol at b0 already has a name: __vector_15. Updating to __vector_16.
+WARN: Symbol at b0 already has a name: __vector_16. Updating to __vector_17.
+WARN: Symbol at b0 already has a name: __vector_17. Updating to __vector_18.
+WARN: Symbol at b0 already has a name: __vector_18. Updating to __vector_19.
+WARN: Symbol at b0 already has a name: __vector_19. Updating to __vector_2.
+WARN: Symbol at b0 already has a name: __vector_2. Updating to __vector_20.
+WARN: Symbol at b0 already has a name: __vector_20. Updating to __vector_21.
+WARN: Symbol at b0 already has a name: __vector_21. Updating to __vector_22.
+WARN: Symbol at b0 already has a name: __vector_22. Updating to __vector_23.
+WARN: Symbol at b0 already has a name: __vector_23. Updating to __vector_24.
+WARN: Symbol at b0 already has a name: __vector_24. Updating to __vector_25.
+WARN: Symbol at b0 already has a name: __vector_25. Updating to __vector_26.
+WARN: Symbol at b0 already has a name: __vector_26. Updating to __vector_27.
+WARN: Symbol at b0 already has a name: __vector_27. Updating to __vector_28.
+WARN: Symbol at b0 already has a name: __vector_28. Updating to __vector_29.
+WARN: Symbol at b0 already has a name: __vector_29. Updating to __vector_3.
+WARN: Symbol at b0 already has a name: __vector_3. Updating to __vector_30.
+WARN: Symbol at b0 already has a name: __vector_30. Updating to __vector_31.
+WARN: Symbol at b0 already has a name: __vector_31. Updating to __vector_32.
+WARN: Symbol at b0 already has a name: __vector_32. Updating to __vector_33.
+WARN: Symbol at b0 already has a name: __vector_33. Updating to __vector_34.
+WARN: Symbol at b0 already has a name: __vector_34. Updating to __vector_4.
+WARN: Symbol at b0 already has a name: __vector_4. Updating to __vector_5.
+WARN: Symbol at b0 already has a name: __vector_5. Updating to __vector_6.
+WARN: Symbol at b0 already has a name: __vector_6. Updating to __vector_7.
+WARN: Symbol at b0 already has a name: __vector_7. Updating to __vector_8.
+WARN: Symbol at b0 already has a name: __vector_8. Updating to __vector_9.
+WARN: Symbol at 0 already has a name: __heap_end. Updating to __vector_default.
+WARN: Symbol at 0 already has a name: __vector_default. Updating to __vectors.
+Loaded 17 symbols.
+Running Simulator live...
+Tracefile ignored
+Running Simulator: simulavr -l 0 -d atmega128 -T exit -t stdout -f main.elf
+Cycles: 1 (1 per second), stack=
+{'__divmodsi4': {'bcet': 587,
+                 'count': 64,
+                 'et': [],
+                 'fun': '__divmodsi4',
+                 'lastcall': 40438,
+                 'running': False,
+                 'total': 38419,
+                 'valid': True,
+                 'wcet': 624},
+ '__divmodsi4_neg2': {'bcet': 11,
+                      'count': 23,
+                      'et': [],
+                      'fun': '__divmodsi4_neg2',
+                      'lastcall': 40384,
+                      'running': False,
+                      'total': 253,
+                      'valid': True,
+                      'wcet': 11},
+ '__negsi2': {'bcet': 11,
+              'count': 23,
+              'et': [],
+              'fun': '__negsi2',
+              'lastcall': 39794,
+              'running': False,
+              'total': 253,
+              'valid': True,
+              'wcet': 11},
+ '__udivmodsi4': {'bcet': 569,
+                  'count': 64,
+                  'et': [],
+                  'fun': '__udivmodsi4',
+                  'lastcall': 40448,
+                  'running': False,
+                  'total': 36416,
+                  'valid': True,
+                  'wcet': 569},
+ 'jpeg_fdct_islow': {'bcet': 7427,
+                     'count': 1,
+                     'et': [],
+                     'fun': 'jpeg_fdct_islow',
+                     'lastcall': 41037,
+                     'running': False,
+                     'total': 7427,
+                     'valid': True,
+                     'wcet': 7427},
+ 'main': {'bcet': 47696,
+          'count': 1,
+          'et': [],
+          'fun': 'main',
+          'lastcall': 790,
+          'running': False,
+          'total': 47696,
+          'valid': True,
+          'wcet': 47696}}
+Coverage by cycles:
+main                                      47,696   98.36%
+__divmodsi4                               38,419   79.23%
+__udivmodsi4                              36,416   75.10%
+jpeg_fdct_islow                            7,427   15.32%
+__divmodsi4_neg2                             253   0.52%
+__negsi2                                     253   0.52%
+__vectors                                      0   0.00%
+_exit                                          0   0.00%
+__udivmodsi4_ep                                0   0.00%
+__stop_program                                 0   0.00%
+_etext                                         0   0.00%
+__udivmodsi4_loop                              0   0.00%
+__trampolines_start                            0   0.00%
+__divmodsi4_exit                               0   0.00%
+__vector_9                                     0   0.00%
+__do_clear_bss                                 0   0.00%
+__stack                                        0   0.00%
+Total cycles: 48489
+Total time: 0.2s
