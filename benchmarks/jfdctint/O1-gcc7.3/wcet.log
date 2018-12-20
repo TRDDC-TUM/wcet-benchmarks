@@ -1,0 +1,161 @@
+Note:::::Martin Becker: Writing source-level information to sourceinfo.csv
+Note:main.elf::::Bound-T 4c5 for Atmel-AVR
+Note:main.elf::::This AVR device has a 16-bit SP = SPH:SPL.
+Note:main.elf::::File format assumed to be ELF
+Note:main.elf::::Segment 2 not loaded:Zero length in file
+Note:main.elf::::Loading DWARF info section.
+Note:main.elf::::DWARF debug info ends at End_Index without null entry.
+Warning:main.elf::::DWARF debug-info unit header version = 4, supported versions are 2 .. 3
+Warning:main.elf::::Skipping invalid DWARF compilation unit.
+Note:main.elf::::Loading DWARF types for compilation unit 1
+Note:main.elf::::Parsing DWARF symbols.
+Note:main.elf::::Entering DWARF compilation unit for [no name]
+Note:main.elf::::Duplicated symbol and value:Variable:MCUCSR:[all] => d800054
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
+Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
+Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
+Note:main.elf::::Duplicated symbol and value:Variable:ETIMSK:[all] => d80007D
+Note:main.elf::::Duplicated symbol and value:Variable:ETIFR:[all] => d80007C
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Program implies calling protocol GCC.
+Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
+Note:main.elf:loopinfo.txt:::Routine at 0000B4 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::jpeg_fdct_islow:[0000B4]:Root subprogram
+Note:main.elf::::Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::::Dynamism bounding iteration number 1
+Note:main.elf::jpeg_fdct_islow:[0000B4]:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::jpeg_fdct_islow:[0000B4]:Analysis for time is needed.
+Note:main.elf::jpeg_fdct_islow:[0000B4]:Control-flow analysis starts.
+Warning:main.elf::jpeg_fdct_islow:[0001DA]:Immediate octet 252 used signed = -4
+Warning:main.elf::jpeg_fdct_islow:[0001F4]:Large combined 16-bit literal 50399 taken as signed = -15137
+Warning:main.elf::jpeg_fdct_islow:[00020A]:Immediate octet 252 used signed = -4
+Warning:main.elf::jpeg_fdct_islow:[0002FC]:Immediate octet 252 used signed = -4
+Warning:main.elf::jpeg_fdct_islow:[000336]:Immediate octet 252 used signed = -4
+Warning:main.elf::jpeg_fdct_islow:[000366]:Immediate octet 252 used signed = -4
+Warning:main.elf::jpeg_fdct_islow:[000398]:Immediate octet 252 used signed = -4
+Warning:main.elf::jpeg_fdct_islow:[00046E]:Large combined 16-bit literal 65534 taken as signed = -2
+Warning:main.elf::jpeg_fdct_islow:[0004BE]:Immediate octet 192 used signed = -64
+Warning:main.elf::jpeg_fdct_islow:[0004F0]:Immediate octet 192 used signed = -64
+Warning:main.elf::jpeg_fdct_islow:[00055A]:Large combined 16-bit literal 44541 taken as signed = -20995
+Warning:main.elf::jpeg_fdct_islow:[000586]:Large combined 16-bit literal 62340 taken as signed = -3196
+Warning:main.elf::jpeg_fdct_islow:[0005C6]:Immediate octet 192 used signed = -64
+Warning:main.elf::jpeg_fdct_islow:[0005FE]:Immediate octet 192 used signed = -64
+Warning:main.elf::jpeg_fdct_islow:[00062C]:Immediate octet 192 used signed = -64
+Warning:main.elf::jpeg_fdct_islow:[00065C]:Immediate octet 192 used signed = -64
+Note:main.elf::jpeg_fdct_islow:[0000B4]:Control-flow analysis finished.
+Note:main.elf::jpeg_fdct_islow:[0000B4]:Dominator iterations 1 for 7 graph nodes.
+Note:main.elf::jpeg_fdct_islow:[0000B4]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:No execution bounds known yet.
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::jpeg_fdct_islow:[0000B4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000B6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000B8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000BA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000BC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000C0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000C4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000C6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000C8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000CA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000CC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000CE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000D0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000D2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000D4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000D6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000D8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000686]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000686]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000688]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000688]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00068A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00068A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00068C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00068C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00068E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00068E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000690]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000690]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000692]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000692]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000694]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000694]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000696]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000696]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000698]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000698]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00069A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00069A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00069C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00069C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00069E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00069E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0006A0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0006A0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0006A2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0006A2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0006A4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0006A4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0006A6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0006A6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0006A8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0006A8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0006AA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0006AA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0006AC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0006AC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Repeating constant propagation.
+Note:main.elf::jpeg_fdct_islow:[00022C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00022C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00022C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000262]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000262]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000262]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00029A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00029A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00029A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00032A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00032A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[00032A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000556]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000556]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000556]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0005BA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0005BA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0005BA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000650]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000650]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[000650]:Refine (Assignment) bounded a pointer.
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Repeating constant propagation.
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Maximum stack-height from constant propagation for SP:20
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Constant propagation changed nothing.
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Loop_Bound:main.elf::jpeg_fdct_islow:[0000FA-0003BE]:7
+Loop_Bound:main.elf::jpeg_fdct_islow:[0003E4-000684]:7
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Unused (# 1 = jpeg_fdct_islow at 0000B4) is FALSE
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Time_State for bounds # 1 defined as COMPUTABLE
+Note:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:Freezing bounds # 1
+Note:main.elf::::Target-specific additional analysis starts.
+Note:main.elf::::Generic worst-case path and time analysis starts.
+Wcet:main.elf::jpeg_fdct_islow:[0000B4-0006AE]:7427
+Note:main.elf::::Creating SLI file sourceinfo.csv.

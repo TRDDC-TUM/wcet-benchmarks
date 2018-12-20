@@ -1,0 +1,6 @@
+Subprogram "binary_search"
+  --loop On Line 84
+  loop that executes "ea"
+    Repeats 5 Times;
+  end loop;
+end "binary_search";

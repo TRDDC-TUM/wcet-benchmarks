@@ -1,0 +1,182 @@
+Note:::::Martin Becker: Writing source-level information to sourceinfo.csv
+Note:main.elf::::Bound-T 4c5 for Atmel-AVR
+Note:main.elf::::This AVR device has a 16-bit SP = SPH:SPL.
+Note:main.elf::::File format assumed to be ELF
+Note:main.elf::::Segment 3 not loaded:Zero length in file
+Note:main.elf::::Loading DWARF info section.
+Note:main.elf::::DWARF debug info ends at End_Index without null entry.
+Warning:main.elf::::DWARF debug-info unit header version = 4, supported versions are 2 .. 3
+Warning:main.elf::::Skipping invalid DWARF compilation unit.
+Note:main.elf::::Loading DWARF types for compilation unit 1
+Note:main.elf::::Parsing DWARF symbols.
+Note:main.elf::::Entering DWARF compilation unit for [no name]
+Note:main.elf::::Duplicated symbol and value:Variable:MCUCSR:[all] => d800054
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
+Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
+Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
+Note:main.elf::::Duplicated symbol and value:Variable:ETIMSK:[all] => d80007D
+Note:main.elf::::Duplicated symbol and value:Variable:ETIFR:[all] => d80007C
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Program implies calling protocol GCC.
+Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
+Note:main.elf:loopinfo.txt:::Routine at 0000CE classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:loopinfo.txt:::Routine at 0000F4 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::icrc:[0000F4]:Root subprogram
+Note:main.elf::::Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::::Dynamism bounding iteration number 1
+Note:main.elf::icrc:[0000F4]:Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::icrc:[0000F4]:Analysis for time is needed.
+Note:main.elf::icrc:[0000F4]:Control-flow analysis starts.
+Note:main.elf::icrc:[000182]:Call to existing subprogram # 1 = icrc1 at 0000CE
+Note:main.elf::icrc:[000182]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Warning:main.elf::icrc:[000196]:Large combined 16-bit literal 65024 taken as signed = -512
+Warning:main.elf::icrc:[0001B4]:Large combined 16-bit literal 65024 taken as signed = -512
+Warning:main.elf::icrc:[000212]:Large combined 16-bit literal 65008 taken as signed = -528
+Warning:main.elf::icrc:[000220]:Large combined 16-bit literal 65008 taken as signed = -528
+Warning:main.elf::icrc:[000234]:Large combined 16-bit literal 65008 taken as signed = -528
+Warning:main.elf::icrc:[000240]:Large combined 16-bit literal 65008 taken as signed = -528
+Warning:main.elf::icrc:[00024E]:Large combined 16-bit literal 65008 taken as signed = -528
+Warning:main.elf::icrc:[000260]:Large combined 16-bit literal 64752 taken as signed = -784
+Note:main.elf::icrc:[0000F4]:Control-flow analysis finished.
+Note:main.elf::icrc:[0000F4]:Dominator iterations 3 for 21 graph nodes.
+Note:main.elf::icrc:[0000F4]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::icrc1:[0000CE]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE]:Analysis for time is needed.
+Note:main.elf::icrc1:[0000CE]:Control-flow analysis starts.
+Note:main.elf::icrc1:[0000CE]:Control-flow analysis finished.
+Note:main.elf::icrc1:[0000CE]:Dominator iterations 1 for 6 graph nodes.
+Note:main.elf::icrc1:[0000CE]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::icrc1:[0000CE-0000F2]:No execution bounds known yet.
+Note:main.elf::icrc1:[0000CE-0000F2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-0000F2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-0000F2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-0000F2]:Repeating constant propagation.
+Note:main.elf::icrc1:[0000CE-0000F2]:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf::icrc1:[0000CE-0000F2]:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf::icrc1:[0000CE-0000F2]:Maximum stack-height from constant propagation for SP:0
+Note:main.elf::icrc1:[0000CE-0000F2]:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf::icrc1:[0000CE-0000F2]:Constant propagation changed nothing.
+Note:main.elf::icrc1:[0000CE-0000F2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-0000F2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-0000F2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-0000F2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000D6-0000F0]:Loop 1 exits only at its end.
+Note:main.elf::icrc1:[0000CE-0000F2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-0000F2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-0000F2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-0000F2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-0000F2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-0000F2]:Arithmetic analysis is not needed.
+Note:main.elf::icrc1:[0000CE-0000F2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-0000F2]:Time_State for bounds # 1 defined as COMPUTABLE
+Note:main.elf::icrc1:[0000CE-0000F2]:Freezing bounds # 1
+Note:main.elf::icrc:[0000F4-0002C2]:No execution bounds known yet.
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::icrc:[0000F4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0000F6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0000F8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0000FA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0000FC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0000FE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000100]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000102]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000104]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000106]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000108]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00010A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00010C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00010E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000110]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000112]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000114]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000116]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000118]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00011A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00011C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000182]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0000F4-0002C2]:Repeating constant propagation.
+Note:main.elf::icrc:[000122]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000122]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000122]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00012A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00012A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00012A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00017A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00017A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00017A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00018E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00018E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00018E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001A4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001A4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001A4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001CC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001CC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001CC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001F8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001F8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001F8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000206]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000206]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000206]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00020C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00020C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00020C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000218]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000218]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000218]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0000F4-0002C2]:Repeating constant propagation.
+Note:main.elf::icrc:[0000F4-0002C2]:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf::icrc:[0000F4-0002C2]:Final stack-height from constant propagation for SP:sh
+Note:main.elf::icrc:[0000F4-0002C2]:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf::icrc:[0000F4-0002C2]:Take-off stack-height in stack SP is constant for 1 of 1 calls.
+Note:main.elf::icrc:[0000F4-0002C2]:Constant propagation changed nothing.
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::icrc:[000174-0001CA]:Loop 1 exits only at its end.
+Note:main.elf::icrc:[00024A-00028C]:Loop 2 exits only at its end.
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Arithmetic analysis is not needed.
+Note:main.elf::icrc:[0000F4-0002C2]:Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::icrc:[0000F4-0002C2]:Time_State for bounds # 2 defined as COMPUTABLE
+Note:main.elf::icrc:[0000F4-0002C2]:Freezing bounds # 2
+Note:main.elf::::Target-specific additional analysis starts.
+Note:main.elf::::Generic worst-case path and time analysis starts.
+Wcet:main.elf::icrc1:[0000CE-0000F2]:106
+Wcet:main.elf::icrc:[0000F4-0002C2]:43953
+
+Details as requested by -show:
+
+1     icrc
+
+      Loop 1 :[000174-0001CA]
+         Exits at end only (bottom-test).
+         Repeat 255..255
+      Loop 2 :[00024A-00028C]
+         Exits at end only (bottom-test).
+         Repeat 41..41
+
+Note:main.elf::::Creating DOT file flowgraphs/cg_icrc_001.dot.
+Note:main.elf::::Unused (# 2 = icrc at 0000F4) is FALSE
+Note:main.elf::::Creating DOT file flowgraphs/fg_icrc1_002.dot.
+Note:main.elf::::Creating DOT file flowgraphs/fg_icrc_003.dot.
+Note:main.elf::::Creating SLI file sourceinfo.csv.

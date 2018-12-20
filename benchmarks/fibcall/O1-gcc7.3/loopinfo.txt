@@ -1,0 +1,6 @@
+Subprogram "fib"
+  -- loop On Line 52
+  loop that executes "b8"
+    Repeats 29 Times;
+  end loop;
+end "fib";

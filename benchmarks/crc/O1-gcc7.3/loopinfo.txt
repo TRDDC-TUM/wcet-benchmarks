@@ -1,0 +1,17 @@
+Subprogram "icrc1"
+  -- loop On Line 62
+  loop that executes "d6"
+    Repeats 8 Times;
+  end loop;
+end "icrc1";
+
+Subprogram "icrc"
+  --loop On Line 82
+  loop that calls "icrc1"
+    Repeats 256 Times;
+  end loop;
+  -- loop On Line 93
+  loop that executes "24a"
+    Repeats 42 Times;
+  end loop;
+end "icrc";

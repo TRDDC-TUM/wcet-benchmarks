@@ -1,0 +1,10 @@
+Subprogram "fdct"
+  --loop On Line 83
+  loop that executes "11a"
+    Repeats 8 Times;
+  end loop;
+  --loop On Line 161
+  loop that executes "47a"
+    Repeats 8 Times;
+  end loop;
+end "fdct";

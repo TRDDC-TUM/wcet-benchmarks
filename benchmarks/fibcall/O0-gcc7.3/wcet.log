@@ -1,0 +1,130 @@
+Note:::::Martin Becker: Writing source-level information to sourceinfo.csv
+Note:main.elf::::Bound-T 4c5 for Atmel-AVR
+Note:main.elf::::This AVR device has a 16-bit SP = SPH:SPL.
+Note:main.elf::::File format assumed to be ELF
+Note:main.elf::::No ELF section ".debug_loc" is present.
+Note:main.elf::::Loading DWARF info section.
+Note:main.elf::::DWARF debug info ends at End_Index without null entry.
+Warning:main.elf::::DWARF debug-info unit header version = 4, supported versions are 2 .. 3
+Warning:main.elf::::Skipping invalid DWARF compilation unit.
+Note:main.elf::::Loading DWARF types for compilation unit 1
+Note:main.elf::::Parsing DWARF symbols.
+Note:main.elf::::Entering DWARF compilation unit for [no name]
+Note:main.elf::::Duplicated symbol and value:Variable:MCUCSR:[all] => d800054
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
+Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
+Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
+Note:main.elf::::Duplicated symbol and value:Variable:ETIMSK:[all] => d80007D
+Note:main.elf::::Duplicated symbol and value:Variable:ETIFR:[all] => d80007C
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Program implies calling protocol GCC.
+Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
+Note:main.elf:loopinfo.txt:::Routine at 0000A4 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::fib:[0000A4]:Root subprogram
+Note:main.elf::::Unused (# 1 = fib at 0000A4) is FALSE
+Note:main.elf::::Dynamism bounding iteration number 1
+Note:main.elf::fib:[0000A4]:Unused (# 1 = fib at 0000A4) is FALSE
+Note:main.elf::fib:[0000A4]:Analysis for time is needed.
+Note:main.elf::fib:[0000A4]:Control-flow analysis starts.
+Note:main.elf::fib:[0000A4]:Control-flow analysis finished.
+Note:main.elf::fib:[0000A4]:Dominator iterations 1 for 5 graph nodes.
+Note:main.elf::fib:[0000A4]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::fib:[0000A4-00012E]:No execution bounds known yet.
+Note:main.elf::fib:[0000A4-00012E]:Unused (# 1 = fib at 0000A4) is FALSE
+Note:main.elf::fib:[0000A4-00012E]:Unused (# 1 = fib at 0000A4) is FALSE
+Note:main.elf::fib:[0000A4-00012E]:Unused (# 1 = fib at 0000A4) is FALSE
+Note:main.elf::fib:[0000A4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000A6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000A4-00012E]:Repeating constant propagation.
+Note:main.elf::fib:[0000B8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000B8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000B8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000C0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000C0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000C0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000C4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000C6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000CC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000CC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000CC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000FC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000FC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000FC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[000104]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[000104]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[000104]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[000108]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[000108]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[000108]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000D2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000D2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000D2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000D6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000D6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000D6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000DA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000DA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000DA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000DE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000DE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000DE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000E6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000E6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000E6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000EA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000EA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000EA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000EE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000EE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000EE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000F2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000F2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000F2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000F8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000F8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000F8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[000112]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[000112]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[000112]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[000116]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[000116]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[000116]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[00011A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[00011A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[00011A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::fib:[0000A4-00012E]:Repeating constant propagation.
+Note:main.elf::fib:[0000A4-00012E]:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf::fib:[0000A4-00012E]:Final stack-height from constant propagation for SP:sh
+Note:main.elf::fib:[0000A4-00012E]:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf::fib:[0000A4-00012E]:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf::fib:[0000A4-00012E]:Constant propagation changed nothing.
+Note:main.elf::fib:[0000A4-00012E]:Unused (# 1 = fib at 0000A4) is FALSE
+Note:main.elf::fib:[0000A4-00012E]:Unused (# 1 = fib at 0000A4) is FALSE
+Note:main.elf::fib:[0000A4-00012E]:Unused (# 1 = fib at 0000A4) is FALSE
+Note:main.elf::fib:[0000A4-00012E]:Unused (# 1 = fib at 0000A4) is FALSE
+Note:main.elf::fib:[0000A4-00012E]:Unused (# 1 = fib at 0000A4) is FALSE
+Note:main.elf::fib:[0000A4-00012E]:Unused (# 1 = fib at 0000A4) is FALSE
+Note:main.elf::fib:[0000A4-00012E]:Unused (# 1 = fib at 0000A4) is FALSE
+Note:main.elf::fib:[0000A4-00012E]:Unused (# 1 = fib at 0000A4) is FALSE
+Note:main.elf::fib:[0000A4-00012E]:Unused (# 1 = fib at 0000A4) is FALSE
+Loop_Bound:main.elf::fib:[0000D2-000110]:29
+Note:main.elf::fib:[0000A4-00012E]:Unused (# 1 = fib at 0000A4) is FALSE
+Note:main.elf::fib:[0000A4-00012E]:Unused (# 1 = fib at 0000A4) is FALSE
+Note:main.elf::fib:[0000A4-00012E]:Time_State for bounds # 1 defined as COMPUTABLE
+Note:main.elf::fib:[0000A4-00012E]:Freezing bounds # 1
+Note:main.elf::::Target-specific additional analysis starts.
+Note:main.elf::::Generic worst-case path and time analysis starts.
+Wcet:main.elf::fib:[0000A4-00012E]:1791
+
+Details as requested by -show:
+
+1     fib
+
+      Loop 1 :[0000D2-000110]
+         Repeat 0..29
+
+Note:main.elf::::Creating SLI file sourceinfo.csv.

@@ -1,0 +1,11 @@
+subprogram "jpeg_fdct_islow"
+  -- loop On Line 219
+  loop that executes "DA"
+    Repeats 8 Times;
+  end loop;
+  -- loop On Line 284
+  loop that executes "53E"
+    Repeats 8 Times;
+  end loop;
+
+end "jpeg_fdct_islow";

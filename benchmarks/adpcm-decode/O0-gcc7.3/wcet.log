@@ -1,0 +1,2453 @@
+Note:::::Martin Becker: Writing source-level information to sourceinfo.csv
+Note:main.elf::::Bound-T 4c5 for Atmel-AVR
+Note:main.elf::::This AVR device has a 16-bit SP = SPH:SPL.
+Note:main.elf::::File format assumed to be ELF
+Note:main.elf::::Segment 3 not loaded:Zero length in file
+Note:main.elf::::No ELF section ".debug_loc" is present.
+Note:main.elf::::Loading DWARF info section.
+Note:main.elf::::DWARF debug info ends at End_Index without null entry.
+Warning:main.elf::::DWARF debug-info unit header version = 4, supported versions are 2 .. 3
+Warning:main.elf::::Skipping invalid DWARF compilation unit.
+Note:main.elf::::Loading DWARF types for compilation unit 1
+Note:main.elf::::Parsing DWARF symbols.
+Note:main.elf::::Entering DWARF compilation unit for [no name]
+Note:main.elf::::Duplicated symbol and value:Variable:MCUCSR:[all] => d800054
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
+Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
+Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
+Note:main.elf::::Duplicated symbol and value:Variable:ETIMSK:[all] => d80007D
+Note:main.elf::::Duplicated symbol and value:Variable:ETIFR:[all] => d80007C
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Program implies calling protocol GCC.
+Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
+Note:main.elf:loopinfo.txt:::Routine at 000494 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:loopinfo.txt:::Routine at 001990 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:loopinfo.txt:::Routine at 0033BC classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:loopinfo.txt:::Routine at 003822 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:loopinfo.txt:::Routine at 004D2E classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:loopinfo.txt:::Routine at 004CFC classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:loopinfo.txt:::Routine at 003C16 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:loopinfo.txt:::Routine at 003CFE classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::decode:[001990]:Root subprogram
+Note:main.elf::::Unused (# 2 = decode at 001990) is FALSE
+Note:main.elf::::Dynamism bounding iteration number 1
+Note:main.elf::decode:[001990]:Unused (# 2 = decode at 001990) is FALSE
+Note:main.elf::decode:[001990]:Analysis for time is needed.
+Note:main.elf::decode:[001990]:Control-flow analysis starts.
+Note:main.elf::decode:[001A1E]:Call to existing subprogram # 3 = filtez at 0033BC
+Note:main.elf::decode:[001A1E]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001A7A]:Routine at 003616 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::decode:[001A7A]:Call to new subprogram # 9 = filtep at 003616
+Note:main.elf::decode:[001A7A]:Unused (# 9 = filtep at 003616) is FALSE
+Warning:main.elf::decode:[001B1A]:Large combined 16-bit literal 65184 taken as signed = -352
+Note:main.elf::decode:[001B5C]:Routine at 004C2C classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::decode:[001B5C]:Call to new subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::decode:[001B5C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001B92]:Call to existing subprogram # 5 = __ashrdi3 at 004D2E
+Note:main.elf::decode:[001B92]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Warning:main.elf::decode:[001BFA]:Large combined 16-bit literal 64992 taken as signed = -544
+Note:main.elf::decode:[001C40]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::decode:[001C40]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001C76]:Call to existing subprogram # 5 = __ashrdi3 at 004D2E
+Note:main.elf::decode:[001C76]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001CFA]:Routine at 003A5C classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::decode:[001CFA]:Call to new subprogram # 11 = logscl at 003A5C
+Note:main.elf::decode:[001CFA]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::decode:[001D2E]:Call to existing subprogram # 7 = scalel at 003C16
+Note:main.elf::decode:[001D2E]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[001D9A]:Call to existing subprogram # 8 = upzero at 003CFE
+Note:main.elf::decode:[001D9A]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[001E00]:Routine at 00402C classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::decode:[001E00]:Call to new subprogram # 12 = uppol2 at 00402C
+Note:main.elf::decode:[001E00]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[001E64]:Routine at 0044BE classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::decode:[001E64]:Call to new subprogram # 13 = uppol1 at 0044BE
+Note:main.elf::decode:[001E64]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[001F3C]:Call to existing subprogram # 3 = filtez at 0033BC
+Note:main.elf::decode:[001F3C]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001F98]:Call to existing subprogram # 9 = filtep at 003616
+Note:main.elf::decode:[001F98]:Unused (# 9 = filtep at 003616) is FALSE
+Warning:main.elf::decode:[002034]:Large combined 16-bit literal 64144 taken as signed = -1392
+Note:main.elf::decode:[0020BA]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::decode:[0020BA]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[0020F0]:Call to existing subprogram # 5 = __ashrdi3 at 004D2E
+Note:main.elf::decode:[0020F0]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[00213C]:Routine at 0047DC classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::decode:[00213C]:Call to new subprogram # 14 = logsch at 0047DC
+Note:main.elf::decode:[00213C]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::decode:[002170]:Call to existing subprogram # 7 = scalel at 003C16
+Note:main.elf::decode:[002170]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[0021DC]:Call to existing subprogram # 8 = upzero at 003CFE
+Note:main.elf::decode:[0021DC]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[002242]:Call to existing subprogram # 12 = uppol2 at 00402C
+Note:main.elf::decode:[002242]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[0022A6]:Call to existing subprogram # 13 = uppol1 at 0044BE
+Note:main.elf::decode:[0022A6]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[0024E4]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::decode:[0024E4]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[0025E6]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::decode:[0025E6]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[0026F8]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::decode:[0026F8]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[00273C]:Routine at 004D68 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::decode:[00273C]:Call to new subprogram # 15 = __adddi3 at 004D68
+Note:main.elf::decode:[00273C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Warning:main.elf::decode:[00278A]:Large combined 16-bit literal 65409 taken as signed = -127
+Warning:main.elf::decode:[002794]:Large combined 16-bit literal 65408 taken as signed = -128
+Warning:main.elf::decode:[00279E]:Large combined 16-bit literal 65407 taken as signed = -129
+Warning:main.elf::decode:[0027A8]:Large combined 16-bit literal 65406 taken as signed = -130
+Warning:main.elf::decode:[0027C8]:Large combined 16-bit literal 65405 taken as signed = -131
+Warning:main.elf::decode:[0027E0]:Large combined 16-bit literal 65401 taken as signed = -135
+Warning:main.elf::decode:[0027EA]:Large combined 16-bit literal 65400 taken as signed = -136
+Warning:main.elf::decode:[0027F4]:Large combined 16-bit literal 65399 taken as signed = -137
+Warning:main.elf::decode:[0027FE]:Large combined 16-bit literal 65398 taken as signed = -138
+Warning:main.elf::decode:[002808]:Large combined 16-bit literal 65405 taken as signed = -131
+Warning:main.elf::decode:[002812]:Large combined 16-bit literal 65404 taken as signed = -132
+Warning:main.elf::decode:[00281C]:Large combined 16-bit literal 65403 taken as signed = -133
+Warning:main.elf::decode:[002826]:Large combined 16-bit literal 65402 taken as signed = -134
+Warning:main.elf::decode:[002830]:Large combined 16-bit literal 65401 taken as signed = -135
+Warning:main.elf::decode:[00283A]:Large combined 16-bit literal 65400 taken as signed = -136
+Warning:main.elf::decode:[002844]:Large combined 16-bit literal 65399 taken as signed = -137
+Warning:main.elf::decode:[00284E]:Large combined 16-bit literal 65398 taken as signed = -138
+Warning:main.elf::decode:[002870]:Large combined 16-bit literal 65409 taken as signed = -127
+Warning:main.elf::decode:[00287A]:Large combined 16-bit literal 65408 taken as signed = -128
+Warning:main.elf::decode:[002884]:Large combined 16-bit literal 65407 taken as signed = -129
+Warning:main.elf::decode:[00288E]:Large combined 16-bit literal 65406 taken as signed = -130
+Note:main.elf::decode:[002898]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::decode:[002898]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[0028DC]:Call to existing subprogram # 15 = __adddi3 at 004D68
+Note:main.elf::decode:[0028DC]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Warning:main.elf::decode:[002936]:Large combined 16-bit literal 65397 taken as signed = -139
+Warning:main.elf::decode:[00294E]:Large combined 16-bit literal 65393 taken as signed = -143
+Warning:main.elf::decode:[002958]:Large combined 16-bit literal 65392 taken as signed = -144
+Warning:main.elf::decode:[002962]:Large combined 16-bit literal 65391 taken as signed = -145
+Warning:main.elf::decode:[00296C]:Large combined 16-bit literal 65390 taken as signed = -146
+Warning:main.elf::decode:[00298C]:Large combined 16-bit literal 65389 taken as signed = -147
+Warning:main.elf::decode:[0029A4]:Large combined 16-bit literal 65385 taken as signed = -151
+Warning:main.elf::decode:[0029AE]:Large combined 16-bit literal 65384 taken as signed = -152
+Warning:main.elf::decode:[0029B8]:Large combined 16-bit literal 65383 taken as signed = -153
+Warning:main.elf::decode:[0029C2]:Large combined 16-bit literal 65382 taken as signed = -154
+Warning:main.elf::decode:[0029CC]:Large combined 16-bit literal 65389 taken as signed = -147
+Warning:main.elf::decode:[0029D6]:Large combined 16-bit literal 65388 taken as signed = -148
+Warning:main.elf::decode:[0029E0]:Large combined 16-bit literal 65387 taken as signed = -149
+Warning:main.elf::decode:[0029EA]:Large combined 16-bit literal 65386 taken as signed = -150
+Warning:main.elf::decode:[0029F4]:Large combined 16-bit literal 65385 taken as signed = -151
+Warning:main.elf::decode:[0029FE]:Large combined 16-bit literal 65384 taken as signed = -152
+Warning:main.elf::decode:[002A08]:Large combined 16-bit literal 65383 taken as signed = -153
+Warning:main.elf::decode:[002A12]:Large combined 16-bit literal 65382 taken as signed = -154
+Warning:main.elf::decode:[002A1C]:Large combined 16-bit literal 65397 taken as signed = -139
+Warning:main.elf::decode:[002A26]:Large combined 16-bit literal 65396 taken as signed = -140
+Warning:main.elf::decode:[002A30]:Large combined 16-bit literal 65395 taken as signed = -141
+Warning:main.elf::decode:[002A3A]:Large combined 16-bit literal 65394 taken as signed = -142
+Warning:main.elf::decode:[002A44]:Large combined 16-bit literal 65393 taken as signed = -143
+Warning:main.elf::decode:[002A4E]:Large combined 16-bit literal 65392 taken as signed = -144
+Warning:main.elf::decode:[002A58]:Large combined 16-bit literal 65391 taken as signed = -145
+Warning:main.elf::decode:[002A62]:Large combined 16-bit literal 65390 taken as signed = -146
+Note:main.elf::decode:[002A6C]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::decode:[002A6C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[002AB0]:Call to existing subprogram # 15 = __adddi3 at 004D68
+Note:main.elf::decode:[002AB0]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Warning:main.elf::decode:[002AE2]:Large combined 16-bit literal 65381 taken as signed = -155
+Warning:main.elf::decode:[002AFA]:Large combined 16-bit literal 65377 taken as signed = -159
+Warning:main.elf::decode:[002B04]:Large combined 16-bit literal 65376 taken as signed = -160
+Warning:main.elf::decode:[002B0E]:Large combined 16-bit literal 65375 taken as signed = -161
+Warning:main.elf::decode:[002B18]:Large combined 16-bit literal 65374 taken as signed = -162
+Warning:main.elf::decode:[002B28]:Large combined 16-bit literal 65532 taken as signed = -4
+Warning:main.elf::decode:[002B3A]:Large combined 16-bit literal 65373 taken as signed = -163
+Warning:main.elf::decode:[002B52]:Large combined 16-bit literal 65369 taken as signed = -167
+Warning:main.elf::decode:[002B5C]:Large combined 16-bit literal 65368 taken as signed = -168
+Warning:main.elf::decode:[002B66]:Large combined 16-bit literal 65367 taken as signed = -169
+Warning:main.elf::decode:[002B70]:Large combined 16-bit literal 65366 taken as signed = -170
+Warning:main.elf::decode:[002B7A]:Large combined 16-bit literal 65373 taken as signed = -163
+Warning:main.elf::decode:[002B84]:Large combined 16-bit literal 65372 taken as signed = -164
+Warning:main.elf::decode:[002B8E]:Large combined 16-bit literal 65371 taken as signed = -165
+Warning:main.elf::decode:[002B98]:Large combined 16-bit literal 65370 taken as signed = -166
+Warning:main.elf::decode:[002BA2]:Large combined 16-bit literal 65369 taken as signed = -167
+Warning:main.elf::decode:[002BAC]:Large combined 16-bit literal 65368 taken as signed = -168
+Warning:main.elf::decode:[002BB6]:Large combined 16-bit literal 65367 taken as signed = -169
+Warning:main.elf::decode:[002BC0]:Large combined 16-bit literal 65366 taken as signed = -170
+Warning:main.elf::decode:[002BCA]:Large combined 16-bit literal 65381 taken as signed = -155
+Warning:main.elf::decode:[002BD4]:Large combined 16-bit literal 65380 taken as signed = -156
+Warning:main.elf::decode:[002BDE]:Large combined 16-bit literal 65379 taken as signed = -157
+Warning:main.elf::decode:[002BE8]:Large combined 16-bit literal 65378 taken as signed = -158
+Warning:main.elf::decode:[002BF2]:Large combined 16-bit literal 65377 taken as signed = -159
+Warning:main.elf::decode:[002BFC]:Large combined 16-bit literal 65376 taken as signed = -160
+Warning:main.elf::decode:[002C06]:Large combined 16-bit literal 65375 taken as signed = -161
+Warning:main.elf::decode:[002C10]:Large combined 16-bit literal 65374 taken as signed = -162
+Note:main.elf::decode:[002C1A]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::decode:[002C1A]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[002C5E]:Call to existing subprogram # 15 = __adddi3 at 004D68
+Note:main.elf::decode:[002C5E]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[002C94]:Call to existing subprogram # 5 = __ashrdi3 at 004D2E
+Note:main.elf::decode:[002C94]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[002CCE]:Call to existing subprogram # 5 = __ashrdi3 at 004D2E
+Note:main.elf::decode:[002CCE]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Warning:main.elf::decode:[002DDA]:Large combined 16-bit literal 65366 taken as signed = -170
+Note:main.elf::decode:[001990]:Control-flow analysis finished.
+Note:main.elf::decode:[001990]:Dominator iterations 1 for 73 graph nodes.
+Note:main.elf::decode:[001990]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::filtez:[0033BC]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::filtez:[0033BC]:Analysis for time is needed.
+Note:main.elf::filtez:[0033BC]:Control-flow analysis starts.
+Note:main.elf::filtez:[003470]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::filtez:[003470]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Warning:main.elf::filtez:[0034AC]:Large combined 16-bit literal 65532 taken as signed = -4
+Warning:main.elf::filtez:[0034DC]:Large combined 16-bit literal 65532 taken as signed = -4
+Note:main.elf::filtez:[003526]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::filtez:[003526]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtez:[00356A]:Call to existing subprogram # 15 = __adddi3 at 004D68
+Note:main.elf::filtez:[00356A]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtez:[0035C8]:Call to existing subprogram # 5 = __ashrdi3 at 004D2E
+Note:main.elf::filtez:[0035C8]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtez:[0033BC]:Control-flow analysis finished.
+Note:main.elf::filtez:[0033BC]:Dominator iterations 1 for 12 graph nodes.
+Note:main.elf::filtez:[0033BC]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::filtep:[003616]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::filtep:[003616]:Analysis for time is needed.
+Note:main.elf::filtep:[003616]:Control-flow analysis starts.
+Note:main.elf::filtep:[0036D2]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::filtep:[0036D2]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[00375A]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::filtep:[00375A]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[00379E]:Call to existing subprogram # 15 = __adddi3 at 004D68
+Note:main.elf::filtep:[00379E]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtep:[0037D4]:Call to existing subprogram # 5 = __ashrdi3 at 004D2E
+Note:main.elf::filtep:[0037D4]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtep:[003616]:Control-flow analysis finished.
+Note:main.elf::filtep:[003616]:Dominator iterations 1 for 9 graph nodes.
+Note:main.elf::filtep:[003616]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::logscl:[003A5C]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::logscl:[003A5C]:Analysis for time is needed.
+Note:main.elf::logscl:[003A5C]:Control-flow analysis starts.
+Note:main.elf::logscl:[003ADE]:Call to existing subprogram # 6 = __ashldi3 at 004CFC
+Note:main.elf::logscl:[003ADE]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logscl:[003B22]:Routine at 004D92 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::logscl:[003B22]:Call to new subprogram # 16 = __subdi3 at 004D92
+Note:main.elf::logscl:[003B22]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logscl:[003B48]:Call to existing subprogram # 5 = __ashrdi3 at 004D2E
+Note:main.elf::logscl:[003B48]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Warning:main.elf::logscl:[003B84]:Large combined 16-bit literal 64736 taken as signed = -800
+Note:main.elf::logscl:[003A5C]:Control-flow analysis finished.
+Note:main.elf::logscl:[003A5C]:Dominator iterations 1 for 11 graph nodes.
+Note:main.elf::logscl:[003A5C]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::scalel:[003C16]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::scalel:[003C16]:Analysis for time is needed.
+Note:main.elf::scalel:[003C16]:Control-flow analysis starts.
+Warning:main.elf::scalel:[003C90]:Large combined 16-bit literal 64640 taken as signed = -896
+Warning:main.elf::scalel:[003CAE]:Large combined 16-bit literal 65535 taken as signed = -1
+Note:main.elf::scalel:[003C16]:Control-flow analysis finished.
+Note:main.elf::scalel:[003C16]:Dominator iterations 1 for 8 graph nodes.
+Note:main.elf::scalel:[003C16]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::upzero:[003CFE]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::upzero:[003CFE]:Analysis for time is needed.
+Note:main.elf::upzero:[003CFE]:Control-flow analysis starts.
+Note:main.elf::upzero:[003D82]:Routine at 004C16 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::upzero:[003D82]:Call to new subprogram # 17 = __muluhisi3 at 004C16
+Note:main.elf::upzero:[003D82]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::upzero:[003E5C]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::upzero:[003E5C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::upzero:[003E92]:Routine at 004DB6 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::upzero:[003E92]:Call to new subprogram # 18 = __cmpdi2_s8 at 004DB6
+Note:main.elf::upzero:[003E92]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Warning:main.elf::upzero:[003EAA]:Large combined 16-bit literal 65408 taken as signed = -128
+Warning:main.elf::upzero:[003EAE]:Large combined 16-bit literal 65535 taken as signed = -1
+Note:main.elf::upzero:[003EDE]:Call to existing subprogram # 17 = __muluhisi3 at 004C16
+Note:main.elf::upzero:[003EDE]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Warning:main.elf::upzero:[003F60]:Large combined 16-bit literal 65516 taken as signed = -20
+Warning:main.elf::upzero:[003F82]:Large combined 16-bit literal 65520 taken as signed = -16
+Warning:main.elf::upzero:[003FA4]:Large combined 16-bit literal 65524 taken as signed = -12
+Warning:main.elf::upzero:[003FC6]:Large combined 16-bit literal 65532 taken as signed = -4
+Note:main.elf::upzero:[003CFE]:Control-flow analysis finished.
+Note:main.elf::upzero:[003CFE]:Dominator iterations 2 for 24 graph nodes.
+Note:main.elf::upzero:[003CFE]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::uppol2:[00402C]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::uppol2:[00402C]:Analysis for time is needed.
+Note:main.elf::uppol2:[00402C]:Control-flow analysis starts.
+Note:main.elf::uppol2:[0040B0]:Call to existing subprogram # 6 = __ashldi3 at 004CFC
+Note:main.elf::uppol2:[0040B0]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[004124]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::uppol2:[004124]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00415A]:Call to existing subprogram # 18 = __cmpdi2_s8 at 004DB6
+Note:main.elf::uppol2:[00415A]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol2:[004170]:Routine at 004CDC classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::uppol2:[004170]:Call to new subprogram # 19 = __negdi2 at 004CDC
+Note:main.elf::uppol2:[004170]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::uppol2:[0041A6]:Call to existing subprogram # 5 = __ashrdi3 at 004D2E
+Note:main.elf::uppol2:[0041A6]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol2:[004256]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::uppol2:[004256]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00428C]:Call to existing subprogram # 18 = __cmpdi2_s8 at 004DB6
+Note:main.elf::uppol2:[00428C]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Warning:main.elf::uppol2:[0042A2]:Large combined 16-bit literal 65408 taken as signed = -128
+Note:main.elf::uppol2:[0042E6]:Routine at 004D7A classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::uppol2:[0042E6]:Call to new subprogram # 20 = __adddi3_s8 at 004D7A
+Note:main.elf::uppol2:[0042E6]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::uppol2:[004380]:Call to existing subprogram # 6 = __ashldi3 at 004CFC
+Note:main.elf::uppol2:[004380]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[0043E4]:Call to existing subprogram # 16 = __subdi3 at 004D92
+Note:main.elf::uppol2:[0043E4]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol2:[00440A]:Call to existing subprogram # 5 = __ashrdi3 at 004D2E
+Note:main.elf::uppol2:[00440A]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Warning:main.elf::uppol2:[00446E]:Large combined 16-bit literal 53248 taken as signed = -12288
+Warning:main.elf::uppol2:[004472]:Large combined 16-bit literal 65535 taken as signed = -1
+Warning:main.elf::uppol2:[00448A]:Large combined 16-bit literal 65460 taken as signed = -76
+Note:main.elf::uppol2:[00402C]:Control-flow analysis finished.
+Note:main.elf::uppol2:[00402C]:Dominator iterations 2 for 32 graph nodes.
+Note:main.elf::uppol2:[00402C]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::uppol1:[0044BE]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::uppol1:[0044BE]:Analysis for time is needed.
+Note:main.elf::uppol1:[0044BE]:Control-flow analysis starts.
+Note:main.elf::uppol1:[004556]:Call to existing subprogram # 6 = __ashldi3 at 004CFC
+Note:main.elf::uppol1:[004556]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[00459A]:Call to existing subprogram # 16 = __subdi3 at 004D92
+Note:main.elf::uppol1:[00459A]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol1:[0045C0]:Call to existing subprogram # 6 = __ashldi3 at 004CFC
+Note:main.elf::uppol1:[0045C0]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[0045FC]:Call to existing subprogram # 15 = __adddi3 at 004D68
+Note:main.elf::uppol1:[0045FC]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::uppol1:[004622]:Call to existing subprogram # 5 = __ashrdi3 at 004D2E
+Note:main.elf::uppol1:[004622]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol1:[004696]:Call to existing subprogram # 10 = __muldi3 at 004C2C
+Note:main.elf::uppol1:[004696]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol1:[0046CC]:Call to existing subprogram # 18 = __cmpdi2_s8 at 004DB6
+Note:main.elf::uppol1:[0046CC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Warning:main.elf::uppol1:[0046DA]:Large combined 16-bit literal 65344 taken as signed = -192
+Warning:main.elf::uppol1:[0047A8]:Large combined 16-bit literal 65472 taken as signed = -64
+Note:main.elf::uppol1:[0044BE]:Control-flow analysis finished.
+Note:main.elf::uppol1:[0044BE]:Dominator iterations 1 for 22 graph nodes.
+Note:main.elf::uppol1:[0044BE]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::logsch:[0047DC]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::logsch:[0047DC]:Analysis for time is needed.
+Note:main.elf::logsch:[0047DC]:Control-flow analysis starts.
+Note:main.elf::logsch:[00485E]:Call to existing subprogram # 6 = __ashldi3 at 004CFC
+Note:main.elf::logsch:[00485E]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logsch:[0048A2]:Call to existing subprogram # 16 = __subdi3 at 004D92
+Note:main.elf::logsch:[0048A2]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logsch:[0048C8]:Call to existing subprogram # 5 = __ashrdi3 at 004D2E
+Note:main.elf::logsch:[0048C8]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Warning:main.elf::logsch:[0048F0]:Large combined 16-bit literal 64128 taken as signed = -1408
+Note:main.elf::logsch:[0047DC]:Control-flow analysis finished.
+Note:main.elf::logsch:[0047DC]:Dominator iterations 1 for 11 graph nodes.
+Note:main.elf::logsch:[0047DC]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::__muldi3:[004C2C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::__muldi3:[004C2C]:Analysis for time is needed.
+Note:main.elf::__muldi3:[004C2C]:Control-flow analysis starts.
+Note:main.elf::__muldi3:[004C6C]:Routine at 004E12 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::__muldi3:[004C6C]:Call to new subprogram # 21 = __umulhisi3 at 004E12
+Note:main.elf::__muldi3:[004C6C]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C76]:Call to existing subprogram # 21 = __umulhisi3 at 004E12
+Note:main.elf::__muldi3:[004C76]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C82]:Routine at 004CCA classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::__muldi3:[004C82]:Call to new subprogram # 22 = __muldi3_6 at 004CCA
+Note:main.elf::__muldi3:[004C82]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004C8C]:Call to existing subprogram # 21 = __umulhisi3 at 004E12
+Note:main.elf::__muldi3:[004C8C]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C9C]:Call to existing subprogram # 22 = __muldi3_6 at 004CCA
+Note:main.elf::__muldi3:[004C9C]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004CA4]:Call to existing subprogram # 21 = __umulhisi3 at 004E12
+Note:main.elf::__muldi3:[004CA4]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004CB2]:Call to existing subprogram # 21 = __umulhisi3 at 004E12
+Note:main.elf::__muldi3:[004CB2]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C]:Control-flow analysis finished.
+Note:main.elf::__muldi3:[004C2C]:Dominator iterations 1 for 15 graph nodes.
+Note:main.elf::__muldi3:[004C2C]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::__ashrdi3:[004D2E]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::__ashrdi3:[004D2E]:Analysis for time is needed.
+Note:main.elf::__ashrdi3:[004D2E]:Control-flow analysis starts.
+Note:main.elf::__ashrdi3:[004D2E]:Control-flow analysis finished.
+Note:main.elf::__ashrdi3:[004D2E]:Dominator iterations 1 for 8 graph nodes.
+Note:main.elf::__ashrdi3:[004D2E]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::__adddi3:[004D68]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::__adddi3:[004D68]:Analysis for time is needed.
+Note:main.elf::__adddi3:[004D68]:Control-flow analysis starts.
+Note:main.elf::__adddi3:[004D68]:Control-flow analysis finished.
+Note:main.elf::__adddi3:[004D68]:Dominator iterations 0 for 1 graph nodes.
+Note:main.elf::__adddi3:[004D68]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::__muluhisi3:[004C16]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::__muluhisi3:[004C16]:Analysis for time is needed.
+Note:main.elf::__muluhisi3:[004C16]:Control-flow analysis starts.
+Note:main.elf::__muluhisi3:[004C16]:Call to existing subprogram # 21 = __umulhisi3 at 004E12
+Note:main.elf::__muluhisi3:[004C16]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muluhisi3:[004C16]:Control-flow analysis finished.
+Note:main.elf::__muluhisi3:[004C16]:Dominator iterations 1 for 3 graph nodes.
+Note:main.elf::__muluhisi3:[004C16]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::__muldi3_6:[004CCA]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3_6:[004CCA]:Analysis for time is needed.
+Note:main.elf::__muldi3_6:[004CCA]:Control-flow analysis starts.
+Note:main.elf::__muldi3_6:[004CCA]:Call to existing subprogram # 21 = __umulhisi3 at 004E12
+Note:main.elf::__muldi3_6:[004CCA]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3_6:[004CCA]:Control-flow analysis finished.
+Note:main.elf::__muldi3_6:[004CCA]:Dominator iterations 1 for 5 graph nodes.
+Note:main.elf::__muldi3_6:[004CCA]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::__negdi2:[004CDC]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::__negdi2:[004CDC]:Analysis for time is needed.
+Note:main.elf::__negdi2:[004CDC]:Control-flow analysis starts.
+Note:main.elf::__negdi2:[004CDC]:Control-flow analysis finished.
+Note:main.elf::__negdi2:[004CDC]:Dominator iterations 0 for 1 graph nodes.
+Note:main.elf::__negdi2:[004CDC]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::__ashldi3:[004CFC]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::__ashldi3:[004CFC]:Analysis for time is needed.
+Note:main.elf::__ashldi3:[004CFC]:Control-flow analysis starts.
+Note:main.elf::__ashldi3:[004CFC]:Control-flow analysis finished.
+Note:main.elf::__ashldi3:[004CFC]:Dominator iterations 1 for 6 graph nodes.
+Note:main.elf::__ashldi3:[004CFC]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::__adddi3_s8:[004D7A]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::__adddi3_s8:[004D7A]:Analysis for time is needed.
+Note:main.elf::__adddi3_s8:[004D7A]:Control-flow analysis starts.
+Note:main.elf::__adddi3_s8:[004D7A]:Control-flow analysis finished.
+Note:main.elf::__adddi3_s8:[004D7A]:Dominator iterations 1 for 3 graph nodes.
+Note:main.elf::__adddi3_s8:[004D7A]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::__subdi3:[004D92]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::__subdi3:[004D92]:Analysis for time is needed.
+Note:main.elf::__subdi3:[004D92]:Control-flow analysis starts.
+Note:main.elf::__subdi3:[004D92]:Control-flow analysis finished.
+Note:main.elf::__subdi3:[004D92]:Dominator iterations 0 for 1 graph nodes.
+Note:main.elf::__subdi3:[004D92]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::__cmpdi2_s8:[004DB6]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::__cmpdi2_s8:[004DB6]:Analysis for time is needed.
+Note:main.elf::__cmpdi2_s8:[004DB6]:Control-flow analysis starts.
+Note:main.elf::__cmpdi2_s8:[004DB6]:Control-flow analysis finished.
+Note:main.elf::__cmpdi2_s8:[004DB6]:Dominator iterations 1 for 3 graph nodes.
+Note:main.elf::__cmpdi2_s8:[004DB6]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::__umulhisi3:[004E12]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__umulhisi3:[004E12]:Analysis for time is needed.
+Note:main.elf::__umulhisi3:[004E12]:Control-flow analysis starts.
+Note:main.elf::__umulhisi3:[004E12]:Control-flow analysis finished.
+Note:main.elf::__umulhisi3:[004E12]:Dominator iterations 0 for 1 graph nodes.
+Note:main.elf::__umulhisi3:[004E12]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::scalel:[003C16-003CFC]:No execution bounds known yet.
+Note:main.elf::scalel:[003C16-003CFC]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::scalel:[003C16-003CFC]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::scalel:[003C16-003CFC]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::scalel:[003C16]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C18]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C16-003CFC]:Repeating constant propagation.
+Note:main.elf::scalel:[003C2A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C2A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C2A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C2E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C2E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C2E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C32]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C32]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C32]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C36]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C36]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C36]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C3A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C3A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C3A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C3E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C3E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C3E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C5A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C5A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C5A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C5E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C5E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C5E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C62]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C62]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C62]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C66]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C66]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C66]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C7C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C7C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C7C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C80]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C80]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C80]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C84]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C84]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C84]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C9E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C9E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C9E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003CA2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003CA2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003CA2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003CC0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003CC0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003CC0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003CC4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003CC4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003CC4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003CC8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003CC8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003CC8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003CCC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003CCC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003CCC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::scalel:[003C16-003CFC]:Repeating constant propagation.
+Note:main.elf::scalel:[003C16-003CFC]:Repeating constant propagation.
+Note:main.elf::scalel:[003C16-003CFC]:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf::scalel:[003C16-003CFC]:Final stack-height from constant propagation for SP:sh
+Note:main.elf::scalel:[003C16-003CFC]:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf::scalel:[003C16-003CFC]:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf::scalel:[003C16-003CFC]:Constant propagation changed nothing.
+Note:main.elf::scalel:[003C16-003CFC]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::scalel:[003C16-003CFC]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::scalel:[003C16-003CFC]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::scalel:[003C16-003CFC]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::scalel:[003C46-003C50]:Loop 1 exits only at its end.
+Note:main.elf::scalel:[003C6E-003C78]:Loop 2 exits only at its end.
+Note:main.elf::scalel:[003C16-003CFC]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::scalel:[003C16-003CFC]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::scalel:[003C16-003CFC]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::scalel:[003C16-003CFC]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::scalel:[003C16-003CFC]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::scalel:[003C16-003CFC]:Arithmetic analysis is not needed.
+Note:main.elf::scalel:[003C16-003CFC]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::scalel:[003C16-003CFC]:Time_State for bounds # 1 defined as COMPUTABLE
+Note:main.elf::scalel:[003C16-003CFC]:Freezing bounds # 1
+Note:main.elf::__negdi2:[004CDC-004CFA]:No execution bounds known yet.
+Note:main.elf::__negdi2:[004CDC-004CFA]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::__negdi2:[004CDC-004CFA]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::__negdi2:[004CDC-004CFA]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::__negdi2:[004CDC-004CFA]:Repeating constant propagation.
+Note:main.elf::__negdi2:[004CDC-004CFA]:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf::__negdi2:[004CDC-004CFA]:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf::__negdi2:[004CDC-004CFA]:Maximum stack-height from constant propagation for SP:0
+Note:main.elf::__negdi2:[004CDC-004CFA]:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf::__negdi2:[004CDC-004CFA]:Constant propagation changed nothing.
+Note:main.elf::__negdi2:[004CDC-004CFA]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::__negdi2:[004CDC-004CFA]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::__negdi2:[004CDC-004CFA]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::__negdi2:[004CDC-004CFA]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::__negdi2:[004CDC-004CFA]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::__negdi2:[004CDC-004CFA]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::__negdi2:[004CDC-004CFA]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::__negdi2:[004CDC-004CFA]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::__negdi2:[004CDC-004CFA]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::__negdi2:[004CDC-004CFA]:Arithmetic analysis is not needed.
+Note:main.elf::__negdi2:[004CDC-004CFA]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::__negdi2:[004CDC-004CFA]:Time_State for bounds # 2 defined as COMPUTABLE
+Note:main.elf::__negdi2:[004CDC-004CFA]:Freezing bounds # 2
+Note:main.elf::__ashldi3:[004CFC-004D2C]:No execution bounds known yet.
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Repeating constant propagation.
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Maximum stack-height from constant propagation for SP:0
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Constant propagation changed nothing.
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Arithmetic analysis is not needed.
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Time_State for bounds # 3 defined as COMPUTABLE
+Note:main.elf::__ashldi3:[004CFC-004D2C]:Freezing bounds # 3
+Note:main.elf::__ashrdi3:[004D2E-004D66]:No execution bounds known yet.
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Repeating constant propagation.
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Maximum stack-height from constant propagation for SP:0
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Constant propagation changed nothing.
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Arithmetic analysis is not needed.
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Time_State for bounds # 4 defined as COMPUTABLE
+Note:main.elf::__ashrdi3:[004D2E-004D66]:Freezing bounds # 4
+Note:main.elf::__adddi3:[004D68-004D78]:No execution bounds known yet.
+Note:main.elf::__adddi3:[004D68-004D78]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::__adddi3:[004D68-004D78]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::__adddi3:[004D68-004D78]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::__adddi3:[004D68-004D78]:Repeating constant propagation.
+Note:main.elf::__adddi3:[004D68-004D78]:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf::__adddi3:[004D68-004D78]:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf::__adddi3:[004D68-004D78]:Maximum stack-height from constant propagation for SP:0
+Note:main.elf::__adddi3:[004D68-004D78]:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf::__adddi3:[004D68-004D78]:Constant propagation changed nothing.
+Note:main.elf::__adddi3:[004D68-004D78]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::__adddi3:[004D68-004D78]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::__adddi3:[004D68-004D78]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::__adddi3:[004D68-004D78]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::__adddi3:[004D68-004D78]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::__adddi3:[004D68-004D78]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::__adddi3:[004D68-004D78]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::__adddi3:[004D68-004D78]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::__adddi3:[004D68-004D78]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::__adddi3:[004D68-004D78]:Arithmetic analysis is not needed.
+Note:main.elf::__adddi3:[004D68-004D78]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::__adddi3:[004D68-004D78]:Time_State for bounds # 5 defined as COMPUTABLE
+Note:main.elf::__adddi3:[004D68-004D78]:Freezing bounds # 5
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:No execution bounds known yet.
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Repeating constant propagation.
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Maximum stack-height from constant propagation for SP:0
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Constant propagation changed nothing.
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Arithmetic analysis is not needed.
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Time_State for bounds # 6 defined as COMPUTABLE
+Note:main.elf::__adddi3_s8:[004D7A-004D90]:Freezing bounds # 6
+Note:main.elf::__subdi3:[004D92-004DA2]:No execution bounds known yet.
+Note:main.elf::__subdi3:[004D92-004DA2]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::__subdi3:[004D92-004DA2]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::__subdi3:[004D92-004DA2]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::__subdi3:[004D92-004DA2]:Repeating constant propagation.
+Note:main.elf::__subdi3:[004D92-004DA2]:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf::__subdi3:[004D92-004DA2]:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf::__subdi3:[004D92-004DA2]:Maximum stack-height from constant propagation for SP:0
+Note:main.elf::__subdi3:[004D92-004DA2]:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf::__subdi3:[004D92-004DA2]:Constant propagation changed nothing.
+Note:main.elf::__subdi3:[004D92-004DA2]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::__subdi3:[004D92-004DA2]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::__subdi3:[004D92-004DA2]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::__subdi3:[004D92-004DA2]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::__subdi3:[004D92-004DA2]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::__subdi3:[004D92-004DA2]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::__subdi3:[004D92-004DA2]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::__subdi3:[004D92-004DA2]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::__subdi3:[004D92-004DA2]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::__subdi3:[004D92-004DA2]:Arithmetic analysis is not needed.
+Note:main.elf::__subdi3:[004D92-004DA2]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::__subdi3:[004D92-004DA2]:Time_State for bounds # 7 defined as COMPUTABLE
+Note:main.elf::__subdi3:[004D92-004DA2]:Freezing bounds # 7
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:No execution bounds known yet.
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Repeating constant propagation.
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Maximum stack-height from constant propagation for SP:0
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Constant propagation changed nothing.
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Arithmetic analysis is not needed.
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Time_State for bounds # 8 defined as COMPUTABLE
+Note:main.elf::__cmpdi2_s8:[004DB6-004DCC]:Freezing bounds # 8
+Note:main.elf::__umulhisi3:[004E12-004E2E]:No execution bounds known yet.
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Repeating constant propagation.
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Maximum stack-height from constant propagation for SP:0
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Constant propagation changed nothing.
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Arithmetic analysis is not needed.
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Time_State for bounds # 9 defined as COMPUTABLE
+Note:main.elf::__umulhisi3:[004E12-004E2E]:Freezing bounds # 9
+Note:main.elf::logsch:[0047DC-004988]:No execution bounds known yet.
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::logsch:[0047DC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047DE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047E0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047E2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047E4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047E6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047E8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047EA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047EC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047EE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047F0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047F2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047F4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047F6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047F8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047FA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047FC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047FE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047DC-004988]:Repeating constant propagation.
+Note:main.elf::logsch:[004810]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004810]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004810]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004814]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004814]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004814]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004818]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004818]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004818]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00481C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00481C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00481C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004820]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004820]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004820]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004824]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004824]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004824]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004862]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004862]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004862]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004866]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004866]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004866]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00486A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00486A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00486A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00486E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00486E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00486E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004872]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004872]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004872]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004876]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004876]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004876]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00487A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00487A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00487A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00487E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00487E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00487E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0048DC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0048DC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0048DC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0048E0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0048E0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0048E0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0048E4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0048E4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0048E4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0048FE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0048FE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0048FE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004902]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004902]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004902]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00490E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00490E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00490E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004912]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004912]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004912]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004916]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004916]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004916]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00491A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00491A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00491A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004922]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004924]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004926]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004928]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00492A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00492A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00492A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00492E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00492E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00492E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004944]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004944]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004944]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004948]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004948]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004948]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00494C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00494C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[00494C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004950]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004950]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[004950]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logsch:[0047DC-004988]:Repeating constant propagation.
+Note:main.elf::logsch:[0047DC-004988]:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf::logsch:[0047DC-004988]:Final stack-height from constant propagation for SP:sh
+Note:main.elf::logsch:[0047DC-004988]:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf::logsch:[0047DC-004988]:Take-off stack-height in stack SP is constant for 0 of 3 calls.
+Note:main.elf::logsch:[0047DC-004988]:Constant propagation changed nothing.
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Arithmetic analysis is not needed.
+Note:main.elf::logsch:[0047DC-004988]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::logsch:[0047DC-004988]:Time_State for bounds # 10 defined as COMPUTABLE
+Note:main.elf::logsch:[0047DC-004988]:Freezing bounds # 10
+Note:main.elf::logscl:[003A5C-003C14]:No execution bounds known yet.
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::logscl:[003A5C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A5E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A60]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A62]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A64]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A66]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A68]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A6A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A6C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A6E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A70]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A72]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A74]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A76]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A78]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A7A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A7C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A7E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A5C-003C14]:Repeating constant propagation.
+Note:main.elf::logscl:[003A90]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A90]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A90]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A94]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A94]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A94]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A98]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A98]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A98]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A9C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A9C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A9C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AA0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AA0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AA0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AA4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AA4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AA4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AE2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AE2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AE2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AE6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AE6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AE6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AEA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AEA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AEA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AEE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AEE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AEE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AF2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AF2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AF2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AF6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AF6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AF6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AFA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AFA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AFA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AFE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AFE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003AFE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B4C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B4C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B4C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B50]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B50]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B50]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B54]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B54]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B54]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B58]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B58]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B58]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B5C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B5C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B5C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B60]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B60]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B60]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B64]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B64]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B64]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B68]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B68]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B68]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B9A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B9A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B9A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B9E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B9E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003B9E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BA2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BA2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BA2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BA6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BA6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BA6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BAE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BB0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BB2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BB4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BB6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BB6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BB6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BBA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BBA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BBA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BD0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BD0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BD0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BD4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BD4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BD4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BD8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BD8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BD8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BDC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BDC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003BDC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::logscl:[003A5C-003C14]:Repeating constant propagation.
+Note:main.elf::logscl:[003A5C-003C14]:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf::logscl:[003A5C-003C14]:Final stack-height from constant propagation for SP:sh
+Note:main.elf::logscl:[003A5C-003C14]:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf::logscl:[003A5C-003C14]:Take-off stack-height in stack SP is constant for 0 of 3 calls.
+Note:main.elf::logscl:[003A5C-003C14]:Constant propagation changed nothing.
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Arithmetic analysis is not needed.
+Note:main.elf::logscl:[003A5C-003C14]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::logscl:[003A5C-003C14]:Time_State for bounds # 11 defined as COMPUTABLE
+Note:main.elf::logscl:[003A5C-003C14]:Freezing bounds # 11
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:No execution bounds known yet.
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3_6:[004CCA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Repeating constant propagation.
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Repeating constant propagation.
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Maximum stack-height from constant propagation for SP:2
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Take-off stack-height in stack SP is constant for 1 of 1 calls.
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Constant propagation changed nothing.
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Arithmetic analysis is not needed.
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Time_State for bounds # 12 defined as COMPUTABLE
+Note:main.elf::__muldi3_6:[004CCA-004CDA]:Freezing bounds # 12
+Note:main.elf::__muluhisi3:[004C16-004C2A]:No execution bounds known yet.
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::__muluhisi3:[004C16]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Repeating constant propagation.
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Repeating constant propagation.
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Maximum stack-height from constant propagation for SP:2
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Take-off stack-height in stack SP is constant for 1 of 1 calls.
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Constant propagation changed nothing.
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Arithmetic analysis is not needed.
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Time_State for bounds # 13 defined as COMPUTABLE
+Note:main.elf::__muluhisi3:[004C16-004C2A]:Freezing bounds # 13
+Note:main.elf::__muldi3:[004C2C-004CC8]:No execution bounds known yet.
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::__muldi3:[004C2C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C2C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C2C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C30]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C30]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C30]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C5E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C5E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C5E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C62]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C62]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C62]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C66]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C66]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C66]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C6C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C76]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C82]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C86]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C86]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C86]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C8C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C98]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C98]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C98]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C9C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004CA0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004CA0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004CA0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004CA4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004CB2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004CC0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004CC0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004CC0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004CC4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004CC4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004CC4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::__muldi3:[004C2C-004CC8]:Repeating constant propagation.
+Note:main.elf::__muldi3:[004C2C-004CC8]:Repeating constant propagation.
+Note:main.elf::__muldi3:[004C2C-004CC8]:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf::__muldi3:[004C2C-004CC8]:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf::__muldi3:[004C2C-004CC8]:Maximum stack-height from constant propagation for SP:12
+Note:main.elf::__muldi3:[004C2C-004CC8]:Take-off stack-height in stack SP is constant for 7 of 7 calls.
+Note:main.elf::__muldi3:[004C2C-004CC8]:Constant propagation changed nothing.
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 22 = __muldi3_6 at 004CCA) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 21 = __umulhisi3 at 004E12) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Arithmetic analysis is not needed.
+Note:main.elf::__muldi3:[004C2C-004CC8]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Time_State for bounds # 14 defined as COMPUTABLE
+Note:main.elf::__muldi3:[004C2C-004CC8]:Freezing bounds # 14
+Note:main.elf::uppol1:[0044BE-0047DA]:No execution bounds known yet.
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::uppol1:[0044BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044C0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044C4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044C6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044C8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044CA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044CC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044CE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044D0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044D2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044D4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044D6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044D8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044DA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044DC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044DE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044E0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol1:[0044BE-0047DA]:Repeating constant propagation.
+Note:main.elf::uppol1:[0044BE-0047DA]:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf::uppol1:[0044BE-0047DA]:Final stack-height from constant propagation for SP:sh
+Note:main.elf::uppol1:[0044BE-0047DA]:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf::uppol1:[0044BE-0047DA]:Take-off stack-height in stack SP is constant for 0 of 7 calls.
+Note:main.elf::uppol1:[0044BE-0047DA]:Constant propagation changed nothing.
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Arithmetic analysis is not needed.
+Note:main.elf::uppol1:[0044BE-0047DA]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::uppol1:[0044BE-0047DA]:Time_State for bounds # 15 defined as COMPUTABLE
+Note:main.elf::uppol1:[0044BE-0047DA]:Freezing bounds # 15
+Note:main.elf::uppol2:[00402C-0044BC]:No execution bounds known yet.
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::uppol2:[00402C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[00402E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[004030]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[004032]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[004034]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[004036]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[004038]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[00403A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[00403C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[00403E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[004040]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[004042]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[004044]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[004046]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[004048]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[00404A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[00404C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[00404E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::uppol2:[00402C-0044BC]:Repeating constant propagation.
+Note:main.elf::uppol2:[00402C-0044BC]:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf::uppol2:[00402C-0044BC]:Final stack-height from constant propagation for SP:sh
+Note:main.elf::uppol2:[00402C-0044BC]:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf::uppol2:[00402C-0044BC]:Take-off stack-height in stack SP is constant for 0 of 11 calls.
+Note:main.elf::uppol2:[00402C-0044BC]:Constant propagation changed nothing.
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 19 = __negdi2 at 004CDC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 20 = __adddi3_s8 at 004D7A) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 6 = __ashldi3 at 004CFC) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 16 = __subdi3 at 004D92) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Arithmetic analysis is not needed.
+Note:main.elf::uppol2:[00402C-0044BC]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::uppol2:[00402C-0044BC]:Time_State for bounds # 16 defined as COMPUTABLE
+Note:main.elf::uppol2:[00402C-0044BC]:Freezing bounds # 16
+Note:main.elf::upzero:[003CFE-00402A]:No execution bounds known yet.
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::upzero:[003CFE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D00]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D02]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D04]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D06]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D08]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D0A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D0C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D0E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D10]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D12]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D14]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D16]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D18]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D1A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D1C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D1E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D20]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003CFE-00402A]:Repeating constant propagation.
+Note:main.elf::upzero:[003D32]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D32]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D32]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D36]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D36]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D36]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D3A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D3A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D3A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D3E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D3E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D3E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D42]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D42]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D42]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D46]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D46]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D46]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D54]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D56]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D58]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D5A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DCA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DCA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DCA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DCE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DCE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DCE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D5E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D5E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D5E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D6A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D6A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D6A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D8A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D8A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D8A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D96]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D96]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003D96]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DB4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DB4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DB4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DB8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DB8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DB8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DC2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DC2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DC2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DC6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DC6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DC6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DDC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DDE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DE0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DE2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F48]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F48]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F48]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F4C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F4C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F4C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DE6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DE6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DE6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DEA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DEA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DEA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DEE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DEE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DEE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DF2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DF2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DF2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003DFE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E00]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E02]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E04]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E06]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E06]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E06]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E12]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E12]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E12]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E24]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E24]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E24]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E28]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E28]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E28]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E34]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E36]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E38]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E3A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E3C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E3C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E3C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E40]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E40]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E40]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E44]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E44]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E44]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E48]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E48]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E48]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E4C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E4C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E4C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E50]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E50]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E50]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E54]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E54]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E54]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E58]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E58]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003E58]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EA0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EA0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EA0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EA4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EA4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EA4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EB2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EB2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EB2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EB6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EB6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EB6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EBA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EBA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EBA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EC6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EC6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EC6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EF2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EF2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EF2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EF6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EF6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EF6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EFA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EFA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003EFA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F06]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F06]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F06]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F10]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F10]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F10]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F14]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F14]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F14]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F18]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F18]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F18]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F1C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F1C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F1C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F32]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F32]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F32]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F36]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F36]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F36]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F40]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F40]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F40]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F44]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F44]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F44]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F5A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F5A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F5A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F64]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F64]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F64]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F7C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F7C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F7C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F86]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F86]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F86]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F9E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F9E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003F9E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FA8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FA8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FA8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FC0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FC0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FC0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FCA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FCA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FCA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FE2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FE2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FE2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FE6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FE6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FE6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FEA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FEA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003FEA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::upzero:[003CFE-00402A]:Repeating constant propagation.
+Note:main.elf::upzero:[003CFE-00402A]:Repeating constant propagation.
+Note:main.elf::upzero:[003CFE-00402A]:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf::upzero:[003CFE-00402A]:Final stack-height from constant propagation for SP:sh
+Note:main.elf::upzero:[003CFE-00402A]:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf::upzero:[003CFE-00402A]:Take-off stack-height in stack SP is constant for 0 of 4 calls.
+Note:main.elf::upzero:[003CFE-00402A]:Constant propagation changed nothing.
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 18 = __cmpdi2_s8 at 004DB6) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 17 = __muluhisi3 at 004C16) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Arithmetic analysis is not needed.
+Note:main.elf::upzero:[003CFE-00402A]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::upzero:[003CFE-00402A]:Time_State for bounds # 17 defined as COMPUTABLE
+Note:main.elf::upzero:[003CFE-00402A]:Freezing bounds # 17
+Note:main.elf::filtep:[003616-003820]:No execution bounds known yet.
+Note:main.elf::filtep:[003616-003820]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::filtep:[003616]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003618]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00361A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00361C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00361E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003620]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003622]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003624]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003626]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003628]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00362A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00362C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00362E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003630]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003632]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003634]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003636]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003638]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003616-003820]:Repeating constant propagation.
+Note:main.elf::filtep:[00364A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00364A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00364A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00364E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00364E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00364E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003652]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003652]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003652]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003656]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003656]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003656]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00365A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00365A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00365A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00365E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00365E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00365E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003662]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003662]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003662]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003666]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003666]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003666]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00366A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00366A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00366A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00366E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00366E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00366E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00367A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00367A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00367A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00367E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00367E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00367E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00368A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00368C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00368E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003690]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003692]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003692]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003692]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003696]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003696]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003696]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00369A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00369A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00369A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00369E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00369E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00369E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036AA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036AC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036AE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036B0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036B2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036B2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036B2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036B6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036B6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036B6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036BA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036BA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036BA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036C6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036C6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036C6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036CA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036CA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036CA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036CE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036CE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036CE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036E6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036E6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036E6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036EA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036EA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036EA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036EE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036EE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036EE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036F2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036F2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036F2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036F6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036F6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036F6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036FA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036FA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0036FA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003706]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003706]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003706]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00370A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00370A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00370A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003716]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003718]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00371A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00371C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00371E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00371E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00371E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003722]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003722]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003722]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00373A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00373A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00373A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00373E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00373E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00373E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003742]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003742]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003742]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003746]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003746]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003746]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00378E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00378E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00378E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003792]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003792]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003792]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003796]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003796]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003796]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00379A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00379A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[00379A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037B2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037B2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037B2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037B6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037B6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037B6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037BA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037BA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037BA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037C6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037C6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037C6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037CA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037CA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037CA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037CE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037CE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[0037CE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtep:[003616-003820]:Repeating constant propagation.
+Note:main.elf::filtep:[003616-003820]:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf::filtep:[003616-003820]:Final stack-height from constant propagation for SP:sh
+Note:main.elf::filtep:[003616-003820]:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf::filtep:[003616-003820]:Take-off stack-height in stack SP is constant for 0 of 4 calls.
+Note:main.elf::filtep:[003616-003820]:Constant propagation changed nothing.
+Note:main.elf::filtep:[003616-003820]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::filtep:[003616-003820]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::filtep:[003616-003820]:Arithmetic analysis is not needed.
+Note:main.elf::filtep:[003616-003820]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::filtep:[003616-003820]:Time_State for bounds # 18 defined as COMPUTABLE
+Note:main.elf::filtep:[003616-003820]:Freezing bounds # 18
+Note:main.elf::filtez:[0033BC-003614]:No execution bounds known yet.
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::filtez:[0033BC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033C0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033C4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033C6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033C8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033CA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033CC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033CE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033D0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033D2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033D4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033D6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033D8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033DA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033DC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033DE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033BC-003614]:Repeating constant propagation.
+Note:main.elf::filtez:[0033F0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033F0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033F0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033F4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033F4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033F4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033F8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033F8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033F8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003400]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003400]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003400]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00340E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00340E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00340E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003412]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003412]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003412]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00341E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003420]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003422]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003424]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003426]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003426]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003426]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00342E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00342E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00342E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003460]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003460]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003460]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003464]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003464]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003464]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003468]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003468]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003468]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00346C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00346C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00346C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003484]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003484]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003484]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003488]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003488]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003488]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00348C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00348C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00348C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003490]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003490]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003490]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00349C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00349C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00349C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034A0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034A0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034A0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035A4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035A4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035A4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035A8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035A8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035A8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034A6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034A6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034A6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034B0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034B0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034B0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034CE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034D0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034D2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034D4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034D6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034D6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034D6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034E0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034E0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034E0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034EE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034EE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034EE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034F2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034F2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034F2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0034FE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003500]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003502]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003504]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003506]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003506]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003506]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00350A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00350A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00350A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00350E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00350E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00350E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003512]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003512]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003512]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003516]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003516]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003516]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00351A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00351A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00351A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00351E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00351E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00351E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003522]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003522]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003522]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00355A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00355A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00355A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00355E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00355E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00355E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003562]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003562]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003562]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003566]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003566]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003566]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00357E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00357E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00357E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003582]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003582]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003582]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003586]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003586]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003586]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00358A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00358A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00358A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00358E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00358E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00358E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003592]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003592]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[003592]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00359C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00359C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[00359C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035A0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035A0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035A0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035B6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035B6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035B6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035BA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035BA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035BA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0035C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::filtez:[0033BC-003614]:Repeating constant propagation.
+Note:main.elf::filtez:[0033BC-003614]:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf::filtez:[0033BC-003614]:Final stack-height from constant propagation for SP:sh
+Note:main.elf::filtez:[0033BC-003614]:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf::filtez:[0033BC-003614]:Take-off stack-height in stack SP is constant for 0 of 4 calls.
+Note:main.elf::filtez:[0033BC-003614]:Constant propagation changed nothing.
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Arithmetic analysis is not needed.
+Note:main.elf::filtez:[0033BC-003614]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::filtez:[0033BC-003614]:Time_State for bounds # 19 defined as COMPUTABLE
+Note:main.elf::filtez:[0033BC-003614]:Freezing bounds # 19
+Note:main.elf::decode:[001990-002E0C]:No execution bounds known yet.
+Note:main.elf::decode:[001990-002E0C]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Warning:main.elf::decode@[001A1E]=>filtez:[001A1E]:Final effect on stack SP not exactly known:sh
+Warning:main.elf::decode@[001A7A]=>filtep:[001A7A]:Final effect on stack SP not exactly known:sh
+Warning:main.elf::decode@[001CFA]=>logscl:[001CFA]:Final effect on stack SP not exactly known:sh
+Warning:main.elf::decode@[001D2E]=>scalel:[001D2E]:Final effect on stack SP not exactly known:sh
+Warning:main.elf::decode@[001D9A]=>upzero:[001D9A]:Final effect on stack SP not exactly known:sh
+Warning:main.elf::decode@[001E00]=>uppol2:[001E00]:Final effect on stack SP not exactly known:sh
+Warning:main.elf::decode@[001E64]=>uppol1:[001E64]:Final effect on stack SP not exactly known:sh
+Warning:main.elf::decode@[001F3C]=>filtez:[001F3C]:Final effect on stack SP not exactly known:sh
+Warning:main.elf::decode@[001F98]=>filtep:[001F98]:Final effect on stack SP not exactly known:sh
+Warning:main.elf::decode@[00213C]=>logsch:[00213C]:Final effect on stack SP not exactly known:sh
+Warning:main.elf::decode@[002170]=>scalel:[002170]:Final effect on stack SP not exactly known:sh
+Warning:main.elf::decode@[0021DC]=>upzero:[0021DC]:Final effect on stack SP not exactly known:sh
+Warning:main.elf::decode@[002242]=>uppol2:[002242]:Final effect on stack SP not exactly known:sh
+Warning:main.elf::decode@[0022A6]=>uppol1:[0022A6]:Final effect on stack SP not exactly known:sh
+Note:main.elf::decode:[001990-002E0C]:Unused (# 2 = decode at 001990) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 2 = decode at 001990) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 2 = decode at 001990) is FALSE
+Note:main.elf::decode:[001990]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[001992]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[001994]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[001996]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[001998]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[00199A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[00199C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[00199E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[0019A0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[0019A2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[0019A4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[0019A6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[0019A8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[0019AA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[0019AC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[0019AE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[0019B0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[0019B2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::decode:[001990-002E0C]:Repeating constant propagation.
+Note:main.elf::decode:[001990-002E0C]:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf::decode:[001990-002E0C]:Final stack-height from constant propagation for SP:sh
+Note:main.elf::decode:[001990-002E0C]:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf::decode:[001990-002E0C]:Take-off stack-height in stack SP is constant for 0 of 32 calls.
+Note:main.elf::decode:[001990-002E0C]:Constant propagation changed nothing.
+Note:main.elf::decode:[001990-002E0C]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 2 = decode at 001990) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 2 = decode at 001990) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 2 = decode at 001990) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 2 = decode at 001990) is FALSE
+Note:main.elf::decode:[0019FA-001A04]:Loop 1 exits only at its end.
+Note:main.elf::decode:[001990-002E0C]:Unused (# 2 = decode at 001990) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 2 = decode at 001990) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 2 = decode at 001990) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 11 = logscl at 003A5C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 3 = filtez at 0033BC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 9 = filtep at 003616) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 14 = logsch at 0047DC) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 7 = scalel at 003C16) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 8 = upzero at 003CFE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 12 = uppol2 at 00402C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 13 = uppol1 at 0044BE) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 10 = __muldi3 at 004C2C) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 15 = __adddi3 at 004D68) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 5 = __ashrdi3 at 004D2E) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 2 = decode at 001990) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Unused (# 2 = decode at 001990) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Arithmetic analysis is not needed.
+Note:main.elf::decode:[001990-002E0C]:Unused (# 2 = decode at 001990) is FALSE
+Note:main.elf::decode:[001990-002E0C]:Time_State for bounds # 20 defined as COMPUTABLE
+Note:main.elf::decode:[001990-002E0C]:Freezing bounds # 20
+Note:main.elf::::Target-specific additional analysis starts.
+Note:main.elf::::Generic worst-case path and time analysis starts.
+Wcet:main.elf::__umulhisi3:[004E12-004E2E]:22
+Wcet:main.elf::__muldi3_6:[004CCA-004CDA]:37
+Wcet:main.elf::__muldi3:[004C2C-004CC8]:309
+Wcet:main.elf::__adddi3:[004D68-004D78]:12
+Wcet:main.elf::__ashrdi3:[004D2E-004D66]:1589
+Wcet:main.elf::filtez:[0033BC-003614]:5421
+Wcet:main.elf::filtep:[003616-003820]:2642
+Wcet:main.elf::__ashldi3:[004CFC-004D2C]:1523
+Wcet:main.elf::__subdi3:[004D92-004DA2]:12
+Wcet:main.elf::logscl:[003A5C-003C14]:3464
+Wcet:main.elf::scalel:[003C16-003CFC]:2054
+Wcet:main.elf::__muluhisi3:[004C16-004C2A]:41
+Wcet:main.elf::__cmpdi2_s8:[004DB6-004DCC]:15
+Wcet:main.elf::upzero:[003CFE-00402A]:4130
+Wcet:main.elf::__negdi2:[004CDC-004CFA]:19
+Wcet:main.elf::__adddi3_s8:[004D7A-004D90]:15
+Wcet:main.elf::uppol2:[00402C-0044BC]:7808
+Wcet:main.elf::uppol1:[0044BE-0047DA]:5588
+Wcet:main.elf::logsch:[0047DC-004988]:3452
+Wcet:main.elf::decode:[001990-002E0C]:88872
+
+Details as requested by -show:
+
+1     decode
+
+      Loop 1 :[0019FA-001A04]
+         Exits at end only (bottom-test).
+         Repeat 5..5
+      Loop 2 :[002D14-002D9A]
+         Neck 10..10
+      Loop 3 :[002614-002926]
+         Neck 10..10
+
+Note:main.elf::::Creating SLI file sourceinfo.csv.
+Analysis_Time:main.elf::::3.052

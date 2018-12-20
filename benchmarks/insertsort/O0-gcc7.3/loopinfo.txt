@@ -1,0 +1,12 @@
+subprogram "main"
+  loop that contains loop
+    Repeats 9 Times; -- each card *has* to be checked
+  end loop;
+  loop That is in loop
+    Repeats <= 9 Times; -- ...but swapping might not be always needed
+  end loop;
+  -- loop is non-rectangular, and we know the details => tighter bounds
+  Instruction at "15e" 
+    Repeats <= 45 Times; -- inner loop executes in total no more than 45 times
+  end Instruction;
+end "main";

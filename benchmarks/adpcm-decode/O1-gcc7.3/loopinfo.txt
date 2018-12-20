@@ -1,0 +1,135 @@
+-- loop bounds for Bound-T
+subprogram "encode"
+  loop on line 349
+    repeats 22 times; -- OK
+  end loop;
+  loop on line 338
+    repeats 10 times; -- OK
+  end loop;
+end "encode";
+
+Subprogram "decode"
+  -- loop On Line 481
+  loop That Executes "2066"
+    Repeats 6 Times; -- >>6
+  end loop;
+  loop On Line 598
+  --loop That Executes "2BC8"
+    Repeats 10 Times;
+  end loop;
+  -- loop On Line 583
+  loop That Executes "2990"
+    Repeats 10 Times;
+  end loop;
+end "decode";
+
+subprogram "filtez"
+  -- loop on line 653
+  loop That Executes "34A6"
+    repeats 6 times; -- OK
+  end loop;
+end "filtez";
+
+subprogram "quantl"
+  loop on line 682
+    repeats <= 30 times; -- OK
+  end loop;
+end "quantl";
+
+--  subprogram "logscl"
+--    loop on line 708 
+--      repeats 7 times; 
+--    end loop;
+--  end "logscl";
+
+-- this is something that gcc generates...
+subprogram "__ashrdi3"
+  all loops   
+    --  3a94:	0f 73       	andi	r16, 0x3F	; 63 -> r16 cannot exceed 63 => max 63 shifts (because it casts to int64_t)
+    --  3a96:	51 f0       	breq	.+20     	; 0x3aac <__ashrdi3+0x1a>
+    --  3a98:	95 95       	asr	r25
+    --  3a9a:	87 95       	ror	r24
+    --  3a9c:	77 95       	ror	r23
+    --  3a9e:	67 95       	ror	r22
+    --  3aa0:	57 95       	ror	r21
+    --  3aa2:	47 95       	ror	r20
+    --  3aa4:	37 95       	ror	r19
+    --  3aa6:	27 95       	ror	r18
+    --  3aa8:	0a 95       	dec	r16
+    --  3aaa:	b1 f7       	brne	.-20     	; 0x3a98 <__ashrdi3+0x6>
+
+    repeat <=63 times; -- OK. see above
+  end loops;
+end "__ashrdi3";
+
+-- this is something that gcc generates...
+subprogram "__ashldi3"
+  all loops 
+    --  3a76:	0f 73       	andi	r16, 0x3F	; 63
+    --  3a78:	51 f0       	breq	.+20     	; 0x3a8e <__ashldi3+0x1a>
+    --  3a7a:	22 0f       	add	r18, r18
+    --  3a7c:	33 1f       	adc	r19, r19
+    --  3a7e:	44 1f       	adc	r20, r20
+    --  3a80:	55 1f       	adc	r21, r21
+    --  3a82:	66 1f       	adc	r22, r22
+    --  3a84:	77 1f       	adc	r23, r23
+    --  3a86:	88 1f       	adc	r24, r24
+    --  3a88:	99 1f       	adc	r25, r25
+    --  3a8a:	0a 95       	dec	r16
+    --  3a8c:	b1 f7       	brne	.-20     	; 0x3a7a <__ashldi3+0x6>
+
+    repeat <=63 times; -- OK: see above
+  end loops;
+end "__ashldi3";
+
+subprogram "scalel"
+  loop That Executes "ba0" -- line 720 ->   3c00: asr r27
+    Repeats 6 Times;
+  end loop;
+  loop That Executes "bc8" -- line 721 -> 3c28: asr r27
+    Repeats 11 Times; 
+  end loop;
+  loop That Executes "be6" -- line 722 -> 3c70: asr r27 
+    -- following statement gets a loop due to ASR:
+    --   wd3 = ilb_table[wd1] >> x;  
+    -- where 
+    --   x = (shift_constant + 1 - wd2)
+    --   shift_constant \in {8,10}
+    --   nbl \in int32 = [-2^31, 2^31-1]
+    --   wd2 = nbl >> 11 => [-2^20, 2^20-1]
+    --   => x = {9,11} + [-2^20, 2^20-1]
+    -- with negative values as undefined behavior => ???
+    --   => x \in [0, 2^20 + 10]
+    
+    -- Assembly: Definitely weird. Register pair r26+r27 is an int32...it does make no sense to keep shifting more than 31 times...but that is not checked here:
+    --  3cfc:	2d 81       	ldd	r18, Y+5	; 0x05
+    --  3cfe:	3e 81       	ldd	r19, Y+6	; 0x06
+    --  3d00:	ba 01       	movw	r22, r20
+    --  3d02:	62 1b       	sub	r22, r18
+    --  3d04:	73 0b       	sbc	r23, r19
+    --  3d06:	9b 01       	movw	r18, r22
+    --  3d08:	2f 5f       	subi	r18, 0xFF	; r18-=255 (lo, no carry)
+    --  3d0a:	3f 4f       	sbci	r19, 0xFF	; r19-=255 (hi)
+    --  3d0c:	02 2e       	mov	r0, r18         ; copy r18 to r0; r0 is 8 bit -> max 255 iterations
+    --  3d0e:	04 c0       	rjmp	.+8      	; 0x3d18 <scalel+0xa8>
+    --  3d10:	b5 95       	asr	r27
+    --  3d12:	a7 95       	ror	r26
+    --  3d14:	97 95       	ror	r25
+    --  3d16:	87 95       	ror	r24
+    --  3d18:	0a 94       	dec	r0
+    --  3d1a:	d2 f7       	brpl	.-12     	; 0x3d10 <scalel+0xa0>
+
+    repeats <= 255 times; -- FIXME: verify with value analysis
+  end loop;
+end "scalel";
+
+subprogram "upzero"
+  -- loop on line 734
+  loop That Executes "c64"
+    repeats 6 times; -- OK
+  end loop;
+  -- loop on line 739
+  loop That Executes "d4e"
+    Repeats 6 Times; -- OK
+  end loop;
+end "upzero";

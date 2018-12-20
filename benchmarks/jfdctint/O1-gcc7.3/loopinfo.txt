@@ -1,0 +1,9 @@
+subprogram "jpeg_fdct_islow"
+  loop On Line 219
+    Repeats 8 Times;
+  end loop;
+  loop On Line 284
+    Repeats 8 Times;
+  end loop;
+
+end "jpeg_fdct_islow";

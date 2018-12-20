@@ -1,0 +1,325 @@
+Note:::::Martin Becker: Writing source-level information to sourceinfo.csv
+Note:main.elf::::Bound-T 4c5 for Atmel-AVR
+Note:main.elf::::This AVR device has a 16-bit SP = SPH:SPL.
+Note:main.elf::::File format assumed to be ELF
+Note:main.elf::::Segment 3 not loaded:Zero length in file
+Note:main.elf::::No ELF section ".debug_loc" is present.
+Note:main.elf::::Loading DWARF info section.
+Note:main.elf::::DWARF debug info ends at End_Index without null entry.
+Warning:main.elf::::DWARF debug-info unit header version = 4, supported versions are 2 .. 3
+Warning:main.elf::::Skipping invalid DWARF compilation unit.
+Note:main.elf::::Loading DWARF types for compilation unit 1
+Note:main.elf::::Parsing DWARF symbols.
+Note:main.elf::::Entering DWARF compilation unit for [no name]
+Note:main.elf::::Duplicated symbol and value:Variable:MCUCSR:[all] => d800054
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
+Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
+Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
+Note:main.elf::::Duplicated symbol and value:Variable:ETIMSK:[all] => d80007D
+Note:main.elf::::Duplicated symbol and value:Variable:ETIFR:[all] => d80007C
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Program implies calling protocol GCC.
+Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
+Note:main.elf:loopinfo.txt:::Routine at 0000CE classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:loopinfo.txt:::Routine at 00015C classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::icrc:[00015C]:Root subprogram
+Note:main.elf::::Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::::Dynamism bounding iteration number 1
+Note:main.elf::icrc:[00015C]:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::icrc:[00015C]:Analysis for time is needed.
+Note:main.elf::icrc:[00015C]:Control-flow analysis starts.
+Note:main.elf::icrc:[0001BA]:Call to existing subprogram # 1 = icrc1 at 0000CE
+Note:main.elf::icrc:[0001BA]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Warning:main.elf::icrc:[0001C8]:Large combined 16-bit literal 65006 taken as signed = -530
+Warning:main.elf::icrc:[0001DA]:Large combined 16-bit literal 65024 taken as signed = -512
+Warning:main.elf::icrc:[000204]:Large combined 16-bit literal 65024 taken as signed = -512
+Warning:main.elf::icrc:[000214]:Large combined 16-bit literal 64494 taken as signed = -1042
+Warning:main.elf::icrc:[00026A]:Large combined 16-bit literal 64494 taken as signed = -1042
+Warning:main.elf::icrc:[00027C]:Large combined 16-bit literal 64494 taken as signed = -1042
+Warning:main.elf::icrc:[0002AA]:Large combined 16-bit literal 65280 taken as signed = -256
+Warning:main.elf::icrc:[0002B6]:Large combined 16-bit literal 64494 taken as signed = -1042
+Warning:main.elf::icrc:[0002D6]:Large combined 16-bit literal 65280 taken as signed = -256
+Warning:main.elf::icrc:[0002F8]:Large combined 16-bit literal 65006 taken as signed = -530
+Warning:main.elf::icrc:[00035A]:Large combined 16-bit literal 64494 taken as signed = -1042
+Warning:main.elf::icrc:[00036C]:Large combined 16-bit literal 64494 taken as signed = -1042
+Note:main.elf::icrc:[00015C]:Control-flow analysis finished.
+Note:main.elf::icrc:[00015C]:Dominator iterations 2 for 22 graph nodes.
+Note:main.elf::icrc:[00015C]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::icrc1:[0000CE]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE]:Analysis for time is needed.
+Note:main.elf::icrc1:[0000CE]:Control-flow analysis starts.
+Note:main.elf::icrc1:[0000CE]:Control-flow analysis finished.
+Note:main.elf::icrc1:[0000CE]:Dominator iterations 1 for 7 graph nodes.
+Note:main.elf::icrc1:[0000CE]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::icrc1:[0000CE-00015A]:No execution bounds known yet.
+Note:main.elf::icrc1:[0000CE-00015A]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-00015A]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-00015A]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000D0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000D2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000D4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000D6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000D8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000CE-00015A]:Repeating constant propagation.
+Note:main.elf::icrc1:[0000DE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000DE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000DE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000E2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000E4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000E4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000F0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000F0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000F0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000F8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000F8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000F8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000FC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000FE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[00013E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[00013E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[00013E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000102]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000102]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000102]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[00010A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[00010A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[00010A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000112]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000112]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000112]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000116]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000116]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000116]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000122]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000122]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000122]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000128]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000128]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000128]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000130]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000130]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000130]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000134]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000134]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000134]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[00013A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[00013A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[00013A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000146]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000146]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[000146]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc1:[0000CE-00015A]:Repeating constant propagation.
+Note:main.elf::icrc1:[0000CE-00015A]:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf::icrc1:[0000CE-00015A]:Final stack-height from constant propagation for SP:sh
+Note:main.elf::icrc1:[0000CE-00015A]:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf::icrc1:[0000CE-00015A]:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf::icrc1:[0000CE-00015A]:Constant propagation changed nothing.
+Note:main.elf::icrc1:[0000CE-00015A]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-00015A]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-00015A]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-00015A]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-00015A]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-00015A]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-00015A]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-00015A]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-00015A]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-00015A]:Arithmetic analysis is not needed.
+Note:main.elf::icrc1:[0000CE-00015A]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc1:[0000CE-00015A]:Time_State for bounds # 1 defined as COMPUTABLE
+Note:main.elf::icrc1:[0000CE-00015A]:Freezing bounds # 1
+Note:main.elf::icrc:[00015C-00039C]:No execution bounds known yet.
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Warning:main.elf::icrc@[0001BA]=>icrc1:[0001BA]:Final effect on stack SP not exactly known:sh
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::icrc:[00015C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00015E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000160]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000162]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00015C-00039C]:Repeating constant propagation.
+Note:main.elf::icrc:[000174]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000174]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000174]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000178]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000178]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000178]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00017C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00017C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00017C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000180]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000180]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000180]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000184]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000184]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000184]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000188]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000188]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000188]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00018C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00018C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00018C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001AA]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001AC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000226]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000226]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000226]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001B0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001B0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001B0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001C0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001C0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001C0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001D2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001D2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001D2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001F4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001F4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0001F4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000210]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000210]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000210]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00021C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00021C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00021C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000222]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000222]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000222]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000234]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000234]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000234]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00023C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00023C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000242]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000242]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000250]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000250]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000250]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000256]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000256]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000256]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00025E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00025E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00025E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000276]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000276]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000290]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000290]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000290]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000298]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000298]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000298]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00031E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00031E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00031E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000328]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000328]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000328]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00032C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00032C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00032C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00029E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00029E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00029E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002A6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002A6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002A6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002BE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002CC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002CC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002CC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002D2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002D2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002D2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002DE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002DE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002DE]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002EC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002EC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002EC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002F0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002F0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[0002F0]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000302]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000302]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000310]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000310]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000310]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000314]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000314]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000314]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00031A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00031A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00031A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00033C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00033C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00033C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000344]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000344]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000344]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000348]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000348]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000348]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00034E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00034E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00034E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000366]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000366]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000380]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000380]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000380]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000384]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000384]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[000384]:Refine (Assignment) bounded a pointer.
+Note:main.elf::icrc:[00015C-00039C]:Repeating constant propagation.
+Note:main.elf::icrc:[00015C-00039C]:Repeating constant propagation.
+Note:main.elf::icrc:[00015C-00039C]:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf::icrc:[00015C-00039C]:Final stack-height from constant propagation for SP:sh
+Note:main.elf::icrc:[00015C-00039C]:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf::icrc:[00015C-00039C]:Take-off stack-height in stack SP is constant for 0 of 1 calls.
+Note:main.elf::icrc:[00015C-00039C]:Constant propagation changed nothing.
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 1 = icrc1 at 0000CE) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Arithmetic analysis is not needed.
+Note:main.elf::icrc:[00015C-00039C]:Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::icrc:[00015C-00039C]:Time_State for bounds # 2 defined as COMPUTABLE
+Note:main.elf::icrc:[00015C-00039C]:Freezing bounds # 2
+Note:main.elf::::Target-specific additional analysis starts.
+Note:main.elf::::Generic worst-case path and time analysis starts.
+Wcet:main.elf::icrc1:[0000CE-00015A]:456
+Wcet:main.elf::icrc:[00015C-00039C]:143646
+
+Details as requested by -show:
+
+1     icrc
+
+      Loop 1 :[0001B0-000232]
+         Neck 256..256
+      Loop 2 :[00029E-00033A]
+         Neck 42..42
+
+Note:main.elf::::Creating DOT file flowgraphs/cg_icrc_001.dot.
+Note:main.elf::::Unused (# 2 = icrc at 00015C) is FALSE
+Note:main.elf::::Creating DOT file flowgraphs/fg_icrc1_002.dot.
+Note:main.elf::::Creating DOT file flowgraphs/fg_icrc_003.dot.
+Note:main.elf::::Creating SLI file sourceinfo.csv.

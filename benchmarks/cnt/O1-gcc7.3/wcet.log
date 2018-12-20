@@ -1,0 +1,94 @@
+Note:::::Martin Becker: Writing source-level information to sourceinfo.csv
+Note:main.elf::::Bound-T 4c5 for Atmel-AVR
+Note:main.elf::::This AVR device has a 16-bit SP = SPH:SPL.
+Note:main.elf::::File format assumed to be ELF
+Note:main.elf::::Segment 2 not loaded:Zero length in memory
+Note:main.elf::::Segment 3 not loaded:Zero length in file
+Note:main.elf::::Loading DWARF info section.
+Note:main.elf::::DWARF debug info ends at End_Index without null entry.
+Warning:main.elf::::DWARF debug-info unit header version = 4, supported versions are 2 .. 3
+Warning:main.elf::::Skipping invalid DWARF compilation unit.
+Note:main.elf::::Loading DWARF types for compilation unit 1
+Note:main.elf::::Parsing DWARF symbols.
+Note:main.elf::::Entering DWARF compilation unit for [no name]
+Note:main.elf::::Duplicated symbol and value:Variable:MCUCSR:[all] => d800054
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
+Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
+Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
+Note:main.elf::::Duplicated symbol and value:Variable:ETIMSK:[all] => d80007D
+Note:main.elf::::Duplicated symbol and value:Variable:ETIFR:[all] => d80007C
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Program implies calling protocol GCC.
+Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
+Note:main.elf:loopinfo.txt:::Routine at 00016A classified as NORMAL after inspecting 1 instructions.
+Note:main.elf:loopinfo.txt:::Routine at 0000C2 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::Sum:[0000C2]:Root subprogram
+Note:main.elf::::Unused (# 2 = Sum at 0000C2) is FALSE
+Note:main.elf::::Dynamism bounding iteration number 1
+Note:main.elf::Sum:[0000C2]:Unused (# 2 = Sum at 0000C2) is FALSE
+Note:main.elf::Sum:[0000C2]:Analysis for time is needed.
+Note:main.elf::Sum:[0000C2]:Control-flow analysis starts.
+Warning:main.elf::Sum:[0000CC]:Large combined 16-bit literal 65516 taken as signed = -20
+Warning:main.elf::Sum:[0000D2]:Large combined 16-bit literal 65316 taken as signed = -220
+Warning:main.elf::Sum:[000100]:Large combined 16-bit literal 65535 taken as signed = -1
+Warning:main.elf::Sum:[000106]:Large combined 16-bit literal 65516 taken as signed = -20
+Note:main.elf::Sum:[0000C2]:Control-flow analysis finished.
+Note:main.elf::Sum:[0000C2]:Dominator iterations 1 for 8 graph nodes.
+Note:main.elf::Sum:[0000C2]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::Sum:[0000C2-00013E]:No execution bounds known yet.
+Note:main.elf::Sum:[0000C2-00013E]:Unused (# 2 = Sum at 0000C2) is FALSE
+Note:main.elf::Sum:[0000C2-00013E]:Unused (# 2 = Sum at 0000C2) is FALSE
+Note:main.elf::Sum:[0000C2-00013E]:Unused (# 2 = Sum at 0000C2) is FALSE
+Note:main.elf::Sum:[0000C2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Sum:[0000C4]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Sum:[0000C6]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Sum:[0000C8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Sum:[000136]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Sum:[000136]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Sum:[000138]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Sum:[000138]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Sum:[00013A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Sum:[00013A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Sum:[00013C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Sum:[00013C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Sum:[0000C2-00013E]:Repeating constant propagation.
+Note:main.elf::Sum:[0000C2-00013E]:Final stack-height in stack SP is constant for 1 of 1 return points.
+Note:main.elf::Sum:[0000C2-00013E]:Final stack-height from constant propagation for SP:sh=-2
+Note:main.elf::Sum:[0000C2-00013E]:Maximum stack-height from constant propagation for SP:4
+Note:main.elf::Sum:[0000C2-00013E]:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf::Sum:[0000C2-00013E]:Constant propagation changed nothing.
+Note:main.elf::Sum:[0000C2-00013E]:Unused (# 2 = Sum at 0000C2) is FALSE
+Note:main.elf::Sum:[0000C2-00013E]:Unused (# 2 = Sum at 0000C2) is FALSE
+Note:main.elf::Sum:[0000C2-00013E]:Unused (# 2 = Sum at 0000C2) is FALSE
+Note:main.elf::Sum:[0000C2-00013E]:Unused (# 2 = Sum at 0000C2) is FALSE
+Note:main.elf::Sum:[0000E8-000104]:Loop 1 exits only at its end.
+Note:main.elf::Sum:[0000E8-000114]:Loop 2 exits only at its end.
+Note:main.elf::Sum:[0000C2-00013E]:Unused (# 2 = Sum at 0000C2) is FALSE
+Note:main.elf::Sum:[0000C2-00013E]:Unused (# 2 = Sum at 0000C2) is FALSE
+Note:main.elf::Sum:[0000C2-00013E]:Unused (# 2 = Sum at 0000C2) is FALSE
+Note:main.elf::Sum:[0000C2-00013E]:Unused (# 2 = Sum at 0000C2) is FALSE
+Note:main.elf::Sum:[0000C2-00013E]:Unused (# 2 = Sum at 0000C2) is FALSE
+Note:main.elf::Sum:[0000C2-00013E]:Arithmetic analysis is not needed.
+Note:main.elf::Sum:[0000C2-00013E]:Unused (# 2 = Sum at 0000C2) is FALSE
+Note:main.elf::Sum:[0000C2-00013E]:Time_State for bounds # 1 defined as COMPUTABLE
+Note:main.elf::Sum:[0000C2-00013E]:Freezing bounds # 1
+Note:main.elf::::Target-specific additional analysis starts.
+Note:main.elf::::Generic worst-case path and time analysis starts.
+Wcet:main.elf::Sum:[0000C2-00013E]:1663
+
+Details as requested by -show:
+
+1     Sum
+
+      Loop 1 :[0000E8-000104]
+         Exits at end only (bottom-test).
+         Repeat 9..9
+      Loop 2 :[0000E8-000114]
+         Exits at end only (bottom-test).
+         Repeat 9..9
+
+Note:main.elf::::Creating SLI file sourceinfo.csv.

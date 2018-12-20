@@ -1,0 +1,113 @@
+Note:::::Martin Becker: Writing source-level information to sourceinfo.csv
+Note:main.elf::::Bound-T 4c5 for Atmel-AVR
+Note:main.elf::::This AVR device has a 16-bit SP = SPH:SPL.
+Note:main.elf::::File format assumed to be ELF
+Note:main.elf::::Segment 2 not loaded:Zero length in file
+Note:main.elf::::No ELF section ".debug_loc" is present.
+Note:main.elf::::Loading DWARF info section.
+Note:main.elf::::DWARF debug info ends at End_Index without null entry.
+Warning:main.elf::::DWARF debug-info unit header version = 4, supported versions are 2 .. 3
+Warning:main.elf::::Skipping invalid DWARF compilation unit.
+Note:main.elf::::Loading DWARF types for compilation unit 1
+Note:main.elf::::Parsing DWARF symbols.
+Note:main.elf::::Entering DWARF compilation unit for [no name]
+Note:main.elf::::Duplicated symbol and value:Variable:MCUCSR:[all] => d800054
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
+Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Duplicated symbol and value:Variable:TIFR:[all] => d800056
+Note:main.elf::::Duplicated symbol and value:Variable:TIMSK:[all] => d800057
+Note:main.elf::::Duplicated symbol and value:Variable:ETIMSK:[all] => d80007D
+Note:main.elf::::Duplicated symbol and value:Variable:ETIFR:[all] => d80007C
+Note:main.elf::::Duplicated symbol and value:Variable:SFIOR:[all] => d800040
+Note:main.elf::::Program implies calling protocol GCC.
+Note:main.elf::::Added unstable stack "SP", pointer dw5D coupling by OPPOSITE to height sh, net change variable, unit 8 bits.
+Note:main.elf:loopinfo.txt:::Routine at 000210 classified as NORMAL after inspecting 1 instructions.
+Note:main.elf::Multiply:[000210]:Root subprogram
+Note:main.elf::::Unused (# 1 = Multiply at 000210) is FALSE
+Note:main.elf::::Dynamism bounding iteration number 1
+Note:main.elf::Multiply:[000210]:Unused (# 1 = Multiply at 000210) is FALSE
+Note:main.elf::Multiply:[000210]:Analysis for time is needed.
+Note:main.elf::Multiply:[000210]:Control-flow analysis starts.
+Warning:main.elf::Multiply:[000328]:Large combined 16-bit literal 65535 taken as signed = -1
+Note:main.elf::Multiply:[000210]:Control-flow analysis finished.
+Note:main.elf::Multiply:[000210]:Dominator iterations 1 for 10 graph nodes.
+Note:main.elf::Multiply:[000210]:Assertions resolved 0 of 0 dynamic calls.
+Note:main.elf::Multiply:[000210-000362]:No execution bounds known yet.
+Note:main.elf::Multiply:[000210-000362]:Unused (# 1 = Multiply at 000210) is FALSE
+Note:main.elf::Multiply:[000210-000362]:Unused (# 1 = Multiply at 000210) is FALSE
+Note:main.elf::Multiply:[000210-000362]:Unused (# 1 = Multiply at 000210) is FALSE
+Note:main.elf::Multiply:[000210]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[000212]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[000214]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[000216]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[000218]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[00021A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[00021C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[00021E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[000220]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[000222]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[000224]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[000210-000362]:Repeating constant propagation.
+Note:main.elf::Multiply:[00022A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[00022A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[00022A]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[00022E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[00022E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[00022E]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[000232]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[000232]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[000232]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[000250]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[000250]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[000250]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[00027C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[00027C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[00027C]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[0002A2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[0002A2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[0002A2]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[0002C8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[0002C8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[0002C8]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[0002FC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[0002FC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[0002FC]:Refine (Assignment) bounded a pointer.
+Note:main.elf::Multiply:[000210-000362]:Repeating constant propagation.
+Note:main.elf::Multiply:[000210-000362]:Final stack-height in stack SP is constant for 0 of 1 return points.
+Note:main.elf::Multiply:[000210-000362]:Final stack-height from constant propagation for SP:sh
+Note:main.elf::Multiply:[000210-000362]:Maximum stack-height from constant propagation for SP:+inf
+Note:main.elf::Multiply:[000210-000362]:Take-off stack-height in stack SP is constant for 0 of 0 calls.
+Note:main.elf::Multiply:[000210-000362]:Constant propagation changed nothing.
+Note:main.elf::Multiply:[000210-000362]:Unused (# 1 = Multiply at 000210) is FALSE
+Note:main.elf::Multiply:[000210-000362]:Unused (# 1 = Multiply at 000210) is FALSE
+Note:main.elf::Multiply:[000210-000362]:Unused (# 1 = Multiply at 000210) is FALSE
+Note:main.elf::Multiply:[000210-000362]:Unused (# 1 = Multiply at 000210) is FALSE
+Note:main.elf::Multiply:[000210-000362]:Unused (# 1 = Multiply at 000210) is FALSE
+Note:main.elf::Multiply:[000210-000362]:Unused (# 1 = Multiply at 000210) is FALSE
+Note:main.elf::Multiply:[000210-000362]:Unused (# 1 = Multiply at 000210) is FALSE
+Note:main.elf::Multiply:[000210-000362]:Unused (# 1 = Multiply at 000210) is FALSE
+Note:main.elf::Multiply:[000210-000362]:Unused (# 1 = Multiply at 000210) is FALSE
+Note:main.elf::Multiply:[000210-000362]:Arithmetic analysis is not needed.
+Note:main.elf::Multiply:[000210-000362]:Unused (# 1 = Multiply at 000210) is FALSE
+Note:main.elf::Multiply:[000210-000362]:Time_State for bounds # 1 defined as COMPUTABLE
+Note:main.elf::Multiply:[000210-000362]:Freezing bounds # 1
+Note:main.elf::::Target-specific additional analysis starts.
+Note:main.elf::::Generic worst-case path and time analysis starts.
+Wcet:main.elf::Multiply:[000210-000362]:984816
+
+Details as requested by -show:
+
+1     Multiply
+
+      Loop 1 :[00026E-000326]
+         Neck 20..20
+      Loop 2 :[000242-000332]
+         Neck 20..20
+      Loop 3 :[00023C-000342]
+         Neck 20..20
+
+Note:main.elf::::Creating DOT file flowgraphs/cg_Multiply_001.dot.
+Note:main.elf::::Creating SLI file sourceinfo.csv.
