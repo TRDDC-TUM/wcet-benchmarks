@@ -1,0 +1,171 @@
+pretty-print on
+WARN: Symbol at 8c already has a name: __ctors_end. Updating to __ctors_start.
+WARN: Symbol at 364 already has a name: _div. Updating to __divmodhi4.
+WARN: Symbol at 8c already has a name: __ctors_start. Updating to __dtors_end.
+WARN: Symbol at 8c already has a name: __dtors_end. Updating to __dtors_start.
+WARN: Symbol at 3b4 already has a name: exit. Updating to _exit.
+WARN: Symbol at 8c already has a name: __dtors_start. Updating to __init.
+WARN: Symbol at 8c already has a name: __init. Updating to __trampolines_end.
+WARN: Symbol at 8c already has a name: __trampolines_end. Updating to __trampolines_start.
+WARN: Symbol at b0 already has a name: __bad_interrupt. Updating to __vector_1.
+WARN: Symbol at b0 already has a name: __vector_1. Updating to __vector_10.
+WARN: Symbol at b0 already has a name: __vector_10. Updating to __vector_11.
+WARN: Symbol at b0 already has a name: __vector_11. Updating to __vector_12.
+WARN: Symbol at b0 already has a name: __vector_12. Updating to __vector_13.
+WARN: Symbol at b0 already has a name: __vector_13. Updating to __vector_14.
+WARN: Symbol at b0 already has a name: __vector_14. Updating to __vector_15.
+WARN: Symbol at b0 already has a name: __vector_15. Updating to __vector_16.
+WARN: Symbol at b0 already has a name: __vector_16. Updating to __vector_17.
+WARN: Symbol at b0 already has a name: __vector_17. Updating to __vector_18.
+WARN: Symbol at b0 already has a name: __vector_18. Updating to __vector_19.
+WARN: Symbol at b0 already has a name: __vector_19. Updating to __vector_2.
+WARN: Symbol at b0 already has a name: __vector_2. Updating to __vector_20.
+WARN: Symbol at b0 already has a name: __vector_20. Updating to __vector_21.
+WARN: Symbol at b0 already has a name: __vector_21. Updating to __vector_22.
+WARN: Symbol at b0 already has a name: __vector_22. Updating to __vector_23.
+WARN: Symbol at b0 already has a name: __vector_23. Updating to __vector_24.
+WARN: Symbol at b0 already has a name: __vector_24. Updating to __vector_25.
+WARN: Symbol at b0 already has a name: __vector_25. Updating to __vector_26.
+WARN: Symbol at b0 already has a name: __vector_26. Updating to __vector_27.
+WARN: Symbol at b0 already has a name: __vector_27. Updating to __vector_28.
+WARN: Symbol at b0 already has a name: __vector_28. Updating to __vector_29.
+WARN: Symbol at b0 already has a name: __vector_29. Updating to __vector_3.
+WARN: Symbol at b0 already has a name: __vector_3. Updating to __vector_30.
+WARN: Symbol at b0 already has a name: __vector_30. Updating to __vector_31.
+WARN: Symbol at b0 already has a name: __vector_31. Updating to __vector_32.
+WARN: Symbol at b0 already has a name: __vector_32. Updating to __vector_33.
+WARN: Symbol at b0 already has a name: __vector_33. Updating to __vector_34.
+WARN: Symbol at b0 already has a name: __vector_34. Updating to __vector_4.
+WARN: Symbol at b0 already has a name: __vector_4. Updating to __vector_5.
+WARN: Symbol at b0 already has a name: __vector_5. Updating to __vector_6.
+WARN: Symbol at b0 already has a name: __vector_6. Updating to __vector_7.
+WARN: Symbol at b0 already has a name: __vector_7. Updating to __vector_8.
+WARN: Symbol at b0 already has a name: __vector_8. Updating to __vector_9.
+WARN: Symbol at 0 already has a name: __heap_end. Updating to __vector_default.
+WARN: Symbol at 0 already has a name: __vector_default. Updating to __vectors.
+Loaded 21 symbols.
+Running Simulator live...
+Tracefile ignored
+Running Simulator: simulavr -l 0 -d atmega128 -T exit -t stdout -f main.elf
+Cycles: 1 (1 per second), stack=
+Cycles: 156,964 (156,963 per second), stack=main=>Test=>Initialize=>RandomInteger=>__divmodhi4=>__divmodhi4_neg2
+Cycles: 313,684 (156,720 per second), stack=main=>Test=>Multiply
+Cycles: 490,354 (176,670 per second), stack=main=>Test=>Multiply
+Cycles: 711,457 (221,103 per second), stack=main=>Test=>Multiply
+Cycles: 873,009 (161,552 per second), stack=main=>Test=>Multiply
+Cycles: 1,033,595 (160,586 per second), stack=main=>Test=>Multiply
+Cycles: 1,193,614 (160,019 per second), stack=main=>Test=>Multiply
+{'InitSeed': {'bcet': 19,
+              'count': 1,
+              'et': [],
+              'fun': 'InitSeed',
+              'lastcall': 14444,
+              'running': False,
+              'total': 19,
+              'valid': True,
+              'wcet': 19},
+ 'Initialize': {'bcet': 128579,
+                'count': 2,
+                'et': [],
+                'fun': 'Initialize',
+                'lastcall': 143095,
+                'running': False,
+                'total': 257242,
+                'valid': True,
+                'wcet': 128663},
+ 'Multiply': {'bcet': 984816,
+              'count': 1,
+              'et': [],
+              'fun': 'Multiply',
+              'lastcall': 271775,
+              'running': False,
+              'total': 984816,
+              'valid': True,
+              'wcet': 984816},
+ 'RandomInteger': {'bcet': 254,
+                   'count': 800,
+                   'et': [],
+                   'fun': 'RandomInteger',
+                   'lastcall': 271435,
+                   'running': False,
+                   'total': 211890,
+                   'valid': True,
+                   'wcet': 277},
+ 'Test': {'bcet': 1242134,
+          'count': 1,
+          'et': [],
+          'fun': 'Test',
+          'lastcall': 14473,
+          'running': False,
+          'total': 1242134,
+          'valid': True,
+          'wcet': 1242134},
+ '__divmodhi4': {'bcet': 211,
+                 'count': 800,
+                 'et': [],
+                 'fun': '__divmodhi4',
+                 'lastcall': 271462,
+                 'running': False,
+                 'total': 177490,
+                 'valid': True,
+                 'wcet': 234},
+ '__divmodhi4_neg1': {'bcet': 7,
+                      'count': 376,
+                      'et': [],
+                      'fun': '__divmodhi4_neg1',
+                      'lastcall': 269587,
+                      'running': False,
+                      'total': 2632,
+                      'valid': True,
+                      'wcet': 7},
+ '__divmodhi4_neg2': {'bcet': 7,
+                      'count': 376,
+                      'et': [],
+                      'fun': '__divmodhi4_neg2',
+                      'lastcall': 269797,
+                      'running': False,
+                      'total': 2632,
+                      'valid': True,
+                      'wcet': 7},
+ '__udivmodhi4': {'bcet': 193,
+                  'count': 800,
+                  'et': [],
+                  'fun': '__udivmodhi4',
+                  'lastcall': 271472,
+                  'running': False,
+                  'total': 155194,
+                  'valid': True,
+                  'wcet': 195},
+ 'main': {'bcet': 1242182,
+          'count': 1,
+          'et': [],
+          'fun': 'main',
+          'lastcall': 14434,
+          'running': False,
+          'total': 1242182,
+          'valid': True,
+          'wcet': 1242182}}
+Coverage by cycles:
+main                                   1,242,182   98.85%
+Test                                   1,242,134   98.85%
+Multiply                                 984,816   78.37%
+Initialize                               257,242   20.47%
+RandomInteger                            211,890   16.86%
+__divmodhi4                              177,490   14.12%
+__udivmodhi4                             155,194   12.35%
+__divmodhi4_neg2                           2,632   0.21%
+__divmodhi4_neg1                           2,632   0.21%
+InitSeed                                      19   0.00%
+__vectors                                      0   0.00%
+__divmodhi4_exit                               0   0.00%
+__udivmodhi4_ep                                0   0.00%
+__trampolines_start                            0   0.00%
+__vector_9                                     0   0.00%
+_etext                                         0   0.00%
+_exit                                          0   0.00%
+__stop_program                                 0   0.00%
+__do_clear_bss                                 0   0.00%
+__udivmodhi4_loop                              0   0.00%
+__stack                                        0   0.00%
+Total cycles: 1256619
+Total time: 7.5s

@@ -521,11 +521,11 @@ int foo(int x)
 }
 
 
-void main(void)
+int main(void)
 {
 #ifdef TEST
   printf("result=%d\n",foo(400));
 #else
-  foo(400);
+  return foo(400);
 #endif
 }

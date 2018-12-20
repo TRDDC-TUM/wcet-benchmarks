@@ -1,0 +1,223 @@
+pretty-print on
+WARN: Symbol at 8c already has a name: __ctors_end. Updating to __ctors_start.
+WARN: Symbol at 5b0 already has a name: _div. Updating to __divmodhi4.
+WARN: Symbol at 8c already has a name: __ctors_start. Updating to __dtors_end.
+WARN: Symbol at 8c already has a name: __dtors_end. Updating to __dtors_start.
+WARN: Symbol at 600 already has a name: exit. Updating to _exit.
+WARN: Symbol at 8c already has a name: __dtors_start. Updating to __init.
+WARN: Symbol at 8c already has a name: __init. Updating to __trampolines_end.
+WARN: Symbol at 8c already has a name: __trampolines_end. Updating to __trampolines_start.
+WARN: Symbol at b0 already has a name: __bad_interrupt. Updating to __vector_1.
+WARN: Symbol at b0 already has a name: __vector_1. Updating to __vector_10.
+WARN: Symbol at b0 already has a name: __vector_10. Updating to __vector_11.
+WARN: Symbol at b0 already has a name: __vector_11. Updating to __vector_12.
+WARN: Symbol at b0 already has a name: __vector_12. Updating to __vector_13.
+WARN: Symbol at b0 already has a name: __vector_13. Updating to __vector_14.
+WARN: Symbol at b0 already has a name: __vector_14. Updating to __vector_15.
+WARN: Symbol at b0 already has a name: __vector_15. Updating to __vector_16.
+WARN: Symbol at b0 already has a name: __vector_16. Updating to __vector_17.
+WARN: Symbol at b0 already has a name: __vector_17. Updating to __vector_18.
+WARN: Symbol at b0 already has a name: __vector_18. Updating to __vector_19.
+WARN: Symbol at b0 already has a name: __vector_19. Updating to __vector_2.
+WARN: Symbol at b0 already has a name: __vector_2. Updating to __vector_20.
+WARN: Symbol at b0 already has a name: __vector_20. Updating to __vector_21.
+WARN: Symbol at b0 already has a name: __vector_21. Updating to __vector_22.
+WARN: Symbol at b0 already has a name: __vector_22. Updating to __vector_23.
+WARN: Symbol at b0 already has a name: __vector_23. Updating to __vector_24.
+WARN: Symbol at b0 already has a name: __vector_24. Updating to __vector_25.
+WARN: Symbol at b0 already has a name: __vector_25. Updating to __vector_26.
+WARN: Symbol at b0 already has a name: __vector_26. Updating to __vector_27.
+WARN: Symbol at b0 already has a name: __vector_27. Updating to __vector_28.
+WARN: Symbol at b0 already has a name: __vector_28. Updating to __vector_29.
+WARN: Symbol at b0 already has a name: __vector_29. Updating to __vector_3.
+WARN: Symbol at b0 already has a name: __vector_3. Updating to __vector_30.
+WARN: Symbol at b0 already has a name: __vector_30. Updating to __vector_31.
+WARN: Symbol at b0 already has a name: __vector_31. Updating to __vector_32.
+WARN: Symbol at b0 already has a name: __vector_32. Updating to __vector_33.
+WARN: Symbol at b0 already has a name: __vector_33. Updating to __vector_34.
+WARN: Symbol at b0 already has a name: __vector_34. Updating to __vector_4.
+WARN: Symbol at b0 already has a name: __vector_4. Updating to __vector_5.
+WARN: Symbol at b0 already has a name: __vector_5. Updating to __vector_6.
+WARN: Symbol at b0 already has a name: __vector_6. Updating to __vector_7.
+WARN: Symbol at b0 already has a name: __vector_7. Updating to __vector_8.
+WARN: Symbol at b0 already has a name: __vector_8. Updating to __vector_9.
+WARN: Symbol at 0 already has a name: __heap_end. Updating to __vector_default.
+WARN: Symbol at 0 already has a name: __vector_default. Updating to __vectors.
+Loaded 35 symbols.
+Running Simulator live...
+Tracefile ignored
+Running Simulator: simulavr -l 0 -d atmega128 -T exit -t stdout -f main.elf
+Cycles: 1 (1 per second), stack=
+{'0x470': {'bcet': 109,
+           'count': 3,
+           'et': [],
+           'fun': '0x470',
+           'lastcall': 40382,
+           'running': False,
+           'total': 330,
+           'valid': True,
+           'wcet': 112},
+ 'InitSeed': {'bcet': 20,
+              'count': 1,
+              'et': [],
+              'fun': 'InitSeed',
+              'lastcall': 1292,
+              'running': False,
+              'total': 20,
+              'valid': True,
+              'wcet': 20},
+ 'Initialize': {'bcet': 30291,
+                'count': 1,
+                'et': [],
+                'fun': 'Initialize',
+                'lastcall': 1351,
+                'running': False,
+                'total': 30291,
+                'valid': True,
+                'wcet': 30291},
+ 'RandomInteger': {'bcet': 254,
+                   'count': 100,
+                   'et': [],
+                   'fun': 'RandomInteger',
+                   'lastcall': 31338,
+                   'running': False,
+                   'total': 26382,
+                   'valid': True,
+                   'wcet': 277},
+ 'Sum': {'bcet': 8318,
+         'count': 1,
+         'et': [],
+         'fun': 'Sum',
+         'lastcall': 31662,
+         'running': False,
+         'total': 8318,
+         'valid': True,
+         'wcet': 8318},
+ 'Test': {'bcet': 39253,
+          'count': 1,
+          'et': [],
+          'fun': 'Test',
+          'lastcall': 1318,
+          'running': False,
+          'total': 39253,
+          'valid': True,
+          'wcet': 39253},
+ '__divmodhi4': {'bcet': 211,
+                 'count': 100,
+                 'et': [],
+                 'fun': '__divmodhi4',
+                 'lastcall': 31365,
+                 'running': False,
+                 'total': 22082,
+                 'valid': True,
+                 'wcet': 234},
+ '__divmodhi4_neg1': {'bcet': 7,
+                      'count': 42,
+                      'et': [],
+                      'fun': '__divmodhi4_neg1',
+                      'lastcall': 29891,
+                      'running': False,
+                      'total': 294,
+                      'valid': True,
+                      'wcet': 7},
+ '__divmodhi4_neg2': {'bcet': 7,
+                      'count': 42,
+                      'et': [],
+                      'fun': '__divmodhi4_neg2',
+                      'lastcall': 30101,
+                      'running': False,
+                      'total': 294,
+                      'valid': True,
+                      'wcet': 7},
+ '__divsf3': {'bcet': 435,
+              'count': 1,
+              'et': [],
+              'fun': '__divsf3',
+              'lastcall': 40101,
+              'running': False,
+              'total': 435,
+              'valid': True,
+              'wcet': 435},
+ '__divsf3x': {'bcet': 416,
+               'count': 1,
+               'et': [],
+               'fun': '__divsf3x',
+               'lastcall': 40105,
+               'running': False,
+               'total': 416,
+               'valid': True,
+               'wcet': 416},
+ '__floatsisf': {'bcet': 67,
+                 'count': 1,
+                 'et': [],
+                 'fun': '__floatsisf',
+                 'lastcall': 40022,
+                 'running': False,
+                 'total': 67,
+                 'valid': True,
+                 'wcet': 67},
+ '__fp_split3': {'bcet': 19,
+                 'count': 1,
+                 'et': [],
+                 'fun': '__fp_split3',
+                 'lastcall': 40109,
+                 'running': False,
+                 'total': 19,
+                 'valid': True,
+                 'wcet': 19},
+ '__udivmodhi4': {'bcet': 193,
+                  'count': 100,
+                  'et': [],
+                  'fun': '__udivmodhi4',
+                  'lastcall': 31375,
+                  'running': False,
+                  'total': 19400,
+                  'valid': True,
+                  'wcet': 195},
+ 'main': {'bcet': 39299,
+          'count': 1,
+          'et': [],
+          'fun': 'main',
+          'lastcall': 1282,
+          'running': False,
+          'total': 39299,
+          'valid': True,
+          'wcet': 39299}}
+Coverage by cycles:
+main                                      39,299   96.83%
+Test                                      39,253   96.72%
+Initialize                                30,291   74.64%
+RandomInteger                             26,382   65.01%
+__divmodhi4                               22,082   54.41%
+__udivmodhi4                              19,400   47.80%
+Sum                                        8,318   20.50%
+__divsf3                                     435   1.07%
+__divsf3x                                    416   1.03%
+__divmodhi4_neg1                             294   0.72%
+__divmodhi4_neg2                             294   0.72%
+__floatsisf                                   67   0.17%
+InitSeed                                      20   0.05%
+__fp_split3                                   19   0.05%
+_exit                                          0   0.00%
+__vectors                                      0   0.00%
+__stop_program                                 0   0.00%
+_etext                                         0   0.00%
+__trampolines_start                            0   0.00%
+__fp_inf                                       0   0.00%
+__floatunsisf                                  0   0.00%
+__udivmodhi4_ep                                0   0.00%
+__do_clear_bss                                 0   0.00%
+__fp_nan                                       0   0.00%
+__fp_pscA                                      0   0.00%
+__fp_zero                                      0   0.00%
+__fp_szero                                     0   0.00%
+__vector_9                                     0   0.00%
+__fp_pscB                                      0   0.00%
+__divsf3_pse                                   0   0.00%
+__fp_round                                     0   0.00%
+__divmodhi4_exit                               0   0.00%
+__udivmodhi4_loop                              0   0.00%
+__fp_splitA                                    0   0.00%
+__stack                                        0   0.00%
+Total cycles: 40584
+Total time: 0.3s

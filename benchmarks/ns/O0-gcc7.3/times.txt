@@ -2,7 +2,7 @@ pretty-print on
 WARN: Symbol at 8c already has a name: __ctors_end. Updating to __ctors_start.
 WARN: Symbol at 8c already has a name: __ctors_start. Updating to __dtors_end.
 WARN: Symbol at 8c already has a name: __dtors_end. Updating to __dtors_start.
-WARN: Symbol at 1ac already has a name: exit. Updating to _exit.
+WARN: Symbol at 26e already has a name: exit. Updating to _exit.
 WARN: Symbol at 8c already has a name: __dtors_start. Updating to __init.
 WARN: Symbol at 8c already has a name: __init. Updating to __trampolines_end.
 WARN: Symbol at 8c already has a name: __trampolines_end. Updating to __trampolines_start.
@@ -47,36 +47,36 @@ Running Simulator live...
 Tracefile ignored
 Running Simulator: simulavr -l 0 -d atmega128 -T exit -t stdout -f main.elf
 Cycles: 1 (1 per second), stack=
-{'foo': {'bcet': 9757,
+{'foo': {'bcet': 56413,
          'count': 1,
          'et': [],
          'fun': 'foo',
-         'lastcall': 22532,
+         'lastcall': 22538,
          'running': False,
-         'total': 9757,
+         'total': 56413,
          'valid': True,
-         'wcet': 9757},
- 'main': {'bcet': 9767,
+         'wcet': 56413},
+ 'main': {'bcet': 56434,
           'count': 1,
           'et': [],
           'fun': 'main',
           'lastcall': 22526,
           'running': False,
-          'total': 9767,
+          'total': 56434,
           'valid': True,
-          'wcet': 9767}}
+          'wcet': 56434}}
 Coverage by cycles:
-main                                       9,767   30.24%
-foo                                        9,757   30.21%
+main                                      56,434   71.47%
+foo                                       56,413   71.44%
 __eeprom_end                                   0   0.00%
 __vectors                                      0   0.00%
 _end                                           0   0.00%
-_exit                                          0   0.00%
 __trampolines_start                            0   0.00%
+_exit                                          0   0.00%
 __stop_program                                 0   0.00%
 _etext                                         0   0.00%
 __do_copy_data                                 0   0.00%
 __vector_9                                     0   0.00%
 __stack                                        0   0.00%
-Total cycles: 32296
-Total time: 0.2s
+Total cycles: 78963
+Total time: 0.6s
