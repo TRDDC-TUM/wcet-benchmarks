@@ -28,6 +28,7 @@ CFLAGS=-DIS_ANALYSIS -DCBMC -DNEWCODE
 CBMCLOOPS= #--unwindset fir_filter_int.0:34,fir_filter_int.1:700
 CBMCDRIVER=--function CBMCDriver
 CBMCFLAGS+=$(CFLAGS) $(CBMCLOOPS) $(CBMCDRIVER) --all-properties --slice-formula
+REPLAYFLAGS=--ignore-errors # cannot parse all r-values in counterexample
 
 # how precise (clock cycles) do we need WCET?
 WCET_PREC=1
@@ -41,6 +42,11 @@ all: $(LOGFILE)
 
 $(LOGFILE): $(TMPL)
 	CBMC="$(CBMC)" CBMCFLAGS="$(CBMCFLAGS)" TIMER="$(TIMER)" CBMCINTERMED="$(CBMCINTERMED)" $(PY) -u ../../../../scripts/find_wcet2.py -i $< -p $(WCET_PREC) | tee $(LOGFILE)
+
+CFILE=$(TMPL:%.in=%.c)
+replay:
+	echo CFILE=$(CFILE)
+	$(PY) ../../../../scripts/cbmc_replay.py $(REPLAYFLAGS) --xml-ui -e CBMCDriver -r $(CBMCINTERMED)/tmp_$(CFILE):replay/tmp_$(CFILE) $(CBMCINTERMED)/results_cbmc.xml $(CBMCINTERMED)/tmp_$(CFILE) 2> gdb.log | tee replay.xml
 
 clean:
 	rm -f $(LOGFILE)

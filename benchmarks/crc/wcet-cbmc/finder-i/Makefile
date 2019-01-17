@@ -42,6 +42,13 @@ all: $(LOGFILE)
 $(LOGFILE): $(TMPL)
 	CBMC="$(CBMC)" CBMCFLAGS="$(CBMCFLAGS)" TIMER="$(TIMER)" CBMCINTERMED="$(CBMCINTERMED)" $(PY) -u ../../../../scripts/find_wcet2.py -i $< -p $(WCET_PREC) | tee $(LOGFILE)
 
+CFILE=$(TMPL:%.in=%.c)
+replay:
+	#$(PY) -m profile -o profile.txt ../../../../scripts/cbmc_replay.py --xml-ui -e CBMCDriver -r $(CBMCINTERMED)/tmp_$(CFILE):replay/tmp_$(CFILE) $(CBMCINTERMED)/results_cbmc.xml $(CBMCINTERMED)/tmp_$(CFILE) 2> gdb.log | tee replay.xml
+	$(PY) ../../../../scripts/cbmc_replay.py --xml-ui -e CBMCDriver -r $(CBMCINTERMED)/tmp_$(CFILE):$(CBMCINTERMED)/replay/tmp_$(CFILE) $(CBMCINTERMED)/results_cbmc.xml $(CBMCINTERMED)/tmp_$(CFILE) 2> gdb.log | tee replay.xml
+	echo "replay complete"	
+
+
 clean:
 	rm -f $(LOGFILE)
 

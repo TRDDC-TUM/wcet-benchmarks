@@ -31,16 +31,22 @@ CBMCFLAGS+=$(CFLAGS) $(CBMCLOOPS) $(CBMCDRIVER) --all-properties --slice-formula
 
 # how precise (clock cycles) do we need WCET?
 WCET_PREC=1
+WCET_GUESS=0
 
 #########################################
 #  BUILD RULES
 #########################################
-.PHONY: clean
+.PHONY: clean replay
 
 all: $(LOGFILE)
 
 $(LOGFILE): $(TMPL)
-	CBMC="$(CBMC)" CBMCFLAGS="$(CBMCFLAGS)" TIMER="$(TIMER)" CBMCINTERMED="$(CBMCINTERMED)" $(PY) -u ../../../../scripts/find_wcet2.py -i $< -p $(WCET_PREC) | tee $(LOGFILE)
+	CBMC="$(CBMC)" CBMCFLAGS="$(CBMCFLAGS)" TIMER="$(TIMER)" CBMCINTERMED="$(CBMCINTERMED)" $(PY) -u ../../../../scripts/find_wcet2.py -i $< -p $(WCET_PREC) -g $(WCET_GUESS) | tee $(LOGFILE)
+
+CFILE=$(TMPL:%.in=%.c)
+replay:
+	echo CFILE=$(CFILE)
+	$(PY) -u ../../../../scripts/cbmc_replay.py --debug --xml-ui -e CBMCDriver -r $(CBMCINTERMED)/tmp_$(CFILE):replay/tmp_$(CFILE) $(CBMCINTERMED)/results_cbmc.xml $(CBMCINTERMED)/tmp_$(CFILE) 2> gdb.log | tee replay.xml
 
 clean:
 	rm -f $(LOGFILE)

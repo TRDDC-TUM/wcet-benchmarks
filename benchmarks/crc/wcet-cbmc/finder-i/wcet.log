@@ -1,81 +1,90 @@
-CBMCFLAGS: -DIS_ANALYSIS -DCBMC -DNEWCODE  --function CBMCDriver --all-properties --slice-formula
+CBMCFLAGS: --yices --trace -DIS_ANALYSIS -DCBMC -DNEWCODE  --function CBMCDriver --all-properties --slice-formula
+GOTOINSFLAGS: 
+Initial guess: 0..0
+Requested WCET precision: 1
+Assertions per step: 10
+Max steps: 0
+All Flags: --yices --trace -DIS_ANALYSIS -DCBMC -DNEWCODE  --function CBMCDriver --all-properties --slice-formula
+Output path: /home/becker/async/wcet-benchmarks/benchmarks/crc/wcet-cbmc/finder-i
+Output path intermediate: modelcheck
+Template file: crc_i.in
+Other files: 
 ...step #1: WCET in [0,9223372036854775807], precision=9223372036854775807
-......cand: 72057594037927296, 1, 2097151, 9223372036854703104, 268435455, 127, 4398046511103, 9223372036854775807, 562949953421306, 16383, 34359738367
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.2
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.6
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
-......time=2.2, mem=80644, complexity={'clauses': {'max': 59271, 'sum': 111294, 'n': 2, 'avg': 55647, 'min': 52023}, 'variables': {'max': 16836, 'sum': 33672, 'n': 2, 'avg': 16836, 'min': 16836}, 'steps': {'max': 41398, 'sum': 41398, 'n': 1, 'avg': 41398, 'min': 41398}}
-......WCET in [16383,2097151], precision=2080768
-......remaining steps <=7
-...step #2: WCET in [16383,2097151], precision=2080768
-......cand: 1865954, 1634758, 2097151, 1403561, 1172365, 941168, 709972, 478775, 247579, 16383
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
-......time=1.96, mem=77332, complexity={'clauses': {'max': 59471, 'sum': 111784, 'n': 2, 'avg': 55892, 'min': 52313}, 'variables': {'max': 16853, 'sum': 33706, 'n': 2, 'avg': 16853, 'min': 16853}, 'steps': {'max': 41399, 'sum': 41399, 'n': 1, 'avg': 41399, 'min': 41399}}
-......WCET in [16383,247579], precision=231196
+......cand: 6208, 1, 18854838150406, 1485633833817296, 78, 38543920, 3037000499, 239295116727, 489178, 117057906865942864, 9223372036854775807
+......Reading properties from ['modelcheck/tmp_crc_i.c']
+......Running cbmc on files ...
+......TIMEOUT for solver yices was fixed: timeout -s QUIT 10m /usr/bin/time -v
+......counterexample [CBMCDriver.assertion.1]: <{'xml': None, 'max': 130090, 'readable': True, 'min': 126058}
+......CEGR: CBMCDriver.assertion.1<=6208, counterexample=130090
+......counterexample [CBMCDriver.assertion.2]: <{'xml': None, 'max': 130090, 'readable': True, 'min': 126058}
+......CEGR: CBMCDriver.assertion.2<=1, counterexample=130090
+......counterexample [CBMCDriver.assertion.5]: <{'xml': None, 'max': 130090, 'readable': True, 'min': 126058}
+......CEGR: CBMCDriver.assertion.5<=78, counterexample=130090
+......walltime=2.41, usertime=2.28, dbg_time1=2.46, mem=73592, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 40619, 'sum': 40619, 'n': 1, 'avg': 40619, 'min': 40619}}
+......WCET in [130090,489178], precision=359088
 ......remaining steps <=6
-...step #3: WCET in [16383,247579], precision=231196
-......cand: 119136, 221890, 93448, 196202, 67759, 170513, 42071, 144825, 247579, 16383
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.1
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.3
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.5
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.7
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
-......time=2.49, mem=83920, complexity={'clauses': {'max': 59474, 'sum': 111752, 'n': 2, 'avg': 55876, 'min': 52278}, 'variables': {'max': 16854, 'sum': 33708, 'n': 2, 'avg': 16854, 'min': 16854}, 'steps': {'max': 41399, 'sum': 41399, 'n': 1, 'avg': 41399, 'min': 41399}}
-......WCET in [119136,144825], precision=25689
+...step #2: WCET in [130090,489178], precision=359088
+......cand: 309634, 345542, 130090, 381451, 165998, 417360, 201907, 453269, 237816, 489178, 273725
+......Reading properties from ['modelcheck/tmp_crc_i.c']
+......Running cbmc on files ...
+......TIMEOUT for solver yices was fixed: timeout -s QUIT 10m /usr/bin/time -v
+......counterexample [CBMCDriver.assertion.3]: <{'xml': None, 'max': 130090, 'readable': True, 'min': 126058}
+......walltime=1.96, usertime=1.86, dbg_time1=2.02, mem=70160, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 40621, 'sum': 40621, 'n': 1, 'avg': 40621, 'min': 40621}}
+......WCET in [130090,165998], precision=35908
 ......remaining steps <=5
-...step #4: WCET in [119136,144825], precision=25689
-......cand: 119136, 136262, 121990, 139116, 124844, 141970, 127699, 144825, 130553, 133407
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.1
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.3
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.5
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.7
-......time=2.37, mem=82140, complexity={'clauses': {'max': 59459, 'sum': 111718, 'n': 2, 'avg': 55859, 'min': 52259}, 'variables': {'max': 16849, 'sum': 33698, 'n': 2, 'avg': 16849, 'min': 16849}, 'steps': {'max': 41399, 'sum': 41399, 'n': 1, 'avg': 41399, 'min': 41399}}
-......WCET in [127699,130553], precision=2854
+...step #3: WCET in [130090,165998], precision=35908
+......cand: 158816, 144453, 162407, 130090, 148044, 165998, 133680, 151634, 137271, 155225, 140862
+......Reading properties from ['modelcheck/tmp_crc_i.c']
+......Running cbmc on files ...
+......TIMEOUT for solver yices was fixed: timeout -s QUIT 10m /usr/bin/time -v
+......counterexample [CBMCDriver.assertion.4]: <{'xml': None, 'max': 130090, 'readable': True, 'min': 126058}
+......walltime=1.97, usertime=1.84, dbg_time1=2.02, mem=70156, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 40621, 'sum': 40621, 'n': 1, 'avg': 40621, 'min': 40621}}
+......WCET in [130090,133680], precision=3590
 ......remaining steps <=4
-...step #5: WCET in [127699,130553], precision=2854
-......cand: 129601, 129284, 128967, 128650, 128333, 128016, 127699, 130553, 130235, 129918
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.1
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.2
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.3
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.4
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.5
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.6
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.7
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
-......time=2.56, mem=88592, complexity={'clauses': {'max': 59459, 'sum': 111703, 'n': 2, 'avg': 55851, 'min': 52244}, 'variables': {'max': 16849, 'sum': 33698, 'n': 2, 'avg': 16849, 'min': 16849}, 'steps': {'max': 41399, 'sum': 41399, 'n': 1, 'avg': 41399, 'min': 41399}}
-......WCET in [129918,130235], precision=317
+...step #4: WCET in [130090,133680], precision=3590
+......cand: 132962, 131526, 133321, 130090, 131885, 133680, 130449, 132244, 130808, 132603, 131167
+......Reading properties from ['modelcheck/tmp_crc_i.c']
+......Running cbmc on files ...
+......TIMEOUT for solver yices was fixed: timeout -s QUIT 10m /usr/bin/time -v
+......counterexample [CBMCDriver.assertion.4]: <{'xml': None, 'max': 130090, 'readable': True, 'min': 126058}
+......walltime=2.14, usertime=2.03, dbg_time1=2.19, mem=70160, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 40621, 'sum': 40621, 'n': 1, 'avg': 40621, 'min': 40621}}
+......WCET in [130090,130449], precision=359
 ......remaining steps <=3
-...step #6: WCET in [129918,130235], precision=317
-......cand: 129953, 129988, 130023, 130058, 130094, 130129, 130164, 130199, 130235, 129918
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.1
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.2
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.3
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.4
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.5
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
-......time=2.54, mem=85328, complexity={'clauses': {'max': 59447, 'sum': 164017, 'n': 3, 'avg': 54672, 'min': 52281}, 'variables': {'max': 16845, 'sum': 50535, 'n': 3, 'avg': 16845, 'min': 16845}, 'steps': {'max': 41399, 'sum': 41399, 'n': 1, 'avg': 41399, 'min': 41399}}
-......WCET in [130094,130129], precision=35
+...step #5: WCET in [130090,130449], precision=359
+......cand: 130305, 130341, 130449, 130377, 130090, 130125, 130413, 130161, 130197, 130233, 130269
+......Reading properties from ['modelcheck/tmp_crc_i.c']
+......Running cbmc on files ...
+......TIMEOUT for solver yices was fixed: timeout -s QUIT 10m /usr/bin/time -v
+......counterexample [CBMCDriver.assertion.5]: <{'xml': None, 'max': 130090, 'readable': True, 'min': 126058}
+......walltime=1.95, usertime=1.81, dbg_time1=2.00, mem=70160, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 40621, 'sum': 40621, 'n': 1, 'avg': 40621, 'min': 40621}}
+......WCET in [130090,130125], precision=35
 ......remaining steps <=2
-...step #7: WCET in [130094,130129], precision=35
-......cand: 130113, 130117, 130129, 130121, 130125, 130094, 130097, 130101, 130105, 130109
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.1
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.6
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.7
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.8
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.9
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.10
-......time=2.7, mem=85328, complexity={'clauses': {'max': 59480, 'sum': 111796, 'n': 2, 'avg': 55898, 'min': 52316}, 'variables': {'max': 16856, 'sum': 33712, 'n': 2, 'avg': 16856, 'min': 16856}, 'steps': {'max': 41399, 'sum': 41399, 'n': 1, 'avg': 41399, 'min': 41399}}
-......WCET in [130113,130117], precision=4
-......remaining steps <=1
-...step #8: WCET in [130113,130117], precision=4
-......cand: 130113, 130114, 130115, 130116, 130117
-......WARNING: could not parse counterexample for property CBMCDriver.assertion.1
-......time=1.94, mem=77372, complexity={'clauses': {'max': 58823, 'sum': 110817, 'n': 2, 'avg': 55408, 'min': 51994}, 'variables': {'max': 16687, 'sum': 33374, 'n': 2, 'avg': 16687, 'min': 16687}, 'steps': {'max': 41394, 'sum': 41394, 'n': 1, 'avg': 41394, 'min': 41394}}
+...step #6: WCET in [130090,130125], precision=35
+......cand: 130114, 130118, 130121, 130090, 130093, 130125, 130097, 130100, 130104, 130107, 130111
+......Reading properties from ['modelcheck/tmp_crc_i.c']
+......Running cbmc on files ...
+......TIMEOUT for solver yices was fixed: timeout -s QUIT 10m /usr/bin/time -v
+......counterexample [CBMCDriver.assertion.4]: <{'xml': None, 'max': 130090, 'readable': True, 'min': 126058}
+......counterexample [CBMCDriver.assertion.5]: <{'xml': None, 'max': 130113, 'readable': True, 'min': 126081}
+......CEGR: CBMCDriver.assertion.5<=130093, counterexample=130113
+......counterexample [CBMCDriver.assertion.7]: <{'xml': None, 'max': 130113, 'readable': True, 'min': 126081}
+......CEGR: CBMCDriver.assertion.7<=130097, counterexample=130113
+......counterexample [CBMCDriver.assertion.8]: <{'xml': None, 'max': 130113, 'readable': True, 'min': 126081}
+......CEGR: CBMCDriver.assertion.8<=130100, counterexample=130113
+......counterexample [CBMCDriver.assertion.9]: <{'xml': None, 'max': 130113, 'readable': True, 'min': 126081}
+......CEGR: CBMCDriver.assertion.9<=130104, counterexample=130113
+......counterexample [CBMCDriver.assertion.10]: <{'xml': None, 'max': 130113, 'readable': True, 'min': 126081}
+......CEGR: CBMCDriver.assertion.10<=130107, counterexample=130113
+......counterexample [CBMCDriver.assertion.11]: <{'xml': None, 'max': 130113, 'readable': True, 'min': 126081}
+......CEGR: CBMCDriver.assertion.11<=130111, counterexample=130113
+......walltime=3.21, usertime=3.07, dbg_time1=3.26, mem=80608, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 40621, 'sum': 40621, 'n': 1, 'avg': 40621, 'min': 40621}}
 ......WCET in [130113,130114], precision=1
-SUCCESS: Precise enough after 8 iterations, precision=1
+SUCCESS: Precise enough after 6 iterations, precision=1
 RESULT: 130113 < WCET <= 130114 cycles
-peak memory (kBytes): samples=8, min=77332.0, avg=82582.0, max=88592.0, sum=660656.0
-cbmc time (sec): samples=8, min=1.94, avg=2.345, max=2.7, sum=18.76
-variables: samples=17, min=16687, avg=16829, max=16856, sum=286103
-clauses: samples=17, min=51994, avg=55581, max=59480, sum=944881
-steps: samples=8, min=41394, avg=41398, max=41399, sum=331186
+peak memory (kBytes): samples=6, min=70156.0, avg=72472.6666667, max=80608.0, sum=434836.0
+cbmc walltime (sec): samples=6, min=1.95, avg=2.27333333333, max=3.21, sum=13.64
+cbmc usertime (sec): samples=6, min=1.81, avg=2.14833333333, max=3.07, sum=12.89
+variables: samples=0, min=None, avg=None, max=None, sum=0
+clauses: samples=0, min=None, avg=None, max=None, sum=0
+steps: samples=6, min=40619, avg=40620, max=40621, sum=243724
+Script: alltime=21.59, selftime=7.95, ret=0

@@ -1,46 +1,85 @@
+CBMCFLAGS: -DIS_ANALYSIS -DCBMC -DNEWCODE  --function CBMCDriver --all-properties --slice-formula
+GOTOINSFLAGS: 
+Initial guess: 0..0
+Requested WCET precision: 1
+Assertions per step: 10
+Max steps: 0
+All Flags: -DIS_ANALYSIS -DCBMC -DNEWCODE  --function CBMCDriver --all-properties --slice-formula
+Output path: /home/becker/async/wcet-benchmarks/benchmarks/cnt/wcet-cbmc/finder-i
+Output path intermediate: modelcheck
+Template file: cnt_i.in
+Other files: 
 ...step #1: WCET in [0,9223372036854775807], precision=9223372036854775807
-......cand: 72057594037927296, 1, 2097151, 9223372036854703104, 268435455, 127, 4398046511103, 9223372036854775807, 562949953421306, 16383, 34359738367
-......CEGR: CBMCDriver.assertion.2<=1, counterexample=8511
-......CEGR: CBMCDriver.assertion.6<=127, counterexample=8511
-......time=407.34, mem=627968, complexity={'clauses': {'max': 161683, 'sum': 300519, 'n': 2, 'avg': 150259, 'min': 138836}, 'variables': {'max': 48643, 'sum': 97286, 'n': 2, 'avg': 48643, 'min': 48643}, 'steps': {'max': 3238, 'sum': 3238, 'n': 1, 'avg': 3238, 'min': 3238}}
-......WCET in [8511,16383], precision=7872
+......cand: 6208, 1, 18854838150406, 1485633833817296, 78, 38543920, 3037000499, 239295116727, 489178, 117057906865942864, 9223372036854775807
+......Reading properties from ['modelcheck/tmp_cnt_i.c']
+......Running cbmc on files ...
+......counterexample [CBMCDriver.assertion.1]: <{'xml': None, 'max': 8506, 'readable': True, 'min': 140}
+......CEGR: CBMCDriver.assertion.1<=6208, counterexample=8506
+......counterexample [CBMCDriver.assertion.2]: <{'xml': None, 'max': 8506, 'readable': True, 'min': 140}
+......CEGR: CBMCDriver.assertion.2<=1, counterexample=8506
+......counterexample [CBMCDriver.assertion.5]: <{'xml': None, 'max': 8506, 'readable': True, 'min': 140}
+......CEGR: CBMCDriver.assertion.5<=78, counterexample=8506
+......walltime=485.64, usertime=485.1, dbg_time1=485.69, mem=165720, complexity={'clauses': {'max': 138877, 'sum': 138877, 'n': 1, 'avg': 138877, 'min': 138877}, 'variables': {'max': 48636, 'sum': 48636, 'n': 1, 'avg': 48636, 'min': 48636}, 'steps': {'max': 3238, 'sum': 3238, 'n': 1, 'avg': 3238, 'min': 3238}}
+......WCET in [8506,489178], precision=480672
+......remaining steps <=6
+...step #2: WCET in [8506,489178], precision=480672
+......cand: 104640, 152707, 200774, 489178, 248842, 296909, 344976, 393043, 441110, 8506, 56573
+......Reading properties from ['modelcheck/tmp_cnt_i.c']
+......Running cbmc on files ...
+......counterexample [CBMCDriver.assertion.10]: <{'xml': None, 'max': 8507, 'readable': True, 'min': 140}
+......CEGR: CBMCDriver.assertion.10<=8506, counterexample=8507
+......walltime=383.8, usertime=383.18, dbg_time1=383.83, mem=153720, complexity={'clauses': {'max': 139142, 'sum': 139142, 'n': 1, 'avg': 139142, 'min': 139142}, 'variables': {'max': 48687, 'sum': 48687, 'n': 1, 'avg': 48687, 'min': 48687}, 'steps': {'max': 3240, 'sum': 3240, 'n': 1, 'avg': 3240, 'min': 3240}}
+......WCET in [8507,56573], precision=48066
+......remaining steps <=5
+...step #3: WCET in [8507,56573], precision=48066
+......cand: 13313, 37346, 18120, 42153, 22926, 46959, 27733, 51766, 8507, 32540, 56573
+......Reading properties from ['modelcheck/tmp_cnt_i.c']
+......Running cbmc on files ...
+......counterexample [CBMCDriver.assertion.9]: <{'xml': None, 'max': 8507, 'readable': True, 'min': 140}
+......walltime=340.76, usertime=340.21, dbg_time1=340.82, mem=135936, complexity={'clauses': {'max': 139112, 'sum': 139112, 'n': 1, 'avg': 139112, 'min': 139112}, 'variables': {'max': 48690, 'sum': 48690, 'n': 1, 'avg': 48690, 'min': 48690}, 'steps': {'max': 3240, 'sum': 3240, 'n': 1, 'avg': 3240, 'min': 3240}}
+......WCET in [8507,13313], precision=4806
 ......remaining steps <=4
-...step #2: WCET in [8511,16383], precision=7872
-......cand: 15508, 16383, 12009, 10260, 13759, 9385, 12884, 8511, 14633, 11135
-......CEGR: CBMCDriver.assertion.8<=8511, counterexample=8520
-......time=162.18, mem=438528, complexity={'clauses': {'max': 161895, 'sum': 301058, 'n': 2, 'avg': 150529, 'min': 139163}, 'variables': {'max': 48664, 'sum': 97328, 'n': 2, 'avg': 48664, 'min': 48664}, 'steps': {'max': 3239, 'sum': 3239, 'n': 1, 'avg': 3239, 'min': 3239}}
-......WCET in [8520,9385], precision=865
+...step #4: WCET in [8507,13313], precision=4806
+......cand: 12832, 13313, 8507, 9468, 11390, 12351, 8987, 9948, 10429, 10910, 11871
+......Reading properties from ['modelcheck/tmp_cnt_i.c']
+......Running cbmc on files ...
+......counterexample [CBMCDriver.assertion.3]: <{'xml': None, 'max': 8515, 'readable': True, 'min': 141}
+......CEGR: CBMCDriver.assertion.3<=8507, counterexample=8515
+......walltime=153.18, usertime=152.97, dbg_time1=153.23, mem=109508, complexity={'clauses': {'max': 139192, 'sum': 139192, 'n': 1, 'avg': 139192, 'min': 139192}, 'variables': {'max': 48686, 'sum': 48686, 'n': 1, 'avg': 48686, 'min': 48686}, 'steps': {'max': 3240, 'sum': 3240, 'n': 1, 'avg': 3240, 'min': 3240}}
+......WCET in [8515,8987], precision=472
 ......remaining steps <=3
-...step #3: WCET in [8520,9385], precision=865
-......cand: 8712, 8520, 8808, 8904, 9000, 8616, 9096, 9192, 9385, 9288
-......CEGR: CBMCDriver.assertion.2<=8520, counterexample=8526
-......time=122.63, mem=409264, complexity={'clauses': {'max': 161877, 'sum': 301032, 'n': 2, 'avg': 150516, 'min': 139155}, 'variables': {'max': 48658, 'sum': 97316, 'n': 2, 'avg': 48658, 'min': 48658}, 'steps': {'max': 3239, 'sum': 3239, 'n': 1, 'avg': 3239, 'min': 3239}}
-......WCET in [8526,8616], precision=90
+...step #5: WCET in [8515,8987], precision=472
+......cand: 8609, 8515, 8939, 8845, 8751, 8656, 8562, 8987, 8892, 8798, 8703
+......Reading properties from ['modelcheck/tmp_cnt_i.c']
+......Running cbmc on files ...
+......counterexample [CBMCDriver.assertion.2]: <{'xml': None, 'max': 8518, 'readable': True, 'min': 141}
+......CEGR: CBMCDriver.assertion.2<=8515, counterexample=8518
+......counterexample [CBMCDriver.assertion.7]: <{'xml': None, 'max': 8562, 'readable': True, 'min': 141}
+......walltime=101.03, usertime=100.84, dbg_time1=101.06, mem=117588, complexity={'clauses': {'max': 138589, 'sum': 138589, 'n': 1, 'avg': 138589, 'min': 138589}, 'variables': {'max': 48692, 'sum': 48692, 'n': 1, 'avg': 48692, 'min': 48692}, 'steps': {'max': 3240, 'sum': 3240, 'n': 1, 'avg': 3240, 'min': 3240}}
+......WCET in [8562,8609], precision=47
 ......remaining steps <=2
-...step #4: WCET in [8526,8616], precision=90
-......cand: 8576, 8546, 8616, 8586, 8556, 8526, 8596, 8566, 8536, 8606
-......CEGR: CBMCDriver.assertion.2<=8546, counterexample=8547
-......CEGR: CBMCDriver.assertion.5<=8556, counterexample=8557
-......CEGR: CBMCDriver.assertion.6<=8526, counterexample=8527
-......CEGR: CBMCDriver.assertion.9<=8536, counterexample=8537
-......time=41.12, mem=271312, complexity={'clauses': {'max': 161841, 'sum': 715304, 'n': 5, 'avg': 143060, 'min': 137493}, 'variables': {'max': 48646, 'sum': 243230, 'n': 5, 'avg': 48646, 'min': 48646}, 'steps': {'max': 3239, 'sum': 3239, 'n': 1, 'avg': 3239, 'min': 3239}}
-......WCET in [8557,8566], precision=9
+...step #6: WCET in [8562,8609], precision=47
+......cand: 8576, 8609, 8580, 8585, 8594, 8590, 8562, 8566, 8599, 8571, 8604
+......Reading properties from ['modelcheck/tmp_cnt_i.c']
+......Running cbmc on files ...
+......counterexample [CBMCDriver.assertion.7]: <{'xml': None, 'max': 8562, 'readable': True, 'min': 141}
+......walltime=58.87, usertime=58.8, dbg_time1=58.92, mem=73164, complexity={'clauses': {'max': 139205, 'sum': 139205, 'n': 1, 'avg': 139205, 'min': 139205}, 'variables': {'max': 48687, 'sum': 48687, 'n': 1, 'avg': 48687, 'min': 48687}, 'steps': {'max': 3240, 'sum': 3240, 'n': 1, 'avg': 3240, 'min': 3240}}
+......WCET in [8562,8566], precision=4
 ......remaining steps <=1
-...step #5: WCET in [8557,8566], precision=9
-......cand: 8557, 8558, 8559, 8560, 8561, 8562, 8563, 8564, 8565, 8566
-......CEGR: CBMCDriver.assertion.1<=8557, counterexample=8558
-......CEGR: CBMCDriver.assertion.2<=8558, counterexample=8559
-......CEGR: CBMCDriver.assertion.3<=8559, counterexample=8560
-......CEGR: CBMCDriver.assertion.4<=8560, counterexample=8561
-......CEGR: CBMCDriver.assertion.5<=8561, counterexample=8562
-......CEGR: CBMCDriver.assertion.6<=8562, counterexample=8563
-......CEGR: CBMCDriver.assertion.7<=8563, counterexample=8564
-......time=29.99, mem=246512, complexity={'clauses': {'max': 161871, 'sum': 1128238, 'n': 8, 'avg': 141029, 'min': 137868}, 'variables': {'max': 48656, 'sum': 389248, 'n': 8, 'avg': 48656, 'min': 48656}, 'steps': {'max': 3239, 'sum': 3239, 'n': 1, 'avg': 3239, 'min': 3239}}
-......WCET in [8564,8564], precision=0
-SUCCESS: Precise enough after 5 iterations, precision=0
-RESULT: 8564 < WCET <= 8564 cycles
-peak memory (kBytes): samples=5, min=246512.0, avg=398716.8, max=627968.0, sum=1993584.0
-cbmc time (sec): samples=5, min=29.99, avg=152.652, max=407.34, sum=763.26
-variables: samples=19, min=48643, avg=48653, max=48664, sum=924408
-clauses: samples=19, min=137493, avg=144534, max=161895, sum=2746151
-steps: samples=5, min=3238, avg=3238, max=3239, sum=16194
+...step #7: WCET in [8562,8566], precision=4
+......cand: 8562, 8563, 8564, 8565, 8566
+......Reading properties from ['modelcheck/tmp_cnt_i.c']
+......Running cbmc on files ...
+......counterexample [CBMCDriver.assertion.1]: <{'xml': None, 'max': 8562, 'readable': True, 'min': 141}
+......counterexample [CBMCDriver.assertion.2]: <{'xml': None, 'max': 8563, 'readable': True, 'min': 141}
+......walltime=20.13, usertime=20.08, dbg_time1=20.18, mem=62672, complexity={'clauses': {'max': 138210, 'sum': 138210, 'n': 1, 'avg': 138210, 'min': 138210}, 'variables': {'max': 48491, 'sum': 48491, 'n': 1, 'avg': 48491, 'min': 48491}, 'steps': {'max': 3234, 'sum': 3234, 'n': 1, 'avg': 3234, 'min': 3234}}
+......WCET in [8563,8564], precision=1
+SUCCESS: Precise enough after 7 iterations, precision=1
+RESULT: 8563 < WCET <= 8564 cycles
+peak memory (kBytes): samples=7, min=62672.0, avg=116901.142857, max=165720.0, sum=818308.0
+cbmc walltime (sec): samples=7, min=20.13, avg=220.487142857, max=485.64, sum=1543.41
+cbmc usertime (sec): samples=7, min=20.08, avg=220.168571429, max=485.1, sum=1541.18
+variables: samples=7, min=48491, avg=48652, max=48692, sum=340569
+clauses: samples=7, min=138210, avg=138903, max=139205, sum=972327
+steps: samples=7, min=3234, avg=3238, max=3240, sum=22672
+Script: alltime=1545.10, selftime=1.69, ret=0
