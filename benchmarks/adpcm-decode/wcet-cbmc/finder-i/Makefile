@@ -18,7 +18,7 @@ TMPL=$(wildcard *.in)
 PY=python
 CBMC=cbmc
 LOGFILE=wcet.log
-TIMER=timeout -s INT 10m /usr/bin/time -v
+TIMER=timeout -s INT 120m /usr/bin/time -v
 CBMCINTERMED=modelcheck
 
 ########################################
@@ -27,7 +27,8 @@ CBMCINTERMED=modelcheck
 CFLAGS=-DIS_ANALYSIS -DCBMC -DNEWCODE
 CBMCLOOPS= #--unwindset fir_filter_int.0:34,fir_filter_int.1:700
 CBMCDRIVER=--function CBMCDriver
-CBMCFLAGS+=$(CFLAGS) $(CBMCLOOPS) $(CBMCDRIVER) --all-properties --slice-formula
+CBMCFLAGS+=$(CFLAGS) $(CBMCLOOPS) $(CBMCDRIVER) --all-properties 
+#CBMCFLAGS+=--slice-formula # omit when replay is required
 
 # how precise (clock cycles) do we need WCET?
 WCET_PREC=1
@@ -41,12 +42,12 @@ WCET_GUESS=0
 all: $(LOGFILE)
 
 $(LOGFILE): $(TMPL)
-	CBMC="$(CBMC)" CBMCFLAGS="$(CBMCFLAGS)" TIMER="$(TIMER)" CBMCINTERMED="$(CBMCINTERMED)" $(PY) -u ../../../../scripts/find_wcet2.py -i $< -p $(WCET_PREC) -g $(WCET_GUESS) | tee $(LOGFILE)
+	CBMC="$(CBMC)" CBMCFLAGS="$(CBMCFLAGS)" TIMEOUT="$(TIMER)" CBMCINTERMED="$(CBMCINTERMED)" $(PY) -u ../../../../scripts/find_wcet2.py -i $< -p $(WCET_PREC) -g $(WCET_GUESS) | tee $(LOGFILE)
 
 CFILE=$(TMPL:%.in=%.c)
 replay:
 	echo CFILE=$(CFILE)
-	$(PY) -u ../../../../scripts/cbmc_replay.py --debug --xml-ui -e CBMCDriver -r $(CBMCINTERMED)/tmp_$(CFILE):replay/tmp_$(CFILE) $(CBMCINTERMED)/results_cbmc.xml $(CBMCINTERMED)/tmp_$(CFILE) 2> gdb.log | tee replay.xml
+	$(PY) -u ../../../../scripts/cbmc_replay.py --xml-ui -e CBMCDriver -r $(CBMCINTERMED)/tmp_$(CFILE):$(CBMCINTERMED)/replay/tmp_$(CFILE) $(CBMCINTERMED)/results_cbmc.xml $(CBMCINTERMED)/tmp_$(CFILE) 2> gdb.log | tee replay.xml
 
 clean:
 	rm -f $(LOGFILE)

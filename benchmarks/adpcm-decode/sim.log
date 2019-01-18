@@ -1,0 +1,353 @@
+pretty-print on
+WARN: Symbol at 8c already has a name: __ctors_end. Updating to __ctors_start.
+WARN: Symbol at 8c already has a name: __ctors_start. Updating to __dtors_end.
+WARN: Symbol at 8c already has a name: __dtors_end. Updating to __dtors_start.
+WARN: Symbol at 4e02 already has a name: exit. Updating to _exit.
+WARN: Symbol at 8c already has a name: __dtors_start. Updating to __init.
+WARN: Symbol at 8c already has a name: __init. Updating to __trampolines_end.
+WARN: Symbol at 8c already has a name: __trampolines_end. Updating to __trampolines_start.
+WARN: Symbol at ca already has a name: __bad_interrupt. Updating to __vector_1.
+WARN: Symbol at ca already has a name: __vector_1. Updating to __vector_10.
+WARN: Symbol at ca already has a name: __vector_10. Updating to __vector_11.
+WARN: Symbol at ca already has a name: __vector_11. Updating to __vector_12.
+WARN: Symbol at ca already has a name: __vector_12. Updating to __vector_13.
+WARN: Symbol at ca already has a name: __vector_13. Updating to __vector_14.
+WARN: Symbol at ca already has a name: __vector_14. Updating to __vector_15.
+WARN: Symbol at ca already has a name: __vector_15. Updating to __vector_16.
+WARN: Symbol at ca already has a name: __vector_16. Updating to __vector_17.
+WARN: Symbol at ca already has a name: __vector_17. Updating to __vector_18.
+WARN: Symbol at ca already has a name: __vector_18. Updating to __vector_19.
+WARN: Symbol at ca already has a name: __vector_19. Updating to __vector_2.
+WARN: Symbol at ca already has a name: __vector_2. Updating to __vector_20.
+WARN: Symbol at ca already has a name: __vector_20. Updating to __vector_21.
+WARN: Symbol at ca already has a name: __vector_21. Updating to __vector_22.
+WARN: Symbol at ca already has a name: __vector_22. Updating to __vector_23.
+WARN: Symbol at ca already has a name: __vector_23. Updating to __vector_24.
+WARN: Symbol at ca already has a name: __vector_24. Updating to __vector_25.
+WARN: Symbol at ca already has a name: __vector_25. Updating to __vector_26.
+WARN: Symbol at ca already has a name: __vector_26. Updating to __vector_27.
+WARN: Symbol at ca already has a name: __vector_27. Updating to __vector_28.
+WARN: Symbol at ca already has a name: __vector_28. Updating to __vector_29.
+WARN: Symbol at ca already has a name: __vector_29. Updating to __vector_3.
+WARN: Symbol at ca already has a name: __vector_3. Updating to __vector_30.
+WARN: Symbol at ca already has a name: __vector_30. Updating to __vector_31.
+WARN: Symbol at ca already has a name: __vector_31. Updating to __vector_32.
+WARN: Symbol at ca already has a name: __vector_32. Updating to __vector_33.
+WARN: Symbol at ca already has a name: __vector_33. Updating to __vector_34.
+WARN: Symbol at ca already has a name: __vector_34. Updating to __vector_4.
+WARN: Symbol at ca already has a name: __vector_4. Updating to __vector_5.
+WARN: Symbol at ca already has a name: __vector_5. Updating to __vector_6.
+WARN: Symbol at ca already has a name: __vector_6. Updating to __vector_7.
+WARN: Symbol at ca already has a name: __vector_7. Updating to __vector_8.
+WARN: Symbol at ca already has a name: __vector_8. Updating to __vector_9.
+WARN: Symbol at 0 already has a name: __heap_end. Updating to __vector_default.
+WARN: Symbol at 0 already has a name: __vector_default. Updating to __vectors.
+Loaded 46 symbols.
+Parsing trace post-mortem...
+Cycles: 365,305,102 (365,305,102 per second), stack=
+Cycles: 365,586,630 (281,528 per second), stack=main=>encode=>uppol1=>__ashldi3
+Cycles: 365,868,481 (281,851 per second), stack=main=>encode
+Cycles: 366,149,637 (281,156 per second), stack=main=>encode=>upzero
+Cycles: 366,427,412 (277,775 per second), stack=main=>encode=>quantl=>__muldi3=>__umulhisi3=>0x4db4
+Cycles: 366,693,816 (266,404 per second), stack=main=>encode
+Cycles: 366,955,831 (262,015 per second), stack=main=>decode=>uppol2=>__negdi2
+Cycles: 367,229,990 (274,159 per second), stack=main=>decode=>__ashrdi3
+Cycles: 367,494,734 (264,744 per second), stack=main=>decode
+Cycles: 367,766,276 (271,542 per second), stack=
+Cycles: 368,059,869 (293,593 per second), stack=
+Cycles: 368,347,032 (287,163 per second), stack=
+Cycles: 368,637,251 (290,219 per second), stack=
+Cycles: 368,928,680 (291,429 per second), stack=
+Cycles: 369,218,778 (290,098 per second), stack=
+{'0x4db4': {'bcet': 8,
+            'count': 21473,
+            'et': [],
+            'fun': '0x4db4',
+            'lastcall': 367711193,
+            'running': False,
+            'total': 171784,
+            'valid': True,
+            'wcet': 8},
+ '__adddi3': {'bcet': 12,
+              'count': 1460,
+              'et': [],
+              'fun': '__adddi3',
+              'lastcall': 367711273,
+              'running': False,
+              'total': 17520,
+              'valid': True,
+              'wcet': 12},
+ '__adddi3_s8': {'bcet': 15,
+                 'count': 28,
+                 'et': [],
+                 'fun': '__adddi3_s8',
+                 'lastcall': 367693349,
+                 'running': False,
+                 'total': 420,
+                 'valid': True,
+                 'wcet': 15},
+ '__ashldi3': {'bcet': 31,
+               'count': 400,
+               'et': [],
+               'fun': '__ashldi3',
+               'lastcall': 367694259,
+               'running': False,
+               'total': 24720,
+               'valid': True,
+               'wcet': 86},
+ '__ashrdi3': {'bcet': 86,
+               'count': 1251,
+               'et': [],
+               'fun': '__ashrdi3',
+               'lastcall': 367711534,
+               'running': False,
+               'total': 188414,
+               'valid': True,
+               'wcet': 174},
+ '__cmpdi2': {'bcet': 12,
+              'count': 571,
+              'et': [],
+              'fun': '__cmpdi2',
+              'lastcall': 366724784,
+              'running': False,
+              'total': 6852,
+              'valid': True,
+              'wcet': 12},
+ '__cmpdi2_s8': {'bcet': 15,
+                 'count': 708,
+                 'et': [],
+                 'fun': '__cmpdi2_s8',
+                 'lastcall': 367695058,
+                 'running': False,
+                 'total': 10620,
+                 'valid': True,
+                 'wcet': 15},
+ '__muldi3': {'bcet': 355,
+              'count': 2999,
+              'et': [],
+              'fun': '__muldi3',
+              'lastcall': 367710874,
+              'running': False,
+              'total': 1064784,
+              'valid': True,
+              'wcet': 356},
+ '__muldi3_6': {'bcet': 43,
+                'count': 5998,
+                'et': [],
+                'fun': '__muldi3_6',
+                'lastcall': 367711093,
+                'running': False,
+                'total': 258053,
+                'valid': True,
+                'wcet': 44},
+ '__muluhisi3': {'bcet': 48,
+                 'count': 480,
+                 'et': [],
+                 'fun': '__muluhisi3',
+                 'lastcall': 367691594,
+                 'running': False,
+                 'total': 23040,
+                 'valid': True,
+                 'wcet': 48},
+ '__negdi2': {'bcet': 19,
+              'count': 40,
+              'et': [],
+              'fun': '__negdi2',
+              'lastcall': 367677908,
+              'running': False,
+              'total': 760,
+              'valid': True,
+              'wcet': 19},
+ '__subdi3': {'bcet': 12,
+              'count': 260,
+              'et': [],
+              'fun': '__subdi3',
+              'lastcall': 367694226,
+              'running': False,
+              'total': 3120,
+              'valid': True,
+              'wcet': 12},
+ '__umulhisi3': {'bcet': 29,
+                 'count': 21473,
+                 'et': [],
+                 'fun': '__umulhisi3',
+                 'lastcall': 367711182,
+                 'running': False,
+                 'total': 622717,
+                 'valid': True,
+                 'wcet': 29},
+ 'decode': {'bcet': 47939,
+            'count': 20,
+            'et': [],
+            'fun': 'decode',
+            'lastcall': 367665102,
+            'running': False,
+            'total': 960245,
+            'valid': True,
+            'wcet': 48119},
+ 'encode': {'bcet': 43107,
+            'count': 20,
+            'et': [],
+            'fun': 'encode',
+            'lastcall': 366677737,
+            'running': False,
+            'total': 1421261,
+            'valid': True,
+            'wcet': 72647},
+ 'filtep': {'bcet': 1325,
+            'count': 80,
+            'et': [],
+            'fun': 'filtep',
+            'lastcall': 367684415,
+            'running': False,
+            'total': 106012,
+            'valid': True,
+            'wcet': 1326},
+ 'filtez': {'bcet': 3727,
+            'count': 80,
+            'et': [],
+            'fun': 'filtez',
+            'lastcall': 367680638,
+            'running': False,
+            'total': 298189,
+            'valid': True,
+            'wcet': 3729},
+ 'logsch': {'bcet': 501,
+            'count': 40,
+            'et': [],
+            'fun': 'logsch',
+            'lastcall': 367686560,
+            'running': False,
+            'total': 20267,
+            'valid': True,
+            'wcet': 512},
+ 'logscl': {'bcet': 513,
+            'count': 40,
+            'et': [],
+            'fun': 'logscl',
+            'lastcall': 367671787,
+            'running': False,
+            'total': 20890,
+            'valid': True,
+            'wcet': 524},
+ 'main': {'bcet': 2390754,
+          'count': 1,
+          'et': [],
+          'fun': 'main',
+          'lastcall': 365322535,
+          'running': False,
+          'total': 2390754,
+          'valid': True,
+          'wcet': 2390754},
+ 'my_abs': {'bcet': 74,
+            'count': 40,
+            'et': [],
+            'fun': 'my_abs',
+            'lastcall': 366740396,
+            'running': False,
+            'total': 3098,
+            'valid': True,
+            'wcet': 80},
+ 'quantl': {'bcet': 1044,
+            'count': 20,
+            'et': [],
+            'fun': 'quantl',
+            'lastcall': 366701051,
+            'running': False,
+            'total': 454676,
+            'valid': True,
+            'wcet': 23878},
+ 'reset': {'bcet': 3938,
+           'count': 1,
+           'et': [],
+           'fun': 'reset',
+           'lastcall': 365322560,
+           'running': False,
+           'total': 3938,
+           'valid': True,
+           'wcet': 3938},
+ 'scalel': {'bcet': 270,
+            'count': 80,
+            'et': [],
+            'fun': 'scalel',
+            'lastcall': 367687100,
+            'running': False,
+            'total': 22965,
+            'valid': True,
+            'wcet': 347},
+ 'uppol1': {'bcet': 1268,
+            'count': 80,
+            'et': [],
+            'fun': 'uppol1',
+            'lastcall': 367693963,
+            'running': False,
+            'total': 101933,
+            'valid': True,
+            'wcet': 1292},
+ 'uppol2': {'bcet': 1907,
+            'count': 80,
+            'et': [],
+            'fun': 'uppol2',
+            'lastcall': 367691978,
+            'running': False,
+            'total': 155273,
+            'valid': True,
+            'wcet': 1984},
+ 'upzero': {'bcet': 1143,
+            'count': 80,
+            'et': [],
+            'fun': 'upzero',
+            'lastcall': 367687426,
+            'running': False,
+            'total': 352950,
+            'valid': True,
+            'wcet': 4502}}
+Coverage by cycles:
+main                                   2,390,754   59.35%
+encode                                 1,421,261   35.28%
+__muldi3                               1,064,784   26.43%
+decode                                   960,245   23.84%
+__umulhisi3                              622,717   15.46%
+quantl                                   454,676   11.29%
+upzero                                   352,950   8.76%
+filtez                                   298,189   7.40%
+__muldi3_6                               258,053   6.41%
+__ashrdi3                                188,414   4.68%
+uppol2                                   155,273   3.85%
+filtep                                   106,012   2.63%
+uppol1                                   101,933   2.53%
+__ashldi3                                 24,720   0.61%
+__muluhisi3                               23,040   0.57%
+scalel                                    22,965   0.57%
+logscl                                    20,890   0.52%
+logsch                                    20,267   0.50%
+__adddi3                                  17,520   0.43%
+__cmpdi2_s8                               10,620   0.26%
+__cmpdi2                                   6,852   0.17%
+reset                                      3,938   0.10%
+__subdi3                                   3,120   0.08%
+my_abs                                     3,098   0.08%
+__negdi2                                     760   0.02%
+__adddi3_s8                                  420   0.01%
+__vectors                                      0   0.00%
+_exit                                          0   0.00%
+_etext                                         0   0.00%
+__trampolines_start                            0   0.00%
+__divmodsi4_neg1                               0   0.00%
+__do_copy_data                                 0   0.00%
+my_fabs                                        0   0.00%
+__stop_program                                 0   0.00%
+__divmodsi4_neg2                               0   0.00%
+my_cos                                         0   0.00%
+__do_clear_bss                                 0   0.00%
+__divmodsi4_exit                               0   0.00%
+my_sin                                         0   0.00%
+__udivmodsi4_loop                              0   0.00%
+__vector_9                                     0   0.00%
+__udivmodsi4_ep                                0   0.00%
+__mulsi3                                       0   0.00%
+__udivmodsi4                                   0   0.00%
+__divmodsi4                                    0   0.00%
+__stack                                        0   0.00%
+Total cycles: 4028222
+Total time: 14.4s

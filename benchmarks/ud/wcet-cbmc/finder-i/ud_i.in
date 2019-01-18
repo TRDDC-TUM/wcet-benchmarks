@@ -2,7 +2,7 @@
 unsigned int timeElapsed = 0;
 long int a [ 50 ] [ 50 ] , b [ 50 ] , x [ 50 ] ;
 int ludcmp  (  int nmax , int n  )  ;
-void main  (   )  
+void nomain  (   )  
 {
 	int i , j , nmax 
 #ifndef __INPVARS_EXE__

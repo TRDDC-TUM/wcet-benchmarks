@@ -59,3 +59,22 @@ Let us take the example of matmult. This is how you can apply the Model Checker 
 You can reduce the precision (=speed up the search time) to, e.g., 1,000 cycles, by modifying the variable WCET_PREC in the Makefile. A precision of 1,000 means, that the estimate will be at most 1,000 larger then the most precise estimate. Note that the result is still safe, but just not tight.
 By default cbmc uses the minisat (SAT solver) backend. You can switch to the mathsat (SMT solver) backend by setting the environment variable CBMCFLAGS as CBMCFLAGS="--mathsat", see also runAllCbmc.sh.
 
+## How to replay a WCET Path
+The trace belonging to the found WCET can be fully reconstructed and replayed in the GDB debugger. Examples are given for ud, cnt and adpcm. 
+Please take note of the following pitfalls:
+ * for newer cbmc (>=5.6), the flag `--trace` must be given to yield the counterexample
+ * the flags `--slice-formula` must not be given to cbmc, since otherwise the counterexample is lacking critical values needed for path reconstruction
+ * counterexamples look different, depending on the solver backend. We recommend using minisat or mathsat, since we did not implement a complete parser for every backend. If you have a trace with an unsupported data item, the following message could be shown:
+```
+INTERNAL ERROR during injection. Cannot parse RHS: None
+```
+Please choose a different solver backend.
+ * if the reconstruction fails with message "INTERNAL ERROR: the execution differs from the counterexample", then either the source code was changed since the WCET was computed, or the above conditions have been violated. Otherwise, please file a bug report.
+ * a successful replay should end an output message similar to the following one:
+```
+  <message type="STATUS-MESSAGE">Finished after 1.80437493324 seconds</message>
+  <message type="STATUS-MESSAGE">Final variable valuations: {'timeElapsed': '69673'}</message>
+  </goto_trace>
+</result>
+</cprover>
+```
