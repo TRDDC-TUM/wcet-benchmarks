@@ -12,7 +12,7 @@
 # variables that are no inputs), since inserting them in the right place could
 # be very much effort.
 #
-# (C) 2016-2018
+# (C) 2016-2019
 #          Technical University of Munich,
 #          Real-Time Computer Systems,
 #          Martin Becker <becker@rcs.ei.tum.de>
@@ -26,6 +26,9 @@
 # TODO:
 #  - modularize
 #  - make this a GDB plugin (expected to be twice as fast)
+#  - support assignment of variables with static lifetime (only needed when cbmc's --nondet-static
+#    is used)
+#  - support multiple assignments per breakpoint
 #  - when matching a watchpoint with a cbmc assignment, copy over details of the
 #    cbmc assignment to the new tag, e.g., <value_expression> describing arrays.
 #    Towards this, it is necessary to actually match the watchpoint with the cbmc
@@ -80,9 +83,9 @@ timeElapsedStack = []  # expected intermediate values for variable "timeElapsed"
 watchpoints_deferred = {}  # watchpoints with local scope. inserted when we reach the scope
 
 # breakpoints: it can happen that multiple breakpoints with different IDs refer to the same
-# address. To be safe, we store information under the address and maintain a mapping from ID to addr
-breakpoints_uinit = {}  # maps breakpoint_addr -> list of variable names to be potentially
-# nondet-injected
+# address. To be safe, we store information under the address and use map ID->addr, when needed
+breakpoints_uinit = {}  # maps breakpoint_addr -> list of variable names to be potentially written
+breakpoints_byname = {}  # maps breakpoint_addr -> name
 breakpoints_id2addr = {}
 _bkpt = None
 
@@ -533,17 +536,18 @@ def get_cex_assignment(location, cnt, callstack, varname=None):
     assign = None
     locstr = make_loc(location)
     if DEBUG:
-        output("location=" + str(location))
+        output("Looking for counterex. assignment of {} @{} (cnt={})".format(varname, locstr, cnt))
     if locstr in cex_assignments:
         assigns = cex_assignments[locstr]
-        # if DEBUG: output("ALL ASSIGNMENTS HERE:" + str(assigns))
-        if cnt in assigns: # if the n'th visit is in cex
+        if DEBUG:
+            output("All assignments at {}: {}".format(locstr, assigns))
+        if cnt in assigns:  # if the n'th visit is in cex
             assigns_this_visit = assigns[cnt]
             if varname is not None:
                 # find variable by base name
                 if varname in assigns_this_visit:
                     assign = assigns_this_visit[varname]
-                    assign["varname_base"] = varname # add to dict
+                    assign["varname_base"] = varname  # add to dict
             else:
                 # we don't know the variable. Make sure there is only one option and infer it
                 if len(assigns_this_visit) > 1:
@@ -552,6 +556,9 @@ def get_cex_assignment(location, cnt, callstack, varname=None):
                 k, v = assigns_this_visit.iteritems().next()  # grabs first
                 assign = v
                 assign["varname_base"] = k  # add to dict
+        else:
+            if DEBUG:
+                output("No assignment for {}th visit of {}".format(cnt, locstr))
     else:
         if DEBUG:
             output("WARNING: location '" + locstr + "' not in counterexample")
@@ -693,15 +700,21 @@ def handle_watchpoint():
         track_time(loc=winfo["frame"], value=winfo["value"]["new"])
 
 
-def try_inject_retval(cnt, caller, callee, callstack):
+def try_inject_retval(bkid, cnt, caller, callee, callstack):
     """
     For the given location, and the 'cnt'th visit ,consult counterexample
     whether to assigning a nondet value is required, and if so, do it.
 
     @return True if location was handled (could be injected or not)
-            Fals if an error occured
+            False if an error occured
     """
     global DEBUG, ignore_errors
+
+    if DEBUG:
+        output("Nondet(): looking for counterexample value @{}".format(caller))
+
+    # FIXME: sometimes multiple assignments for different variables exist at the same line.
+    # We must somehow match this
 
     retval = get_cex_assignment(location=caller, cnt=cnt, callstack=callstack)
     # retval example: {'varname': 'dec_del_bph[0l]', 'value': '{ 524288, 0, 0, 0, 0, 0 }', 'step': 60, 'value_base': None, 'varname_base': 'dec_del_bph', 'type': 'signed int [6l]'}
@@ -728,7 +741,20 @@ def try_inject_retval(cnt, caller, callee, callstack):
         # ...
         # abstype = abstract_injection_type(retval)
         # ...
-        if isinstance(cex_rhs, list):
+        if cex_rhs is None:
+            if retval["value"] is None:
+                # yices does this
+                output("WARNING: counterexample @{} has assignment without value: {}".format
+                       (caller_loc, retval))
+            else:
+                output("INTERNAL ERROR during injection. Cannot parse RHS @{}: {}".format
+                       (caller_loc, retval["value"]))
+                if not ignore_errors:
+                    return False
+                else:
+                    output("WARNING: continuing despite unreadable counterexample on user request")
+
+        elif isinstance(cex_rhs, list):
             # Mathsat: it returns the entire list, but actually wants to assign only one.
             # As of 5.3, it doesn't say which one explicitly
 
@@ -762,13 +788,6 @@ def try_inject_retval(cnt, caller, callee, callstack):
                    + " to variable " + retval["varname"] + " is not yet supported; at location "
                    + caller_loc)
             cex_rhs = None
-
-        if cex_rhs is None:
-            output("INTERNAL ERROR during injection. Cannot parse RHS: " + str(retval["value"]))
-            if not ignore_errors:
-                return False
-            else:
-                output("WARNING: continuing despite unreadable counterexample on user request")
 
     # even if we have nothing; we have to exec the return
     if cex_rhs:
@@ -1045,7 +1064,7 @@ def inject_array(gdbsession, assignment):
     return True
 
 
-def try_inject_assignment(bkaddr, cnt, frame, callstack):
+def try_inject_assignment(bkid, cnt, frame, callstack):
     """
     Consult counterexample whether assigning a value to any
     variable at breakpoint 'bkid' on the 'cnt'th visit is required.
@@ -1056,27 +1075,41 @@ def try_inject_assignment(bkaddr, cnt, frame, callstack):
     """
     # check if bkid is in breakpoints_uinit, lookup original location and then the cex value
     global breakpoints_uinit, DEBUG
+    bkaddr = breakpoints_id2addr[bkid]
     brkinfo = breakpoints_uinit.get(bkaddr, None)
 
-    ret = False
     if brkinfo:
-        for v in brkinfo:
+        if DEBUG:
+            locstr = make_loc(callstack[0]['frame'])
+            output("Breakpoint {} (cnt={}) at ~{} to inject one of {}".format
+                   (bkid, cnt, locstr, brkinfo))
 
+        # FIXME: handle multiple different lines at the same breakpoint (currently fails for >1)
+        # plan: we can see how many different lines map to the same brk from brkinfo
+        # But then?? How do we count?
+
+        for v in brkinfo:
+            if DEBUG:
+                output("Trying variable {}...".format(v))
             # workaround: sometimes we have no function name in brkinfo. take from frame
             if "func" not in v["location"]:
                 v["location"]["func"] = frame
 
+            # we need a match for varname and visit count
             assignment = get_cex_assignment(location=v["location"], cnt=cnt, varname=v["name"],
                                             callstack=callstack)
-            if assignment is None or (assignment["value"] is None and assignment["value"] is None):
-                return True  # nothing to do
+            if assignment is None or (assignment["value"] is None):
+                if DEBUG:
+                    output("WARNING: counterexample @{} for var {} has no assignment: {}"
+                           .format(v["location"], v["name"], assignment))
+                continue  # nothing to do
 
             if DEBUG:
                 if xmlui:
                     output("Trying to inject as follows (bkid=" + str(bkaddr) + "): " + str(brkinfo))
                 else:
                     output("Trying to inject as follows (bkid=" + str(bkaddr) + "):")
-                    pprint.pprint (brkinfo)  # FIXME: violates XML
+                    pprint.pprint(brkinfo)  # FIXME: violates XML
 
             # find handler to assign possibly complicated variables, depending on their type
             abstype = abstract_injection_type(assignment)
@@ -1090,8 +1123,8 @@ def try_inject_assignment(bkaddr, cnt, frame, callstack):
                 if DEBUG:
                     output("Assignment of type " + assignment["type"] + " (abstract: "
                            + abstype + ") at location " + str(v["location"]))
-                ret = handler(gs, assignment)
-    return ret
+                return handler(gs, assignment)
+    return True
 
 
 brkcnt_loc = {}
@@ -1129,14 +1162,16 @@ def handle_breakpoint():
     called when a breakpoint is hit. Note that some breakpoints
     trigger at a later location than where inserted.
     """
-    global gs, watchpoints_deferred, breakpoints_uinit, breakpoints_id2addr, ignore_errors
+    global gs, watchpoints_deferred, breakpoints_uinit, breakpoints_id2addr, ignore_errors, DEBUG
 
     binfo = gs.breakpoint_info
     brkid = int(binfo["bkptno"])
     frame = binfo["frame"]["func"]
     funcname = binfo["frame"]["func"]
-    brkaddr = breakpoints_id2addr.get(brkid, None) # lookup addr, because it isn't in binfo{}
+    brkaddr = breakpoints_id2addr.get(brkid, None)  # lookup addr, because it isn't in binfo{}
     callstack = get_callstack()
+    if DEBUG:
+        output("Breakpoint {} @{}".format(brkid, brkaddr))
 
     if funcname.startswith("nondet_"):
         # an explicit call to nondet. This means the potential assignment is at location of the caller. get caller frame.
@@ -1144,7 +1179,7 @@ def handle_breakpoint():
         caller = callstack[0]["frame"]
         if caller:
             cnt = count_visits_byloc(make_loc(caller))
-            if not try_inject_retval(cnt, caller=caller, callee=frame, callstack=callstack):
+            if not try_inject_retval(brkid, cnt, caller=caller, callee=frame, callstack=callstack):
                 logging.error("Injection of nondet failed: see earlier messages")
                 output("ERROR injecting")
                 if not ignore_errors:
@@ -1154,16 +1189,18 @@ def handle_breakpoint():
             output("ERROR injecting")
             if not ignore_errors:
                 exit(99)
+
     elif funcname in watchpoints_deferred:
         # do we need to install deferred watchpoints?
         output("Installing deferred watchpoints for " + str(watchpoints_deferred[funcname]) + " in function " + funcname)
         for w in watchpoints_deferred[funcname]:
             set_watchpoint(w)
         del watchpoints_deferred[funcname]  # installing once is enough (?)
+
     elif brkaddr in breakpoints_uinit:
         # a potential implicit nondet assignment (e.g., uninitialized local variable)
         cnt = count_visits_bybrk(brkaddr)
-        if not try_inject_assignment(brkaddr, cnt, frame, callstack=callstack):
+        if not try_inject_assignment(brkid, cnt, frame, callstack=callstack):
             logging.error("Injection of assignment failed: see earlier messages")
             output("ERROR injecting")
             if not ignore_errors:
@@ -1238,10 +1275,12 @@ def set_breakpoint_byloc(fil, line):
     """
     Add a breakpoint at file:line. return breakpoint ID
     """
-    global gs
+    global gs, DEBUG
     bkpt = None
     if fil is None or line is None:
         return bkpt
+    if DEBUG:
+        output("Setting up new breakpoint for {}:{}".format(fil, line))
     token = gs.break_insert("-f " + fil + ":" + str(line), check_brkinsert)
     while not gs.wait_for(token):
         pass
@@ -1258,14 +1297,16 @@ def set_breakpoint_byname(funcname, filename=None):
     Add a breakpoint. File name should be given, otherwise ambiguity possible.
     return breakpoint ID
     """
-    global gs
+    global gs, DEBUG
     bkpt = None
     if funcname is None:
-        return
+        return None
     if filename:
         prefix = filename + ":"
     else:
         prefix = ""
+    if DEBUG:
+        output("Setting up new breakpoint for {}:{}".format(prefix, funcname))
     token = gs.break_insert("-f " + prefix + funcname, check_brkinsert)
     while not gs.wait_for(token):
         pass
@@ -1330,7 +1371,7 @@ def setup_injection_points(gs, sourcename, break_functions=[]):
     """
     set all breakpoints for injection
     """
-    global breakpoints_uinit, cex_assignments, breakpoints_id2addr
+    global breakpoints_uinit, breakpoints_byname, cex_assignments, breakpoints_id2addr
 
     # output(pprint(uinitvars))
     """
@@ -1354,9 +1395,19 @@ def setup_injection_points(gs, sourcename, break_functions=[]):
                                   for loc, asns in cex_assignments.iteritems()])
     # output("lines with assginments=" + str(lines_with_assignments))
 
+    def register_break(binfo):
+        global breakpoints_id2addr
+        breakpoints_id2addr[int(binfo["number"])] = binfo["addr"]
+        # when setting a breakpoint, then sometimes two different breakpoints
+        # with two different IDs and line numbers can have the same address, and one of them
+        # doesn't trigger then. So we go by address here and memorize id->addr for later.
+
     for f in break_functions:
-        set_breakpoint_byname(f, None)  # FIXME: filename is cbmcsim.c...
-    breaks_inserted = []
+        bkinfo = set_breakpoint_byname(f, None)  # FIXME: filename is cbmcsim.c...
+        register_break(bkinfo)
+        breakpoints_byname[bkinfo["addr"]] = f
+
+    breaks_inserted = {}
     for k, u in uinitvars.iteritems():
         # FIXME: check whether u is actually in cex_assignments (otherwise waste no breakpoint)
         if "line" in u["location"]:
@@ -1368,21 +1419,36 @@ def setup_injection_points(gs, sourcename, break_functions=[]):
             loc = {"file": sourcename, "line": l, "func": f}
             locstr = make_loc(loc)
             if not int(l) in lines_with_assignments:
-                # output("IRRELEVANT uninitialized variable at " + locstr)
+                if DEBUG:
+                    output("IRRELEVANT uninitialized variable at " + locstr)
                 continue
+            if DEBUG:
+                output("Uinit variable '{}' needs a breakpoint at {}".format(k, locstr))
             if locstr not in breaks_inserted:
-                breaks_inserted.append(locstr)
                 bkinfo = set_breakpoint_byloc(line=l, fil=sourcename)
-                # when setting a breakpoint on uinit decls, then sometimes two different breakpoints
-                # with two different IDs and line numbers can have the same address, and one of them
-                # doesn't trigger then. So we go by address here and memorize id->addr for later.
-            if bkinfo["addr"] not in breakpoints_uinit:
-                breakpoints_uinit[bkinfo["addr"]] = []
-            breakpoints_uinit[bkinfo["addr"]].append({"name": u["base name"], "location": loc})
-            breakpoints_id2addr[int(bkinfo["number"])] = bkinfo["addr"]
+                register_break(bkinfo)
+                baddr = bkinfo["addr"]
+                breaks_inserted[locstr] = baddr
+                if DEBUG:
+                    output("Breakpoint {} for {}: {}".format(bkinfo['number'], k, bkinfo))
+            else:
+                baddr = breaks_inserted[locstr]
+                if DEBUG:
+                    output("Breakpoint for {} at {} already exists: {}".format(k, locstr, baddr))
+            if baddr not in breakpoints_uinit:
+                breakpoints_uinit[baddr] = []
+            breakpoints_uinit[baddr].append({"name": u["base name"], "location": loc})
+
     if xmlui:
-        output("Uninitialized variables: " + str(breakpoints_uinit) + ". Bkid="
-               + str(breakpoints_id2addr))
+        output("Installed {} breakpoints".format(len(breakpoints_id2addr)))
+        for bkid, bkaddr in breakpoints_id2addr.iteritems():
+            details = breakpoints_uinit.get(bkaddr, None)
+            if details:
+                output("Break for uninitialized variable: id={}, addr={}, vars={}".format
+                       (bkid, bkaddr, details))
+            else:
+                details = breakpoints_byname.get(bkaddr, None)
+                output("Break for '{}': id={}, addr={}".format(details, bkid, bkaddr))
     else:
         output("Uninitialized variables:")
         pprint.pprint(breakpoints_uinit)
@@ -1727,7 +1793,7 @@ def main(argv):
         elif opt in ('-e', '--entry'):
             entryfcn = arg
         elif opt in ('-s', '--suppress-cbmc-steps'):
-            suppress_cbmcsteps = True
+            suppress_cbmc_steps = True
         elif opt in ('-p', '--property'):
             propname = arg
         elif opt in ('-f', '--folder'):

@@ -28,7 +28,7 @@ CFLAGS=-DIS_ANALYSIS -DCBMC -DNEWCODE
 CBMCLOOPS= #--unwindset fir_filter_int.0:34,fir_filter_int.1:700
 CBMCDRIVER=--function CBMCDriver
 CBMCFLAGS+=$(CFLAGS) $(CBMCLOOPS) $(CBMCDRIVER) --all-properties 
-#CBMCFLAGS+=--slice-formula # omit when replay is required
+CBMCFLAGS+=--slice-formula # omit when replay is required
 
 # how precise (clock cycles) do we need WCET?
 WCET_PREC=1

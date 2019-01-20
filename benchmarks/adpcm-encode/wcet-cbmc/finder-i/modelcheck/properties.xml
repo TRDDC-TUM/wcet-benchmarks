@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cprover>
-<program>CBMC 5.3</program>
+<program>CBMC 5.10 (cbmc-5.10)</program>
 <message type="STATUS-MESSAGE">
-  <text>CBMC version 5.3 64-bit x86_64 linux</text>
+  <text>CBMC version 5.10 (cbmc-5.10) 64-bit x86_64 linux</text>
 </message>
 
 <message type="STATUS-MESSAGE">
-  <text>Parsing adpcm_encode_i.c</text>
+  <text>Parsing modelcheck/tmp_adpcm_encode_i.c</text>
 </message>
 
 <message type="STATUS-MESSAGE">
@@ -14,11 +14,11 @@
 </message>
 
 <message type="STATUS-MESSAGE">
-  <text>Type-checking adpcm_encode_i</text>
+  <text>Type-checking tmp_adpcm_encode_i</text>
 </message>
 
 <message type="WARNING">
-  <location file="adpcm_encode_i.c" function="CBMCDriver" line="1265"/>
+  <location file="modelcheck/tmp_adpcm_encode_i.c" function="CBMCDriver" line="1067" working-directory="/home/becker/async/wcet-benchmarks/benchmarks/adpcm-encode/wcet-cbmc/finder-i"/>
   <text>function `assert' is not declared</text>
 </message>
 
@@ -27,37 +27,43 @@
 </message>
 
 <message type="STATUS-MESSAGE">
-  <text>Adding CPROVER library</text>
+  <text>Adding CPROVER library (x86_64)</text>
 </message>
 
 <message type="STATUS-MESSAGE">
-  <text>Function Pointer Removal</text>
-</message>
-
-<message type="STATUS-MESSAGE">
-  <text>Partial Inlining</text>
+  <text>Removal of function pointers and virtual functions</text>
 </message>
 
 <message type="STATUS-MESSAGE">
   <text>Generic Property Instrumentation</text>
 </message>
 
+<message type="STATUS-MESSAGE">
+  <text>Running with 8 object bits, 56 offset bits (default)</text>
+</message>
+
 <property class="assertion" name="CBMCDriver.assertion.1">
-  <location file="adpcm_encode_i.c" function="CBMCDriver" line="1265"/>
+  <location file="modelcheck/tmp_adpcm_encode_i.c" function="CBMCDriver" line="1067" working-directory="/home/becker/async/wcet-benchmarks/benchmarks/adpcm-encode/wcet-cbmc/finder-i"/>
   <description>assertion timeElapsed &lt;= (unsigned int)110900</description>
   <expression>timeElapsed &lt;= (unsigned int)110900</expression>
 </property>
 
 <property class="assertion" name="CBMCDriver.assertion.2">
-  <location file="adpcm_encode_i.c" function="CBMCDriver" line="1266"/>
+  <location file="modelcheck/tmp_adpcm_encode_i.c" function="CBMCDriver" line="1068" working-directory="/home/becker/async/wcet-benchmarks/benchmarks/adpcm-encode/wcet-cbmc/finder-i"/>
   <description>assertion timeElapsed &lt;= (unsigned int)110901</description>
   <expression>timeElapsed &lt;= (unsigned int)110901</expression>
 </property>
 
 <property class="assertion" name="CBMCDriver.assertion.3">
-  <location file="adpcm_encode_i.c" function="CBMCDriver" line="1267"/>
+  <location file="modelcheck/tmp_adpcm_encode_i.c" function="CBMCDriver" line="1069" working-directory="/home/becker/async/wcet-benchmarks/benchmarks/adpcm-encode/wcet-cbmc/finder-i"/>
   <description>assertion timeElapsed &lt;= (unsigned int)110902</description>
   <expression>timeElapsed &lt;= (unsigned int)110902</expression>
+</property>
+
+<property class="assertion" name="CBMCDriver.assertion.4">
+  <location file="modelcheck/tmp_adpcm_encode_i.c" function="CBMCDriver" line="1070" working-directory="/home/becker/async/wcet-benchmarks/benchmarks/adpcm-encode/wcet-cbmc/finder-i"/>
+  <description>assertion timeElapsed &lt;= (unsigned int)110903</description>
+  <expression>timeElapsed &lt;= (unsigned int)110903</expression>
 </property>
 
 </cprover>

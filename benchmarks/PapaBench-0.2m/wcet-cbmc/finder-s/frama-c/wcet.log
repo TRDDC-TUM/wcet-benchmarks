@@ -1,0 +1,1619 @@
+[kernel] Parsing FRAMAC_SHARE/libc/__fc_builtin_for_normalization.i (no preprocessing)
+[kernel] Parsing tmp2.c (with preprocessing)
+tmp.c:1920:[kernel] warning: Floating-point constant .1 is not represented exactly. Will use 0x1.999999999999ap-4. See documentation for option -warn-decimal-float
+[kernel] Parsing ../pp_if_calib_i.c (with preprocessing)
+[kernel] Parsing ../pp_adc_i.c (with preprocessing)
+[kernel] Parsing ../pp_nav_i.c (with preprocessing)
+[kernel] Parsing ../pp_gps_ubx_i.c (with preprocessing)
+[kernel] Parsing ../pp_infrared_i.c (with preprocessing)
+[kernel] Parsing ../pp_spi_i.c (with preprocessing)
+[kernel] Parsing ../pp_modem_i.c (with preprocessing)
+[kernel] Parsing ../pp_pid_i.c (with preprocessing)
+[kernel] Parsing ../pp_uart_i.c (with preprocessing)
+[kernel] Parsing ../pp_estimator_i.c (with preprocessing)
+[kernel] Parsing ../pp_link_fbw_i.c (with preprocessing)
+[kernel] Parsing ../pp_mainloop_i.c (with preprocessing)
+[value] Analyzing an incomplete application starting at periodic_task
+[value] Computing initial state
+[value] Initial state computed
+[value] Values of globals at initialization
+  Frama_C_entropy_source ∈ [--..--]
+  timeElapsed ∈ [--..--]
+  desired_roll ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_pitch ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  course_pgain ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_course ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  climb_pgain ∈ {-0.0299999993294}
+  climb_sum_err ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_climb ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_gaz ∈ [--..--]
+  gps_nb_ovrn ∈ [--..--]
+  utm_east0 ∈ [--..--]
+  utm_north0 ∈ [--..--]
+  ir_roll ∈ [--..--]
+  ir_pitch ∈ [--..--]
+  ir_roll_neutral ∈ [--..--]
+  ir_pitch_neutral ∈ [--..--]
+  modem_nb_ovrn ∈ [--..--]
+  tx_head ∈ [--..--]
+  tx_tail ∈ [--..--]
+  tx_buf[0..254] ∈ [--..--]
+  tx_byte ∈ [--..--]
+  ck_a ∈ [--..--]
+  ck_b ∈ [--..--]
+  nav_stage ∈ [--..--]
+  dist2_to_wp ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  dist2_to_home ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_altitude ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_x ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_y ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  nav_desired_gaz ∈ [--..--]
+  stage_time ∈ [--..--]
+  block_time ∈ [--..--]
+  stage_time_ds ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  nav_desired_roll ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  pprz_mode ∈ [--..--]
+  ir_estim_mode ∈ [--..--]
+  fatal_error_nb ∈ [--..--]
+  inflight_calib_mode ∈ [--..--]
+  vertical_mode ∈ [--..--]
+  auto_pitch ∈ [--..--]
+  lateral_mode ∈ [--..--]
+  vsupply ∈ [--..--]
+  rc_event_1 ∈ [--..--]
+  slider_1_val ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  slider_2_val ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  launch ∈ [--..--]
+  estimator_flight_time ∈ [--..--]
+  estimator_x ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  estimator_y ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  estimator_ir ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  estimator_rad ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  estimator_rad_of_ir ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  estimator_phi ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  estimator_psi ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  estimator_theta ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  link_fbw_fbw_nb_err ∈ [--..--]
+  to_fbw ∈ [--..--]
+  nav_block ∈ [--..--]
+  waypoints[0..7]{.x; .y; .a} ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  nav_pitch ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  estimator_z ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  estimator_hspeed_mod ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  pre_climb ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  from_fbw ∈ [--..--]
+  spi_cur_slave ∈ [--..--]
+  max_roll ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  roll_pgain ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  pitch_pgain ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  pitch_of_roll ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_aileron ∈ [--..--]
+  desired_elevator ∈ [--..--]
+  estimator_hspeed_dir ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  climb_igain ∈ {0.10000000149}
+  pitch_of_vz_pgain ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  pitch_of_vz ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  estimator_z_dot ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  climb_pitch_pgain ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  climb_pitch_igain ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  climb_pitch_sum_err ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  max_pitch ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  min_pitch ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  altitude_pgain ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  spi_nb_ovrn ∈ [--..--]
+  cputime ∈ [--..--]
+  low_battery ∈ [--..--]
+  version ∈ {1}
+  mcu1_status ∈ [--..--]
+  mcu1_ppm_cpt ∈ [--..--]
+  boot ∈ [--..--]
+  i ∈ [--..--]
+  _20Hz ∈ [--..--]
+  _10Hz ∈ [--..--]
+  _4Hz ∈ [--..--]
+  _1Hz ∈ [--..--]
+  t ∈ [--..--]
+  odd ∈ [--..--]
+  carrot ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  last_wp ∈ [--..--]
+  alpha ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  leg ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  qdr ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  carrot_x ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  carrot_y ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  buf_ir1 ∈ [--..--]
+  buf_ir2 ∈ [--..--]
+[value] computing for function estimator_propagate_state <- periodic_task.
+        Called from tmp.c:1936.
+[value] Recording results for estimator_propagate_state
+[value] Done for function estimator_propagate_state
+[value] computing for function navigation_task <- periodic_task.
+        Called from tmp.c:1937.
+[value] computing for function nav_home <- navigation_task <- periodic_task.
+        Called from tmp.c:156.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:775:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(estimator_x-waypoints[0].x));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:775:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(estimator_y-waypoints[0].y));
+[value] computing for function atan2 <- nav_home <- navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:775.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:775:[kernel] warning: Neither code nor specification for function atan2, generating default assigns from the prototype
+[value] using specification for function atan2
+[value] Done for function atan2
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:775:[kernel] warning: non-finite double value.
+                  assert \is_finite(tmp);
+                  (tmp from
+                  atan2((double)(estimator_y - waypoints[0].y), (double)(estimator_x - waypoints[0].x)))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:775:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)tmp);
+                  (tmp from
+                  atan2((double)(estimator_y - waypoints[0].y), (double)(estimator_x - waypoints[0].x)))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:776:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)alpha_0+(double)((double)(5./(double)
+                                                                                 ((int)
+                                                                                   (-50)))*(double)estimator_hspeed_mod))));
+[value] computing for function sin <- nav_home <- navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:777.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:777:[kernel] warning: Neither code nor specification for function sin, generating default assigns from the prototype
+[value] using specification for function sin
+[value] Done for function sin
+[value] computing for function fabs <- nav_home <- navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:777.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:777:[kernel] warning: Neither code nor specification for function fabs, generating default assigns from the prototype
+[value] using specification for function fabs
+[value] Done for function fabs
+[value] computing for function cos <- nav_home <- navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:777.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:777:[kernel] warning: Neither code nor specification for function cos, generating default assigns from the prototype
+[value] using specification for function cos
+[value] Done for function cos
+[value] computing for function fabs <- nav_home <- navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:777.
+[value] Done for function fabs
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:777:[kernel] warning: non-finite double value.
+                  assert \is_finite(tmp_0);
+                  (tmp_0 from sin((double)alpha_carrot))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:777:[kernel] warning: non-finite double value.
+                  assert \is_finite((double)(tmp_0*tmp_1));
+                  (tmp_0 from sin((double)alpha_carrot), tmp_1 from fabs((double)50))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:777:[kernel] warning: non-finite double value.
+                  assert \is_finite((double)(tmp_2*tmp_3));
+                  (tmp_2 from cos((double)alpha_carrot), tmp_3 from fabs((double)50))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:777:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)waypoints[0].y+(double)(tmp_0*tmp_1))));
+                  (tmp_0 from sin((double)alpha_carrot), tmp_1 from fabs((double)50))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:777:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)waypoints[0].x+(double)(tmp_2*tmp_3))));
+                  (tmp_2 from cos((double)alpha_carrot), tmp_3 from fabs((double)50))
+[value] computing for function fly_to_xy <- nav_home <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:777.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127:[kernel] warning: non-finite float value. assert \is_finite((float)(x-estimator_x));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127:[kernel] warning: non-finite float value. assert \is_finite((float)(y-estimator_y));
+[value] computing for function atan2 <- fly_to_xy <- nav_home <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127:[kernel] warning: non-finite double value.
+                  assert \is_finite(tmp);
+                  (tmp from atan2((double)(y - estimator_y), (double)(x - estimator_x)))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)(3.14159265358979323846/2.)-tmp)));
+                  (tmp from atan2((double)(y - estimator_y), (double)(x - estimator_x)))
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:778:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)((double)((double)(3.14159265358979323846/(double)2)-(double)alpha_carrot)/3.14159265358979323846)*180.)));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:780:[value] warning: loop invariant got status unknown.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:780:[value] loop invariant got status valid.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:783:[value] warning: loop invariant got status unknown.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:783:[value] loop invariant got status valid.
+[value] computing for function compute_dist2_to_home <- nav_home <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:793.
+[value] Recording results for compute_dist2_to_home
+[value] Done for function compute_dist2_to_home
+[value] computing for function compute_dist2_to_home <- nav_home <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:793.
+[value] Recording results for compute_dist2_to_home
+[value] Done for function compute_dist2_to_home
+[value] computing for function compute_dist2_to_home <- nav_home <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:793.
+[value] Recording results for compute_dist2_to_home
+[value] Done for function compute_dist2_to_home
+[value] Recording results for nav_home
+[value] Done for function nav_home
+[value] computing for function nav_update <- navigation_task <- periodic_task.
+        Called from tmp.c:158.
+[value] computing for function compute_dist2_to_home <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:768.
+[value] Recording results for compute_dist2_to_home
+[value] Done for function compute_dist2_to_home
+[value] computing for function auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:769.
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:264.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:112:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(waypoints[wp].x-estimator_x));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:113:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(waypoints[wp].y-estimator_y));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:115:[kernel] warning: non-finite float value. assert \is_finite((float)(pw_x*pw_x));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:115:[kernel] warning: non-finite float value. assert \is_finite((float)(pw_y*pw_y));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:115:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)((float)(pw_x*pw_x)+(float)(pw_y*pw_y)));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:116:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)((double)(5.*(double)estimator_hspeed_mod)));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:118:[kernel] warning: non-finite float value. assert \is_finite((float)(carrot*carrot));
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:264.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:264.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:264.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:286.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:286.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:286.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:286.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:360.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:360.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:360.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:360.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:382.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:382.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:382.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:382.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:382.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:382.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:404.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:404.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:404.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:404.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:404.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:404.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:426.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:426.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:426.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:426.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:426.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:426.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:448.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:448.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:448.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:448.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:448.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:448.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:470.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:470.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:470.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:470.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:470.
+[value] Recording results for approaching
+[value] Done for function approaching
+[value] computing for function approaching <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:470.
+[value] Recording results for approaching
+[value] Done for function approaching
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:561:[kernel] warning: non-finite float value. assert \is_finite((float)(estimator_x-carrot_x));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:561:[kernel] warning: non-finite float value. assert \is_finite((float)(estimator_y-carrot_y));
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:561.
+[value] Done for function atan2
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:561:[kernel] warning: non-finite double value.
+                  assert \is_finite(tmp_10);
+                  (tmp_10 from
+                  atan2((double)(estimator_y - carrot_y), (double)(estimator_x - carrot_x)))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:561:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)tmp_10);
+                  (tmp_10 from
+                  atan2((double)(estimator_y - carrot_y), (double)(estimator_x - carrot_x)))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:562:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)alpha_0+(double)((double)(5./(double)
+                                                                                 ((int)
+                                                                                   (-50)))*(double)estimator_hspeed_mod))));
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:563.
+[value] Done for function sin
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:563.
+[value] Done for function fabs
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:563.
+[value] Done for function cos
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:563.
+[value] Done for function fabs
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:563:[kernel] warning: non-finite double value.
+                  assert \is_finite(tmp_11);
+                  (tmp_11 from sin((double)alpha_carrot))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:563:[kernel] warning: non-finite double value.
+                  assert \is_finite((double)(tmp_11*tmp_12));
+                  (tmp_11 from sin((double)alpha_carrot), tmp_12 from fabs((double)50))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:563:[kernel] warning: non-finite double value.
+                  assert \is_finite((double)(tmp_13*tmp_14));
+                  (tmp_13 from cos((double)alpha_carrot), tmp_14 from fabs((double)50))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:563:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)carrot_y+(double)(tmp_11*tmp_12))));
+                  (tmp_11 from sin((double)alpha_carrot), tmp_12 from fabs((double)50))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:563:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)carrot_x+(double)(tmp_13*tmp_14))));
+                  (tmp_13 from cos((double)alpha_carrot), tmp_14 from fabs((double)50))
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:563.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:564:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)((double)((double)(3.14159265358979323846/(double)2)-(double)alpha_carrot)/3.14159265358979323846)*180.)));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:566:[value] warning: loop invariant got status unknown.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:566:[value] loop invariant got status valid.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:569:[value] warning: loop invariant got status unknown.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:569:[value] loop invariant got status valid.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:616:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(estimator_x-waypoints[0].x));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:616:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(estimator_y-waypoints[0].y));
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:616.
+[value] Done for function atan2
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:616.
+[value] Done for function atan2
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:616:[kernel] warning: non-finite double value.
+                  assert \is_finite(tmp_15);
+                  (tmp_15 from
+                  atan2((double)(estimator_y - waypoints[0].y), (double)(estimator_x - waypoints[0].x)))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:616:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)tmp_15);
+                  (tmp_15 from
+                  atan2((double)(estimator_y - waypoints[0].y), (double)(estimator_x - waypoints[0].x)))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:617:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)alpha_1+(double)((double)(5./(double)
+                                                                                 ((int)
+                                                                                   (-150)))*(double)estimator_hspeed_mod))));
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:618.
+[value] Done for function sin
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:618.
+[value] Done for function sin
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:618.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:618.
+[value] Done for function fabs
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:618.
+[value] Done for function cos
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:618.
+[value] Done for function cos
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:618.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:618.
+[value] Done for function fabs
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:618:[kernel] warning: non-finite double value.
+                  assert \is_finite(tmp_16);
+                  (tmp_16 from sin((double)alpha_carrot_0))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:618:[kernel] warning: non-finite double value.
+                  assert \is_finite((double)(tmp_16*tmp_17));
+                  (tmp_16 from sin((double)alpha_carrot_0), tmp_17 from fabs((double)150))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:618:[kernel] warning: non-finite double value.
+                  assert \is_finite((double)(tmp_18*tmp_19));
+                  (tmp_18 from cos((double)alpha_carrot_0), tmp_19 from fabs((double)150))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:618:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)waypoints[0].y+(double)(tmp_16*tmp_17))));
+                  (tmp_16 from sin((double)alpha_carrot_0), tmp_17 from fabs((double)150))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:618:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)waypoints[0].x+(double)(tmp_18*tmp_19))));
+                  (tmp_18 from cos((double)alpha_carrot_0), tmp_19 from fabs((double)150))
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:618.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:618.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:619:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)((double)((double)(3.14159265358979323846/(double)2)-(double)alpha_carrot_0)/3.14159265358979323846)*180.)));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:621:[value] warning: loop invariant got status unknown.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:621:[value] loop invariant got status valid.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:624:[value] warning: loop invariant got status unknown.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:624:[value] loop invariant got status valid.
+[value] Semantic level unrolling superposing up to 100 states
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:686:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(estimator_x-waypoints[1].x));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:686:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(estimator_y-waypoints[1].y));
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:686.
+[value] Done for function atan2
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:686.
+[value] Done for function atan2
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:686.
+[value] Done for function atan2
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:686.
+[value] Done for function atan2
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:686:[kernel] warning: non-finite double value.
+                  assert \is_finite(tmp_20);
+                  (tmp_20 from
+                  atan2((double)(estimator_y - waypoints[1].y), (double)(estimator_x - waypoints[1].x)))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:686:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)tmp_20);
+                  (tmp_20 from
+                  atan2((double)(estimator_y - waypoints[1].y), (double)(estimator_x - waypoints[1].x)))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:687:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)alpha_2+(double)((double)(5./(double)
+                                                                                 ((int)
+                                                                                   (-100)))*(double)estimator_hspeed_mod))));
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function sin
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function sin
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function sin
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function sin
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function fabs
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function cos
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function cos
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function cos
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function cos
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] Done for function fabs
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688:[kernel] warning: non-finite double value.
+                  assert \is_finite(tmp_21);
+                  (tmp_21 from sin((double)alpha_carrot_1))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688:[kernel] warning: non-finite double value.
+                  assert \is_finite((double)(tmp_21*tmp_22));
+                  (tmp_21 from sin((double)alpha_carrot_1), tmp_22 from fabs((double)100))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688:[kernel] warning: non-finite double value.
+                  assert \is_finite((double)(tmp_23*tmp_24));
+                  (tmp_23 from cos((double)alpha_carrot_1), tmp_24 from fabs((double)100))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)waypoints[1].y+(double)(tmp_21*tmp_22))));
+                  (tmp_21 from sin((double)alpha_carrot_1), tmp_22 from fabs((double)100))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)waypoints[1].x+(double)(tmp_23*tmp_24))));
+                  (tmp_23 from cos((double)alpha_carrot_1), tmp_24 from fabs((double)100))
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:688.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:689:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)((double)((double)(3.14159265358979323846/(double)2)-(double)alpha_carrot_1)/3.14159265358979323846)*180.)));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:691:[value] warning: loop invariant got status unknown.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:691:[value] loop invariant got status valid.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:694:[value] warning: loop invariant got status unknown.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:694:[value] loop invariant got status valid.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:719:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(estimator_x-waypoints[4].x));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:719:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(estimator_y-waypoints[4].y));
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:719.
+[value] Done for function atan2
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:719.
+[value] Done for function atan2
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:719.
+[value] Done for function atan2
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:719.
+[value] Done for function atan2
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:719.
+[value] Done for function atan2
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:719.
+[value] Done for function atan2
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:719.
+[value] Done for function atan2
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:719.
+[value] Done for function atan2
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:719.
+[value] Done for function atan2
+[value] computing for function atan2 <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:719.
+[value] Done for function atan2
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:719:[kernel] warning: non-finite double value.
+                  assert \is_finite(tmp_27);
+                  (tmp_27 from
+                  atan2((double)(estimator_y - waypoints[4].y), (double)(estimator_x - waypoints[4].x)))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:719:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)tmp_27);
+                  (tmp_27 from
+                  atan2((double)(estimator_y - waypoints[4].y), (double)(estimator_x - waypoints[4].x)))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:720:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)alpha_3+(double)((double)(5./(double)
+                                                                                 ((int)
+                                                                                   (-100)))*(double)estimator_hspeed_mod))));
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function sin
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function sin
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function sin
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function sin
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function sin
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function sin
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function sin
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function sin
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function sin
+[value] computing for function sin <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function sin
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function cos
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function cos
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function cos
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function cos
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function cos
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function cos
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function cos
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function cos
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function cos
+[value] computing for function cos <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function cos
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+[value] computing for function fabs <- auto_nav <- nav_update <- navigation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] Done for function fabs
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721:[kernel] warning: non-finite double value.
+                  assert \is_finite(tmp_28);
+                  (tmp_28 from sin((double)alpha_carrot_2))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721:[kernel] warning: non-finite double value.
+                  assert \is_finite((double)(tmp_28*tmp_29));
+                  (tmp_28 from sin((double)alpha_carrot_2), tmp_29 from fabs((double)100))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721:[kernel] warning: non-finite double value.
+                  assert \is_finite((double)(tmp_30*tmp_31));
+                  (tmp_30 from cos((double)alpha_carrot_2), tmp_31 from fabs((double)100))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)waypoints[4].y+(double)(tmp_28*tmp_29))));
+                  (tmp_28 from sin((double)alpha_carrot_2), tmp_29 from fabs((double)100))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)waypoints[4].x+(double)(tmp_30*tmp_31))));
+                  (tmp_30 from cos((double)alpha_carrot_2), tmp_31 from fabs((double)100))
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+[value] computing for function fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:721.
+[value] computing for function atan2 <- fly_to_xy <- auto_nav <- nav_update <- 
+                                navigation_task <- periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:127.
+[value] Done for function atan2
+[value] Recording results for fly_to_xy
+[value] Done for function fly_to_xy
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:722:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)((double)((double)((double)(3.14159265358979323846/(double)2)-(double)alpha_carrot_2)/3.14159265358979323846)*180.)));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:724:[value] warning: loop invariant got status unknown.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:724:[value] loop invariant got status valid.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:727:[value] warning: loop invariant got status unknown.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_nav_i.c:727:[value] loop invariant got status valid.
+[value] Recording results for auto_nav
+[value] Done for function auto_nav
+[value] Recording results for nav_update
+[value] Done for function nav_update
+tmp.c:395:[kernel] warning: out of bounds read.
+                  assert \valid_read((uint8_t volatile *)((int)(0x39+0x20)));
+[value] computing for function course_pid_run <- navigation_task <- periodic_task.
+        Called from tmp.c:417.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:136:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(estimator_hspeed_dir-desired_course));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:138:[value] warning: loop invariant got status unknown.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:138:[value] loop invariant got status valid.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:141:[value] warning: loop invariant got status unknown.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:141:[value] loop invariant got status valid.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:146:[kernel] warning: non-finite float value. assert \is_finite((float)(course_pgain*err));
+[value] Recording results for course_pid_run
+[value] Done for function course_pid_run
+[value] Recording results for navigation_task
+[value] Done for function navigation_task
+[value] computing for function altitude_control_task <- periodic_task.
+        Called from tmp.c:1938.
+[value] computing for function altitude_pid_run <- altitude_control_task <- 
+                                periodic_task.
+        Called from tmp.c:427.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:190:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(estimator_z-desired_altitude));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:191:[kernel] warning: non-finite float value. assert \is_finite((float)(altitude_pgain*err));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:191:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(pre_climb+(float)(altitude_pgain*err)));
+[value] Recording results for altitude_pid_run
+[value] Done for function altitude_pid_run
+[value] Recording results for altitude_control_task
+[value] Done for function altitude_control_task
+[value] computing for function climb_control_task <- periodic_task.
+        Called from tmp.c:1939.
+[value] computing for function climb_pid_run <- climb_control_task <- periodic_task.
+        Called from tmp.c:436.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:157:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(estimator_z_dot-desired_climb));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:162:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(climb_pitch_igain*climb_pitch_sum_err));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:162:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)(err+(float)(climb_pitch_igain*climb_pitch_sum_err)));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:162:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)(climb_pitch_pgain*(float)(err+(float)(climb_pitch_igain*climb_pitch_sum_err))));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:167:[kernel] warning: non-finite float value. assert \is_finite((float)(climb_pitch_sum_err+err));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:175:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(desired_climb*pitch_of_vz_pgain));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:176:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(err+(float)(climb_igain*climb_sum_err)));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:177:[kernel] warning: non-finite float value. assert \is_finite((float)(climb_sum_err+err));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:182:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(fgaz*(float)((int)(600*16))));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:182:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(fgaz*(float)((int)(600*16))));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:182:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(fgaz*(float)((int)(600*16))));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:182:[kernel] warning: overflow in conversion from floating-point to integer.
+                  assert -32769 < fgaz*(float)((int)(600*16));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:182:[kernel] warning: overflow in conversion from floating-point to integer.
+                  assert fgaz*(float)((int)(600*16)) < 32768;
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:183:[kernel] warning: non-finite float value. assert \is_finite((float)(nav_pitch+pitch_of_vz));
+[value] Recording results for climb_pid_run
+[value] Done for function climb_pid_run
+[value] Recording results for climb_control_task
+[value] Done for function climb_control_task
+[value] computing for function reporting_task <- periodic_task.
+        Called from tmp.c:1953.
+tmp.c:479:[kernel] too many locations to update in array. Approximating.
+tmp.c:503:[kernel] warning: out of bounds read.
+                  assert \valid_read((uint8_t volatile *)((int)(0x39+0x20)));
+tmp.c:685:[kernel] warning: out of bounds read.
+                  assert \valid_read((uint8_t volatile *)((int)(0x39+0x20)));
+tmp.c:844:[kernel] warning: out of bounds read.
+                  assert \valid_read((uint8_t volatile *)((int)(0x39+0x20)));
+tmp.c:935:[kernel] warning: out of bounds read.
+                  assert \valid_read((uint8_t volatile *)((int)(0x39+0x20)));
+tmp.c:1062:[kernel] warning: out of bounds read.
+                  assert \valid_read((uint8_t volatile *)((int)(0x39+0x20)));
+tmp.c:1274:[kernel] warning: out of bounds read.
+                  assert \valid_read((uint8_t volatile *)((int)(0x39+0x20)));
+tmp.c:1396:[kernel] warning: out of bounds read.
+                  assert \valid_read((uint8_t volatile *)((int)(0x39+0x20)));
+tmp.c:1562:[kernel] warning: out of bounds read.
+                  assert \valid_read((uint8_t volatile *)((int)(0x39+0x20)));
+tmp.c:1654:[kernel] warning: out of bounds read.
+                  assert \valid_read((uint8_t volatile *)((int)(0x39+0x20)));
+tmp.c:1746:[kernel] warning: out of bounds read.
+                  assert \valid_read((uint8_t volatile *)((int)(0x39+0x20)));
+tmp.c:1865:[kernel] warning: out of bounds read.
+                  assert \valid_read((uint8_t volatile *)((int)(0x39+0x20)));
+[value] Recording results for reporting_task
+[value] Done for function reporting_task
+[value] computing for function reporting_task <- periodic_task.
+        Called from tmp.c:1953.
+[value] Recording results for reporting_task
+[value] Done for function reporting_task
+[value] computing for function stabilisation_task <- periodic_task.
+        Called from tmp.c:1957.
+[value] computing for function ir_update <- stabilisation_task <- periodic_task.
+        Called from tmp.c:1892.
+[value] Recording results for ir_update
+[value] Done for function ir_update
+[value] computing for function estimator_update_state_infrared <- 
+                                stabilisation_task <- periodic_task.
+        Called from tmp.c:1893.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_estimator_i.c:74:[kernel] warning: non-finite float value. assert \is_finite((float)(rad_of_ir*(float)ir_roll));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_estimator_i.c:75:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(rad_of_ir*(float)ir_pitch));
+[value] Recording results for estimator_update_state_infrared
+[value] Done for function estimator_update_state_infrared
+[value] computing for function roll_pitch_pid_run <- stabilisation_task <- 
+                                periodic_task.
+        Called from tmp.c:1894.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:126:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(estimator_phi-desired_roll));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:127:[kernel] warning: non-finite float value. assert \is_finite((float)(roll_pgain*err));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:127:[kernel] warning: non-finite float value. assert \is_finite((float)(roll_pgain*err));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:127:[kernel] warning: non-finite float value. assert \is_finite((float)(roll_pgain*err));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:127:[kernel] warning: overflow in conversion from floating-point to integer.
+                  assert -32769 < roll_pgain*err;
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:127:[kernel] warning: overflow in conversion from floating-point to integer.
+                  assert roll_pgain*err < 32768;
+[value] computing for function fabs <- roll_pitch_pid_run <- stabilisation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130.
+[value] Done for function fabs
+[value] computing for function fabs <- roll_pitch_pid_run <- stabilisation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130.
+[value] Done for function fabs
+[value] computing for function fabs <- roll_pitch_pid_run <- stabilisation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130.
+[value] Done for function fabs
+[value] computing for function fabs <- roll_pitch_pid_run <- stabilisation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130.
+[value] Done for function fabs
+[value] computing for function fabs <- roll_pitch_pid_run <- stabilisation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130.
+[value] Done for function fabs
+[value] computing for function fabs <- roll_pitch_pid_run <- stabilisation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130.
+[value] Done for function fabs
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130:[kernel] warning: non-finite double value.
+                  assert \is_finite(tmp);
+                  (tmp from fabs((double)estimator_phi))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130:[kernel] warning: non-finite float value.
+                  assert \is_finite((float)(estimator_theta-desired_pitch));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130:[kernel] warning: non-finite double value.
+                  assert \is_finite((double)((double)pitch_of_roll*tmp));
+                  (tmp from fabs((double)estimator_phi))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130:[kernel] warning: non-finite float value.
+                  assert
+                  \is_finite((float)((double)(-((double)((double)((float)(estimator_theta-desired_pitch))-(double)
+                                                          ((double)pitch_of_roll*tmp))))));
+                  (tmp from fabs((double)estimator_phi))
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:131:[kernel] warning: non-finite float value. assert \is_finite((float)(pitch_pgain*err));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:131:[kernel] warning: non-finite float value. assert \is_finite((float)(pitch_pgain*err));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:131:[kernel] warning: non-finite float value. assert \is_finite((float)(pitch_pgain*err));
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:131:[kernel] warning: overflow in conversion from floating-point to integer.
+                  assert -32769 < pitch_pgain*err;
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:131:[kernel] warning: overflow in conversion from floating-point to integer.
+                  assert pitch_pgain*err < 32768;
+[value] Recording results for roll_pitch_pid_run
+[value] Done for function roll_pitch_pid_run
+tmp.c:1895:[kernel] warning: overflow in conversion from floating-point to integer.
+                  assert
+                  -32769 <
+                  (double)((double)((int)(600*16))/0.75)*(double)((float)(-estimator_phi));
+tmp.c:1895:[kernel] warning: overflow in conversion from floating-point to integer.
+                  assert
+                  (double)((double)((int)(600*16))/0.75)*(double)((float)(-estimator_phi)) <
+                  32768;
+[value] Recording results for stabilisation_task
+[value] Done for function stabilisation_task
+[value] computing for function stabilisation_task <- periodic_task.
+        Called from tmp.c:1957.
+[value] computing for function ir_update <- stabilisation_task <- periodic_task.
+        Called from tmp.c:1892.
+[value] Recording results for ir_update
+[value] Done for function ir_update
+[value] computing for function estimator_update_state_infrared <- 
+                                stabilisation_task <- periodic_task.
+        Called from tmp.c:1893.
+[value] Recording results for estimator_update_state_infrared
+[value] Done for function estimator_update_state_infrared
+[value] computing for function roll_pitch_pid_run <- stabilisation_task <- 
+                                periodic_task.
+        Called from tmp.c:1894.
+[value] computing for function fabs <- roll_pitch_pid_run <- stabilisation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130.
+[value] Done for function fabs
+[value] computing for function fabs <- roll_pitch_pid_run <- stabilisation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130.
+[value] Done for function fabs
+[value] computing for function fabs <- roll_pitch_pid_run <- stabilisation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130.
+[value] Done for function fabs
+[value] computing for function fabs <- roll_pitch_pid_run <- stabilisation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130.
+[value] Done for function fabs
+[value] computing for function fabs <- roll_pitch_pid_run <- stabilisation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130.
+[value] Done for function fabs
+[value] computing for function fabs <- roll_pitch_pid_run <- stabilisation_task <- 
+                                periodic_task.
+        Called from /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_pid_i.c:130.
+[value] Done for function fabs
+[value] Recording results for roll_pitch_pid_run
+[value] Done for function roll_pitch_pid_run
+[value] Recording results for stabilisation_task
+[value] Done for function stabilisation_task
+[value] computing for function link_fbw_send <- periodic_task.
+        Called from tmp.c:1958.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_link_fbw_i.c:65:[kernel] warning: out of bounds read. assert \valid_read((uint8_t volatile *)46);
+[value] Recording results for link_fbw_send
+[value] Done for function link_fbw_send
+[value] computing for function link_fbw_send <- periodic_task.
+        Called from tmp.c:1958.
+[value] Recording results for link_fbw_send
+[value] Done for function link_fbw_send
+[value] Recording results for periodic_task
+[value] done for function periodic_task
+tmp.c:395:[value] assertion 'Value,mem_access' got final status invalid.
+tmp.c:503:[value] assertion 'Value,mem_access' got final status invalid.
+tmp.c:685:[value] assertion 'Value,mem_access' got final status invalid.
+tmp.c:844:[value] assertion 'Value,mem_access' got final status invalid.
+tmp.c:935:[value] assertion 'Value,mem_access' got final status invalid.
+tmp.c:1062:[value] assertion 'Value,mem_access' got final status invalid.
+tmp.c:1274:[value] assertion 'Value,mem_access' got final status invalid.
+tmp.c:1396:[value] assertion 'Value,mem_access' got final status invalid.
+tmp.c:1562:[value] assertion 'Value,mem_access' got final status invalid.
+tmp.c:1654:[value] assertion 'Value,mem_access' got final status invalid.
+tmp.c:1746:[value] assertion 'Value,mem_access' got final status invalid.
+tmp.c:1865:[value] assertion 'Value,mem_access' got final status invalid.
+/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-s/pp_link_fbw_i.c:65:[value] assertion 'Value,mem_access' got final status invalid.
+[value] ====== VALUES COMPUTED ======
+[value] Values at end of function altitude_pid_run:
+  timeElapsed ∈ [3541..27882]
+  desired_climb ∈ [-1. .. 1.]
+  err ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+[value] Values at end of function altitude_control_task:
+  timeElapsed ∈ [2382..27892]
+  desired_climb ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+[value] Values at end of function approaching:
+  timeElapsed ∈ [5011..6150]
+  dist2_to_wp ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  pw_x ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  pw_y ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  carrot ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  __retres ∈ {1}
+[value] Values at end of function climb_pid_run:
+  timeElapsed ∈ [4492..33310]
+  desired_pitch ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  climb_sum_err ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_gaz ∈ [--..--]
+  pitch_of_vz ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  climb_pitch_sum_err ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  err ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  fgaz ∈ [-7.8264940741e+37 .. 7.8264940741e+37] or UNINITIALIZED
+[value] Values at end of function climb_control_task:
+  timeElapsed ∈ [2397..33347]
+  desired_pitch ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  climb_sum_err ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_gaz ∈ [--..--]
+  pitch_of_vz ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  climb_pitch_sum_err ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+[value] Values at end of function compute_dist2_to_home:
+  timeElapsed ∈ [2230..17057]
+[value] Values at end of function course_pid_run:
+  timeElapsed ∈ [3285..26671]
+  nav_desired_roll ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  err ∈ [-3.14159250259 .. 3.14159250259]
+[value] Values at end of function estimator_propagate_state:
+  timeElapsed ∈ [432..1402]
+[value] Values at end of function estimator_update_state_infrared:
+  timeElapsed ∈ [2168..35115]
+  estimator_phi ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  estimator_theta ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  rad_of_ir ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+[value] Values at end of function fly_to_xy:
+  timeElapsed ∈ [2659..22744]
+  desired_course ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_x ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+[value] Values at end of function ir_update:
+  timeElapsed ∈ [1069..34015]
+  ir_roll ∈ [--..--]
+  ir_pitch ∈ [--..--]
+  x1_mean ∈ [0..2047]
+  x2_mean ∈ [0..2047]
+[value] Values at end of function link_fbw_send:
+  timeElapsed ∈ [4395..40452]
+  spi_nb_ovrn ∈ [--..--]
+[value] Values at end of function reporting_task:
+  timeElapsed ∈ [550..33638]
+  modem_nb_ovrn ∈ [--..--]
+  tx_head ∈ [--..--]
+  tx_buf[0..254] ∈ [--..--]
+  ck_a ∈ [--..--]
+  boot ∈ {0}
+  i ∈ [--..--]
+[value] Values at end of function roll_pitch_pid_run:
+  timeElapsed ∈ [4360..39372]
+  pitch_of_roll ∈ [-0. .. 3.40282346639e+38]
+  desired_aileron ∈ [--..--]
+  desired_elevator ∈ [--..--]
+  err ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+[value] Values at end of function auto_nav:
+  timeElapsed ∈ [2301..24255]
+  desired_course ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_climb ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  nav_stage ∈ [--..--]
+  dist2_to_wp ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_altitude ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_x ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  nav_desired_gaz ∈ [--..--]
+  vertical_mode ∈ [--..--]
+  auto_pitch ∈ [--..--]
+  rc_event_1 ∈ [--..--]
+  nav_block ∈ [--..--]
+  nav_pitch ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  pre_climb ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  carrot ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  last_wp ∈ [--..--]
+  qdr ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  carrot_x ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  carrot_y ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+[value] Values at end of function nav_home:
+  timeElapsed ∈ [14711..17057]
+  desired_course ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_altitude ∈ {175.}
+  desired_x ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  vertical_mode ∈ {3}
+  nav_pitch ∈ {0}
+  qdr ∈ [-0. .. 359.999969482]
+[value] Values at end of function nav_update:
+  timeElapsed ∈ [2301..24255]
+  desired_course ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_climb ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  nav_stage ∈ [--..--]
+  dist2_to_wp ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_altitude ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_x ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  nav_desired_gaz ∈ [--..--]
+  vertical_mode ∈ [--..--]
+  auto_pitch ∈ [--..--]
+  rc_event_1 ∈ [--..--]
+  nav_block ∈ [--..--]
+  nav_pitch ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  pre_climb ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  carrot ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  last_wp ∈ [--..--]
+  qdr ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  carrot_x ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  carrot_y ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+[value] Values at end of function navigation_task:
+  timeElapsed ∈ [2368..26697]
+  desired_roll ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_course ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_climb ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  modem_nb_ovrn ∈ [--..--]
+  tx_head ∈ [--..--]
+  tx_buf[0..254] ∈ [--..--]
+  ck_a ∈ [--..--]
+  nav_stage ∈ [--..--]
+  dist2_to_wp ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_altitude ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_x ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  nav_desired_gaz ∈ [--..--]
+  nav_desired_roll ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  vertical_mode ∈ [--..--]
+  auto_pitch ∈ [--..--]
+  lateral_mode ∈ {3}
+  rc_event_1 ∈ [--..--]
+  nav_block ∈ [--..--]
+  nav_pitch ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  pre_climb ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  carrot ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  last_wp ∈ [--..--]
+  qdr ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  carrot_x ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  carrot_y ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+[value] Values at end of function stabilisation_task:
+  timeElapsed ∈ [4376..40433]
+  ir_roll ∈ [--..--]
+  ir_pitch ∈ [--..--]
+  estimator_phi ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  estimator_theta ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  to_fbw ∈ [--..--]
+  pitch_of_roll ∈ [-0. .. 3.40282346639e+38]
+  desired_aileron ∈ [--..--]
+  desired_elevator ∈ [--..--]
+[value] Values at end of function periodic_task:
+  timeElapsed ∈ [435..40460]
+  desired_roll ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_pitch ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_course ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  climb_sum_err ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_climb ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_gaz ∈ [--..--]
+  ir_roll ∈ [--..--]
+  ir_pitch ∈ [--..--]
+  modem_nb_ovrn ∈ [--..--]
+  tx_head ∈ [--..--]
+  tx_buf[0..254] ∈ [--..--]
+  ck_a ∈ [--..--]
+  nav_stage ∈ [--..--]
+  dist2_to_wp ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_altitude ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_x ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  nav_desired_gaz ∈ [--..--]
+  stage_time_ds ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  nav_desired_roll ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  vertical_mode ∈ [--..--]
+  auto_pitch ∈ [--..--]
+  lateral_mode ∈ [--..--]
+  rc_event_1 ∈ [--..--]
+  estimator_flight_time ∈ [--..--]
+  estimator_phi ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  estimator_theta ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  to_fbw ∈ [--..--]
+  nav_block ∈ [--..--]
+  nav_pitch ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  pre_climb ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  pitch_of_roll ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  desired_aileron ∈ [--..--]
+  desired_elevator ∈ [--..--]
+  pitch_of_vz ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  climb_pitch_sum_err ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  spi_nb_ovrn ∈ [--..--]
+  cputime ∈ [--..--]
+  low_battery ∈ [--..--]
+  boot ∈ [--..--]
+  i ∈ [--..--]
+  _20Hz ∈ {0; 1; 2}
+  _10Hz ∈ {0; 1; 2; 3; 4; 5}
+  _4Hz ∈ [0..14]
+  _1Hz ∈ [0..60]
+  t ∈ [--..--]
+  odd ∈ [--..--]
+  carrot ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  last_wp ∈ [--..--]
+  qdr ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  carrot_x ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+  carrot_y ∈ [-3.40282346639e+38 .. 3.40282346639e+38]
+	Command being timed: "frama-c -lib-entry -main periodic_task -slevel 50 -eva -val -val-slevel-merge-after-loop @all tmp2.c ../pp_if_calib_i.c ../pp_adc_i.c ../pp_nav_i.c ../pp_gps_ubx_i.c ../pp_infrared_i.c ../pp_spi_i.c ../pp_modem_i.c ../pp_pid_i.c ../pp_uart_i.c ../pp_estimator_i.c ../pp_link_fbw_i.c ../pp_mainloop_i.c"
+	User time (seconds): 2.41
+	System time (seconds): 0.13
+	Percent of CPU this job got: 78%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.25
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 70584
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 268
+	Minor (reclaiming a frame) page faults: 44180
+	Voluntary context switches: 500
+	Involuntary context switches: 589
+	Swaps: 0
+	File system inputs: 67288
+	File system outputs: 848
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+  timeElapsed ∈ [--..--]
+  timeElapsed ∈ [3541..27882]
+  timeElapsed ∈ [2382..27892]
+  timeElapsed ∈ [5011..6150]
+  timeElapsed ∈ [4492..33310]
+  timeElapsed ∈ [2397..33347]
+  timeElapsed ∈ [2230..17057]
+  timeElapsed ∈ [3285..26671]
+  timeElapsed ∈ [432..1402]
+  timeElapsed ∈ [2168..35115]
+  timeElapsed ∈ [2659..22744]
+  timeElapsed ∈ [1069..34015]
+  timeElapsed ∈ [4395..40452]
+  timeElapsed ∈ [550..33638]
+  timeElapsed ∈ [4360..39372]
+  timeElapsed ∈ [2301..24255]
+  timeElapsed ∈ [14711..17057]
+  timeElapsed ∈ [2301..24255]
+  timeElapsed ∈ [2368..26697]
+  timeElapsed ∈ [4376..40433]
+  timeElapsed ∈ [435..40460]

@@ -508,10 +508,11 @@ void periodic_task( void ) {
   }
 TIC(8) /* BBs: 39 */;
 
-__CPROVER_assume(timeElapsed <= 33195);
+__CPROVER_assume(timeElapsed <= 33194);
+assert(timeElapsed <= 33192); 
 assert(timeElapsed <= 33193); 
 assert(timeElapsed <= 33194); 
-assert(timeElapsed <= 33195); 
+assert(timeElapsed <= 33191); 
  }
 void stabilisation_task(void)
 {

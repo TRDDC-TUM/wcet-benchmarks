@@ -1,0 +1,116 @@
+CBMCFLAGS: --yices -DIS_ANALYSIS -DCBMC -DNEWCODE --unwind 2 --unwindset nav_home.0:3,nav_home.1:3 --function periodic_task --all-properties --slice-formula --nondet-static --16 --trace
+GOTOINSFLAGS: 
+Initial guess: 0..0
+Requested WCET precision: 1
+Assertions per step: 10
+Max steps: 0
+All Flags: --yices -DIS_ANALYSIS -DCBMC -DNEWCODE --unwind 2 --unwindset nav_home.0:3,nav_home.1:3 --function periodic_task --all-properties --slice-formula --nondet-static --16 --trace
+Output path: /home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-i
+Output path intermediate: .
+Template file: pp_main_i.in
+Other files: pp_if_calib_i.c, pp_adc_i.c, pp_nav_i.c, pp_gps_ubx_i.c, pp_infrared_i.c, pp_spi_i.c, pp_modem_i.c, pp_pid_i.c, pp_uart_i.c, pp_estimator_i.c, pp_link_fbw_i.c, pp_mainloop_i.c
+...step #1: WCET in [0,9223372036854775807], precision=9223372036854775807
+......cand: 6208, 1, 18854838150406, 1485633833817296, 78, 38543920, 3037000499, 239295116727, 489178, 117057906865942864, 9223372036854775807
+......Reading properties from ['./tmp_pp_main_i.c', 'pp_if_calib_i.c', 'pp_adc_i.c', 'pp_nav_i.c', 'pp_gps_ubx_i.c', 'pp_infrared_i.c', 'pp_spi_i.c', 'pp_modem_i.c', 'pp_pid_i.c', 'pp_uart_i.c', 'pp_estimator_i.c', 'pp_link_fbw_i.c', 'pp_mainloop_i.c']
+......Running cbmc on files ...
+......TIMEOUT for solver yices was fixed: timeout -s QUIT 2h /usr/bin/time -v
+......counterexample [periodic_task.assertion.1]: <{'xml': None, 'max': 8089, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.1<=6208, counterexample=8089
+......counterexample [periodic_task.assertion.2]: <{'xml': None, 'max': 3748, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.2<=1, counterexample=3748
+......counterexample [periodic_task.assertion.5]: <{'xml': None, 'max': 3748, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.5<=78, counterexample=3748
+......walltime=141.85, usertime=138.59, dbg_time1=142.64, mem=222452, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 9994, 'sum': 9994, 'n': 1, 'avg': 9994, 'min': 9994}}
+......WCET in [8089,489178], precision=481089
+......remaining steps <=6
+...step #2: WCET in [8089,489178], precision=481089
+......cand: 392960, 56197, 296742, 200524, 441069, 104306, 344851, 248633, 8089, 489178, 152415
+......Reading properties from ['./tmp_pp_main_i.c', 'pp_if_calib_i.c', 'pp_adc_i.c', 'pp_nav_i.c', 'pp_gps_ubx_i.c', 'pp_infrared_i.c', 'pp_spi_i.c', 'pp_modem_i.c', 'pp_pid_i.c', 'pp_uart_i.c', 'pp_estimator_i.c', 'pp_link_fbw_i.c', 'pp_mainloop_i.c']
+......Running cbmc on files ...
+......TIMEOUT for solver yices was fixed: timeout -s QUIT 2h /usr/bin/time -v
+......counterexample [periodic_task.assertion.9]: <{'xml': None, 'max': 9157, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.9<=8089, counterexample=9157
+......walltime=181.31, usertime=179.31, dbg_time1=182.14, mem=222552, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 9996, 'sum': 9996, 'n': 1, 'avg': 9996, 'min': 9996}}
+......WCET in [9157,56197], precision=47040
+......remaining steps <=5
+...step #3: WCET in [9157,56197], precision=47040
+......cand: 18565, 27973, 37381, 13861, 46789, 23269, 56197, 9157, 42085, 51493, 32677
+......Reading properties from ['./tmp_pp_main_i.c', 'pp_if_calib_i.c', 'pp_adc_i.c', 'pp_nav_i.c', 'pp_gps_ubx_i.c', 'pp_infrared_i.c', 'pp_spi_i.c', 'pp_modem_i.c', 'pp_pid_i.c', 'pp_uart_i.c', 'pp_estimator_i.c', 'pp_link_fbw_i.c', 'pp_mainloop_i.c']
+......Running cbmc on files ...
+......TIMEOUT for solver yices was fixed: timeout -s QUIT 2h /usr/bin/time -v
+......counterexample [periodic_task.assertion.1]: <{'xml': None, 'max': 21479, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.1<=18565, counterexample=21479
+......counterexample [periodic_task.assertion.2]: <{'xml': None, 'max': 28827, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.2<=27973, counterexample=28827
+......counterexample [periodic_task.assertion.4]: <{'xml': None, 'max': 15565, 'readable': True, 'min': 364}
+......CEGR: periodic_task.assertion.4<=13861, counterexample=15565
+......counterexample [periodic_task.assertion.6]: <{'xml': None, 'max': 23445, 'readable': True, 'min': 364}
+......CEGR: periodic_task.assertion.6<=23269, counterexample=23445
+......counterexample [periodic_task.assertion.8]: <{'xml': None, 'max': 9163, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.8<=9157, counterexample=9163
+......counterexample [periodic_task.assertion.11]: <{'xml': None, 'max': 33006, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.11<=32677, counterexample=33006
+......walltime=1080.37, usertime=1074.36, dbg_time1=1081.17, mem=222620, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 9996, 'sum': 9996, 'n': 1, 'avg': 9996, 'min': 9996}}
+......WCET in [33006,37381], precision=4375
+......remaining steps <=4
+...step #4: WCET in [33006,37381], precision=4375
+......cand: 33443, 34756, 36068, 34318, 35631, 33006, 35193, 33881, 36506, 36943, 37381
+......Reading properties from ['./tmp_pp_main_i.c', 'pp_if_calib_i.c', 'pp_adc_i.c', 'pp_nav_i.c', 'pp_gps_ubx_i.c', 'pp_infrared_i.c', 'pp_spi_i.c', 'pp_modem_i.c', 'pp_pid_i.c', 'pp_uart_i.c', 'pp_estimator_i.c', 'pp_link_fbw_i.c', 'pp_mainloop_i.c']
+......Running cbmc on files ...
+......TIMEOUT for solver yices was fixed: timeout -s QUIT 2h /usr/bin/time -v
+......counterexample [periodic_task.assertion.6]: <{'xml': None, 'max': 33065, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.6<=33006, counterexample=33065
+......walltime=402.64, usertime=401.4, dbg_time1=403.19, mem=222644, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 9996, 'sum': 9996, 'n': 1, 'avg': 9996, 'min': 9996}}
+......WCET in [33065,33443], precision=378
+......remaining steps <=3
+...step #5: WCET in [33065,33443], precision=378
+......cand: 33216, 33443, 33254, 33065, 33291, 33102, 33329, 33140, 33367, 33178, 33405
+......Reading properties from ['./tmp_pp_main_i.c', 'pp_if_calib_i.c', 'pp_adc_i.c', 'pp_nav_i.c', 'pp_gps_ubx_i.c', 'pp_infrared_i.c', 'pp_spi_i.c', 'pp_modem_i.c', 'pp_pid_i.c', 'pp_uart_i.c', 'pp_estimator_i.c', 'pp_link_fbw_i.c', 'pp_mainloop_i.c']
+......Running cbmc on files ...
+......TIMEOUT for solver yices was fixed: timeout -s QUIT 2h /usr/bin/time -v
+......counterexample [periodic_task.assertion.4]: <{'xml': None, 'max': 33072, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.4<=33065, counterexample=33072
+......counterexample [periodic_task.assertion.6]: <{'xml': None, 'max': 33116, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.6<=33102, counterexample=33116
+......counterexample [periodic_task.assertion.8]: <{'xml': None, 'max': 33148, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.8<=33140, counterexample=33148
+......counterexample [periodic_task.assertion.10]: <{'xml': None, 'max': 33180, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.10<=33178, counterexample=33180
+......walltime=958.95, usertime=956.98, dbg_time1=959.71, mem=222648, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 9996, 'sum': 9996, 'n': 1, 'avg': 9996, 'min': 9996}}
+......WCET in [33180,33216], precision=36
+......remaining steps <=2
+...step #6: WCET in [33180,33216], precision=36
+......cand: 33216, 33187, 33190, 33212, 33194, 33198, 33201, 33205, 33208, 33180, 33183
+......Reading properties from ['./tmp_pp_main_i.c', 'pp_if_calib_i.c', 'pp_adc_i.c', 'pp_nav_i.c', 'pp_gps_ubx_i.c', 'pp_infrared_i.c', 'pp_spi_i.c', 'pp_modem_i.c', 'pp_pid_i.c', 'pp_uart_i.c', 'pp_estimator_i.c', 'pp_link_fbw_i.c', 'pp_mainloop_i.c']
+......Running cbmc on files ...
+......TIMEOUT for solver yices was fixed: timeout -s QUIT 2h /usr/bin/time -v
+......counterexample [periodic_task.assertion.2]: <{'xml': None, 'max': 33187, 'readable': True, 'min': 362}
+......counterexample [periodic_task.assertion.3]: <{'xml': None, 'max': 33191, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.3<=33190, counterexample=33191
+......counterexample [periodic_task.assertion.10]: <{'xml': None, 'max': 33182, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.10<=33180, counterexample=33182
+......counterexample [periodic_task.assertion.11]: <{'xml': None, 'max': 33183, 'readable': True, 'min': 362}
+......walltime=862.93, usertime=860.4, dbg_time1=863.43, mem=222600, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 9996, 'sum': 9996, 'n': 1, 'avg': 9996, 'min': 9996}}
+......WCET in [33191,33194], precision=3
+......remaining steps <=1
+...step #7: WCET in [33191,33194], precision=3
+......cand: 33192, 33193, 33194, 33191
+......Reading properties from ['./tmp_pp_main_i.c', 'pp_if_calib_i.c', 'pp_adc_i.c', 'pp_nav_i.c', 'pp_gps_ubx_i.c', 'pp_infrared_i.c', 'pp_spi_i.c', 'pp_modem_i.c', 'pp_pid_i.c', 'pp_uart_i.c', 'pp_estimator_i.c', 'pp_link_fbw_i.c', 'pp_mainloop_i.c']
+......Running cbmc on files ...
+......TIMEOUT for solver yices was fixed: timeout -s QUIT 2h /usr/bin/time -v
+......counterexample [periodic_task.assertion.1]: <{'xml': None, 'max': 33193, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.1<=33192, counterexample=33193
+......counterexample [periodic_task.assertion.2]: <{'xml': None, 'max': 33193, 'readable': True, 'min': 362}
+......counterexample [periodic_task.assertion.4]: <{'xml': None, 'max': 33193, 'readable': True, 'min': 362}
+......CEGR: periodic_task.assertion.4<=33191, counterexample=33193
+......walltime=221.41, usertime=219.68, dbg_time1=221.89, mem=222440, complexity={'clauses': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'variables': {'max': None, 'sum': 0, 'n': 0, 'avg': None, 'min': None}, 'steps': {'max': 9989, 'sum': 9989, 'n': 1, 'avg': 9989, 'min': 9989}}
+......WCET in [33193,33194], precision=1
+SUCCESS: Precise enough after 7 iterations, precision=1
+RESULT: 33193 < WCET <= 33194 cycles
+peak memory (kBytes): samples=7, min=222440.0, avg=222565.142857, max=222648.0, sum=1557956.0
+cbmc walltime (sec): samples=7, min=141.85, avg=549.922857143, max=1080.37, sum=3849.46
+cbmc usertime (sec): samples=7, min=138.59, avg=547.245714286, max=1074.36, sum=3830.72
+variables: samples=0, min=None, avg=None, max=None, sum=0
+clauses: samples=0, min=None, avg=None, max=None, sum=0
+steps: samples=7, min=9989, avg=9994, max=9996, sum=69963
+Script: alltime=3855.63, selftime=6.17, ret=0

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cprover>
-<program>CBMC 5.6</program>
+<program>CBMC 5.10 (cbmc-5.10)</program>
 <message type="STATUS-MESSAGE">
-  <text>CBMC version 5.6 64-bit x86_64 linux</text>
+  <text>CBMC version 5.10 (cbmc-5.10) 64-bit x86_64 linux</text>
 </message>
 
 <message type="STATUS-MESSAGE">
@@ -114,7 +114,7 @@
 </message>
 
 <message type="WARNING">
-  <location file="./tmp_pp_main_i.c" function="periodic_task" line="512"/>
+  <location file="./tmp_pp_main_i.c" function="periodic_task" line="512" working-directory="/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-i"/>
   <text>function `assert' is not declared</text>
 </message>
 
@@ -126,12 +126,42 @@
   <text>Adding CPROVER library (x86_64)</text>
 </message>
 
-<message type="STATUS-MESSAGE">
-  <text>Removal of function pointers and virtual functions</text>
+<message type="ERROR">
+  <text>In file included from /usr/include/features.h:398:0,</text>
+</message>
+
+<message type="ERROR">
+  <text>                 from /usr/include/math.h:26,</text>
+</message>
+
+<message type="ERROR">
+  <location file="                 from &lt;builtin-library-sqrt&gt;" line="5"/>
+  <text>                 from &lt;builtin-library-sqrt&gt;:5:</text>
+</message>
+
+<message type="ERROR">
+  <location file="/usr/include/i386-linux-gnu/gnu/stubs.h" line="10"/>
+  <text>/usr/include/i386-linux-gnu/gnu/stubs.h:10:27: fatal error: gnu/stubs-64.h: No such file or directory</text>
+</message>
+
+<message type="ERROR">
+  <text> # include &lt;gnu/stubs-64.h&gt;</text>
+</message>
+
+<message type="ERROR">
+  <text>                           ^</text>
+</message>
+
+<message type="ERROR">
+  <text>compilation terminated.</text>
+</message>
+
+<message type="ERROR">
+  <text>GCC preprocessing failed</text>
 </message>
 
 <message type="STATUS-MESSAGE">
-  <text>Partial Inlining</text>
+  <text>Removal of function pointers and virtual functions</text>
 </message>
 
 <message type="STATUS-MESSAGE">
@@ -142,22 +172,32 @@
   <text>Adding nondeterministic initialization of static/global variables</text>
 </message>
 
+<message type="STATUS-MESSAGE">
+  <text>Running with 8 object bits, 24 offset bits (default)</text>
+</message>
+
 <property class="assertion" name="periodic_task.assertion.1">
-  <location file="./tmp_pp_main_i.c" function="periodic_task" line="512"/>
+  <location file="./tmp_pp_main_i.c" function="periodic_task" line="512" working-directory="/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-i"/>
+  <description>assertion timeElapsed &lt;= (unsigned long int)33192l</description>
+  <expression>timeElapsed &lt;= (unsigned long int)33192l</expression>
+</property>
+
+<property class="assertion" name="periodic_task.assertion.2">
+  <location file="./tmp_pp_main_i.c" function="periodic_task" line="513" working-directory="/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-i"/>
   <description>assertion timeElapsed &lt;= (unsigned long int)33193l</description>
   <expression>timeElapsed &lt;= (unsigned long int)33193l</expression>
 </property>
 
-<property class="assertion" name="periodic_task.assertion.2">
-  <location file="./tmp_pp_main_i.c" function="periodic_task" line="513"/>
+<property class="assertion" name="periodic_task.assertion.3">
+  <location file="./tmp_pp_main_i.c" function="periodic_task" line="514" working-directory="/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-i"/>
   <description>assertion timeElapsed &lt;= (unsigned long int)33194l</description>
   <expression>timeElapsed &lt;= (unsigned long int)33194l</expression>
 </property>
 
-<property class="assertion" name="periodic_task.assertion.3">
-  <location file="./tmp_pp_main_i.c" function="periodic_task" line="514"/>
-  <description>assertion timeElapsed &lt;= (unsigned long int)33195l</description>
-  <expression>timeElapsed &lt;= (unsigned long int)33195l</expression>
+<property class="assertion" name="periodic_task.assertion.4">
+  <location file="./tmp_pp_main_i.c" function="periodic_task" line="515" working-directory="/home/becker/async/wcet-benchmarks/benchmarks/PapaBench-0.2m/wcet-cbmc/finder-i"/>
+  <description>assertion timeElapsed &lt;= (unsigned long int)33191l</description>
+  <expression>timeElapsed &lt;= (unsigned long int)33191l</expression>
 </property>
 
 </cprover>

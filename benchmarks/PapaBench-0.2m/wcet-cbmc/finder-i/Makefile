@@ -43,6 +43,9 @@ all: $(LOGFILE)
 $(LOGFILE): $(TMPL) $(OTHER)
 	CBMC="$(CBMC)" CBMCFLAGS="$(CBMCFLAGS)" TIMEOUT="$(TIMEOUT)" CBMCINTERMED="$(CBMCINTERMED)" $(PY) -u ../../../../scripts/find_wcet.py -p $(WCET_PREC) $(TMPL) $(OTHER) | tee $(LOGFILE)
 
+wcet_counterexample.xml: $(OTHER)
+	$(CBMC) $(CFLAGS) --xml-ui --trace $(CBMCDRIVER) $(CBMCLOOPS) --all-properties --nondet-static --16 --yices modelcheck/tmp_pp_main_i.c $(OTHER) | tee $@
+
 CFILE=$(TMPL:%.in=%.c)
 replay:
 	echo CFILE=$(CFILE)

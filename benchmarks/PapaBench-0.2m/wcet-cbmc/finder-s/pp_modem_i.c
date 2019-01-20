@@ -1,0 +1,55 @@
+typedef int (* __compar_fn_t)(void  const*, void  const*);
+typedef struct {
+long  quot;
+long  rem;
+} pp_modem_ipp_modem_i_88_0;
+typedef pp_modem_ipp_modem_i_88_0 ldiv_t;
+typedef struct {
+int  quot;
+int  rem;
+} pp_modem_ipp_modem_i_84_0;
+typedef pp_modem_ipp_modem_i_84_0 div_t;
+typedef int  wchar_t;
+typedef unsigned int  size_t;
+typedef struct {
+unsigned char  low;
+unsigned char  high;
+unsigned char  extended;
+} pp_modem_ipp_modem_i_77_0;
+typedef pp_modem_ipp_modem_i_77_0 __fuse_t;
+typedef unsigned long long  uint64_t;
+typedef uint64_t uintmax_t;
+typedef uint64_t uint_fast64_t;
+typedef uint64_t uint_least64_t;
+typedef long long  int64_t;
+typedef int64_t intmax_t;
+typedef int64_t int_fast64_t;
+typedef int64_t int_least64_t;
+typedef unsigned int  uint32_t;
+typedef uint32_t uint_farptr_t;
+typedef uint32_t uint_fast32_t;
+typedef uint32_t uint_least32_t;
+typedef int  int32_t;
+typedef int32_t int_farptr_t;
+typedef int32_t int_fast32_t;
+typedef int32_t int_least32_t;
+typedef unsigned short  uint16_t;
+typedef uint16_t uint_fast16_t;
+typedef uint16_t uint_least16_t;
+typedef uint16_t uintptr_t;
+typedef short  int16_t;
+typedef int16_t int_fast16_t;
+typedef int16_t int_least16_t;
+typedef int16_t intptr_t;
+typedef unsigned char  uint8_t;
+typedef uint8_t bool_t;
+typedef uint8_t uint_fast8_t;
+typedef uint8_t uint_least8_t;
+typedef signed char  int8_t;
+typedef int8_t int_fast8_t;
+typedef int8_t int_least8_t;
+uint8_t tx_head;
+extern uint8_t tx_head;
+uint8_t volatile tx_tail;
+extern uint8_t volatile tx_tail;
+
