@@ -1,0 +1,4 @@
+obj/
+proofdependencyinfo/
+*.json_symtab
+gnatinspect.db
